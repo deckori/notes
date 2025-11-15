@@ -1,0 +1,15 @@
+. !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/drawing.png !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/presentation/Presentation_Fairoos_Yazan.pptx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/presentation/marking-scheme.png !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/presentation/references.docx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/presentation/table-v2.docx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/presentation/template-v2.pptx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/quarto-stuff/powerpoint.pptx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/quarto-stuff/ref-arch.png !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/quarto-stuff/servers.png !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/quarto-stuff/template.pptx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/quarto-stuff/test.pptx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/report/Analytical_Report_Fairoos_Yazan.docx !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment/report/Updated[[:space:]]TEMPLATE_COMM[[:space:]]1020[[:space:]]Recommendation[[:space:]]Report_F25.docx !text !filter !merge !diff
