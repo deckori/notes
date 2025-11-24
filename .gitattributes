@@ -1,9 +1,16 @@
+* !text !filter !merge !diff
+*.jpeg !text !filter !merge !diff
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.jpg !text !filter !merge !diff
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.png !text !filter !merge !diff
+*.png filter=lfs diff=lfs merge=lfs -text
 . !text !filter !merge !diff
+sems/sem3/comm1020/presentation/comm1020-assignment !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/drawing.png !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/presentation/Presentation_Fairoos_Yazan.pptx !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/presentation/marking-scheme.png !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/presentation/references.docx !text !filter !merge !diff
-sems/sem3/comm1020/presentation/comm1020-assignment !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/presentation/table-v2.docx !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/presentation/template-v2.pptx !text !filter !merge !diff
 sems/sem3/comm1020/presentation/comm1020-assignment/quarto-stuff/powerpoint.pptx !text !filter !merge !diff
