@@ -1,0 +1,24 @@
+*.html
+
+# quarto build outputs
+*_files
+*_site
+*.site
+*.quarto
+*site_libs
+
+# MyST build outputs
+_build
+
+.Rproj.user
+
+# latex intermediates
+*.toc
+*.log
+*.aux
+*.fls
+*.synctex.gz
+*.fdb_latexmk
+*main.pdf
+
+/.quarto/
