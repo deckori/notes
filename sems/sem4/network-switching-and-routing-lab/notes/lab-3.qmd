@@ -1,0 +1,40 @@
+## SSH setup configuration
+
+| Command                                                 | Comments on command                                                                  |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `(config)# ip domain-name <some domain name>`           | Set the domain name for the device                                                   |
+| `(config)# security passwords min-length 4`             | Set minimum number of characters for all passwords                                   |
+| `(config)# username <name> secret <password>`           |                                                                                      |
+| `(config)# crypto key generate rsa`                     | A prompt will be given after execution, requiring input of the number of bit modulus |
+| `(config)# login block-for <X> attempts <Y> within <Z>` | After `Y` login attempts within `Z` seconds, block VTY logins for `X` seconds        |
+
+Line VTY specific config:
+
+| Command                               | Comments on command                                                                                  |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `(config-line)# transport input ssh`  | Only SSH connections will be accepted                                                                |
+| `(config-line)# login local`          | Enable login using local database                                                                    |
+| `(config-line)# exec-timeout <X> <Y>` | Configure sessions to disconnect after `X` minutes and `Y` seconds of inactivity |
+
+Set the clock on the router:
+
+| Command                                                                        | Comments on command  |
+| ------------------------------------------------------------------------------ | -------------------- |
+| `# clock set <HOUR in 24 hour format>:<MINUTE>:<SECONDS> <DAY> <MONTH> <YEAR>` | Meaning of arguments |
+| `# clock set <hh>:<mm>:<ss> <DAY> <MONTH> <YEAR>`                              | Format of arguments  |
+| `# clock set 15:20:00 5 Mar 2024`                                              | Example              |
+
+\filbreak
+
+{{<pagebreak>}}
+
+## Testing and Troubleshooting
+
+| Command                         | Comments on command |
+| ------------------------------- | ------------------- |
+| `> ping <ipv4 or ipv6 address>` |                     |
+| `# sh run`                      |                     |
+| `# sh ip int b`                 |                     |
+| `# sh ipv6 int b`               |                     |
+| `# sh ip route`                 | Shows routing table |
+| `# sh version`                  |                     |

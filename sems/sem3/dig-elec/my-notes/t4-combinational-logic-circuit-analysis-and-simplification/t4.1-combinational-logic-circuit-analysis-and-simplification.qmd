@@ -1,0 +1,335 @@
+---
+title: "Combinational Logic Circuits"
+---
+
+# Objectives
+
+-   Implement logic circuits from Boolean expressions
+
+-   Recognize XOR and XNOR logic gates
+
+-   Design XOR and XNOR logic gates using AND, NOT, and OR gates
+
+-   Perform NOT operation using NAND and NOR gates
+
+-   Use Boolean algebra to simplify logic expressions
+
+-   Use Boolean algebra and DeMorgan’s theorems to simplify logic circuits
+
+-   Find the equivalent of any logic gate use DeMorgan’s rules
+
+-   Use either of the universal gates (NAND or NOR) to implement a circuit represented by a Boolean expression
+
+-   Explain the advantages of constructing a logic-circuit diagram using the alternate gate symbols versus the standard logic-gate symbols
+
+-   Describe the concept of active-LOW and active-HIGH logic signals
+
+# Implementing Circuits From Boolean Expressions
+
+# Example
+
+![©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_0.jpg)
+
+Each OR gate input is an AND product term,
+
+An AND gate with appropriate inputs can be used to generate each of these terms.
+
+![©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_1.jpg)
+
+# Example
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_2.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_3.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Checklist
+
+Write the expression for the output of the circuit below, and use it to determine the complete truth table
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_4.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# DeMorgan’s Principle
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_5.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# DeMorgan (Cont’d)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_6.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Example
+
+Determine the output expression for the circuit below and simplify it using DeMorgan’s theorems:
+
+[Solution :]{style="color:#ff0000"}
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_7.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_8.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# DeMorgan - Rules
+
+[To change any gate into its equivalent gate using]{style="color:#ff0000"} [DeMorgan’s]{style="color:#ff0000"} [principle:]{style="color:#ff0000"}
+
+Change the shape of the gate, if it’s an AND, make it an OR (but don’t change INVERTERS)
+
+Where there is a bubble, remove it; where there is not bubble place one
+
+That’s all there is to it. Let’s try some examples:
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# DeMorgan – Example 1
+
+Convert the following NAND gate into its equivalent:
+
+[Solution]{style="color:#ff0000"}
+
+make the shape of the gate an OR shape; remove the bubble on the output and place two bubbles on the inputs:
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_9.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_10.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+Convert the following gate into its equivalent:
+
+[Solution]{style="color:#ff0000"}
+
+Following the rules, we don’t change the shape of the gate, but we remove the bubble on the output and place a bubble on the input:
+
+Even though this gate looks different, it is functionally identical to the previous gate.
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_11.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_12.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+Convert the following gate into its equivalent:
+
+[Here’s the solution:]{style="color:#ff0000"}
+
+\`
+
+This shows a double negation, which makes sense because NOT(NOT(A)) = A.
+
+Note: this device is call a Buffer. What we insert at the Input we gat at the output Input (A) Output (Y)
+
+------------------------------------------------------------------------
+
+0 0
+
+1 1
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_13.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_14.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Examples
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_15.jpg)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_16.jpg)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_17.jpg)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_18.jpg)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_19.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Checklist
+
+Sketch the equivalent gate using DeMorgan’s principle?
+
+Write the truth table for both gates in order to prove your work.
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_20.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Universality of NAND and NOR Gates
+
+NAND or NOR gates can be used to create the three basic logic expressions: OR, AND, and INVERT.
+
+Provides flexibility—very useful in logic circuit design.
+
+Let's work through some examples
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Example 1Logic Gates NAND Gate only
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_21.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Example 2Logic Gates using NOR Gate Only
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_22.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Logic Gate - EXCLUSIVE-OR (EXOR)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_23.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_24.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_25.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_26.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_27.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Example
+
+Determine the output waveform for the input waveforms below:
+
+output x
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_28.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_29.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Logic Gate-EXCLUSIVE NOR (EXNOR)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_30.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+Represent XOR equivalent logic circuit using the below Boolean expression and write the truth table
+
+Solution
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_31.jpg)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_32.jpg)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Inverter Using a NAND Gate – Circuit 1
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_33.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_34.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Inverter Using NOR Gate – Two Circuits
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_35.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_36.png)
+
+The output will be 0 if one or both inputs are 1, all other times output is 1.
+
+Since the inputs are tied together, the output will be the inverse of the input.
+
+The output will be 1 if the Input is 0, because the reference input is always 0, so the Input drives the logic.
+
+When the input is 1, then the output will be 0.
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Boolean Theorem
+
+\(1\) x·0=0
+
+\(2\) x·1=x
+
+\(3\) x.x=x
+
+\(4\) x·x’=0
+
+(5)x+0=x
+
+(6)x+1=1,
+
+(7)X+X =X,
+
+(8)x+x’=1,
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_38.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_39.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Boolean Multivariable Theorem
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_40.png)
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_41.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Example
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_42.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_43.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_44.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Active Logic Levels
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_45.jpg)
+
+Interpretation of the two OR gate symbols.
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+Active-HIGH – an input/output has no inversion bubble.
+
+Active-LOW – an input or output has an inversion bubble.
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_46.jpg)
+
+Interpretation of the two NAND gate symbols.
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e
+
+# Enable/Disable Circuits
+
+Situations requiring enable/disable circuits occur frequently in digital circuit design.
+
+A circuit is enabled when it allows the passage of an input signal to the output.
+
+A circuit is disabled when it prevents the passage of an input signal to the output.
+
+![](topic-4-combinational-logic-circuit-analysis-and-simplification-img/Topic%204%20Combinational%20Logic%20circuit%20analysis%20and%20simplification_47.png)
+
+©Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, Digital Systems: Principles and Applications, 12/e

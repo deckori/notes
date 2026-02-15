@@ -1,0 +1,32 @@
+
+![](t4-4-img/voltage-divider-bias-circuit.png){#fig-voltage-divider-bias-circuit align=center width=300 alt="voltage-divider-bias-circuit.png"}
+
+b) Exact approach
+Thevinin Equivalent Circuit
+
+- $R_{th} = R_1||R_2$
+
+![](t4-4-img/r-thevenin.png){#fig-r-thevenin align=center width=300 alt="r-thevenin.png"}
+
+- $V_{th} = V_{R_2} = V_{CC} \times \frac{R_2}{R_1+R_2}$
+
+![](t4-4-img/v-thevenin.png){#fig-v-thevenin align=center width=300 alt="v-thevenin.png"}
+
+![](t4-4-img/thevenin-circuit.png){#fig-thevenin-circuit align=center width=300 alt="thevenin-circuit.png"}
+
+In the B-E loop of @fig-thevenin-circuit:
+
+$$V_{th} - I_B R_{th} - V_{BE} - V_{RE} = 0$$
+
+$$V_{th} - I_B R_{th} - V_{BE} - I_E R_E = 0$$
+
+$$V_{th} - I_B R_{th} - V_{BE} - I_B (1+\beta_{DC}) R_E = 0$$
+
+$$I_B = \frac{V_{th} - V_{BE}}{R_{th} + (1+\beta_{DC}) R_E}$$
+
+
+## Videos
+
+{{< video https://www.youtube.com/watch?v=V1zKogDwXyk >}}
+
+{{< video https://www.youtube.com/watch?v=jPSIQDyKm90 >}}

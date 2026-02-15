@@ -1,0 +1,95 @@
+---
+title: Topic 10. Transport Layer Study Guide – AETN 1102
+---
+
+1. What are the two roles of the Transport Layer? **(4) (S3)**
+  - Logical communications between applications running on different hosts
+  - The link between the application layer and the lower layers
+2. What are the five responsibilities of the Transport layer? **(6) (S4)**
+  - Tracking individual conversations
+  - Segmenting data and reassembling segments
+  - Adding header information
+  - Identifying the applications
+  - Conversation multiplexing
+3. What is the purpose of conversation MULTIPLEXING? **(2) (S4)**
+  - To interleave multiple conversations on the same network
+4. What are the five TCP basic operations to provide reliability and flow control? **(5) (S6)**
+  - Number and track data segments
+  - Sequence data
+  - Acknowledge received data
+  - Retransmit any unacknowledged data
+  - Send data at an efficient rate
+5. Why is TCP a connection-oriented protocol? **(2) (S6)**
+  - Because it must establish a connection between the sender and the receiver
+6. Why is UDP known as a best-effort protocol? **(2) (S7)**
+  - Because it does not provide reliability and flow control
+7. Why is UDP a connectionless protocol? **(2) (S7)**
+  - Because it does not require an established connection
+8. Why is UDP a stateless protocol? **(2) (S7)**
+  - Because it does not track information sent or received
+9. Which layer 4 protocol is good for voice and DNS? **(2) (S8, 15)**
+  - UDP
+10. Why is TCP a stateful protocol? **(2) (S10)**
+  - Because it keeps track of the state of the communication session
+11. What information in the transport layer header identifies the application? **(2) (S10, 14)**
+  - Source and destination port numbers
+12. Give four examples of applications that use TCP. **(4) (S12)**
+  - HTTP
+  - FTP
+  - SMTP
+  - SSH
+13. Give six examples of applications that use UCP. **(4) (S15)**
+  - DHCP
+  - DNS
+  - SMMP
+  - TFTP
+  - VoIP
+  - Video Conferencing
+14. Define the SOCKET and the socket pair. **(4) (S17)**
+  - Socket: IP address + port number
+  - Socket pair: Source socket + destination socket
+15. Write the socket pair for the diagram below. **(4) (S17)**
+  - [](./_page_2_Figure_11.jpeg)
+  - Socket pair: **192.168.1.5:1099, 192.168.1.7:80**
+16. What are the three types of the port number groups? **(8) (S18)**
+  - Registered ports
+  - Well-known Ports
+  - Dynamic or Private ports
+17. A message originates on PC1 and is destined for the **web** server. Fill in the following information. **(4) (S18, 19)**  
+  - Source IP **192.168.1.10**  
+  - Destination IP **192.168.0.254**  
+  - Source Port **Random Number**  
+  - Destination Port **80**
+18. Can ONE server have two or more services assigned to the same port number? Why? **(4) (20)**
+  - No, because there is no way to differentiate between services
+19. Explain the steps of the TCP connection establishment. **(6) (S21)**
+  - Step 1: Client A requests a client-to-server session with the server
+  - Step 2: Server B acknowledges the client-to-server request and requests a server-to-client communication session
+  - Step 3: Client A acknowledges the server-to-client communication session
+20. How is the ordered delivery of segments achieved? **(4) (23)**
+  - By assigning sequence numbers in the header of each segment
+21. What is the purpose of flow control? **(4) (25)**
+  - Adjusts the rate of data flow between source and destination
+22. What information in the segment header is used by the flow control? **(4) (25)**
+  - Number of bytes
+  - Acknowledgment
+23. Explain the window size concept. **(4) (25)**
+  - Number of bytes that:
+    - The destination device can accept and process at one time
+    - Can be sent before an acknowledgment
+    - Modified by the destination at any time depending on the buffer availability
+24. What does network congestion result in? **(2) (S26)**
+  - It results in packets being discarded
+25. Comparison of TCP and UDP
+
+| TCP                                                                       | UDP                                                                    |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Connection orientated                                                    | Connectionless                                                        |
+| Stateful protocol                                                        | Stateless protocol                                                    |
+| Reliable protocol, ensuring that all data arrive at the same destination | Non-reliable protocol Reliability must be handled by the application |
+| More overhead                                                            | Low overhead                                                          |
+| Acknowledgments data                                                     | Does not require acknowledgement                                      |
+| Resends lost data                                                        | Does not resend lost data                                             |
+| Delivers data in sequenced order                                         | Delivers data as it arrives                                           |
+| Tracks transmitted data segments                                         | Fast                                                                  |
+| Better for databases, web browsers, email clients                        | Better for live audio or video streaming, VoIP                        |

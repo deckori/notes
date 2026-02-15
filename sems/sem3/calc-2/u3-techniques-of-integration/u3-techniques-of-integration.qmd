@@ -1,0 +1,715 @@
+---
+title: 3. Techniques Of Integration
+---
+
+## Videos and Site
+
+Overall review:
+
+{{< video https://www.youtube.com/watch?v=vLdwu6nDWqk >}}
+
+## Integration by Parts
+
+### Videos and sites
+
+{{< video https://www.youtube.com/watch?v=sWSLLO3DS1I >}}
+
+[Integration by Parts: LIPET & LIATE](https://www.kristakingmath.com/integration-by-parts)
+
+### Uni notes
+
+So far we have found antiderivatives when the integral is a derivative
+
+$\int 2xe^x dx$
+
+However, we have a problem when. trying to integrate something like
+
+$\int xe^x dx$
+
+This chapter will look at several advanced techniques for integrals that are not derivatives
+
+For a function $f(x)g(x)$ $$\frac{d}{dx}f(x)g(x)=$$
+
+So, going backwards, we know
+
+$$\int f'(x)g(x)+f(x)g'(x)dx=$$
+
+1
+
+![](./images/f6gpTHnccDETYhS7GwR3skQB2VMgEe3A6.png)
+
+This pattern is not very useful to us. However,we can rearrange it:
+
+$$\int\left[f'\left(x\right)g\left(x\right)+f\left(x\right)g'\left(x\right)\right]dx=f\left(x\right)g\left(x\right)+C\\\int\left[f\left(x\right)g'\left(x\right)\right]dx=f\left(x\right)g\left(x\right)-\int\left[f'\left(x\right)g\left(x\right)\right]dx$$
+
+Our new technique is called integration by parts
+
+Often we use substitution to make the formula easier
+
+Integration by parts is like a“product rule for integration”and has the following formula:
+
+$$\int fg'dx=fg-\int f'gdx\quad\mathrm{or}\quad\int udv=uv-\int vdu$$
+
+We generally choose $f(x)$ or $u$ so that it gets simpler when we take
+the derivative of it
+
+<details><summary>Q & A<\summary>
+
+#### E1 Evaluate using Integration by Parts
+
+\begin{align*}
+     &\int udv=uv-\int vdu \\
+     &\int xe^{x}dx \\
+     u = x \to du = dx \\
+     dv = e^x dx \to v = \int e^x dx \\
+     v = e^x [ C ] \\
+     \text{For IBP, we don't need the constant} \\
+     = xe^x - \int e^x dx xe^x - e^x + C \\
+\end{align*}
+
+### E2 Evaluate using Integrationby Parts
+
+$$\int\frac{x}{-2\left(x-1\right)^3}dx$$
+
+### 3 Evaluate the integral.
+
+$$\int\limits_0^\pi x\sin x\:dx$$
+
+<\details>
+
+### HOW TO CHOOSE u AND dv
+
+The most important step of integration by parts is choosing $f$ or $u$
+
+Remember: We want the function to become easier after taking the
+derivative If you struggle to choose. $u$ when expressions get more
+complicated, try this:.
+
+LIPET
+
+4-Exponentials 3-Polynomials 5-Trig
+
+1-Logs
+
+2-lnverse Trig
+
+E3 Given the following expressions, state which function is $f$ or $u$
+and why
+
+Why?
+
+foru
+
+Special Case E4 Find: $\int\ln(x)dx$
+
+### Table Method: Integration by Parts.
+
+#### Videos and sites
+
+{{< video https://www.youtube.com/watch?v=Yyic5aaXGaw >}}
+
+#### Uni Notes
+
+Some integration by parts questions make us repeat the process more than
+once. In these cases it may be useful to organize the parts in a table..
+
+![](./images/fdU7IuuxgtASR0qvzvgrZRZrMIAyDB7lQ.png)
+
+$$\int x^3\cos(x)dx$$
+
+e5 Use the table format of Integration by parts to solve the integral
+$$\int e^{2x}(x^3+2x)dx$$
+
+You can still use the tabular method even if neither column hits zero.
+You need to incorporate "stops."(Stops are specified criteria that allow
+you to continue the process.)First stop:when you hit a zero in one of
+the columns.Second:if you can find the integral of the product of a
+row.Third: if the product of the row is a multiple of the original
+equation.(i.e.positive or negative.)
+
+$$\begin{array}{l}\int x^s\ln(x)dx\\\int e^x\sin(x)dx\end{array}$$
+
+Consider the following:
+
+$$\int x(x-2)^6dx$$
+
+In some cases we can use an extension of u-substitution, algebraic
+substitution, to handle cases like this.
+
+$$\int x(x-2)^6dx$$
+
+## GENERAL PROCEDURE FOR ALGEBRAIC SUBSTITUTION
+
+### Videos and Sites
+
+{{< video https://www.youtube.com/watch?v=rsa3bWRoWro >}}
+
+### Uni notes
+
+1.Choose $u$ as the inside funtion 2. Differentiate it to get $du$ 3.
+Solve your $u$ equation for $x$ . Use this only for the “extra part" 4.
+Substitute everything back into your integral and solve..
+
+Find the integrals using substitution $1\int x{\sqrt{2x-1}}dx$
+
+$$\text{E2}\int\frac{x}{3\left(x+1\right)^{3}}dx\:.$$
+
+$$\text{E3}\int\left(x^2\sqrt{1-x}\right)dx\:.$$
+
+E4 3xx²+4 dx
+
+## Trigonometric Substitution
+
+### Videos and sites
+
+{{< video https://www.youtube.com/watch?v=ocgjfF2AboA >}}
+
+### Uni notes
+
+Consider the following function:
+
+$$\int\frac{1}{\sqrt{1-x^2}}dx$$
+
+Trig substitution lets us get rid of the square root in our expressions.The technique comes from the Pythagorean Theorem:
+
+$$\sin^2\theta+\cos^2\theta=1\quad\tan^2\theta+1=\sec^2\theta $$
+
+We can rewrite them as:
+
+\begin{align*}
+  1 - \sin^2 \theta = cos^2 \theta a^2(1 - \sin^2 \theta) = a^2(cos^2 \theta) a^2 - (a \sin \theta)^2 = (a cos \theta)^2 \\
+  1 + \tan^2 \theta = \sec^2 \theta a^2(1 + \tan^2 \theta) = a^2(\sec^2 \theta) a^2 + (a \tan \theta)^2 = (a \sec \theta)^2
+  \sec^2 \theta - 1 = \tan^2 \theta a^2(\sec^2 \theta - 1) = a^2(\tan^2 \theta) (a \sec \theta)^2 - a^2 = (a \tan \theta)^2 \\
+\end{align*}
+
+Let:
+
+If we use the appropriate substitution our radical will disappear:
+$$\int\frac{1}{\sqrt{1-x^2}}dx$$
+
+Trigonometric substitution is used when we see a sum or difference of squares in a radical
+
+Let $x=a\sin\theta$
+
+Let x=asec\theta
+
+Let x=atan\theta
+
+Then x²-a²=(atan \theta) Then a + x2 = (asec 0) Then
+$a^{2}-x^{2}=(a\cos\theta)^{2}$
+
+These substitutions help us remove the radical and make the integration
+easy
+
+### Recognizing the trig substitution
+
+E1 Decide which trigonometric substitution you would use for each
+problem and rewrite the integral.
+$$\text{b)}\int\frac{2}{\sqrt{4-x^2}}dx$$
+
+a) $\int\frac{dx}{\sqrt{25+x^2}}$
+
+Note:A complete substitution should leave only \theta in the integral, no x.
+
+The radical should disappear, if the substitution is done correctly.
+
+$$\int\frac{1}{x\sqrt{x^{2}-36}}dx$$
+
+\begin{align*}
+	\int\frac{1}{x^{2}\sqrt{3-x^{2}}}dx       \\
+	\alpha^2 = 3 \implies \alpha = \sqrt{3}   \\
+	x  & =\sqrt{3} \sin \theta                \\
+	dx & = \sqrt{3} \cos \theta \cdot d\theta \\
+\end{align*}
+
+$$\int\frac{1}{x^{2}\sqrt{3-x^{2}}}dx$$
+
+\begin{align*}
+	\int\frac{1}{{(\sqrt{3} \sin \theta)}^2 \sqrt{3-{(\sqrt{3} \sin \theta)}^{2}}} \sqrt{3} \cos \theta \cdot d\theta
+	            & = \int
+	\frac{\cancel{ \sqrt{3} \cos \theta }}{
+		3 \sin^2 \theta \cdot \cancel{ \sqrt{3} \cos \theta }
+	} d\theta                                                  \\
+	= \frac{1}{3} \int \frac{1}{\sin^2 \theta}                 \\
+	            & = \frac{1}{3} \int \csc^2 \theta d\theta     \\
+	            & = \frac{1}{3} \cot \theta + C                \\
+	\sin \theta & = \frac{x}{\sqrt{3}}
+	            & = \mathrm{\frac{Opposite\ side}{Hypotenuse}} \\
+	\cos \theta & = \frac{\sqrt{3-x^2}}{\sqrt{3}}              \\
+	\cot \theta & = \frac{\cos\theta}{\sin\theta}              \\
+	            & = \frac{
+		\frac{\sqrt{3-x^2}}{\sqrt{3}}
+	}{
+		\frac{x}{\sqrt{3}}
+	}                                                          \\
+	            & = \frac{\sqrt{3-x^2}}{x}                     \\
+	            & = -\frac{1}{3} \cdot
+\end{align*}
+
+### Solving Trig Substitution Integrals
+
+After making a substitution and eliminating the radical:
+$$\int\frac{1}{\sqrt{1-x^2}}dx$$
+
+We need to return to the original variable, x
+
+This requires manipulating the original substitution.
+
+Complete the following integrations
+
+E2 $\int\frac{1}{4+x^2}dx$
+
+\begin{align*}
+	\int\frac{1}{4+x^2}dx &                       \\
+	\alpha^2 + x^2                                \\
+	                      & \implies \alpha^2 = 4 \\
+	                      & \implies \alpha = 2   \\
+	x = 2 \tan \theta                             \\
+	                      & \implies \tan \theta  \\
+	                      & = \frac{x}{2}         \\
+\end{align*}
+
+
+$$\cdot\int\frac{2}{x\sqrt{x^{2}-36}}dx$$
+
+More complicated integrations are not so easy to return to the original
+variable
+
+$$\int\frac{1}{x^2\sqrt{25-x^2}}dx$$
+
+We need to return to the. original variable, x.
+
+This requires manipulating the original substitution.
+
+Remember: When assessing a Definite Integral using substitution, we must
+return to the original variable before substituting the bounds
+
+### Evaluate the following integrals using the appropriate trig substitution
+
+E4
+
+$$\int\frac{\sqrt{x^{2}-25}}{x}dx\:x\geq5$$
+
+\begin{align*}
+  \int\frac{\sqrt{x^{2}-25}}{x}dx \quad x\geq5 \\
+  x^2 - \alpha^2 & \\
+                 &\implies \alpha = 5 \\
+  x = 5 \sec \theta \\
+  dx = 5 \sec\theta \cdot \tan\theta d\theta \\
+  \int\frac{\sqrt{5 \sec \theta^{2}-25}}{5 \sec \theta} & 5 \sec\theta \cdot \tan\theta d\theta \\
+                                                        & = \int \frac{5 \tan\theta}{5} \cdot \tan\theta d\theta \\
+                                                        & = 5 \int \tan^2 \theta d\theta \\
+                                                        & = 5 \int [\sec^2 \theta -1] d\theta \\
+                                                        & = 5\tan\theta - 5 \theta + C \\
+  \cos \theta = \frac{5}{x} \\
+  \tan \theta = \frac{\sqrt{x^{2}-25}}{5} \\
+                                                        & = 5 \frac{\sqrt{x^{2}-25}}{5} - 5 \sec^{\frac{x}{5}} + C \\
+\end{align*}
+
+$${\textrm{s}}\int{\frac{1}{\sqrt{x^{2}+1}}}dx$$
+
+## Partial Fractions
+
+### Videos and sites
+
+{{< video https://www.youtube.com/watch?v=6rXByMcuAyI >}}
+
+### Uni notes
+
+Consider $\int\frac{7-x}{x^2+x-2}dx$
+
+> Structure:
+>
+> $\frac{Q(x)}{f(x)}$
+> $degree(f(x)) > degree(Q(x))$
+
+We can rewrite the integrand using the denominator's factors with the
+Partial Fractions method.
+
+### PARTIAL FRACTIONS FOR NON-REPEATED LINEAR FACTORS
+
+If the denominator of an expression can be factored we can use partial
+fractions
+
+$$\frac{numerator}{(factor\:1)(factor\:2)}=\frac{A}{(factor\:1)}+\frac{B}{(factor\:2)}$$
+
+Factor the following expression then integrate it using partial
+fractions.
+
+$$\int\frac{7-x}{x^2+x-2}dx$$
+
+\begin{align*}
+	\int\frac{7-x}{x^2+x-2}dx &                                 \\
+	\frac{7-x}{x^2+x-2}       & \implies                        \\
+	\frac{7-x}{(x-1)(x+2)}    & = \frac{A}{x-1} + \frac{B}{x+2} \\
+	\text{multiply both sides with } (x-1)(x+2)                 \\
+	7 - x = A(x+2) + B(x-1)                                     \\
+	\text{Long way:}                                            \\
+	7 - x = Ax + A2 + Bx - B                                    \\
+	\implies 7 -x - Ax - A2 - Bx + B = 0                        \\
+	x[-1-A-B]+7+2A-B = 0                                        \\
+\end{align*}
+
+Shortcut: choose a value for x that eliminates one of the terms. Then find the remaining term. Then repeat the process for the other term
+
+For A:
+
+\begin{align*}
+	x=1 \implies 7-1 = A(1+2) \\
+	6 = 3A \implies A =2      \\
+\end{align*}
+
+For B:
+
+x = -2
+
+
+### GENERAL PROCEDURE FOR PARTIAL FRACTIONS
+
+1. Factor the denominator 2. Set up partial fractions 3. Eliminate
+    fractions by multiplying though (or using common denominator) 4.
+    Solve for your constants (A, B, etc...) 5. Integrate your new,
+    simplified expression
+
+Use partial fractions to find the following integrals
+
+E $\int\frac{3x+11}{(x-3)(x+2)}dx\:.$
+
+E2 $\int\frac{x}{x^2+2x-3}dx$
+
+In the previous examples we had a denominator with factors that were
+linear terms. In fact they are non- repeating factors
+
+$$\frac{7-x}{x^2+x-2}$$
+
+Has factors
+
+$$\frac{A}{\left(x+2\right)}+\frac{B}{\left(x-1\right)}$$
+
+So ourpartial fraction has the form,
+
+### PARTIAL FRACTIONS FOR REPEATED LINEAR FACTORS
+
+If the denominator of an expression can be factored we can use partial
+fractions
+
+$$\frac{numerator}{\left(factor\right)^2}=\frac{A}{\left(factor\right)}+\frac{B}{\left(factor\right)^2}$$
+
+$$\frac{numerator}{\left(factor\right)^2}=\frac{A}{\left(factor\right)}+\frac{B}{\left(factor\right)^2}+\frac{C}{\left(factor\right)^3}+\frac{D}{\left(factor\right)^4}$$
+
+### Repeated Linear Factors
+
+This denominator has a mix of non-repeating and repeating factors
+
+$$\frac{1}{x(x+3)^2}$$
+
+\begin{align*}
+	\frac{1}{x(x+3)^2} = \frac{A}{x} + \frac{B}{x+3} + \frac{C}{( x+3 )^2}     \\
+	\begin{matrix}
+		x = 0           & x = -3           & x = -2                                \\
+		\bot = 9A       & \bot = -3C       & \bot = A-2B-2C                        \\
+		A = \frac{1}{3} & C = -\frac{1}{3} & \bot = \frac{1}{9} -2{B} +\frac{2}{3} \\
+	\end{matrix} \\
+	2B = \frac{1}{g}
+\end{align*}
+
+{18}-----------
+
+Has factors
+
+So our partial fraction has the form,
+
+Find the following integrals: B $\int\frac{dx}{x\left(x+3\right)^2}$
+
+E4
+
+$$\int\frac{3x^2+24x+37}{\left(x-1\right)\left(x+3\right)^2}dx$$
+
+\begin{align*}
+	\int\frac{3x^2+24x+37}{\left(x-1\right)\left(x+3\right)^2}dx                       \\
+	\int\frac{3x^2+24x+37}{
+		\left(x-1\right)\left(x+3\right)^2
+	}dx &                                                                              \\
+	    & = \int \left( \frac{A}{x-1} + \frac{B}{x+3} + \frac{C}{( x+3 )^2} \right) dx \\
+	    & = A \ln | x-1 | + B \ln | x+3 | + C \ln |x+3| + c                            \\
+\end{align*}
+
+### Note:
+
+Fractions where the degree of the numerator is greater than or equal to
+the degree of the denominator are called improper or "top-heavy”
+fractions.These types of questions would require long division to reduce
+the exponent before applying the method of partial fractions Examples of
+improper fractions:
+
+$$\frac{9x^2+20x-10}{(x+2)(3x-1)}\frac{2\left(4x^2+1\right)}{(2x+1)(2x-1)}\frac{2x^3+3x^2-2}{(x+2)(x-1)}\frac{x^3-x^2-16x-13}{x^2-3x-10}$$
+
+{19}--------
+
+### NON-REPEATED Quadratic Factors
+
+> When we look at factors that cant be solved with real numbers, we would likely have to use trigonometric substitution
+
+The above concepts also canbe applied where thefactors in the
+denominatorare irreducible quadratics.
+
+This works when Which will have $$\int\frac{f(x)}{g(x)}dx$$ we have the
+Partial Fractions $$\frac{Ax+B}{g(x)}$$ of theform form:
+
+Find the indefite integral of $\int\frac{4x+4}{x^3+4x}dx$
+
+$$\begin{gathered}
+\frac{4x+4}{x^{3}+4x} =\frac{4x+4}{x\Big(x^{2}+4\Big)}=\frac{A}{x}+\frac{Bx+C}{\Big(x^{2}+4\Big)} \\
+4x+4 =A\Big(x^{2}+4\Big)+Bx^{2}+Cx 
+\end{gathered}$$
+
+$$\begin{aligned}&If\:x=0:\:4=A(4)\:\Rightarrow\:A=\boxed{1}\\&If\:x=1:\quad3=B+C\\&If\:x=-1:\:-5=B-C\end{aligned}$$
+
+$$\begin{bmatrix}1&1\\1&-1\end{bmatrix}\begin{bmatrix}B\\C\end{bmatrix}=\begin{bmatrix}3\\-5\end{bmatrix}\\B=-1,\:C=4$$
+
+Therefore,
+
+$$\begin{aligned}
+\int{\frac{4x+4}{x^{3}+4x}}dx& =\int\frac{1}{x}-\frac{x-4}{\left(x^{2}+4\right)}dx  \\
+&=\int\frac{1}{x}-\frac{x}{\left(x^{2}+4\right)}+4\frac{1}{4\left(\left(\frac{x}{2}\right)^{2}+1\right)}dx \\
+&=\ln\left(x\right)-\frac12\ln\left(x^{2}+4\right)+2\tan^{-1}\left(\frac x2\right)+C
+\end{aligned}$$
+
+### Repeated quadratic factors
+
+In the case of repeated quadratic factors in the denominator we apply a
+similar technique as case B.Keep in mind that the numerators of the
+partial fractions have to have a lower degree than the denominator. This
+means that the numerator can possibly be linear expressions.
+
+So for example,
+
+$$\frac{5}{\left(x+1\right)\left(x^2+2x+3\right)^2}=\frac{A}{\left(x+1\right)}+\frac{B_1x+C_1}{\left(x^2+2x+3\right)}+\frac{B_2x+C_2}{\left(x^2+2x+3\right)^2}\:.$$
+
+As before, the task then becomes determining all of the constants
+
+$$\begin{aligned}
+& 7{:}\:\mathrm{Find~the~indefinite~integral~of}\:\int\:\frac{2r^{3}}{\left(r^{2}+1\right)^{2}}dr\:.  \\
+&\frac{2}{(r^2}& \text{10000} & \frac{r^{*}}{+1)^{2}}=\frac{Ar+B}{\left(r^{2}+1\right)}+\frac{Cr+D}{\left(r^{2}+1\right)^{2}}\quad2r^{3}=Ar^{3}+Br^{2}+\left(A+C\right)r+\left(B+D\right) & \text{-}  \\
+&&&2r^{3}& \text{一} && =\left(Ar+B\right)\left(r^{2}+1\right)+Cr+D\quad Equating\:Coefficients && \text{:}  \\
+&&&\text{A 3} ^{2r}  2r^{\circ} & =Ar^{3}+Ar+Br^{2}+B+Cr+D && =Ar^{3}+Br^{2}+\left(A+C\right)r+\left(B+D\right) && 4+C=0\quad B+D=0 && A=\boxed{2}\quad B=\boxed{0}  \\
+&&C={\boxed{-2}}\quad D={\boxed{0}}
+\end{aligned}$$
+
+Therefore,
+
+$$\begin{aligned}
+\int\frac{2r^{3}}{\left(r^{2}+1\right)^{2}}dr& =\int\frac{2r}{\left(r^{2}+1\right)}-\frac{2r}{\left(r^{2}+1\right)^{2}}dr  \\
+&=\int\frac{1}{\left(r^{2}+1\right)}-\frac{1}{\left(r^{2}+1\right)^{2}}\left(2rdr\right),\:let\:u=r^{2}+1,\:du=2rdr \\
+&=\int\frac{1}{u}-\frac{1}{u^{2}}du \\
+&=\ln\left(r^{2}+1\right)+\frac{1}{\left(r^{2}+1\right)}+C
+\end{aligned}$$
+
+## Improper Integrals
+
+### Definition 1: Improper integrals of Type I
+
+#### Videos and sites
+
+{{< video https://www.youtube.com/watch?v=45YcoKNRa-Y >}}
+
+Organic chemistry tutor (incomplete, watch the other guy's videos):
+
+{{< video https://www.youtube.com/watch?v=ND9cEdfCFr0 >}}
+
+#### Uni notes
+
+Integrals of continuous functions with either one or both of the limits
+of integration are infinite are called improper integrals of Type I.
+
+1. If $f(x)$ is continuous on \[a,o), then we define the improper
+    integral $\int_a^\infty f(x)dx$ tobe
+
+$$\boxed{\int_a^\infty f(x)\:dx=\lim\limits_{R\to\infty}\int_a^Rf(x)\:dx.}$$
+
+2.If $f(x)$ is continuous on $(-\infty,b]$ , then we define the improper
+integral $\int_{-\infty}^bf(x)dx$ tobe
+
+$$\boxed{\int_{-\infty}^af(x)\:dx=\lim\limits_{R\to-\infty}\int_R^af(x)\:dx.}$$
+
+In either case,if the limit exists and equals some value L,we say that
+the improperintegral converges to L. If the limit does not exist, we say
+that the improper integral diverges
+
+Ex.: Determine whether the following improper integrals converge or
+diverge
+
+a) $\int_{1}^{\infty}\frac{1}{\sqrt{x}}dx$
+
+a) $\int_{-\infty}^{-1}\frac{1}{x}dx$
+
+<!-- -->
+
+A) $\int_0^\infty e^{-x}\:dx$
+
+<!-- -->
+
+a) $\int_{-\infty}^0xe^x\:dx$
+
+### L'Hopital's Rule Suppose $\lim_{x\to a}\frac{f\left(x\right)}{g\left(x\right)}=\frac{0}{0}$ or $\lim_{x\to a}\frac{f\left(x\right)}{g\left(x\right)}=\frac{\pm\infty}{\pm\infty}$
+
+Where $a$ can be any real number, infinity or negative infinity. In
+these cases we have.
+$$\lim_{x\to a}\frac{f\left(x\right)}{g\left(x\right)}=\lim_{x\to a}\frac{f\left(x\right)}{g\left(x\right)}$$
+
+Note: Sometimes you need to apply L'Hopital's Rule more than once.
+
+3.If $f(x)$ is continuous on $(-\infty,\infty)$ , then we define the
+improper integral. $\int_{-\infty}^{\infty}f(x)dx$ tobe
+
+![](./images/fQEbYWN5SqVQw4EUDL7Qt1Z4NsfugPRMo.png)
+
+This improper integral $\int_{-\infty}^{\infty}f(x)dx$ converges if and
+only if both $\int_{-\infty}^{c}f(x)dx$ and $\int_c^\infty f(x)dx$
+converge. If either one diverges, then the original improper integral
+$\int_{-\infty}^{\infty}f(x)dx$ also diverges
+
+Ex:Determine whether each of the following improper integrals converge
+or diverge.
+
+a) $\int_{-\infty}^{\infty}xe^{-x^2}\:dx$
+
+$<smiles>[24]C(=[2]O)(-[1](-[7](-[1](-[7](-[1](-[7](-[1](-[7](-[1]))))))))))</smiles>$
+
+### Definition 2: Improper integrals of Type II
+
+#### Videos and sites
+
+{{< video https://www.youtube.com/watch?v=w46sjRIkV7Y >}}
+
+#### Uni notes
+
+Integrals of discontinuous functions that become infinite at a point
+within the interval of integration. (Infinite discontinuity i.e.
+vertical asymptote lies in the interval of integration) are called
+improper integrals of Type li.
+
+Examples:
+
+a) 
+
+![](./images/fUImHUs0NhLOTQ7MHpyegrKATgLi8A4Nl.png)
+
+This is not a proper definite integral Since when $x=0$ , the integrand
+$\frac{1}{x^2}$ is not definec
+
+![](./images/fQpW7gHxbcfZPVqK49VuqGA15yavIyAMK.png)
+
+a) 
+
+$$\int_0^1\frac{1}{\sqrt{1-x}}\:dx.$$
+
+This is not a proper definite integral as the integrand is undefined at
+$x=1$
+
+![](./images/fzEKKNAWDiFRIKwgoprl6xnkILGpyZWQm.png)
+
+1. If $f(x)$ is continuous on (a, b\] and discontinuous at a (i.e
+    $|f\left(x\right)|\to\infty$ as $x\to a^{+}$ ), then we. define the
+    improper integral $\int_a^bf(x)dx$ to be:
+
+![](./images/fcBT8XgF7xO2FZh3YfZzDL8VrIPGHZzfn.png)
+
+1. If $f(x)$ is continuous on \[a, $b$ ) and discontinuous at $b$ (i.e
+    $|f\left(x\right)|\to\infty$ as $x\to b^{-}$ ), then we. define the
+    improper integral $\int_a^bf(x)dx$ to be:
+
+$$\boxed{\int_a^bf(x)\:dx=\lim\limits_{R\to b^-}\int_a^Rf(x)\:dx.}$$
+
+In either case 1 or 2, if the limit exists (and equals some value $L$ ),
+we say that the impropel integral converges (to $L$ ). If the limit does
+not exist,we say that the improper integral diverges
+
+3.If $f(x)$ is continuous on \[a, $b]$ except atsome $c\in(a,b)$ (i.e
+$|f\left(x\right)|\to\infty$ as $x\to c$, ,thenwe define the improper
+integral $\int_a^bf(x)dx$ to be:
+
+![](./images/fIrIi9htpl2yzTFvmbNlH2rXQvpvulVOn.png)
+
+If both $\int_a^cf(x)dx$ and $\int_c^bf(x)dx$ converge (to $L_{1}$ and
+$L_{2}$ , respectively), we say that the improper integral
+$\int_a^bf(x)dx$ converges, also (to $L_{1}+L_{2}$
+
+If either of the improper integrals $\int_a^cf(x)dx$ or $\int_c^bf(x)dx$
+diverges, then we say that the improper integral $\int_a^bf(x)dx$
+diverges, also.
+
+Ex. Determine whether the following improper integrals converge or
+diverge.
+
+$$\int_{0}^{1}\frac{1}{\sqrt{1-x}}dx$$
+
+a) $\int_0^1\frac{1}{\sqrt{x}}dx$
+
+<!-- -->
+
+A) $\int_{-1}^{0}\frac{1}{x^{2}}dx$
+
+\begin{align*}
+  \lim_{W \to 0^-} \int_{-1}^W \frac{1}{x^2} dx & \\
+                                                & = \lim_{W \to 0^-} \frac{}
+\end{align*}
+
+a) $$\int_{-1}^2\frac{1}{x^2}dx$$
+
+\begin{align*}
+	\int_{-1}^2\frac{1}{x^2}dx & , \quad \text{Discontinuity at 0} \\
+	\int
+\end{align*}
+
+
+### e) $\int_{0}^{2}\frac{2x}{x^{2}-4}dx$
+
+![](./images/f00qR61OpXfUvp7OnAFBgWPD1NRSrSCBy.png)
+
+$$)\:\int_{0}^{3}\frac{1}{\left(x-1\right)^{2/3}}dx$$
+
+### Comparison Test
+
+Suppose that $f$ and $g$ are continuous on \[a,) and
+$0\leq f\left(x\right)\leq g(x)$ ,for all $x\in[a,\infty)$
+
+(i) If $\int_{a}^{\infty}g(x)\:dx$ converges, thene
+    $\int_{a}^{\infty}f(x)\:dx$ converges, also. (i If
+    $\int_{a}^{\infty}f(x)\:dx$ diverges, then
+    $\int_{a}^{\infty}g\left(x\right)dx$ diverges, also.
+
+The idea of the Comparison Test is to compare a given improper integral
+to another. improper integral whose convergence or divergence is already
+known (or can be more. easily determined).
+
+The gist:If you're smaller than something that converges, thenyou
+converge.
+
+If you're bigger than something that diverges, then you diverge.
+
+Ex.Determine whether the following integrals converge or diverge( Use
+the comparison test)
+
+a) $\int_{0}^{\infty}\frac{1}{x+e^{x}}dx\:/(\mathbf{x}\geq0)$
+
+\begin{align*}
+  \int_{0}^{\infty}\frac{1}{x+e^{x}}dx\:/(\mathbf{x}\geq0) \\
+  \frac{1}{x+e^x} \leq \frac{1}{e^x} \\
+  \int_0^\infty \frac{1}{e^x} dx & \\
+                                 & = \int_0^\infty e^{-x} dx \\
+                                 & = 1 \\
+\end{align*}
+
+So due to the comparison test, $\int_0^\infty \frac{1}{e^x} dx$ converges as well
+
+a) $\int_{1}^{\infty}e^{-x^{2}}\:dx$
+
+\begin{align*}
+	\int_{1}^{\infty}e^{-x^{2}}\:dx & \\
+  \text{Compare } e^{-x} \text{ and } e^{-2x} \\
+\end{align*}
+
+a) $\int_{1}^{\infty}\frac{2+\sin\left(x\right)}{\sqrt{x}}dx$
+
+a) $\int_{1}^{\infty}\frac{sin^{2}(x)}{x^{2}}dx$

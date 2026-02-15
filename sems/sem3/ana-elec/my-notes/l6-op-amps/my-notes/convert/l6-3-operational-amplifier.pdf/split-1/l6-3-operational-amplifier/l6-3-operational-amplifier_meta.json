@@ -1,0 +1,353 @@
+{
+  "table_of_contents": [
+    {
+      "title": "AETN 2101-ANALOG ELECTRONICS",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.27099609375,
+          159.78515625
+        ],
+        [
+          650.0675048828125,
+          159.78515625
+        ],
+        [
+          650.0675048828125,
+          200.684326171875
+        ],
+        [
+          70.27099609375,
+          200.684326171875
+        ]
+      ]
+    },
+    {
+      "title": "Learning Objectives:",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          28.602001190185547,
+          34.8046875
+        ],
+        [
+          328.51202392578125,
+          34.8046875
+        ],
+        [
+          328.51202392578125,
+          65.59994506835938
+        ],
+        [
+          28.602001190185547,
+          65.59994506835938
+        ]
+      ]
+    },
+    {
+      "title": "OP-AMP as Comparator",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          76.5662841796875
+        ],
+        [
+          56.25,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "OP-AMP as Comparator",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          56.953125,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          76.5662841796875
+        ],
+        [
+          56.953125,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "OP-AMP as Comparator",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          56.953125,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          76.5662841796875
+        ],
+        [
+          56.953125,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "OP-AMP as Comparator",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          56.953125,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          45.753265380859375
+        ],
+        [
+          385.880615234375,
+          76.5662841796875
+        ],
+        [
+          56.953125,
+          76.5662841796875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          9
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          9
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          27
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          19
+        ],
+        [
+          "Line",
+          6
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          3
+        ],
+        [
+          "Line",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          13
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/l6-3-operational-amplifier"
+}

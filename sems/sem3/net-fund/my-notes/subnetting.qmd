@@ -1,0 +1,20 @@
+- If I have a number of networks, then i need to design a system of subnets that is the same number as the number of networks
+- Number of networks = Number of subnets
+- ISP is represented by a router
+- Anything we don't know the details about, we represent by a cloud
+  - This can be an ISP, the internet, etc.
+
+## Determining the network
+
+- Convert the given ip address and subnet mask to binary form
+- Do a bit by bit AND operation to find the network address
+  - Any octet of 255_{10} subnet mask, the octet is the same at the end and so can be ignored
+  - Any octet that is not 255, that's what we concern ourselves with (basically any octet that a 0 in the )
+- Change the host bits of the network address to ones to find the broadcast address
+- First host address is found by adding 1 to the network address
+- Last host address is found by subtracting 1 from the broadcast address
+
+More bits for the subnet, more bits for the host
+
+Whenever we talk about the number of hosts, we subtract 2 from the end result
+- Whenver we are talking about the number of subnets, we do not subtract anything

@@ -1,0 +1,23 @@
+| Number | Name                                         | Finished |  Notes   | Practice Book | Other Materials |
+| :----: | -------------------------------------------- | :------: | :------: | :-----------: | :-------------: |
+|  1.0   | Semiconductors                               | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  2.0   | Diode                                        | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  3.1   | Diode Circuits Analysis                      | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  3.2   | Diode Circuits Analysis                      | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  3.3   | Zener Diode                                  | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  4.1   | Bipolar Junction Transistor                  | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  4.2   | Bipolar Junction Transistor Circuit Analysis | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  4.3   | Dc Biasing Bjt                               | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  4.4   | Dc Biasing Bjt Ii                            | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  4.5   | Bjt Amplifier                                | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  4.6   | Multistage Amplifier                         | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  4.7   | Bjt A C Analysis                             | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  5.1   | Fets                                         | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  5.2   | Fet Biasing                                  | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|  6.1   | Operational Amplifier                        | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  6.2   | Operational Amplifier                        | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+|  6.3   | Operational Amplifier                        | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+
+Darlington Pair
+Darlington Pair Worksheet
+End Of Transistor Biasing Problems

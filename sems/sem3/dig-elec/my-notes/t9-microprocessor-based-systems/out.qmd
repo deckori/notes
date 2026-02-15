@@ -1,0 +1,151 @@
+---
+title: "9. Microprocessor Based Systems"
+---
+
+# Objectives:
+
+By the end of this topic, students will be able to:
+
+Understand the basic building blocks of a microprocessor system
+
+Explain the function of each part
+
+Describe digital Input / Output operating principles in the microprocessor system
+
+Relate microprocessor parts to real applications, such as how a washing machine uses inputs, outputs, CPU, ALU, and memory to run its cycle.
+
+Differentiate between high-level languages, assembly language, and machine language.
+
+# What Are Microprocessor Based Systems?
+
+- Microprocessor
+  - Central unit of a computer system
+  - Responsible for performing calculations, executing instructions, and managing data
+  - It contains the CPU on a single chip
+  - Designed for high-performance tasks that require fast processing and large memory
+  - Commonly used in computers, laptops, and advanced electronic systems where complex operations and multitasking are needed
+- We will concentrate on Programmable Logic Controllers (PLC) which are used in industrial settings to control processes or equipment
+
+# Functional Blocks of a Microprocessor Based System
+
+A PLC has five main blocks:
+
+Inputs: to connect to the field process
+
+Outputs: to connect to the field process
+
+Central Processing Unit: (with memory) to provide the control function
+
+Power Supply: to provide power to the various blocks
+
+Programming Device or Human Machine Interface (HMI): to program and operate the PLC
+
+![](img/t9-microprocessor-based-systems_0.png)
+
+> Optical isolation means that the surroundings of the isolation is connected via optical circuits
+
+![](img/t9-microprocessor-based-systems_1.png)
+
+# Input & Output Forms – Why Isolation and Conversion?
+
+Input Port:
+
+- Isolation: Protects the CPU from high voltage and electrical noise coming from sensors.
+- Conversion: Converts real-world signals (analog/high voltage) into clean digital signals the CPU can read.
+
+Output Port:
+
+- Isolation: Protects the CPU from back-EMF and spikes from motors, relays, and other loads.
+- Conversion: Converts the CPU’s small digital signal into the proper voltage/current needed to drive real devices.
+
+![](img/t9-microprocessor-based-systems_2.png)
+
+# CPU, ALU, and Memory
+
+CPU(CentralProcessingUnit):The brainofthesystem.Itexecutesinstructions,controlsoperations,andmanagesdataflowbetweenallparts.
+
+ALU(ArithmeticLogicUnit):AcorepartoftheCPUthatperformsallarithmeticoperations(add,subtract)andlogicaloperations(AND,OR,NOT).
+
+Memory:StorestheprograminstructionsandthedatatheCPUneedswhileexecutingtasks.–Includespermanentstorage(ROM)fortheprogram–Andtemporarystorage(RAM)forcalculationsandvariables
+
+![](img/t9-microprocessor-based-systems_3.png)
+
+# Real World Application
+
+How do you think the washing machine uses its microprocessor parts (CPU, ALU, CU, RAM, ROM)?
+
+Where do you think the inputs come from and what outputs does it control?
+
+Discuss which real components in the washing machine match each microprocessor block.
+
+# Inputs & Outputs in the Washing Machine
+
+Inputs (Sensors & User Signals):
+
+Water level sensor
+
+Temperature sensor
+
+Door lock sensor
+
+User buttons / control panel
+
+Outputs(ControlledDevices):
+
+Water valve (fill water)
+
+Heater (heat water)
+
+Drum motor (wash & spin)
+
+Drain pump (remove water)
+
+Display / indicators
+
+# CPU, ALU, CU, and Memory
+
+CPU(CentralProcessingUnit):
+
+Executes the washing program and controls the full sequence.
+
+- ALU (Arithmetic Logic Unit):
+  - Compares sensor values (water level, temperature)
+  - Calculates timing and cycle operations
+- CU (Control Unit): 
+  - Sends control signals to outputs
+  - Ensures correct order (fill → heat → wash → drain)
+-  Memory: 
+  - ROM : stores permanent wash programs and firmware
+  - RAM : holds temporary sensor values, timers, and current cycle step
+
+# Programming Languages
+
+A processor can only understand machine language (0s and 1s), so any program written in another language must be translated for the processor to execute it.
+
+1- High-Level Languages
+
+- C++, Python, Java.Easy for humans, but must be compiled/interpreted into machine code.
+
+2- Assembly Language
+
+- Closer to hardware and easier than binary.An assembler converts it to machine code.
+- Reduced, very limited vocabular
+- Simple words only
+
+3- Machine Language 
+
+- The processor’s native binary code(0s and 1s that the CPU executes directly).
+
+# Microprocessor Vs Microcontroller
+
+You may have heard about microprocessors and microcontrollers, and while they sound similar, they are not the same. Each one is designed for a different purpose, and knowing the difference helps you choose the right device for your system.
+
+|   Comparison   |        Microprocessor         |    Microcontroller    |
+| :------------: | :---------------------------: | :-------------------: |
+| Chip contents  |           CPU only            | CPU + RAM + ROM + I/O |
+| External parts | Needs external memory and I/O |    Mostly built-in    |
+|      Use       |     Complex systems (PCs)     |   Embedded systems    |
+|     Speed      |             High              |        Medium         |
+|     Power      |             High              |          Low          |
+|      Cost      |             High              |          Low          |
+

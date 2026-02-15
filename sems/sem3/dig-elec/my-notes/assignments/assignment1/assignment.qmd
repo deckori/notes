@@ -1,0 +1,283 @@
+---
+title: "Assignment 1"
+---
+
+## Part-A
+
+##### 1-5.
+
+(a) Door_open
+(b) Daylight_detect
+(c) Passenger_seated
+(d) Temperature_high
+
+##### 1-12.
+
+| Analog | Digital |
+|-|-|
+| (a) Width of a piece of lumber | (c) The time of day displayed on aquartz watch |
+| (b) The amount of time before the oven buzzer goes off |  (d) Elevation neasured by counting steps on a staircase |
+| (e) Elevation measured by a point on a ramp |
+
+##### 1-13.
+
+###### (b)
+
+$$
+\begin{matrix}
+3 & 2 & 1 & 0 & . & -1 & -2 & -3 & -4 \\
+1 & 0 & 0 & 1 & . & 1 & 0 & 0 & 1\\
+\end{matrix}
+$$
+
+\begin{align*}
+  1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0 + 1 * 2^{ -1 } + 0 * 2^{ -2 } + 0 * 2^{-3} + 1 * 2^{-4} \\
+= ( 9.5625 )_{ 10 } \\
+\end{align*}
+
+##### 3-1
+
+###### (a) Figure 1
+
+![](assignment-img/3-1-a.png){#fig-3-1-a align=center width=300 alt="3-1-a.png"}
+
+###### (b) Figure 2
+
+
+![](assignment-img/3-1-b.png){#fig-3-1-b align=center width=300 alt="3-1-b.png"}
+
+###### (c) Figure 3
+
+C will always be high
+
+![](assignment-img/3-1-c.png){#fig-3-1-c align=center width=300 alt="3-1-c.png"}
+
+{{< pagebreak >}}
+
+##### 3-12
+
+###### (b)
+
+$x = (\overline{A} \cdot \overline{B} \cdot \overline{C}) + (A \cdot \overline{B} \cdot \overline{C}) + (\overline{A} \cdot \overline{B} \cdot D$
+
+| $A$ | $B$ | $C$ | $D$ | $\overline{A}$ | $\overline{B}$ | $\overline{C}$ | $\overline{A}\cdot\overline{B}\cdot\overline{C}$ | $A\cdot\overline{B}\cdot\overline{C}$ | $\overline{A}\cdot\overline{B}\cdot D$ | $x$ |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 1 |
+| 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 |
+| 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+{{< pagebreak >}}
+
+##### 3-17
+
+###### (a) @fig-3-17-a
+
+![](assignment-img/3-17-a.png){#fig-3-17-a align=center width=300 alt="3-17-a.png"}
+
+###### (b) @fig-3-17-b
+
+![](assignment-img/3-17-b.png){#fig-3-17-b align=center width=300 alt="3-17-b.png"}
+
+###### (c) @fig-3-17-c
+
+![](assignment-img/3-17-c.png){#fig-3-17-c align=center width=300 alt="3-17-c.png"}
+
+{{< pagebreak >}}
+
+##### 2-1.
+
+###### (e)
+
+$$
+\begin{matrix}
+7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+\end{matrix}
+$$
+
+\begin{align*}
+1 \cdot 2^7 + 1 \cdot 2^6 + 1 \cdot 2^5 + 1 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 \\
+= (255)_{10}
+\end{align*}
+
+###### (f)
+
+$$
+\begin{matrix}
+7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 \\
+\end{matrix}
+$$
+
+\begin{align*}
+0 \cdot 2^7 + 1 \cdot 2^6 + 1 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 \\
+= (111)_{10}
+\end{align*}
+
+##### 2-2.
+
+###### (a)
+
+\begin{align*}
+37 \div 2 &= 18 \text{ R } 1 \\
+18 \div 2 &= 9 \text{ R } 0 \\
+9 \div 2 &= 4 \text{ R } 1 \\
+4 \div 2 &= 2 \text{ R } 0 \\
+2 \div 2 &= 1 \text{ R } 0 \\
+1 \div 2 &= 0 \text{ R } 1 \\
+(37)_{10} = (100101)_2 \\
+\end{align*}
+
+###### (b)
+
+\begin{align*}
+13 \div 2 &= 6 \text{ R } 1 \\
+6 \div 2 &= 3 \text{ R } 0 \\
+3 \div 2 &= 1 \text{ R } 1 \\
+1 \div 2 &= 0 \text{ R } 1 \\
+(13)_{10} &= (1101)_2
+\end{align*}
+
+##### 2-4.
+
+###### (a)
+
+$$
+\begin{matrix}
+2 & 1 & 0 \\
+7 & 4 & 3 \\
+\end{matrix}
+$$
+
+\begin{align*}
+7 \cdot 16^2 + 4 \cdot 16^1 + 3 \cdot 16^0 = 1792 + 64 + 3 = (1859)_{10}
+\end{align*}
+
+###### (b)
+
+$$
+\begin{matrix}
+1 & 0 \\
+3 & 6 \\
+\end{matrix}
+$$
+
+\begin{align*}
+  3 \cdot 16^1 + 6 \cdot 16^0 \\
+  = (54)_{10} \\
+\end{align*}
+
+###### (c)
+
+$$
+\begin{matrix}
+3 & 2 & 1 & 0 \\
+3 & 7 & F & D \\
+\end{matrix}
+$$
+
+\begin{align*}
+3 \cdot 16^3 + 7 \cdot 16^2 + 15 \cdot 16^1 + 13 \cdot 16^0 = 12288 + 1792 + 240 + 13 = (14333)_{10}
+\end{align*}
+
+##### 2-5.
+
+###### (b)
+
+\begin{align*}
+372 \div 16 &= 23 \text{ R } 4 \\
+23 \div 16 &= 1 \text{ R } 7 \\
+1 \div 16 &= 0 \text{ R } 1 \\
+(372)_{10} &= (174)_{16}
+\end{align*}
+
+##### 2-19.
+
+###### (a)
+
+$$
+\begin{matrix}
+\text{Tens} & \text{Units} \\
+4 & 7 \\
+\end{matrix}
+$$
+
+\begin{align*}
+(0100)_{\text{BCD}} & (0111)_{\text{BCD}} \\
+(47)_{10} &= (0100\ 0111)_{\text{BCD}}
+\end{align*}
+
+##### 2-21.
+
+###### (b)
+
+$$
+\begin{matrix}
+\text{Hundreds} & \text{Tens} & \text{Units} \\
+0001 & 1000 & 0100 \\
+1 & 8 & 4 \\
+\end{matrix}
+$$
+
+
+\begin{align*}
+0001\ 1000\ 0100_{\text{BCD}} = (184)_{10}
+\end{align*}
+
+{{< pagebreak >}}
+
+## Part-B
+
+$X = \overline{(A+B)} + (\overline{B}\cdot A \cdot \overline{(C+\overline{C})} \cdot \overline{D}) + D \cdot A$
+
+| A | B | C | D | $\overline{A+B}$ | $\overline{B}$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 0 | 0 | 1 | 1 | 1 |
+| 0 | 0 | 1 | 0 | 1 | 1 |
+| 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 1 |
+| 1 | 0 | 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 |
+
+| $\overline{C}$ | $C+\overline{C}$ | $\overline{(C+\overline{C})}$ | $\overline{D}$ | $\overline{B} \cdot A \cdot \overline{(C+\overline{C})} \cdot \overline{D}$ | $D \cdot A$ | X |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 1 | 1 | 0 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 1 | 1 |
+

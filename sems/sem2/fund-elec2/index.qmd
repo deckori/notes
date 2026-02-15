@@ -1,0 +1,10 @@
+---
+title: "Introduction"
+---
+
+Greetings, I am an Electrical Engineering student. I have provided my notes to other students. And they have found it useful. Regardless, there are parts of my notes that are incomplete or may be slightly wrong. Moreover, this was originally an html page that I converted to a pdf file (this is a builtin function of the markup language that I use), so there might be some formatting issues.
+
+I recommend using my notes to revise or study something quickly. I wish you the best of luck.
+
+Best Regards,
+A student lazily trying to be anonymous

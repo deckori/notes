@@ -1,0 +1,666 @@
+---
+title: 4.4 BJT as an Amplifier
+editor:
+  markdown:
+    wrap: 72
+---
+
+{0}------------------------------------------------
+
+{1}------------------------------------------------
+
+## **Learning Objectives:**
+
+- Discuss Different type of BJT Biasing
+- Analyze different type of Bias circuits
+- Define *Q-point* and describe how it affects the output of an
+  amplifier
+- Explain how collector characteristic curves are produced
+- Describe and draw a dc load line
+- State the conditions for linear operation
+- Explain what causes waveform distortion
+
+{2}------------------------------------------------
+
+### Bipolar Junction Transistor ( BJT)
+
+Recall:-Biasing of a transistor:
+
+**Biasing:** The DC voltages applied to a transistor in order to turn it
+on so that it can amplify the AC signal. - The DC input establishes an
+operating or quiescent point.
+
+- A,B, C, D…
+
+#### **Graphical Analysis**
+
+![](_page_2_Figure_5.jpeg)
+
+{3}------------------------------------------------
+
+#### Bipolar Junction Transistor (BJT)
+
+# DC Biasing Circuits Types:
+
+- Fixed-bias/ Base Bias circuit
+- Emitter-stabilized bias circuit OR Emitter feedback configuration
+- Voltage divider bias circuit
+- DC bias with voltage feedback
+- Collector-emitter loop
+
+{4}------------------------------------------------
+
+### Bipolar Junction Transistor ( BJT)
+
+1-fixed Bias/ Base Bias Circuit:
+
+- Its simple because it uses only one resistor to obtain bias
+
+> Transistor biasing is defined as the proper flow of zero signal collector current and the maintenance of proper collector emitter voltage during the passage of a signal
+>
+> [ Source ](https://www.geeksforgeeks.org/electronics-engineering/transistor-biasing/)
+
+![](_page_4_Figure_3.jpeg)
+
+{5}------------------------------------------------
+
+### Bipolar Junction Transistor ( BJT)
+
+#### 1- Analysis fixed Bias/ Base Bias
+
+Circuit: - Analysis of this circuit for the linear region shows that it is directly dependent on beta DC. Starting with Kirchhoff's voltage law around the base circuit.
+
+#### **a. The Base-Emitter Loop**
+
+![](_page_5_Picture_4.jpeg)
+
+$$+V_{CC}-I_{B}R_{B}-V_{BE}=0$$
+
+$$I_B = \frac{V_{CC} - V_{BE}}{R_B}$$
+
+{6}------------------------------------------------
+
+# Bipolar Junction Transistor (BJT)
+
+1- Analysis fixed Bias/ Base Bias Circuit.
+
+a. The Collector - Emitter Loop
+
+Collector current
+$$I_{C} = \beta I_{B}$$
+
+$$I_{C} = \beta_{DC} \left( \frac{V_{CC} - V_{BE}}{R_{B}} \right)$$
+
+From Kirchhoff's voltage law:
+
+$$V_{CE} = V_{CC} - I_C R_C$$
+
+![](_page_6_Picture_12.jpeg)
+
+- $I_c$ is dependent on beta $(B_{DC})$
+- The disadvantage of this is that a variation in $B_{DC}$ causes $I_{C}$ and, as a result, $V_{CE}$ to change, thus changing the Q-point of the transistor
+- This makes the base-bias circuit extremely beta-dependent and unpredictable
+- Hence **base bias is usually used in switching circuits where the transistor is either in saturation or cut off** but is rarely used in linear circuits
+
+{7}------------------------------------------------
+
+<details>
+
+## Bipolar Junction Transistor (BJT)
+
+### **EXAMPLE 4.1** Determine the following for the fixed-bias configuration
+
+- 
+
+  a. $I_{B_O}$ and $I_{C_O}$ .
+
+- 
+
+  a. $V_{CE_O}$ .
+
+- 
+
+  a. $V_B$ and $V_C$ .
+
+- 
+
+  a. $V_{BC}$ .
+
+#### Solution:
+
+a. Eq. (4.4):
+    $$I_{B_Q} = \frac{V_{CC} - V_{BE}}{R_B} = \frac{12 \text{ V} - 0.7 \text{ V}}{240 \text{ k}\Omega} = \textbf{47.08} \, \mu \textbf{A}$$
+
+Eq. (4.5):
+$$I_{C_Q} = \beta I_{BQ} = (50)(47.08 \,\mu\text{A}) = 2.35 \,\text{mA}$$
+
+a. Eq. (4.6): $$V_{CE_Q} = V_{CC} - I_C R_C$$
+
+= 12 V - (2.35 mA)(2.2 k $\Omega$ )\
+= **6.83 V**
+
+- 
+
+  a. $V_B = V_{BE} = 0.7 \text{ V}$ $V_C = V_{CE} = 6.83 \text{ V}$
+
+- 
+
+  a. Using double-subscript notation yields
+
+$$V_{BC} = V_B - V_C = 0.7 \text{ V} - 6.83 \text{ V}$$
+
+= -6.13 V
+
+with the negative sign revealing that the junction is reversed-biased,
+as it should be for linear amplification.
+
+![](_page_7_Picture_14.jpeg)
+
+![](_page_7_Picture_15.jpeg)
+
+</details>
+
+{8}------------------------------------------------
+
+#### Load Line Analysis
+
+![](_page_8_Figure_2.jpeg)
+
+![](_page_8_Figure_3.jpeg)
+
+$$V_{CE} = V_{CC} - (0)R_C$$
+
+$$V_{CE} = V_{CC}|_{I_C = 0 \,\mathrm{mA}}$$
+
+$$0 = V_{CC} - I_C R_C$$
+
+$$I_C = \frac{V_{CC}}{R_C} \bigg|_{V_{CE} = 0 \text{ V}}$$
+
+![](_page_8_Figure_8.jpeg)
+
+FIG. 4.13
+
+Movement of the Q-point with increasing level of $I_B$ .
+
+![](_page_8_Figure_10.jpeg)
+
+Effect of an increasing level of $R_C$ on the load line and the Q-point.
+
+![](_page_8_Figure_12.jpeg)
+
+Effect of lower values of $V_{CC}$ on the load line and the Q-point.
+
+{9}------------------------------------------------
+
+![](_page_9_Figure_2.jpeg)
+
+$$V_{CE} = V_{CC} = \mathbf{20} \,\text{V at } I_C = 0 \,\text{mA}$$
+
+$$I_C = \frac{V_{CC}}{R_C} \,\text{at } V_{CE} = 0 \,\text{V}$$
+
+$$R_C = \frac{V_{CC}}{I_C} = \frac{20 \,\text{V}}{10 \,\text{mA}} = \mathbf{2} \,\text{k}\Omega$$
+
+$$I_B = \frac{V_{CC} - V_{BE}}{R_B}$$
+
+$$R_B = \frac{V_{CC} - V_{BE}}{I_B} = \frac{20 \,\text{V} - 0.7 \,\text{V}}{25 \,\mu\text{A}} = 772 \,\text{k}\Omega$$
+
+{10}------------------------------------------------
+
+### Emitter Bias/ Emitter Feedback Configuration:
+
+> [Resource](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Semiconductor_Devices_-_Theory_and_Application_(Fiore)/05%3A_BJT_Biasing/5.5%3A_Feedback_Biasing)
+
+> When designing an amplifier with this circuit, we want $V_{CE} = \frac{1}{2} V_{CC}$. In such a circuit, we get the maximum operation from the amplifier
+
+![](_page_10_Picture_2.jpeg)
+
+- Adding a resistor (R<sub>F</sub>) to the emitter circuit stabilizes the bias circuit
+- Idea is to help make base bias more predictable with negative feedback, which negates any attempted change in collector current with an opposing change in base voltage
+- If the collector current tries to increase, the emitter voltage increases, causing an increase in base voltage because $V_B = V_F + V_{BF}$
+- An increase in base voltage reduces the voltage across ( $R_B$ ), which reduces the base current and prevents the collector current from increasing
+- While this is better for linear circuits than base bias, it is still dependent on ( $\beta_{DC}$ ) and is not as predictable as voltage-divider bias
+- To calculate ( $I_E$ ), apply Kirchhoff’s Voltage Law (KVL) around the base circuit
+
+{11}------------------------------------------------
+
+a) The Base-Emitter Loop
+
+![](_page_11_Figure_4.jpeg)
+
+From Kirchhoff's voltage law:
+
+$$+ \mathbf{V_{CC}} - \mathbf{I_E} \mathbf{R_E} - \mathbf{V_{BE}} - \mathbf{I_E} \mathbf{R_E} = \mathbf{0}$$
+
+Since $$I_E = (\beta + 1)I_B$$ :
+
+$$V_{CC} - I_B R_B - (\beta + 1)I_B R_E = 0$$
+
+**Solving for I**<sub>R</sub>:
+
+$$I_B = \frac{V_{CC} - V_{BE}}{R_P + (\beta + 1)R_F}$$
+
+{12}------------------------------------------------
+
+2- Analysis Emitter Bias/ Emitter Feedback Configuration: b. Corrector
+Emitter Loop
+
+![](_page_12_Figure_2.jpeg)
+
+### From Kirchhoff's voltage law:
+
+$$I_{E}R_{E} + V_{CE} + I_{C}R_{C} - V_{CC} = 0$$
+
+### Since $I_E \cong I_C$ :
+
+$$V_{CE} = V_{CC} - I_C(R_C + R_E)$$
+
+### Also:
+
+$$\begin{aligned} \mathbf{V_E} &= \mathbf{I_E} \mathbf{R_E} \\ \mathbf{V_C} &= \mathbf{V_{CE}} + \mathbf{V_E} = \mathbf{V_{CC}} - \mathbf{I_C} \mathbf{R_C} \\ \mathbf{V_B} &= \mathbf{V_{CC}} - \mathbf{I_R} \mathbf{R_B} = \mathbf{V_{BE}} + \mathbf{V_E} \end{aligned}$$
+
+{13}------------------------------------------------
+
+#### **EXAMPLE 4** For the emitter-bias network of Fig. 23, determine:
+
+- 
+
+  a. $I_B$ .
+
+- 
+
+  a. $I_C$ .
+
+- 
+
+  a. $V_{CE}$ .
+
+- 
+
+  a. $V_C$ .
+
+- 
+
+  a. $V_E$ .
+
+- 
+
+  a. $V_B$ .
+
+- 
+
+  a. $V_{BC}$ .
+
+![](_page_13_Figure_9.jpeg)
+
+#### Solution:
+
+a. Eq. (17):
+    $$I_B = \frac{V_{CC} - V_{BE}}{R_B + (\beta + 1)R_E} = \frac{20 \text{ V} - 0.7 \text{ V}}{430 \text{ k}\Omega + (51)(1 \text{ k}\Omega)}$$
+    $$= \frac{19.3 \text{ V}}{481 \text{ k}\Omega} = 40.1 \,\mu\text{A}$$
+
+a. $$I_C = \beta I_B$$
+
+= (50)(40.1 $\mu$ A)\
+$\approx$ 2.01 mA
+
+a. $$V_{CE} = V_{CC} - I_C(R_C + R_E)$$
+    $$= 20 \text{ V} - (2.01 \text{ mA})(2 \text{ k}\Omega + 1 \text{ k}\Omega) = 20 \text{ V} - 6.03 \text{ V}$$
+    $$= 13.97 \text{ V}$$
+
+a. $$V_C = V_{CC} - I_C R_C$$
+
+= 20 V - (2.01 mA)(2 k $\Omega$ ) = 20 V - 4.02 V\
+= 15.98 V
+
+a. $$V_E = V_C - V_{CE}$$
+
+= 15.98 V - 13.97 V\
+= 2.01 V
+
+or $$V_E = I_E R_E \cong I_C R_E$$
+
+= $(2.01 \text{ mA})(1 \text{ k}\Omega)$\
+= $2.01 \text{ V}$
+
+a. $$V_B = V_{BE} + V_E$$
+
+= 0.7 V + 2.01 V\
+= 2.71 V
+
+a. $$V_{BC} = V_B - V_C$$
+
+= 2.71 V - 15.98 V\
+= -13.27 V (reverse-biased as required)
+
+{14}------------------------------------------------
+
+### 3- Voltage Divider Configuration:
+
+- Method of biasing a transistor for linear operation using a single source resistive voltage divider
+- Most widely used biasing method
+- Developed by a resistive voltage divider that consists of $R_1$ and
+  $R_2$ .
+- $V_{CC}$ is the dc collector supply voltage. Two current paths are
+  between point A and ground: one through $R_2$ and the
+- Voltage-divider bias circuits are designed so that the base current is much smaller than the current through R2, ensuring that the base–emitter junction does not significantly load the voltage divider
+
+![](_page_14_Picture_7.jpeg)
+
+{15}------------------------------------------------
+
+### 3- Voltage Divider Configuration:
+
+- The voltage-divider circuit is very straightforward to analyze because the loading effect of the base current can be ignored
+- A voltage divider in which the base current is small compared to the current in R2 is said to be a **stiff voltage divider** because the base voltage is relatively independent of variations in transistor parameters
+
+![](_page_15_Picture_4.jpeg)
+
+16 transistors and temperature
+
+effects
+
+{16}------------------------------------------------
+
+# Bipolar Junction Transistor ( BJT)
+
+## 3- Voltage Divider Configuration: Analysis
+
+- In a voltage-divider circuit in which I_B is small compared to I_2, first calculate the base voltage using the unloaded voltage-divider rule
+
+$$V_{\rm E} = V_{\rm B} - V_{\rm BE}$$
+
+$$I_{\rm C} \cong I_{\rm E} = \frac{V_{\rm E}}{R_{\rm E}}$$
+
+$$V_{\rm C} = V_{\rm CC} - I_{\rm C} R_{\rm C}$$
+
+$$V_{\rm CE} = V_{\rm C} - V_{\rm E}$$
+
+![](_page_16_Picture_7.jpeg)
+
+{17}------------------------------------------------
+
+## Bipolar Junction Transistor (BJT)
+
+### 3- Voltage Divider Configuration:
+
+Determine $V_{\rm CE}$ and $I_{\rm C}$ in the stiff voltage-divider
+biased transistor circuit of Figure 5–10 if $\beta_{\rm DC}=100$ .
+
+![](_page_17_Figure_3.jpeg)
+
+![](_page_17_Figure_4.jpeg)
+
+Solution The base voltage is
+
+$$V_{\rm B} \simeq \left(\frac{R_2}{R_1 + R_2}\right) V_{\rm CC} = \left(\frac{5.6 \,\mathrm{k}\Omega}{15.6 \,\mathrm{k}\Omega}\right) 10 \,\mathrm{V} = 3.59 \,\mathrm{V}$$
+
+So,
+
+$$V_{\rm E} = V_{\rm B} - V_{\rm BE} = 3.59 \text{ V} - 0.7 \text{ V} = 2.89 \text{ V}$$
+
+and
+
+$$I_{\rm E} = \frac{V_{\rm E}}{R_{\rm E}} = \frac{2.89 \text{ V}}{560 \Omega} = 5.16 \text{ mA}$$
+
+Therefore,
+
+$$I_{\rm C} \cong I_{\rm E} = 5.16 \,\mathrm{mA}$$
+
+and
+
+$$V_{\rm C} = V_{\rm CC} - I_{\rm C}R_{\rm C} = 10 \text{ V} - (5.16 \text{ mA})(1.0 \text{ k}\Omega) = 4.84 \text{ V}$$
+
+$V_{\rm CE} = V_{\rm C} - V_{\rm E} = 4.84 \text{ V} - 2.89 \text{ V} = 1.95 \text{ V}$
+
+{18}------------------------------------------------
+
+# Bipolar Junction Transistor ( BJT)
+
+3- Voltage Divider Configuration:
+
+# Stiff voltage Divider Analysis
+
+- I f t he vol t age di vi der i n pr evi ous was not st i ff , how woul
+  d *V*B be
+- aff ect ed? Vol t age- di vi der ci r cui t i s st i ff , whi ch means
+  t hat t he t r ansi st or does not appear as a si gni fi cant l oad t
+  o t he vol t age di vi der .
+- To det er mi ne i f t he di vi der i s st i ff , you need t o exami ne
+  t he dc i nput r esi st ance l ooki ng i n at t he base as shown
+  opposi t e.
+
+![](_page_18_Picture_6.jpeg)
+
+{19}------------------------------------------------
+
+## **Bipolar Junction**
+
+#### **Bias configurations (4) Transistor:**
+
+#### **II. Voltage divider Bias:**
+
+![](_page_19_Picture_3.jpeg)
+
+Figure : Voltage divider bias
+
+- Desirable to develop a bias circuit that is less sensitive to changes
+  in current gain $\beta$.
+- With voltage divider bias, values of *VCEQ* and I*CQ* can be
+  independent of changes in gain $\beta$.
+- DC voltages and currents remain close to the required values
+- $I_{BQ}$ only changes with gain $\beta$ change
+
+![](_page_19_Figure_8.jpeg)
+
+Figure : Q point for voltage divider bias
+
+- Voltage divider bias analysed using two methods:
+  - **1. Exact method**
+  - **2. Approximate method**
+
+{20}------------------------------------------------
+
+#### Bias configurations (4)
+
+#### Voltage divider Bias:
+
+DC ANALYSIS 1: EXACT METHOD
+
+Using Thevenin theorem, Thevenin equivalent resistance and voltage can
+be computed.
+
+![](_page_20_Picture_5.jpeg)
+
+Figure DC component
+
+Figure: Thevenin equivalent circuit
+
+Figure : R<sub>th</sub> determination
+
+$$V_{CE} = V_{CC} - I_C (R_C + R_E)$$
+
+Figure: $V_{th}$ determination
+
+Analysis: $$R_{th} = R_1 \parallel R_2$$
+
+Substitute: $$I_E = (\beta + 1)I_B$$
+
+$+V_{th} - I_{R}R_{th} - V_{RF} - I_{F}R_{F} = 0$
+
+$$V_{\!\scriptscriptstyle E}$$
+
+$$V_E = I_E R_E$$
+
+$$V_C = V_{CE} + V_E$$
+
+$$V_{R} = V_{RF} + V_{F}$$
+
+$$V_{th} = V_2 = \left[\frac{R_2}{R_1 + R_2}\right] V_{CC}$$
+
+$$I_B = \frac{V_{th} - V_{BE}}{R_{th} + (\beta + 1)R_E}$$
+
+{21}------------------------------------------------
+
+# Analog Electronics I Review:
+
+Bias configurations (5)
+
+#### II. Voltage divider Bias: DC ANALYSIS 2: APPROXIMATE METHO
+
+- Approximate approach is applied if,
+
+$$\beta R_{\rm E} \geq 10 R_2$$
+
+- Then,
+
+$$V_B = V_2 = \left[ \frac{R_2}{R_1 + R_2} \right] V_{CC}$$
+
+$$V_{CEQ} = V_{CC} - I_C (R_C + R_E)$$ $V_E = V_B - V_{BE}$
+$I_E = \frac{V_E}{R_E}$ $I_{CO} \cong I_E$
+
+ifference between the exact and approximate methods is the effect of
+Thevenin resistance ( $\mathsf{R}_\mathsf{th}$ ).
+
+{22}------------------------------------------------
+
+## Bipolar Junction Transistor:
+
+Bias configurations:
+
+#### EXERCISE 1
+
+For the voltage divider bias of figure using (a) exact method and (b)
+approximate method, determine the values of $V_{ce}$ and $I_c$ .
+
+![](_page_22_Picture_4.jpeg)
+
+{23}------------------------------------------------
+
+## Bipolar Junction Transistor ( BJT)
+
+#### Voltage Divider Configuration Examples:
+
+![](_page_23_Figure_3.jpeg)
+
+![](_page_23_Figure_4.jpeg)
+
+![](_page_23_Picture_5.jpeg)
+
+**Solution:** Eq. (28): $$R_{\text{Th}} = R_1 \| R_2$$
+
+=
+$\frac{(39 \text{ k}\Omega)(3.9 \text{ k}\Omega)}{39 \text{ k}\Omega + 3.9 \text{ k}\Omega} = 3.55 \text{ k}\Omega$
+
+Eq. (29): $$E_{\text{Th}} = \frac{R_2 V_{CC}}{R_1 + R_2}$$
+$$= \frac{(3.9 \text{ k}\Omega)(22 \text{ V})}{39 \text{ k}\Omega + 3.9 \text{ k}\Omega} = 2 \text{ V}$$
+
+Eq. (30):
+$$I_{B} = \frac{E_{\text{Th}} - V_{BE}}{R_{\text{Th}} + (\beta + 1)R_{E}}$$
+$$= \frac{2 \text{ V} - 0.7 \text{ V}}{3.55 \text{ k}\Omega + (101)(1.5 \text{ k}\Omega)} = \frac{1.3 \text{ V}}{3.55 \text{ k}\Omega + 151.5 \text{ k}\Omega}$$
+$$= 8.38 \,\mu\text{A}$$ $$I_{C} = \beta I_{B}$$
+
+![](_page_23_Picture_10.jpeg)
+
+$$V_{CE} = V_{CC} - I_C(R_C + R_E)$$ = 22 V - (0.84 mA)(10 k\Omega + 1.5
+k\Omega) = 22 V - 9.66 V = 12.34 V
+
+{24}------------------------------------------------
+
+## Bipolar Junction Transistor ( BJT)
+
+#### Voltage Divider Configuration Examples:
+
+![](_page_24_Picture_3.jpeg)
+
+$$\beta R_E \ge 10R_2$$
+
+$$(100)(1.5 \text{ k}\Omega) \ge 10(3.9 \text{ k}\Omega)$$
+
+$$150 \text{ k}\Omega \ge 39 \text{ k}\Omega \text{ (satisfied)}$$
+
+Eq. (32): $$V_B = \frac{R_2 V_{CC}}{R_1 + R_2}$$
+$$= \frac{(3.9 \text{ k}\Omega)(22 \text{ V})}{39 \text{ k}\Omega + 3.9 \text{ k}\Omega}$$
+$$= 2 \text{ V}$$
+
+- Note that the level of V<sup>B</sup> is the same as ETh determined in
+  Example 7.
+- Primary difference between the exact and approximate techniques is the
+  effect of RTh in the exact analysis that separates ETh and VB.
+
+Eq. (34): $$V_E = V_B - V_{BE}$$
+
+= 2 V - 0.7 V\
+= 1.3 V\
+$I_{CQ} \cong I_E = \frac{V_E}{R_E} = \frac{1.3 \text{ V}}{1.5 \text{ k}\Omega} = 0.867 \text{ mA}$
+
+$$V_{CE_Q} = V_{CC} - I_C(R_C + R_E)$$
+
+= 22 V - (0.867 mA)(10 kV + 1.5 k $\Omega$\
+= 22 V - 9.97 V\
+= 12.03 V
+
+{25}------------------------------------------------
+
+## Bipolar Junction Transistor ( BJT)
+
+### Voltage Divider Configuration Examples:
+
+![](_page_25_Figure_3.jpeg)
+
+Eq. (33):
+
+$$\beta R_E \ge 10R_2$$
+
+$$(50)(1.2 \text{ k}\Omega) \ge 10(22 \text{ k}\Omega)$$
+
+$$60 \text{ k}\Omega \not\ge 220 \text{ k}\Omega \text{ (not satisfied)}$$
+
+$$R_{\text{Th}} = R_1 || R_2 = 82 \text{ k}\Omega || 22 \text{ k}\Omega = 17.35 \text{ k}\Omega$$
+
+$$E_{\text{Th}} = \frac{R_2 V_{CC}}{R_1 + R_2} = \frac{22 \text{ k}\Omega(18 \text{ V})}{82 \text{ k}\Omega + 22 \text{ k}\Omega} = 3.81 \text{ V}$$
+
+$$I_B = \frac{E_{\text{Th}} - V_{BE}}{R_{\text{Th}} + (\beta + 1)R_E} = \frac{3.81 \text{ V} - 0.7 \text{ V}}{17.35 \text{ k}\Omega + (51)(1.2 \text{ k}\Omega)} = \frac{3.11 \text{ V}}{78.55 \text{ k}\Omega} = 39.6 \text{ }\mu$$
+
+$$I_{C_Q} = \beta I_B = (50)(39.6 \text{ }\mu\text{A}) = 1.98 \text{ mA}$$
+
+$$V_{CE_Q} = V_{CC} - I_C(R_C + R_E)$$
+
+$$= 18 \text{ V} - (1.98 \text{ mA})(5.6 \text{ k}\Omega + 1.2 \text{ k}\Omega)$$
+
+$$V_B = E_{\text{Th}} = 3.81 \text{ V}$$
+$V_E = V_B - V_{BE} = 3.81 \text{ V} - 0.7 \text{ V} = 3.11 \text{ V}$
+$I_{C_Q} \cong I_E = \frac{V_E}{R_E} = \frac{3.11 \text{ V}}{1.2 \text{ k}\Omega} = 2.59 \text{ mA}$
+$V_{CE_Q} = V_{CC} - I_C(R_C + R_E)$
+$= 18 \text{ V} - (2.59 \text{ mA})(5.6 \text{ k}\Omega + 1.2 \text{ k}\Omega)$
+$= 3.88 \text{ V}$
+
+{26}------------------------------------------------
+
+## Bipolar Junction Transistor ( BJT)
+
+## Voltage Divider Configuration Examples:
+
+![](_page_26_Picture_3.jpeg)
+
+| Comparing the exact and approximate approa   | ches.   |
+|----------------------------------------------|---------|
+| -------------------------------------------- | ------- |
+
+|             | $I_{C_{Q}}(mA)$ | $V_{CE_{Q}}(V)$ |
+|-------------|-----------------|-----------------|
+| Exact       | 1.98            | 4.54            |
+| Approximate | 2.59            | 3.88            |
+
+![](_page_26_Picture_6.jpeg)
+
+- *ICQ is about 30% greater with the approximate solution, whereas VCEQ
+  is about 10% less.*
+- *The results are notably different in magnitude, but even though BRE
+  is only about three times larger than R*<sup>2</sup> , the results are
+  still relatively close to each other.
+
+{27}------------------------------------------------
+
+## **Discussions**
+
+![](_page_27_Picture_1.jpeg)

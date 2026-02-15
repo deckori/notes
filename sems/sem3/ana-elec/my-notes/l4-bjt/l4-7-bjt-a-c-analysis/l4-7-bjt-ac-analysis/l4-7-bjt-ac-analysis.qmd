@@ -1,0 +1,196 @@
+## AETN 2101-ANAL0G ELECTRONICS
+
+### L4.7
+
+BJT AC Analysis
+
+## Learning Objectives:
+
+· Describe amplifier operation.
+
+· Discuss transistor models.
+
+·Describe and analyse the ac operation of BJT amplifiers.
+
+## Bipolar Junction Transistor as Amplifier
+
+## BJT AC Circuit Analysis:
+
+A model is a combination of circuit elements, properly chosen, that best approximates the actual behavior of a semiconductor device under specific C
+
+![](./images/fcdXoxBVPkMmDxqBr1YuAoBCnzSgOgEIE.png)
+
+·Defining the important parameters of any system.
+
+![](./images/f1Q7Q114Iz7tgGKQ2iDOkZXFDUFIDXaG6.png)
+
+![](./images/f26IXHp0e4LEdXMT2deus1ldNqhttDFhw.png)
+
+## Bipolar Junction. Transistor
+
+BJT AC Circuit Analysis
+
+Why model? Help apply basic circuit analysis of the transistor amplifier.
+
+· Three model commonly used in small signal AC analysis of BJT network:
+
+1.  re model. 23. Hybrid eguioaient model.
+
+$r_e$ model which is reduced version of hybrid π model is
+
+口$r_e$ Transistor equivalent circuit frequency analysis. (Mode1) :
+
+![](./images/fs8zzlLb2on4MT7XZ6q70Kc1Uhdhgcz3A.png)
+
+> On the right diagram, the diamond box is a current source $26mV$ is 26 millivolts.
+
+# Bipolar Junction Transistor
+
+### BJT AC Circuit Analysis
+
+AC equivalent of a transistor is obtained by:
+
+Setting all DC sources to zero. Replacing all capacitors to short circuit equivalent. Removing all elements bypassed by short equivalent by steps 1 and 2. Redrawing the network in more convenient and logical form.
+
+![](./images/fqGIfDyGhc0cNUcH52e1qR0O7qgXFgtXH.png)
+
+![](./images/f0N8EVlPSrm4YHmpRKGuR41WlrgZ5rzVA.png)
+
+## Bipolar Junction. Transistor:
+
+### BJTAC Circuit Analysis:
+
+odel in Different Bias Circuits:
+
+![](./images/fZUhLcK8pClhGHMgMLzGzfhendGPm3q8N.png)
+
+## BJT AC Circuit Analysis
+
+\<ample - For the following circuit:
+
+a.Determine re b.Find $Z_i$ (with $r_{o}=\infty\Omega$ c.Calculate $Z_0$ (with $r_0=\infty\Omega$ d.Determine $A_{\nu}$ (with $r_0=\infty\Omega$
+
+![](./images/fRAcmDpMZX5AU6XGXYf2EGRGxzqm3Cuxq.png)
+
+### Solution:
+
+a.DC analysis:
+
+![](./images/fC9eCknym9sut2CdPeNBaFgGsdOyV1GgI.png)
+
+c.Z=Rc=3k d.Ay
+
+## Bipolar Junction Transistor
+
+### BJT AC Circuit Analysis:
+
+Voltage Divider $r_e$ Transistor equivalent
+
+![](./images/ffCgXTW9I85fZYt2OL6Yqgu3uOQMEEWoW.png)
+
+Figure 2.19: Voltage divider ac equivalent circuit using $r_{\mathrm{e}}$ equivalent model.
+
+## Analysis: Input Impedance $Z_i$ of the circuitQutput Impedance $Z_o$ of the circuit:
+
+Voltage gain $A_V$ ：
+
+![](./images/f7GEBczLUlGcgbuuvNyl8nAGG7KlbfdTE.png)
+
+$$Z_i=R_1\parallel R_2\parallel\beta r_e$$
+
+![](./images/fz2GyZBzAGRbLEGYqqkbNsv4ShdgsbQFg.png)
+
+![](./images/fopxxgUycDv8GwK8LglsrgH0Az1VpIbGE.png)
+
+# Bipolar Junction Transistor
+
+## BJT AC Circuit Analysis:
+
+Voltage Divider $r_e$ Transistor equivalent
+
+![](./images/f5tx5zzWP0zhXMgX2d7ZIyG9C41EIT0xE.png)
+
+model.
+
+For voltage divider bias circuit, we can apply the following approximate $\beta R_{E}\geq10R_{2}$ approach to find $r_\mathrm{e}$ and $r_0$ if ![](./images/fESUrTTRdb21Z8wxp59KrnYOxluNqodYu.png)
+
+$r_e$ is the ac emitter resistance
+
+$V_{A}$ is the early voltage.
+
+# BJTAC Circuit (ample - For the following circuit: Analysis
+
+a.  $r_{e}$ b. $Z_{i}.$ c. $Z_{o}\left(r_{o}=\:\infty\Omega\right).$ d. $A_{\nu}\left(r_{o}=\:\infty\Omega\right).$
+
+### Solution:
+
+a.DC: Testing $\beta R_E>10R_2$ $$\begin{aligned}0R_{2},\\(90)(1.5\:\mathrm{k}\Omega)&>10(8.2\:\mathrm{k}\Omega)\\135\:\mathrm{k}\Omega&>82\:\mathrm{k}\Omega\:(satisfied)\end{aligned}$$
+
+Using the approximate approach, we obtain $$\begin{aligned}
+&&&V_{B}=\frac{R_{2}}{R_{1}\:+\:R_{2}}V_{CC}=\frac{(8.2\:\mathrm{k}\Omega)(22\:\mathrm{V})}{56\:\mathrm{k}\Omega\:+\:8.2\:\mathrm{k}\Omega}=2.81\:\mathrm{V}&& \text{。}  \\
+&&&&&十 \\
+&&&V_{E}=V_{B}-V_{BE}=2.81\:\mathrm{V}-0.7\:\mathrm{V}=2.11\:\mathrm{V}&& V_{i}  \\
+&&&I_{E}=\frac{V_{E}}{R_{E}}=\frac{2.11\:\mathrm{V}}{1.5\:\mathrm{k}\Omega}=\:1.41\:\mathrm{mA}&& \text{。}  \\
+&&&r_{e}=\frac{26\:\mathrm{mV}}{I_{E}}=\frac{26\:\mathrm{mV}}{1.41\:\mathrm{mA}}=18.44\:\Omega  \\
+&\text{R} ^{\prime}=R_{1}\|R_{2}=(56\:\mathrm{k}\Omega)\|(8.2\:\mathrm{k}\Omega)=7.15\:\mathrm{k}\Omega   \\
+&\text{Z} =R^{\prime}\|\beta r_{e}=7.15\:\mathrm{k}\Omega\|(90)(18.44\:\Omega)=7.15\:\mathrm{k}\Omega\|1.66\:\mathrm{k}\Omega   \\
+&=1.35\:\mathrm{k}\Omega  \\
+&Z_{o} =\:R_{C}=6.8\:\mathrm{k}\:\Omega   \\
+&A_{\nu} =-\frac{R_C}{r_e}=-\frac{6.8\:\mathrm{k}\Omega}{18.44\:\Omega}=\:-368.76 
+\end{aligned}$$
+
+![](./images/fLyNagsY7bgFILQXI14r3tvniNGvFU3Ga.png)
+
+![](./images/fnLmLYhEgPhYeLqIwnPkU2npkAR0mI2VZ.png) Substituting the re equivalent circuit into the ac equivalent network.
+
+Analog Electronics I BJT AC Circuit AnalysisReview:
+
+Effect of source resistor (R) and load )
+
+![](./images/fEBrkikkFgwZILMrp0P5YU4creOvp8ilp.png)
+
+![](./images/fb9ZHn81N1YXfiXBgB0KsEPxOZgrnTYUX.png)
+
+Figure 2.20: Voltage bias with source resistor $R_{s}$ and
+
+· So far we analysed the alfplirfistowithout any load been connected (No load gain)
+
+·In addition we did not consider the effect of internal resistance $R_{s}$ of the source.
+
+· On amplifier data sheets, the listed parameters and gain are all for unloaded scenario.
+
+The gain that results due to the application of source resistor $R_s$ and load resistor R will have an effect on overall amplifier gain.
+
+## Bipolar Junction Transistor
+
+BJT AC Circuit Analysis:
+
+Effect of source resistor (R) and load (RL)
+
+![](./images/fSwdVG0n6EXPbo9Chyy7y0nQTpNEwZ1Xq.png)
+
+![](./images/fElTMrDs5kiRVXGBgZZ0R1LdhahFbcDkm.png)
+
+Figure: Voltage bias with source resistor $R_{s}$ and load resistor $R_{L}$
+
+### Analysis:.
+
+Observe from $r_{\mathrm{e}}$ equivalent circuit of figure above, for voltage divider bias, load resistance is in parallel with $R_{\mathrm{c}}$ and source resistance $R_{s}$ is in series with signal source vs.
+
+Voltage gaindue to $R_s$ ：
+
+Voltage gain due to $R_{\mathrm{L}}$ only: ![](./images/fCvpqY6thTCffIpnZCF15auzbbD6Wv7Ks.png)
+
+$$\dot{Z_i}=R_1\|\dot{\dot{R_2}}\|\beta r_e$$
+
+![](./images/fz71N3RoVcCPgTPlsEb2iKk7NrUcZq7Dm.png)
+
+Applying voltage divider at the input side
+
+![](./images/fmkBdsqAyiCxpZfYdOwkrbvOwXa6nIfye.png)
+
+Here, $A_{\mathrm{vs}}$ is the overall gain from signal source Vs to output voltage Vo.
+
+### Discussions
+
+![](./images/f5dOAiA9UrZeNnVLysQITUbBUD0cLo5Kb.png)

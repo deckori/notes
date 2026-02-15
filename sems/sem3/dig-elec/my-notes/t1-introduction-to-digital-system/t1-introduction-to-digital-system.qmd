@@ -1,0 +1,56 @@
+---
+title: "T1 Introduction to Digital System"
+---
+
+| Analog | Digital |
+|---|---|
+| Infinite number of values | Specific number of values |
+| Continuous curve when analog values are plotted against time | Discontinuous values when analog values are plotted against time |
+| Less accurate | More accurate |
+| Starts from zero to a specific value |
+| Intermediate values are guessed | A change in values occurs when a specified exact attribute change occurs |
+| Varies in continuous steps | Varies in descrete steps |
+
+You convert analog to digital via sampling and then quantization:
+
+- Sampling: Take samples of the analog signal at a specific resolution
+- Quantisation: Convert sampled amplitudes to specific descretely leveled values
+- Encoding: convert levels to completely digital signals as in zeroes and ones
+
+## Binary Digital Signal
+
+Only possible values are 0 and 1
+
+## Logic Gates
+
+- Very small device with inputs and outputs
+- Contains resistors, capacitors, transistors, etc
+- They are devices
+
+### Families of Logic Gates
+
+- TTL
+- CMOS: 0 and 1 are the only inputs.
+
+## Physical Construction - DIP Packages
+
+### How to number the pins of an IC
+
+There is a circle on one side of the IC. With the circle on top, number the pins counter-clockwise. Generaly $7 = \mathrm{GND}$ and $14 = \mathrm{VCC}$
+
+If you supply live voltage to GND, it will burn
+
+| Parameter       | TTL             | CMOS            |
+|-----------------|-----------------|-----------------|
+| Logic 0         | 0V - 0.8V       | 0V - 0.6V       |
+| Invalid Region  | 0.8V - 2V       | 0.6V - 1V       |
+| Logic 1         | 2V - 5V         | 1V - 1.5V       |
+| Supply Note     | Max voltage burns gate | Max voltage burns gate |
+
+k## Advantages of Digital Systems
+
+## Limi
+
+## Examples of ADC: Comparators
+
+

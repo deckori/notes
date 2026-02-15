@@ -1,0 +1,397 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Ethernet MAC Addresses",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          3.7539062499999996,
+          13.90386962890625
+        ],
+        [
+          262.7734375,
+          13.90386962890625
+        ],
+        [
+          262.7734375,
+          35.19189453125
+        ],
+        [
+          3.7539062499999996,
+          35.19189453125
+        ]
+      ]
+    },
+    {
+      "title": "MAC Address and Hexadecimal",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          5.630859375,
+          37.501708984375
+        ],
+        [
+          485.2279052734375,
+          37.501708984375
+        ],
+        [
+          485.2279052734375,
+          69.50473022460938
+        ],
+        [
+          5.630859375,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet MAC Addresses\nEthernet MAC Address",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          4.6923828125,
+          13.90386962890625
+        ],
+        [
+          353.75958251953125,
+          13.90386962890625
+        ],
+        [
+          353.75958251953125,
+          69.50473022460938
+        ],
+        [
+          4.6923828125,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet MAC Addresses\nFrame Processing",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          6.4629998207092285,
+          13.90386962890625
+        ],
+        [
+          286.2353515625,
+          13.90386962890625
+        ],
+        [
+          286.2353515625,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet MAC Addresses\nUnicast MAC Address",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          6.4629998207092285,
+          12.7353515625
+        ],
+        [
+          339.4862365722656,
+          12.7353515625
+        ],
+        [
+          339.4862365722656,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet MAC Addresses",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          6.4629998207092285,
+          13.90386962890625
+        ],
+        [
+          261.5145263671875,
+          13.90386962890625
+        ],
+        [
+          261.5145263671875,
+          35.19189453125
+        ],
+        [
+          6.4629998207092285,
+          35.19189453125
+        ]
+      ]
+    },
+    {
+      "title": "Broadcast MAC Address",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          6.4629998207092285,
+          37.501708984375
+        ],
+        [
+          381.021484375,
+          37.501708984375
+        ],
+        [
+          381.021484375,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "An Ethernet broadcast frame:",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          14.077148437499998,
+          108.91390991210938
+        ],
+        [
+          302.3968505859375,
+          108.91390991210938
+        ],
+        [
+          302.3968505859375,
+          130.91091918945312
+        ],
+        [
+          14.077148437499998,
+          130.91091918945312
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          41
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          25
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          42
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          19
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          36
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t6-ethernet-switching-v7"
+}

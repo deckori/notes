@@ -1,0 +1,141 @@
+---
+title: Applications of the Derivative II
+---
+
+:::{.callout-warning}
+Always remember to write the unit where required
+:::
+
+## Indeterminate Forms and $\text{L'H\^{o}pital's}$ Rule
+
+Indeterminate forms:
+
+- $\frac{0}{0}$
+- $\frac{\pm \infty}{\pm \infty}$
+
+To find the limits of functions that give an indeterminate form, we can use $\text{L'H\^{o}pital's}$ rule:
+
+---
+
+$\text{L'H\^{o}pital's}$ Rule
+
+Suppose
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{0}{0}
+$$
+or
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\pm \infty}{\pm \infty}
+$$
+
+Where \( a \) can be any real number, infinity or negative infinity. In these cases we have,
+
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+$$
+
+*Note: Sometimes you need to apply L'Hôpital's Rule more than once.*
+
+---
+
+## Optimizing equations
+
+In real world situations, we may want to find the maximum or the minimum of a function. The process of finding the best situation is called **optimization**.
+
+##### Optimasation Problem Steps
+
+1. Draw a sketch of the shape
+2. Write down the formulas we can use to construct the shape
+  - For the variable being optimized
+  - For the variable with a constraint
+
+::: {.callout-caution}
+Make sure the main equation is a function of only one variable
+:::
+
+3. Find the maxima or the minima as per req
+
+::: {.callout-warning}
+Don't forget to find the second derivative to prove that the answer is a minimum or a maximum
+:::
+
+4. Conclusion
+
+::: {.callout-note}
+Always: Answer the question asked with the critical number and the optimized value
+:::
+
+## Related Rates
+
+We can take the derivative of an equation with respect to anything usingimplicit differentiation.
+
+This is always differentiation wrt time
+
+Although an equation may not have time in it, we can find its derivative wrt time using the chain rule.
+
+for $f(x)$:
+
+$$\frac{d~[f(x)]}{dt} = \frac{df(x)}{dx} \cdot \frac{dx}{dt}, \text{ (Chain Rule)}$$
+
+$$\frac{dx}{dt} = \frac{1}{ \dfrac{d~[f(x)]}{dx} } \cdot \frac{d~[f(x)]}{dt}$$
+
+Just as the two variables $f(x)$ and $x$ have a relationship, the two rates depend on each other and are called **Related Rates**.
+
+When we take the derivative with respect to an unrelated variable, it is important to use  Leibnitz notation, $\frac{dy}{dx} to communicate what the rate is.
+
+<details><summary>Leibniz notation</summary>
+
+In calculus, Leibniz's notation, named in honor of the 17th-century German philosopher and mathematician Gottfried Wilhelm Leibniz, uses the symbols $dx$ and $dy$ to represent infinitely small (or infinitesimal) increments of $x$ and $y$, respectively, just as $\Delta x$ and $\Delta y$ represent finite increments of $x$ and $y$, respectively. [source](https://en.wikipedia.org/wiki/Leibniz%27s_notation)
+
+</details>
+
+### Procedure for solving related rate problems
+
+1. Draw the shape, its variables and its related rates
+
+2. Find the FWG to formulate and understand the question (it's not necessary to write this down):
+    - Find:
+    - When:
+    - Given:
+
+::: {.callout-caution}
+The rates may be positive (increasing, growing, etc) or negative (decreasing shrinking, etc).
+:::
+
+3. Substite the given values into the equation of the variable to be found
+
+::: {.callout-caution}
+When you label your diagram, it may have width and length and height or radius, but that doesn’t mean all of them are variables
+
+Read your question carefully and be sure to think about which dimensions are actually changing and which ones are constant.
+
+Constants can be substituted into the equation before taking the derivatve.
+:::
+
+::: {.callout-caution}
+Don't forget to find the second derivative to prove that the answer is a minimum or a maximum
+:::
+
+4. Write the conclusion
+
+::: {.callout-caution}
+Be mindful of the units. ex:
+
+> At a rate of 2 km per hour is different from 2 km per $\text{hour}^2$. What is right depends on question. You can instead write:
+>
+> At a rate of 2 km every hour: for velocity
+<br>
+> Or at a rate of (2 km every $\text{hour}^2$ or 2 km/h every hour): for acceleration
+:::
+
+## Differentials
+
+This is simply writing: $\frac{dy}{dx} = f'(x)$, in the form:
+
+$$dy = f'(x)~dx$$
+
+This $dy$ is the differential
+
+## Shapes: Perimeter, Area and Volume
+
+The formulas for various shapes will be given in the exam

@@ -1,0 +1,185 @@
+---
+title: "Presentation Title"
+---
+
+# Outcomes
+
+By end of this lecture\, student should be able to:
+
+Distinguish between analog and digital representations\.
+
+Cite the advantages and drawbacks of digital techniques compared with analog\.
+
+Understand the need for analog\-to\-digital converters \(ADCs\) and digital\-to\-analog converters \(DACs\)\.
+
+Identify typical digital signals & a timing diagram
+
+# Analog and Digital Signals
+
+
+
+* Analog system
+  * A combination of devices that manipulate values represented in analog form\.
+  * The physical quantities or signals may vary continuously over a specified range\.
+* Digital system
+  * A combination of devices that manipulate values represented in digital form\.
+  * The physical quantities or signals can assume only discrete values\.
+  * Greater accuracy\.
+
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_0.png)
+
+# Analog and Digital Representations
+
+
+
+* Digital Representation—varies in discrete \(separate\) steps\.
+  * Passing time is shown as a change in the display on a digital clock at one\-minute intervals\.
+  * A change in temperature is shown on a digital display only when the temperature changes at least one degree\.
+
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_1.jpg)
+
+
+
+* Analog Representation—a continuously variable\, proportional indicator\.
+  * Sound through a microphone causes voltage changes\.
+  * Automobile speedometer changes with speed\.
+  * Mercury thermometer varies over a range of values with temperature\.
+
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_2.jpg)
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_3.jpg)
+
+# Binary Digital Signal
+
+
+
+* An information variable represented by physical quantity\.
+* For digital systems\, the variable takes on discrete values\.
+  * Two level\, or binary values are the most prevalent values\.
+* Binary values are represented abstractly by:
+  * Digits 0 and 1
+  * Words \(symbols\) False \(F\) and True \(T\)
+  * Words \(symbols\) Low \(L\) and High \(H\)
+  * And words On and Off
+* Binary values are represented by values or ranges of values
+* of physical quantities\.
+
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_4.png)
+
+# Logic gates
+
+A Logic Gate is an electronic circuit that performs a specific logical function\.
+
+Works with digital signals \(0 and 1\)
+
+Words \(symbols\) False \(F\) and True \(T\)
+
+Each gate follows a defined rule to produce an output based on its inputs\.
+
+Example – AND Gate:
+
+Output = 1 only if all inputs are 1\.
+
+# Families of Logic Gates
+
+<span style="color:#202122">I</span>  <span style="color:#202122">ntegrated circuit \(IC\)\, </span> also known as a microchip\, computer chip\, or simply chip\, is a small electronic device made up of multiple interconnected electronic components such as [transistors](https://en.wikipedia.org/wiki/Transistor)\, [resistors](https://en.wikipedia.org/wiki/Resistor)\, and [capacitors](https://en.wikipedia.org/wiki/Capacitor)\. These components are etched onto a small piece of [semiconductor](https://en.wikipedia.org/wiki/Semiconductor) material\, usually [silicon](https://en.wikipedia.org/wiki/Silicon)\.
+
+Families of logic gates:
+
+__TTL__  – Transistor Transistor Logic
+
+__CMOS__  – Complementary Metal Oxide Semiconductor
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_5.png)
+
+©Ronald J\. Tocci\, Neal S\. Widmer\, Gregory L\. Moss\, Digital Systems: Principles and Applications\, 12/e
+
+# Physical Construction – DIP Packages
+
+Dual Inline Package
+
+Pin spacing = 0\.1”
+
+Suitable for prototyping boards\, PCB\, perfboards\, etc\.
+
+Pins numbered CCW from top left
+
+Usually\, but not always\, \+Vcc is at upper right\, Ground at lower left\.
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_6.png)
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_7.png)
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_8.jpg)
+
+©Ronald J\. Tocci\, Neal S\. Widmer\, Gregory L\. Moss\, Digital Systems: Principles and Applications\, 12/e
+
+# Digital Signals: 0, 1, and Voltage Levels
+
+Digital systems work with two states: Logic 0 \(LOW\) and Logic 1 \(HIGH\)\.
+
+These states are represented using voltage ranges rather than exact values\.
+
+Example \(TTL 5V Logic\):
+
+Logic 0 \(LOW\): 0V → 0\.8V
+
+Logic 1 \(HIGH\): 2V → 5V
+
+Invalid Region: 0\.8V → 2V \(undefined\)
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_9.png)
+
+Example \(3\.3V Logic\):
+
+Meaning:
+
+Logic 0 = OFF\, False\, or No current
+
+Logic 1 = ON\, True\, or Current present
+
+Invalid = System cannot decide if 0 or 1 → may cause errors
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_10.png)
+
+# Advantages of Digital Systems
+
+
+
+  * Ease of design
+  * Well suited for storing information\.
+  * Accuracy and precision are easier to maintain\.
+  * Programmable operation\.
+  * Less affected by noise\.
+  * Ease of fabrication on IC chips\.
+# Limitations to Digital Techniques
+
+
+
+  * Because the world is naturally analog\, signals must be converted into digital form\.
+  * This conversion\, however\, takes time\, reduces accuracy\, and often requires complex hardware\, making it a key limitation in digital electronics
+* How to convert?
+* The process of converting an analog signal to a digital signal is called  <span style="color:#ff0000">ADC</span>
+* The process of converting a digital signal to an analog signal is called  <span style="color:#ff0000">DAC</span> \.
+# Example of ADC: Comparators
+
+Comparators is an electronic device that allow an analog input to produce a digital output\.
+
+Output is based on the comparison of the input voltages\.
+
+The comparators compare the input voltages with the 5 voltage\.
+
+Note how the output \(green\) is \+5 volts when the analog input \(blue\) exceeds the reference voltage \(red\)\, otherwise the output is zero\.
+
+![](t1-introduction-to-digital-system-img/Topic 1 Introduction to Digital System_11.png)
+
+# References
+
+[https://www\.allaboutcircuits\.com/textbook/digital/chpt\-3/digital\-logic\-voltage\-levels/](https://www.allaboutcircuits.com/textbook/digital/chpt-3/digital-logic-voltage-levels/)
+
+https://www\.allaboutcircuits\.com/textbook/digital/chpt\-3/digital\-logic\-voltage\-levels/
+

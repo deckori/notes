@@ -1,0 +1,356 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Appendix 1 \u2013 Interface ID Generation",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          11.26171875,
+          19.37005615234375
+        ],
+        [
+          501.84881591796875,
+          19.37005615234375
+        ],
+        [
+          501.84881591796875,
+          47.37603759765625
+        ],
+        [
+          11.26171875,
+          47.37603759765625
+        ]
+      ]
+    },
+    {
+      "title": "1. Interface ID Generated with EUI-64 Process",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          15.015624999999998,
+          70.4603271484375
+        ],
+        [
+          534.7802734375,
+          70.4603271484375
+        ],
+        [
+          534.7802734375,
+          94.46932983398438
+        ],
+        [
+          15.015624999999998,
+          94.46932983398438
+        ]
+      ]
+    },
+    {
+      "title": "Example:",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          46.923828125,
+          200.33889770507812
+        ],
+        [
+          148.6686553955078,
+          200.33889770507812
+        ],
+        [
+          148.6686553955078,
+          221.62689208984375
+        ],
+        [
+          46.923828125,
+          221.62689208984375
+        ]
+      ]
+    },
+    {
+      "title": "2. Randomly Generated Interface IDs \u2013 Used by Windows OS",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          3.7539062499999996,
+          318.9163360595703
+        ],
+        [
+          698.6611328125,
+          318.9163360595703
+        ],
+        [
+          698.6611328125,
+          343.8544921875
+        ],
+        [
+          3.7539062499999996,
+          343.8544921875
+        ]
+      ]
+    },
+    {
+      "title": "Appendix 2. Decimal to Hexadecimal Conversions",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          5.630859375,
+          31.0078125
+        ],
+        [
+          679.6768149882904,
+          31.0078125
+        ],
+        [
+          679.6768149882904,
+          56.478515625
+        ],
+        [
+          5.630859375,
+          56.478515625
+        ]
+      ]
+    },
+    {
+      "title": "Hexadecimal is:",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          17.254488680718186,
+          108.0
+        ],
+        [
+          153.03981264637002,
+          108.0
+        ],
+        [
+          153.03981264637002,
+          122.923828125
+        ],
+        [
+          17.254488680718186,
+          122.923828125
+        ]
+      ]
+    },
+    {
+      "title": "Conversion Steps:",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          15.954101562499998,
+          249.44677734375
+        ],
+        [
+          180.79703356752535,
+          249.44677734375
+        ],
+        [
+          180.79703356752535,
+          266.61181640625
+        ],
+        [
+          15.954101562499998,
+          266.61181640625
+        ]
+      ]
+    },
+    {
+      "title": "Appendix 3. Hexadecimal to Decimal Conversions",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          13.138671874999998,
+          28.8370361328125
+        ],
+        [
+          682.1983032226562,
+          28.8370361328125
+        ],
+        [
+          682.1983032226562,
+          56.843017578125
+        ],
+        [
+          13.138671874999998,
+          56.843017578125
+        ]
+      ]
+    },
+    {
+      "title": "Conversion Steps:",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          17.36181640625,
+          126.7998046875
+        ],
+        [
+          196.2518768310547,
+          126.7998046875
+        ],
+        [
+          196.2518768310547,
+          147.372802734375
+        ],
+        [
+          17.36181640625,
+          147.372802734375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 21,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "TableCell",
+          52
+        ],
+        [
+          "Line",
+          37
+        ],
+        [
+          "Span",
+          36
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "TableCell",
+          68
+        ],
+        [
+          "Span",
+          48
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t9-i-pv6-addressing-v5-w2024"
+}

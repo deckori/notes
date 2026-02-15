@@ -1,0 +1,238 @@
+---
+title: 5 - Data Link Layer
+---
+
+{1}------------------------------------------------
+
+## **Topics and Objectives**
+
+Explain how media access control in the data link layer supports communication across networks.
+
+| Topic Title                    | Topic Objective                                                                                                            |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Purpose of the Data Link Layer | Describe the purpose and function of the data link layer in<br>preparing communication for transmission on specific media. |
+| Topologies                     | Compare the characteristics of media access control<br>methods on WAN and LAN topologies.                                  |
+| Data Link Frame                | Describe the characteristics and functions of the data link<br>frame.                                                      |
+
+{2}------------------------------------------------
+
+## **1. Purpose of the Data Link Layer The Data Link Layer**
+
+![](_page_2_Picture_2.jpeg)
+
+![](_page_2_Figure_3.jpeg)
+
+#### Purpose of Data Link layer:
+
+1. Prepares network data for the physical network.
+2. Is responsible for network interface card (NIC) to NIC communications.
+
+![](_page_2_Picture_7.jpeg)
+
+#### Data Link does the following functions:
+
+1. Accepts Layer 3 packets and encapsulates them into Layer 2 frames.
+2. Controls how data is placed and received on the media.
+3. Exchanges frames between endpoints over the network media.
+4. Receives encapsulated Layer 3 packets and directs them to the proper upper-layer protocol.
+5. Performs error detection and rejects any corrupt frame.
+
+{3}------------------------------------------------
+
+## **1. Purpose of the Data Link Layer The Data Link Layer**
+
+![](_page_3_Figure_1.jpeg)
+
+{4}------------------------------------------------
+
+### IEEE 802 LAN/MAN Data Link Sublayers
+
+- IEEE 802 LAN/MAN standards are specific to the type of network (Ethernet, WLAN, WPAN, etc.).
+- The Data Link Layer consists of two sublayers and.
+  - Logical Link Control (LLC) sublayer communicates between:
+    - Networking software at the upper layers
+    - Device hardware at the lower layers.
+  - Media Access Control (MAC) sublayer provides:
+    - Data encapsulation
+      - Addressing source and destination addressing for transporting the Layer 2 frame between devices on the same shared medium.
+      - Error detection includes a trailer used to detect transmission errors.
+    - Media access control to allow multiple devices to communicate over a shared medium.
+
+![](_page_4_Figure_12.jpeg)
+
+{5}------------------------------------------------
+
+###  Providing Access to Media
+
+**Packets exchanged between nodes may experience numerous data link layers and media transitions.**
+
+![](_page_5_Figure_3.jpeg)
+
+segment.
+
+
+{6}------------------------------------------------
+
+# **2. Topologies WAN Topologies**
+
+#### **There are three common physical WAN topologies.**
+
+**Point-to-point –** the simplest and most common WAN topology. Consists of a permanent link between two endpoints.
+
+![](_page_6_Picture_4.jpeg)
+
+**Hub and spoke –** similar to a star topology where a central site interconnects branch sites through point-to-point links.
+
+![](_page_6_Picture_6.jpeg)
+
+**Mesh –** provides high availability but requires every end system to be connected to every other end system.
+
+![](_page_6_Picture_8.jpeg)
+
+{7}------------------------------------------------
+
+# **2. Topologies LAN Topologies**
+
+- **Star** and **extended star**  topologies
+  - Typically used to interconnect end devices on LANs
+  - Very scalable and easy to install and troubleshoot
+
+![](_page_7_Picture_5.jpeg)
+
+![](_page_7_Picture_6.jpeg)
+
+## **Legacy LAN topologies**
+
+- **Early Ethernet Bus**  All end systems chained together with coaxial cable and terminated on each end.
+- **Legacy Token Ring** Each end system is connected to its respective neighbors to form a ring.
+
+![](_page_7_Picture_10.jpeg)
+
+{8}------------------------------------------------
+
+# **2. Topologies Half and Full Duplex Communication**
+
+## **Half-duplex communication**
+
+- Only allows one device to send or receive at a time on a shared medium.
+- Used on WLANs and legacy bus topologies with Ethernet hubs.
+
+![](_page_8_Picture_5.jpeg)
+
+## **Full-duplex communication**
+
+- Allows both devices to simultaneously transmit and receive on a shared medium.
+- Ethernet switches operate in fullduplex mode.
+
+![](_page_8_Picture_9.jpeg)
+
+{9}------------------------------------------------
+
+**10**
+
+## **2. Topologies**
+
+# **Access Control Methods**
+
+**A multiaccess network** is a network that can have two or more end devices attempting to access the network simultaneously. Examples: Ethernet LANs and WLANs.
+
+#### **Contention-based access**
+
+- Carrier sense multiple access with collision detection (**CSMA/CD**) - used on legacy bus-topology Ethernet.
+- Carrier sense multiple access with collision avoidance (**CSMA/CA**) - used on Wireless LANs.
+
+#### **Controlled access**
+
+- Deterministic access, where each node has its own time on the medium.
+- Used on legacy networks such as Token Ring.
+
+![](_page_9_Picture_10.jpeg)
+
+{10}------------------------------------------------
+
+#### 2. Topologies
+
+## Contention-Based Access – CSMA/CD
+
+- Used by legacy Ethernet LANs.
+- Operates in half-duplex mode where only one device sends or receives at a time.
+- Uses a collision detection process to control when a device can send and what happens if multiple devices send at the same time.
+  - 1. Devices transmitting simultaneously will result in a signal collision on the shared media.
+  - 2. Devices detect the collision and wait a random period of time and retransmit data.
+
+![](_page_10_Figure_8.jpeg)
+
+**Process steps:** 
+
+- 1. The PC1 sends the Ethernet Frame to PC3 when the medium is available.
+- 2. The Ethernet hub receives frame and sends it to all ports.
+- 3. If another device, such as PC2, wants to transmit, but is currently receiving a frame, it must wait until the transmission channel is clear.
+- 4. All devices attached to the hub will receive the frame.
+- Because the frame has a destination data link address for PC3, only that device will accept the frame. All other devices will ignore the frame.
+
+
+{11}------------------------------------------------
+
+#### **2. Topologies**
+
+# **Contention-Based Access – CSMA/CA**
+
+- Used by IEEE 802.11 WLANs.
+- Operates in half-duplex mode where only one device sends or receives at a time.
+- Uses a collision avoidance process to govern when a device can send and what happens if multiple devices send at the same time.
+  - 1. Each device that transmits includes the time duration that it needs for the transmission.
+  - 2. All other wireless devices receive this information and know how long the medium will be unavailable..
+
+![](_page_11_Figure_8.jpeg)
+
+#### **Process steps:**
+
+- 1. If host A is receiving a wireless frame from the **access point**, hosts B and C will also see the frame and how long the transmission medium will be unavailable.
+- 2.After a wireless device sends an 802.11 frame, the receiver returns an acknowledgment so that the sender knows the frame arrived.
+
+{12}------------------------------------------------
+
+# **3. Data Link Frame The Frame and Frame Fields**
+
+**Data is encapsulated by the data link layer with a header and a trailer to form a frame.**
+
+![](_page_12_Figure_3.jpeg)
+
+| Field                | Description                                                                                                                                                                                                                                  |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Frame Start and Stop | Identifies beginning and end of frame                                                                                                                                                                                                        |
+| Addressing           | Indicates source and destination nodes                                                                                                                                                                                                       |
+| Type                 | Identifies encapsulated Layer 3 protocol                                                                                                                                                                                                     |
+| Control              | Identifies flow control services such as quality of service (QoS). QoS gives<br>forwarding priority to certain types of messages. For example, voice over IP (VoIP)<br>frames normally receive priority because they are sensitive to delay. |
+| Data                 | Contains the frame payload                                                                                                                                                                                                                   |
+| Error Detection      | Used to determine transmission errors                                                                                                                                                                                                        |
+
+{13}------------------------------------------------
+
+# **3. Data Link Frame Layer 2 Addresses**
+
+- Referred to as a physical address.
+- Contained in the frame header.
+- Used only for local delivery of a frame on the link.
+- Updated by each device that forwards the frame.
+
+![](_page_13_Figure_7.jpeg)
+
+{14}------------------------------------------------
+
+### **3. Data Link Frame LAN and WAN Frames**
+
+![](_page_14_Figure_2.jpeg)
+
+**Ethernet** 
+
+**Frame Ethernet** 
+
+**Frame**
+
+- The logical topology and physical media determine the data link protocol used:
+  - 802.3 Ethernet
+  - 802.11 Wireless LAN (WLAN)
+  - Point-to-Point (PPP)
+  - High-Level Data Link Control (HDLC)
+  - Frame-Relay (FR)

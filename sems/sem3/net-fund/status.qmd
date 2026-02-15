@@ -1,0 +1,94 @@
+| Number | Name                                      | Finished |  Notes   | Study Guide | Uni MCQ  | Netacad  | (SKIPPED) Focus Topics |
+| :----: | ----------------------------------------- | :------: | :------: | :---------: | :------: | :------: | :--------------------: |
+|   1    | Introduction To Networking                | &#x2610; |    ~     |  &#x2610;   | &#x2611; | &#x2610; |        &#x2611;        |
+|   2    | Basic Switch and End Device Configuration | &#x2610; | &#x2610; |  &#x2610;   | &#x2610; | &#x2610; |        &#x2610;        |
+|   3    | Protocols And Reference Models            | &#x2610; | &#x2611; |  &#x2610;   | &#x2611; | &#x2610; |        &#x2611;        |
+|   7    | Network Layer                             | &#x2610; | &#x2610; |  &#x2610;   | &#x2610; | &#x2610; |        &#x2610;        |
+|   8    | IPv4 Addressing                           | &#x2610; | &#x2610; |  &#x2610;   | &#x2610; | &#x2610; |        &#x2610;        |
+|   4    | **Physical Layer**                        | &#x2610; |    ~     |  &#x2611;   | &#x2611; | &#x2610; |        &#x2611;        |
+|   5    | **Data Link Layer**                       | &#x2610; | &#x2610; |  &#x2611;   | &#x2611; | &#x2610; |        &#x2611;        |
+|   6    | **Ethernet Switching**                    | &#x2610; | &#x2610; |  &#x2611;   | &#x2610; | &#x2610; |        &#x2611;        |
+|   9    | **IPv6 Addressing**                       | &#x2610; | &#x2611; |  &#x2611;   | &#x2611; | &#x2610; |        &#x2610;        |
+|   10   | **Transport Layer**                       | &#x2610; |    ~     |      ~      | &#x2610; | &#x2610; |        &#x2610;        |
+|   11   | **Application Layer**                     | &#x2610; |    ~     |  &#x2611;   | &#x2610; | &#x2610; |        &#x2610;        |
+
+- [x] Topic 01:
+    - [x] Client – Server
+    - [x] transmission media;
+    - [x] physical/logical topologies;
+    - [x] Internet definition;
+    - [x] difference between extranet, intranet, and Internet;
+    - [x] traditional and converged networks, characteristics of fault-tolerant networks.
+- [x] Topic 02:
+    - [x] Definition of default gateway address;
+    - [x] Purpose of IP Address on a switch.
+- [ ] Topic 03:
+    - [x] Flow control; 
+    - [x] OSI and TCP/IP mapping, three levels of encapsulation/de-encapsulation; 
+    - [x] PDUs for each layer;
+    - [ ] Role of L2 and L2 addresses;
+    - [ ] purpose of the Default Gateway;
+    - [x] writing the correct addresses in packet and frame headers addresses.
+- [ ] Topic 04:
+    - [ ] Purpose of physical layer;
+    - [ ] signaling methods for transmission media (copper, optic, wireless)
+    - [x] Throughput, goodput, overhead
+    - [ ] rules for cable types between devices
+    - [x] protection against EMI/RFI/crosstalk
+    - [ ] areas of concerns for wireless networks.
+- [ ] Topic 05:
+    - [ ] Functions of Data Link layer
+    - [ ] router L2 functions
+    - [ ] WAN topologies
+    - [ ] Half/full duplex
+    - [ ] How CSMA/CD and CSMA/CA work
+    - [ ] Characteristics of L2 addresses.
+- [ ] Topic 06:
+    - [ ] Frame processing by a NIC
+    - [ ] types of MAC addresses
+    - [ ] switch learning, forwarding and filtering
+    - [ ] rules for destination MAC address for local and remote networks
+    - [ ] ARP functions
+    - [ ] ARP process steps
+    - [ ] ARP issues.
+- [ ] Topic 07:
+    - [ ] Network layer basic functions
+    - [ ] IP characteristics
+    - [ ] how does a source host determine whether an IPv4 destination is local or remote
+    - [ ] types of routes in a router’s routing table
+    - [ ] default gateway characteristics
+    - [ ] purpose of routing table
+    - [ ] Router packet forwarding decision
+    - [ ] characteristics of static/dynamic routing
+    - [ ] role of default gateway on a host/switch.
+- [ ] Topic 08:
+    - [ ] Logical AND operation
+    - [ ] network address calculations when given the subnet mask and host addres address
+    - [ ] IPv4 subnets calculation when given host address, original and new subnet masks
+    - [ ] Finding the original and new subnet masks needed to create N subnets with H hosts in the largest network
+    - [ ] broadcast propagation by switch/router
+    - [ ] problem with large broadcasts
+    - [ ] network segmentation reasons.
+- [ ] Topic 09:
+    - [ ] Reduction rules
+    - [ ] GUA parts and their roles
+    - [ ] SLAAC purpose
+    - [ ] subnets creation
+    - [ ] identifying the subnet ID.
+- [ ] Topic 10:
+    - [ ] Five responsibilities of the Transport layer
+    - [ ] Five TCP basic operations to provide reliability and flow control
+    - [ ] Why TCP is connection-oriented, stateful? Why UDP is best effort, connectionless, and stateless?
+    - [ ] Role of port numbers, socket, socket pair.
+    - [ ] How is the ordered delivery of segments achieved?
+    - [ ] Purpose of flow control and window size.
+    - [ ] Apps that use TCP and UDP
+    - [ ] network congestion result
+    - [ ] Rules for assigning source and destination port numbers.
+- [ ] Topic 11:
+    - [ ] HTTP process steps;
+    - [ ] HTTP vs. HTTPS;
+    - [ ] DNS process steps;
+    - [ ] DHCP operation (DORA) steps;
+    - [ ] emails protocols purpose and description;
+    - [ ] DHCP purpose and description.

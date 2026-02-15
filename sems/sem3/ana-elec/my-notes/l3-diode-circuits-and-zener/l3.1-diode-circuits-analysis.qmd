@@ -1,0 +1,195 @@
+
+---
+title: "Diodes Circuits Analysis"
+---
+
+
+Application
+
+# Learning Objectives:
+
+Develop a working knowledge of the diode in  a variety of configurations using models appropriate for the  area of application\.
+
+Understand its function  and response in a variety of configurations is examined\.
+
+Analysis of diode electronic circuits using the actual characteristics or applying an approximate  model for the device\.
+
+::: {.notes}
+
+
+
+:::
+
+# Diodes
+
+- A  __diode __ is a  __semiconductor __ device that allows electrical current to flow in one direction only\.
+- The diode has two terminals\, called the  __anode __ and the  __cathode__ \.
+- A ring mark on the diode case identifies the terminal corresponding to the cathode\.
+- The other terminal corresponds to the anode\.
+- The diode consists of two layers of semiconducting material:
+
+  * A   __P\-type __  semiconductor layer containing positive charge carriers \(holes\)\.  The P\-type layer corresponds to the anode \(A\) terminal of the     diode\.
+  * An   __N\-type__    __ __  semiconductor layer containing negative charge carriers \(electrons\)\.  The N\-type layer corresponds to the cathode \(K\) terminal of the     diode  \.
+
+::: {layout-nrow=2 layout-ncol=1}
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_1.png){width=300}
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_2.png){width=300}
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_3.png){width=300}
+
+:::
+
+ __Recall: Operation__ 
+
+When no voltage is present across the diode terminals\, the diode is in the “off” \(blocked\) state\. No current flows through the diode\, and the diode acts like an   __open switch__  \.
+
+When   voltage at the anode is lower than the voltage at the cathode \, the diode is said to be   __reverse biased\. __  Diode still acts as an open switch and no current flows through the diode\.
+
+When the voltage at the anode is higher than the voltage at the cathode \, diode is said to be   __forward biased\. __  Diode acts as a closed switch\, allowing the current to flow from the anode to the cathode\.
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_4.png)
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_5.png)
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_6.png)
+
+::: {.notes}
+
+
+
+:::
+
+ __Recall: I\-V characteristics__ 
+
+Represents the current flowing through the diode as a function of the voltage across its terminals
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_7.png)
+
+Question: Is Real diode I\-V characteristics curve linear or non linear  ?   
+
+::: {.notes}
+
+
+
+:::
+
+# Diodes Circuits Analysis
+
+ __Load__       __Line__    __  __    __Analysis:__ 
+
+The operating point of a diode can be determined by a  load\-line analysis  of the voltage\-current characteristic\.
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_8.jpg)
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_9.png)
+
+Determine Point A\, where no current is flowing through the diode\. \(diode open\)
+
+Determine Point B\, where no voltage drop across the diode\. \(diode closed\)
+
+Construct  Load Line  by connecting the two points\.
+
+Operating point \(Q\-point\)  is given by the intersection of the load line and the diode characteristic\.
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_10.jpg)
+
+L  oad line is determined   by   the    applied   network\,   whereas   the   diode   characteristics  are   defined by   the   selected     device\.
+
+Q\- point   is the   quiescent   operating point\.
+
+::: {.notes}
+
+
+
+:::
+
+ __Load__       __Line__    __  __    __Analysis:__ 
+
+Given the diode circuit below\, the intersections of the load line on its characteristics  can be determined by first applying Kirchhoff’s voltage  law in the clockwise direction\.
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_11.png)
+
+::: {.notes}
+
+
+
+:::
+
+# Analysis of Diodes Circuits
+
+ __Load__       __Line__    __ __    __Analysis:__ 
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_12.png)
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_13.png)
+
+::: {.notes}
+
+
+
+:::
+
+# Diodes Circuits Analysis
+
+ __Series __    __Diode__    __ __    __Configuration:__ 
+
+For the  series diode configuration below\, calculate\, V  D  \,V  R   and I  D  \. Assume a silicon diode
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_14.png)
+
+ __Question:__ 
+
+How will the circuit behave if the source voltage E\, is reduced to 0\.5V  ?
+
+Hint: Will the diode conduct or not  ?
+
+Answer:
+
+The diode will not conduct\, I  D  =0
+
+V  D  = E = 0\.5v
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_15.png)
+
+::: {.notes}
+
+
+
+:::
+
+ __Series __    __Diode__    __ __    __Configuration:__ 
+
+Repeat  previous example when the diode is reversed   i\.e   calculate\, V  D  \,V  R   and I  D  \. Assume a silicon diode\.
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_16.png)
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_17.png)
+
+Answer:
+
+The diode will not conduct\, I  D  =0
+
+V  D  =E = 8v
+
+::: {.notes}
+
+
+
+:::
+
+ __Series __    __Diode__    __ __    __Configuration:__ 
+
+Determine I  D   and V  D   for the circuit using Load Line Analysis  \.
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_18.png)
+
+![](l3.1-diode-circuits-analysis-img/l31-diode-circuits-analysis_19.png)
+
+::: {.notes}
+
+
+
+:::
+

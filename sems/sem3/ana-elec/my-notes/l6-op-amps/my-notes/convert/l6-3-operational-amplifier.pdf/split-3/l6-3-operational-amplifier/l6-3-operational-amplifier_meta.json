@@ -1,0 +1,194 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Analog-to-Digital Conversion",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          444.856689453125,
+          45.753265380859375
+        ],
+        [
+          444.856689453125,
+          76.728515625
+        ],
+        [
+          56.25,
+          76.728515625
+        ]
+      ]
+    },
+    {
+      "title": "Analog-to-Digital Conversion",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          444.856689453125,
+          45.753265380859375
+        ],
+        [
+          444.856689453125,
+          76.5662841796875
+        ],
+        [
+          56.25,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "Discussions",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          286.49798583984375,
+          99.404296875
+        ],
+        [
+          462.5144348144531,
+          99.404296875
+        ],
+        [
+          462.5144348144531,
+          132.84271240234375
+        ],
+        [
+          286.49798583984375,
+          132.84271240234375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          49
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "TableCell",
+          37
+        ],
+        [
+          "Span",
+          5
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          3
+        ],
+        [
+          "Line",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/l6-3-operational-amplifier"
+}

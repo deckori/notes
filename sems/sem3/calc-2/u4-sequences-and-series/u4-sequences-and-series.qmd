@@ -1,0 +1,706 @@
+---
+title: 4. Sequences and Series
+---
+
+## Overall Subject Videos and Sites:
+
+[Playlist](https://youtube.com/playlist?list=PLHgLUBSREUPl6Ie2hq2NdVdX3z-B8ldOi&si=Gu6x7or_NYFt2MtG)
+
+[Sequences](https://www.video-tutor.net/sequences.html)
+
+{4}----------------
+
+## Detinition of Sequence
+
+A *sequence* is any function whose domain is the set of integers starting with some integer no (often 0 or 1).
+
+For instance, the function a(n) =, for $n=1,2,3,\ldots$ , defines the sequence
+
+$$\frac{1}{1},\frac{1}{2},\frac{1}{3},\frac{1}{4},\dots$$
+
+Here, 1/1 is called the first term, 1/2 is the second term, and so on. We call $a(n)=1/n$ the general term, since it gives a general formula for computing all the terms of the sequence.
+
+Further, we use subscript notation instead of function notation and write $a_n$ instead of $a(n)$
+
+## Examples:
+
+1) Write out the fist four terms of the sequence whose general term isgiven by $a_{n}=\frac{n+1}{n}$
+
+\begin{align*}
+a_12 &= \frac{1+1}{1} = \frac{2}{1},\\
+a_2 &= \frac{2+1}{2} = \frac{3}{2},\\
+a_3 &= \frac{4}{3},\\
+a_4 &= \frac{5}{4},\dots
+\end{align*}
+
+1) Write out the fist ive terms of the sequence whose genera term is given by $a_{n}=\frac{2n-1}{n^{2}}$
+
+\begin{align*}
+a_1 &= \frac{2\cdot 1+1}{1^2} = \frac{2}{1},\\
+a_2 &= \frac{2 \cdot 2 +1}{2^2} = \frac{3}{4},\\
+<!-- a_3 &= \frac{4}{3},\\ -->
+<!-- a_4 &= \frac{5}{4},\dots -->
+\end{align*}
+
+1) Write out the first six terms of the sequence whose general term is given by
+
+$$a_n=(-1)^n.\frac{n+1}{n}$$
+
+\begin{align*}
+    a_1 & = (-1)^1 \cdot 2 = -2 \\
+    a_2 = (-1)^2 \cdot
+\end{align*}
+
+### Set Notation for Sequences
+
+The sequence with general term $a_{n}=\frac{1}{n^{2}}$ for $n=1,2,3,\ldots$ , can also be denoted by
+
+$$\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n^2}\right\}_{n=1}^\infty,$$
+
+or, equivalently, by listing the terms of the sequence
+
+$$\left\{\frac{1}{1},\frac{1}{2^2},\frac{1}{3^2},\ldots,\frac{1}{n^2},\ldots\right\}.$$
+
+## Graphing Sequences
+
+To graph the sequence $a_{n}=\frac{1}{n^{2}}$ plot a number of discrete points, since a sequence is a function defined only on the integers. Note that as $n$ gets larger and larger, the terms of the sequence get closer and closer to zero
+
+![](./images/sequence-graph.png)
+
+In this case, we say that the sequence converges to 0 and we write:.
+
+$$\lim\limits_{n\to\infty}a_n=\lim\limits_{n\to\infty}\frac{1}{n^2}=0$$
+
+In general, we say that the sequence. $\{a_n\}_{n=1}^{\infty}$ converges to $L$ (i.e., $\lim_{n\to\infty}a_n=L$, if we can make $a_n$ as close to $L$ as desired, simply by making $n$ sufficiently large.
+
+{4}-------------------
+
+Examples: 1) Evaluate the limit of each of the following sequences, then plot each sequence and illustrate its convergence.
+
+$$a_n=\frac{1}{n^3}$$
+
+$\lim _{n \to \infty} a_n = \lim _{n \to \infty} \frac{1}{n^3} = 0$
+
+a) $a_{n}=\frac{n}{n+1}$
+
+\begin{align*}
+  \lim _{n \to \infty} \frac{n}{n+1} &= \frac{\infty}{\infty} \\
+                                     & = \lim _{n \to \infty} \frac{ \frac{n}{n} }{ \frac{n+1}{n}} \\
+                                     & = \lim _{n \to \infty} \frac{1}{1+\frac{1}{n}} \\
+                                     & = \frac{1}{1+0} \\
+                                     & = 1 \\
+\end{align*}
+
+a) $$a_n=\frac{2n+1}{n}$$
+
+\begin{align*}
+  \lim _{n \to \infty}  = \frac{\infty}{\infty} \\
+  & = \lim _{n \to \infty} 
+\end{align*}
+
+1) Determine the convergence or divergence of each of the following sequences
+
+$$.)\left\{\frac{5n+7}{3n-5}\right\}_{n=1}^{\infty}$$
+
+### Solution:
+
+$$\lim\limits_{n\to\infty}\frac{5n+7}{3n-5}=\lim\limits_{n\to\infty}\frac{(5n+7)\bigl(\frac{1}{n}\bigr)}{(3n-5)\bigl(\frac{1}{n}\bigr)}=\lim\limits_{n\to\infty}\frac{5+\frac{7}{n}}{3-\frac{5}{n}}=\frac{5}{3}$$ Then the sequence converges to $\frac{5}{3}$
+
+NOTE: If you (incorrectly aply Hopita's Rulein this example, you get the right answer $\frac{5}{3}$ Unfortunately, you will not always be so lucky..
+
+Theorem 1 (presented later) describes how you can safely use I'Hopital's Rule.
+
+{6}-----------------------
+
+$$\mathsf b)\left\{\begin{matrix}n^2+1\\2n-3\end{matrix}\right\}_{n=1}^{\infty}$$
+
+$$c)\{(-1)^n\}_{n=1}^{\infty}$$
+
+### Solution:
+
+$$\{-1,1,-1,1,-1,1,\ldots\}$$
+
+The terms of the sequence alternateback and forthbetween -1 and 1 and so the sequence clearly diverges
+
+![](./images/fBlF76PZ7QGqXqSAIBOacTlBpkSqAhDcQ.png)
+
+### Definition of sequence convergence
+
+The sequence $\{a_n\}_{n=1}^\infty$ converges to $L$ if andonlyif given anynumber $\varepsilon>0$ , there is an integer. $N$ for which:
+
+$|a_{n}-L|<\varepsilon$ , for every $n>N$
+
+If thereisno suchnumber $L$ , then we say that the sequence diverges.
+
+The definition says that the sequence $\{a_n\}_{n=1}^\infty$ converges to $L$ if given any number $\varepsilon>0$ ,wecan find an integer $N$ so that the terms of the sequence stay between $L-\varepsilon$ and $L+\varepsilon$ for allvaluesof $$\text{n>N.}$$
+
+![](./images/fGeqhvpDC40vcXDH9X8TzzHNaeGoGDivD.png)
+
+Example: Use thedefition t show tht the seguence $\left\{\frac{1}{n^{2}}\right\}_{n=1}^{\infty}$ converges to 0
+
+### Solution:
+
+Wemust show that we can make $1/n^2$ as close to 0 as desired,just by making $n$ sufficiently large. So, given any $\varepsilon>0$ ,we must find $N$ sufficiently large so that for every $n>N$
+
+$$\left|\frac{1}{n^2}-0\right|<\varepsilon\quad\mathrm{or}\quad\frac{1}{n^2}<\varepsilon.$$
+
+Then
+
+$$n^2>\frac{1}{\varepsilon}$$
+
+$$\sqrt{\frac{1}{\varepsilon}}<n$$
+
+If we choose $N$ to be an integer with N ≥ , then $n>N$ implies that $\frac{1}{n^{2}}<\varepsilon$ as desired
+
+### Properties
+
+Suppose that $\{a_{n}\}_{n=n_{0}}^{\infty}$ and $\{b_{n}\}_{n=n_{0}}^{\infty}$ both converge. Thene
+
+(ii) 
+
+     (iii) $$\begin{aligned}
+           &\lim_{n\to\infty}(a_{n}+b_{n})=\operatorname*{lim}_{n\to\infty}a_{n}+\operatorname*{lim}_{n\to\infty}b_{n}, \\
+           &\operatorname*{lim}_{n\to\infty}(a_{n}-b_{n})=\operatorname*{lim}_{n\to\infty}a_{n}-\operatorname*{lim}_{n\to\infty}b_{n}, \\
+           &\lim_{n\to\infty}(a_{n}b_{n})=\bigl(\lim_{n\to\infty}a_{n}\bigr)\bigl(\lim_{n\to\infty}b_{n}\bigr)\quad\mathrm{and} \\
+           &\lim_{n\to\infty}\frac{a_{n}}{b_{n}}=\frac{\operatorname*{lim}_{n\to\infty}a_{n}}{\operatorname*{lim}_{n\to\infty}b_{n}}(\mathrm{assuming}\operatorname*{lim}_{n\to\infty}b_{n}\neq0).
+           \end{aligned}$$ (iy
+
+### Theorem 1
+
+Given the sequence $\{a_n\}$ ,if we have a function $f(x)$ such that $f(n)=a_{n}$ and lim f(x) = L, ther $$\lim_{n\to\infty}a_{n}=L$$
+
+N.B.The converse of the theorem is not true.
+
+Example 1: Evaluate $\lim_{n\to\infty}\frac{n+1}{e^{n}}$
+
+### Solution:
+
+Applying 'Hopital's Rule to a related function $f(x)$ . Take f(x)= x+1
+
+$$\lim\limits_{x\to\infty}\frac{x+1}{e^x}=\lim\limits_{x\to\infty}\frac{\frac{d}{dx}(x+1)}{\frac{d}{dx}(e^x)}=\lim\limits_{x\to\infty}\frac{1}{e^x}=0.$$
+
+From Theorem 1, we conclude that
+
+$$\lim\limits_{n\to\infty}\frac{n+1}{e^n}=0,\text{also.}$$
+
+Example 2: Determine if each of the following sequences converge or diverge.If the sequence converges determine its limit.
+
+$$\left\{\frac{e^{2n}}{n}\right\}_{n=1}^{\infty}$$
+
+$$\left\{\frac{\ln(n+2)}{\ln(1+4n)}\right\}_{n=1}^{\infty}$$
+
+$$\left\{\frac{e^{5n}}{3-e^{2n}}\right\}_{n=1}^{\infty}$$
+
+Suppose $\{a_n\}_{n=n_0}^\infty$ and $\{b_n\}_{n=n_0}^\infty$ are convergent sequences,both converging to the limit $L$
+
+If there is an integer $n_1\geq n_0$ such that for all $n\geq m$ $a_{n}\leq c_{n}\leq b_{n}$ ,then $\{c_n\}_{n=n_0}^\infty$ converges to $L$ too.
+
+Exampe 1: eemn the vereo dive f the seqenc $\left\{\frac{\sin n}{n^2}\right\}_{n=1}^{\infty}$
+
+### Solution:
+
+However, since. $$-1\leq\sin(n)\leq1\quad\text{for all }n,$$
+
+Dividing through by $n^{2}$ gives
+
+$$-\frac{1}{n^{2}}\leq\frac{\sin(n)}{n^{2}}\leq\frac{1}{n^{2}}\quad foralln\geq1$$
+
+And since
+
+$$\lim_{n\to\infty}-\frac{1}{n^{2}}=0\quad and\quad\lim_{n\to\infty}\frac{1}{n^{2}}=0$$
+
+Then the Squeeze Theorem gives
+
+$$\lim_{n\to\infty}\frac{\sin(n)}{n^2}=0$$
+
+Example 2 Dtermin the convergenceor divergenceof the sequene $\left\{\frac{\cos(n)}{n}\right\}_{n=1}^{\infty}$
+
+### Solution:
+
+However, since. $$-1\leq\cos(n)\leq1\quad\text{for all }n,$$
+
+Dividing through by $n$ gives
+
+$$-\frac{1}{n}\leq\frac{\cos(n)}{n}\leq\frac{1}{n}\quad foralln\geq1$$
+
+And since
+
+$$\lim_{n\to\infty}-\frac{1}{n}=0\quad and\quad\lim_{n\to\infty}\frac{1}{n}=0$$
+
+Then the Squeeze Theorem gives
+
+$$\lim_{n\to\infty}\frac{\cos(n)}{n}=0$$
+
+Example 3: Determine the convergence or divergence o he sequence $\left\{2+\frac{\sin n}{n}\right\}_{n=1}^{\infty}$
+
+### Solution:
+
+However, since $$-1\leq\sin(n)\leq1\quad\text{for all }n,$$
+
+Dividing through by $n$ gives
+
+$$-\frac{1}{n}\leq\frac{\sin(n)}{n}\leq\frac{1}{n}\quad foralln\geq1$$
+
+$$2-\frac{1}{n}\leq2+\frac{\sin(n)}{n}\leq2+\frac{1}{n}$$
+
+Adding 2
+
+And since
+
+$$\lim\limits_{n\to\infty}2-\frac{1}{n}=2\quad and\quad\lim\limits_{n\to\infty}2+\frac{1}{n}=2$$
+
+Then the Squeeze Theorem gives
+
+$$\lim\limits_{n\to\infty}2+\frac{\sin(n)}{n}=2$$
+
+### Theorem 3
+
+If lim Ianl = O, then lim an = O, also.
+
+Theorem 3 is particularly useful for sequences with terms of alternating signs (i.e. with both positive and negative terms)
+
+Examples: Determine the convergence or divergence of the following sequences.
+
+$$\left\{\begin{matrix}(-1)^n\\\hline n\end{matrix}\right\}_{n=1}^{\infty}$$
+
+### Solution:
+
+$$\text{e}\left|\frac{(-1)^{n}}{n}\right|=\frac{1}{n}$$ And Since $$\lim\limits_{n\to\infty}\frac{1}{n}=0$$
+
+$$\lim\limits_{n\to\infty}\left|\frac{(-1)^n}{n}\right|=0$$ Then $$\lim\limits_{n\to\infty}\frac{(-1)^n}{n}=0$$ By using Theorem 3 we have Then the sqguencoe $\left\{\frac{(-1)^n}{n}\right\}_{n=1}^\infty$ converges i 0
+
+$$\left\{\frac{(-1)^{n-2}.n^{2}}{4+n^{3}}\right\}_{n=0}^{\infty}$$ a)
+
+$$\left\{\frac{(-1)^{n+7}.(2-8n)}{n^{2}+9}\right\}_{n=2}^{\infty}$$ A)
+
+## Definition of a Series
+
+{{< video https://www.youtube.com/watch?v=zg9N2gAf6a4 >}}
+
+A series, which is not a list of terms like a sequence, is the sum of the terms in a sequence. I theserieshas afinitenumberof terms,it is a simplemattertofind the sum of theseries by adding the terms. However, when the series has an infinite number of terms the summation is more complicated and the series may or may not have a finite sum.
+
+For example, we could take the finite sequence $\{2k+1\}_{k=1}^{10}=\{3,5,7,\dots\dots,21\}$
+
+Then the corresponding example of a finite series would be given by all of these terms added together,
+
+$$3+5+7+\cdots...+21$$
+
+We canwrite this summore concisely using sigma notation.Wewrite the capital Greekletter sigma, and then the rule for the k-th term. Below the sigma we write $“k=1”$ .Above the sigma we write the value of $k$ for the last term in the sum, which in this case is 10. So in this case we have
+
+$$\sum_{k=1}^{10}2k+1=3+5+7+\cdots...+21$$
+
+and in this case the sum of the series is equal to 120.
+
+In the same way, an infinite series is the sum of the terms of an infinite sequence. An example of an infite seguene is $\left\{\frac{1}{2^{k}}\right\}_{k=1}^{\infty}=\left\{\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{1}{16},\frac{1}{32},\frac{1}{64},\ldots\right\}$
+
+and then the series obtained from this sequence would be given by all of these terms added together,
+
+$$\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\frac{1}{64}+\cdots $$
+
+with a sum going onforever.Once again we canuse sigmanotationto express thisseries.We write down the sigma sign and the rule for the $k$ -th term. But now we put the symbol for infinity above the siqma, to show that we are adding up an infinite number of terms. In this case we have
+
+$$\sum_{k=1}^{\infty}\frac{1}{2^{k}}=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\frac{1}{64}+\cdots $$
+
+## Definition of a Partial Sum
+
+A partial sum of an infinite series is the sum of a finite number of consecutive terms beginning with the first term. When working with infinite series, it is often helpful to examine the behavior of the partial sums.
+
+What could we mean by the sum of the series.
+
+$$\sum_{k=1}^{\infty}\frac{1}{2^{k}}=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\frac{1}{64}+\cdots $$
+
+Let us try adding up the first few terms and see what happens, where $S_{\mathrm{k}}$ represents the sum of the first $k$ terms of the sequence.
+
+The sum of the first two terms is The sum of the first three terms is $$\begin{aligned}
+&S_{2}={\frac{1}{2}}+{\frac{1}{4}}={\frac{3}{4}} \\
+&S_{3}={\frac{1}{2}}+{\frac{1}{4}}+{\frac{1}{8}}={\frac{7}{8}} \\
+&S_{4}={\frac{1}{2}}+{\frac{1}{4}}+{\frac{1}{8}}+{\frac{1}{16}}={\frac{15}{16}} \\
+&S_{5}=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}=\frac{31}{32}
+\end{aligned}$$ The sum of the first four terms is And the sum of the first five terms is
+
+These sums of the first terms of the series are called partial sums.
+
+The first partial sum isjust the first term onits ow, so in this case it would be $S_{1}=\frac{1}{2}$
+
+The second partial sum is the sum of the first two terms, $S_{2}=\frac{3}{4}$
+
+The third partia sum is the sum of the first three terms, $S_{3}=\frac{7}{8}$ , and so on. If we write down the partial sums from this example
+
+$$\left\{\frac{1}{2},\frac{3}{4},\frac{7}{8},\frac{15}{16},\frac{31}{32},...\right\}$$
+
+we can see they form the beginning of another infinite sequence. $\{S_n\}_{n=1}^{\infty}$ called the Sequence of
+
+partial sums
+
+The n-th term of this sequence is the n-th partial sum denoted by $S_{n}$ . We can see that the partial sumshereform a sequence that has limit 1
+
+$$\lim_{n\to\infty}S_{n}=1$$
+
+So it would make sense to say that this series has sum 1. We write:
+
+$$\sum_{k=1}^{\infty}\frac{1}{2^{k}}=1$$
+
+# Definition
+
+If the sequence of partial sums. $\{S_n\}_{n=1}^\infty$ ,defined by its general term
+
+$$S_n=\sum_{k=1}^na_k$$
+
+converges to some number S, then we say that the series
+
+$$\sum_{k=1}^{\infty}a_k$$
+
+converges to S too, and we write:
+
+$$\sum_{k=1}^{\infty}a_k=\lim_{n\to\infty}\sum_{k=1}^{n}a_k=\lim_{n\to\infty}S_n=S$$
+
+In this case we call $S$ the sum of the series.
+
+Otherwise,if the sequence of partial sums $\{S_n\}_{n=1}^\infty$ diverges (i.e $\lim_{n\to\infty}S_n$ does not exist),then we say that the series diverges.
+
+Examples: Determine if the following series is convergent or divergent. If the series converges determine its sum (The sequence of partial sum is given)..
+
+$$a)\sum_{k=1}^{\infty}k^2$$
+
+$$\sum_{=1}^{\infty}k^{2}\quad\mathrm{where}\quad S_{n}=\sum_{k=1}^{n}k^{2}=1^{2}+2^{2}+......+n^{2}$$
+
+### Solution:
+
+$$\text{tial sum is:}S_{n}=\sum_{k=1}^{n}k^{2}=1^{2}+2^{2}+\cdots+n^{2}\\\text{And}\operatorname*{lim}_{n\to\infty}S_{n}=\operatorname*{lim}_{n\to\infty}(1^{2}+2^{2}+\cdots+n^{2})=\infty.$$
+
+Since the sequence of partial sums diverges, the series diverges also.
+
+$$b)\sum_{k=1}^{\infty}k$$
+
+$$\mathrm{ere}\quad S_{n}=\sum_{k=1}^{n}k=\frac{n(n+1)}{2}$$
+
+$$c)\sum_{k=2}^{\infty}\frac{1}{k^{2}-1}\quad\mathrm{where}\quad S_{n}=\sum_{k=2}^{n}\frac{1}{k^{2}-1}=\frac{3}{4}-\frac{1}{2n}-\frac{1}{2(n+1)}$$
+
+$$d)\sum_{k=1}^{\infty}\frac{1}{3^{k-1}}\quad\mathrm{where}\quad S_{n}=\sum_{k=1}^{n}\frac{1}{3^{k-1}}=\frac{3}{2}\Big(1-\frac{1}{3^{n}}\Big)$$
+
+$$e)\sum_{k=0}^{\infty}(-1)^{n}\quad\mathrm{where}\quad S_{n}=\sum_{k=0}^{n}(-1)^{n}$$
+
+So,weve determined the convergence of five series now. Two of the series converged and three diverged.Let's go back and examine the series terms for each of these.For each of the series let's take the limit as $k\to\infty$ of the series terms(not the partial sums!!)
+
+we proved that this series diverges $$\lim_{k\to\infty}k^{2}=\infty $$ we proved that this series diverges $$\lim_{k\to\infty}k=\infty $$
+
+$$\lim_{k\to\infty}\frac{1}{k^{2}-1}=0$$ We proved that this series converges isum is $\frac{3}{4}$ 3） Wwe proved that this series converges its sum is $\frac{3}{2}$ $$4)\lim_{k\to\infty}\frac{1}{3^{k-1}}=0$$ we proved that this series diverges $$5)\lim_{k\to\infty}(-1)^{k}=\infty $$
+
+Notice that for the two series that converged (3 and 4) the series term itself was zero in the limit This will always be true for convergent series and leads to the following theorem.
+
+# Theorem
+
+$\sum_{k=1}^\infty a_k$ IDCae orerstee $\lim_{k\to\infty}a_k=0$
+
+### Notes:
+
+1) Be careful to not misuse this theorem! This theorem gives us a requirement for convergence buf not a guarantee of convergence
+
+In other words,the converse is NOT true.If $\lim_{k\to\infty}a_k=0$ , the series may actually diverge!
+
+1) In order for a series to converge,the kth-term of the series must go to zero in the limit
+
+If the kth-term of the series does not go to zero in the limit then there is no way the series can converge since this would violate the theorem..
+
+This leads us to the first of many tests for the convergence/divergence of a series that we'llbe seeing in this chapter. This test is called "The Kth-Term Test for Divergence
+
+### Kth-Term Test for Divergence
+
+1f $\lim_{k\to\infty}a_k\neq0$ ten te ete $\sum_{k=1}^\infty a_k$ dierses
+
+Examples: Determine if the following series are convergent or divergent.
+
+$$a)\sum_{k=1}^{\infty}\frac{k}{k+1}$$
+
+$$b)\sum_{k=1}^{\infty}\frac{4k^2-k^3}{10+2k^3}$$
+
+### Index Shift
+
+The next topic that we need to discuss in this section is that of index shift. To be honest this is noi a topic that we'll see all that often in this course. In fact. we'll use it once in the next section anc then not use it again in all likelihood
+
+The basic idea behind index shifts is to start a series at a different value for whatever the reasor (and yes, there are legitimate reasons for doing that)
+
+Consider the following series,
+
+$$\sum_{k=2}^{\infty}\frac{k+5}{2^k}$$
+
+Suppose that for some reason we wanted to start this series at $K=0$ , but we didn't want to change the value of the series. This means that we can't just change the $k=2$ to $k=0$ as this would add in two new terms to the series and thus change its value.
+
+Performing an index shift is a fairly simple process to do. We'll start by defining a new index, say i, as follows:
+
+$$i=k-2$$
+
+Now, when $k=2$ ,we will get $i=0$ . Also if $k=\infty$ then $i=\infty-2=\infty$
+
+so only the lower limit will change here. Next, we can solve this for $k$ to get, $k=i+2$
+
+We can now completely rewrite the series in terms of the index i instead of the index $k$ , simply by plugging in our equation for $k$ in terms of $i.$ (recall that the letter we used for the index doesn't matter)
+
+$$\sum_{k=2}^{\infty}\frac{k+5}{2^{k}}=\sum_{i=0}^{\infty}\frac{i+2+5}{2^{i+2}}=\sum_{i=0}^{\infty}\frac{i+7}{2^{i+2}}$$
+
+To finish the problem out we'll recall that the letter we used for the index doesn't matter and sc we'll change the final i back into the $k$ to get,
+
+$$\sum_{k=2}^{\infty}\frac{k+5}{2^{k}}=\sum_{k=0}^{\infty}\frac{k+7}{2^{k+2}}$$
+
+@9 wrte $\sum_{k=2}^{\infty}\frac{k+5}{2^k}$ as serestatats es $k=0$
+
+a) write $\sum_{k=1}^{\infty}\frac{k^2}{1-3^{k+1}}$ asa sere tatats e $\mathrm{k=3}$
+
+In this section wearegoing to take abrief look at two special series:TheGeometricSeries and the Harmonic Series.
+
+## Geometric Series
+
+### Definition
+
+A geometric series is any series that can be written in the form:.
+
+ark，where a and k are non-zero constant
+
+![](./images/fdTevVSAgEbtNgoYr6CcT0bGaSMisQyl3.png)
+
+In this case,each term in the series is equal to the constant rtimes theprevious term.We callr the ratioof the geometric series.
+
+### Theorem: Convergence and divergence
+
+Fora $\neq0$ he eometri eries ar onverges to $\frac{a}{1-r}$ i $|r|<1\left(i.e-1<r<1\right)$ and diverges if $|r|\geq1$
+
+## Proof:
+
+Since thefirst term of the series corresponds to $k=0$ ,the $n^\mathrm{th}$ partial sum $S_{\mathrm{n}}$ (the sum of the first n terms) is given by:
+
+$$S_n=a+ar^1+ar^2+\cdots+ar^{n-1}$$
+
+Multiply by $r.$ weget:
+
+$$rS_n=ar^1+ar^2+ar^3+\cdots+ar^n$$
+
+Subtracting,
+
+$$\begin{aligned}r)S_{n}&=(a+ar^{1}+ar^{2}+\cdots+ar^{n-1})-(ar^{1}+ar^{2}+ar^{3}+\cdots\\&=a-ar^n=a(1-r^n)\end{aligned}$$
+
+Dividing both sides by $(1-r)$
+
+$$S_n=\frac{a(1-r^n)}{1-r}.$$
+
+If $|r|<1$ ,notice that $r^{n}\to0$ as $n\to\infty$ and so,
+
+$$\lim\limits_{n\to\infty}S_n=\lim\limits_{n\to\infty}\frac{a(1-r^n)}{1-r}=\frac{a}{1-r}.$$
+
+If $|r|\geq1$ , notice that $r^{n}\to\infty$ as $n\to\infty$ , so the $\lim_{n\to\infty}S_n$ does not exist and hence the geometric series diverges
+
+Examples: Investigate the convergence or divergence of each of the following series:
+
+$$a)\sum_{k=0}^\infty6\left(-\frac{7}{2}\right)^k$$
+
+### Solution:
+
+This is a geometri eries with rati $r=-\frac{7}{2}$ Since
+
+$$|r|=\left|-\frac{7}{2}\right|=\frac{7}{2}\ge1,$$
+
+Then the series is divergent
+
+$$b)\sum_{k=0}^{\infty}\frac{(-4)^{3k}}{5^{k-1}}$$
+
+### Solution:
+
+It doesn't look like a geometric series, but it can be put into the correct form. In this case the series starts at $k=0$ so we'll need the exponents to be k on the terms. Note that this means. we're going to need to rewrite the exponent on the numerator a little
+
+$$\sum_{k=0}^{\infty}\frac{(-4)^{3k}}{5^{k-1}}=\sum_{k=0}^{\infty}\frac{((-4)^{3})^{k}}{5^{k}.5^{-1}}=\sum_{k=0}^{\infty}\frac{5.(-64)^{k}}{5^{k}}=\sum_{k=0}^{\infty}5.\left(\frac{-64}{5}\right)^{k}$$
+
+This is a geometric series with $a=5$ and $r=-\frac{64}{5}$ Note that $|r|\geq1$ , then this series diverges.
+
+$$c)\sum_{k=2}^{\infty}5\left(\frac13\right)^{k}$$
+
+$$d)\sum_{k=1}^{\infty}9^{-k+2}.4^{k+1}$$
+
+## Harmonic Series
+
+{{< video https://www.youtube.com/watch?v=m6ByHObCs6Y >}}
+
+{{< video https://youtu.be/OqBZCycIYfw?si=v-6KjSAj8BLIA2uV >}}
+
+### Definition
+
+The Harmonic seris sof the form: k=1
+
+## Theorem
+
+The Harmonic series is a divergent series..
+
+Proof:
+
+$$\lim_{k\to\infty}a_k=\lim_{k\to\infty}\frac{1}{k}=0$$
+
+### Be careful: This does not say that the series converges, this says that the series may converge
+
+Consider the nth partial sum
+
+$$S_n=\sum\limits_{k=1}^n\frac{1}{k}=\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{n}.$$
+
+$S_n$ corresponds to the sum of the areas of the. $n$ rectangles superimposed on the graph of $y=1/x.$ Since each of the indicated rectangles lies partly above the curve,.
+
+$$\begin{aligned}
+S_{n}& =\mathrm{Sum~of~areas~of~}n\mathrm{~rectangles}  \\
+&\ge\text{Area under the curve}=\int_{1}^{n+1}\frac{1}{x}dx \\
+&&=\ln|x|\Big|_{1}^{n+1}=\ln(n+1).
+\end{aligned}$$
+
+Since $\operatorname*{lim}_{n\to\infty}ln(n+1)=\infty$ , then the sequence $\{ln(n+1)\}_{n=1}^{\infty}$ diverges.
+
+![](./images/f651BlxSfoWcVOXQ45qxwio6arVw9nEgy.png)
+
+Since $S_{n}\geq ln(n+1)$ for all n, we must also have $\operatorname*{lim}_{n\to\infty}S_{n}=\infty$ . This means that the series
+
+$\sum_{k=1}^\infty\frac1k$ diverget e n $\lim_{k\to\infty}\frac1k=0$
+
+$$\begin{gathered}
+{\mathrm{If}}\sum_{k=1}^{\infty}a_{k}{\mathrm{~converges~to~}}A{\mathrm{~and}}\sum_{k=1}^{\infty}b_{k}{\mathrm{~converges~to~}}B{\mathrm{,~then~the~series}}\sum_{k=1}^{\infty}(a_{k}+a_{k}){\mathrm{~and~}}A{\mathrm{~and~}}\sum_{k=1}^{\infty}b_{k}{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~}}B{\mathrm{~and~ \\
+\text{converges to}A\pm B\text{and}\sum_{k=1}^{\infty}(\text{c}a_{k})\text{converges to}cA,\text{for any constant} \\
+{\mathrm{If}}\sum_{k=1}^{\infty}a_{k}{\mathrm{~converges~and}}\sum_{k=1}^{\infty}b_{k}{\mathrm{~diverges,~then}}\sum_{k=1}^{\infty}(a_{k}\pm b_{k}){\mathrm{~diverges.}} 
+\end{gathered}$$
+
+### Keep in mind: -Multiplying a seriesby a constant will not change the convergence/divergence of the series
+
+-Adding or subtracting a constant from a series will not change the convergence/divergence of the series.
+
+Examples:Show that each of the following series are divergent
+
+$$a)\sum_{k=1}^{\infty}\frac{5}{k}$$
+
+$$b)\sum_{k=4}^{\infty}\frac1k$$
+
+## Integral Test
+
+{{< video https://youtu.be/x621rtIwb_4?si=Jwa1TdlHfMCsdjKW>}}
+
+### Theorem Integral Test
+
+Suppose $f(x)$ is continuous, decreasing and $f(x)\geq0$ over the interval $[1,\infty)$ , such that $f(k)=a_{k}$ for $k=1,2$ , ...Then:
+
+a) $\int_1^\infty f(x)dx \to \text{Converges} \implies \sum_{k=1}^\infty a_k \to\text{Converges}$
+b) $\int_1^\infty f(x)dx \to \text{Diverges} \implies \sum_{k=1}^\infty a_k \to\text{Diverges}$
+
+Note that: while the Integral Test might say that a given series and improper integral both converge, it does not say that they will converge to the same value..
+
+Examples: Determine if the following series is convergent or divergent by using the Integral Test..
+
+$$a)\sum_{k=0}^{\infty}\frac{1}{k^{2}+1}$$
+
+\begin{align*}
+  \lim_{A \to \infty} \int_0^R d\theta & \\
+                                       & = \lim_{A \to \infty} \theta |_0^R \\
+                                       & = \lim_{R \to \infty} \tan_{-1} (x) |_0^R \\
+                                       & = \lim_{R \to \infty} \\
+\end{align*}
+
+$$b)\sum_{k=2}^{\infty}\frac{1}{k\ln(k)}$$
+
+\begin{align*}
+  \sum_{k=2}^{\infty}\frac{1}{k\ln(k)} & \\
+\end{align*}
+
+$f(x) = \frac{1}{x \ln x}, x \in [2, \infty)$ is:
+
+- Continuous
+- Positive
+
+## The p series
+
+Same video as integral test
+
+Thep -seres $\sum_{k=1}^\infty\frac1{k^p}$ covere $p>1$ andieres e $p\leq1$
+
+Proof: - For $p=1$ ,this is the harmonic series,which diverges
+
+-For $p>1$ , define the function:
+
+$$f(x)=\frac{1}{x^p}=x^{-p}.$$
+
+So thefunction $f$ is continuous and positive for $x\geq1$
+
+And
+
+$f^{\prime}(x)=-p.x^{-p-1}<0$ ,then the function is decreasing
+
+So we can apply the Integral Test:
+
+$$\int_1^\infty x^{-p}dx=\lim_{R\to\infty}\int_1^Rx^{-p}dx=\lim_{R\to\infty}\left.\frac{x^{-p+1}}{-p+1}\right|_1^R$$
+
+$$=\lim\limits_{R\to\infty}\left(\frac{R^{-p+1}}{-p+1}-\frac{1}{-p+1}\right)=\frac{-1}{-p+1}.\quad\text{Since}p>1\text{implies}$$
+
+The improper integral converges and so, too, must the series.
+
+We leave it as an exercise to show that the series diverges when $p<1$
+
+Examples:Determine if the following series is convergent or divergent
+
+$$a)\sum_{k=4}^{\infty}\frac{1}{k^{7}}$$
+
+$$b)\sum_{k=1}^{\infty}\frac{1}{\sqrt{k}}$$
+
+## 4.5Comparison Test / Limit Comparison Test
+
+In the previous section we saw how to relate a series to an improper integral to determine the. convergence of a series.While theintegral test is a nice test,it does force us todoimproper integrals which aren't always easy and,in some cases,may beimpossible to determine the convergence.
+
+For instance, consider the following series:
+
+$$\sum_{k=0}^{\infty}\frac{1}{3^{k}+k}$$
+
+In order touse theIntegral Test we would have tointegrate:
+
+$$\int_0^\infty\frac{1}{3^x+x}dx$$
+
+and we're not even sure if it's possible to do this integral..
+
+Nicely enough for us there is another test that we can use on this series that will be much easier to use. This Test is the Comparison Test.
+
+### Theorem Comparison Test
+
+{{< video https://youtu.be/oZtAgihok5s?si=nkUFpgCxjPzIw9ib >}}
+
+Always remember the graphical explanation (mentioned in the video) when using this test
+
+Suppose that $0\leq a_{k}\leq b_{k}$ , for all $k.$
+
+(I) bscovrstee $\sum_{k=1}^\infty a_k$ convees to () $\sum_{k=1}^{\infty}a_k$ divere ten $\sum_{k=1}^\infty b_k$ diegest
+
+If the “larger” series converges, then the“smaller"one must also converge. Likewise, if the "smaller" series diverges, then the "larger" one must diverge too.
+
+Examples: Determine if the following series is convergent or divergent by using the Comparison Test.
+
+$$a)\sum_{k=0}^{\infty}\frac{1}{3^{k}+k}$$
+
+$$b)\sum_{k=1}^{\infty}\frac{1}{k^{3}+5k}$$
+
+$$c)\sum_{k=1}^{\infty}\frac{k}{k^{2}-cos^{2}(k)}$$
+
+$$d)\sum_{k=1}^{\infty}\frac{e^{-k}}{k+cos^{2}(k)}$$
+
+$$e)\sum_{k=1}^{\infty}\frac{k^{2}+2}{k^{4}+5}$$
+
+The comparison test is a nice test that allowsusto doproblems that either wecouldn't have done with the integral test or at the best would have been very difficult to do with the integral test. That. doesn't mean that it doesn't have problems of its own.
+
+Consider the following series:
+
+$$\sum_{k=0}^{\infty}\frac{1}{3^k-k}$$
+
+This is not much different from the first series that we looked at
+
+However, the comparison test won't work with this series. To use the comparison test on this series we would need to find a larger series that we could easily determine its convergence. In this. case we can't do what we did with the original series. If we drop the n we will make the. denominator larger(since the n was subtracted off) and so the fraction will get smaller and just like when we looked at the comparison test knowing that the smaller of two series converges does not mean that the larger of the two will also converge..
+
+So,wewill need somethingelse to dohelpus determine the convergence of this series.The following variant of the comparison test called Limit Comparison Test will allow us to determine the convergence of this series.
+
+### Theorem Limit Comparison Test
+
+{{< video https://www.youtube.com/watch?v=LBxYQ0TJxYM >}}
+
+Suppose that $a_{k},b_{k}>0$ for all $k$ and $\lim_{k\to\infty}\frac{a_{k}}{b_{k}}=L$ where L is a finite value, then either
+
+Fan $\sum_{k=1}^\infty b_k$ both onve or e o e
+
+Examples: Determine if the following series is convergent or divergent by using the Limit Comparison Test
+
+$$a)\sum_{k=0}^{\infty}\frac{1}{3^{k}-k}$$
+
+$$b)\sum_{k=3}^{\infty}\frac{1}{k^3-5k}$$

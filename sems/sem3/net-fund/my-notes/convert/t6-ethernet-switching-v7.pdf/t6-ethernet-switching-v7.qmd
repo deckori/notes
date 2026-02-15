@@ -1,0 +1,372 @@
+
+
+{0}------------------------------------------------
+
+![](_page_0_Picture_0.jpeg)
+
+# **Topic 6: Ethernet Switching**
+
+![](_page_0_Picture_2.jpeg)
+
+{1}------------------------------------------------
+
+## **Objectives**
+
+### **Explain how Ethernet works in a switched network.**
+
+| Topic Title                          | Topic Objective                                                                            |  |  |
+|--------------------------------------|--------------------------------------------------------------------------------------------|--|--|
+| Ethernet Frame                       | Explain how the Ethernet sublayers are related to the<br>frame fields.                     |  |  |
+| Ethernet MAC Address                 | Describe the Ethernet MAC address.                                                         |  |  |
+| The MAC Address Table                | Explain how a switch builds its MAC address table and<br>forwards frames.                  |  |  |
+| Switch Speeds and Forwarding Methods | Describe switch forwarding methods and port settings<br>available on Layer 2 switch ports. |  |  |
+| MAC and IP                           | Compare the roles of the MAC address and the IP<br>address.                                |  |  |
+| ARP                                  | Describe the purpose of ARP.                                                               |  |  |
+
+{2}------------------------------------------------
+
+# **Ethernet Encapsulation**
+
+![](_page_2_Figure_3.jpeg)
+
+{3}------------------------------------------------
+
+## **Ethernet Frames**
+
+## **Data Link Sublayers**
+
+The 802 LAN/MAN standards use two separate sublayers of the data link layer:
+
+- **LLC Sublayer**: (IEEE 802.2)
+  - Implemented in software.
+  - Communicates with upper protocol layers
+  - Places information in the frame to identify which network layer protocol is used for the frame.
+- **MAC Sublayer**: (IEEE 802.3, 802.11, or 802.15 for example)
+  - Implemented in hardware.
+  - Responsible for:
+    - Data encapsulation (addressing and error detection)
+    - Media access control.
+
+| Network      | Network Layer Protocol                 |                                                                               |                                                                       |                                                           |  |
+|--------------|----------------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------|--|
+| Data Link    | LLC Sublayer LLC Sublayer - IEEE 802.2 |                                                                               |                                                                       |                                                           |  |
+| MAC Sublayer | Ethernet<br>IEEE 802.3                 | WLAN<br>IEEE 802.11                                                           | WPAN<br>IEEE 802.15                                                   |                                                           |  |
+| Phys         | ical                                   | Various Ethernet<br>standards for Fast<br>Ethernet, Gigabit<br>Ethernet, etc. | Various WLAN standards for different types of wireless communications | Various WPAN<br>standards for<br>Bluetooth, RFID,<br>etc. |  |
+
+{4}------------------------------------------------
+
+#### **Ethernet Frames**
+
+# **MAC Sublayer**
+
+- The **IEEE 802.3** *includes* different Ethernet communications standards over various types of media including copper and fiber.
+- **Legacy Ethernet:** uses a bus topology or hubs, is shared, half-duplex medium, and uses a CSMA/CD access control to ensure that only one device in transmitting at a time.
+- **Ethernet LANs of today:** use switches in full-duplex mode, with no need for CSMA/CD access control.
+
+![](_page_4_Figure_5.jpeg)
+
+{5}------------------------------------------------
+
+- The Ethernet frame size is 64-1518 bytes.
+- Any frame < 64 bytes is considered a "collision fragment" or "runt frame".
+- Frames >1500 bytes are considered "jumbo" or "baby giant frames".
+- Any frame out of the normal size is dropped by the receiving device.
+
+![](_page_5_Figure_7.jpeg)
+
+- Preamble and Start Frame Delimiter Tells the receiver to get ready to receive a new frame.
+- FCS (Frame Check Sequence) Used to detect errors in a frame.
+
+
+{6}------------------------------------------------
+
+### **Ethernet MAC Addresses**
+
+# **MAC Address and Hexadecimal**
+
+- An Ethernet MAC address consists of a **48-bit** binary value, expressed using **12 hexadecimal values**.
+- Given that 8 bits (one byte) is a common binary grouping, binary 00000000 to 11111111 can be represented in hexadecimal as the range 00 to FF,
+- Leading zeroes are always displayed to complete the 8-bit representation, e.g., 00001010 is represented in hexadecimal as 0A.
+- Hexadecimal numbers are often represented by the value preceded by **0x** (e.g., 0x73) to distinguish between decimal and hexadecimal values in documentation.
+- Hexadecimal may also be represented by a subscript 16 (e.g., 7316), or the hex number followed by an H (e.g., 73H).
+
+{7}------------------------------------------------
+
+## **Ethernet MAC Addresses Ethernet MAC Address**
+
+- To ensure that MAC addresses are unique to the Ethernet interface, all vendors that sell Ethernet devices must register with the IEEE to obtain a unique 6 hexadecimal (i.e., 24-bit or 3-byte) code called the organizationally unique identifier (OUI).
+- An Ethernet MAC address consists of:
+  - a 6-hexadecimal vendor OUI code followed by
+  - a 6-hexadecimal vendor-assigned value.
+
+![](_page_7_Figure_6.jpeg)
+>- OUI belongs to the organization that makes the interface card
+>- Vendor asssigned is a random combination
+
+{8}------------------------------------------------
+
+## **Ethernet MAC Addresses Frame Processing**
+
+- When a NIC receives an Ethernet frame, it examines the destination MAC address to see if it matches the physical MAC address that is stored in RAM.
+  - If there is no match, the device discards the frame.
+  - If there is a match, it passes the frame up the OSI layers, where the de-encapsulation process takes place.
+
+**Note:** Ethernet NICs will also accept frames if the destination MAC address is a broadcast or a multicast group of which the host is a member.
+
+![](_page_8_Figure_6.jpeg)
+
+{9}------------------------------------------------
+
+## **Ethernet MAC Addresses Unicast MAC Address**
+
+• A unicast MAC address is used when a frame is sent from a single transmitting device to a single destination device.
+
+![](_page_9_Figure_3.jpeg)
+
+{10}------------------------------------------------
+
+**11**
+
+### **Ethernet MAC Addresses**
+
+# **Broadcast MAC Address**
+
+### An Ethernet broadcast frame:
+
+- is received and processed by every device on the Ethernet LAN.
+- has a destination MAC address of **FF-FF-FF-FF-FF-FF.**
+- is flooded out all Ethernet switch ports except the incoming port.
+- is not forwarded by a router.
+
+![](_page_10_Figure_8.jpeg)
+
+
+{11}------------------------------------------------
+
+**12**
+
+## **Ethernet MAC Addresses Multicast MAC Address**
+
+- A multicast MAC address is:
+  - recognized by the hexadecimal numbers **01-00-5E** at the beginning of the address in the case of IPv4 multicast packet.
+  - required by the multicast IP address.
+- An Ethernet multicast frame is:
+  - received and processed by a group of devices that belong to the same multicast group.
+  - flooded to all Ethernet switch ports except the incoming port, unless the switch is configured for multicast snooping.
+  - not forwarded by a router, unless the router is configured to route multicast packets.
+
+![](_page_11_Figure_9.jpeg)
+
+{12}------------------------------------------------
+
+**13**
+
+# **The MAC Address Table Switching Fundamentals**
+
+#### **An Ethernet switch:**
+
+- **Uses Layer 2 MAC addresses to make forwarding decisions.**
+- **Examines its MAC address table to make a forwarding decision for each frame, unlike legacy Ethernet hubs that repeat bits out to all ports except the incoming port.**
+- **Has the MAC address table that is empty when it is turned on.**
+- **Is completely unaware of the data (protocol) being carried in the data portion of the frame, such as an IPv4 packet, an ARP message, or an IPv6 packet.**
+
+> A hub forwards a packet received on a port to all other ports in all cases unlike a switch
+
+> Mac address table is called CAM (Content Addressing Memory)
+
+{13}------------------------------------------------
+
+**14**
+
+# **Switching Process - Steps**
+
+#### **1. Learning**
+
+- **The switch examines (***learns***) the source MAC Address of every frame that enters the switch and the incoming port number.**
+  - **If the source MAC address does not exist in the MAC table, it is added to the table along with the incoming port number.**
+  - **If the source MAC address does exist in the MAC table, the switch updates the refresh timer for that entry. By default, most Ethernet switches keep an entry in the table for 5 minutes.**
+
+#### **2. Forwarding**
+
+- **If the destination MAC address is a unicast address but not in the MAC table, the switch will forward the frame to all ports except the incoming port.**
+- **If the destination MAC address is a broadcast or a multicast, the switch will also forward the frame to all ports except the incoming port.**
+
+#### **3. Filtering**
+
+• **If the destination MAC address is a unicast address and in the MAC table, the switch will filter (forward) the frame to the specified port.** 
+
+{14}------------------------------------------------
+
+#### **The MAC Address Table**
+
+# **Switch Learning and Forwarding**
+
+![](_page_14_Figure_2.jpeg)
+
+**15**
+
+{15}------------------------------------------------
+
+## **The MAC Address Table Switch Filtering**
+
+![](_page_15_Figure_1.jpeg)
+
+**16**
+
+
+{16}------------------------------------------------
+
+## **Switch Speeds and Forwarding Methods Duplex and Speed Settings**
+
+- **Full-duplex** Both ends of the connection can send and receive simultaneously.
+- **Half-duplex** Only one end of the connection can send at a time.
+- The duplex and bandwidth settings must match between the switch ports of the connected devices.
+- Duplex mismatch
+  - One of the most common causes of performance issues on Ethernet links.
+  - Occurs when one port on the link operates at half-duplex while the other port operates at full-duplex.
+- Best practice is to configure both Ethernet switch ports as full-duplex
+- Auto negotiation automatically negotiates the best speed and duplex modes.
+
+![](_page_16_Picture_9.jpeg)
+
+**17**
+
+{17}------------------------------------------------
+
+## **Switch Speeds and Forwarding Methods Auto-MDIX**
+
+• Connections between devices once required the use of either a crossover or straight-through cable, depending on the type of interconnecting devices.
+
+**Note**: A direct connection between a router and a host requires a cross-over connection.
+
+- Most switch devices now support the automatic medium-dependent interface crossover (auto-MDIX) feature to enable the device to automatically detect the type of cable attached to the port and configures the interfaces accordingly.
+- Note: The auto-MDIX feature is enabled by default on switches running Cisco IOS Release 12.2(18)SE or later. However, the feature could be disabled. For this reason, you should always use the correct cable type and not rely on the auto-MDIX feature.
+
+{18}------------------------------------------------
+
+# **Destination on Same Network**
+
+There are two primary addresses assigned to a device on an Ethernet LAN:
+
+- **Layer 2 physical address (MAC address)** Used for NIC to NIC communications on the same Ethernet network.
+- **Layer 3 logical address (IP address)** Used to send the **packet** from the source device to the destination device.
+
+If a destination IP address is on the same network, the destination MAC address will be that of the destination device, that is 55-55-55 in the figure below.
+
+![](_page_18_Figure_8.jpeg)
+
+| Destination MAC | Source MAC | Source IPv4   | Destination IPv4 |
+|-----------------|------------|---------------|------------------|
+| 55-55-55        | aa-aa-aa   | 192.168.10.10 | 192.168.10.11    |
+
+{19}------------------------------------------------
+
+## **Destination on Remote Network**
+
+- When the destination IP address is on a remote network, the destination MAC address is that of the host **default gateway,** that is bb-bb-bb in the figure below.
+- **The Address Resolution Protocol (ARP)** is used to associate the IPv4 address of a device with the MAC address of the device NIC.
+
+![](_page_19_Figure_5.jpeg)
+
+{20}------------------------------------------------
+
+#### **Address Resolution Protocol (ARP) ARP Overview**
+
+A device uses ARP to determine the destination MAC address of a local device when it knows its IPv4 address.
+
+#### ARP provides two basic functions:
+
+- Resolving IPv4 addresses to MAC addresses
+- Maintaining an ARP table of IPv4 to MAC address mappings
+
+![](_page_20_Figure_6.jpeg)
+
+
+{21}------------------------------------------------
+
+#### **ARP**
+
+## **Resolving IPv4 Addresses to MAC addresses**
+
+- **1. A device will search its ARP table (cache) for a destination IPv4 address and a corresponding MAC address. The ARP table is stored temporarily in RAM.**
+  - **If the packet's destination IPv4 address is on the same network, the device will search the ARP table for the destination IPv4 address.**
+  - **If the destination IPv4 address is on a different network, the device will search the ARP table for the IPv4 address of the default gateway.**
+- **2. If the device locates the IPv4 address, its corresponding MAC address is used as the destination MAC address in the frame.**
+- **3. If no ARP table entry is found, then the device sends an ARP request.**
+
+**22**
+
+{22}------------------------------------------------
+
+## Resolving IPv4 Addresses to MAC addresses (cont.)
+
+- 1. Host A searches its ARP table for the MAC address of host D. Initially, the ARP table is empty.
+- 2. Host A broadcasts an ARP request (broadcast MAC (F...F)) to learn the MAC address of the host D.
+- 3. Host D sends an ARP reply that includes its MAC address, while hosts B and C ignore the ARP request.
+- 4. Host A receives the ARP reply, takes the information from it and adds it to its ARP table.
+
+![](_page_22_Figure_7.jpeg)
+
+{23}------------------------------------------------
+
+**24**
+
+# **Maintaining the ARP Table <sup>18</sup>**
+
+#### The ARP table entries are removed:
+
+- When an ARP cache timer expires.
+- Manually by the administrator.
+
+![](_page_23_Figure_6.jpeg)
+
+{24}------------------------------------------------
+
+### **ARP**
+
+## **ARP Tables on Networking Devices**
+
+• The **show ip arp** command displays the ARP table on a Cisco router.
+
+```
+R1# show ip arp 
+Protocol Address Age (min) Hardware Addr Type Interface
+Internet 192.168.10.1 - a0e0.af0d.e140 ARPA GigabitEthernet0/0/0
+```
+
+• The **arp –a** command displays the ARP table on a Windows 10 PC.
+
+```
+C:\Users\PC> arp -a
+Interface: 192.168.1.124 --- 0x10
+ Internet Address Physical Address Type
+ 192.168.1.1 c8-d7-19-cc-a0-86 dynamic
+ 192.168.1.101 08-3e-0c-f5-f7-77 dynamic
+```
+
+**25**
+
+{25}------------------------------------------------
+
+## **ARP Issues – ARP Broadcasting and ARP Spoofing**
+
+![](_page_25_Figure_3.jpeg)
+
+
+{26}------------------------------------------------
+
+## **Appendix: Packet Traveling**
+
+Packet Traveling - How Packets Move Through a Network (14:38)
+
+<https://www.youtube.com/watch?v=rYodcvhh7b8>
+
+**27**
+
+{27}------------------------------------------------
+
+## **Packet Traveling - How Packets Move Through a Network (14:38)**
+
+![](_page_27_Figure_1.jpeg)
+
+**28**

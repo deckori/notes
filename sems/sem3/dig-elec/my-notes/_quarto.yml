@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: .site
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    math:
+      method: mathjax
+    toc: true
+    respect-user-color-scheme: true
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+    fontsize: 20px
+
+website:
+  title: "AETN-1112 Digital Electronics"
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents:
+        - index.qmd
+        - introduction.qmd
+        - section: "Notes"
+          contents:
+            - doubts.qmd
+            - memorize-formula-constants.qmd
+            - progression-logs/midterm-progress.qmd
+            - progression-logs/textbook-guide.qmd
+            - t1-introduction-to-digital-system/t1-introduction-to-digital-system.qmd
+            - t1-introduction-to-digital-system/t1-introduction-to-digital-system_1.qmd
+            - t2-boolean-algebra-and-logic-gates/t2-boolean-algebra-and-logic-gates.qmd
+            - t3-number-systems/t3-number-systems.qmd
+            - t3-number-systems/t3-number-systems_1.qmd
+            - t4-combinational-logic-circuit-analysis-and-simplification/t4-combinational-logic-circuit-analysis-and-simplification.qmd
+            - t4-combinational-logic-circuit-analysis-and-simplification/t4.1-combinational-logic-circuit-analysis-and-simplification.qmd
+            - t4-combinational-logic-circuit-analysis-and-simplification/t4.2-combinational-logic-circuit-analysis-and-simplification-sop-pos.qmd
+            - t4-combinational-logic-circuit-analysis-and-simplification/t4.3-k-map-combinational-logic-circuit-analysis-and-simplification.qmd
+            - t5-arithmetic-circuits-and-operations/t5-1.qmd
+            - t5-arithmetic-circuits-and-operations/t5.qmd
+            - t6-sequential-logic-latches-and-flip-flops-msi-counters/t6.qmd
+            - t7-1-asyncronous-counters.pdf/t7-1-asyncronous-counters.qmd
+            - t7-counters-and-shift-registers/t7-3-tri-state-devices-and-shift-registers/t7-3.qmd
+            - t9-microprocessor-based-systems/out.qmd
+        - section: "Assignments"
+          contents:
+            - assignments/assignment1/assignment.qmd
+            - assignments/assignment2/assignment2.qmd
+        - status.qmd

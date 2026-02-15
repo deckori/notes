@@ -1,0 +1,62 @@
+
+
+{0}------------------------------------------------
+
+## **Topic 4 - Physical Layer - Study Guide**
+
+| 1. | What is the purpose of the physical layer? | (S5) | (6) |
+|----|--------------------------------------------|------|-----|
+|----|--------------------------------------------|------|-----|
+
+- **1. Accepts a complete frame from the Data Link Layer and encodes it as a series of signals that are transmitted to the local media.**
+- **2. Transports bits across the network media.**
+- 2. Describe briefly the functions of encoding and signaling**.) (S10) (4**
+
+- **Encoding converts the stream of bits into a format recognizable by the next device in the network path.**
+- **The signaling method is how the bit values, "1" and "0" are represented on the physical medium.**
+- 3. What is the difference between BANDWIDTH, LATENCY, THROUGHPUT, GOODPUT and OVERHEAD and how are they related? **(S11, S12) (12)**
+  - **Bandwidth:** the capacity at which a medium can carry data.
+  - **Latency:** the amount of time, including delays, for data to travel from one given point to another.
+  - **Throughput:** the measure of the transfer of bits across the media over a given period of time.
+  - **Overhead:** the amount of data traffic required for establishing sessions, acknowledgments, and encapsulation.
+  - **Goodput:** the measure of usable data transferred over a given period of time.
+    - o **Goodput = Throughput - Overhead**
+- 4. Define the following terms: **(S14) (4)**
+  - a. EMI / RFI
+    - **EMI and RFI signals can distort and corrupt the data signals being carried by copper media.**
+    - **Sources of EMI and RFI include fluorescent lights or electric motors.**
+  - b. Crosstalk
+    - **a disturbance caused by the electric/magnetic fields of a signal on one wire to the signal in an adjacent wire, resulting in hearing part of another voice conversation from an adjacent circuit.**
+- 5. Why is it important to twist the wire pairs in a UTP cable? **(S14, S16, S20) (4)**
+- **Twisting opposing circuit pair wires together to reduce crosstalk.**
+- **Twisted pairs protect the signal from interference.**
+
+{1}------------------------------------------------
+
+- 6. When are the following cable types used? **(S23) (6)**
+  - a. Straight-through **between devices at different layers**.
+  - b. Crossover **between devices at similar layers.**
+  - c. Rollover **for console connection to a router/switch port.**
+- 7. Compare and Contrast Single Mode and Multimode Fiber. **(S26) (10)**
+
+| Single Mode Fiber           | Multimode Fiber                     |  |
+|-----------------------------|-------------------------------------|--|
+| 1.                          | •                                   |  |
+| Very small core.            | Larger core.                        |  |
+| 2.                          | •                                   |  |
+| Uses expensive lasers.      | Uses less expensive LEDs.           |  |
+| 3.                          | •                                   |  |
+| Long-distance applications. | LEDs transmit at different angles.  |  |
+|                             | •<br>Up to 10 Gbps over 550 meters. |  |
+|                             |                                     |  |
+
+- 8. What are the four areas of concern in a wireless network? **(S32) (4)** 
+  - **a. Coverage area.**
+  - **b. Interference.**
+  - **c. Security.**
+  - **d. Shared medium.**
+- 9. List three wireless standards and their applications. **(S33) (6)**
+  - **Wi-Fi (IEEE 802.11)**  Wireless LAN (WLAN) technology.
+  - **Bluetooth (IEEE 802.15)**  Wireless Personal Area network (WPAN) standard.
+  - **WiMAX (IEEE 802.16)**  Uses a point-to-multipoint topology to provide broadband wireless access.
+  - **Zigbee (IEEE 802.15.4)**  Low data-rate, low power-consumption communications, primarily for Internet of Things (IoT) applications.

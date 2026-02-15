@@ -1,0 +1,415 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Topic 6: Ethernet Switching",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.75699996948242,
+          264.007568359375
+        ],
+        [
+          685.087890625,
+          264.007568359375
+        ],
+        [
+          685.087890625,
+          312.56982421875
+        ],
+        [
+          55.75699996948242,
+          312.56982421875
+        ]
+      ]
+    },
+    {
+      "title": "Objectives",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          13.138671874999998,
+          38.2667236328125
+        ],
+        [
+          177.00115966796875,
+          38.2667236328125
+        ],
+        [
+          177.00115966796875,
+          70.59814453125
+        ],
+        [
+          13.138671874999998,
+          70.59814453125
+        ]
+      ]
+    },
+    {
+      "title": "Explain how Ethernet works in a switched network.",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          20.646484375,
+          102.4365234375
+        ],
+        [
+          542.399169921875,
+          102.4365234375
+        ],
+        [
+          542.399169921875,
+          124.44857788085938
+        ],
+        [
+          20.646484375,
+          124.44857788085938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet Encapsulation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          6.4629998207092285,
+          36.544921875
+        ],
+        [
+          364.12890625,
+          36.544921875
+        ],
+        [
+          364.12890625,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet Frames",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          2.34619140625,
+          13.2890625
+        ],
+        [
+          174.63818359375,
+          13.2890625
+        ],
+        [
+          174.63818359375,
+          39.8671875
+        ],
+        [
+          2.34619140625,
+          39.8671875
+        ]
+      ]
+    },
+    {
+      "title": "Data Link Sublayers",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          4.6923828125,
+          37.501708984375
+        ],
+        [
+          312.18768310546875,
+          37.501708984375
+        ],
+        [
+          312.18768310546875,
+          69.50473022460938
+        ],
+        [
+          4.6923828125,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet Frames",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          1.40771484375,
+          13.90386962890625
+        ],
+        [
+          176.90283203125,
+          13.90386962890625
+        ],
+        [
+          176.90283203125,
+          35.19189453125
+        ],
+        [
+          1.40771484375,
+          35.19189453125
+        ]
+      ]
+    },
+    {
+      "title": "MAC Sublayer",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          5.630859375,
+          36.544921875
+        ],
+        [
+          223.35742187499997,
+          36.544921875
+        ],
+        [
+          223.35742187499997,
+          69.767578125
+        ],
+        [
+          5.630859375,
+          69.767578125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Picture",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Line",
+          1
+        ],
+        [
+          "Span",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          40
+        ],
+        [
+          "TableCell",
+          14
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          55
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "TableCell",
+          13
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          26
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          33
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t6-ethernet-switching-v7"
+}

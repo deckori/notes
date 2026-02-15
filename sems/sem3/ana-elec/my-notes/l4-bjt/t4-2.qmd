@@ -1,0 +1,7 @@
+Electron and current flow in a transistor:
+
+{{< video https://youtu.be/J4oO7PT_nzQ?si=RvPPld0YZ4ASXn3V&t=918 >}}
+
+How does a transistor work as an amplifier?
+
+{{< video https://youtu.be/0Z8tslPvU0o?si=0jSBnuXvW7tCI6yu&t=143 >}}

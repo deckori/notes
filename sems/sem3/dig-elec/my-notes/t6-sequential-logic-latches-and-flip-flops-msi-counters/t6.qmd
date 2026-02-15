@@ -1,0 +1,25 @@
+Set: Go to 1 when active (high)
+
+Reset: Go to 0 when active (high)
+
+Glitches occur when set and reset are active. You cannot predict the output. This state is invalid.
+
+In a latch:
+
+-   E for enable
+-   C for clock
+
+## flip flop
+
+Between edges, the waveforms undergoes NC (No change)
+
+Example:
+
+| Clk | S   | R   | Q         | Q'        |
+|-----|-----|-----|-----------|-----------|
+| $\uparrow$   | 0   | 0   | NC        | NC       |
+| $\uparrow$   | 0   | 1   | 0         | 1         |
+| $\uparrow$   | 1   | 0   | 1         | 0         |
+| $\uparrow$   | 1   | 1   | Undefined | Undefined |
+| $\downarrow$   | X   | X   | NC        | NC       |
+

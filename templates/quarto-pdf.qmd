@@ -1,0 +1,61 @@
+---
+format:
+  pdf:
+    include-in-header:
+      - text: |
+          \usepackage{circuitikz}
+          \usepackage{moresize}
+    documentclass: article
+    papersize: a4
+    geometry:
+      - top=20mm
+      - bottom=20mm
+      - left=20mm
+      - right=20mm
+    toc: false
+    number-sections: false
+    colorlinks: false
+filters:
+  - remove_title.lua
+use-rsvg-convert: true
+---
+
+\pagenumbering{gobble}
+
+\vspace{20em}
+
+\begin{center}
+  \HUGE{{\textbf{Assignment 2}}}
+\end{center}
+
+\medskip
+
+\begin{center}
+  \large{University of Doha for Science and Technology}
+\end{center}
+
+\vspace{50em}
+
+\begin{tabular}{lp{5.0cm}lll}
+  &  &  &  & \\
+  \textbf{Student Name:} & Fairoos Kunhi
+
+  \  &  &  & \\
+  \textbf{Student ID:} & 60315610
+  
+  \  &  &  & \\
+  \textbf{Course Name:} & AETN1112 Digital Electronics
+  
+  \  &  &  & \\
+  \textbf{Section Number:} & 6
+  
+  \  &  &  & \\
+  \textbf{Instructor:} & Premjit Soora
+\end{tabular}
+
+\pagenumbering{gobble}
+
+{{< pagebreak >}}
+
+\pagenumbering{arabic}
+

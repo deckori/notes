@@ -1,0 +1,424 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Dynamic Addressing for IPv6 LLAs\nDynamic LLAs",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          13.138671874999998,
+          9.13623046875
+        ],
+        [
+          414.2475280761719,
+          9.13623046875
+        ],
+        [
+          414.2475280761719,
+          68.38330078125
+        ],
+        [
+          13.138671874999998,
+          68.38330078125
+        ]
+      ]
+    },
+    {
+      "title": "The LLA is dynamically created using:",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          11.26171875,
+          96.70834350585938
+        ],
+        [
+          451.5334777832031,
+          96.70834350585938
+        ],
+        [
+          451.5334777832031,
+          121.2626953125
+        ],
+        [
+          11.26171875,
+          121.2626953125
+        ]
+      ]
+    },
+    {
+      "title": "Dynamic Addressing for IPv6 LLAs\nVerify IPv6 Address Configuration",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          13.138671874999998,
+          8.859375
+        ],
+        [
+          531.2423706054688,
+          8.859375
+        ],
+        [
+          531.2423706054688,
+          68.17276000976562
+        ],
+        [
+          13.138671874999998,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Cisco routers:",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          15.194000244140625,
+          96.70834350585938
+        ],
+        [
+          177.85498046875,
+          96.70834350585938
+        ],
+        [
+          177.85498046875,
+          120.71734619140625
+        ],
+        [
+          15.194000244140625,
+          120.71734619140625
+        ]
+      ]
+    },
+    {
+      "title": "Subnet an IPv6 Network\nSubnet Using the Subnet ID",
+      "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          15.015624999999998,
+          9.13623046875
+        ],
+        [
+          436.2894287109375,
+          9.13623046875
+        ],
+        [
+          436.2894287109375,
+          69.49072265625
+        ],
+        [
+          15.015624999999998,
+          69.49072265625
+        ]
+      ]
+    },
+    {
+      "title": "Example:",
+      "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          43.169921875,
+          423.6283264160156
+        ],
+        [
+          150.12698364257812,
+          423.6283264160156
+        ],
+        [
+          150.12698364257812,
+          447.63733673095703
+        ],
+        [
+          43.169921875,
+          447.63733673095703
+        ]
+      ]
+    },
+    {
+      "title": "Subnet an IPv6 Network\nIPv6 Subnetting Example",
+      "heading_level": null,
+      "page_id": 19,
+      "polygon": [
+        [
+          13.138671874999998,
+          9.68994140625
+        ],
+        [
+          379.51611328125,
+          9.68994140625
+        ],
+        [
+          379.51611328125,
+          71.15185546875
+        ],
+        [
+          13.138671874999998,
+          71.15185546875
+        ]
+      ]
+    },
+    {
+      "title": "Subnet an IPv6 Network",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          4.6923828125,
+          15.973876953125
+        ],
+        [
+          250.57324218749997,
+          15.973876953125
+        ],
+        [
+          250.57324218749997,
+          37.26190185546875
+        ],
+        [
+          4.6923828125,
+          37.26190185546875
+        ]
+      ]
+    },
+    {
+      "title": "IPv6 Subnet Allocation",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          4.6923828125,
+          37.92919921875
+        ],
+        [
+          351.7753601074219,
+          37.92919921875
+        ],
+        [
+          351.7753601074219,
+          71.57376098632812
+        ],
+        [
+          4.6923828125,
+          71.57376098632812
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          15
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          44
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          23
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t9-i-pv6-addressing-v5-w2024"
+}

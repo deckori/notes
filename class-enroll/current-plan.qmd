@@ -1,0 +1,25 @@
+| Course Code | Course Name                     | Individual Credits | Overall Credits |
+|---|---|---|---|
+|**Corequisites:** |                                 |                    | **8** |
+| AETN 1102   | Network Fundamentals            | 3                  |                 |
+| AETN 1202   | Network Fundamentals Lab        | 1                  |                 |
+| AETN 1112   | Digital Electronics             | 3                  |                 |
+| AETN 1212   | Digital Electronics Lab         | 1                  |                 |
+| MATH2010 | Calculus II | 3 |
+| PHYS1020 | General Physics | 3 |
+| PHYS1021 | General Physics (Lab) | 1 |
+| COMM1020 | English Communication II | 3 |
+
+# this has many conflicts
+
+| Course Code | Class ID                  | Days and Times                     | Room      | Instructor              | Credits |
+|-------------|---------------------------|------------------------------------|-----------|-------------------------|---------|
+| MATH2010    | Lecture-2511 Section 8     | Wed 9:30AM–11:00AM                | 05.1.51   | Staff                   | 3       |
+| COMM1020    | LecTheatre-2196 Section 1  | Wed 12:00PM–1:00PM                | 01.2.08   | Andrea Comeau           | 3       |
+| COMM1020 | Lecture-2199 Section 4     | Tue 10:00AM–12:00PM               | 10.2.05   |                         |         |
+| AETN1102    | Lecture-1866 Section 5     | Sun/Tue/Thu 3:00PM–4:00PM         | 05.2.25   | Nicolae Nechita         | 3       |
+| AETN1112    | Lecture-1870 Section 4     | Sun/Tue/Thu 12:00PM–1:00PM        | 05.2.25   | Ghufran Khalaf Ja'afreh | 3       |
+| AETN1202    | Laboratory-1877 Section 5  | Mon 10:00AM–1:00PM                | 09.2.07   | Alaa Elsaqa             | 1       |
+| AETN1212    | Laboratory-1886 Section 7  | Sun 10:00AM–12:00PM               | 09.2.79   | Amira Mustapha          | 1       |
+| PHYS1021 | Laboratory - Class 2536 -Section 7 | Wednesday 2:00PM to 5:00PM | 05.1.06 | Fasna Olikkal | 1 |
+| PHYS 1020 | Lecture - Class 2516 -Section 1 | Tuesday Thursday Sunday 8:00AM to 9:00AM | 12.2.10 | Feras Alzubi | 3 |

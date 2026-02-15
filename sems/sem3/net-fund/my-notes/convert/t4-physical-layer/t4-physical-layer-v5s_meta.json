@@ -1,0 +1,524 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Topic 4: Physical Layer",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          54.43164062499999,
+          264.007568359375
+        ],
+        [
+          587.486328125,
+          264.007568359375
+        ],
+        [
+          587.486328125,
+          311.99855041503906
+        ],
+        [
+          54.43164062499999,
+          311.99855041503906
+        ]
+      ]
+    },
+    {
+      "title": "Objectives",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          12.669433593749998,
+          26.729736328125
+        ],
+        [
+          177.00115966796875,
+          26.729736328125
+        ],
+        [
+          177.00115966796875,
+          58.732757568359375
+        ],
+        [
+          12.669433593749998,
+          58.732757568359375
+        ]
+      ]
+    },
+    {
+      "title": "Purpose of the Physical Layer",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          4.6923828125,
+          19.93359375
+        ],
+        [
+          310.7962951660156,
+          19.93359375
+        ],
+        [
+          310.7962951660156,
+          57.5859375
+        ],
+        [
+          4.6923828125,
+          57.5859375
+        ]
+      ]
+    },
+    {
+      "title": "The Physical Layer",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          5.630859375,
+          44.021728515625
+        ],
+        [
+          296.55859375,
+          44.021728515625
+        ],
+        [
+          296.55859375,
+          77.51953125
+        ],
+        [
+          5.630859375,
+          77.51953125
+        ]
+      ]
+    },
+    {
+      "title": "Physical Layer Characteristics",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          6.4629998207092285,
+          15.973876953125
+        ],
+        [
+          316.2666015625,
+          15.973876953125
+        ],
+        [
+          316.2666015625,
+          38.759765625
+        ],
+        [
+          6.4629998207092285,
+          38.759765625
+        ]
+      ]
+    },
+    {
+      "title": "Physical Layer Standards",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          6.4629998207092285,
+          39.3134765625
+        ],
+        [
+          397.91406249999994,
+          39.3134765625
+        ],
+        [
+          397.91406249999994,
+          71.57376098632812
+        ],
+        [
+          6.4629998207092285,
+          71.57376098632812
+        ]
+      ]
+    },
+    {
+      "title": "Physical Layer Characteristics\nEncoding",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          6.4629998207092285,
+          15.26483154296875
+        ],
+        [
+          315.58612060546875,
+          15.26483154296875
+        ],
+        [
+          315.58612060546875,
+          73.36669921875
+        ],
+        [
+          6.4629998207092285,
+          73.36669921875
+        ]
+      ]
+    },
+    {
+      "title": "Physical Layer Characteristics\nSignaling",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          6.4629998207092285,
+          15.2928466796875
+        ],
+        [
+          315.58612060546875,
+          15.2928466796875
+        ],
+        [
+          315.58612060546875,
+          72.81298828125
+        ],
+        [
+          6.4629998207092285,
+          72.81298828125
+        ]
+      ]
+    },
+    {
+      "title": "Electrical Signals Over Copper Cable",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          15.761000633239746,
+          157.53076171875
+        ],
+        [
+          368.30999755859375,
+          157.53076171875
+        ],
+        [
+          368.30999755859375,
+          178.12881469726562
+        ],
+        [
+          15.761000633239746,
+          178.12881469726562
+        ]
+      ]
+    },
+    {
+      "title": "Light Pulses Over Fiber-Optic Cable",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          15.015624999999998,
+          369.8078155517578
+        ],
+        [
+          358.1495666503906,
+          369.8078155517578
+        ],
+        [
+          358.1495666503906,
+          391.75048828125
+        ],
+        [
+          15.015624999999998,
+          391.75048828125
+        ]
+      ]
+    },
+    {
+      "title": "Microwave Signals Over Wireless",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          532.1162109375,
+          150.66079711914062
+        ],
+        [
+          857.0715942382812,
+          150.66079711914062
+        ],
+        [
+          857.0715942382812,
+          171.650390625
+        ],
+        [
+          532.1162109375,
+          171.650390625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          5
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          40
+        ],
+        [
+          "TableCell",
+          14
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          40
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          27
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          37
+        ],
+        [
+          "Line",
+          16
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          15
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t4-physical-layer-v5s"
+}

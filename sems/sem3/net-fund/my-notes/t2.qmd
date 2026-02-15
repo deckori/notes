@@ -1,0 +1,125 @@
+
+console cable: 
+
+- Traditional: One side (usb port or RGA32 (VGA) port), other side ethernet port
+- new: usb port, micro usb port
+- Used only for physical configuration. Once complete, to be removed
+
+
+## IOS Navigation
+
+### Primary Command Modes
+
+#### Priviledged Mode
+
+Allows all show commands
+
+#### Configuration mode
+
+Represented by:
+
+```bash
+<Router OR Switch> (config)#
+```
+
+### Navigation Between IOS Modes
+
+#### Global Configuration Mode
+
+```bash
+Switch\# config t
+Switch(config)\# exit
+Switch\#
+```
+
+```bash
+Switch(config)\# exit
+Switch\# exit
+Switch >
+```
+
+```bash
+Switch(config)\# end
+Switch >
+```
+
+```bash
+Switch(config)\# line console 0
+Switch(config-line)\# exit
+Switch(config)#
+```
+
+```
+Switch(config)# interface fastEthernet 0/1
+Switch(config-if)# exit
+Switch(config)# interface f 0/1
+Switch(config-if)#
+```
+
+## VTY
+
+This is the s wireless communication protocol to configure routers and switches. They are virtual ports
+
+In routers, by default, all virtual ports are enabled, while the physical ports are disabled
+
+While configuring the password for VTY lines, if not mentioned, by default, Telnet is used as the default for remote configuration. To change it to ssh, while in `(config-line)#` mode, exec `transport input ssh`
+
+## Show configuration
+
+```bash
+show run
+=
+show running-config
+```
+
+## Banner Messages
+
+In `banner motd`, motd is an abbreviation for "Message of the Day".
+
+## Configuration Files
+
+ `copy run start` =`copy running-config startup-config`
+
+# Configure IP Addressing
+
+## Manual IP Address Configuration for End Devices
+
+Assign IP addresses:
+
+- Automatically via DHCP (Dynamic Host Configuration Protocol)
+- Manually
+
+DNS (Dynamic Server Protocol)
+
+Provides a dictionary that translates website name to ip address for the host to connect to it
+
+# Switch IP address
+
+Switches generally don't need IP Addresses. But it needs an IP address for remote configuration
+
+
+Subnet Mask:
+It is used to identify what part of the network is part of the host
+Gives information about which network the ip adddress belongs
+
+Default Gateway:
+The ip address of the first router that the host is connected to
+Default gateway is not configured by defualt. It has to be configured to be used for remote configuration
+
+# miscc
+
+## no cmd
+
+If I want disable or nullify a configuration, I can rewrite the configuration command with the `no` keyword before it
+
+However, `no shutdown` enables a virtual port configuration while `shutdown` disables it
+
+## Router exception
+
+All commands in this topic can be used in all devices except the cmd `interface vlan X` in a router. As a router does not have and does not need virtual ports.
+
+## Default gateway cmd
+
+In the configuration mode, exec
+
+```ip default-gateway <ip address>```

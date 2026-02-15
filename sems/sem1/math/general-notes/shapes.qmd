@@ -1,0 +1,29 @@
+
+## Shapes: Perimeter, Area and Volume
+
+| Shape | Area | Perimeter |
+|---|---|---|
+| Rectangle | $l \times b$ | $2(l + b)$ |
+| Square | $a^2$ | $4a$ |
+| Circle | $\pi r^2$ | $2\pi r$ |
+| Semicircle| $\frac{1}{2} \pi r^2$ | $\pi r + 2r$ |
+| Triangle | $\frac{1}{2} b h$| $a + b + c$ |
+
+Circle:
+
+![Definition of $\pi$](https://www.youtube.com/watch?v=72N7yjcVFC8)
+
+![Circumference](https://www.youtube.com/watch?v=riNAA-jx0u8)
+
+![Area](https://www.youtube.com/watch?v=YokKp3pwVFc&list=PL14bv5vXK2WX-wctamYtC9UYBUseJBd5R)
+
+| Shape | TSA | LSA/CSA | Volume |
+|---|---|---|---|
+| Cuboid | $2(lb + bh + hl)$ | $2h(l + b)$ | $lbh$ |
+| Cube | $6a^2$ | $4a^2$ | $a^3$ |
+| Cylinder | $2\pi r(r + h)$ | $2\pi rh$ | $\pi r^2 h$ |
+| Sphere | $4\pi r^2$ | - | $\dfrac{4}{3}\pi r^3$ |
+| Hemisphere | $3\pi r^2$ | $2\pi r^2$ | $\dfrac{2}{3}\pi r^3$ |
+| Cone | $\pi r(r + l)$ | $\pi rl$ | $\dfrac{1}{3}\pi r^2 h$ |
+
+A simple ![expanation](https://www.youtube.com/watch?v=kLyv9qB0i9Q) of the volume of 3d shapes

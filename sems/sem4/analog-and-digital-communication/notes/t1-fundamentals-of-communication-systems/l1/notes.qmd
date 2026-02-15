@@ -1,0 +1,1 @@
+An EM wave is not an audio wave. It can carry data of an audio signal, which is translated into audible audio.

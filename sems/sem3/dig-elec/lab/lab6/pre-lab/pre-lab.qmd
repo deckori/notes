@@ -1,0 +1,105 @@
+---
+title: "Pre-Lab 6"
+format:
+  pdf:
+    toc: false
+    # include-in-header: preamble.tex
+    keep-tex: true
+use-rsvg-convert: true
+---
+
+## Problem Statement: Task 1:
+
+@fig-task1 shows the intersection of a main highway with a secondary access road. Vehicle-detection sensors are placed along lanes C and D (main road) and lanes A and B (access road). These sensor outputs are LOW (0) when no vehicle is present and HIGH (1) when a vehicle is present. The intersection traffic light is to be controlled according to the following logic:
+
+1.  The east-west (E-W) traffic light will be green whenever both lanes C and D are occupied.
+2.  The E-W light will be green whenever either C or D is occupied but lanes A and B are not both occupied.
+3.  The north-south (N-S) light will be green whenever both lanes A and B are occupied but C and D are not both occupied.
+4.  The N-S light will also be green when either A or B is occupied while C and D are both vacant.
+5.  The E-W light will be green when no vehicles are present.
+
+Using the sensor outputs A, B, C, and D as inputs, design a logic circuit to control the traffic light. There should be two outputs, N-S and E-W, that go HIGH when the corresponding light is to be green. Simplify the circuit as much as possible and show all steps.
+
+![](pre-lab-img/task1.png){#fig-task1 align="center" width="300" alt="task1.png"}
+
+<u>Hints</u>:
+
+To design the logic circuit, follow the steps below:
+
+1.  Design the truth table that satisfies the conditions in the problem.
+2.  Write the unsimplified Sum-of-Products expression for the output(s)
+3.  Complete Karnaugh map for the designed truth table.
+4.  Write the simplified expression for the output(s).
+5.  Draw the simplified circuit: Label all of the pin numbers on the diagram. Label all the ICs on the diagram.
+
+## **Ans**:
+
+###### 1.
+
+| No. | A   | B   | C   | D   | E-W | N-S |
+|-----|-----|-----|-----|-----|-----|-----|
+| 1   | 0   | 0   | 0   | 0   | 1   | 0   |
+| 2   | 0   | 0   | 0   | 1   | 1   | 0   |
+| 3   | 0   | 0   | 1   | 0   | 1   | 0   |
+| 4   | 0   | 0   | 1   | 1   | 1   | 0   |
+| 5   | 0   | 1   | 0   | 0   | 0   | 1   |
+| 6   | 0   | 1   | 0   | 1   | 1   | 0   |
+| 7   | 0   | 1   | 1   | 0   | 1   | 0   |
+| 8   | 0   | 1   | 1   | 1   | 1   | 0   |
+| 9   | 1   | 0   | 0   | 0   | 0   | 1   |
+| 10  | 1   | 0   | 0   | 1   | 1   | 0   |
+| 11  | 1   | 0   | 1   | 0   | 1   | 0   |
+| 12  | 1   | 0   | 1   | 1   | 1   | 0   |
+| 13  | 1   | 1   | 0   | 0   | 0   | 1   |
+| 14  | 1   | 1   | 0   | 1   | 0   | 1   |
+| 15  | 1   | 1   | 1   | 0   | 0   | 1   |
+| 16  | 1   | 1   | 1   | 1   | 1   | 0   |
+
+
+{{< pagebreak >}}
+
+###### 2.
+
+Unsimplified SOPs:
+
+$\text{E-W}\  = \overline{A}\ \,\overline{B}\ \,\overline{C}\ \,\overline{D}\  + \overline{A}\ \,\overline{B}\ \,\overline{C}\ D + \overline{A}\ \,\overline{B}\ C\overline{D}\  + \overline{A}\ \,\overline{B}\ CD + \overline{A}\ B\overline{C}\ D + \overline{A}\ BC\overline{D}\  + \overline{A}\ BCD + A\overline{B}\ \overline{C}\ D + A\overline{B}\ C\overline{D}\  + A\overline{B}\ CD + ABCD$
+
+$\text{N-S}\  = \overline{A}\ B\overline{C}\ \,\overline{D}\  + A\overline{B}\ \,\overline{C}\ \,\overline{D}\  + AB\overline{C}\ \,\overline{D}\  + AB\overline{C}\ D + ABC\overline{D}\ $
+
+Karnaugh Maps:
+
+###### 3.
+
+For $\text{E-W}$:
+
+![E-W Karnaugh map.](ew-kmap.svg)
+
+<!-- |                  | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ | -->
+<!-- |:----------------:|:----------------:|:----------:|:----:|:----------:| -->
+<!-- | $\bar{A}\bar{B}$ |        1         |     1      |  1   |     1      | -->
+<!-- |    $\bar{A}B$    |        0         |     1      |  1   |     1      | -->
+<!-- |       $AB$       |        0         |     0      |  1   |     0      | -->
+<!-- |    $A\bar{B}$    |        0         |     1      |  1   |     1      | -->
+
+For $\text{N-S}$:
+
+![N-S Karnaugh map](ns-kmap.svg)
+
+<!-- |                  | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ | -->
+<!-- |:----------------:|:----------------:|:----------:|:----:|:----------:| -->
+<!-- | $\bar{A}\bar{B}$ |        0         |     0      |  0   |     0      | -->
+<!-- |    $\bar{A}B$    |        1         |     0      |  0   |     0      | -->
+<!-- |       $AB$       |        1         |     1      |  0   |     1      | -->
+<!-- |    $A\bar{B}$    |        1         |     0      |  0   |     0      | -->
+
+###### 4.
+
+Simplified expressions
+
+$\text{E-W} =  \overline{A}  \  \overline{B} + \overline{A}  \ D+ \overline{A}  \ C+ \overline{B}  \ D+ \overline{B}  \ C+C \ D$
+
+$\text{N-S} = B \  \overline{C}  \  \overline{D} +A \  \overline{C}  \  \overline{D} +A \ B \  \overline{C} +A \ B \  \overline{D}$
+
+###### 5.
+
+![](./circuit.png){width=600}

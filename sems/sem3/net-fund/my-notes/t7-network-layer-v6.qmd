@@ -1,0 +1,550 @@
+---
+title: "Network Layer"
+---
+
+# Topics
+
+| Topic Title | Topic Objective |
+| :-: | :-: |
+| Network Layer Characteristics | Explain how the network layer uses IP protocols for reliable communications |
+| IPv4 Packet | Explain the role of the major header fields in the IPv4 packet |
+| IPv6 Packet | Explain the role of the major header fields in the IPv6 packet |
+| How a Host Routes | Explain how host devices use routing tables to direct packets |
+| Introduction to Routing | Explain how router use routing tables to forward packets |
+| Basic Router Configuration | Configure initial settings interfaces and default gateway |
+
+
+# Network Layer Characteristics The Network Layer
+
+![](t7-network-layer-img/t7-network-layer-v6_0.png)
+
+
+
+* Provides services to allow end devices to exchange data
+* IP version 4 IPv4 and IP version 6 IPv6 are the principle network layer communication protocols
+* The network layer performs four basic operations:
+ * Addressing end devices
+ * Encapsulation
+ * Routing
+ * De encapsulation
+
+# Network Layer Characteristics IP Encapsulation
+
+![](t7-network-layer-img/t7-network-layer-v6_1.png)
+
+IP encapsulates the transport layer segment
+
+IP packet will be examined by all layer 3 devices as it traverses the network
+
+The IP addressing does not change from source to destination
+
+# Network Layer Characteristics Connectionless
+
+_IP is Connectionless There is no connection with the destination established before sending data packets_
+
+Connectionless communication is conceptually similar to sending a letter to someone without notifying the recipient in advance
+
+IP requires no initial exchange of control information to establish an end to end connection before packets are forwarded
+
+![](t7-network-layer-img/t7-network-layer-v6_2.png)
+
+![](t7-network-layer-img/t7-network-layer-v6_3.png)
+
+::: {.notes}
+
+8 – Network Layer
+8.1 – Network Layer Characteristics
+8.1.4 – Connectionless
+
+:::
+
+# Network Layer Characteristics Best Effort
+
+_IP is Best Effort IP is inherently unreliable because packet delivery is not guaranteed_
+
+![](t7-network-layer-img/t7-network-layer-v6_4.png)
+
+
+
+* With no pre established end to end connection senders are unaware whether destination devices:
+ * Are present and functional when sending packets
+ * Receives the packet
+ * Are able to access and read the packet
+* The IP protocol was not designed to track and manage the flow of packets These functions if required are performed by other protocols at other layers primarily TCP at Layer 4
+::: {.notes}
+
+8 – Network Layer
+8.1 – Network Layer Characteristics
+8.1.5 – Best Effort
+
+:::
+
+# Network Layer Characteristics Media Independent
+
+
+
+* _IP is media Independent: Operation is independent of the medium ie copper fiber optic or wireless carrying the data_
+
+
+![](t7-network-layer-img/t7-network-layer-v6_5.png)
+
+
+
+ * IP does not concern itself with the type of frame required at the data link layer or the media type at the physical layer
+ * As shown in the figure IP packets can be sent over any media type: copper fiber or wireless
+::: {.notes}
+
+8 – Network Layer
+8.1 – Network Layer Characteristics
+8.1.6 – Media Independent
+8.1.7 Check Your Understanding – IP Characteristics
+
+:::
+
+# IPv4 Packet IPv4 Packet Header
+
+Diagram is read from left to right 4 bytes per line
+
+_The two most commonly referenced fields are the source and destination IP addresses_ 
+
+These fields identify where the packet is coming from and where it is going
+
+Typically _these addresses do not change while travelling from the source to the destination_
+
+![](t7-network-layer-img/t7-network-layer-v6_6.png)
+
+::: {.notes}
+
+8 – Network Layer
+8.2 – IPv4 Packet
+8.2.1 – IPv4 Packet Header
+
+:::
+
+# IPv4 Packet IPv4 Packet Header Fields
+
+Significant fields in the IPv4 header:
+
+| Function | Description |
+| :-: | :-: |
+| Version | This will be for v4 as opposed to v6 a 4 bit field= 0100 |
+| Differentiated Services | Used for QoS : DiffServ – DS field or the older IntServ – ToS or Type of Service |
+| Header Checksum | Detect corruption in the IPv4 header |
+| Time to Live TTL | Layer 3 hop count When it becomes zero the router will discard the packet |
+| Protocol | IDs next level protocol: ICMP TCP UDP etc |
+| Source IPv4 Address | 32 bit source address |
+| Destination IPv4 Address | 32 bit destination address |
+
+::: {.notes}
+
+8 – Network Layer
+8.2 – IPv4 Packet
+8.2.2 – IPv4 Packet Header Fields
+
+:::
+
+# IPv6 Packets Limitations of IPv4
+
+
+
+* IPv4 address depletion – We have basically run out of IPv4 addressing
+* Lack of end to end connectivity – To make IPv4 survive this long private addressing and NAT were created This ended direct communications with public addressing
+* Increased network complexity – NAT was meant as temporary solution and creates issues on the network as a side effect of manipulating the network headers addressing NAT causes latency and troubleshooting issues 
+::: {.notes}
+
+8 – Network Layer
+8.3 – IPv6 Packets
+8.3.1 – Limitations of IPv4
+
+
+:::
+
+# IPv6 Packets IPv6 Overview
+
+![](t7-network-layer-img/t7-network-layer-v6_7.png)
+
+
+
+* Developed to overcomes the limitations of IPv4
+* IPv6 improvements:
+ * Increased address space – based on 128 bit address not 32 bits
+ * Improved packet handling – simplified header with fewer fields
+ * Eliminates the need for NAT – since there is a huge amount of addressing there is no need to use private addressing internally and be mapped to a shared public address
+
+
+![](t7-network-layer-img/t7-network-layer-v6_8.png)
+
+::: {.notes}
+
+8 – Network Layer
+8.3 – IPv6 Packets
+8.3.2 – IPv6 Overview
+
+:::
+
+# IPv6 Packets Fields in the IPv6 Packet Header
+
+![](t7-network-layer-img/t7-network-layer-v6_9.png)
+
+
+
+* The IPv6 header is simplified but not smaller
+* The header is fixed at 40 Bytes long
+* Some IPv4 fields were removed to improve performance:
+ * Flag
+ * Fragment Offset
+ * Header Checksum
+::: {.notes}
+
+8 – Network Layer
+8.3 – IPv6 Packets
+8.3.3 – IPv4 Packet Header Fields in the IPv6 Packet Header
+
+:::
+
+# IPv6 Packets IPv6 Packet Header
+
+
+
+* Significant fields in the IPv6 header:
+
+
+| Function | Description |
+| :-: | :-: |
+| Version | This will be for v6 as opposed to v4 a 4 bit field= 0110 |
+| Traffic Class | Used for QoS: Equivalent to DiffServ – DS field |
+| Flow Label | Informs device to handle identical flow labels the same way 20 bit field |
+| Payload Length | This 16 bit field indicates the length of the data portion or payload of the IPv6 packet |
+| Next Header | IDs next level protocol: ICMP TCP UDP etc |
+| Hop Limit | Replaces TTL field Layer 3 hop count |
+| Source IPv6 Address | 128 bit source address |
+| Destination IPV6 Address | 128 bit destination address |
+
+::: {.notes}
+
+8 – Network Layer
+8.3 – IPv6 Packets
+8.3.4 – IPv6 Packet Header
+
+:::
+
+# How a Host Routes Host Forwarding Decision
+
+
+
+* Each host device creates its own routing table
+* A host can send packets to the following destinations:
+ * Itself – 127001 IPv4 – the special address of the loopback interface
+ * Local Hosts – on the same LAN
+ * Remote Hosts – on the different LANs
+* The source device determines whether the destination is local or remote by comparing its own IP address with the destination IP address
+* Remote traffic is forwarded directly to the _default gateway _ on the LAN
+
+
+![](t7-network-layer-img/t7-network-layer-v6_10.png)
+
+Default Gateway
+
+Intermediate Device
+
+::: {.notes}
+
+8 – Network Layer
+8.4 – How a Host Routes
+8.4.1 – Host Forwarding Decision (Cont.)
+
+:::
+
+# How a Host Routes Default Gateway
+
+
+
+* A router or layer 3 switch can be a default gateway
+* Features of a default gateway DGW :
+ * It must have an IP address in the same range as the rest of the LAN
+ * It can accept data from the LAN and forward traffic to other networks
+* If a device has no default gateway or a bad default gateway its traffic will not be able to leave the LAN
+
+
+![](t7-network-layer-img/t7-network-layer-v6_11.png)
+
+Local Network
+
+192168100/24
+
+The host will know the default gateway either statically or through DHCP in IPv4
+
+All devices on the LAN use the DGW to send traffic remotely
+
+::: {.notes}
+
+8 – Network Layer
+8.4 – How a Host Routes
+8.4.2 – Default Gateway
+
+:::
+
+# How a Host Routes Host Routing Tables
+
+![](t7-network-layer-img/t7-network-layer-v6_12.png)
+
+
+
+* Use route print or netstat r to display the routing table
+* Three sections:
+ * Interface List and MAC addressing
+ * IPv4 Routing Table
+ * IPv6 Routing Table
+
+
+IPv4 Routing Table for PC1
+
+![](t7-network-layer-img/t7-network-layer-v6_13.png)
+
+Used to determine which route is used if there are more than one route to the same destination
+
+Default gateway for PC1
+
+::: {.notes}
+
+8 – Network Layer
+8.4 – How a Host Routes
+8.4.4 – Host Routing Tables
+8.4.5 – Check Your Understanding – How a Host Routes
+
+
+:::
+
+# Introduction to Routing Router Packet Forwarding Decision
+
+![](t7-network-layer-img/t7-network-layer-v6_14.png)
+
+
+
+* _What happens when the router receives the frame from the host device?_
+
+
+R1 Routing Table
+
+![](t7-network-layer-img/t7-network-layer-v6_15.png)
+
+ _Packet arrives on the Gigabit Ethernet 0/0/0 interface of router R1 R1 de encapsulates the Layer 2 Ethernet header and trailer_ 
+
+ _Router R1 examines the destination IPv4 address of the packet and searches for the best match in its IPv4 routing table The route entry indicates that this packet is to be forwarded to router R2_ 
+
+ _Router R1 encapsulates the packet into a _ _new Ethernet header and trailer_ _ and forwards the packet to the next hop router R2_ 
+
+::: {.notes}
+
+8 – Network Layer
+8.5 – Introduction to Routing
+8.5.1 – Router Packet Forwarding Decision
+
+:::
+
+# Introduction to Routing IP Router Routing Table
+
+
+
+* There three types of routes in a routing table:
+* Directly Connected networks – Are automatically added by the router provided the interface is active and has IP addressing
+* Remote networks – Routes that the router does not have a direct connection and may be learned:
+ * Manually – with a static route
+ * Dynamically – by using a dynamic routing protocol
+* Default Route – a gateway of last resort , used when there is not a match in the routing table
+
+> Default routes are used to connect to the internet
+
+![](t7-network-layer-img/t7-network-layer-v6_16.png)
+
+# Introduction to Routing Static Routing
+
+![](t7-network-layer-img/t7-network-layer-v6_17.png)
+
+Static Route Characteristics:
+
+Must be configured manually
+
+Must be adjusted manually by the administrator when there is a change in the topology
+
+Good for small non redundant networks
+
+Often used in conjunction with a dynamic routing protocol for configuring a default route
+
+R1 is configured with a static route to reach the 10110l24 network If this path changes R1 will require a new static route
+
+![](t7-network-layer-img/t7-network-layer-v6_18.png)
+
+If the route from R1 via R2 is no longer available a new static route via R3 would need to be configured
+
+# Introduction to Routing Dynamic Routing
+
+![](t7-network-layer-img/t7-network-layer-v6_19.png)
+
+Dynamic Routes Automatically:
+
+Discover remote networks
+
+Maintain up to date information
+
+Choose the best path to the destination
+
+Find new best paths when there is a topology change
+
+R1 is using the OSPF routing protocol to let R2 know about the 192168100/24 network
+
+R2 is using the OSPF routing protocol to let R1 know about the 10110/24 network
+
+![](t7-network-layer-img/t7-network-layer-v6_20.png)
+
+R1 R2 and R3 are using the OSPF dynamic routing protocol 
+
+If there is network topology change they can automatically adjust to find a new path
+
+# Introduction to Routing Introduction to an IPv4 Routing Table
+
+![](t7-network-layer-img/t7-network-layer-v6_21.png)
+
+![](t7-network-layer-img/t7-network-layer-v6_22.png)
+
+
+
+* The _show ip route _ command displays:
+* Route sources:
+  * L Directly connected local interface IP address
+  * C – Directly connected network
+  * S – Static route manually configured
+  * O – OSPF
+  * D – EIGRP
+* Types of routes:
+  * Directly Connected – C and L
+  * Remote Routes – O D etc
+  * Default Routes – S
+
+> You need static or dynamic routing only where there is more than 1 router in a network topology.
+
+# Configure Initial Router Settings Basic Router Configuration Example
+
+R1config hostname R1
+
+R1config enable secret class
+
+R1config line console 0
+
+R1config line password cisco
+
+R1config line login
+
+R1 config line line vty 0 4
+
+R1config line password cisco
+
+R1config line login
+
+R1config line transport input ssh telnet
+
+R1config line exit
+
+R1config service password encryption
+
+R1config banner motd 
+
+Enter TEXT message End with a new line and the 
+
+
+
+WARNING: Unauthorized access is prohibited
+
+
+
+R1 copy running config startup config
+
+Commands for basic router configuration
+
+Configuration is saved to NVRAM
+
+# Configure Interfaces Configure Router Interfaces Example
+
+![](t7-network-layer-img/t7-network-layer-v6_23.png)
+
+ The commands to configure interface G0/0/0 on R1: 
+
+R1config interface gigabitEthernet 0/0/0
+
+R1config if description Link to LAN
+
+R1config if ip address 192168101 2552552550
+
+R1config if ipv6 address 2001:db8:acad:10::1/64
+
+R1config if no shutdown 
+
+R1config if exit
+
+R1config
+
+Aug 1 01:43:53435: %LINK 3 UPDOWN: Interface GigabitEthernet0/0/0 changed state to down
+
+Aug 1 01:43:56447: %LINK 3 UPDOWN: Interface GigabitEthernet0/0/0 changed state to up
+
+Aug 1 01:43:57447: %LINEPROTO 5 UPDOWN: Line protocol on Interface GigabitEthernet0/0/0 changed state to up
+
+adds information about the network connected to the interface
+
+activates the interface
+
+> In a router, all physical ports are desabled by default. They have to be enabled manually during SVI configuration with `no shutdown` cmd. Meanwhile, all physical ports are enabled in a switch.
+
+# Configure Interfaces Verify Interface Configuration
+
+To verify interface configuration or to view status of all interfaces use the show ip interface brief and show ipv6 interface brief commands shown here:
+
+R1  show ip interface brief 
+
+Interface    IP Address  OK? Method Status    Protocol
+
+GigabitEthernet0/0/0 192168101 YES manual up     up
+
+GigabitEthernet0/0/1 209165200225 YES manual up     up
+
+Vlan1     unassigned  YES unset administratively down down
+
+R1  show ipv6 interface brief 
+
+GigabitEthernet0/0/0  up/up
+
+FE80::201:C9FF:FE89:4501
+
+2001:DB8:ACAD:10::1
+
+GigabitEthernet0/0/1  up/up
+
+FE80::201:C9FF:FE89:4502
+
+2001:DB8:FEED:224::1
+
+Vlan1      administratively down/down
+
+unassigned
+
+# Configure the Default Gateway Default Gateway on a Host
+
+![](t7-network-layer-img/t7-network-layer-v6_24.png)
+
+The default gateway is used when a host sends a packet to a device on another network
+
+The default gateway address is generally the router interface address attached to the local network of the host
+
+To reach PC3 PC1 addresses a packet with the IPv4 address of PC3 but forwards the packet to its default gateway the G0/0/0 interface of R1
+
+Network address of LAN1
+
+Note : The IP address of the host and the router interface must be in the same network
+
+![](t7-network-layer-img/t7-network-layer-v6_25.png)
+
+A switch must have a default gateway address configured to remotely manage the switch from another network 
+
+Configured by using the _ip_ default gateway command
+
+> We cannot assign ip address on a physical port of a switch. Only on the SVI.

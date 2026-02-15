@@ -1,0 +1,7 @@
+# Questions
+
+If the type of diode is specified, that means a practical diode is being used. If not specified, then an ideal diode
+
+## zener
+
+1. What happens to the circuit when the zener diode is forward biased?

@@ -1,0 +1,200 @@
+# Topic 4 - Physical Layer MCQs v3
+
+# 4.3 Check Your Understanding - Purpose of the Physical Layer
+
+1. True or false? When a frame is encoded by the physical layer, all bits are sent over the media at the same time.
+
+- [ ] True
+- [x] False
+
+2. The physical layer of the receiving device passes bits up to which higher level layer?
+
+- [ ] Application
+- [ ] Presentation
+- [ ] Network
+- [x] Data link
+
+3. What PDU is received by the physical layer for encoding and transmission?
+
+- [x] Frame
+- [ ] Segment
+- [ ] Packet
+
+  # 4.2.7 Check Your Understanding - Physical Layer Characteristics
+
+4. Which media uses patterns of microwaves to represent bits?
+
+- [ ] Copper
+- [x] Wireless
+- [ ] Fiber-optic
+
+5. Which media uses patterns of light to represent bits?
+
+- [ ] Copper
+- [ ] Wireless
+- [x] Fiber-optic
+
+6. Which media uses patterns of electrical pulses to represent bits?
+
+- [x] Copper
+- [ ] Wireless
+- [ ] Fiber-optic
+
+  <br><span class='markdown-page-line'>---------------------------------------------<span id='page2' class='markdown-page-text'>[ 第2页 ]</span>---------------------------------------------</span><br><br>
+
+7. Which of these is a measure of usable data transferred over a given period of time?
+
+- [ ] Bandwidth
+- [ ] Throughput
+- [x] Goodput
+
+  # 4.3.6 Check Your Understanding – Copper Cabling
+
+8. Which of the following attaches antennas to wireless devices?
+
+- [ ] UTP
+- [ ] STP
+- [x] Coaxial
+
+9. Which of the following counters EMI and RFI by using shielding techniques and special connectors?
+
+- [ ] UTP
+- [x] STP
+- [ ] Coaxial
+
+10. Which of the following is the most common network media?
+
+- [x] UTP
+- [ ] STP
+- [ ] Coaxial
+
+11. Which type of cable is used to connect a host to switch/hub or a switch to a router?
+
+- [x] Straight-through
+- [ ] Crossover
+- [ ] Rollover
+
+12. Which type of cable is used to connect a host to host, a witch to switch, a router to router, and host to router?
+
+- [ ] Straight-through
+- [x] Crossover
+- [ ] Rollover
+
+13. Which type of cable is used for console connection between a host serial port and a switch/router console port?
+
+- [ ] Straight-through
+- [ ] Crossover
+- [x] Rollover
+
+  <br><span class='markdown-page-line'>---------------------------------------------<span id='page3' class='markdown-page-text'>[ 第3页 ]</span>---------------------------------------------</span><br><br>
+
+  # AETN 1102 Network Fundamentals
+
+  # 4.5.7 Check Your Understanding – Fiber-Optic Cabling
+
+14. Which of the following fiber-optic cable types use light emitting diodes (LEDs) as a data light source transmitter?
+
+- [x] Multimode
+- [ ] Single-mode
+
+15. Which of the following fiber-optic cable types use lasers in a single stream as a data light source transmitter?
+
+- [ ] Multimode
+- [ ] Single-mode
+
+16. Which of the following fiber-optic cable types is used to connect long-distance telephony and cable TV applications?
+
+- [ ] Multimode
+- [x] Single-mode
+
+17. Which of the following fiber-optic cable types can travel approximately 100 km?
+
+- [ ] Multimode
+- [x] Single-mode
+
+18. Which of the following fiber-optic cable types is used within a campus network?
+
+- [x] Multimode
+- [ ] Single-mode
+
+  # 4.6.4 Check Your Understanding – Wireless Media
+
+19. Which of the following wireless standards is best suited for industrial and IoT environments?
+
+- [x] Zigbee
+- [ ] WiMAX
+- [ ] Wi-Fi
+- [ ] Bluetooth
+
+20. Which of the following wireless standards is used for Personal Area Networks (PANs)?
+
+- [ ] Zigbee
+- [ ] WiMAX
+- [ ] Wi-Fi
+- [x] Bluetooth
+
+  <br><span class='markdown-page-line'>---------------------------------------------<span id='page4' class='markdown-page-text'>[ 第4页 ]</span>---------------------------------------------</span><br><br>
+
+  # AETN 1102 Network Fundamentals
+
+21. Which of the following wireless standards is used for Wireless LANs (WLANs)?
+
+- [ ] Zigbee
+- [ ] WiMAX
+- [x] Wi-Fi
+- [ ] Bluetooth
+
+  # 4.7.4 Module Quiz - Physical Layer
+
+22. Which procedure is used to reduce the effect of crosstalk in copper cables?
+
+- [ ] Designing a cable infrastructure to avoid crosstalk interference
+- [x] Twisting opposing circuit wire pairs together
+- [ ] Avoiding sharp bends during installation
+- [ ] Wrapping the bundle of wires with metallic shielding
+
+23. What is one advantage of using fiber optic cabling rather than copper cabling?
+
+- [ ] It is usually cheaper than copper cabling.
+- [x] It is able to carry signals much farther than copper cabling.
+- [ ] It is easier to terminate and install than copper cabling.
+- [ ] It is able to be installed around sharp bends.
+
+24. A network administrator is designing a new network infrastructure that includes both wired and wireless connectivity. Under which situation would a wireless connection be recommended?
+
+- [x] The end-user device needs mobility when connecting to the network.
+- [ ] The end-user device area has a high concentration of RFI.
+- [ ] The end-user device only has an Ethernet NIC.
+- [ ] The end-user device requires a dedicated connection because of performance requirements.
+
+25. What is the definition of bandwidth?
+
+- [ ] The speed at which bits travel on the network
+- [ ] The speed of bits across the media over a given period of time
+- [x] The amount of data that can flow from one place to another in a given amount of time
+- [ ] The measure of usable data transferred over a given period of time
+
+26. What is indicated by the term throughput?
+
+- [ ] The measure of the usable data transferred across the media
+- [x] The measure of the bits transferred across the media over a given period of time
+- [ ] The time it takes for a message to get from sender to receiver
+- [ ] The capacity of a particular medium to carry data
+
+  <br><span class='markdown-page-line'>---------------------------------------------<span id='page5' class='markdown-page-text'>[ 第5页 ]</span>---------------------------------------------</span><br><br>
+
+  # AETN 1102 Network Fundamentals
+
+27. Which statement correctly describes frame encoding?
+
+- [ ] It generates the electrical, optical, or wireless signals that represent the binary numbers of the frame.
+- [ ] It transmits data signals along with a clock signal which occurs at evenly spaced time durations.
+- [x] It converts bits into a format recognizable by the next device in the network path.
+- [ ] It uses the characteristic of one wave to modify another wave.
+
+28. What is the purpose of the OSI physical layer?
+
+- [ ] Performing error detection on received frames
+- [x] Transmitting bits across the local media
+- [ ] Controlling access to media
+- [ ] Exchanging frames between nodes over physical network media

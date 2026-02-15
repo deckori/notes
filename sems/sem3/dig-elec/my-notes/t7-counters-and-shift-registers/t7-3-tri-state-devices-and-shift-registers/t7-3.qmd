@@ -1,0 +1,34 @@
+> LD is like another CLK and is independant of the CLK
+
+There are 3 ways to show inverted input:
+
+- Using a bubble
+- Using a bar on the symbol
+- Using both of the above (Presence of both doesn't cancel each other out. They only provide 2 ways to read info)
+
+### Tristate buffer
+
+Why use these?
+
+> These allow us neglect the output of the buffer when it is Hi-Z. And thus, we can read the output of the other buffer
+
+What's the difference between a D-Latch and a buffer?
+
+- The buffer is combinational while the D-Latch is sequential
+
+## Register
+
+- The load determines if the values of the input are taken for the output
+
+## Shift Register
+
+- The MSB is again the bit furthest from CLK (right most)
+- The bit is read from the MSB, the furthest bit from the clock, to the LSB (left most)
+- Shift goes in from the closest bit and the furthest bit is discarded (left to right)
+- Shifting is said from left to right or right to left. Primarily, the direction of the data is what matters
+
+## Encoder
+
+Converts an input of a specific decimal number to an output of the input's binary equivalent
+
+It's difficult to have a binary input 0, because we can't differentiate b/w input 0 being active and all inputs being inactive.

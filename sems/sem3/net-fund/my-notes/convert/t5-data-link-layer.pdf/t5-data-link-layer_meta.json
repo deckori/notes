@@ -1,0 +1,419 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Topic 5: Data Link Layer",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.75699996948242,
+          264.007568359375
+        ],
+        [
+          608.1328125,
+          264.007568359375
+        ],
+        [
+          608.1328125,
+          311.99855041503906
+        ],
+        [
+          55.75699996948242,
+          311.99855041503906
+        ]
+      ]
+    },
+    {
+      "title": "Topics and Objectives",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          14.077148437499998,
+          23.2147216796875
+        ],
+        [
+          352.3136291503906,
+          23.2147216796875
+        ],
+        [
+          352.3136291503906,
+          55.217742919921875
+        ],
+        [
+          14.077148437499998,
+          55.217742919921875
+        ]
+      ]
+    },
+    {
+      "title": "1. Purpose of the Data Link Layer\nThe Data Link Layer",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          15.015624999999998,
+          8.3056640625
+        ],
+        [
+          397.91406249999994,
+          8.3056640625
+        ],
+        [
+          397.91406249999994,
+          68.17276000976562
+        ],
+        [
+          15.015624999999998,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Purpose of Data Link layer:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          208.09100341796875,
+          99.1142578125
+        ],
+        [
+          497.44744873046875,
+          99.1142578125
+        ],
+        [
+          497.44744873046875,
+          123.29730224609375
+        ],
+        [
+          208.09100341796875,
+          123.29730224609375
+        ]
+      ]
+    },
+    {
+      "title": "Data Link does the following \nfunctions:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          606.255859375,
+          206.267333984375
+        ],
+        [
+          913.7130126953125,
+          206.267333984375
+        ],
+        [
+          913.7130126953125,
+          257.63134765625
+        ],
+        [
+          606.255859375,
+          257.63134765625
+        ]
+      ]
+    },
+    {
+      "title": "1. Purpose of the Data Link Layer\nThe Data Link Layer",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          3.7539062499999996,
+          9.68994140625
+        ],
+        [
+          386.35736083984375,
+          9.68994140625
+        ],
+        [
+          386.35736083984375,
+          70.04443359375
+        ],
+        [
+          3.7539062499999996,
+          70.04443359375
+        ]
+      ]
+    },
+    {
+      "title": "1. Purpose of the Data Link Layer IEEE 802 LAN/MAN Data Link Sublayers",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          0.0,
+          12.0
+        ],
+        [
+          615.9102263856362,
+          12.0
+        ],
+        [
+          615.9102263856362,
+          68.93701171875
+        ],
+        [
+          0.0,
+          68.93701171875
+        ]
+      ]
+    },
+    {
+      "title": "1. Purpose of the Data Link Layer\nProviding Access to Media",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          6.4629998207092285,
+          10.24365234375
+        ],
+        [
+          417.62207031249994,
+          10.24365234375
+        ],
+        [
+          417.62207031249994,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          5
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          28
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "TableCell",
+          8
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          53
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          7
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          73
+        ],
+        [
+          "Span",
+          23
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          37
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t5-data-link-layer"
+}

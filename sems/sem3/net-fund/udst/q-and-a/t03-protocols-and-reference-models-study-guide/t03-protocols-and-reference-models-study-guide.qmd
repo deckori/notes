@@ -1,0 +1,107 @@
+
+
+{0}------------------------------------------------
+
+## **Topic 3. Protocols and Reference Models Study Guide Instructor**
+
+- 1. Describe in one sentence the flow control. (2) **(S8)**
+  - **Manages the rate of data transmission and defines how much information can be sent and the speed at which it can be delivered.**
+- 2. What term is used for each of the following: (3) **(S9)**
+
+| Communication from one-to-many recipients     | Multicast |
+|-----------------------------------------------|-----------|
+| Communication<br>from one-to-allrecipients    | Broadcast |
+| Communication<br>from one-to-one<br>recipient | Unicast   |
+
+3. Briefly describe the functions of the Layers of the OSI Model: (14) **(S25)**
+
+| # | OSI Model Layer | Description                                                                                       |
+|---|-----------------|---------------------------------------------------------------------------------------------------|
+| 7 | Application     | Contains protocols used for process-to-process communications                                     |
+| 6 | Presentation    | Provides for common representation of the data transferred between<br>application layer services. |
+| 5 | Session         | Provides services to the presentation layer and to manage data<br>exchange.                       |
+| 4 | Transport       | Defines services to segment, transfer, and reassemble the data for<br>individual communications.  |
+| 3 | Network         | Provides services to exchange the individual pieces of data over the<br>network.                  |
+| 2 | Data Link       | Describes methods for exchanging data frames over a common<br>media.                              |
+| 1 | Physical        | Describes the means to activate, maintain, and de-activate physical<br>connections.               |
+
+{1}------------------------------------------------
+
+4. Describe the function of the protocol layers of the TCP/IP Protocol Model. (8) **(S26)**
+
+| TCP/IP Model<br>Layer | Description                                                                |
+|-----------------------|----------------------------------------------------------------------------|
+| Application           | Represents data to the user, plus encoding and dialog control.             |
+| Transport             | Supports communication between various devices across diverse<br>networks. |
+| Internet              | Determines the best path through the network.                              |
+| Network Access        | Controls the hardware devices and media that make up the<br>network.       |
+
+5. Map the OSI layersto the TCP/IP model. (6) **(S27)**
+
+|   | OSI Model    | TCP/IP Model   |
+|---|--------------|----------------|
+| 7 | Application  |                |
+| 6 | Presentation | Application    |
+| 5 | Session      |                |
+| 4 | Transport    | Transport      |
+| 3 | Network      | Internet       |
+| 2 | Data Link    | Network Access |
+| 1 | Physical     |                |
+
+- 6. What is data encapsulation? (6) **(S6, S31, S32)**
+  - **It's a top down process of placing one message format where protocols add their information to the data (the letter) inside another message format (the envelope) and is repeated by each layer.**
+
+{2}------------------------------------------------
+
+7. Fill in the correct protocol data unit (PDU) for each layer: (6) **(S31)**
+
+| OSI Protocol Stack | PDUs    |
+|--------------------|---------|
+| Upper Layers       | Data    |
+| Transport          | Segment |
+| Network            | Packet  |
+| Data Link          | Frame   |
+| Physical           | Bits    |
+
+8. What is the role of the following types of addresses? (4) **(S34)**
+
+| Address Type                 | Role/Responsibility                                                                                                            |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Network layer addresses      | Responsible for delivering the IP packet from original source<br>to<br>the final destination.                                  |
+| Data Link<br>layer addresses | Responsible for delivering the data link frame from one<br>network interface card (NIC) to another NIC on the same<br>network. |
+
+- 9. What addresses are contained in the IP packet header? (2) (**S35)**
+  - **a. Source IP address.**
+  - **b. Destination IP address.**
+- 10. What addresses are contained in the Ethernet Frame Header? (2) (**S36)**
+  - **a. The Source MAC address.**
+  - **b. The Destination MAC address.**
+- 11. What is the purpose of the Default Gateway? (4) (**S38)**
+  - **The default gateway (DGW) is the "door" or "gateway" to all other remote locations and has an IP address that is part of the local LAN.**
+- 12. When is an Ethernet Frame sent to the Default Gateway? **(S38)**
+  - **When the final destination is remote, the data link frame will use the MAC address of the default gateway.**
+
+{3}------------------------------------------------
+
+13. Answer the following questions based on the diagram below: (10) **(S36 – S38)**
+
+![](_page_3_Figure_1.jpeg)
+
+- a. When sending data from PC1 to the Web Server, what are:
+  - 1) The source IP address **192.168.1.110**, the destination IP address **172.16.1.99**.
+  - 2) The source MAC address **AA-AA-AA-AA-AA-AA**, and the destination MAC address **11-11-11- 11-11-11**.
+- b. When sending data from PC1 to the FTP Server, what are:
+  - 1) The source IP address **192.168.1.110**, the destination IP address **192.168.1.9**.
+  - 2) The source MAC address **AA-AA-AA-AA-AA-AA** , and The destination MAC address **CC-CC-CC-CC-CC-CC.**
+- c. What is the Default Gateway address for PC1 and FTP Server?
+
+## **192.168.1.1**
+
+d. What is the Default Gateway address for the Web server?
+
+## **172.16.1.1**
+
+- 14. What is the address of the default gateway (DGW)? (S38)
+  - **The IP address of the DGW is the IP address of the router interface connected to the local LAN.**
+- 15. What happens if a device does not have the default gateway address configured? (S38)
+  - **All devices on the LAN must be told about this address or their traffic will be confined to the LAN only.**

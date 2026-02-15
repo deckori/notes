@@ -1,0 +1,15 @@
+## Sign Extension
+
+If we have a normal unsigned number or a positive signed number, we increase the number of bits by appending zeroes.
+
+*Exception*: In case of a negative signed number, we append ones to increase the number of bits.
+
+## Special Case in 2's Complement Representation
+
+Complete range of values that can be represented in the 2's complement system having $n$ magnitude bits:
+
+$$-2^n+(2^n-1)$$
+
+In signed numbers, when you do an arithmetic operation and get overflow, you place the overflow bits between the magnitude bits and the sign bit.
+
+If you have a negative binary number of type two's complement, you have to apply 2's complement to get it's magnitude

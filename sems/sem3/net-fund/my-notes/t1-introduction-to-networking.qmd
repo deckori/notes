@@ -1,0 +1,43 @@
+
+
+Intranet allows an organization's users to access it's network
+Extranet allows specific users outside the organization to access parts of the organization's network
+
+Physical port vs interface
+
+- Physical port is a practical term
+- Interface is a logical term
+- Both refer to the same thing
+
+## terms
+
+- Host/End Device: 4
+- Server: 4
+- Client: 4
+- Peer-to-Peer network
+  - Definition: 5
+  - Pros & Cons: 5
+  - Key Components: 6
+- Intermediary devices: 6
+- Network media:
+  - Definition: 7
+  - 3 Types: 7
+  - Criteria for choosing: 7
+- Network representations:
+  - Network/topology diagrams: 9
+  - Network Interface Card: 9
+  - Physical port: 9
+  - Interface: 9
+- Topology diagrams
+  - Physical topology: 10
+  - Logical topology: 10
+- Network types
+  - Size based classificatin:
+    - Small home networks: 12
+    - Small Office/Home Office (SOHO): 12
+    - Medium to large networks: 12
+    - World wide network: 12
+  - Variation: 13
+  - LAN: 14
+  - WAN: 14
+  - Internet: 15

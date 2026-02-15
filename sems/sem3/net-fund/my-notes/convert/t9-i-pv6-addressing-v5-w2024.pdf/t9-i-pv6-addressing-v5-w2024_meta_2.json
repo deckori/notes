@@ -1,0 +1,371 @@
+{
+  "table_of_contents": [
+    {
+      "title": "GUA and LLA Static Configuration\nStatic GUA Configuration on a Router",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          9.384765625,
+          9.68994140625
+        ],
+        [
+          586.1914672851562,
+          9.68994140625
+        ],
+        [
+          586.1914672851562,
+          68.17276000976562
+        ],
+        [
+          9.384765625,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "GUA and LLA Static Configuration\nStatic GUA Configuration on a Windows Host",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          5.630859375,
+          9.82733154296875
+        ],
+        [
+          703.162353515625,
+          9.82733154296875
+        ],
+        [
+          703.162353515625,
+          68.17276000976562
+        ],
+        [
+          5.630859375,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "GUA and LLA Static Configuration\nStatic Configuration of a Link-Local Unicast Address",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          11.26171875,
+          9.68994140625
+        ],
+        [
+          818.3515624999999,
+          9.68994140625
+        ],
+        [
+          818.3515624999999,
+          68.17276000976562
+        ],
+        [
+          11.26171875,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Dynamic Addressing for IPv6 GUAs\nStateless Address Autoconfiguration (SLAAC)",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          9.384765625,
+          9.4130859375
+        ],
+        [
+          719.6256103515625,
+          9.4130859375
+        ],
+        [
+          719.6256103515625,
+          68.17276000976562
+        ],
+        [
+          9.384765625,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Dynamic Addressing for IPv6 GUAs",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          15.194000244140625,
+          9.4130859375
+        ],
+        [
+          426.06835937499994,
+          9.4130859375
+        ],
+        [
+          426.06835937499994,
+          35.9912109375
+        ],
+        [
+          15.194000244140625,
+          35.9912109375
+        ]
+      ]
+    },
+    {
+      "title": "Stateless Address Autoconfiguration (SLAAC) (cont.)",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          15.015624999999998,
+          36.16973876953125
+        ],
+        [
+          826.195556640625,
+          36.16973876953125
+        ],
+        [
+          826.195556640625,
+          69.49072265625
+        ],
+        [
+          15.015624999999998,
+          69.49072265625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          28
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          28
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          37
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Code",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          20
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          25
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t9-i-pv6-addressing-v5-w2024"
+}

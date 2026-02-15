@@ -1,0 +1,66 @@
+---
+title: Topic 2 - Basic Switch and End Device Configuration Study Guide
+---
+
+1. What are three ways a user can access the Cisco IOS? (6) **( S6)**
+  - Console, Secure shell, Telnet
+2. Describe briefly the two primary command modes. (2) **( S9)**
+  - User EXEC Mode: Allows access to only limited number of basic monitoring commands
+  - Privileged EXEC Mode: Allows access to all commands and features
+3. Describe briefly the line and interface sub-configuration modes. (2) **( S10)**
+  - Line Configuration Mode: 
+    - Used to configure console, SSH, Telnet or AUX access
+  - Interface Configuration Mode: 
+    - Used to configure a switch port or router interface
+4. What commands are used to: (8) **(S11, S12)**
+  - Move from user EXEC mode to privilege EXEC mode, and vice versa?
+  - USER → Privileged = enable
+  - Move in and out of global configuration mode?
+  - Configure terminal
+  - Move in and out of line configuration mode?
+  - Line
+  - To move from any sub-configuration mode back to:
+    - Global configuration mode? Exit
+    - Privilege EXEC mode? End
+5. What does Context Sensitive help provide? (2) **(S15)**
+  - Enables us to quickly find answers to the questions
+6. What do the following HOT keys do? (12) **(S17, S18)**
+  - Space = Displays the next screen
+  - Enter = Displays the next line
+  - Tab = Completes a partial command name entry
+  - Up = Recalls the commands in the history buffer
+  - Ctrl-Shift-6 = All purpose break sequence used to abort DNS lookups, traceroutes, ping, etc
+  - ? = Ends the display string, returning to privileged EXEC mode
+7. List the **three** device accesses that should be secured with passwords and their respective command sequences. (6) **(S21, S22)**
+  - 1- User EXEC Mode, 2- Privileged EXEC Mode, 3- VTY line access
+8. What does **service password-encryption** do? (2) **(S23)**
+  - Encrypts all plaintext passwords
+9. What is the purpose of **show running-config** command? (2) **(S23)**
+  - Used to verify that the passwords on the device are encrypted
+10. Compare and Contrast: (8) **(S26)**
+  - | Startup-Config                        | Running-Config                                    |
+    |---------------------------------------|---------------------------------------------------|
+    | This is the saved configuration file  | This is stored in (RAM). It reflects the current  |
+    | that is stored in NVRAM. It contains  | configuration. Modifying a running configuration  |
+    | all the commands that will be used by | affects the operation of a Cisco device           |
+    | the device upon startup or reboot.    | immediately. RAM is volatile memory. It loses all |
+    | Flash doesn't lose its contents when  | of its content when the device is powered off or  |
+    | device is powered off.                | restarted.                                        |
+11. What command is used to save the running configuration file on to NVRAM? (2) **(S26)**
+  - Copy running-config startup-config
+12. What does the **reload** command do? (4) **(S27)**
+  - It causes the device to briefly go offline, leading to network downtime
+13. What is the purpose of IP addresses? (4) **(S29)**
+  - Enables devices to locate one another and establish end-to-end communication on the internet
+14. What is structure of IP called and how is it represented? (4) **(S29)**
+  - The structure is called dotted decimal and its represented by 4 decimal numbers between 0 and 255
+15. Define the IPv4 mask and state its purpose. (4) **(S29)**
+  - An IPv4 subnet is a 32-bit that differentiates the network portion of the address from the host portion, the subnet mask determines to which subnet the device is a member
+16. Define the default gateway address. (4) **(S29)**
+  - The default gateway is the IP address of the router that the host will use to access remote networks, including the internet
+17. What is the purpose of DHCP? (2) **(S31)**
+  - DHCP enables automatic IPV4 addresses configuration for every end device that are DHCP-enabled
+18. What is the purpose of configuring an IP Address and a subnet mask on SVI (VLAN 1) on a Switch? (2) **(S32)**
+  - To access the switch remotely
+19. What command is used to verify the end-to-end connectivity? (2) **(S33)**
+  - Ping

@@ -1,0 +1,45 @@
+---
+title: "T4 Combinational Logic Circuit Analysis and Simplification"
+---
+
+## De Morgan's Theorem
+
+##### Simply put:
+
+In a Boolean expression:
+
+1.  Break the bar
+2.  Change the gate, i.e., AND $\leftrightharpoons$ OR
+
+In a gate drawing:
+
+1.  Change the gate, i.e., AND $\leftrightharpoons$ OR
+2.  Add a bubble where is none, remove a bubble where there is one
+
+## Standard Symbols
+
+![](t4-img/nand-standard-symbol.png){#fig-nand-standard-symbol align="center" width="300" alt="nand-standard-symbol.png"}
+
+## Constructing Gates from a Truth Table
+
+In a given truth table:
+
+-   Choose OR (SOP - 1 output) or AND (POS - 0 output) logic
+-   Construct the Boolean expression
+-   Construct the logic circuit from the Boolean expression
+
+## Logic Gate - Exclusive-OR Gate
+
+Differing inputs give a high output. Same gives a low output
+
+## Boolean Theorem
+
+4.  $x.x' = 0 = x.\overline{x}$
+
+## Commercial TTL Full Adder Chip
+
+This full adder chip has 4 full adders in it for it 4 bit inputs for each input. The more the number of bits the inputs, the more the number of full adders needed.
+
+## Add or Subtract circuit
+
+We use an XOR gate instead of a not gate so that we can use one construction of a circuit to do \*\*either one\* of addition or subtraction.

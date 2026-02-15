@@ -1,0 +1,297 @@
+---
+title: 6.1. Operational Amplifier
+---
+
+{1}------------------------------------------------
+
+## MISC
+
+How does an op-amp have a DC offset?
+
+{{< video https://www.youtube.com/watch?v=hUu3SqRSYyA&t=60s >}}
+
+Op-amp equivalent circuit
+
+{{< video https://www.youtube.com/watch?v=Gmy1ciTiEbs >}}
+
+### **Learning Objectives:**
+
+Understand what a differential amplifier does
+
+Learn the basics of an operational amplifier
+
+Develop an understanding of what common mode operation is
+
+Describe double-ended input operation
+
+{2}------------------------------------------------
+
+#### **Basic Op-Amp**
+
+![](l6-1-operational-amplifier-img/basic-op-amp.png){#fig-basic-op-amp align=center width=300 alt="basic-op-amp.png"}
+
+Operational amplifier or op-amp:
+
+- Very high gain differential amplifier (A = $10^5$ - $10^6$)
+- High input impedance (typically a few meg-Ohms)
+- Low output impedance ( >100 )
+- Used for feedback circuits
+- They have a differential input
+
+##### Differential Input
+
+- The output depends on the difference of 2 inputs. Here:
+
+$$V_o = A_v (V^+ - V^-)$$
+
+- This contrasts with a single entity input, which is just 1 wire
+
+**Note the op-amp has two inputs and one output.**
+
+{3}------------------------------------------------
+
+#### Op-Amp Gain
+
+##### Videos
+
+{{< video https://www.youtube.com/watch?v=P644hjOwbV0 >}}
+
+##### Uni notes
+
+**Op-Amps have a very high gain. They can be connected open-loop or closed-loop.**
+
+- **Open-loop refers to a configuration where there is no feedback from output back to the input. In the open-loop configuration the gain can exceed 10,000.**
+- **Closed-loop configuration reduces the gain. In order to control the gain of an opamp it must have feedback. This feedback is a negative feedback. A negative feedback reduces the gain and improves many characteristics of the op-amp.**
+
+{4}------------------------------------------------
+
+# **Operational amplifiers**
+
+![](_page_4_Picture_2.jpeg){width=300 align=center}
+
+FIG. 1
+Basic op-amp.
+
+![](_page_4_Figure_4.jpeg){width=300 align=center}
+
+FIG. 2 Single-ended operation.
+
+![](_page_4_Figure_6.jpeg){width=300 align=center}
+
+FIG. 3
+
+Double-ended (differential) operation.
+
+{5}------------------------------------------------
+
+#### Practical Op-Amp Circuits
+
+- 1. Inverting amplifier
+- 2. Noninverting amplifier
+- 3. Unity follower
+- 4. Summing amplifier
+- 5. Integrator
+- 6. Differentiator
+
+{6}------------------------------------------------
+## Inverting Op-Amp
+
+![](_page_6_Picture_1.jpeg){width=300 align=center}
+
+- The signal input is applied to the inverting (–) input
+- The non-inverting input (+) is grounded
+- The resistor Rfis the feedback resistor. It is connected from the output to the negative (inverting) input. This is *negative feedback*.
+
+{7}------------------------------------------------
+
+### **Inverting Op-Amp Gain**
+
+Gain can be determined from external resistors: R<sub>f</sub> and R<sub>1</sub>
+
+$$Voltage\ Gain = A_v = \frac{V_o}{V_i} = -\frac{R_f}{R_1}$$
+
+Unity gain—voltage gain is 1
+
+$$\mathbf{R}_{r} = \mathbf{R}_{r}$$
+
+$$A_{v} = \frac{-R_{f}}{R_{1}} = -1$$
+
+The negative sign denotes a $180^\circ$ phase shift between input and output.
+
+<details>
+
+{8}------------------------------------------------
+
+### **Example:**
+
+**EXAMPLE 5** If the circuit of Fig. 34 has  $R_1 = 100 \text{ k}\Omega$  and  $R_f = 500 \text{ k}\Omega$ , what output voltage results for an input of  $V_1 = 2 \text{ V}$ ?
+
+![](_page_8_Picture_2.jpeg){width=300 align=center}
+
+![](_page_8_Picture_3.jpeg){width=300 align=center}
+
+FIG. 34: Inverting constant-gain multiplier.
+
+Solution:
+
+$$V_o = -\frac{R_f}{R_1} V_1 = -\frac{500 \,\mathrm{k}\Omega}{100 \,\mathrm{k}\Omega} (2 \,\mathrm{V}) = -10 \,\mathrm{V}$$
+
+> The formula used above is from the definition of gain, $A_v = \frac{V_o}{V_i} = - \frac{R_f}{R_i}$
+
+{9}------------------------------------------------
+
+**EXAMPLE 5** If the circuit of Fig. 34 has  $R_1 = 100 \,\mathrm{k}\Omega$  and  $R_f = 500 \,\mathrm{k}\Omega$ , what output voltage results for an input of  $V_1 = 2 \,\mathrm{sin} \,\mathrm{wt} \,\mathrm{V}$ ?
+
+![](_page_9_Figure_2.jpeg){width=300 align=center}
+
+FIG. 34
+
+Inverting constant-gain multiplier.
+
+Solution:
+
+$$V_o = -\frac{R_f}{R_1} V_1 = -\frac{500 \,\mathrm{k}\Omega}{100 \,\mathrm{k}\Omega} (2 \,\mathrm{sin}\,\mathrm{wt}\,\mathrm{V}) = -10 \,\mathrm{sin}\,\mathrm{wt}\,\mathrm{V}$$
+
+![](_page_9_Figure_7.jpeg)</details>{width=300 align=center}
+
+{10}------------------------------------------------
+
+# Virtual Ground
+
+## Videos
+
+{{< video https://youtu.be/AuZ00cQ0UrE?si=ZL0a8mXwKJ8FVcbA&t=229 >}}
+
+## Uni Notes
+
+An understanding of the concept of virtual ground provides a better understanding of how an opamp operates.
+
+The *non-inverting* input pin is at ground. *The inverting*  input pin is also at 0 V for an AC signal.
+
+The op-amp has such high input impedance that even with a high gain there is no current from inverting input pin, therefore there is no voltage from inverting pin to ground—all of the current is through R<sup>f</sup>.
+
+![](_page_10_Picture_4.jpeg){width=300 align=center}
+
+![](_page_10_Figure_5.jpeg){width=300 align=center}
+
+{11}------------------------------------------------
+
+## Inverting/Noninverting Op-Amps
+
+> The placement of resistors on the negative terminal of the op-amp is used to stabilize the output and the negative feedback is used to amplify the output
+
+### Inverting Amplifier
+
+$$V_0 = \frac{-R_f}{R_1} V_1$$
+
+![](_page_11_Picture_3.jpeg){width=300 align=center}
+
+### Noninverting Amplifier
+
+$$V^0 = (1 + \frac{R_f}{R_1})V^1$$
+
+![](_page_11_Picture_6.jpeg){width=300 align=center}
+
+<details>
+
+{12}------------------------------------------------
+
+Example:
+
+Eq. (9):
+$$V_o = \left(1 + \frac{R_f}{R_1}\right)V_1 = \left(1 + \frac{500 \text{ k}\Omega}{100 \text{ k}\Omega}\right)(2 \text{ V}) = 6(2 \text{ V}) = +12 \text{ V}$$
+
+![](_page_12_Picture_4.jpeg){width=300 align=center}
+
+</details>
+
+{13}------------------------------------------------
+
+# **Unity Follower**
+
+- The unity-follower circuit, as shown, provides a gain of unity (1) with no polarity or phase reversal
+- They are used because they have high input impedance and other characteristics of an op-amp
+
+
+$$V_0 = V_1$$
+
+![](_page_13_Picture_3.jpeg){width=300 align=center}
+
+{14}------------------------------------------------
+
+## Summing Amplifier
+
+Because the op-amp has a high input impedance, the multiple inputs are treated as separate inputs.
+
+![](_page_14_Figure_3.jpeg){width=300 align=center}
+
+$$V_o = -\left(\frac{R_f}{R_1}V_1 + \frac{R_f}{R_2}V_2 + \frac{R_f}{R_3}V_3\right)$$
+
+<details>
+
+Summing Amplifier
+
+Example:
+
+a. 
+$$V_1=+1$$
+ V,  $V_2=+2$  V,  $V_3=+3$  V,  $R_1=500$  k $\Omega$ ,  $R_2=1$  M $\Omega$ ,  $R_3=1$  M $\Omega$ .  
+a. $V_1=-2$  V,  $V_2=+3$  V,  $V_3=+1$  V,  $R_1=200$  k $\Omega$ ,  $R_2=500$  k $\Omega$ ,  $R_3=1$  M $\Omega$ .
+
+Draw the summing operational amplifier
+
+circuit. Answer:
+
+Summing Amplifier
+
+Example:
+
+a. 
+$$V_1 = +1 \text{ V}, V_2 = +2 \text{ V}, V_3 = +3 \text{ V}, R_1 = 500 \text{ k}\Omega, R_2 = 1 \text{ M}\Omega, R_3 = 1 \text{ M}\Omega$$
+
+a. 
+$$V_1 = -2 \text{ V}, V_2 = +3 \text{ V}, V_3 = +1 \text{ V}, R_1 = 200 \text{ k}\Omega, R_2 = 500 \text{ k}\Omega, R_3 = 1 \text{ M}\Omega.$$
+
+Draw the summing operational amplifier circuit.
+
+![](_page_16_Picture_7.jpeg){width=300 align=center}
+
+$$V_o = -\left(\frac{R_f}{R_1}V_1 + \frac{R_f}{R_2}V_2 + \frac{R_f}{R_3}V_3\right)$$
+
+a. 
+$$V_o = -\left[\frac{1000 \text{ k}\Omega}{500 \text{ k}\Omega}(+1 \text{ V}) + \frac{1000 \text{ k}\Omega}{1000 \text{ k}\Omega}(+2 \text{ V}) + \frac{1000 \text{ k}\Omega}{1000 \text{ k}\Omega}(+3 \text{ V})\right]$$
+  
+=  $-[2(1 \text{ V}) + 1(2 \text{ V}) + 1(3 \text{ V})] = -7 \text{ V}$ 
+
+a. 
+$$V_o = -\left[\frac{1000 \text{ k}\Omega}{200 \text{ k}\Omega}(-2 \text{ V}) + \frac{1000 \text{ k}\Omega}{500 \text{ k}\Omega}(+3 \text{ V}) + \frac{1000 \text{ k}\Omega}{1000 \text{ k}\Omega}(+1 \text{ V})\right]$$
+  
+=  $-[5(-2 \text{ V}) + 2(3 \text{ V}) + 1(1 \text{ V})] = +3 \text{ V}$ 
+
+<\details>
+
+{17}------------------------------------------------
+
+# Integrator
+
+- The output is the integral of the input
+- Integration is the operation of summing the area under a waveform or curve over a period of time
+- Useful in lowpass filter circuits and sensor conditioning circuits
+
+$$v_o(t) = -RC \int v_1(t)dt$$
+
+![](_page_17_Figure_3.jpeg){width=300 align=center}
+
+{18}------------------------------------------------
+
+# Differentiator
+
+The differentiator takes the derivative of the input. This circuit is useful in high-pass filter circuits.
+
+$$v_o(t) = -RC \frac{dv_1(t)}{dt}$$
+
+![](_page_18_Picture_3.jpeg){width=300 align=center}
+
+{19}------------------------------------------------
+
+

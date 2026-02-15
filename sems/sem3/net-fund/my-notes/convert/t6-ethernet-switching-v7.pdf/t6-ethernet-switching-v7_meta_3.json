@@ -1,0 +1,375 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Switch Speeds and Forwarding Methods\nDuplex and Speed Settings",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          3.7539062499999996,
+          12.181640625
+        ],
+        [
+          418.7256164550781,
+          12.181640625
+        ],
+        [
+          418.7256164550781,
+          69.50473022460938
+        ],
+        [
+          3.7539062499999996,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Switch Speeds and Forwarding Methods\nAuto-MDIX",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          2.8154296875,
+          11.90478515625
+        ],
+        [
+          419.49902343749994,
+          11.90478515625
+        ],
+        [
+          419.49902343749994,
+          69.50473022460938
+        ],
+        [
+          2.8154296875,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Destination on Same Network",
+      "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          3.7539062499999996,
+          36.82177734375
+        ],
+        [
+          459.85351562499994,
+          36.82177734375
+        ],
+        [
+          459.85351562499994,
+          69.50473022460938
+        ],
+        [
+          3.7539062499999996,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Destination on Remote Network",
+      "heading_level": null,
+      "page_id": 19,
+      "polygon": [
+        [
+          5.630859375,
+          37.37548828125
+        ],
+        [
+          489.86834716796875,
+          37.37548828125
+        ],
+        [
+          489.86834716796875,
+          69.50473022460938
+        ],
+        [
+          5.630859375,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Address Resolution Protocol (ARP)\nARP Overview",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          5.630859375,
+          12.7418212890625
+        ],
+        [
+          365.1445007324219,
+          12.7418212890625
+        ],
+        [
+          365.1445007324219,
+          68.34274291992188
+        ],
+        [
+          5.630859375,
+          68.34274291992188
+        ]
+      ]
+    },
+    {
+      "title": "ARP provides two basic \nfunctions:",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          12.669433593749998,
+          237.76980590820312
+        ],
+        [
+          232.79469299316406,
+          237.76980590820312
+        ],
+        [
+          232.79469299316406,
+          281.8208312988281
+        ],
+        [
+          12.669433593749998,
+          281.8208312988281
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          39
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          32
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          33
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "TableCell",
+          8
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          22
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t6-ethernet-switching-v7"
+}

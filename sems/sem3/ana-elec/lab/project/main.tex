@@ -1,0 +1,1065 @@
+%%
+%% This is file `./samples/shortsample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% apa7.dtx  (with options: `shortsample')
+%% ----------------------------------------------------------------------
+%% 
+%% apa7 - A LaTeX class for formatting documents in compliance with the
+%% American Psychological Association's Publication Manual, 7th edition
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% ----------------------------------------------------------------------
+%% 
+
+\documentclass[stu]{apa7}
+
+% Math stuff
+\usepackage{amsmath}
+
+% file format support
+\usepackage{svg}
+\usepackage{hyperref}
+\hypersetup{
+  urlcolor=cyan
+}
+
+% fixing up formatting
+\usepackage{caption} % for fixing floating figure issues
+\usepackage{outlines}
+
+\captionsetup[figure]{hypcap=false}
+\captionsetup[table]{hypcap=false}
+
+% APA stuff
+\usepackage[american]{babel}
+
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
+
+\title{Shunt Current Sensing Using Op Amp with Zener Protection and LED Indicators}
+
+\shorttitle{}
+
+\authorsnames{Fairoos Kunhi (60315610), Noora Almarri (60303884)}
+
+\authorsaffiliations{{University of Doha for Science and Technology}}
+
+\professor{Mohammed Sheikh}
+
+\course{AETN 2201: Analog Electronics}
+
+\duedate{December 3, 2025}
+
+\authornote{
+The authors belong to group 5. \\
+This paper uses the student paper specification of the \textsf{apa7} \LaTeX\
+  class to format the document in compliance with the 7th Edition of
+  the American Psychological Assocation's \textit{Publication Manual.}
+  The references are managed using \textsf{biblatex}.
+  }
+
+% \usepackage{draftwatermark}
+% \SetWatermarkScale{2}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section{Introduction}\label{introduction}
+
+Current sensing is an essential function in many electronic systems, especially those that supply power to loads such as motors, chargers, and control equipment.
+Monitoring the current allows the system to detect abnormal conditions that may cause overheating, equipment failure, or safety hazards.
+In this project, our goal is to design and implement a shunt-based current measurement circuit using an operational amplifier, Zener protection, and LED indicators.
+
+The principle of the project is based on using a low-value shunt resistor placed in series with the load.
+As current flows through the shunt, it produces a small voltage proportional to the current.
+Because this voltage is very small (in millivolt range), it is amplified using an operational amplifier.
+The amplified signal is then used to activate LED indicators that show whether the current is within the safe operating range or if a fault condition has occurred.
+
+To protect the circuit from high voltage spikes or overcurrent events, a A zener diode is used to clamp the voltage and prevent damage to the op-amp and LEDs.
+The circuit indicates normal operation with a green LED, and activates a red LED when the current is in the fault range, signaling a fault.
+
+This project demonstrates practical skills in shunt current sensing, op-amp amplification, Zener diode protection, and indicator design.
+It also connects theoretical concepts from analog electronics to a real working circuit that detects and displays current conditions clearly and safely.
+
+\subsection{Background}\label{background}
+
+Current measurement is a fundamental requirement in electrical and electronic systems, especially those where safety, stability, and load monitoring are important.
+One of the most reliable and widely used methods of sensing current is by measuring the voltage across a low-value shunt resistor.
+This voltage is directly proportional to the current flowing through the load according to $\Omega$'s Law.
+
+However, because shunt resistors typically have very small resistance
+values,
+the voltage drop across them is usually small and needs amplification before it can be processed or displayed.
+Operational amplifiers (op-amps) are commonly used to amplify the shunt voltage to a level that is suitable for analysis or triggering indicators.
+
+In practical systems, protection is also necessary to prevent damage during abnormal conditions.
+Overcurrent situations can cause the voltage at the sensing point or amplifier output to rise rapidly.
+To address this, a zener diode is used in our design to clamp the voltage and prevent the op-amp or LED indicators from experiencing unsafe levels.
+
+Finally, visual indicators such as LEDs are simple and effective tools for communicating the system status.
+In this project, a green LED represents the normal operating range of the load current,
+while a red LED indicates a fault condition when the current overflows. This approach is widely used in power supplies, battery chargers, and safety equipment to provide immediate visual feedback.
+
+Overall, this project combines core concepts of analog
+electronics---shunt sensing, op-amp amplification, Zener protection, and
+LED indication---to create a practical and safe current monitoring
+system.
+
+\subsection{Problem Statement}\label{problem-statement}
+
+In electrical systems, excessive current can cause component damage,
+overheating, and unsafe operating conditions. Many circuits and power
+supplies do not include built-in current monitoring, which makes it
+difficult to detect abnormal or fault conditions. Without a proper
+sensing and indication mechanism, users cannot easily identify when the
+current is within the safe operating range or when a dangerous
+overcurrent condition occurs.
+
+This project addresses the following problem:
+
+How can we design a simple, low-cost, and reliable current sensing
+circuit that accurately detects load current, identifies overcurrent
+conditions, and provides a clear visual indication of system status?
+
+To solve this problem, we implement a current measurement system using:
+
+\begin{itemize}
+	\item A shunt resistor to sense current
+	\item An operational amplifier to amplify the small shunt voltage
+	\item A Zener diode to protect the circuit from high voltage spikes
+	\item LEDs to indicate normal and fault conditions
+\end{itemize}
+
+The designed system must be able to:
+
+\begin{itemize}
+	\item Sense current accurately within the required range
+	\item Detect fault conditions when current exceeds safe limits
+	\item Protect circuit components from over-voltage
+	\item Provide a clear and immediate visual warning of unsafe conditions
+\end{itemize}
+
+\subsection{Project Objectives}\label{project-objectives}
+
+The main objective of this project is to design and implement a safe and
+reliable current sensing circuit that monitors load current and visually
+indicates whether the system is operating normally or experiencing a
+fault. The project aims to combine core analog electronics
+concepts---such as shunt sensing, operational amplifier gain, diode
+protection, and LED indication---into a functional and practical
+circuit.
+
+The specific objectives are:
+
+\begin{enumerate}
+	\def\labelenumi{\arabic{enumi}.}
+	\item
+	      To measure load current using a $0.22 \Omega$ shunt resistor
+
+	      \begin{itemize}
+		      \item
+		            Convert current (0--2 A) into a proportional voltage across the
+		            shunt.
+	      \end{itemize}
+	\item
+	      To amplify the small shunt voltage using the LM358P op-amp
+
+	      \begin{itemize}
+		      \item
+		            Ensure the output voltage is strong enough to drive indicator LEDs
+		            and identify fault conditions.
+	      \end{itemize}
+	\item
+	      To implement over-voltage protection using a 15 V Zener diode
+
+	      \begin{itemize}
+		      \item
+		            Clamp excessive voltage and protect the op-amp inputs and outputs
+		            from damage.
+	      \end{itemize}
+	\item
+	      To design a clear visual indication system using LEDs
+
+	      \begin{itemize}
+		      \item
+		            Green LED for normal operation
+		      \item
+		            Red LED for overcurrent or fault conditions
+	      \end{itemize}
+	\item
+	      To verify circuit performance in both Multisim simulation and physical
+	      hardware
+
+	      \begin{itemize}
+		      \item
+		            Measure voltage levels, LED response, and stability under different
+		            current conditions.
+	      \end{itemize}
+	\item
+	      To analyze and compare theoretical, simulated, and practical results
+
+	      \begin{itemize}
+		      \item
+		            Identify sources of error, performance limitations, and areas for
+		            improvement.
+	      \end{itemize}
+\end{enumerate}
+
+These objectives ensure the project not only detects current accurately
+but also protects the circuit and clearly communicates its operating
+status.
+
+\subsection{Scope and Limitations}\label{scope-and-limitations}
+
+\subsubsection{Scope}\label{scope}
+
+This project focuses on designing and implementing a basic but practical
+current sensing and indication circuit. The system uses a shunt
+resistor, operational amplifier, Zener diode protection, and LED
+indicators to monitor and display the current status of a DC load. The
+scope includes:
+
+\begin{itemize}
+	\item
+	      Shunt-based current sensing:\\
+	      Measuring current through a low-value resistor called a shunt resistor.
+	\item
+	      Op-amp signal amplification:\\
+	      Using the op-amp to amplify the small shunt voltage into a readable output.
+	\item
+	      Over-voltage protection:\\
+	      Employing a Zener diode to protect against abnormal spikes or
+	      overcurrent conditions.
+	\item
+	      Visual indication:\\
+	      Green LED for normal operating range and red LED for fault
+	      conditions.
+	\item
+	      Simulated and practical implementation:\\
+	      The circuit is simulated using Multisim and then built physically for
+	      testing and validation.
+	\item
+	      Testing and analysis:\\
+	      Evaluating system performance under different currents to ensure
+	      accurate response and safe operation.
+\end{itemize}
+
+\section{Limitations}\label{limitations}
+
+Despite successful operation, the designed current sensing circuit has several limitations:
+
+\begin{enumerate}
+	\item \textbf{Power Dissipation in Shunt Resistor:}
+	      The shunt resistor (\(0.22\ \Omega\) original, \(0.42\ \Omega\) revised) dissipates significant power at higher currents, requiring careful selection of wattage ratings and thermal management.
+
+	\item \textbf{Accuracy at Low Currents:}
+	      At very low currents (below 100 mA), the voltage across the shunt is extremely small (tens of mV), making it susceptible to noise and op-amp offset errors.
+
+	\item \textbf{Non-Linear LED Forward Voltage:}
+	      LEDs exhibit non-linear voltage-current characteristics, causing brightness variations with small voltage changes and affecting consistent indication.
+
+	\item \textbf{Zener Leakage Current:}
+	      The Zener diode introduces a small leakage current even below its breakdown voltage, which can slightly affect comparator thresholds.
+
+	\item \textbf{Breadboard Parasitics:}
+	      The breadboard implementation introduces stray capacitance and contact resistance, which can affect high-frequency stability and measurement accuracy.
+
+	\item \textbf{Temperature Sensitivity:}
+	      Resistor values, Zener breakdown voltage, and op-amp parameters drift with temperature, affecting calibration over extended use.
+
+	\item \textbf{Single Fault Threshold:}
+	      The circuit only detects overcurrent above a fixed threshold. It cannot distinguish between transient spikes and sustained faults without additional timing circuitry.
+
+	\item \textbf{No Current Readout:}
+	      The system only indicates normal/fault states visually. It does not provide numerical current measurement without additional ADC and display components.
+\end{enumerate}
+
+\section{Applications}\label{applications}
+
+The shunt current sensing circuit with visual indication has numerous practical applications:
+
+\begin{enumerate}
+	\item \textbf{Power Supply Protection:}
+	      Can be integrated into DC power supplies to detect overloads and trigger shutdown or indication before damage occurs.
+
+	\item \textbf{Battery Management Systems (BMS):}
+	      Used to monitor charging/discharging currents in battery packs, protecting against overcurrent and short circuits.
+
+	\item \textbf{Motor Control Systems:}
+	      Provides fault indication in motor drives by detecting stall conditions or excessive current draw.
+
+	\item \textbf{DIY Electronics Projects:}
+	      Serves as an educational tool for students learning about op-amps, comparators, and protection circuits.
+
+	\item \textbf{Solar Charge Controllers:}
+	      Monitors current from solar panels to batteries, indicating faults or overload conditions.
+
+	\item \textbf{LED Driver Protection:}
+	      Can be used in constant-current LED drivers to detect open-circuit or short-circuit faults.
+
+	\item \textbf{Prototype Testing:}
+	      Provides a simple, low-cost method to monitor current during circuit debugging and validation.
+
+	\item \textbf{Safety Equipment:}
+	      Can be incorporated into emergency stop systems or equipment monitoring panels to provide immediate visual fault alerts.
+\end{enumerate}
+
+These applications demonstrate the circuit's versatility in both educational and practical electronic systems requiring current monitoring and fault indication.
+
+\section{Theory \& Design}\label{theory-design}
+
+\subsection{\texorpdfstring{Circuit Theory
+	}{Circuit Theory }}\label{circuit-theory}
+
+\begin{itemize}
+	\item
+	      We are using high side configuration for the current sensing circuit
+	\item
+	      We measure the current
+	\item
+	      We have a comparator connected to the load circuit (before the shunt
+	      resistor)
+	\item
+	      We use a non-inverting configuration of the comparator
+	\item
+	      Current sensing using shunt resistance, LM358 op-Amp, Zener
+	      protection, and LED indicators
+\end{itemize}
+
+\subsubsection{Non inverting amplifier}\label{non-inverting-amplifier}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit diagram of a non inverting amplifier}
+	\includesvg[width=0.8\linewidth]{assets/amplifier.svg}\label{fig:non-inverting-amplifier}
+\end{center}
+
+Voltage gain, \(A_{v}\):
+
+
+\begin{equation} \label{non-inverting-amplifier-gain}
+	A_v=\frac{V_{out}}{V_{in}}=\ 1+\frac{R_f}{R_1}
+\end{equation}
+
+\filbreak
+
+Output voltage, \(V_{out}\):
+
+\[V_{out} = A_{v} \cdot V_{in}\]
+
+And \(V_{out}\) is limited by \(V_{+}\) and \(V_{-}\)
+
+\[{V_{-} \leq V}_{out} \leq V_{+}\]
+
+\subsubsection{Comparator}\label{comparator}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit diagram of a comparator}
+	\includesvg[width=0.8\linewidth]{assets/comparator.svg}\label{fig:comparator}
+\end{center}
+
+Voltage gain, \(A_{v}\):
+
+\[A_{v} = \frac{V_{out}}{V_{in}} = \ 1 + \frac{R_{f}}{R_{1}}\]
+
+Output voltage, \(V_{out}\):
+
+\[V_{out} = A_{v} \cdot (V_{+} - V_{-})\]
+
+\begin{tabular}{cc}
+	State                & Output                 \\
+	\midrule
+	\(V_{in} > V_{ref}\) & \(V_{out} \leq V_{+}\) \\
+	\(V_{in} < V_{ref}\) & \(V_{out} \geq V_{-}\) \\
+\end{tabular}
+
+\subsubsection{LED}\label{led}
+
+LEDs have a forward biased and reverse biased characteristics. On
+forward bias, the LED acts as an open circuit. On reverse bias, the LED
+acts as an open circuit.
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Simulated circuit diagram of a Forward Biased LED}\label{fig:forward-biased-led}
+	\includegraphics[width=3in,height=3in]{vertopal_553e93434a6041ffb16e10ee272c82e5/media/image3.png}
+\end{center}
+
+\noindent
+\textit{Note.} Simulated on Multisim
+
+\filbreak
+{
+	\begin{center}
+		\vspace{5mm}
+		\captionof{figure}{Circuit diagram of a reverse Biased LED}\label{fig:reverse-biased-led}
+		\nopagebreak
+		\includegraphics[width=3in,height=3in]{vertopal_553e93434a6041ffb16e10ee272c82e5/media/image4.png}
+	\end{center}
+
+	\noindent
+	\textit{Note.} Simulated on Multisim
+}
+
+\subsection{Working principles}\label{working-principles}
+
+\begin{outline}
+	\1 The minuscule voltage drop across the shunt resistor is used as the input for the amplifier
+	\1 The amplifier amplifies its input and passes the output to the comparator
+	\2 A capacitor is placed in parallel to the output to stabilize it when it changes
+	\1 The comparator compares the input voltage against a $V_{ref}$ that was configured depending on the operating and fault ranges
+	\2 If the input voltage is higher than the reference, then the RED LED turns on as it now has a its desired potential difference and the GREEN LED is off as it has no potential difference
+	\2 If the input voltage is lower than the reference, then the GREEN LED turns on as it now has a its desired potential difference and the RED LED is off as it has no potential difference
+	\2 A zener diode is placed in parallel to the RED LED to stabilize the comparator output and prevents flickering of the LEDs
+\end{outline}
+
+\subsection{Design calculations}\label{design-calculations}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Overall circuit diagram of the required circuit}\label{fig:current-sensor}
+	\includesvg[width=0.8\linewidth, pretex=\tiny]{assets/current-sensor.svg}
+\end{center}
+
+\noindent
+\textit{Note.} Circuit drawing made using \href{https://www.circuit-diagram.org/editor/}{circuit-diagram.org}
+
+
+\subsubsection{Base circuit}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit diagram of the base circuit}\label{fig:current-sensor:base-circuit}
+	\includesvg[width=0.5\linewidth]{assets/base-circuit.svg}
+\end{center}
+
+\noindent
+\textit{Note.} Circuit drawing made using \href{https://www.circuit-diagram.org/editor/}{circuit-diagram.org}
+
+Firstly, we have to make sure all components do not have high wattage.
+If they do, they will burn when implemented practically. For safety
+reasons, we shall limit the maximum wattage to 1 Watt for all
+components. We limit that further to 0.7 Watts to accommodate variation
+in circuit attributes.
+
+We have,
+
+\[P = VI\]
+
+Here:
+
+\(I\) is \(I_{L} = 2.5\ A\), the upper threshold of the operational
+current range.
+
+\[V = E_{S}\]
+
+\[P = 0.7\ W\]
+
+\[E_{S} = \frac{P}{I}\]
+
+\[V = \frac{0.7\ W}{2.5\ A}\]
+
+\[V = 0.28\ V\]
+
+Now we using voltage we find \(R_{shunt}\). From the load circuit,
+
+\[V = I_{L} \cdot \left( R_{shunt} + R_{L} \right)\]
+
+\[\frac{V}{I_{L}} = R_{shunt} + R_{L}\]
+
+\[R_{L} = \frac{V}{I_{L}} - R_{shunt}\]
+
+\[R_{L} = \frac{0.28\, V}{2.5\, A} - 0.22\ \Omega\]
+
+\[R_{L} = - 0.11\ \Omega\]
+
+This resistance is negative, which is not possible. This implies it is not possible to keep the circuit at the specified power for the given values of maximum current and shunt resistance.
+
+Following the instructions of the supervising professor, Dr. Mohammed Sheikh, we proceeded as follows
+
+\begin{itemize}
+	\item For the simulation, we used the values as is from the requirements (which are given in \autoref{table:old-spec-A} and \autoref{table:old-spec-B}) as the circuit will work even with high power as high power does not burn the components
+	\item For the practical implementation, we used the specifications in \autoref{table:new-spec-A} and \autoref{table:new-spec-B} given below
+\end{itemize}
+
+\begin{samepage}
+	\begin{center}
+		\captionof{table}{Old specifications (Part A)}\label{table:old-spec-A}
+		\begin{tabular}{c|c|c}
+			\toprule
+			Shunt Resistor Value & Op-Amp Type & Zener Diode Voltage \\
+			\midrule
+			$0.22 \Omega$        & LM358P      & 15 V                \\
+			\bottomrule
+		\end{tabular}
+		\vspace{5mm}
+	\end{center}
+\end{samepage}
+
+
+\begin{samepage}
+	\begin{center}
+		\captionof{table}{Old specifications (Part B)}\label{table:old-spec-B}
+
+		\nopagebreak
+		\begin{tabular}{c|c|c|c}
+			\toprule
+			Current Range & Operating Parameters & Fault Condition & Indicator               \\
+			\midrule
+			0 A -- 2 A    & 0 A -- 2 A           & > 2.5 mA        &
+			\begin{tabular}{@{}c@{}} Green LED for normal \\ Red LED for fault \end{tabular} \\
+			\bottomrule
+		\end{tabular}
+		\vspace{5mm}
+	\end{center}
+\end{samepage}
+
+\begin{center}
+	\captionof{table}{New specifications (Part A)}\label{table:new-spec-A}
+	\begin{tabular}{c|c|c}
+		\toprule
+		Shunt Resistor Value & Op-Amp Type & Zener Diode Voltage \\
+		\midrule
+		$0.42 \Omega$        & LM358P      & 15 V                \\
+		\bottomrule
+	\end{tabular}
+	\vspace{5mm}
+\end{center}
+
+\begin{center}
+	\captionof{table}{New specifications (Part B)}\label{table:new-spec-B}
+	\begin{tabular}{c|c|c|c}
+		\toprule
+		Current Range & Operating Parameters & Fault Condition & Indicator               \\
+		\midrule
+		0 A -- 500 A  & 0 A -- 500 A         & > 550 mA        &
+		\begin{tabular}{@{}c@{}} Green LED for normal \\ Red LED for fault \end{tabular} \\
+		\bottomrule
+	\end{tabular}
+	\vspace{5mm}
+\end{center}
+
+\filbreak
+
+\subsubsection{Amplifier Circuit}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit diagram of a non inverting amplifier}\label{fig:current-sensor:non-inverting-amplifier}
+	\includesvg[width=0.5\linewidth]{assets/current-sense-amplifier.svg}
+\end{center}
+
+\noindent
+\textit{Note.} Circuit drawing made using \href{https://www.circuit-diagram.org/editor/}{circuit-diagram.org}
+
+The op-amp is in parallel to the shunt resistor. Therefore:
+
+\begin{equation} \label{vinvshunt}
+	V_{in1} = V_{shunt}
+\end{equation}
+
+The op-amp has very high input impedance. We assume it approaches
+infinity. Therefore:
+
+\begin{equation} \label{ilishunt}
+	I_{L} = I_{shunt}
+\end{equation}
+
+According to Ohm's Law:
+
+\[I = \frac{V}{R}\]
+
+In the base circuit,
+
+\begin{equation} \label{ishuntohmslaw}
+	I_{shunt} = \frac{V_{shunt}}{R_{shunt}}
+\end{equation}
+
+From \autoref{non-inverting-amplifier-gain}, we solve for \(V_{shunt}\):
+
+\[V_{out} = A_{v} \cdot V_{in1}\]
+
+From \autoref{ilishunt},
+
+\[V_{out} = A_{v} \cdot V_{shunt}\]
+
+\begin{equation} \label{vshuntwithgain}
+	V_{shunt} = \frac{V_{out}}{A_{v}}
+\end{equation}
+
+
+\autoref{vshuntwithgain} in \autoref{ishuntohmslaw}:
+
+\[I_{shunt} = \frac{V_{out}}{{A_{v} \cdot R}_{shunt}}\]
+
+From \autoref{ilishunt}
+
+\begin{equation} \label{ilrshunt}
+	I_{L} = \frac{V_{out}}{{A_{v} \cdot R}_{shunt}}
+\end{equation}
+
+From \autoref{fig:current-sensor}, we have a capacitor after \(V_{out}\). This capacitor
+filters out any AC voltage present in \(V_{out}\), if present. Ideally,
+there will be no AC voltage and \(V_{out}\) will be equal to
+\(V_{in2}\). Therefore:
+
+\[I_{L} = \frac{V_{in2}}{{A_{v} \cdot R}_{shunt}}\]
+
+\filbreak
+
+\subsubsection{Comparator}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit diagram of a comparator}\label{fig:current-sensor:comparator}
+	\includesvg[width=0.5\linewidth, pretex=\tiny]{assets/current-sensor-comparator.svg}
+\end{center}
+
+\noindent
+\textit{Note.} Circuit drawing made using \href{https://www.circuit-diagram.org/editor/}{circuit-diagram.org}
+
+\paragraph{Calculating \(V_{ref}\)}
+
+\(V_{ref}\) is the value of the \(V_{in2}\) when the current is at the
+upper limit of the circuit\textquotesingle s logic 1, i.e., \(2.5\ A\).
+
+Therefore, at 2.5 A:
+
+\begin{equation} \label{eq:vref:theory}
+	V_{ref} = V_{in2}
+\end{equation}
+
+Solving for \(V_{in2}\) in \autoref{ilrshunt}:
+
+\[V_{in2} = I_{L} \cdot A_{v} \cdot R_{shunt}\]
+
+From \autoref{eq:vref:theory}
+
+\begin{equation} \label{eq:vref:calculation}
+	V_{ref} = I_L \cdot A_v \cdot R_{shunt}
+\end{equation}
+
+We try to configure the circuit to make \(V_{ref}\). For this we, we
+borrow the voltage from the \(V_{+}\) by using voltage divider rule. For
+using the rule, we need 2 resistors. Then we obtain \(V_{ref}\) by:
+
+\[V_{ref} = V_{+} - V_{R_{2}}\]
+
+\[
+	V_{R_2} = V_{+} \times \frac{R_2}{R_2 + R_3}
+\]
+
+\[V_{ref} = V_{+} - \left( V_{+} \times \frac{R_{2}}{R_{2} + R_{3}} \right)\]
+
+\[V_{ref} - V_{+} = - \left( V_{+} \times \frac{R_{2}}{R_{2} + R_{3}} \right)\]
+
+\[R_{2} + R_{3} = - \left( V_{+} \times \frac{R_{2}}{V_{ref} - V_{+}} \right)\]
+
+\[R_{3} = - \left( \frac{V_{+} \times R_{2}}{V_{ref} - V_{+}} \right) - R_{2}\]
+
+Keeping \(R_{2}\) constant at \(2.5\, k\Omega\), we solve for \(R_{3}\):
+
+\[R_{2} + R_{3} = \frac{V_{+} \cdot R_{2}}{V_{R_{2}}}\]
+
+\[
+	R_3 = \frac{V_{+} \cdot R_2}{V_{R_2}} - R_2
+\]
+
+\subsection{Component selection
+	criteria}\label{component-selection-criteria}
+
+\begin{tabular}{c|c}
+	Component   & Model            \\
+	\midrule
+	Op-amp      & LM358P           \\
+	$R_1$       & 987.3 $\Omega$   \\
+	$R_2$       & 9.955 k $\Omega$ \\
+	$R_3$       & 977 $\Omega$     \\
+	$R_4$       & 0.295 $\Omega$   \\
+	Capacitor   & 798.5 nF         \\
+	Zener diode &                  \\
+\end{tabular}
+
+LEDs
+
+\begin{itemize}
+	\item At 3 V source and $R_3$ in series, Red LED voltage drop = 1.833 V
+	\item At 5 V source and $R_3$ in series, Green LED voltage drop = 1.937 V
+\end{itemize}
+
+Zener diode
+
+\begin{itemize}
+	\item Reverse bias voltage: OL
+	\item Forward bias voltage: 0.735 V
+\end{itemize}
+
+\subsection{Design considerations}\label{design-considerations}
+
+\section{\texorpdfstring{Hardware Implementation: Circuit Construction
+  }{Hardware Implementation: Circuit Construction }}\label{hardware-implementation-circuit-construction}
+
+\subsection{Assembly procedure}\label{assembly-procedure}
+
+\begin{outline}[enumerate]
+	\1 We assembled the base circuit
+	\2 We connected the source ($E_S$), $R_L$, and $R_{shunt}$ in series in the breadboard
+	\1 We assembled the amplifier
+	\2 We took the output from $R_{shunt}$ as the $V_{in(1)}$
+	\2 We placed the LM358P IC in the breadboard below the load circuit
+	\2 We connected its $V_+$ to another power supply of 10 V and the $V_-$ to the ground
+	\2 We set up a voltage divider configuration for the inverting input using $R_L$ and $R_1$
+	\3 We connected $R_L$ to $V_{out(1)}$ and the inverting input
+	\3 We connected $R_1$ to the inverting input and the ground
+	\1 We assembled the comparator
+	\2 We took the output from $R_{out(1)}$ as the $V_{in(2)}$
+	\2 We set up a voltage divider configuration for the $V_{ref}$ using $R_2$ and $R_3$
+	\3 We connected $R_2$ to $V_+$ and the inverting input
+	\3 We connected $R_3$ to the inverting input and the ground
+	\1 We assembled the LED network
+	\2 Green LED
+	\3 The anode was connected to $R_5$ which was connected to the $V_+$
+	\3 The cathode was connected to the $V_{out(2)}$
+	\2 Red LED
+	\3 The anode was connected to $R_4$ which was connected to the $V_{out(2)}$
+	\3 The cathode was connected to the ground
+	\2 The cathode of the zener diode was connected to a point between the $V_+$ and $R_5$, and the anode was connected to the ground
+\end{outline}
+
+\filbreak
+
+\subsection{Construction photographs}\label{construction-photographs}
+
+\filbreak
+
+
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Power setup}\label{fig:current-sensor-practical:power}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/power-setup.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Base circuit setup}\label{fig:current-sensor-practical:base-circuit}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/base-circuit.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Amplifier setup}\label{fig:current-sensor-practical:amplifier}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/amplifier-setup.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Comparator setup}\label{fig:current-sensor-practical:comparator}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/comparator-setup.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Initial LED circuit setup}\label{fig:current-sensor-practical:initial-led-setup}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/led-initial-v1.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{LED circuit fixing v1}\label{fig:current-sensor-practical:initial-led-setup-v2}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/led-initial-v2.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{LED circuit fixing v2}\label{fig:current-sensor-practical:initial-led-setup-v3}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/led-initial-v3.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Fixed LED circuit setup}\label{fig:current-sensor-practical:fixed-led-setup}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/led-setup.jpeg}
+\end{center}
+
+\filbreak
+
+\subsection{Special Considerations}
+
+During the hardware implementation, additional precautions and circuit-level considerations were necessary to ensure stable operation of the shunt-current sensing system, particularly because the design involves low-level voltage measurements, comparator switching, and Zener-based overvoltage protection. Key considerations included PCB/ breadboard layout practices, grounding stability, protection against transient spikes, and ensuring that LED indicator currents stay within the ±10\% tolerance requirement as specified in the project guidelines (pg.3) \cite{project_details}.
+
+\section{Testing and Results}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit in operating state at 0 A}\label{fig:current-sensor-practical:logic-1-0}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/logic-1-0.jpeg}
+\end{center}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit in operating state between 0 A and starting value of fault current range}\label{fig:current-sensor-practical:logic-1-low}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/logic-1-low.jpeg}
+\end{center}
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit in operating state closer to starting value of fault current range}\label{fig:current-sensor-practical:logic-1-higher}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/logic-1-higher.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit in fault condition in starting value of fault current range}\label{fig:current-sensor-practical:logic-0-low}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/logic-0-equal.jpeg}
+\end{center}
+
+\filbreak
+
+\begin{center}
+	\vspace{5mm}
+	\captionof{figure}{Circuit in fault condition after starting value of fault current range}\label{fig:current-sensor-practical:logic-0-high}
+	\includegraphics[width=0.7\linewidth]{assets/pictures/logic-0-high.jpeg}
+\end{center}
+
+\section{Analysis and Discussion}
+
+This section interprets the results, evaluates accuracy, and examines limitations of the hardware implementation.
+
+\subsection{Mathematical Analysis of the Current Sensing Circuit}
+
+
+\subsection{Calibration Procedure}
+Calibration ensures the LED switching point aligns with the theoretical threshold. The calibration steps include:
+
+\begin{itemize}
+	\item Slowly increasing current from 0 to maximum range
+	\item Adjust the the $V_+$ to attain the voltage at which the comparator toggles between logic states
+	\item Recording the voltage at which the comparator toggles to fault state and setting at as default
+\end{itemize}
+
+\subsection{Error Analysis and Sensitivity Calculations}
+Error is defined as:
+\[
+	\% \text{Error} = \frac{|I_{measured} - I_{theoretical}|}{I_{theoretical}} \times 100
+\]
+
+Sensitivity indicates how many millivolts of amplifier output correspond to 1 mA change in load current:
+\[
+	S = \frac{dV_{out}}{dI}
+\]
+
+\subsection{Power Supply Requirements Analysis}
+The op-amp, comparator, and LED indicators operate at different voltage levels. Based on pg.4 requirements \cite{project_details}, the supply must satisfy:
+
+\begin{itemize}
+	\item Sufficient headroom for Zener clamping
+	\item Stable supply for accurate differential offset
+	\item Isolated ground path for comparator switching
+\end{itemize}
+
+\subsection{Component Tolerance Impact Assessment}
+
+Shunt resistor tolerance (typically ±1\% or ±5\%) directly affects accuracy. Op-amp input offset voltage, resistor mismatches in the gain network, and LED forward-voltage variations can shift threshold.
+
+\section{Public Health and Safety Considerations: Importance of Zener Protection}
+
+As required by the instructor email (SLO2b KPI requirement), this section highlights how Zener diodes contribute to public health and safety.
+
+Zener diodes clamp excess voltage and prevent damaging high-voltage spikes from reaching the operational amplifier. Without Zener protection, overvoltage can cause:
+
+\begin{itemize}
+	\item Thermal runaway in the op-amp.
+	\item Short-circuit failures causing smoke or fire hazards.
+	\item Unreliable readings that can mislead users monitoring electrical equipment.
+\end{itemize}
+
+Therefore, Zener protection directly supports public health and safety by ensuring stable, predictable circuit performance and preventing hazardous component failures.
+
+\section{SLO2 KPI Analysis}
+
+\subsection{KPI 2.1 – Specification of Requirements, Constraints, and Design Needs}
+
+This project meets KPI 2.1 by clearly specifying:
+
+\begin{itemize}
+	\item The measurable current range (pg.3) \cite{project_details}
+	\item Fault current threshold requirement
+	\item Protection voltage via Zener diode
+	\item Amplifier gain configuration
+	\item LED indicator operational boundaries
+	\item Power supply limits and safety constraints
+\end{itemize}
+
+\subsection{KPI 2.2 – Development of Solutions Considering Health, Safety, Welfare, Environment, and Economy}
+
+The circuit design fulfills KPI 2.2 through:
+
+\begin{itemize}
+	\item Zener diode protection ensuring electrical safety (public health)
+	\item LED indicators enabling fast visual fault detection (welfare)
+	\item Energy-efficient components reducing power usage (environment)
+	\item Low-cost shunt resistor sensing method (economic factor)
+\end{itemize}
+
+\subsection{KPI 2.3 – Component Selection, Building, Testing, and Producing an Optimal Solution}
+
+KPI 2.3 is demonstrated by:
+
+\begin{itemize}
+	\item Choosing suitable op-amp based on common-mode range and bandwidth
+	\item Selecting calibrated shunt resistor for accurate sensing
+	\item Building and testing comparator threshold timing
+	\item Ensuring LED visibility and stability under different loads
+\end{itemize}
+
+\section{Project Management}
+
+\subsubsection{Participation of each team member}
+
+\begin{tabular}{c|c}
+	Task                                  & Done By       \\
+	\midrule
+	Conceptualization of the circuit      & Fairoos Kunhi \\
+	Formulation of equations              & Fairoos Kunhi \\
+	Simulation of circuit                 & Fairoos Kunhi \\
+	Purchasing of components              & Noora Almarri \\
+	Equipment management and housekeeping & Done together \\
+	Construction of circuit               & Fairoos Kunhi \\
+	Presentation of circuit               & Fairoos Kunhi \\
+\end{tabular}
+
+Report:
+
+\begin{tabular}{c|c}
+	Task                                          & Done By       \\
+	\midrule
+	Introduction except limitations               & Noora Almarri \\
+	Limitations in Introduction                   & Fairoos Kunhi \\
+	Theory \& Design                              & Fairoos Kunhi \\
+	Hardware Implementation: Circuit Construction & Fairoos Kunhi
+	Testing \& Results                            & Fairoos Kunhi \\
+	Analysis \& Discussion                        & Fairoos Kunhi \\
+	SLO2 KPI Analysis \& Fairoos Kunhi                            \\
+	Overall report formatting                     & Fairoos Kunhi \\
+\end{tabular}
+
+\subsection{Timeline for tasks completed }
+
+\begin{tabular}{c|c}
+	Task                                  & Time Taken      \\
+	\midrule
+	Conceptualization of the circuit      & 3 weeks         \\
+	Formulation of equations              & 1 week          \\
+	Simulation of circuit                 & 3 weeks         \\
+	Purchasing of components              & 2 days          \\
+	Equipment management and housekeeping & Ongoing process \\
+	Construction of circuit               & 2 days          \\
+	Presentation of circuit               & 10 minutes      \\
+\end{tabular}
+
+Report:
+
+
+\begin{tabular}{cc}
+	Task                                          & Done By \\
+	\midrule
+	Introduction except limitations               & 2 days  \\
+	Limitations in Introduction                   & 1 day   \\
+	Theory \& Design                              & 1 day   \\
+	Hardware Implementation: Circuit Construction & 1 day
+	Testing \& Results                            & 1 day   \\
+	Analysis \& Discussion                        & 1 day   \\
+	SLO2 KPI Analysis \& 1 day                              \\
+	Overall report formatting                     & 1 day   \\
+\end{tabular}
+
+\section{Conclusion}
+
+The shunt-current sensing system using an operational amplifier, comparator thresholding, and Zener protection successfully achieves accurate current monitoring and reliable fault indication. The combination of analytical calculations, simulation, and hardware testing confirms that the circuit meets all functional requirements described in the project guidelines (pg.1–4) \cite{project_details}. Further improvements could include PCB-based implementation, filtering for enhanced noise immunity, and digital microcontroller-assisted calibration.
+
+\printbibliography
+
+\end{document}
+
+%% 
+%% Copyright (C) 2019 by Daniel A. Weiss <daniel.weiss.led at gmail.com>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% Users may freely modify these files without permission, as long as the
+%% copyright line and this statement are maintained intact.
+%% 
+%% This work is not endorsed by, affiliated with, or probably even known
+%% by, the American Psychological Association.
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Daniel A. Weiss.
+%% 
+%% This work consists of the file  apa7.dtx
+%% and the derived files           apa7.ins,
+%%                                 apa7.cls,
+%%                                 apa7.pdf,
+%%                                 README,
+%%                                 APA7american.txt,
+%%                                 APA7british.txt,
+%%                                 APA7dutch.txt,
+%%                                 APA7english.txt,
+%%                                 APA7german.txt,
+%%                                 APA7ngerman.txt,
+%%                                 APA7greek.txt,
+%%                                 APA7czech.txt,
+%%                                 APA7turkish.txt,
+%%                                 APA7endfloat.cfg,
+%%                                 Figure1.pdf,
+%%                                 shortsample.tex,
+%%                                 longsample.tex, and
+%%                                 bibliography.bib.
+%% 
+%%
+%% End of file `./samples/shortsample.tex'.

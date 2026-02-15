@@ -1,0 +1,47 @@
+---
+title: Topic 1 - Introduction to Networking Study Guide
+---
+
+1. What is a server? Explain the Client Server relationship. (4) **(S4)**
+  - Servers are computers that provide information to end devices Clients are computers that send requests to the servers to retrieve information
+2. What is an end device? Give 3 examples. (4) **(S6)**
+  - End devices are where a message originates from or where it is received Computers, laptops and printers are considered as an end device
+3. What are **two** functions of an intermediary network device? List some examples of the types of intermediary devices you must pass through to access the internet. (4) **(S7)**
+  - Connect end devices to the network
+  - Determine the path that the messages take through the network
+  - Examples: Router, LAN switches, Wireless routers
+4. Describe briefly the **three** types of transmission media used by networks. (6) **(S8)**
+  - Metal wires within cables: Data is encoded in electrical impulses
+  - Fiber-optic cable: Data is encoded into pulses of light
+  - Wireless transmission: Data is encoded through specific frequencies of electromagnetic waves.**
+5. Compare and Contrast: (4) **(S11)**
+  - | Physical Topology                            | Logical Topology                            |
+    |----------------------------------------------|---------------------------------------------|
+    | •                                            | •                                           |
+    | Diagrams illustrate the physical location of | Diagrams illustrate devices, ports, and the |
+    | intermediary devices and cable installation. | addressing scheme of the network.           |
+6. Define the Internet. (2) **(S16)**
+  - Worldwide collection of interconnected LAN's and WAN's
+7. Explain the difference between Intranet and Extranet. (6) **(S17)**
+  - An intranet is a private collection of LAN's and WAN's accessible only to the organization's members or others with authorization
+  - An Extranet provides secure access for individuals who work for a different organization that need access to data on their networks
+8. List **six** Internet access technologies used for home/small office. (6) **(S19)**
+  - FTTP/FTTH
+  - Cable
+  - DSL
+  - Cellular
+  - Satellite
+  - Dial-up telephone
+9. Explain the difference between a traditional dedicated network and a converged network. (4) **(S22, S23)**
+  - In traditional networks, an organization used different technologies with different set of rules and standards to carry the signal
+  - Converged networks can deliver data, voice, and video over the same network infrastructure using same set of rules and standards
+10. List **three** characteristics of a Fault Tolerant Network. (10) **(S25)**
+  - Redundancy
+  - Limits the impact of failure
+  - Fault detection and monitoring
+11. How is QoS used to make congested networks more efficient? (4) **(S27)**
+  - It insures that priorities are matched with the type of communication and its importance to the organization and manages the flow of data and voice traffic
+12. Explain the **three** goals of network data security: (6) **(S28)**
+  - Confidentiality: only intended recipients can read the data
+  - Integrity: assurance that the data has not been altered with during transmission
+  - Availability: assurance of timely and reliable access to data for authorized users

@@ -1,0 +1,520 @@
+{
+  "table_of_contents": [
+    {
+      "title": "2. Topologies\nWAN Topologies",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          14.077148437499998,
+          8.58251953125
+        ],
+        [
+          267.4658203125,
+          8.58251953125
+        ],
+        [
+          267.4658203125,
+          68.17276000976562
+        ],
+        [
+          14.077148437499998,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "There are three common physical WAN topologies.",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          11.26171875,
+          88.54534912109375
+        ],
+        [
+          601.685791015625,
+          88.54534912109375
+        ],
+        [
+          601.685791015625,
+          112.55435180664062
+        ],
+        [
+          11.26171875,
+          112.55435180664062
+        ]
+      ]
+    },
+    {
+      "title": "2. Topologies\nLAN Topologies",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          15.194000244140625,
+          9.68994140625
+        ],
+        [
+          258.03271484375,
+          9.68994140625
+        ],
+        [
+          258.03271484375,
+          68.17276000976562
+        ],
+        [
+          15.194000244140625,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Legacy LAN topologies",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          15.015624999999998,
+          345.7697296142578
+        ],
+        [
+          300.388916015625,
+          345.7697296142578
+        ],
+        [
+          300.388916015625,
+          373.47802734375
+        ],
+        [
+          15.015624999999998,
+          373.47802734375
+        ]
+      ]
+    },
+    {
+      "title": "2. Topologies\nHalf and Full Duplex Communication",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          7.507812499999999,
+          9.82733154296875
+        ],
+        [
+          574.34765625,
+          9.82733154296875
+        ],
+        [
+          574.34765625,
+          68.17276000976562
+        ],
+        [
+          7.507812499999999,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Half-duplex communication",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          15.015624999999998,
+          94.98876953125
+        ],
+        [
+          348.3829040527344,
+          94.98876953125
+        ],
+        [
+          348.3829040527344,
+          120.98583984375
+        ],
+        [
+          15.015624999999998,
+          120.98583984375
+        ]
+      ]
+    },
+    {
+      "title": "Full-duplex communication",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          14.077148437499998,
+          301.7757568359375
+        ],
+        [
+          345.6458435058594,
+          301.7757568359375
+        ],
+        [
+          345.6458435058594,
+          328.62744140625
+        ],
+        [
+          14.077148437499998,
+          328.62744140625
+        ]
+      ]
+    },
+    {
+      "title": "2. Topologies",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          12.669433593749998,
+          9.82733154296875
+        ],
+        [
+          167.98727416992188,
+          9.82733154296875
+        ],
+        [
+          167.98727416992188,
+          35.4375
+        ],
+        [
+          12.669433593749998,
+          35.4375
+        ]
+      ]
+    },
+    {
+      "title": "Access Control Methods",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          14.077148437499998,
+          36.16973876953125
+        ],
+        [
+          390.20513916015625,
+          36.16973876953125
+        ],
+        [
+          390.20513916015625,
+          68.17276000976562
+        ],
+        [
+          14.077148437499998,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Contention-based access",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          13.138671874999998,
+          166.02764892578125
+        ],
+        [
+          299.62274169921875,
+          166.02764892578125
+        ],
+        [
+          299.62274169921875,
+          190.09793090820312
+        ],
+        [
+          13.138671874999998,
+          190.09793090820312
+        ]
+      ]
+    },
+    {
+      "title": "Controlled access",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          15.165000915527344,
+          375.45068359375
+        ],
+        [
+          222.8531951904297,
+          375.45068359375
+        ],
+        [
+          222.8531951904297,
+          399.5219268798828
+        ],
+        [
+          15.165000915527344,
+          399.5219268798828
+        ]
+      ]
+    },
+    {
+      "title": "2. Topologies",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          11.252927400468383,
+          10.5205078125
+        ],
+        [
+          169.54410616705698,
+          10.5
+        ],
+        [
+          170.2943013270882,
+          34.8837890625
+        ],
+        [
+          12.003122560499609,
+          34.8837890625
+        ]
+      ]
+    },
+    {
+      "title": "Contention-Based Access \u2013 CSMA/CD",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          7.507812499999999,
+          39.0
+        ],
+        [
+          597.1553473848555,
+          36.75
+        ],
+        [
+          597.1553473848555,
+          61.73876953125
+        ],
+        [
+          7.507812499999999,
+          62.25
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          31
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          53
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          42
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          63
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          53
+        ],
+        [
+          "Span",
+          18
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t5-data-link-layer"
+}

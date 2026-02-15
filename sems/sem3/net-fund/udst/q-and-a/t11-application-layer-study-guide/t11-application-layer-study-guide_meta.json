@@ -1,0 +1,236 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Topic 11. Application Layer Study Guide \u2013 AETN 1102",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          52.59375,
+          26.10125732421875
+        ],
+        [
+          441.5376892089844,
+          26.10125732421875
+        ],
+        [
+          441.5376892089844,
+          44.126220703125
+        ],
+        [
+          52.59375,
+          44.126220703125
+        ]
+      ]
+    },
+    {
+      "title": "9. Fill in the table belowfor the DHCP Application Layer Protocol. (S17)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          54.04999923706055,
+          55.6875
+        ],
+        [
+          402.406005859375,
+          55.6875
+        ],
+        [
+          402.406005859375,
+          67.85003662109375
+        ],
+        [
+          54.04999923706055,
+          67.85003662109375
+        ]
+      ]
+    },
+    {
+      "title": "10. Fill in the table belowforthe FTP Application Layer Protocol. (S19)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          53.7890625,
+          273.0234375
+        ],
+        [
+          442.0359802246094,
+          273.0234375
+        ],
+        [
+          442.0359802246094,
+          285.82000732421875
+        ],
+        [
+          53.7890625,
+          285.82000732421875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          313
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "ListItem",
+          20
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          526
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "ListItem",
+          29
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          119
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "TableCell",
+          12
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          141
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "TableCell",
+          14
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t11-application-layer-study-guide"
+}

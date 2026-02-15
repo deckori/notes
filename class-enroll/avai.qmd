@@ -1,0 +1,8 @@
+
+|         |        |            | Sunday     | Sunday   | Monday     | Monday   | Tuesday    | Tuesday  | Wednesday  | Wednesday |
+
+| Subject | Course | Section(s) | Start Time | End Time | Start Time | End Time | Start Time | End Time | Start Time | End Time  |
+|---------|--------|------------|------------|----------|------------|----------|------------|----------|------------|-----------|
+| AETN    | 1102   | 5          | 3:00 PM    | 4:00 PM  |            |          | 3:00 PM    | 4:00 PM  |            |           |
+| AETN    | 1112   | 4          | 12:00 PM   | 1:00 PM  |            |          | 12:00 PM   | 1:00 PM  |            |           |
+| COMM    | 1020   | 4,11       | 12:00 PM   | 1:00 PM  |            |          | 12:00 PM   | 1:00 PM  |            |           |

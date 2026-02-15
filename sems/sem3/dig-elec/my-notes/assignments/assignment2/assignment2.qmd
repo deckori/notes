@@ -1,0 +1,360 @@
+---
+title: "Assignment 2"
+---
+
+## Part-A
+
+##### 3-26 Simplify each of the following expressions using DeMorgan’s theorems \| d)
+
+**Ans:**
+
+```{=latex}
+\begin{align*}
+  \overline{\bar{A} + \overline{(B+C)} + D} \\
+  &= \bar{\bar{A}} \cdot \overline{\overline{(B+C)}} \cdot \bar{\bar{D}}
+    &\qquad \text{As per DeMorgan's Theorem}\\
+  &= A \cdot (B+C) \cdot D
+    &\qquad \text{As } \bar{\bar{A}} = A \\
+  &= AD \cdot (B+C)
+    &\qquad \text{As } AB = BA \\
+  &= ADB + ADC
+    &\qquad \text{As } A(B+C) = AB + AC \\
+\end{align*}
+```
+
+------------------------------------------------------------------------
+
+##### 3-29
+
+First, we find the boolean expression of the original circuit:
+
+![](assignment2-img/q3-29-circuit.png){#fig-q3-29-circuit align="center" width="300" alt="q3-29-circuit.png"}
+
+Unsimplified expression:
+
+$X = \overline{(\bar{A}+\bar{B})} \cdot BC$
+
+After simplification, we get: $\boxed{X = ABC}$
+
+Gate equivalency table
+
+| Gate | Equivalent NOR gate circuit |
+|----|----|
+| 1 input NOT gate | ![](assignment2-img/not-output-type-nor-circuit.png){#fig-not-output-type-nor-circuit align="center" width="300" alt="not-output-type-nor-circuit.png"} |
+| 3 input AND gate | ![](assignment2-img/and-output-type-nor-circuit.png){#fig-and-output-type-nor-circuit align="center" width="300" alt="and-output-type-nor-circuit.png"} |
+| 2 input OR gate | ![](./assignment2-img/or-output-type-nor-circuit.png){#fig-or-output-type-nor-circuit align="center" width="300" alt="and-output-type-nor-circuit.png"} |
+
+With these defined, we replace the original circuit's gates with their equivalents. Then we get the following circuit:
+
+![](./assignment2-img/q29-resultant-circuit.png){#fig-q29-resultant-circuit align="center" width="600" alt="and-output-type-nor-circuit.png"}
+
+The resultant boolean expression of this is:
+
+$$\overline{\overline{\overline{\left(\overline{\overline{\overline{\overline{\overline{A}+\overline{B}}}}}+\overline{B}\right)}}+\overline{C}}$$
+
+Here's the simplification process:
+
+```{=latex}
+\begin{align*}
+X =\overline{\overline{\overline{\left(\overline{\overline{\overline{\overline{\overline{A}+\overline{B}}}}}+\overline{B}\right)}}+\overline{C}} \\
+  &= \overline{{\overline{{\overline{{\overline{{\overline{{\overline{{A}}}+{\overline{{B}}}}}}}}}}}+{\overline{{B}}}+\overline{C}}
+    &\qquad \text{As } \bar{\bar{A}} = A \\
+  &= \overline{{\overline{{\overline{{\overline{{A}}}+{\overline{{B}}}}}}}+\overline{B}+\overline{C}}
+    &\qquad \text{As } \bar{\bar{A}} = A \\
+  &= \overline{{\overline{{A}}}+{\overline{{B}}}+{\overline{{B}}}+{\overline{{C}}}}
+    &\qquad \text{As } \bar{\bar{A}} = A \\
+  &= {\overline{{\overline{{A}}}}}\ {\overline{{\overline{{B}}}}}\ {\overline{{\overline{{B}}}}}\ {\overline{{\overline{{C}}}}}
+    &\qquad \text{As per DeMorgan's Theorem} \\
+  &= A{B}{B}{C}
+    &\qquad \text{As } \bar{\bar{A}} = A \\
+  &= \boxed{A{B}C}
+    &\qquad \text{As } AA = A \\
+\end{align*}
+```
+
+And so, we have found that the original circuit and the new circuit are both equivalent.
+
+------------------------------------------------------------------------
+
+##### 3-33
+
+###### a)
+
+Engine turns on in any of the following cases:
+
+-   The button on trunk lid is pressed and the engine is off OR
+-   The engine is off, the car is unlocked and the button on trunk lid is pressed OR
+-   The engine is on, the car is unlocked, the button on trunk lid is pressed and the parking brakes are set
+
+###### b)
+
+$\mathrm{Trunk\_unlock = (FOB \cdot \overline{Motor\_on}) + (\overline{Motor\_on} \cdot \overline{Locked} \cdot LID) + (Motor\_on \cdot \overline{Locked} \cdot LID \cdot PBrake)}$
+
+###### c)
+
+| Original Value | Equivalent Letter |
+|----------------|-------------------|
+| LID            | A                 |
+| FOB            | B                 |
+| Locked         | C                 |
+| PBrake         | D                 |
+| Motor_on       | E                 |
+
+With theses substitutions, the circuit is labelled as below:
+
+![](./assignment2-img/q3-33-question-circuit.png){align="center" width="300"}
+
+| Gate | Equivalent NAND gate circuit |
+|----|----|
+| 1 input NOT gate | ![](./assignment2-img/2nand-as-not.png){align="center" width="300" alt="not-output-type-nor-circuit.png"} |
+| 2 input AND gate | ![](./assignment2-img/2nand-as-2and.png){align="center" width="300" alt="and-output-type-nor-circuit.png"} |
+| 3 input OR gate | ![](./assignment2-img/2-3nand-as-3or.png){align="center" width="300" alt="and-output-type-nor-circuit.png"} |
+| 3 input AND gate | ![](./assignment2-img/3nand-as-3and.png) |
+| 4 input AND gate | ![](./assignment2-img/4nand-as-4and.png) |
+
+With the above table, from the figure 3-57, we get the following NAND only circuit:
+
+![](./assignment2-img/q3-33-resultant-circuit.png){align="center" width="300"}
+
+After simplifying,
+
+$X = A\bar{B}+\bar{B}\bar{C}D +D\bar{C}DE$
+
+{{< pagebreak >}}
+
+##### 3-40
+
+After simplification:
+
+$X = (\bar{A}\cdot B) BC +\bar{D}+E$
+
+Therefore, only 1 input, E, is needed. It should have input 1.
+
+------------------------------------------------------------------------
+
+4-1. Simplify the following expressions using Boolean algebra.
+
+(b) $y=(Q+R)(\overline{Q}+\overline{R})$
+
+**Ans:**
+
+\begin{align*}
+  y=(Q+R)(\overline{Q}+\overline{R}) \\
+  &= (\overline{Q}+\overline{R})Q+(\bar{Q}+\overline{R})R
+    &\qquad \text{Distribution} \\
+  &= \overline{Q}Q+Q\overline{R}+R\overline{Q}+{R}{\overline{R}}
+    &\qquad \text{Distribution} \\
+  &= 0+Q\overline{R}+R\overline{Q}+{R}{\overline{R}}
+    &\qquad \text{As } A\bar{A} = 0 \\
+  &= 0+Q\overline{R}+R\overline{Q}+0
+    &\qquad \text{As } A\bar{A} = 0 \\
+  &= \boxed{Q\overline{R}+R\overline{Q}}
+    &\qquad \text{As } A+0 = A \\
+\end{align*}
+
+(d) $q=\overline{RST}(\overline{R+S+T})$
+
+**Ans:**
+
+\begin{align*}
+  q = \overline{RST} (\overline{R + S + T})\\
+  &= (\overline{R} + \overline{S} + \overline{T}) \overline{R + S + T}
+    &\qquad \text{As per DeMorgan's Theorem}\\
+  &= (\overline{R} + \overline{S} + \overline{T}) \overline{R} \ \overline{S} \ \overline{T}
+    &\qquad \text{As per DeMorgan's Theorem}\\
+  &= \overline{R}\  \overline{S}\  \overline{T}\  \overline{R}\  + \overline{R}\  \overline{S}\  \overline{T}\  \overline{S}\  + \overline{R}\  \overline{S}\  \overline{T}\  \overline{T}
+    &\ \text{Distribution} \\
+  &= \overline{R}\  \overline{S}\  \overline{T}\ + \overline{R}\  \overline{S}\  \overline{T}\ + \overline{R}\  \overline{S}\  \overline{T}
+    &\qquad \text{As } AA = A \\
+  &= \boxed{\overline{R}\  \overline{S}\  \overline{T}}
+    &\qquad \text{As } AA = A \\
+\end{align*}
+
+(h) $x=AB(\overline{\overline{C}D})+\overline{A}BD+\overline{B}\overline{C}\overline{D}$
+
+**Ans:**
+
+\begin{align*}
+  x=AB(\overline{\overline{C}D})+\overline{A}BD+\overline{B}\overline{C}\overline{D} \\
+  &= AB({\overline{{\overline{{C}}}}}+{\overline{{D}}})+\overline{A}BD+\overline{B}\ \overline{C}\ \overline{D}
+    &\qquad \text{As per DeMorgan's Theorem}\\
+  &= AB({C}+\overline{D})+\overline{A}BD+\overline{B}\ \overline{C}\ \overline{D}
+    &\qquad \text{As } \bar{\bar{A}} = A \\
+  &= \boxed{ABC+AB\overline{D}+\overline{A}BD+\overline{B}\ \overline{C}\ \overline{D}}
+    &\qquad \text{Distribution} \\
+\end{align*}
+
+------------------------------------------------------------------------
+
+##### 4.11. Determine the minimum expression for each K map
+
+a.  
+
+![](./assignment2-img/4-11-a.svg){align="center" width="300"}
+
+$X = \bar{A}\bar{C} + \bar{B}C + ABC\bar{D}$
+
+b.  
+
+![](./assignment2-img/q4-11-b.svg){align="center" width="300"}
+
+$X = A\bar{B}\bar{D}$
+
+{{< pagebreak >}}
+
+c.  
+
+![](./assignment2-img/q4-11-c.svg){align="center" width="100"}
+
+X = \bar{A}\bar{B} + A\bar{C}
+
+------------------------------------------------------------------------
+
+##### 4-17.
+
+| Original Value | Equivalent Letter |
+|----------------|-------------------|
+| SW1            | A                 |
+| SW2            | B                 |
+| SW3            | C                 |
+| SW4            | D                 |
+
+We shall assume that:
+
+-   Closed switch = input 0
+-   Open switch = input 1
+
+Then we get the following truth table:
+
+1.  & 2. answers
+
+| Decimal equivalent |  A  |  B  |  C  |  D  |  X  | Expression for X               |
+|:------------------:|:---:|:---:|:---:|:---:|:---:|--------------------------------|
+|         0          |  0  |  0  |  0  |  0  |  X  |                                |
+|         1          |  0  |  0  |  0  |  1  |  1  | $m_{1}=A\bar{B}\bar{C}\bar{D}$ |
+|         2          |  0  |  0  |  1  |  0  |  X  |                                |
+|         3          |  0  |  0  |  1  |  1  |  1  | $m_{3} = AB\bar{C}\bar{D}$     |
+|         4          |  0  |  1  |  0  |  0  |  X  |                                |
+|         5          |  0  |  1  |  0  |  1  |  1  | $m_5=A\bar{B}C\bar{D}$         |
+|         6          |  0  |  1  |  1  |  0  |  X  |                                |
+|         7          |  0  |  1  |  1  |  1  |  0  |                                |
+|         8          |  1  |  0  |  0  |  0  |  1  | $m_8=\bar{A}\bar{B}\bar{C}D$   |
+|         9          |  1  |  0  |  0  |  1  |  1  | $m_9=A\bar{B}\bar{C}D$         |
+|         10         |  1  |  0  |  1  |  0  |  1  | $m_{ 10 }=\bar{A}B\bar{C}D$    |
+|         11         |  1  |  0  |  1  |  1  |  0  |                                |
+|         12         |  1  |  1  |  0  |  0  |  1  | $m_{12}=\bar{A}\bar{B}CD$      |
+|         13         |  1  |  1  |  0  |  1  |  0  |                                |
+|         14         |  1  |  1  |  1  |  0  |  0  |                                |
+|         15         |  1  |  1  |  1  |  1  |  0  |                                |
+
+3.  $X = \sum m (3, 5, 6, 7, 10, 12, 14)$
+
+4.  $X = \bar{A}\bar{B}CD + \bar{A}B\bar{C}D + \bar{A}BC\bar{D} + \bar{A}BCD + A\bar{B}C\bar{D} + AB\bar{C}\bar{D} + ABC\bar{D}$
+
+5.  K-map is given below:
+
+![](./assignment2-img/q4-17-k-map.svg){align="center" width="400"}
+
+6.  $X = \bar{A}CD + AB \bar{D} + \bar{A}D + BC + AC$
+
+<!-- |                  | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ | -->
+
+<!-- |:----------------:|:----------------:|:----------:|:----:|:----------:| -->
+
+<!-- | $\bar{A}\bar{B}$ |        0         |     0      |  1   |     0      | -->
+
+<!-- |    $\bar{A}B$    |        0         |     1      |  1   |     1      | -->
+
+<!-- |       $AB$       |        1         |     X      |  X   |     1      | -->
+
+<!-- |    $A\bar{B}$    |        0         |     X      |  X   |     1      | -->
+
+{{< pagebreak >}}
+
+## Part-B
+
+##### 1. For the below truth table answer the related questions that follow.
+
+![](assignment2-img/part-b-q1-truth-table.png){#fig-part-b-q1-truth-table align="center" width="300" alt="part-b-q1-truth-table.png"}
+
+###### a) Write the Maxterms.
+
+**Ans:**
+
+Maxterms: $(A+B+C), (A+B+\bar{C}), (A+\bar{B}+C), (\bar{A}+B+C)$
+
+###### b) Extract the canonical Boolean expression using POS
+
+**Ans:**
+
+POS: $(A+B+C) + (A+B+\bar{C}) + (A+\bar{B}+C) + (\bar{A}+B+C)$
+
+------------------------------------------------------------------------
+
+##### 2. Convert the following numbers using the weighted method
+
+###### 2.(a) Binary ➜ Decimal
+
+###### (i) $11001101$
+
+$$
+\begin{matrix}
+7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+1 & 1 & 0 & 0 & 1 & 1 & 0 & 1 \\
+\end{matrix}
+$$
+
+\begin{align*}
+1\cdot 2^7 &+ 1\cdot 2^6 + 0\cdot 2^5 + 0\cdot 2^4 + 1\cdot 2^3 + 1\cdot 2^2 + 0\cdot 2^1 + 1\cdot 2^0 \\
+&= 128 + 64 + 0 + 0 + 8 + 4 + 0 + 1 \\
+&= \boxed{(205)_{10}}
+\end{align*}
+
+###### (ii) $00111110$
+
+$$
+\begin{matrix}
+7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 \\
+\end{matrix}
+$$
+
+\begin{align*}
+0\cdot 2^7 &+ 0\cdot 2^6 + 1\cdot 2^5 + 1\cdot 2^4 + 1\cdot 2^3 + 1\cdot 2^2 + 1\cdot 2^1 + 0\cdot 2^0 \\
+&= 0 + 0 + 32 + 16 + 8 + 4 + 2 + 0 \\
+&= \boxed{(62)_{10}}
+\end{align*}
+
+------------------------------------------------------------------------
+
+###### 2.(b) Decimal ➜ Binary
+
+###### (i) $(168)_{10}$
+
+$$
+\begin{matrix}
+7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 \\
+\end{matrix}
+$$
+
+\begin{align*}
+168 &= 1\cdot 2^7 + 0\cdot 2^6 + 1\cdot 2^5 + 0\cdot 2^4 + 1\cdot 2^3 + 0\cdot 2^2 + 0\cdot 2^1 + 0\cdot 2^0 \\
+&= 128 + 0 + 32 + 0 + 8 + 0 + 0 + 0 \\
+&= \boxed{(10101000)_2}
+\end{align*}
+
+**(ii)** $(216)_{10}$
+
+$$
+\begin{matrix}
+7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+1 & 1 & 0 & 1 & 1 & 0 & 0 & 0 \\
+\end{matrix}
+$$
+
+\begin{align*}
+216 &= 1\cdot 2^7 + 1\cdot 2^6 + 0\cdot 2^5 + 1\cdot 2^4 + 1\cdot 2^3 + 0\cdot 2^2 + 0\cdot 2^1 + 0\cdot 2^0 \\
+&= 128 + 64 + 0 + 16 + 8 + 0 + 0 + 0 \\
+&= \boxed{(11011000)_2}
+\end{align*}

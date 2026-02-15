@@ -1,0 +1,35 @@
+## Lab 8
+
+1. What does "steady-state" mean?
+
+> Thus far we have analyzed the behavior of a series RLC circuit whose source voltage is a fixed frequency steady-state sinusoidal supply.
+
+## Lab 9
+
+1. What does a first-order filter mean?
+
+> Objective:
+> 
+> To study the frequency response of a first-order low-pass filter, and high-pass filter and to determine the cut-off frequency in each case.
+
+**Ans:**
+
+First order filters are RC filters
+
+2. What does gain (dB) mean?
+
+gain means the amount of output gained from the input waveform.
+
+3. In the following image,
+
+::: {.center}
+![lpf-v-vs-f-graph.png](doubts-img/lpf-v-vs-f-graph.png){#lpf-v-vs-f-graph.png width=300}
+:::
+
+  what does the following mean:
+
+  - Corner frequency
+
+- Decade in $\mathrm{ Slope = \frac{ -20~dB }{ Decade } }$
+
+Decade is the number of samples for a specific frequency

@@ -1,0 +1,118 @@
+---
+title: '10. Network Theorems (AC)'
+---
+
+## Superposition Theorem
+
+| Superposition theorem |
+|---|
+| For a circuit with multiple sources, the current in one branch is the sum of specific source currents |
+
+
+The specific source current is found by:
+
+- Keep only one source on and turn the rest off
+- Find the current in the subject branch
+
+::: { .callout-note }
+The current direction taken in a circuit is independant of the directions taken in the other circuits
+
+The current direction should be taken wrt the polarity of the voltage source
+
+If a $\vec{I}$ is negative, that means the actual current direction is opposite the direction taken in $\vec{I}$ with the same magnitude
+:::
+
+Same as DC, except AC voltage and impedance is used.
+
+Use of AC only changes the calculations and not the theory involved.
+
+# begin: This is to be transfered to the parallel circuit notes
+
+In a simple parallel circuit, if the impedance of the parallel branches are equal, then CDR is applied as:
+
+$$I = \frac{I_S}{\text{No of branches having an equal impedance}}$$
+
+# end
+
+## Thevenin's Theorem
+
+| Thevenin's theorem |
+|---|
+| Any complex network can be replaced by a voltage source $(E_{Th})$ in series with an impedance $(Z_{Th})$ |
+
+Same as DC, except AC voltage and impedance is used.
+
+Use of AC only changes the calculations and not the theory involved.
+
+::: { .callout-note}
+Make sure the final equivalent circuit has it's $Z_N$ is in pure form. i.e., If $Z_N$ is an impure impedance, convert it to its pure components.
+
+::: {.center}
+![thevinins-circuit.png](t10-network-theorems-ac-img/thevinins-circuit.png){#thevinins-circuit.png width=800}
+:::
+
+:::
+
+# begin: to be transferred to series ac circuit notes
+
+An impure impedance can be converted to pure impedances. We do it by converting the polar representation to rectangular form which gives to components, the real (pure resistive) part and the imaginary (pure inductive) part.
+
+# end
+
+#### Method:
+
+- Remove the load (it can be an impedance or a circuit) and mark the opened terminals as $a$ and $b$
+- Turn off all sources
+- Find the $Z_{Th}$
+- Turn on all sources
+- Find the $E_{Th}$ which is between the open terminals, $a$ and $b$
+  - The $E_{Th} is found the same as the branches parallel to it
+
+::: { .callout-caution }
+
+Make sure to draw the Thevenin's equivalent circuit with [pure components](# begin: to be transferred to series ac circuit notes) in the exam. It has weightage.
+
+:::
+
+## Norton's Theorem
+
+| Norton's theorem |
+|---|
+| Any complex network can be replaced by a current source $(I_{N})$ in series with an impedance $(Z_{N})$ |
+
+Same as DC, except AC voltage and impedance is used.
+
+Use of AC only changes the calculations and not the theory involved.
+
+#### Method:
+
+- Remove the load (it can be an impedance or a circuit) and mark the opened terminals as $a$ and $b$
+- Turn off all sources
+- Find the $Z_N$, same as $Z_{Th}$
+- Turn on all sources
+- Short the terminals $a$ and $b$
+- Find the $I_N$ which is between the open terminals, $a$ and $b$
+
+::: { .callout-note}
+Make sure the final equivalent circuit has it's $Z_N$ is in pure form. i.e., If $Z_N$ is an impure impedance, convert it to its pure components.
+
+::: {.center}
+![nortons-theorem.png](t10-network-theorems-ac-img/nortons-theorem.png){#nortons-theorem.png width=800}
+:::
+
+:::
+
+## Thevinin's Theorem and Norton's Theorem
+
+You can interchange between Thevinin and Norton equivalent circuits by Ohm's law.
+
+
+::: {.center}
+![thevinin-norton-conv.png](t10-network-theorems-ac-img/thevinin-norton-conv.png){#thevinin-norton-conv.png width=800}
+:::
+
+## Maximum Power Transfer Theorem
+
+At maximum power transfer, $Z_{Th}$ is the conjugate of $Z_L$
+
+At maximum power, the circuit is in resonance

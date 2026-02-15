@@ -1,0 +1,439 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Ethernet MAC Addresses\nMulticast MAC Address",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          6.4629998207092285,
+          13.01220703125
+        ],
+        [
+          362.5603942871094,
+          13.01220703125
+        ],
+        [
+          362.5603942871094,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "The MAC Address Table\nSwitching Fundamentals",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          4.6923828125,
+          12.45849609375
+        ],
+        [
+          383.8369140625,
+          12.45849609375
+        ],
+        [
+          383.8369140625,
+          70.59814453125
+        ],
+        [
+          4.6923828125,
+          70.59814453125
+        ]
+      ]
+    },
+    {
+      "title": "An Ethernet switch:",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          16.667999267578125,
+          105.77932739257812
+        ],
+        [
+          241.9204559326172,
+          105.77932739257812
+        ],
+        [
+          241.9204559326172,
+          129.788330078125
+        ],
+        [
+          16.667999267578125,
+          129.788330078125
+        ]
+      ]
+    },
+    {
+      "title": "Switching Process - Steps",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          6.4629998207092285,
+          35.16064453125
+        ],
+        [
+          408.23730468749994,
+          35.16064453125
+        ],
+        [
+          408.23730468749994,
+          71.15185546875
+        ],
+        [
+          6.4629998207092285,
+          71.15185546875
+        ]
+      ]
+    },
+    {
+      "title": "1. Learning",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          20.17724609375,
+          81.77032470703125
+        ],
+        [
+          157.75997924804688,
+          81.77032470703125
+        ],
+        [
+          157.75997924804688,
+          105.77932739257812
+        ],
+        [
+          20.17724609375,
+          105.77932739257812
+        ]
+      ]
+    },
+    {
+      "title": "2. Forwarding",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          20.465999603271484,
+          296.2353515625
+        ],
+        [
+          187.02696228027344,
+          296.2353515625
+        ],
+        [
+          187.02696228027344,
+          320.3053436279297
+        ],
+        [
+          20.465999603271484,
+          320.3053436279297
+        ]
+      ]
+    },
+    {
+      "title": "3. Filtering",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          19.7080078125,
+          435.27833557128906
+        ],
+        [
+          151.03746032714844,
+          435.27833557128906
+        ],
+        [
+          151.03746032714844,
+          459.28733825683594
+        ],
+        [
+          19.7080078125,
+          459.28733825683594
+        ]
+      ]
+    },
+    {
+      "title": "The MAC Address Table",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          2.8154296875,
+          13.2890625
+        ],
+        [
+          249.25265502929688,
+          13.2890625
+        ],
+        [
+          249.25265502929688,
+          35.19189453125
+        ],
+        [
+          2.8154296875,
+          35.19189453125
+        ]
+      ]
+    },
+    {
+      "title": "Switch Learning and Forwarding",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          6.4629998207092285,
+          37.501708984375
+        ],
+        [
+          502.2214050292969,
+          37.501708984375
+        ],
+        [
+          502.2214050292969,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "The MAC Address Table\nSwitch Filtering",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          2.8154296875,
+          11.35107421875
+        ],
+        [
+          249.25265502929688,
+          11.35107421875
+        ],
+        [
+          249.25265502929688,
+          68.38330078125
+        ],
+        [
+          2.8154296875,
+          68.38330078125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          22
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          31
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          61
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          21
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t6-ethernet-switching-v7"
+}

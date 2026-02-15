@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+
+render:
+  '*.qmd'
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    math:
+      method: mathjax
+    toc: true
+    respect-user-color-scheme: true
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+    fontsize: 20px
+
+website:
+  title: "Analog Electronics"
+  search: true
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents:
+      - l1-semiconductors/l1-semiconductors.qmd
+      - l2-diode/l2-diode.qmd
+      - l3-diode-circuits-and-zener/l3.1-diode-circuits-analysis.qmd
+      - l3-diode-circuits-and-zener/l3.2-diode-circuits-analysis.qmd
+      - l3-diode-circuits-and-zener/l3.3-zener-diode.qmd
+      - l3-diode-circuits-and-zener/t3.qmd
+      - l4-bjt/l4-3-dc-biasing-bjt/l4-3-dc-biasing-bjt/l4-3-dc-biasing-bjt.qmd
+      - l4-bjt/l4-4-dc-biasing-bjt-ii/l4-4-dc-biasing-bjt-ii/l4-4-dc-biasing-bjt-ii.qmd
+      - l4-bjt/l4-4-dc-biasing-bjt-ii/l4-4.qmd
+      - l4-bjt/l4-7-bjt-a-c-analysis/l4-7-bjt-ac-analysis/l4-7-bjt-ac-analysis.qmd
+      - l4-bjt/t4-2.qmd
+      - l5-fets/l5-1-fets/l5-1-fets.qmd
+      - l5-fets/l5-2-fet-biasing/l5-2-fet-biasing.qmd
+      - l6-op-amps/l6-1-operational-amplifier/l6-1-operational-amplifier.qmd
+      - l6-op-amps/l6-3-operational-amplifier/t6-3.qmd
+      - l6-op-amps/l6.2-operational-amplifier/l6.2-operational-amplifier.qmd
+      - darlington-pair/darlington-pair.qmd
+      - doubts/doubts.qmd
+      - end-of-transistor-biasing-problems/end-of-transistor-biasing-problems.qmd
+      - misc.qmd
+      - status.qmd

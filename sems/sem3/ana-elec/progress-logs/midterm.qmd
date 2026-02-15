@@ -1,0 +1,9 @@
+| Syllabus Topic no. | Textbook (in syllabus) | Textbook (not in syllabus) | Theory | Practice | class questions |
+|----|----|----|----|----|----|
+| 1 |  |  |  |  |  |
+| 2 |  |  |  |  |  |
+| 3 |  |  |  |  |  |
+| 4.1 |  |  | Y |  |  |
+| 4.2 |  |  | Y |  |  |
+| 4.3 |  |  |  |  |  |
+| 4.4 |  |  |  |  |  |

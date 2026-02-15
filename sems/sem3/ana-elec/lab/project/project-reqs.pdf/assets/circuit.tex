@@ -1,0 +1,79 @@
+\documentclass[landscape,tikz,border=10pt]{standalone}
+\usepackage[siunitx]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}[american voltages, scale=1.0, every node/.style={transform shape}]
+
+	% === SHUNT + LOAD SECTION ===
+	\draw
+	(0,0) to[battery, l_=$V_{supply}$] (0,4)
+	to[R, l_=Load, i>^=$I_{load}$] (4,4)
+	to[R, l_=Rs=0.1$\Omega$] (6,4)
+	-- (6,0) -- (0,0);
+
+	% Sense nodes
+	\node[circ, label=above:A] (A) at (4,4) {};
+	\node[circ, label=above:B] (B) at (6,4) {};
+
+	% === DIFFERENTIAL AMPLIFIER (LM358 #1) ===
+	\node[op amp, yscale=1.0, anchor=-, name=U1] at (10,2) {LM358A};
+
+	% Inputs
+	\draw (A) |- (8,2.6) to[R,l_=10k$\Omega$] (U1.-);
+	\draw (B) |- (8,1.4) to[R,l_=10k$\Omega$] (U1.+);
+
+	% Feedback network
+	\draw (U1.out) |- (11,3) to[R,l_=250k$\Omega$] (11,2.6) -| (U1.-);
+
+	% Gain set resistor from + to GND
+	\draw (U1.+) -- ++(-1,0) to[R,l_=250k$\Omega$] ++(0,-2) node[ground]{};
+
+	% Output of amplifier
+	\draw (U1.out) to[short, -*] (13,2) node[right]{\small $V_{amp}$};
+
+	% === ZENER PROTECTION ===
+	\draw (13,2) to[R,l_=1k$\Omega$] (15,2)
+	to[D*, l_=5.1V, -*] (15,0) node[ground]{};
+	\node[right] at (15,2.3) {Zener clamp};
+
+	% === COMPARATOR (LM358 #2) ===
+	\node[op amp, anchor=-, name=U2] at (19,2) {LM358B};
+
+	% Input from amplifier to comparator
+	\draw (15,2) -- (U2.-);
+
+	% Reference divider for threshold (3.0 V)
+	\draw (19,5) node[vcc]{+12V}
+	to[R, l_=100k$\Omega$] (19,3.4)
+	to[R, l_=100k$\Omega$] (19,1)
+	node[ground]{};
+	\draw (19,3.4) -- ++(-1,0) node[left]{$V_{ref}=3.0$ V} -| (U2.+);
+
+	% Comparator output node
+	\draw (U2.out) to[short, -*] (22,2) node[right]{\small $V_{comp}$};
+
+	% === LED INDICATORS ===
+	% Green LED (normal)
+	\draw (22,2) |- (22,3.8)
+	to[R,l_=2k$\Omega$] (24,3.8)
+	to[led, color=green, l=Green LED] (24,5.2)
+	node[vcc]{+12V};
+
+	% Red LED (fault) with transistor driver
+	\draw (22,2) |- (22,0.5)
+	to[R,l_=22k$\Omega$] (24,0.5)
+	to[short, -*] (24,0.5) node[right]{B};
+	\draw (24,0) node[npn, anchor=B, rotate=180, name=Q1]{2N2222};
+	\draw (Q1.E) node[ground]{};
+	\draw (Q1.C) -- ++(0,1)
+	to[led, color=red, l=Red LED] ++(0,1.2)
+	to[R,l_=2k$\Omega$] ++(0,1.2) node[vcc]{+12V};
+
+	% === POWER / LABELS ===
+	\node at (10,4.4) {Differential Amplifier};
+	\node at (19,4.4) {Comparator \& Indicators};
+
+\end{circuitikz}
+
+\end{document}

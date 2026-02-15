@@ -1,0 +1,12 @@
+> Note: Please avoid "Staff" instructor sections if possible. Their instructors have not been decided yet and idk if they are good
+
+## AETN 2201
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|---|---|---|---|---|
+| Laboratory - Class 1912 -Section 9 | Sunday<br>4:00PM to 6:00PM | 09.2.72 | Yasen Abdullahi Harrye | open (1-15) |
+| Laboratory - Class 1906 -Section 3 | Wednesday<br>8:00AM to 10:00AM | 09.2.72 | Muhammad Sheikh | closed (0-15) |
+| Laboratory - Class 1905 -Section 2 | Monday<br>9:00AM to 11:00AM | 09.2.72 | Yasen Abdullahi Harrye | closed (0-15) |
+| Laboratory - Class 1908 -Section 5 | Sunday<br>10:00AM to 12:00PM | 09.2.72 | Muhammad Sheikh | closed (0-15) |
+| Laboratory - Class 1907 -Section 4 | Monday<br>11:00AM to 1:00PM | 09.2.72 | Yasen Abdullahi Harrye | closed (0-15) |
+

@@ -1,0 +1,9 @@
+---
+title: "Study guides"
+---
+
+\includepdf[pages=-]{topic-1-introduction-to-networking-study-guide.pdf}
+\includepdf[pages=-]{topic-2-basic-switch-and-end-deviceconfiguration-study-guide.pdf}
+\includepdf[pages=-]{topic-3-protocols-and-reference-models-study-guide.pdf}
+\includepdf[pages=-]{topic-7-network-layer-study-guide-1.pdf}
+\includepdf[pages=-]{topic-8-i-pv4-addressing-study-guide.pdf}

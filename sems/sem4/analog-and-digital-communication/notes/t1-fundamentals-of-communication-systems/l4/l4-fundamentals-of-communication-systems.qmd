@@ -1,0 +1,211 @@
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page1' class='markdown-page-text'>[ 第1页 ]</span>---------------------------------------------</span><br><br>
+
+# Introduction to Analog Communications – Fundamentals of Communication Systems (4)
+
+AETN2121 – Analog and Digital Communication
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page2' class='markdown-page-text'>[ 第2页 ]</span>---------------------------------------------</span><br><br>
+
+# Course Topics
+
+Topic 1: Introduction to analog communication systems
+
+![](images/01b1aa10c5eb18e0a76f161027d975c0570b86df38a1c17fdac1a65fe9da525b_97.jpg){width=97%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page3' class='markdown-page-text'>[ 第3页 ]</span>---------------------------------------------</span><br><br>
+
+# Recap
+
+Differentiate between different mobile operations
+
+Define different types of radio frequency interference
+
+Define harmonic distortion
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page4' class='markdown-page-text'>[ 第4页 ]</span>---------------------------------------------</span><br><br>
+
+# Learning Outcomes:
+
+By end of this lecture, student should be able to:
+
+Explain intermodulation distortion
+
+Define receiver selectivity and sensitivity
+
+Recognize receiver desensitization interference
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page5' class='markdown-page-text'>[ 第5页 ]</span>---------------------------------------------</span><br><br>
+
+# Radio!
+
+4!
+
+When!
+
+The!
+
+Sum!
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page6' class='markdown-page-text'>[ 第6页 ]</span>---------------------------------------------</span><br><br>
+
+# Radio Frequency Interference (RFI) – Intermodulation Distortion
+
+Input FM signal
+
+Output FM signal
+
+![](images/b7f0400957e8836688199eec1907ca1746ca8089f6b1c64091b62da17b7df7c7_85.jpg){width=85%}
+
+Intermodulation product generation in a power amplifier.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page7' class='markdown-page-text'>[ 第7页 ]</span>---------------------------------------------</span><br><br>
+
+# Radio Frequency Interference (RFI) – Intermodulation Distortion
+
+This process is called "intermodulation" and the results are called "cross products" or "intermod products".
+
+![](images/b35b245316bb6e1b9ac18613e5bba4310050396f1e5c9bc68d4fc26890a7187c_84.jpg){width=84%}
+
+These cross products often fall in the pass band of other receivers and in some cases be exactly the same frequency received by other users.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page8' class='markdown-page-text'>[ 第8页 ]</span>---------------------------------------------</span><br><br>
+
+# Radio!
+
+Inter!
+
+Create!
+
+Signal!
+
+The!
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page9' class='markdown-page-text'>[ 第9页 ]</span>---------------------------------------------</span><br><br>
+
+# Radio Frequency Interference (RFI) – Intermodulation Distortion
+
+# Calculating Intermodulation Products:
+
+To determine the various cross products of two interfering signals the following formulas can be used. Given that one frequency is designated A and the other B, the formulas we apply are:
+
+Fundamental: A; B $1^{st}$
+
+2nd A $\pm$ B
+
+A ± 5B; $2A \pm 4B$; $3A \pm 3B$; $4A \pm 2B$; $5A \pm B$
+
+A $\pm$ 6B; $2A \pm 5B$; $3A \pm 4B$; $4A \pm 3B$; $5A \pm 2B$; $6A \pm B$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page10' class='markdown-page-text'>[ 第10页 ]</span>---------------------------------------------</span><br><br>
+
+# Radio Frequency Interference (RFI) – Intermodulation Distortion
+
+Example: Let $f_{1} = 105.5$ MHz, $f_{2} = 89.5$ MHz (both in FM band)
+
+cross products = $mf_{1} \pm nf_{2}$;
+
+For m=1 and n=1, cross products = 16 MHz, 195 MHz
+
+No problem
+
+For m=2 and n=1, cross products = 121.5 MHz, 300.5 MHz
+
+Problem! The frequency 121.5 MHz is a protected international civilian and military aeronautical emergency frequency!
+
+Interference on this frequency is only permitted at extremely low levels.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page11' class='markdown-page-text'>[ 第11页 ]</span>---------------------------------------------</span><br><br>
+
+# Receiver Selectivity
+
+Selectivity – the ability of a receiver to allow a certain band of frequencies to enter and reject all others.
+
+Selectivity is often measured at -3 dB and – 60 dB of attenuation
+
+![](images/4c8792af1bea74a9a3d6193991591ab15ee25e9f1610e8ec4fb36487c16e8e7d_37.jpg){width=37%}
+
+shape factor = $BW_{60dB}$
+
+$BW_{3dB}$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page12' class='markdown-page-text'>[ 第12页 ]</span>---------------------------------------------</span><br><br>
+
+# Receiver Selectivity
+
+Shape Factor = $SF = BW_{-60dB} / BW_{-3dB}$ (ideally = 1)
+
+e.g. for AM, $BW_{-60dB} = 20$ kHz, $BW_{-3dB} = 10$ kHz, SF=2
+
+The lower the SF, the better the selectivity a receiver will have.
+
+More sources of interference can be rejected, such as:
+
+Harmonic distortionIntermodulation distortionAdjacent channel interference
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page13' class='markdown-page-text'>[ 第13页 ]</span>---------------------------------------------</span><br><br>
+
+# Receiver Sensitivity
+
+Sensitivity – the minimum RF signal level that can be detected and still produce a "useable" demodulated information signal.
+
+Sensitivity is a receiver specification usually stated in $\mu$V or dBm.
+
+Sensitivity depends on many factors, including
+
+Noise power present at Rx input
+
+Rx's noise figure: (S/N)_{in} / (S/N)_{out}
+
+Sensitivity can be improved by
+
+reducing the temperature of the Rx reducing the bandwidth of the Rx Improving the Rx noise figure
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page14' class='markdown-page-text'>[ 第14页 ]</span>---------------------------------------------</span><br><br>
+
+# Receiver Sensitivity
+
+The sensitivity of a receiver (in dBm):
+
+S = -174 dBm + NF + 10log(BW) + (desired S/N)
+
+The -174 dBm is the thermal noise power at room temperature (290 K) in a 1 Hz bandwidth (BW)
+
+A receiver's NF (noise figure) = $10 \log$ ((S/N)$_{\text{in}}$ / (S/N)$_{\text{out}}$)
+
+10log(BW) represents the change in noise power due to increasing the bandwidth above 1 Hz. As BW increases, so does noise power.
+
+A receiver's noise floor is the sum of all the noise sources and unwanted signals within it.
+
+S/N is the desired signal-to-noise ratio in dB. Normally, only signals above the noise floor can be processed by a receiver.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page15' class='markdown-page-text'>[ 第15页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Consider a receiver that has a 1 MHz bandwidth and a 20 dB noise figure. If a S/N of 10 dB is desired, the sensitivity (S) is:
+
+S = -174 + 20 + $10\log_{10}1,000,000 + 10$
+
+S = -84 dBm
+
+It can be seen from this that if a lower S/N is required, better receiver sensitivity is necessary.
+
+If a 0 dB S/N is used, the sensitivity would become -94 dBm. The -94 dBm figure is the level at which the signal power equals noise power in the receiver's bandwidth.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page16' class='markdown-page-text'>[ 第16页 ]</span>---------------------------------------------</span><br><br>
+
+# Receiver Desensitization Interference
+
+Receiver desensitization interference occurs when an undesired signal from a nearby "off-frequency" transmitter (usually an adjacent channel) is sufficiently close to a Rx's operating frequency.
+
+The RF selectivity may not be sufficient to block this interference.
+
+![](images/f34ec428daef5f1efe0953f253ad1cea79f7a5557bf9001649e641dde730c0e7_72.jpg){width=72%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page17' class='markdown-page-text'>[ 第17页 ]</span>---------------------------------------------</span><br><br>
+
+# Receiver Desensitization Interference
+
+If the undesired RF signal is of sufficient amplitude, it will degrade the performance of the Receiver at its operating frequency.
+
+It will have the effect of raising the receiver's sensitivity and reducing the effective coverage of the radio system.

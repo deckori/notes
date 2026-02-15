@@ -1,0 +1,474 @@
+{
+  "table_of_contents": [
+    {
+      "title": "AETN 2201 Analog Electronics",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          193.81640625,
+          156.6416015625
+        ],
+        [
+          398.14398193359375,
+          156.6416015625
+        ],
+        [
+          398.14398193359375,
+          171.20794677734375
+        ],
+        [
+          193.81640625,
+          171.20794677734375
+        ]
+      ]
+    },
+    {
+      "title": "Shunt Current Sensing Using Op Amp with Zener Protection and LED\nIndicators",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          74.35000610351562,
+          366.5079345703125
+        ],
+        [
+          535.46875,
+          366.5079345703125
+        ],
+        [
+          535.46875,
+          396.6079406738281
+        ],
+        [
+          74.35000610351562,
+          396.6079406738281
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          50.5,
+          64.5478515625
+        ],
+        [
+          138.40000915527344,
+          64.5478515625
+        ],
+        [
+          138.40000915527344,
+          77.4298095703125
+        ],
+        [
+          50.5,
+          77.4298095703125
+        ]
+      ]
+    },
+    {
+      "title": "2. Objectives",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          49.763671875,
+          161.5751953125
+        ],
+        [
+          129.1479949951172,
+          161.5751953125
+        ],
+        [
+          129.1479949951172,
+          174.4298095703125
+        ],
+        [
+          49.763671875,
+          174.4298095703125
+        ]
+      ]
+    },
+    {
+      "title": "3. Theoretical Background",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          55.0,
+          286.970703125
+        ],
+        [
+          210.2320098876953,
+          286.970703125
+        ],
+        [
+          210.2320098876953,
+          299.02978515625
+        ],
+        [
+          55.0,
+          299.02978515625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Shunt Current Sensing Principles",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          68.5,
+          314.62982177734375
+        ],
+        [
+          283.21002197265625,
+          314.62982177734375
+        ],
+        [
+          283.21002197265625,
+          326.62982177734375
+        ],
+        [
+          68.5,
+          326.62982177734375
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Operational Amplifier Configurations",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          68.5,
+          411.62982177734375
+        ],
+        [
+          302.530029296875,
+          411.62982177734375
+        ],
+        [
+          302.530029296875,
+          423.62982177734375
+        ],
+        [
+          68.5,
+          423.62982177734375
+        ]
+      ]
+    },
+    {
+      "title": "3.3 Zener Diodes",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          68.5,
+          478.9697265625
+        ],
+        [
+          168.02200317382812,
+          478.9697265625
+        ],
+        [
+          168.02200317382812,
+          493.0298156738281
+        ],
+        [
+          68.5,
+          493.0298156738281
+        ]
+      ]
+    },
+    {
+      "title": "3.4 LED Indicators",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          73.0,
+          564.2298278808594
+        ],
+        [
+          210.4119873046875,
+          564.2298278808594
+        ],
+        [
+          210.4119873046875,
+          576.2298278808594
+        ],
+        [
+          73.0,
+          576.2298278808594
+        ]
+      ]
+    },
+    {
+      "title": "4. Shunt Current Sensing Project - Group Assignment Variations",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          68.5,
+          36.5908203125
+        ],
+        [
+          443.5078125,
+          36.5908203125
+        ],
+        [
+          443.5078125,
+          49.62982177734375
+        ],
+        [
+          68.5,
+          49.62982177734375
+        ]
+      ]
+    },
+    {
+      "title": "5. Resources and requirements",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          68.5,
+          682.8916015625
+        ],
+        [
+          251.7639923095703,
+          682.8916015625
+        ],
+        [
+          251.7639923095703,
+          695.3798065185547
+        ],
+        [
+          68.5,
+          695.3798065185547
+        ]
+      ]
+    },
+    {
+      "title": "A 15 to 20-page main text report must be submitted through D2L (Please see \nattached report format) and should include",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          83.8125,
+          52.52978515625
+        ],
+        [
+          525.5200805664062,
+          52.52978515625
+        ],
+        [
+          525.5200805664062,
+          79.4298095703125
+        ],
+        [
+          83.8125,
+          79.4298095703125
+        ]
+      ]
+    },
+    {
+      "title": "Procedure:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          50.5,
+          220.72979736328125
+        ],
+        [
+          113.80000305175781,
+          220.72979736328125
+        ],
+        [
+          113.80000305175781,
+          232.72979736328125
+        ],
+        [
+          50.5,
+          232.72979736328125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          16
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          72
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          288
+        ],
+        [
+          "TableCell",
+          88
+        ],
+        [
+          "Line",
+          77
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          51
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          11
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/project-reqs"
+}

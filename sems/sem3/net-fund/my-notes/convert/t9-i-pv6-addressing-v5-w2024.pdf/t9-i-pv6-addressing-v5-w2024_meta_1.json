@@ -1,0 +1,352 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Example:",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          14.546386718749998,
+          228.38671875
+        ],
+        [
+          140.48898315429688,
+          228.38671875
+        ],
+        [
+          140.48898315429688,
+          254.11636352539062
+        ],
+        [
+          14.546386718749998,
+          254.11636352539062
+        ]
+      ]
+    },
+    {
+      "title": "IPv6 Address Types\nTypes of IPv6 Unicast Addresses",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          11.26171875,
+          8.02880859375
+        ],
+        [
+          521.79296875,
+          8.02880859375
+        ],
+        [
+          521.79296875,
+          69.49072265625
+        ],
+        [
+          11.26171875,
+          69.49072265625
+        ]
+      ]
+    },
+    {
+      "title": "IPv6 Address Types\nIPv6 Prefix Length",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          14.077148437499998,
+          8.58251953125
+        ],
+        [
+          297.4970703125,
+          8.58251953125
+        ],
+        [
+          297.4970703125,
+          68.17276000976562
+        ],
+        [
+          14.077148437499998,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "IPv6 Global Unicast Address (GUA) Structure",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          15.015624999999998,
+          36.16973876953125
+        ],
+        [
+          701.98046875,
+          36.16973876953125
+        ],
+        [
+          701.98046875,
+          68.66015625
+        ],
+        [
+          15.015624999999998,
+          68.66015625
+        ]
+      ]
+    },
+    {
+      "title": "IPv6 Address Types\nIPv6 Link-Local Address (LLA)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          13.138671874999998,
+          9.13623046875
+        ],
+        [
+          482.37695312499994,
+          9.13623046875
+        ],
+        [
+          482.37695312499994,
+          69.49072265625
+        ],
+        [
+          13.138671874999998,
+          69.49072265625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          36
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          37
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          19
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          37
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          26
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t9-i-pv6-addressing-v5-w2024"
+}

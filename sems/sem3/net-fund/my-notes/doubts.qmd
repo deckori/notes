@@ -1,0 +1,47 @@
+# misc
+
+1. Should I say all show commands and features instead? Which is more accurate?
+
+![](doubts-img/priv.png){#fig-priv align=center width=300 alt="priv.png"}
+
+1. Can an IPv4 address be a part of an IPv6 address or are both treated as unique addresses? ex: `192.168.1.1` vs `192.168.1.1.0.0`
+
+1. vty vs svi
+
+1. AUX?
+
+>  Line Configuration Mode: 
+> Used to configure console, SSH, Telnet or AUX access
+
+1. When given the ip addr and subnet mask, while doing bit operationns on the given table, what calculations should we write?
+2. DHCPv6 vs DHCPv4?
+  - IPv4 - DHCPv4 One type: a server keeps track of ip addresses assigned to hosts
+  - IPv6 - DHCPv6
+    - SLAAC: every device generates ip configuration via routing advertisements. We cannot get domain name, who is my DNS server and what is it's address (for this we need to use SLAAC stateless DHCPv6)
+      - Uses duplicate address detection
+    - SLAAC with stateless DHCPv6: stateless means there is server maintaining a record of ip information of hosts
+      - Uses duplicate address detection
+    - SLAAC with stateful DHCPv6: same as DHCPv4
+
+## T3 Protocols and Reference Models
+
+> Application: Represents data to the user, plus encoding and dialog control. (*pg 17*)
+
+dialog control?
+
+## T8 ipv4
+
+1. limited broadcast vs broadcast address
+
+1. Do loopback addresses have a network and broadcast address?
+
+## T9
+
+1. What is an address space?
+2. In a network with 2 hosts, do we need a broadcast address?
+3. What is routing?
+4. What is routing table?
+
+## T10
+
+1. Why do websites not have port numbers shown in their names?

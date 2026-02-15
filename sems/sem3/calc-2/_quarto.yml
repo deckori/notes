@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    math:
+      method: mathjax
+    toc: true
+    respect-user-color-scheme: true
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+    fontsize: 20px
+
+website:
+  title: "MATH2010 Calculus-2"
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents:
+      - index.qmd
+      - general.qmd
+      - u0-math2010-review/u0-math2010-review.qmd
+      - u1-u-substitution/u1-u-substitution.qmd
+      - u2-applications-of-the-indefinite-integrals/u2-applications-of-the-indefinite-integrals.qmd
+      - u3-techniques-of-integration/u3-techniques-of-integration.qmd
+      - u4-sequences-and-series/u4-sequences-and-series.qmd
+      - doubts.qmd
+      - status.qmd

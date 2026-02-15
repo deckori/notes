@@ -1,0 +1,299 @@
+---
+title: "Presentation Title"
+---
+![](l1-semiconductors-img/l1-semiconductors_0.png)
+
+AETN 2101\-ANALOG ELECTRONICS
+
+# Lecture # 1 – Semiconductors Materials
+
+__Dr\. Yasen Harrye__
+
+# Objectives:
+
+Describe the structure of an atom\.
+
+Discuss insulators\, conductors\, and semiconductors and  how they differ\.
+
+Describe how current is produced in a semiconductor\.
+
+Describe the properties of  _n_ \-type and  _p_ \-type Semiconductors\.
+
+Describe how a  _pn_  _ _ junction is formed\.
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Semiconductors
+
+![](l1-semiconductors-img/l1-semiconductors_1.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Semiconductors Materials
+
+Materials	can	be	classified by their ability to conduct  electricity\.
+
+<span style="color:#c00000">This</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">ability</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">is</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">related</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">to</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">the</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">valence</span>  <span style="color:#c00000"> </span>  <span style="color:#c00000">electrons\.</span>
+
+__Valence__  __ __  __electrons__  __ __ are those  electrons that occupy the  outer shell\.
+
+Examples  of conductors:   <span style="color:#ff0000">G</span>  <span style="color:#ff0000">o</span>  <span style="color:#ff0000">ld\,</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">Si</span>  <span style="color:#ff0000">l</span>  <span style="color:#ff0000">ve</span>  <span style="color:#ff0000">r</span>  <span style="color:#ff0000">\,</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">Aluminum</span>  <span style="color:#ff0000">\, Copper\.</span>
+
+![](l1-semiconductors-img/l1-semiconductors_2.png)
+
+<span style="color:#ff0000"> __Copper__ </span>  <span style="color:#ff0000"> __ __ </span> is an example of an excellent  __conductor__ \.
+
+It has only one electron in its valence band\, which  can easily escape to the conduction band\, leaving  behind a  __positive ion __ \(the core\)\.
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#ff0000"> __Insulators__ </span>  <span style="color:#111111"> __ __ </span>  <span style="color:#111111">have</span>  <span style="color:#111111"> </span>  <span style="color:#111111">tightly</span>  <span style="color:#111111"> bound</span>  <span style="color:#111111"> </span>  <span style="color:#111111">electrons</span>  <span style="color:#111111"> </span>  <span style="color:#111111">with</span>  <span style="color:#111111"> </span>  <span style="color:#111111">few </span>  <span style="color:#111111"> </span>  <span style="color:#111111">electrons available </span>  <span style="color:#111111">for conduction\. </span>
+
+<span style="color:#111111">Best insulators have</span>  <span style="color:#111111"> </span>  <span style="color:#0000ff">eight</span>  <span style="color:#0000ff"> </span>  <span style="color:#0000ff">valence</span>  <span style="color:#0000ff"> </span>  <span style="color:#0000ff">electrons\.</span>  <span style="color:#0000ff"> </span>
+
+<span style="color:#111111">Examples: </span>  <span style="color:#111111">glass\, </span>  <span style="color:#111111">air\, </span>  <span style="color:#111111">paper\, </span>  <span style="color:#111111">and rubber\.</span>
+
+![](l1-semiconductors-img/l1-semiconductors_3.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#ff0000"> __Semiconductors__ </span>  <span style="color:#ff0000"> __ __ </span> are between conductors and insulators in their ability to conduct electricity\.
+
+<span style="color:#003300">Examples:</span>  <span style="color:#003300"> </span>  __Silicon__ \,  __Germanium__
+
+__Silicon__  __ __ is the most commonly used  <span style="color:#0000ff"> __semiconductor__ </span>  <span style="color:#0000ff">\.</span>
+
+Since Silicon is one of the most abundant elements on the earth\.
+
+![](l1-semiconductors-img/l1-semiconductors_4.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Semiconductors
+
+<span style="color:#c00000"> __Valence__ </span>  <span style="color:#c00000"> __ __ </span>  <span style="color:#c00000"> __electrons:__ </span>  <span style="color:#c00000"> __ __ </span>
+
+There are 4 valence electrons in the outer \(valence\) shell of both  <span style="color:#008000">Silicon</span>  <span style="color:#008000"> </span>  <span style="color:#008000">\(Si\) </span>  <span style="color:#008000">and</span>  <span style="color:#008000"> </span>  <span style="color:#008000">Germanium </span>  <span style="color:#008000">\(Ge\)\.</span>
+
+![](l1-semiconductors-img/l1-semiconductors_5.jpg)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l1-semiconductors-img/l1-semiconductors_6.png)
+
+The valence electrons in germanium are in the fourth shell while  those in silicon are in the third shell\,  <span style="color:#ff0000">closer</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">to</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">the</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">nucleus\.</span>
+
+This means that the germanium valence electrons are at  _higher _  _ _  _energy_  _ levels_  _ than_  _ _  _those_  _ in_  _ _  _silicon_  and\, therefore\, require a   <span style="color:#008000">smaller</span>  <span style="color:#008000"> </span>  <span style="color:#008000">amount</span>  <span style="color:#008000"> </span>  <span style="color:#008000">of</span>  <span style="color:#008000"> </span>  <span style="color:#008000">additional</span>  <span style="color:#008000"> </span>  <span style="color:#008000">energy</span>  <span style="color:#008000"> </span>  <span style="color:#008000">to</span>  <span style="color:#008000"> </span>  <span style="color:#008000">escape</span>  <span style="color:#008000"> </span>  <span style="color:#008000">from</span>  <span style="color:#008000"> </span>  <span style="color:#008000">the</span>  <span style="color:#008000"> </span>  <span style="color:#008000">atom</span> \.
+
+Feature that makes germanium more unstable at high temperature\.
+
+Hence the popularity of silicon\-based semiconductors\.
+
+![](l1-semiconductors-img/l1-semiconductors_7.png)
+
+<span style="color:#0000ff">Note: In a </span>  <span style="color:#0000ff">silicon crystal\, there are billions of silicon atoms\, each </span>  <span style="color:#0000ff">with eight </span>  <span style="color:#0000ff">valence electrons\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Energy Diagram of the Three materials:__ </span>  <span style="color:#c00000"> __ __ </span>
+
+![](l1-semiconductors-img/l1-semiconductors_8.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Covalent__ </span>  <span style="color:#c00000"> __ Bonds:__ </span>  <span style="color:#c00000"> __ __ </span>
+
+![](l1-semiconductors-img/l1-semiconductors_9.png)
+
+Unlike metals\, silicon forms strong  <span style="color:#0000ff"> __covalent bonds __ </span> \(shared electrons\) with its neighboring atoms making a crystalline structure\.
+
+A silicon atom with its  four valence electrons  shares an electron with  each of its four  neighbours\.
+
+![](l1-semiconductors-img/l1-semiconductors_10.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l1-semiconductors-img/l1-semiconductors_11.png)
+
+This effectively creates   <span style="color:#ff0000">eight valence electrons  for each atom </span> and  produces a state of   <span style="color:#008000">chemical stability</span>  <span style="color:#008000">\.</span>
+
+When the valence orbit has  <span style="color:#0000ff">eight electrons\, it is saturated because  no more electrons can fit into this orbit\.</span>
+
+![](l1-semiconductors-img/l1-semiconductors_12.png)
+
+<span style="color:#0000ff">Intrinsic silicon is a poor conductor </span> because most of the electrons are bound in the crystal and take part in forming the bonds between atoms\.
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+A semiconductor is different from an insulator because at any temperature above absolute zero temperature\,  there is a small number of electrons in the lattice which will  become loose from their atoms\, leaving behind an  empty space called a  <span style="color:#0000ff">"hole"\.</span>
+
+In  <span style="color:#0000ff">intrinsic</span>  \(“pure”\) silicon\, a few electrons can jump the energy gap between the valence and conduction band\. Having moved into the conduction band\, a "hole" is left in the crystal structure\.
+
+![](l1-semiconductors-img/l1-semiconductors_13.jpg)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000">The </span>  <span style="color:#c00000">current which will flow </span>  <span style="color:#c00000">in an </span>  <span style="color:#c00000">intrinsic  semiconductor consists </span>  <span style="color:#c00000">of both </span>  <span style="color:#c00000">electron </span>  <span style="color:#c00000">and hole  current</span> \.
+
+The conduction band electrons are free to move under the influence of an electric field\. \(“ <span style="color:#0000ff">electron current</span> ”\)
+
+The bound \(valence\) electrons move between atoms\, effectively moving “holes” from one atom to another as illustrated\. Holes act like positive charges\, with their own mobility\. \(“ <span style="color:#0000ff">hole current</span> ”\)
+
+![](l1-semiconductors-img/l1-semiconductors_14.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Temperature Effect on Resistivity
+
+<span style="color:#0000ff">Electric current </span>  <span style="color:#0000ff">in the </span>  <span style="color:#0000ff">conductor </span>  <span style="color:#0000ff"> _decreases_ </span>  <span style="color:#0000ff"> with the  increase in</span>  <span style="color:#0000ff"> </span>  <span style="color:#0000ff">temperature\.</span>
+
+<span style="color:#ff0000">Increase in the </span>  <span style="color:#ff0000">temperature increases the vibration </span>  <span style="color:#ff0000">of  </span>  <span style="color:#ff0000">atoms\.</span>
+
+<span style="color:#ff0000">These vibrating atoms </span>  <span style="color:#ff0000">oppose the </span>  <span style="color:#ff0000">flow </span>  <span style="color:#ff0000">of  </span>  <span style="color:#ff0000">electrons</span>  <span style="color:#ff0000">\.</span>
+
+<span style="color:#6f2f9f">Electric </span>  <span style="color:#6f2f9f">current in the </span>  <span style="color:#6f2f9f">semiconductor </span>  <span style="color:#6f2f9f"> _increases_ </span>  <span style="color:#6f2f9f"> with the  </span>  <span style="color:#6f2f9f">increase in</span>  <span style="color:#6f2f9f"> </span>  <span style="color:#6f2f9f">temperature\.</span>
+
+<span style="color:#6f2f9f">Vibrating </span>  <span style="color:#6f2f9f">atoms </span>  <span style="color:#6f2f9f">in the </span>  <span style="color:#6f2f9f">semiconductor </span>  <span style="color:#6f2f9f">oppose only </span>  <span style="color:#6f2f9f">few  electrons and </span>  <span style="color:#6f2f9f">the </span>  <span style="color:#6f2f9f">remaining </span>  <span style="color:#6f2f9f">large </span>  <span style="color:#6f2f9f">number of electrons  flows </span>  <span style="color:#6f2f9f">freely from one </span>  <span style="color:#6f2f9f">place </span>  <span style="color:#6f2f9f">to </span>  <span style="color:#6f2f9f">another place</span>  <span style="color:#6f2f9f">\.</span>
+
+![](l1-semiconductors-img/l1-semiconductors_15.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Extrinsic Materials
+
+
+
+* Since semiconductors are generally poor conductors\, their conductivity can be drastically increased by the controlled addition of impurities to the intrinsic \(pure\) semi\-conductive material\. This process\, called  <span style="color:#0000ff">doping</span> \.
+* A semiconductor material that has been subjected to doping is called an  <span style="color:#c00000"> __extrinsic__ </span>  <span style="color:#c00000"> __ __ </span>  <span style="color:#c00000"> __material__ </span>  <span style="color:#c00000"> __\.__ </span>
+  * Two types;
+    * <span style="color:#0000ff"> __n\-type__ </span>
+    * <span style="color:#0000ff"> __p\-type__ </span>
+* __n\-type	__  __material__  __:__
+  * <span style="color:#0000ff">Created by introducing </span>  <span style="color:#0000ff">impurity atoms </span>  <span style="color:#0000ff">\(doping\) that have </span>  <span style="color:#0000ff"> _5 valence _ </span>  <span style="color:#0000ff"> _electrons_ </span>  <span style="color:#0000ff"> _ _ </span>  <span style="color:#0000ff">\(pentavalent\)</span>
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l1-semiconductors-img/l1-semiconductors_16.png)
+
+This allows  <span style="color:#ff0000">four</span>  out of the  <span style="color:#ff0000">five</span>  orbital electrons bonds with its neighboring silicon  atoms leaving one  _“free _  _electron” _ to become mobile when an electrical voltage is  applied \(electron flow\)\.
+
+As each impurity atom “donates” one electron\,  _pentavalent_   atoms are generally known as  <span style="color:#ff0000">“</span>  <span style="color:#ff0000"> __donors__ </span>  <span style="color:#ff0000">”\.</span>
+
+<span style="color:#0000ff"> _The resulting _ </span>  <span style="color:#0000ff"> _semiconductor _ </span>  <span style="color:#0000ff"> _basics _ </span>  <span style="color:#0000ff"> _material _ </span>  <span style="color:#0000ff"> _has _ </span>  <span style="color:#0000ff"> _an_ </span>  <span style="color:#0000ff"> _ _ </span>  <span style="color:#0000ff"> _excess_ </span>  <span style="color:#0000ff"> _ _ </span>  <span style="color:#0000ff"> _of current\-carrying electrons\, each with a negative_ </span>  <span style="color:#0000ff"> _ _ </span>  <span style="color:#0000ff"> _charge_ </span>
+
+<span style="color:#0000ff"> _Sb: antimony_ </span>
+
+![](l1-semiconductors-img/l1-semiconductors_17.png)
+
+__N\-type __ material electrons is called  “Majority Carriers” while the resulting  holes are called “Minority Carriers”\.
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+
+
+  * Created by introducing impurity atoms \(doping\)  that have 3 valence electrons \(trivalent\)
+      * Boron \(B\)\, Gallium \(Ga\) & indium \(In\)
+* Diffused impurities with three valence  electrons are called  <span style="color:#ff0000"> __acceptor__ </span>  <span style="color:#ff0000"> __ __ </span>  <span style="color:#ff0000"> __atoms __ </span> as they are continually “accepting” extra or free electrons\.
+* <span style="color:#ff0000"> __Boron __ </span>  <span style="color:#ff0000">\(symbol B\) </span>  <span style="color:#ff0000">is </span>  <span style="color:#ff0000">commonly </span>  <span style="color:#ff0000">used as a </span>  <span style="color:#ff0000">trivalent additive\. </span>
+* In P\-type materials positive holes are called “Majority Carriers” while the free electrons  are called “Minority Carriers”\.
+
+
+![](l1-semiconductors-img/l1-semiconductors_18.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000">Majority and Minority Carriers\.</span>
+
+In an  <span style="color:#ff0000"> _n\-type_ </span>  material the electron is called the majority carrier and the hole the  minority carrier\.
+
+In a  <span style="color:#ff0000"> _p\-type_ </span>  material the hole is called the majority carrier and the electron the minority carrier\.
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# PN Junction
+
+A p\- and an n\-material together form a PN junction\.
+
+When the junction is formed\, conduction electrons move to the p\- region\, and fall into holes\. Filling a hole makes a negative ion and leaves behind a positive ion in the n\-region\.
+
+This creates a thin region \( <span style="color:#3366ff">Depletion Region</span> \) that is depleted of free charges at the boundary  <span style="color:#ff0000">which prevents further charge migration\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+\[1\] Thomas Floyd\, Electronic Devices\.
+
+\[2\] Streetman\, B\. G\. and Banerjie\, S\. K\.\,  _Solid State Electronic Devices_ \, Prentice\-Hall International\, 6th Edition\, 2005\.
+
+\[3\] Boylestad\, Electronic Devices and circuits\.
+

@@ -1,0 +1,7 @@
+project:
+  type: website
+
+title: "Study guides"
+format:
+  pdf:
+    include-in-header: preamble.tex

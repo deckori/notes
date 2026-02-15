@@ -1,0 +1,44 @@
+---
+title: "Doubts"
+---
+
+## T1 Introduction To Digital System
+
+1. Are combination of logic gates a single logic gate
+
+**Ans** Yes
+
+## T2 Boolean Algebra and Logic Gates
+
+1. What is the purpose of a buffer gate?
+
+**Ans**
+
+1. What are the logic voltages of a CMOS gate?
+
+## T4.2 Combinational Logic Circuit Analysis And Simplification SOP POS
+
+1. <div>
+
+    > **SOP**
+    >
+    > The output function can be written in SOP form by adding all the min-terms when the output is HIGH(1).
+    >
+    > **POS**
+    >
+    > The output function can be written in SOP form by adding all the min-terms when the output is HIGH(0).
+
+    </div>
+
+Isn't POS low instead of high?
+
+## T4.3 K-maps
+
+1. What do you call the following expression:
+
+$$X(A, B, C, D) = \Sigma\ m(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)$$
+
+# T8
+
+1. How does the following make sense when we have the same selector inputs to 2 multiplexers?
+  - [](doubts-img/8-1-multiplexer-combo.png){#fig-8-1-multiplexer-combo align=center width=300 alt="8-1-multiplexer-combo.png"}

@@ -1,0 +1,7 @@
+---
+title: General Notes
+---
+
+## Indeterminate Forms
+
+{{< video https://www.youtube.com/watch?v=ioEeRsT4-Sk >}}

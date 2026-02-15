@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "!other-sems/"
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    css: styles.css
+    toc: true
+    respect-user-color-scheme: true
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+#   pdf:
+#    latex-engine: xelatex
+#    documentclass: article
+#    classoption: a4paper
+#    keep-tex: true
+#    includes:
+#      in-header: header.tex
+#      fontsize: 20px
+
+website:
+  title: "Sem Planning"
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents: /*

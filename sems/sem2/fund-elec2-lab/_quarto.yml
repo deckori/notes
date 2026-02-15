@@ -1,0 +1,30 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    toc: true
+    respect-user-color-scheme: true
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+    fontsize: 20px
+
+website:
+  title: "Fundamentals of Electricity II (LAB)"
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents: /*

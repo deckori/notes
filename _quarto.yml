@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: .site
+  render:
+    - "t*.qmd"
+    - "u*.qmd"
+    - "!sems/sem1/"
+    - "!sems/sem2/"
+    - "!sems/sem3/"
+    - "sems/sem4/"
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    toc: true
+    respect-user-color-scheme: true
+    include-in-header: tools/rpi.html
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+    fontsize: 20px
+
+website:
+  title: "My Notes"
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents:
+      - section: "4th Semester"
+        href: sems/sem4/index.qmd
+        contents:
+          - section: "Applied Electromagnetics"
+            contents:
+              - sems/sem4/applied-electromagnetics/l2-transmission-lines/quarto/l2-transmission-lines.qmd
+      # - section: "Digital Electronics"
+      #   contents: sems/sem3/dig-elec/*
+      # - section: "Network Fundamentals"
+      #   contents: sems/sem3/net-fund/*
+      # - section: "Calculus II"
+      #   contents: sems/sem3/calc-2/*
+      # - section: "Analog Electronics"
+      #   contents: sems/sem3/ana-elec/*
+      # - section: "Calculus I"
+      #   contents: sems/sem2/calc1/*
+      # - section: "Fund. Elec. II"
+      #   contents: sems/sem2/fund-elec2/*
+      # - section: "course list"
+      #   contents: sems/sem2/class-enroll/*

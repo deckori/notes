@@ -1,0 +1,49 @@
+## MISC
+
+1. What is DC offset?
+  - {{< video https://www.youtube.com/watch?v=40rKM0rbqeA&t=5s >}}
+2. What is a general definition of feedback? What about resistive feedback?
+
+## T2
+
+1. What is the meaning of quiescent?
+
+## T4.1
+
+1. explain:
+  - ![](doubts-img/i-c-current-components.png){#fig-i-c-current-components align=center width=300 alt="i-c-current-components.png"}
+
+## T4.3
+
+1. How to determine the Q point in a graph?
+
+## T4.4
+
+BJT - Voltage Divider Configuration
+
+Why is $I_C = I_VB$?
+
+## T5
+
+1. What is a decoupling capacitor?
+  - Used to block DC voltage
+2. What is a bypass capacitor?
+  - Used to increase the gain. How?
+3. Why doesn't the capacitor affect the phase difference of the voltage? Is it only relevant b/w the voltage and current?
+4. What happens to the $V_{DS}$ and $I_D$ when $V_{DS} > V_p$?
+5. what happens when Vgs becomes more and more positive in n-channel jfet?
+  - $I_{DS}$ becomes smaller and smaller until it becomes 0. When $V_{GS} > 0 V$, then JFET is off
+6. What happens if a JFET turns off?
+7. is it ok for V_DS to be negative in an n-channel jfet? How does it behave?
+ 
+## T6
+
+1. What is feedback?
+  - {{< video https://www.youtube.com/watch?v=ua4eMZTxpQ0&t=3s >}}
+2. Affect of the negative feedback of resistors on the output? Is this AC or DC attribute?
+  - Negative feedback nullifies a change in the output. It is a part of both AC and DC.
+3. What is open loop gain?
+4. Purpose of resistors in closed loop gain
+5. Open loop gain vs closed loop gain
+6. What charateristics of the op-amp does closed loop gain configuration improve?
+7. What are sensor conditioning circuits? how does it relate to the integrator configuration of the op-amp?

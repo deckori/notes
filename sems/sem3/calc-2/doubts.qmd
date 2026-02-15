@@ -1,0 +1,7 @@
+---
+title: Doubts
+---
+
+## t4 Sequences and series
+
+1. are sequences and series functions?

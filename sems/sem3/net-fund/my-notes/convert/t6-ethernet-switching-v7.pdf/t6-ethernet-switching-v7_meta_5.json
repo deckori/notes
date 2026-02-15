@@ -1,0 +1,121 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Appendix: Packet Traveling",
+      "heading_level": null,
+      "page_id": 26,
+      "polygon": [
+        [
+          189.9499969482422,
+          107.7039794921875
+        ],
+        [
+          628.17822265625,
+          107.7039794921875
+        ],
+        [
+          628.17822265625,
+          141.29498291015625
+        ],
+        [
+          189.9499969482422,
+          141.29498291015625
+        ]
+      ]
+    },
+    {
+      "title": "Packet Traveling - How Packets Move Through a Network (14:38)",
+      "heading_level": null,
+      "page_id": 27,
+      "polygon": [
+        [
+          22.139001846313477,
+          18.1790771484375
+        ],
+        [
+          869.0292968749999,
+          18.1790771484375
+        ],
+        [
+          869.0292968749999,
+          46.18505859375
+        ],
+        [
+          22.139001846313477,
+          46.18505859375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 26,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          9
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 27,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          6
+        ],
+        [
+          "Line",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t6-ethernet-switching-v7"
+}

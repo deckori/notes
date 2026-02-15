@@ -1,0 +1,488 @@
+---
+title: 1. U-Substitution
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+-   Let $u = x^3 + 1$
+
+Then $du = 3x^2 dx$
+
+-   Solve for $dx$:
+
+$dx = \frac{du}{3x^2}$
+
+Check:
+
+-   Write the integral in terms of $u$:
+
+$$
+\begin{align*}
+  \int 3^2 (x^3+1) dx = \int 3^2 (x^3 + 1) \frac{du}{3x^2} \\
+  \int {} \\
+\end{align*}
+$$
+
+E1
+
+Let $u = x^2 + 1$, then $du = 2xdx$
+
+$\qquad dx = \frac{dx = \frac{du}{2x}$
+
+$$
+\begin{align*}
+   \int 2x \sqrt{x^2+1} dx \\
+   \int 2x \sqrt{x^2+1} \frac{du}{2x} \\
+\end{align*}
+$$
+
+E?
+
+$$
+\begin{align*}
+  \int x^2 (x^3 + 1)^4 dx \\
+  u = x^3 + 1 \implies du = 3x^2 dx \\
+  \implies dx = \frac{du}{3x^2} \\ 
+  \implies \int x^2 (x^3 + 1)^4 dx = \int x^2 (x^3 + 1)^4 \frac{du}{3x^2} \\
+  \\
+\end{align*}
+$$
+
+E3
+
+$$
+\begin{align*}
+  \int 10x^2 \sqrt{x^3+1} dx \\
+  u = x^3 + 1 \implies du = 3x^2 dx \\
+  \boxed{dx = \frac{du}{3x^2}} \\
+  \implies \int 10x^2 \sqrt{x^3+1} dx = \int 10\cancel{x^2} \sqrt{x^3+1} \frac{du}{3\cancel{x^2}} \\
+\end{align*}
+$$
+
+Look at the following integrals:
+
+$$\int3x^2\left(x^3+1\right)^4dx\quad\int2x\sqrt{x^2+1}\:dx\quad\int\frac{4x^3}{\left(x^4+1\right)^3}dx$$
+
+Notice anything?Each expression is a function and it's derivative.
+
+![](u1-u-substitution-img/fsUngrEkOhHpglocXIb4LDYRprbCNi6Lg)
+
+$$\frac{d}{dx}f(g(x))=f'\bigl(g(x)\bigr)g'(x)$$
+
+If we see this pattern, we can use U-substitution to find the integral.
+
+To integrate $\int3x^{2}\left(x^{3}+1\right)^{4}dx$ we need to rewrite
+it to see the parts of the derivative
+
+Check:
+
+### PROCEDURE FOR U-SUBSTITUTION
+
+1.Carefully define a new function, $lu$ ,(it will be the inside
+function).
+
+1. Find its differential, $du$ . 3.Rewrite the original function in
+    terms of $\iota\iota$ and $du$
+
+------------------------------------------------------------------------
+
+E1 Find the indefinite integral $\int 2x\sqrt {x^{2}+ 1}$ $dx$
+
+E in teteae $\int\frac{4x^3dx}{\left(x^4+2\right)^3}$
+
+Check:
+
+------------------------------------------------------------------------
+
+Often we will need to use a constant multiple to make the substitution
+work. GET GOoD ATTHIS
+
+$$\int x^2(x^3+1)^4dx$$
+
+3 Find the indefinite integral, confirm your result by taking the
+derivative
+
+a) $\int 10x^{2}\sqrt {x^{3}+ 1}$ $dx$
+
+$$\text{b)}\int\frac{x^3}{2\left(x^4+2\right)^3}dx\:.$$
+
+------------------------------------------------------------------------
+
+## Exponential Functions
+
+For the function $e^x$
+
+$$\frac{d}{dx}(e^x)=$$
+
+So, going backwards, we know
+
+![](u1-u-substitution-img/ff3tvNSMIkgG87GyXOmbufWON2AGGpUYi)
+
+From the chain rule for $e^{f(x)}$
+
+$$\frac{de^{f(x)}}{dx}=$$
+
+So:
+
+$$\int e^{f(x)}f'(x)dx=$$
+
+![](u1-u-substitution-img/fSoipa5WephCL4c8wS8TtpicH3xcSdPH2)
+
+We can use U Substitution to make the process easier.
+
+### NATURAL EXPONENTIAL RULE
+
+Weintegratefunctions with a natural base of $e$ using this rule.
+
+$$\int e^{f(x)}f'(x)dx=e^{f(x)}+C$$
+
+------------------------------------------------------------------------
+
+E1Find the integral of the following functions and check your answers by
+differentiation. $$f(t)=\frac{1}{3}e^{t}$$
+
+$${\bar{f}}(x)={\frac{e^{x}}{5}}$$
+
+(a) $f(x)=4e^x$ (b)
+
+E2 Find the integral of the following functions and check your answers
+by differentiation
+
+a) $f(x)=4e^{3x}$
+
+$$
+\begin{align*}
+ \int  \\
+\end{align*}
+$$
+
+a) $)f(x) = x^{2}\frac{ e^{2x^3} }{5}$
+
+$$
+\begin{align*}
+  u =  \\
+\end{align*}
+$$
+
+E3 Find the particular solution of the function $f(x)$ When its curve
+pass through the point $\left(1,\frac{e^{2}}{30}\right)$
+$$f(x)=\int\frac{1}{3}xe^{5x^{2}-3}dx$$
+
+$$
+\begin{align*}
+  u = 5x^2-3 \implies du = 10x dx \\
+  \implies \boxed{ dx = \frac{du}{10x} } \\
+  implies f(x)=\int\frac{1}{3}xe^{5x^{2}-3}dx = \int\frac{1}{3} \cancel{x} e^{5x^{2}-3} \frac{du}{10\cancel{x}} \\
+  f(x) = \frac{1}{30} \int e^{ u } du \\
+  f(x) = \frac{1}{30} e ~inc \\
+\end{align*}
+$$
+
+------------------------------------------------------------------------
+
+For the function $a^{x}$
+
+So, we know:
+
+$$\int a^x\ln(a)dx=$$
+
+$$\frac{da^x}{dx}=$$
+
+![](u1-u-substitution-img/fRPXTxnaokIS7EzdSQ7ewgpadSgQWB6eK)
+
+From the chain rule for $a^{f(x)}$
+
+So:
+
+![](u1-u-substitution-img/fyT5WCUpgYcBqNdFDzoS5HRyY9KEGSfdy)
+
+$$\begin{matrix}\int a^{f(x)}\ln(a)f'(x)\:dx=\end{matrix}$$
+
+![](u1-u-substitution-img/fQoUNAHOZQgkpzGC29gwwKGux7MyqDuBH)
+
+### GENERAL EXPONENTIAL RULE
+
+We integrate functions whose base is any constant, $a$ using thisrule.
+
+$$\int a^{f(x)}\ln\lvert a\rvert f'(x)dx=a^{f(x)}+C$$
+
+------------------------------------------------------------------------
+
+E3Find the integral of the following functions.
+
+$$\text{b)}f\left(x\right)=12^x$$
+
+$$\int5^{x}\ln(5)dx$$
+
+a) $f(x)=7^{x^2}\ln(7)2x$
+
+$$\int x^{2}\cdot3^{x^{3}}dx$$
+
+$$\text{f)}\int5^{x^2+x}(4x+2)dx$$
+
+------------------------------------------------------------------------
+
+### 1.3 Natural Logarithms.
+
+We know te deriatie o the aturl lgaritmi unctinn
+$\frac{d}{dx}\ln x=\frac{1}{x}$
+
+For the antiderivative however, we need to consider the functions
+
+$$f(x)=\ln x$$
+
+![](u1-u-substitution-img/frhtEnaaAZSFFQdclcTVp7K8xk9QhakUk)
+
+![](u1-u-substitution-img/fnYvIWACUEbT2IBtcVnlZzVsMp37uZ068)
+
+Now,for the function $\ln(f(x))$
+
+So, we know:
+
+$$\frac{d}{dx}\ln(f(x))=$$
+
+$$\int\frac{1}{f(x)}f'(x)dx=$$
+
+SO
+
+$$\int\frac{1}{x}dx=$$
+
+![](u1-u-substitution-img/fGvI2z46w5kYirbXUFc6HhWtZtGKybUOR)
+
+If we see this pattern,
+
+U-substitution is still used for logarithms. For a function that is a
+quotient: $$f\begin{pmatrix}x\end{pmatrix}=\frac{6x+6}{3x^2+6x}$$
+
+we have a Ln function as the antiderivative.
+
+### "Ln" RULE
+
+If a quotient can be manipulated with u-substitution to be a function in
+the denominator with its derivative in the numerator then:
+$$\int\frac{1}{f(x)}f'(x)dx=\ln\left|f(x)\right|+C$$
+
+Remember:thatyou need to add the absolute value symbols to your integral
+
+------------------------------------------------------------------------
+
+E1 Find the integral of the following functions
+
+$$\mathrm{b)}\int\frac{1}{11}t^{-1}dt$$
+
+a) $\int\frac4xdx$
+
+$$\text{c)}\int\frac{1}{3(x-5)}dx$$
+
+Remember: you may need a constant multiple to make the rule work.
+
+E2 Find the integral of the following using U substitution
+
+$$)\:\int\frac{2t+1}{3t^{2}+3t}dt$$
+
+$$\text{b)}\int\frac{x^4}{2x^5+2}dx$$
+
+E3 Find the paricular olution of $\mathbf{v}=\int\frac{1}{2x+1}dx$ when
+$x=0$ and $y=2$
+
+------------------------------------------------------------------------
+
+Things to look for:.
+
+$$\frac{3x^3+3x}{x^4+3x^2+2x}$$
+
+The quotient could use $$\frac{2e^{2x}+1}{e^{2x}+x}$$ other rules as
+well:.
+
+Be careful if you see a log in the denominator! We solve these a little
+differently. Usually, $u=\ln x$ 1
+
+$$\int\frac{1}{x(\ln x)^2}dx$$
+
+------------------------------------------------------------------------
+
+E3Simplify the following integrals if necessary and solve
+
+$$)\:\int\frac{x(x-1)}{2x^{3}-3x^{2}}dx$$
+
+$$\text{b)}\int\frac{2x-2}{\left(x-1\right)^{2}}dx$$
+
+$$\text{c)}\int\frac{e^{2x}}{e^x(e^x+1)}dx$$
+
+$$)\:\int\frac{1}{x\ln(x^{2})}dx$$
+
+------------------------------------------------------------------------
+
+## 1.4 Trigonometric Functions
+
+We know the [derivatives of the basic trigonometric
+functions](../../sem2/calc1/u3-transcendental.qmd##%20The%20Derivative%20of%20Trigonometric%20Functions)
+
+Working backwards from these will lead us to integrals of the most basic
+trigonometric functions.
+
+### BASIC TRIGONOMETRIC INTEGRALS
+
+$$
+\begin{array}{c|c@{}c}
+    f(x) & & F(x) \\
+    \hline
+    \cos x && \sin x + c \\
+    \sin x & - & \cos x + c \\
+    \sec x \cdot \sec x && \tan x + c \\
+    \tan x \cdot \sec x && \sec^2 x + c \\
+    \csc x \cdot \csc x \\
+    \cot x \cdot \csc x \\
+    e^x  \\
+    \ln x & &\dfrac{1}{x} \\
+\end{array}
+$$
+
+------------------------------------------------------------------------
+
+E1 Find the indefinite integralof each of the following.
+
+a) $\int 4 \sin x dx$
+
+$= -4 \cos x + c$
+
+a) $\int\sec(2x)\tan(2x)dx$
+
+$$\begin{align*}
+  \text{Let } u = 2x \implies du = 2 dx \\
+  \therefore \frac{1}{2} \int \sec u \tan u~du \\
+  = \frac{1}{2} \sec u + c \\
+  = \boxed{\frac{1}{2} \sec 2x +c} \\
+\end{align*}$$
+
+<details>
+
+<!-- <summary> exercises <\summary> -->
+
+a) $3 \cos\theta d\theta$
+
+$= 3 \sin \theta + c$
+$$\begin{matrix}\text{c)}\int\frac{4}{5}\sec(x)\tan(x)+x^2\:dx\end{matrix}$$
+
+$$\mathsf{d})\:\int{\frac{\sec^{2}(x)}{3}}+{\frac{1}{\cos^{2}(x)}}dx$$
+
+$$\begin{matrix}\text{f)}\int-\cos\bigl(\theta\bigr)\sin(\theta)\:d\theta\end{matrix}$$
+
+$$\text{g)}\int4\sec^2\begin{pmatrix}x\end{pmatrix}\tan(x)\:dx$$
+
+\<\details\>
+
+------------------------------------------------------------------------
+
+There are other trigonometric functions whose integrals are not so
+obvious.
+
+$$\int\tan(x)dx=$$
+
+$$\begin{align*}
+\int \tan x \, dx 
+&= \int \frac{\sin x}{\cos x} \, dx \\[6pt]
+&= \int \frac{1}{\cos x} \sin x \, dx \\[6pt]
+\text{Let } t = \cos x \;\;\Rightarrow\;\; &dt = -\sin x \, dx \;\;\Rightarrow\;\; \sin x \, dx = -dt \\[6pt]
+&= \int \frac{1}{t} (-dt) \\[6pt]
+&= - \int \frac{1}{t} \, dt \\[6pt]
+&= -\ln |t| + C \\[6pt]
+&= -\ln |\cos x| + C \\[6pt]
+&= \ln \left|\frac{1}{\cos x}\right| + C \\[6pt]
+&= \ln |\sec x| + C.
+\end{align*}$$
+
+OTHER TRIGONOMETRIC INTEGRALS
+
+$$\begin{aligned}\int\tan(x)\:dx&=\\&=\end{aligned}$$
+
+$$\begin{aligned}\int\cot(x)\:dx&=\\&=\end{aligned}$$
+
+$$\int\csc(x)\:dx=\ln\left|\csc(x)-\cot(x)\right|+C$$
+
+$$\int\sec(x)\:dx=\ln\left|\sec(x)+\tan(x)\right|+C$$
+
+Note that $\int\tan(x)dx$ and $\int cot(x)dx$ havetwo forms. Choose the
+one that works best for you!
+
+------------------------------------------------------------------------
+
+E2Prove $$\begin{aligned}
+\int\cot(x)dx& =\quad\ln\left|\sin\left(x\right)\right|+C \\
+&=-\ln\left|\csc(x)\right|+C
+\end{aligned}$$
+
+E3 Use the rules to find the following integrals a) $\int4\tan(x)dx$
+
+$$\text{b)}\int\left(-3\cot\left(x\right)-x^3\right)dx$$
+
+a) 3x² sec(x²)dx
+
+a) $9x csc(3x^2) dx$
+
+$$
+\begin{align*}
+  \text{Let } u = 3x^2 \implies du = 6x dx \\
+  \implies \frac{9}{6} \csc \\
+\end{align*}
+$$
+
+------------------------------------------------------------------------
+
+For integrands we do not recognize as derivatives, some simplification,
+identities, or applying the substitution method will help.
+
+### Basic Identities:You must know these
+
+$${\frac{1}{\cos(x)}}\quad\sec(x)={\frac{1}{\cos(x)}}\quad{\frac{\sin(x)}{\cos(x)}}=\quad={\frac{1}{\cos(x)}}$$
+
+$$\csc(x)=\frac{1}{1}$$
+
+Try rewriting with identities:
+$$\int\frac{\cos(\theta)}{\sin^2(\theta)}d\theta $$
+
+Try U-Substitution:
+
+$$\begin{align*}
+  \int\frac{\cos(\theta)}{\sin^2(\theta)}d\theta \\
+  u = \sin\theta \implies du = \cos\theta dx \\
+  \implies \int \frac{du}{u^2} \\
+  = \int u^{-2} du \\
+  = \frac{u^{-1}}{-1} + c \\
+  = -\frac{1}{u} + c \\
+  = -\frac{1}{\sin\theta} + c \\
+  = -\csc\theta + c \\
+\end{align*}$$
+
+------------------------------------------------------------------------
+
+E4 Use identities,then find the integral
+
+$$\int\cos^{-2}(x)\sin(x)dx$$
+
+$$\text{c)}\int\frac{\cos(5x)}{\sin(5x)}dx$$
+
+$$
+\begin{align*}
+  u = 5x \implies du = 5 dx \\
+  \frac{1}{5} \int \cot u du \\
+  \frac{1}{5} \ln | \sin u | + c\\
+\end{align*}
+$$
+
+E5 Use u substitution to find the particular solution of
+$g(x)=\int\cos^{2}(x)\sin(x)dx$ ,given that $g(\pi)=\frac{4}{3}$
+
+$$
+\begin{align*}
+  u = \cos x &\implies du = - \sin x dx \\
+  \implies G(x) &= - \int u^2 du \\
+  G(x) &= - \frac{u^3}{3} + c \\
+  G(x) &= - \frac{\cos^3 x}{3} + c \\
+  \frac{4}{3} &= - \frac{\cos^3 \pi}{3} + c \\
+  c &= \frac{4}{3} + \frac{\cos^3 \pi}{3} \\
+  c &= 1 \\
+  G(x) &= - \frac{\cos^3 x}{3} + 1 \\
+\end{align*}
+$$

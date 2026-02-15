@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80mm"
+   height="80mm"
+   viewBox="0 0 80 79.999999"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="op-amp.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.21156"
+     inkscape:cx="131.23576"
+     inkscape:cy="95.744326"
+     inkscape:window-width="1600"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-64.230637,-32.505882)" />
+  <g
+     inkscape:label="OpAmp"
+     id="g31"
+     transform="translate(-134.40856,-40.746706)">
+    <g
+       inkscape:label="OpAmp"
+       id="g29">
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 185,80 -35,20 V 60 l 35,20"
+         id="path17" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150,90 h -7.5"
+         id="path18" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 150,70 h -7.5"
+         id="path19" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 185,80 h 7.5"
+         id="path20" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 167.5,70 V 65"
+         id="path21" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 167.5,90 v 5"
+         id="path22" />
+      <g
+         inkscape:label="GND"
+         id="g25">
+        <g
+           inkscape:label="GND"
+           id="g24">
+          <circle
+             inkscape:label="circle"
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             id="path23"
+             cx="167.5"
+             cy="55"
+             r="1" />
+          <path
+             inkscape:label="none"
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             d="M 167.5,55 V 65"
+             id="path24" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.57895px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+           x="0"
+           y="0"
+           transform="translate(167.5,51.666667)"
+           id="text24"><tspan
+             sodipodi:role="line"
+             x="0"
+             y="0"
+             id="tspan24">+v</tspan></text>
+      </g>
+      <g
+         inkscape:label="GND"
+         transform="rotate(180,167.5,105)"
+         id="g27">
+        <g
+           inkscape:label="GND"
+           id="g26">
+          <circle
+             inkscape:label="circle"
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             id="path25"
+             cx="167.5"
+             cy="105"
+             r="1" />
+          <path
+             inkscape:label="none"
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             d="m 167.5,105 v 10"
+             id="path26" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.57895px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+           x="0"
+           y="0"
+           transform="rotate(180,83.75,48.333334)"
+           id="text26"><tspan
+             sodipodi:role="line"
+             x="0"
+             y="0"
+             id="tspan26">-v</tspan></text>
+      </g>
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 156,90 h -3"
+         id="path27" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 156,70 h -3"
+         id="path28" />
+      <path
+         inkscape:label="none"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 154.5,68.5 v 3"
+         id="path29" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.26316px;line-height:100%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#217b21;fill-opacity:1;stroke:none"
+       x="0"
+       y="0"
+       transform="translate(149,68)"
+       id="text29"><tspan
+         sodipodi:role="line"
+         x="-2.3841858e-07"
+         y="0"
+         id="tspan29">v^+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.26316px;line-height:100%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#217b21;fill-opacity:1;stroke:none"
+       x="0"
+       y="0"
+       transform="translate(149,88)"
+       id="text30"><tspan
+         sodipodi:role="line"
+         x="-2.3841858e-07"
+         y="0"
+         id="tspan30">v^-</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.57895px;line-height:100%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#217b21;fill-opacity:1;stroke:none"
+       x="0"
+       y="0"
+       transform="translate(185,78)"
+       id="text31"><tspan
+         sodipodi:role="line"
+         x="0"
+         y="0"
+         id="tspan31">v_{out}</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,1437 @@
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page1' class='markdown-page-text'>[ 第1页 ]</span>---------------------------------------------</span><br><br>
+
+# AETN 3111
+
+#Applied Electromagnetics
+
+# Transmission Line-Equation
+
+# Dr. Mohamed Ouda
+
+#Electrical Engineering Department#UDST
+
+Winter 2026
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page2' class='markdown-page-text'>[ 第2页 ]</span>---------------------------------------------</span><br><br>
+
+# What Is a 'Transmission Line' (TL)?
+
+A transmission line (TL) consists of two or more conductors separated from one another by a dielectric, like air, gaz or an insulating material such as polythene, teflon.
+
+It can transmit electric energy, signals, data, and information from one point to another.
+
+![](images/8b27863d986ab946dfa0647c294ef362454b45d13b43870b94f7b47a01742dfb_49.jpg){width=49%}
+
+![](images/d5b9a679d7eff90db40ad40cefe9108c40cc30f1ac9ac2b275599c9a2921bcef_11.jpg){width=11%}
+
+![](images/f82fbb76faf36735e2257c85c93f3e41a4c5c7e19734c71d217c9d6607ef3482_91.jpg){width=91%}
+
+Cable television, broadband internet, antenna and transmitter/receiver.
+
+Power lines, rural telephone lines, and telegraph lines.
+
+Microwave and mm-wave applications: circuits, antennas, and components like circulators, filters, directional couplers, and power dividers.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page3' class='markdown-page-text'>[ 第3页 ]</span>---------------------------------------------</span><br><br>
+
+# Transmission Lines (TL)
+
+Are defined as devices used to guide energy from one point to another (from a source to a load).
+
+TL can consist of a set of conductors, dielectrics or combination thereof.
+
+![](images/56febc75d61d219146e2646d885792f9c63055ce97cb7976ae101772879bbdee_62.jpg){width=62%} Figure 2-1 A transmission line is a two-port network connecting a generator circuit at the sending end to a load at the receiving end.
+
+![](images/80a1700ecca98bf71a447efc6110452c9afc9bdc5bdf2b3c0977eddaf9677536_25.jpg){width=25%}
+
+Plane wave propagating in air
+
+(unguided wave propagation)
+
+TL/ waveguides
+
+(guided wave propagation)
+
+TL include:(Two parallel wires, Coaxial cable, Microstrip line, etc.)
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page4' class='markdown-page-text'>[ 第4页 ]</span>---------------------------------------------</span><br><br>
+
+# Transmission Line Definitions
+
+Uniform TL - conductors and dielectrics maintain the same cross-sectional geometry along the TL
+
+Transmission line mode - a distinct pattern of E and H fields induced on a TL.
+
+Longitudinal components - the field components in the direction of wave propagation Transverse components - the field components perpendicular to the direction of propagation
+
+![](images/0cc5acb66f20d0d0fe17daef9e64ceb29a8eb10432f82f7f6d928832c4c09784_64.jpg){width=64%}
+
+If the TL is oriented along the z-axis then the modes may be classified as:-
+
+Transverse electromagnetic (TEM) modes -($TL$ modes)
+
+(E and H fields are transverse to the direction of wave propagation with no longitudinal components [$E_{z} = H_{z} = 0$]. TEM modes cannot exist on single conductor.
+
+# 2. Quasi-TEM modes =
+
+$$
+\begin{array}{r} { \operatorname* { l i m } E _ { z } = \operatorname* { l i m } H _ { z } = 0 } \\{ f \rightarrow 0   f \rightarrow 0   } \end{array}
+$$
+
+modes which approximate trueTEM modes for sufficiently low frequencies.)
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page5' class='markdown-page-text'>[ 第5页 ]</span>---------------------------------------------</span><br><br>
+
+# Transmission Line Effects
+
+The pair of wires connecting the voltage source to the RC load is a transmission line? The wires were ignored in circuits courses. Can we always ignore them? Not always.
+
+$$
+V _ { A A ^{\prime} } = V _ { \mathrm { g } } ( t ) = V _ { 0 } \cos \omega t
+$$
+
+$$
+\begin{array}{rl} & { V _ { B B ^{\prime} } ( t ) = V _ { A A ^{\prime} } ( t - l / c )  \mathrm { D e l a y e d ~ b y ~ } I / c } \\& { = V _ { 0 } \cos \left[ \omega ( t - l / c ) \right] } \\& { = V _ { 0 } \cos ( \omega t - \phi _ { 0 } ) , } \end{array}
+$$
+
+At $t=0$, and for $f=1$ kHz, if:
+
+(1) / = 5 cm:
+
+$V_{BB'} = V_0 \cos(2\pi f l/c) = 0.999999999998\,V_0$
+
+![](images/8e2e5f0bb3c7525e15d1d6d487bea8321db01940f98bfd0c4f2e3de5256ec38a_42.jpg){width=42%}
+
+(2) But if $l = 20$ km:
+
+$V_{BB'} = 0.91 V_0$
+
+$$
+\phi _ { 0 } = \frac { \omega l } { c } = \frac { 2 \pi f l } { c } = 2 \pi \frac { l } { \lambda }  \mathrm { r a d i a n s . }
+$$
+
+When $l/\lambda$ is very small, transmission-line effects may be ignored, but when $l/\lambda \gtrsim 0.01$, it may be necessary to account not only for the phase shift due to the time delay, but also for the presence of reflected signals that may have been bounced back by the load toward the generator.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page6' class='markdown-page-text'>[ 第6页 ]</span>---------------------------------------------</span><br><br>
+
+# Electromagnetic Fields In The Transmission Line
+
+# Problem:
+
+A transmission line of length $l$ connects a load to a sinusoidal voltage source with frequency $f$. Assuming the velocity of wave propagation on the line is $c$, which of the following situations is reasonable to ignore the presence of the transmission line in the solution of the circuit:
+
+(a) $l=20\ cm$, $f=20\ kHz$, (b) $l=50\ km$, $f=60\ Hz$, (c) $l=20\ cm$, $f=600\ MHz$, (d) $l=1\ mm$, $f=100\ GHz$
+
+# Solution:
+
+A transmission line is negligible when $l/\lambda \leq 0.01$
+
+(a) $\frac{l}{\lambda}=\frac{lf}{c}=\frac{(20\times10^{-2}m)\times(20\times10^{3}Hz)}{3\times10^{8}m/s}=1.33\times10^{-5}$ negligible
+
+(b) $\frac{l}{\lambda}=\frac{lf}{c}=\frac{(50\times10^{3}m)\times(60Hz)}{3\times10^{8}m/s}=0.01$ borderline
+
+(c) $\frac{l}{\lambda}=\frac{lf}{c}=\frac{(20\times10^{-2}m)\times(600\times10^{6}Hz)}{3\times10^{8}m/s}=0.4$ nonnegligible
+
+(d) $\frac{l}{\lambda}=\frac{lf}{c}=\frac{(1\times10^{-3}m)\times(100\times10^{9}Hz)}{3\times10^{8}m/s}=0.33$ nonnegligible
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page7' class='markdown-page-text'>[ 第7页 ]</span>---------------------------------------------</span><br><br>
+
+# Transmission Line Model (Lumped-Element)
+
+An equivalent circuit of a TL can be developed by considering two-wire li The equivalent circuit i.e., transmission line model represents the TL as a cascade of identical cells of infinitesimal length $\Delta z$. The cell represents a piece of line of infinitesimal length $\Delta z$. It can be nodeled as a lumped-element circuit.
+
+$R'$: The combined resistance of both conductors per unit length, in $\Omega$/m,
+
+$L'$: The combined inductance of both conductors per unit length, in H/m,
+
+$G'$: The conductance of the insulation medium between the two conductors per unit length, in S/m, and
+
+$C'$: The capacitance of the two conductors per unit length, in F/m.
+
+![](images/76fdbec72d6e341dc98713bd1dfa73c597ae4ba9a8006f1c8989d0e3e7cd92cb_44.jpg){width=44%} (c) Each section is represented by an equivalent circuit
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page8' class='markdown-page-text'>[ 第8页 ]</span>---------------------------------------------</span><br><br>
+
+# TL Model: Lumped Element Model (Cont.)
+
+The wires are of uniform size, the RESISTANCE of the conducting material of which the wires are made can be assumed to be uniformly distributed along their lengths.
+
+The magnetic field links the wires and hence an INDUCTANCE is said to be present. This is distributed uniformly along the length of the line. Since this inductance impedes current flow, it is effectively in series with the uniformly distributed resistance.
+
+The fact that the input and output currents are different suggests the possibility of an ADMITTANCE between the wires. This shunt admittance consists of a conductance and a capacitance in parallel.
+
+The presence of CAPACITANCE is because the line consists of two conductors separated by an air dielectric.
+
+Because the dielectric is not perfect, a conduction current will flow between the wires. A conductance between the cables can represent this leakage path.
+
+LEAKAGE CURRENT flows between the two wires due to the dielectric, even air, is not a perfect insulator, a small current known as. In effect, the insulator acts as a resistor, permitting current to pass between the two wires.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page9' class='markdown-page-text'>[ 第9页 ]</span>---------------------------------------------</span><br><br>
+
+# TL Model: Lumped Element Model (Cont.)
+
+This property is called CONDUCTANCE and is the opposite of resistance. Conductance in transmission lines is expressed as the reciprocal of resistance.
+
+LUMPED constants are theoretical properties (inductance, resistance, capacitance, conductance) of a transmission line that are lumped into a single element.
+
+![](images/3eec278b801e9dbe1684e70fe64de38e7c264ec3acced2dcf7678ab8521342ad_91.jpg){width=91%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page10' class='markdown-page-text'>[ 第10页 ]</span>---------------------------------------------</span><br><br>
+
+# TL Model: Lumped Element Model (Cont.)
+
+Transmission-line parameters $R'$, $L'$, $G'$, and $C'$ for three types of lines.
+
+| Parameter | Coaxial | Two-Wire | Parallel-Plate | Unit |
+| --- | --- | --- | --- | --- |
+| $R'$ | $\frac{R_{\rm S}}{2\pi}\left(\frac{1}{a}+\frac{1}{b}\right)$ | $\frac{2R_{\rm S}}{\pi d}$ | $\frac{2R_{\rm S}}{w}$ | $$\Omega$/m$ |
+| $L'$ | $\frac{\mu}{2\pi}\ln(b/a)$ | $\frac{\mu}{\pi}\ln\left[\left(D/d\right)+\sqrt{(D/d)^2-1}\right]$ | $\frac{\mu h}{w}$ | $H/m$ |
+| $G'$ | $\frac{2\pi\sigma}{\ln(b/a)}$ | $\overline{\frac{\pi\sigma}{\ln\left[(D/d) + \sqrt{(D/d)^2-1}\right]}$ | $\frac{\sigma w}{h}$ | $S/m$ |
+| $C'$ | $\frac{2\pi\varepsilon}{\ln(b/a)}$ | $\overline{\frac{\pi\varepsilon}{\ln\left[(D/d) + \sqrt{(D/d)^2-1}\right]}$ | $\varepsilon w$ | $F/m$ |
+| $Notes: $\mu$, $\varepsilon$, and $\sigma$ pertain to the insulating material between the conductors. $R_{\rm s}=\sqrt{\pi f\mu_{\rm c}/\sigma_{\rm c}}$. $\mu_{\rm c}$ and $\sigma_{\rm c}$ pertain to the conductors. If $(D/d)^2\gg 1$, then $\ln\left[(D/d)+\sqrt{(D/d)^2-1}\right]\simeq\ln(2D/d)$.$ |
+
+The pertinent constitutive parameters apply to all three lines and consist of two groups: (1) $\mu_{\mathrm{c}}$ and $\sigma_{\mathrm{c}}$ are the magnetic permeability and electrical conductivity of the conductors, and (2) $\varepsilon$, $\mu$, and $\sigma$ are the electrical permittivity, magnetic permeability, and electrical conductivity of the insulation material separating them.
+
+# Parallel-Plate
+
+![](images/87941a401f928975edc142b7e5eb12f27e460e5cadb08b6d9cf46302564ffc90_16.jpg){width=16%}
+
+![](images/db7cd0be10a22b01734a26f2aed8af5fd9f2136d16a7c83b121bbc60682c8a3f_18.jpg){width=18%}
+
+# Coaxial
+
+![](images/cf86125a4594f9410398c5dce4e950e6d9d1e18342fd6f6639fe7a7233dedfd7_33.jpg){width=33%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page11' class='markdown-page-text'>[ 第11页 ]</span>---------------------------------------------</span><br><br>
+
+# Notes
+
+For a perfect conductor with $\sigma_{\mathrm{c}}=\infty$ or a high conductivity
+
+If the material separating the inner and outer conductors is a perfect dielectric with $\sigma=0$, then $G'=0$.
+
+All TEM transmission lines share the following useful relations:
+
+$$
+L ^{\prime} C ^{\prime} = \mu \epsilon ~ ~ ( \mathrm { a l l ~ T E M ~ l i n e s } ) ,
+$$
+
+and
+
+$$
+{ \frac { G ^{\prime} } { C ^{\prime} } } \equiv { \frac { \sigma } { \epsilon } } ~ ~ ( \mathrm { a l l ~ T E M ~ l i n e s } ) .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page12' class='markdown-page-text'>[ 第12页 ]</span>---------------------------------------------</span><br><br>
+
+# TL Model: Lumped Element Model (Cont.)
+
+Table 1 Conductivities ($\sigma$) for some material (adapted from Pozar, 2012) Table 3 Physical constants
+
+| Material | Conductivity S/m (20 0 C) | Material Nichrome Nickel Platinum Sea water Silicon Silver Steel (silicon) Steel (stainless) Solder Tungsten Zinc Lead | Conductivity S/m (20 0 C) |
+| --- | --- | --- | --- |
+| Aluminium | $3.816 \times 10^{7}$ | $1.0 \times 10^{6}$ |
+| Brass | $2.564 \times 10^{7}$ | $1.449 \times 10^{7}$ |
+| Bronze | $1.00 \times 10^{7}$ | $1.52 \times 10^{6}$ |
+| Chromium | $3.846 \times 10^{7}$ | Sea water Sea water Sea water Silicon Silver Steel (silicon) Steel (stainless) Solder Tungsten Zinc Zinc | $1.52 \times 10^{6}$ |
+| Copper | $5.813 \times 10^{7}$ | $4.4 \times 10^{-4}$ |
+| Distilled water | $2 \times 10^{-4}$ | Silver Silver (silicon) Steel (silicon) Steel (silicon) Steel (silicon) Steel (stainless) Solder Solder Tungsten Zinc | $6.173 \times 10^{7}$ |
+| Germanium | $2.2 \times 10^{6}$ | $2 \times 10^{6}$ |
+| Gold | $4.098 \times 10^{7}$ | Steel (silicon) Steel (stainless) Solder Solder Tungsten Zinc | $1.1 \times 10^{6}$ |
+| Graphite | $7.0 \times 10^{4}$ | Solder Solder Tungsten Tungsten | $7.0 \times 10^{6}$ |
+| Iron | $1.03 \times 10^{7}$ | Tungsten Tungsten | $1.825 \times 10^{7}$ |
+| Mercury | $1.04 \times 10^{6}$ | Zinc Zinc | $1.67 \times 10^{7}$ |
+| Lead | $4.56 \times 10^{6}$ |  |  |
+
+Table 2 Dielectric constants and loss tangents for some materials (adapted from Pozar, 2012)
+
+| Material | Frequency | $\epsilon_r$ | $Tan δ (25°C)$ | Material | Frequency y | $\epsilon_r$ | $Tan δ (25°C)$ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Alumina (99.5%) | 10 GHz | 9.5–10 | 0.0003 | Paraffin | 10 GHz | 2.24 | 0.0002 |
+| Barium tetratitanate | 6 GHz | 37 ± 5% | 0.0005 | Plexiglas | 3 GHz | 2.60 | 0.0057 |
+| Beeswax | 10 GHz | 2.35 | 0.005 | Polyethylene | 10 GHz | 2.25 | 0.0004 |
+| Beryllia | 10 GHz | 6.4 | 0.0003 | Polystyrene | 10 GHz | 2.54 | 0.00033 |
+| Ceramic (A-35) | 3 GHz | 5.60 | 0.0041 | Porcelain (dry process) | 100 MHz | 5.04 | 0.0078 |
+| Fused quartz | 10 GHz | 3.78 | 0.0001 | Rexolite (1422) | 3 GHz | 2.54 | 0.00048 |
+| Gallium arsenide | 10 GHz | 13.0 | 0.006 | Silicon | 10 GHz | 11.9 | 0.004 |
+| Glass (pyrex) | 3 GHz | 4.82 | 0.0054 | Styrofoam (103.7) | 3 GHz | 1.03 | 0.0001 |
+| Glazed ceramic | 10 GHz | 7.2 | 0.008 | Teflon | 10 GHz | 2.08 | 0.0004 |
+| Lucite | 10 GHz | 2.56 | 0.005 | Titania (D-100) | 6 GHz | 96 ± 5% | 0.001 |
+| Nylon (610) | 3 GHz | 2.84 | 0.012 | Vaseline | 10 GHz | 2.16 | 0.001 |
+
+| $Permittivity of free-space, \epsilon 0$ | $8.854\times10^{-12}~\mathrm{F/m}$ |
+| --- | --- |
+| $Permeability of free-space, \mu 0$ | $4\pi\times10^{-7}~\mathrm{H/m}$ |
+
+$\mathcal{E}_{r}$: relative permittivity or dielectric constant
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page13' class='markdown-page-text'>[ 第13页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-1: Evaluate the line parameters of a two-wire air line with wires of radius mm, separated by a distance of 2 cm. The wires may be treated as perfect conductors.
+
+olution:
+
+Two-wire air line: Because medium between wires is air, $\varepsilon_{0}=\varepsilon$, $\mu=\mu_{0}$, and $\sigma=0$, d = 2 cm; a = 1 mm; $\sigma_{\mathrm{c}}=\infty$
+
+$$
+\begin{array}{rl} & { R _ { \mathrm { s } } = \left[ \frac { \pi f \mu _ { \mathrm { c } } } { \sigma _ { \mathrm { c } } } \right] ^{1 / 2} = 0  R ^{\prime} = 0 } \\& { L ^{\prime} = \frac { \mu _ { 0 } } { \pi } \ln \left[ \left( \frac { d } { 2 a } \right) + \sqrt { \left( \frac { d } { 2 a } \right) ^{2} - 1 } \right] = \left( \frac { 4 \pi \times 10 ^{- 7} } { \pi } \right) \ln \left[ \left( \frac { 20 } { 2 } \right) + \sqrt { \left( \frac { 20 } { 2 } \right) ^{2} - 1 } \right] } \\& { = 4 \times 10 ^{- 7} \ln [ 10 + \sqrt { 99 } ] = 1 . 2  ( \mu \mathrm { H / m } ) . } \end{array}
+$$
+
+$$
+\begin{array}{rl} & { G ^{\prime} = 0  \mathrm { b e c a u s e ~ } \sigma = 0 } \\& { C ^{\prime} = \frac { \pi \varepsilon _ { 0 } } { \ln \left[ \left( \frac { d } { 2 a } \right) + \sqrt { \left( \frac { d } { 2 a } \right) ^{2} - 1 } \right] } = \frac { \pi \times 8 . 85 \times 10 ^{- 12} } { \ln [ 10 + \sqrt { 99 } ] } = 9 . 29  ( \mathrm { p F / m } ) . } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page14' class='markdown-page-text'>[ 第14页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-2: Calculate the transmission line parameters at 1 MHz for a coaxial air line with inner and outer conductor diameters of 0.6 cm and 1.2 cm, respectively. The conductors are made of copper ($\mu_{\mathrm{r}}$=1, and $\sigma_{\mathrm{c}}$=5.8 x $10^{7}$). ($\mu=\mu_{\mathrm{r}}\mu_{0}$ and $\mu_{0}=4\pi\times10^{-7}\,\mathrm{H/m}$).
+
+$$
+\begin{aligned} \text { l air line: Because medium between wires is air, } \varepsilon = \varepsilon _ { 0 } , \; \mu = \mu _ { 0 } , \mathrm { ~ a n d ~ } \sigma = 0 . \\& { a = 0 . 3 \; \mathrm { c m } ,  b = 0 . 6 \; \mathrm { c m } ,  \mu _ { \mathrm { c } } = \mu _ { 0 } ,  \sigma _ { \mathrm { c } } = 5 . 8 \times 10 ^{7} \; \mathrm { S / m } \\& { R _ { \mathrm { s } } = \sqrt { \pi f \mu _ { \mathrm { c } } / \sigma _ { \mathrm { c } } } \\& { = [ \pi \times 10 ^{6} \times 4 \pi \times 10 ^{- 7} / ( 5 . 8 \times 10 ^{7} ) ] ^{1 / 2} = 2 . 6 \times 10 ^{- 4} \; \Omega . \\& { R ^{\prime} = \frac { R _ { \mathrm { s } } } { 2 \pi } \left( \frac { 1 } { a } + \frac { 1 } { b } \right) = \frac { 2 . 6 \times 10 ^{- 4} } { 2 \pi } \left( \frac { 1 } { 3 \times 10 ^{- 3} } + \frac { 1 } { 6 \times 10 ^{- 3} } \right) = 2 . 07 \times 10 ^{- 2}  ( \Omega / \mathrm { m } ) \\& { L ^{\prime} = \frac { \mu _ { 0 } } { 2 \pi } \ln \left( \frac { b } { a } \right) = \frac { 4 \pi \times 10 ^{- 7} } { 2 \pi } \ln 2 = 0 . 14  ( \mu \mathrm { H / m } ) \\& { G ^{\prime} = 0  \mathrm { b e c a u s e ~ } \sigma = 0 \\& { C ^{\prime} = \frac { 2 \pi \varepsilon } { \ln ( b / a ) } = \frac { 2 \pi \times 8 . 85 \times 10 ^{- 12} } { \ln 2 } = 80 . 3  ( \mathrm { p F / m } ) . \end{aligned}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page15' class='markdown-page-text'>[ 第15页 ]</span>---------------------------------------------</span><br><br>
+
+# TRANSMISSION LINE MODEL: LUMPED ELEMENT MODEL (CONT.)
+
+# Example
+
+A coaxial line with inner and outer conductor diameters of 0.5 cm and 1 cm, respectively, is filled with an insulating material with $\varepsilon_{\mathrm{r}}=4.5$ and $\sigma=10^{-3}$ S/m. The conductors are made of copper.
+
+Calculate the line parameters at 1 GHz.
+
+# Solution
+
+The conductors are made of copper {$\mu_{r}=1$, $\sigma_{c}=5.8\times10^{7}$, $\mu=\mu_{r}\,\mu_{0}=\mu_{0}$ ($\mu_{0}=4\pi\times10^{-7}$ H/m), $\mu_{c}=\mu_{0}$} Insulating material ($\mu_{r}=1$, $\varepsilon_{r}=4.5$ and $\sigma=10^{-3}$)
+
+$$
+\begin{array}{rl} & { a = ( 0 . 5 / 2 ) \; \mathrm { c m } = 0 . 25 \times 10 ^{- 2} \, \mathrm { m } } \\& { b = ( 1 . 0 / 2 ) \; \mathrm { c m } = 0 . 50 \times 10 ^{- 2} \, \mathrm { m } . } \end{array} \begin{aligned} & { R^{\prime} = \frac{1}{2 \pi} \sqrt{ \frac{ \pi f \mu _ { \mathrm { c } } }{ \sigma _ { \mathrm { c } } } } \left( \frac{1}{a} + \frac{1}{b} \right) \\& { L^{\prime} = \frac{ \mu }{ 2 \pi } \ln \left( \frac{b}{a} \right) = \frac{4 \pi \times 10 ^{- 7} \, \mathrm{H/m} }{ 2 \pi } \ln 2 = 13 9 \, \mathrm{ n H/m} .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \
+$$
+
+$$
+G ^{\prime} = \frac { 2 \pi \sigma } { \ln ( b / a ) } = \frac { 2 \pi \times 10 ^{- 3} ~ \mathrm { S / m } } { \ln 2 } = 9 . 1 ~ \mathrm { m S / m } .   C ^{\prime} = \frac { 2 \pi \varepsilon } { \ln ( b / a ) } = \frac { 2 \pi \varepsilon _ { r } \varepsilon _ { 0 } } { \ln ( b / a ) } = \frac { 2 \pi \times 4 . 5 \times ( 8 . 85 4 \times 10 ^{- 12} ~ \mathrm { F / m } ) } { \ln 2 } = 36 2 ~ \mathrm { p F / m } .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page16' class='markdown-page-text'>[ 第16页 ]</span>---------------------------------------------</span><br><br>
+
+# Transmission-Line Equations
+
+![](images/b2a8d6abeba109d2af82e7479a70e7047a5667eef470828ef666a021d19cdcf6_38.jpg){width=38%}
+
+![](images/f2a96b0e75f118f8d8adf060621fefca271cde282670de6a217e13e8d07e6357_42.jpg){width=42%}
+
+# Telegrapher's equations
+
+$$
+\begin{array}{rl} & { - \frac { d \tilde { V } ( z ) } { d z } = ( R ^{\prime} + j \omega L ^{\prime} ) \, \tilde { I } ( z ) , } \\& { - \frac { d \tilde { I } ( z ) } { d z } = ( G ^{\prime} + j \omega C ^{\prime} ) \, \tilde { V } ( z ) . } \end{array}
+$$
+
+Frequency-domain (phasor) transmission line equations (coupled DE's)
+
+ac signals: use phasors
+
+$$
+\begin{array}{r} { v ( z , t ) = \Re \mathrm { e } [ \widetilde V ( z ) \, e ^{j \omega t} ] , } \\{ i ( z , t ) = \Re \mathrm { e } [ \tilde { I } ( z ) \, e ^{j \omega t} ] , } \end{array}
+$$
+
+# Remember
+
+Kirchhoff Voltage Law
+
+$V_{in}^{-}V_{out} - V_{R'} - V_{L'} = 0$
+
+Kirchhoff Current Law
+
+$I_{in}^{-}I_{out} - I_{C'} - I_{G'} = 0$
+
+# Note:
+
+$V_{L}=\mathrm{\~L\~}\frac{di}{dt}$
+
+$I_{C}=\mathrm{C}\frac{dv}{dt}$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page17' class='markdown-page-text'>[ 第17页 ]</span>---------------------------------------------</span><br><br>
+
+# Derivation of Wave Equations
+
+$$
+\begin{array}{rl} & {  - \frac { d \widetilde V ( z ) } { d z } = ( R ^{\prime} + j \omega L ^{\prime} ) \, \widetilde I ( z ) , } \\& {  - \frac { d \widetilde I ( z ) } { d z } = ( G ^{\prime} + j \omega C ^{\prime} ) \, \widetilde V ( z ) . } \end{array}
+$$
+
+Combining the two equations leads to:
+
+$$
+\frac { d ^{2} \tilde { V } ( z ) } { d z ^{2} } - ( R ^{\prime} + j \omega L ^{\prime} ) ( G ^{\prime} + j \omega C ^{\prime} ) \, \tilde { V } ( z ) = 0 ,
+$$
+
+$$
+\frac { d ^{2} \widetilde V ( z ) } { d z ^{2} } - \gamma ^{2} \, \widetilde V ( z ) = 0 ,
+$$
+
+Second-order differential equation
+
+$$
+\gamma = \sqrt { ( R ^{\prime} + j \omega L ^{\prime} ) ( G ^{\prime} + j \omega C ^{\prime} ) } .
+$$
+
+![](images/3ba8336e3450e480d5b4e4ae37bacd3a81793d48e43618e4882836fda179425a_46.jpg){width=46%}
+
+$$
+\begin{array}{rl} & { \alpha = \Re ( \gamma ) } \\& { = \Re \left( \sqrt { ( R ^{\prime} + j \omega L ^{\prime} ) ( G ^{\prime} + j \omega C ^{\prime} ) } \right) ~ ~ ~ ( \mathrm { N p / m } ) , } \end{array}
+$$
+
+$$
+\begin{array}{rl} & { \beta = \Im m ( \gamma ) } \\& { = \Im m \left( \sqrt { ( R ^{\prime} + j \omega L ^{\prime} ) ( G ^{\prime} + j \omega C ^{\prime} ) } \right) ~ ~ ~ \mathrm { ( r a d / m ) . } } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page18' class='markdown-page-text'>[ 第18页 ]</span>---------------------------------------------</span><br><br>
+
+# Solution of Wave Equations
+
+$$
+\frac { d ^{2} \widetilde V ( z ) } { d z ^{2} } - \gamma ^{2} \, \widetilde V ( z ) = 0 ,
+$$
+
+$$
+\frac { d ^{2} \tilde { I } ( z ) } { d z ^{2} } - \gamma ^{2} \, \tilde { I } ( z ) = 0 .
+$$
+
+Proposed form of solution:
+
+$$
+\begin{array}{rl} & { \tilde { V } ( z ) = V _ { 0 } ^{+} e ^{- \gamma z} + V _ { 0 } ^{-} e ^{\gamma z} } \\& { \tilde { I } ( z ) \equiv I _ { 0 } ^{+} e ^{- \gamma z} + I _ { 0 } ^{-} e ^{\gamma z} } \\& {  \mathrm { ~ ( A ) . } } \end{array}
+$$
+
++z-directed waves -z-directed waves
+
+$$
+\mathrm { U s i n g : }  - \frac { d \widetilde V ( z ) } { d z } = ( R ^{\prime} + j \omega L ^{\prime} ) \, \tilde { I } ( z ) ,
+$$
+
+It follows $\tilde{I}(z)=\frac{\gamma}{R^{\prime}+j\omega L^{\prime}}\left[V_{0}^{+}e^{-\gamma z}-V_{0}^{-}e^{\gamma z}\right]$ that:
+
+![](images/c6614c0fa003737e8a28306da7de7a332615f20e518588a729ab2c82ab244c8a_49.jpg){width=49%} Figure 2-9: In general, a transmission line can support two traveling waves, an incident wave [with voltage and current amplitudes ($V_{0}^{+}$, $I_{0}^{+}$)] traveling along the +z-direction (towards the load) and a reflected wave [with ($V_{0}^{-}$, $I_{0}^{-}$)] traveling along the -z-direction (towards the source).
+
+Comparison of each term with the corresponding term in Eq. (2.26b) leads us to conclude that
+
+$$
+\frac { V _ { 0 } ^{+} } { I _ { 0 } ^{+} } = Z _ { 0 } = \frac { - V _ { 0 } ^{-} } { I _ { 0 } ^{-} } \, ,
+$$
+
+where
+
+$$
+Z _ { 0 } = \frac { R ^{\prime} + j \omega L ^{\prime} } { \gamma } = \sqrt { \frac { R ^{\prime} + j \omega L ^{\prime} } { G ^{\prime} + j \omega C ^{\prime} } }
+$$
+
+is called the characteristic impedance of the line.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page19' class='markdown-page-text'>[ 第19页 ]</span>---------------------------------------------</span><br><br>
+
+# Solution of Wave Equations (cont.)
+
+In general:
+
+$V_{0}^{+}=|V_{0}^{+}|e^{j\phi^{+}}$, $V_{0}^{-}=|V_{0}^{-}|e^{j\phi^{-}}$.
+
+![](images/01b13d7907ded205f8a414e5fe9dedf9f5b4af81e11655221168fd58229e5d2a_54.jpg){width=54%}
+
+The presence of two waves on the line propagating in opposite directions produces a standing wave.
+
+$$
+\begin{aligned} v ( z , t ) & = \Re \left( \tilde { V } ( z ) e ^{j \omega t} \right) \\& = \Re e \left[ \left( V _ { 0 } ^{+} e ^{- \gamma z} + V _ { 0 } ^{-} e ^{\gamma z} \right) e ^{j \omega t} \right] \\& = \Re [ | V _ { 0 } ^{+} | e ^{j \phi ^ { +} } e ^{j \omega t} e ^{- ( \alpha + j \beta ) z} \\& ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+$$
+
+wave along +z because coefficients of $t$ and z have opposite signs
+
+wave along -z because coefficients of $t$ and $z$ have the same sign
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page20' class='markdown-page-text'>[ 第20页 ]</span>---------------------------------------------</span><br><br>
+
+# Different cases of TL
+
+![](images/134b6c22eee39aa459916d5da95d8a2e2bb7e718c3dc52e46a692549920216dc_73.jpg){width=73%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page21' class='markdown-page-text'>[ 第21页 ]</span>---------------------------------------------</span><br><br>
+
+# Special Case #1 Lossless Transmission Line
+
+$$
+\gamma = \sqrt { ( R ^{\prime} + j \omega L ^{\prime} ) ( G ^{\prime} + j \omega C ^{\prime} ) } \, .
+$$
+
+$$
+\mathrm { I f }  R ^{\prime} \ll \omega L ^{\prime} \; \mathrm { a n d } \; G ^{\prime} \ll \omega C ^{\prime}
+$$
+
+# Then:
+
+$$
+\gamma = \alpha + j \beta = j \omega \sqrt { L ^{\prime} C } \; ,
+$$
+
+which in turn implies that
+
+$$
+\begin{array}{rl} & { \alpha = 0  ( \mathrm { l o s s l e s s ~ l i n e } ) , } \\& { \beta = \omega \sqrt { L ^{\prime} C ^{\prime} }  ( \mathrm { l o s s l e s s ~ l i n e } ) . } \end{array}
+$$
+
+For the characteristic impedance, application of the lossless line conditions to Eq. (2.29) leads to
+
+$$
+Z _ { 0 } = \sqrt { \frac { L ^{\prime} } { C ^{\prime} } }  ( l o s s l e s s ~ l i n e ) ,  ( 2 . 46 )
+$$
+
+$$
+\begin{array}{r} { \lambda = \frac { 2 \pi } { \beta } = \frac { 2 \pi } { \omega \sqrt { L ^{\prime} C ^{\prime} } } \, , } \\{ u _ { \mathrm { p } } = \frac { \omega } { \beta } = \frac { 1 } { \sqrt { L ^{\prime} C ^{\prime} } } \, . } \end{array}
+$$
+
+Note that the phase velocity is a constant (independent of frequency)
+
+$$
+\beta = \omega { \sqrt { \mu \varepsilon } }  ( \mathrm { r a d / m } ) ,
+$$
+
+$$
+u _ { \mathrm { p } } = \frac { 1 } { \sqrt { \mu \varepsilon } }  ( \mathrm { m / s } ) ,
+$$
+
+If sinusoidal waves of different frequencies travel on a transmission line with the same phase velocity, the line is called nondispersive.
+
+$$
+\lambda \equiv { \frac { u _ { \mathrm { p } } } { f } } = { \frac { c } { f } } ~ { \frac { 1 } { \sqrt { \varepsilon _ { \mathrm { r } } } } } = { \frac { \lambda _ { 0 } } { \sqrt { \varepsilon _ { \mathrm { r } } } } }
+$$
+
+$$
+v _ { p } = \frac { C } { \sqrt { \epsilon _ { r } } }
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page22' class='markdown-page-text'>[ 第22页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-3: A two-wire air line has the following line parameters: $R' = 0.404$ (m$\Omega$/m), $L' = 2.0$ ($\mu$H/m), $G' = 0$, and $C' = 5.56$ (pF/m). For operation at 5 kHz, determine a) the attenuation constant $\alpha$, b) the phase constant $\beta$,
+
+a) the phase velocity $u_{\mathrm{p}}$, and d) the characteristic impedance $Z_{0}$. Solution:-
+
+$$
+\begin{array}{r} { \gamma = \sqrt { ( R ^{\prime} + j \omega L ^{\prime} ) ( G ^{\prime} + j \omega C ^{\prime} ) } . } \\{ = \alpha + j \beta } \end{array}
+$$
+
+a) $\alpha = 3.37 \times 10^{-7} (\mathrm{Np/m}),$
+
+(b) $\beta = 1.05 \times 10^{-4} \left(\frac{\mathrm{rad}}{\mathrm{m}}\right),$
+
+(c) $u_{\mathrm{p}}=f\lambda=\frac{\omega}{\beta}$, = 3.0 × $10^{8}\left(\frac{\mathrm{m}}{\mathrm{s}}\right)$,
+
+(d) $Z_{0}=\frac{R^{\prime}+j\omega L^{\prime}}{\gamma}=$ $\sqrt{\frac{R^{\prime}+j\omega L^{\prime}}{G^{\prime}+j\omega C^{\prime}}}$
+
+$Z_{0}=(600-j1.9)\Omega=600\angle-0.18^{\circ}\Omega.$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page23' class='markdown-page-text'>[ 第23页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-5: A lossless transmission line uses a dielectric insulating material with $\varepsilon_{\mathrm{r}}$=4. If its line capacitance is C' = 1 (pF/m), find
+
+(a) the phase velocity $u_{\mathrm{p}}$,
+
+(b) the line inductance $L$, and
+
+(c) the characteristic impedance $Z_{0}$.
+
+Note($\varepsilon=\varepsilon_{\mathrm{r}}\varepsilon_{\mathrm{o}}$ and $\varepsilon_{\mathrm{o}}=8.854\times10^{-12}\,\mathrm{F/m}$. and $\mu=\mu_{\mathrm{r}}\mu_{0}$ and $\mu_{0}=4\pi\times10^{-7}\,\mathrm{H/m}$.
+
+# Solution:
+
+(a)
+
+$$
+u _ { \mathrm { p } } = { \frac { c } { \sqrt { \varepsilon _ { \mathrm { T } } } } } = { \frac { 3 \times 10 ^{8} } { \sqrt { 4 } } } = 1 . 5 \times 10 ^{8} \, \mathrm { m / s } .
+$$
+
+$$
+u _ { \mathrm { P } } = \frac { 1 } { \sqrt { L ^{\prime} C ^{\prime} } } \ ,  u _ { \mathrm { P } } ^{2} = \frac { 1 } { L ^{\prime} C ^{\prime} } .
+$$
+
+$$
+L ^{\prime} = \frac { 1 } { u _ { \mathrm { p } } ^{2} C ^{\prime} } = \frac { 1 } { ( 1 . 5 \times 10 ^{8} ) ^{2} \times 10 \times 10 ^{- 12} } = 4 . 45 ~ ~ ~ ~ ( \mu \mathrm { H / m } ) .
+$$
+
+$$
+Z _ { 0 } = \sqrt { \frac { L ^{\prime} } { C ^{\prime} } } = \left( \frac { 4 . 45 \times 10 ^{- 6} } { 10 \times 10 ^{- 12} } \right) ^{1 / 2} = 66 7 . 1 ~ \Omega .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page24' class='markdown-page-text'>[ 第24页 ]</span>---------------------------------------------</span><br><br>
+
+# Special Case #2 Distortionless TL
+
+The velocity of propagation on the typical non-ideal TL is a function of frequency so that signals are distorted as different components of the signal arrive at the load at different times. This effect is called dispersion
+
+A dispersive medium is characterized by a phase velocity which is a function of frequency.
+
+There is a special case of lossy line with the linear phase constant that produces a distortionless line.
+
+ATL can be made distortionless by designing the line such that the per-unit-length parameters satisfy
+
+$$
+{ \frac { R } { L } } = { \frac { G } { C } }  \mathrm { ( d i s t o r t i o n l e s s ~ l i n e ) }
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page25' class='markdown-page-text'>[ 第25页 ]</span>---------------------------------------------</span><br><br>
+
+Inserting the per-unit-length parameter relationship into the general equation for the propagation constant on a lossy line gives
+
+$$
+\begin{aligned} \gamma & = \sqrt { ( R + j \omega L ) ( G + j \omega C ) } \\& = \sqrt { R \left( 1 + j \omega \frac { L } { R } \right) G \left( 1 + j \omega \frac { C } { G } \right) } \\& = \sqrt { R G \left( 1 + j \omega \frac { L } { R } \right) ^{2} } \\& = \sqrt { R G \left( 1 + j \omega \frac { L } { R } \right) } = \alpha + j \beta \\\alpha & = \sqrt { R G } &  \beta = \omega \sqrt { R G } \frac { L } { R } = \omega \sqrt { \frac { G } { R } L } = \omega \sqrt { \frac { C } { L } } L = \omega \sqrt { L C } \end{aligned}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page26' class='markdown-page-text'>[ 第26页 ]</span>---------------------------------------------</span><br><br>
+
+# Notes
+
+Although the shape of the signal is not distorted, the signal will suffer attenuation as the wave propagates along the line since the distortionless line is a lossy TL.
+
+The attenuation constant for a distortionless TL is independent of frequency.
+
+In the previous derivation, we have assumed that the per-unit-length parameters of the TL are independent of frequency. This is also an approximation that depends on the spectral content of the propagating
+
+For very wideband signals, the attenuation and phase constants will, in general both be functions of frequency.
+
+For most practical TLs, we find that $RC > GL$.
+
+In order to satisfy the distortionless line requirement, series loading coils are typically placed periodically along the line to increase $L$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page27' class='markdown-page-text'>[ 第27页 ]</span>---------------------------------------------</span><br><br>
+
+# Summary
+
+|  | $γ = α + jβ$ | Z o |
+| --- | --- | --- |
+| General | $γ = √(R + jωL)(G + jωC)$ | $Z o = √(R + jωL/G + jωC)$ |
+| Lossless |
+|  | $γ = 0 + jω√LC$ | Z o = R o = √(L/C) |
+| Distortionless R C = GL | $γ = √RG + jω√LC$ | Z o = R o = √(L/C) = √(R/G) |
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page28' class='markdown-page-text'>[ 第28页 ]</span>---------------------------------------------</span><br><br>
+
+# ELECTRICAL LENGTH
+
+Electrical length is used in designs with transmission lines prior to establishing the physical length of the line.
+
+The electrical length of a line is expressed either as a fraction of a wavelength or in degrees (or radians), where a wavelength corresponds to $360^{\circ}$ (or $2\pi$ radians).
+
+So, if $\beta$ is the phase constant of a signal on the line and $l_{e} \stackrel{i}{\rightarrow}$ its physical length, the electrical length of the line in radians is $\beta l$.
+
+# Example : Physical and Electrical Length
+
+A transmission line is 10 cm long and at the operating frequency the phase constant $\beta$ is $30\, rad/m$. What is the electrical length of the line?
+
+# Solution
+
+The physical length of the line is $l=10\,cm=0.1\,m$. Then the electrical length of the line is $l_e=\beta l=\left(30\frac{rad}{m}\right)\times0.1\,m=3\,\mathrm{radians}$. The electrical length can also be expressed in terms of wavelength noting that $360^\circ$ corresponds to $2\pi\,\mathrm{radians}$, which also corresponds to $\lambda$. Thus $l_e=3\,\mathrm{radians}=3\times360/(2\pi)=171.9^\circ$ or $l_e=3/(2\pi)\lambda=0.477\,\lambda$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page29' class='markdown-page-text'>[ 第29页 ]</span>---------------------------------------------</span><br><br>
+
+# Voltage Reflection Coefficient
+
+The total voltage on the line can be written as the phasor sum of incident and reflected waves
+
+$$
+\begin{array}{rl} { { \tilde { V } } ( z ) = V _ { 0 } ^{+} ( e ^{- j \beta z} + \Gamma e ^{j \beta z} ) , } & { } \\{ { \tilde { I } } ( z ) = { \frac { V _ { 0 } ^{+} } { Z _ { 0 } } } \; ( e ^{- j \beta z} - \Gamma e ^{j \beta z} ) . } & { } \end{array}
+$$
+
+The amplitude of the reflected voltage wave Normalized to the amplitude of the incident voltage wave is defined as the voltage reflection coefficient, $\Gamma$
+
+The voltage and current on the line consist of a superposition of an incident and a reflected wave; such waves are called standing waves
+
+Only when $\Gamma=0$, there is no reflected wave. To obtain $\Gamma=0$, the load impedance $Z_{L}$ must be equal to the characteristic impedance $Z_{0}$ of the transmission line. Such a load is said to be matched to the line since there is no
+
+![](images/229420fa93114038657aa34c307aac1a5abb0ff6887d007f39c9c7b2593983af_41.jpg){width=41%}
+
+$$
+\begin{array}{rl} & { \Gamma = \frac { V _ { 0 } ^{-} } { V _ { 0 } ^{+} } = \frac { Z _ { L } - Z _ { 0 } } { Z _ { L } + Z _ { 0 } } } \\& {  = \frac { Z _ { L } / Z _ { 0 } - 1 } { Z _ { L } / Z _ { 0 } + 1 }  \mathrm { R e f l e c t i o n ~ c o e f f i c i e n t } } \\& {  = \frac { Z _ { L } - 1 } { Z _ { L } + 1 }  ( \mathrm { d i m e n s i o n l e s s } ) ,  ( 2 . 3 ) } \end{array}
+$$
+
+$Z_{\mathrm{\~L\~}}=\frac{Z_{\mathrm{\~L\~}}}{Z_{0}}$ Normalized load impedance
+
+$Z_{L}= Z_{0}\rightarrow\Gamma=0$: Load is matched to the line i.e., no standing waves
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page30' class='markdown-page-text'>[ 第30页 ]</span>---------------------------------------------</span><br><br>
+
+# Voltage Reflection Coefficient
+
+Table 2-3 Magnitude and phase of the reflection coefficient for various types of load. The normalized load impedance $z_{\mathrm{L}}=Z_{\mathrm{L}}/Z_{0}=(R+jX)/Z_{0}=r+jx$, where $r=R/Z_{0}$ and $x=X/Z_{0}$ are the real and imaginary parts of $z_{\mathrm{L}}$, respectively.
+
+![](images/c1cca221600ba3c832e594efbab8eec49cc8075a76cea5d05e3a2ae0686c6d23_79.jpg){width=79%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page31' class='markdown-page-text'>[ 第31页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 2-3:
+
+A 100 $\Omega$ TL is connected to a load consisting of a $50\Omega$ resistor in series with a $10$ pF capacitor. Find the reflection coefficient at the load for a $100MHz$ signal.
+
+Solution: The following quantities are given $R_{\mathrm{\~L\~}}=50$, $C_{\mathrm{\~L\~}}=10$ pF = $10^{-11}$ F, $Z_{0}=$ 100, $f=$ 100 MHz = $10^{8}$ Hz.
+
+The normalized load impedance is
+
+$$
+\begin{array}{rl} { z _ { \mathrm { L } } = \frac { Z _ { \mathrm { L } } } { Z _ { 0 } } } & { = \frac { R _ { \mathrm { L } } - j / ( \omega C _ { \mathrm { L } } ) } { Z _ { 0 } } } \\& { = \frac { 1 } { 10 0 } \left( 50 - j \frac { 1 } { 2 \pi \times 10 ^{8} \times 10 ^{- 11} } \right) } \\& { = ( 0 . 5 - j 1 . 59 ) \Omega . } \end{array}
+$$
+
+![](images/3109b158658c8db63682cf912306e3ee9987cfd466a0c3eb8c53064581bcd659_47.jpg){width=47%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page32' class='markdown-page-text'>[ 第32页 ]</span>---------------------------------------------</span><br><br>
+
+From Eq. (2.59), the voltage reflection coefficient is
+
+$$
+\begin{array}{rl} & { \Gamma = \frac { z _ { \mathrm { L } } - 1 } { z _ { \mathrm { L } } + 1 } = \frac { 0 . 5 - j 1 . 59 - 1 } { 0 . 5 - j 1 . 59 + 1 } } \\& { = \frac { - 0 . 5 - j 1 . 59 } { 1 . 5 - j 1 . 59 } = \frac { - 1 . 67 e ^{j 72 . 6 ^ { \circ} } } { 2 . 19 e ^{- j 46 . 7 ^ { \circ} } } = - 0 . 76 e ^{j 11 9 . 3 ^ { \circ} } . } \end{array}
+$$
+
+This result may be converted into the form of Eq. (2.62) by replacing the minus sign with $e^{-j180^\circ}$. Thus,
+
+$$
+\Gamma = 0 . 76 e ^{j 11 9 . 3 ^ { \circ} } e ^{- j 18 0 ^ { \circ} } = 0 . 76 e ^{- j 60 . 7 ^ { \circ} } = 0 . 76 \angle - 60 . 7 ^{\circ} ,
+$$
+
+or
+
+$$
+| \Gamma | = 0 . 76 , \, \theta _ { \mathrm { r } } = - 60 . 7 ^{\circ}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page33' class='markdown-page-text'>[ 第33页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 2-5
+
+A $50\Omega$ TL is terminated in a load with $Z_{\mathrm{L}}=(100+j50)\Omega$. Find the voltage reflection coefficient and the voltage standing-wave ratio.
+
+Solution: From Eq. (2.59), is given by
+
+$$
+\Gamma = \frac { z _ { L } - 1 } { z _ { L } + 1 } = \frac { ( 2 + j 1 ) - 1 } { ( 2 + j 1 ) + 1 } = \frac { 1 + j 1 } { 3 + j 1 } .
+$$
+
+Converting the numerator and denominator to polar form yields
+
+$$
+\Gamma = \frac { 1 . 41 4 e ^{j 45 ^ { \circ} } } { 3 . 16 2 e ^{j 18 . 4 ^ { \circ} } } = 0 . 45 e ^{j 26 . 6 ^ { \circ} } .
+$$
+
+Using the definition for $S$ given by Eq. (2.73), we have
+
+$$
+S = \frac { 1 + | \Gamma | } { 1 - | \Gamma | } = \frac { 1 + 0 . 45 } { 1 - 0 . 45 } = 2 . 6 .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page34' class='markdown-page-text'>[ 第34页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-6: A $50\Omega$ lossless TL is terminated in a load with impedance $Z_{\mathrm{L}}=(30-j200)\Omega$. Calculate the voltage reflection coefficient at the load.
+
+Answer: $\Gamma$=0.93$\angle$-27.5°.
+
+Exercise 2-7: A $150\ \Omega$ lossless line is terminated in a capacitor with impedance $Z_{\mathrm{L}} = -j30\ \Omega$. Calculate $\Gamma$.
+
+Answer: $\Gamma=1\angle-157.4^{\circ}$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page35' class='markdown-page-text'>[ 第35页 ]</span>---------------------------------------------</span><br><br>
+
+# Standing Waves
+
+When the load is mismatched, however, the presence of a reflected wave leads to standing waves, and the magnitude of the voltage on the line is not constant. Thus
+
+$$
+\begin{array}{rl} & { | V ( z ) | = | V _ { o } ^{+} | | 1 + \Gamma e ^{2 j \beta z} | = | V _ { o } ^{+} | | 1 + \Gamma e ^{- 2 j \beta \ell} | } \\& { = | V _ { o } ^{+} | | 1 + | \Gamma | e ^{j ( \theta - 2 \beta \ell )} | , } \end{array}
+$$
+
+Where $l$ = -z is the positive distance measured from the load at $z=0$, and $\theta$ is the phase of the reflection coefficient ($\Gamma=|\Gamma|e^{j\theta}$). This result shows that the voltage magnitude oscillates with position $z$ along the line. The maximum value occurs when the phase term $e^{j(\theta-2\beta)}=1$ and is given by $V_{\max}=|V_{o}^{+}|(1+|\Gamma|)$.
+
+The minimum value occurs when the phase term $e^{j(\theta-2\beta)}=-1$
+
+$V_{\mathrm{min}}=|V_{o}^{+}|(1-\left|\Gamma\right|).$
+
+![](images/9c19e04998a27b18cecebb0bc99c7c4ad541cfd2d532373245b7208c67e9015a_31.jpg){width=31%}
+
+Remember: Standing wave is created due to interference between the traveling waves (incident & reflected)
+
+As $|\Gamma|$ increases, the ratio of $V_{\mathrm{max}}$ to $V_{\mathrm{min}}$ increases, so a measure of the mismatch of a line, called the standing wave ratio (SWR), can be defined as
+
+$$
+\mathrm { S W R } = \frac { V _ { \operatorname* { m a x } } } { V _ { \operatorname* { m i n } } } = \frac { 1 + | \Gamma | } { 1 - | \Gamma | } . ~ 1 \leq \mathrm { S W R } \leq \infty ,
+$$
+
+SWR < 2 is usually considered a "good match" Some applications require SWR < 1.1 or better.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page36' class='markdown-page-text'>[ 第36页 ]</span>---------------------------------------------</span><br><br>
+
+# STANDING WAVES
+
+Animated Reflectometer Calculator - HTML 5 Version | rfmentor.com
+
+# Reflectometer Calculator
+
+![](images/fff0c196e99966facf07f6de381909edee40cf09f5325a281ae2c8394ad2cbdd_74.jpg){width=74%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page37' class='markdown-page-text'>[ 第37页 ]</span>---------------------------------------------</span><br><br>
+
+# STANDING WAVES
+
+# Standing Wave
+
+http://www.falstad.com/circuit/e-tlstand.html
+
+![](images/2903c15a9cbd894412c0e936836ddb944c6bc1f00ab906aabc1f03b0d6d6165f_65.jpg){width=65%}
+
+Due to standing wave the received wave at the load is now different
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page38' class='markdown-page-text'>[ 第38页 ]</span>---------------------------------------------</span><br><br>
+
+# Standing Wave Patterns
+
+The standing wave patterns provide the maximum and minimum values of voltage at each location on the transmission line for given load and generator.
+
+The patterns present a succession of maxima and minima which repeat in space with a period of $\lambda$T2, due to constructive or destructive interference between forward and reflected (backward) waves.
+
+If the load is matched to the transmission line ($Z_{L} = Z_{0}$) the voltage standing wave pattern is flat, with value $|V_{0}^{\dagger}|$.
+
+If the load is infinite (open circuit), $Z_{L}=\infty$, the voltage standing wave pattern starts with a maximum at the load.
+
+If the load is zero (short circuit), $Z_{L} = 0$, the voltage standing wave pattern starts with a minimum at the load.
+
+![](images/f40a9168587815b5ee67891cebd5b8bb9e385c8af00b644519f536f8ca3f7d37_28.jpg){width=28%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page39' class='markdown-page-text'>[ 第39页 ]</span>---------------------------------------------</span><br><br>
+
+# Standing Waves: Maxima & Minima of Voltage Magnitude
+
+# Magnitude of phasor voltage along the lossless TL:
+
+$$
+\left| \widetilde { V } ( d ) \right| = \left| V _ { 0 } ^{+} \right| \left[ 1 + \left| \Gamma \right| ^{2} + 2 \left| \Gamma \right| \cos ( 2 \beta d - \theta _ { \mathrm { r } } ) \right] ^{1 /}
+$$
+
+Let $d_{max}$ and $d_{min}$ be the distances from the load at which $|V(d)|$ is a maximum and a minimum, respectively.
+
+![](images/3ad3697c80e1b5cf46a812d2a65d5ffa003296888ef51f7ede25f14e1751b2b0_62.jpg){width=62%}
+
+![](images/20f73b415a9840070d45e4584bd6ad5f8e76d7b1f17d7553622b7700f1df8228_34.jpg){width=34%} The incident and reflected waves are in-phase and therefore, add constructively to give a value equal to 1.3 V.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page40' class='markdown-page-text'>[ 第40页 ]</span>---------------------------------------------</span><br><br>
+
+# Measurement Of The Voltage Standing Wave Pattern
+
+A slotted-line probe is used to measure the unknown impedance of a load, $Z_{\mathrm{L}}$.
+
+A coaxial slotted line contains a narrow longitudinal slit in the outer conductor.
+
+A small probe inserted in the slit can be used to sample the magnitude of the electric field and, hence, the magnitude $|V(d)|$ of the voltage on the line .
+
+By moving the probe along the length of the slotted line, it is possible to measure $|V|\max$ and $|V|\min$ and the distances from the load at which they occur.
+
+Then calculate $S = |V|\max / |V|\min$
+
+![](images/744196457b9e8fd93c60683456f879b46f157828cfb234e7e3b5f146045e2cbb_25.jpg){width=25%}
+
+![](images/4686c8370d105829bde1fc4770705b1e123892d25aa5efeee13494cd50856e67_19.jpg){width=19%}
+
+![](images/6586771f5fc122c3b9621309d982c7d415693b7ecec07342d595d1632305962b_37.jpg){width=37%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page41' class='markdown-page-text'>[ 第41页 ]</span>---------------------------------------------</span><br><br>
+
+# Measurement of Unknown Impedance $Z_{L}$
+
+A measurement of the voltage standing wave pattern provides the locations of the first voltage maximum and of the first voltage minimum with respect to the load.
+
+The ratio of the voltage magnitude at these points gives directly the voltage standing wave ratio (VSWR).
+
+This information is sufficient to determine the load impedance $Z_{L}$, if the characteristic impedance of the transmission line $Z_{0}$ is known.
+
+STEP 1: The VSWR provides the magnitude of the load reflection coefficient
+
+$$
+\left| \Gamma \right| = { \frac { S - 1 } { S + 1 } }
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page42' class='markdown-page-text'>[ 第42页 ]</span>---------------------------------------------</span><br><br>
+
+# Measurement of Unknown Impedance $Z_{L}$
+
+STEP 2: The distance from the load of the first maximum or minimum gives the phase of the reflection coefficient.
+
+$$
+\begin{array}{rl} { 2 \beta d _ { \mathrm { m a x } } - \theta _ { \mathrm { r } } = 2 n \pi , } & { } \\{ ( 2 \beta d _ { \mathrm { m i n } } - \theta _ { \mathrm { r } } ) = ( 2 n + 1 ) \pi } & { } \end{array}
+$$
+
+STEP 3: The load impedance is obtained by.
+
+$$
+Z _ { \mathrm { L } } = Z _ { 0 } \left[ { \frac { 1 + \Gamma } { 1 - \Gamma } } \right]
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page43' class='markdown-page-text'>[ 第43页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 2-6: Measuring $Z_{\mathrm{\~L\~}}$ with a Slotted Line
+
+![](images/6f49604ec215bb3078c376979ae04e49daa05e40c5e3dcc422a179e888772f13_45.jpg){width=45%}
+
+Solution: The following quantities are given:
+
+$$
+\begin{array}{r} { Z _ { 0 } = 50 \; \Omega , } \\{ S = 3 , } \\{ d _ { \mathrm { m i n } } = 12 \; \mathrm { c m } . } \end{array}
+$$
+
+Since the distance between successive voltage minima is $\lambda/2$,
+
+$$
+\lambda = 2 \times 0 . 3 = 0 . 6 \, \mathrm { m } ,
+$$
+
+and
+
+$$
+\beta = { \frac { 2 \pi } { \lambda } } = { \frac { 2 \pi } { 0 . 6 } } = { \frac { 10 \pi } { 3 } }  ( \mathrm { r a d / m } ) .
+$$
+
+From Eq. (2.73), solving for $|\Gamma|$ in terms of $S$ gives
+
+$$
+\begin{array}{r} { | \Gamma | = \frac { S - 1 } { S + 1 } } \\{ = \frac { 3 - 1 } { 3 + 1 } } \\{ = 0 . 5 . } \end{array}
+$$
+
+Next, we use the condition given by Eq. (2.71) to find $\theta_{\mathrm{r}}$:
+
+$2\beta d_{\mathrm{min}}-\theta_{\mathrm{r}}=\pi$, for $n=0$ (first minimum),
+
+which gives
+
+$$
+\begin{array}{rl} & { \theta _ { \mathrm { r } } = 2 \beta d _ { \mathrm { m i n } } - \pi } \\& { = 2 \times \frac { 10 \pi } { 3 } \times 0 . 12 - \pi } \\& { = - 0 . 2 \pi ~ ( \mathrm { r a d } ) } \\& { = - 36 ^{\circ} . } \end{array}
+$$
+
+Hence,
+
+$$
+\begin{array}{rl} & { \Gamma = | \Gamma | e ^{j \theta _ { \mathrm { r} } } } \\& { = 0 . 5 e ^{- j 36 ^ { \circ} } } \\& { = 0 . 40 5 - j 0 . 29 4 . } \end{array}
+$$
+
+Solving Eq. (2.59) for $Z_{\mathrm{\~L\~}}$, we have
+
+$$
+\begin{array}{r} { Z _ { \mathrm { L } } = Z _ { 0 } \left[ \frac { 1 + \Gamma } { 1 - \Gamma } \right] } \\{ = 50 \left[ \frac { 1 + 0 . 40 5 - j 0 . 29 4 } { 1 - 0 . 40 5 + j 0 . 29 4 } \right] } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page44' class='markdown-page-text'>[ 第44页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+A 100-$\Omega$ transmission line is connected to a load consisting of a 50-$\Omega$ resistor in series with a 10-pF capacitor. Find the reflection coefficient at the load for a 100-MHz signal.
+
+# Solution
+
+f=100 MHz
+
+$$
+\begin{aligned} Z_{L}=R_{L}+\frac{1}{j \omega C_{L}} \\Z_{L}=R_{L}-\frac{J}{\omega C_{L}} \\=50-\frac{j}{(2 \pi)\left(10^{8}\right)} \left(10^{-11}\right)=50-159 j(\Omega) \end{aligned}
+$$
+
+$$
+\Gamma = \frac { Z _ { L } - Z _ { 0 } } { Z _ { L } + Z _ { 0 } } = \frac { 50 - 15 9 j - 10 0 } { 50 - 15 9 j + 10 0 } = \frac { - 50 - 15 9 j } { 15 0 - 15 9 j }
+$$
+
+![](images/aa4e74ad231ac2986b9187253193cd45ac1bd5e77cb9aedb6913775f8fd8c3ee_30.jpg){width=30%}
+
+Can rationalize the denominator and divide
+
+$$
+\Gamma = \frac { - 50 - 15 9 j } { 15 0 - 15 9 j } \Big [ \frac { 15 0 + 15 9 j } { 15 0 + 15 9 j } \Big ] = . 37 21 - . 66 55 j = 0 . 76 \angle - 60 . 8 ^{\circ}
+$$
+
+or convert to polar form, then divide
+
+$$
+\Gamma = \frac { 16 6 . 7 \angle - 10 7 . 5 ^{\circ} } { 21 8 . 6 \angle - 46 . 7 ^{\circ} } = \frac { 16 6 . 7 } { 21 8 . 6 } \angle ( - 10 7 . 5 - - 46 . 7 ) = 0 . 76 \angle - 60 . 8 ^{\circ}
+$$
+
+# What does this mean?
+
+76% of the wave is reflected at the load and is phase shifted by $-60.8^{\circ}$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page45' class='markdown-page-text'>[ 第45页 ]</span>---------------------------------------------</span><br><br>
+
+# Wave Impedance
+
+At a distance $d$ from the load: the input impedance (Wave Impedance)
+
+$$
+\begin{array}{rl} & { Z ( d ) \; = \; \frac { \tilde { V } ( d ) } { \tilde { I } ( d ) } } \\& {  = \; \frac { V _ { 0 } ^{+} [ e ^{j \beta d} + \Gamma e ^{- j \beta d} ] } { V _ { 0 } ^{+} [ e ^{j \beta d} - \Gamma e ^{- j \beta d} ] } \; Z _ { 0 } } \\& {  = \; Z _ { 0 } \left[ \frac { 1 + \Gamma e ^{- j 2 \beta d} } { 1 - \Gamma e ^{- j 2 \beta d} } \right] } \\& {  = \; Z _ { 0 } \left[ \frac { 1 + \Gamma _ { d } } { 1 - \Gamma _ { d } } \right]  ( \Omega ) , } \end{array}
+$$
+
+where we define
+
+$$
+\Gamma _ { d } = \Gamma e ^{- j 2 \beta d} = | \Gamma | e ^{j \theta _ { \mathrm { r} } } e ^{- j 2 \beta d} = | \Gamma | e ^{j ( \theta _ { \mathrm { r} } - 2 \beta d ) }
+$$
+
+as the phase-shifted voltage reflection coefficient,
+
+![](images/a8745d43cb0c990123f109f7f06d55de1baafa555090982eecbee689d774d04f_45.jpg){width=45%} (b) Equivalent circuit
+
+Z(d) is the ratio of the total voltage (incident and reflected-wave voltages) to the total current at any point d on the line, in contrast with the characteristic impedance of the line Z₀, which relates the voltage and current of each of the two waves individually (Z₀=V⁺₀/I⁺₀=-V⁻₀/I⁻₀).
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page46' class='markdown-page-text'>[ 第46页 ]</span>---------------------------------------------</span><br><br>
+
+# Input Impedance
+
+![](images/80eb58c94e9356d97e326555d8ca66439c7183b56698870a398ed395445ba582_42.jpg){width=42%}
+
+$$
+Z _ { \mathrm { i n } } = Z ( l ) = Z _ { 0 } \left[ \frac { 1 + \Gamma _ { l } } { 1 - \Gamma _ { l } } \right] .
+$$
+
+$$
+\Gamma _ { l } = \Gamma e ^{- j 2 \beta l} = | \Gamma | e ^{j ( \theta _ { \mathrm { r} } - 2 \beta l ) } .
+$$
+
+$$
+\begin{array}{rl} & { Z _ { \mathrm { i n } } = Z _ { 0 } \left( \frac { z _ { \mathrm { L } } \cos \beta l + j \sin \beta l } { \cos \beta l + j z _ { \mathrm { L } } \sin \beta l } \right) } \\& { = Z _ { 0 } \left( \frac { z _ { \mathrm { L } } + j \tan \beta l } { 1 + j z _ { \mathrm { L } } \tan \beta l } \right) . } \end{array}
+$$
+
+At input, $d = \lceil$:
+
+Fig. 2-18. The phasor voltage across $Z_{\mathrm{in}}$ is given by
+
+$$
+\widetilde { V } _ { \mathrm { i } } = \tilde { I } _ { \mathrm { i } } Z _ { \mathrm { i n } } = \frac { \tilde { V } _ { \mathrm { g } } Z _ { \mathrm { i n } } } { Z _ { \mathrm { g } } + Z _ { \mathrm { i n } } } ~ ,
+$$
+
+Simultaneously, from the standpoint of the transmission line, the voltage across it at the input of the line is given by Eq.(2.63a) with $z = -l$:
+
+$$
+\tilde { V } _ { i } = \tilde { V } ( - l ) = V _ { 0 } ^{+} [ e ^{j \beta l} + \Gamma e ^{- j \beta l} ] .
+$$
+
+Equating Eq. (2.80) to Eq. (2.81) and then solving for $V_{0}^{+}$ leads to
+
+$$
+V _ { 0 } ^{+} = \left( \frac { \widetilde { V _ { g } } Z _ { \mathrm { i n } } } { Z _ { \mathrm { g } } + Z _ { \mathrm { i n } } } \right) \left( \frac { 1 } { e j \beta l } + \Gamma e ^{- j \beta l} \right) .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page47' class='markdown-page-text'>[ 第47页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 2-7:
+
+A 1.05 GHz generator circuit with series impedance $Z_{\mathrm{g}}=10 \Omega$ and voltage source given by $\nu_{\mathrm{g}}(t)=10 \sin(\omega t+30^{\circ})$ (V) is connected to a load $Z_{\mathrm{L}}=(100+j50) \Omega$ through a $50 \Omega$, $67 \mathrm{\~cm}$ long lossless TL. The phase velocity of the line is $0.7 c$, where $c$ is the velocity of light in a vacuum.
+
+Find $\Gamma$ and $Z_{in}$.
+
+![](images/2bdf9e7e52e48f5dbff72852af5a47b81885b3379b8b0519a74f52930dff632e_55.jpg){width=55%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page48' class='markdown-page-text'>[ 第48页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 2-7:Solution
+
+From the relationship $u_{\mathrm{p}}=\lambda f$, we find the wavelength
+
+$$
+\begin{array}{rl} { \lambda = \frac { u _ { \mathrm { p } } } { f } } & { { } = \frac { 0 . 7 \times 3 \times 10 ^{8} } { 1 . 05 \times 10 ^{9} } = 0 . 2 \, \mathrm { m } , } \end{array}
+$$
+
+and
+
+$$
+\beta l = \frac { 2 \pi } { \lambda } ~ l ~ ~ ~ = \frac { 2 \pi } { 0 . 2 } \times 0 . 67 ~ ~ ~ = 6 . 7 \pi = 0 . 7 \pi = 12 6 ^{\circ} ,
+$$
+
+where we have subtracted multiples of $2\pi$.
+
+The voltage reflection coefficient at the load is
+
+$$
+\Gamma = \frac { Z _ { \mathrm { L } } - Z _ { 0 } } { Z _ { \mathrm { L } } + Z _ { 0 } } = \frac { ( 10 0 + j 50 ) - 50 } { ( 10 0 + j 50 ) + 50 } = 0 . 45 e ^{j 26 . 6 ^ { \circ} } .
+$$
+
+$$
+\begin{array}{rl} & { Z _ { \mathrm { i n } } = Z _ { 0 } \left( \frac { 1 + \Gamma _ { l } } { 1 - \Gamma _ { l } } \right) = Z _ { 0 } \left( \frac { 1 + \Gamma e ^{- j 2 \beta l} } { 1 - \Gamma e ^{- j 2 \beta l} } \right) } \\& { = 50 \left( \frac { 1 + 0 . 45 e ^{j 26 . 6 ^ { \circ} } e ^{- j 25 2 ^ { \circ} } } { 1 - 0 . 45 e ^{j 26 . 6 ^ { \circ} } e ^{- j 25 2 ^ { \circ} } } \right) = ( 21 . 9 + j 17 . 4 ) ~ \Omega . } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page49' class='markdown-page-text'>[ 第49页 ]</span>---------------------------------------------</span><br><br>
+
+# The Time-average Power
+
+A transmission line is used to transfer power from the source to the load. The time-average power flow along the line at point z is given by
+
+![](images/a6558456aff500331e778ee4751811f33bfc4d29902419800975eb8f4deaab93_63.jpg){width=63%}
+
+The first term is the incident power $P_{a}^{i}$, while the second term is the reflected power $P^{r}$
+
+$$
+P _ { \mathrm { a v } } ^{\mathrm { i} } = \frac { | V _ { 0 } ^{+} | ^{2} } { 2 Z _ { 0 } }  ( W ) ,
+$$
+
+![](images/1fe42cdd78bda0b38460bfb54a7de59e2316473743c93d3f759412d655c31d9d_47.jpg){width=47%}
+
+$$
+P _ { \mathrm { a v } } ^{\mathrm { r} } = - | \Gamma | ^{2} \frac { | V _ { 0 } ^{+} | ^{2} } { 2 Z _ { 0 } } = - | \Gamma | ^{2} P _ { \mathrm { a v } } ^{\mathrm { i} } .
+$$
+
+The average reflected power is equal to the average incident power, diminished by a multiplicative factor of $|\Gamma|^2$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page50' class='markdown-page-text'>[ 第50页 ]</span>---------------------------------------------</span><br><br>
+
+# The Time-average Power
+
+$\Gamma=0$ $\rightarrow$ Maximum power is delivered to the load
+
+$|\Gamma|=1$ $\rightarrow$ No power is delivered to the load
+
+When the load is mismatched, not all of the available power from the generator is delivered to the load. This "loss" is called return loss (RL), and is defined (in dB) as
+
+$$
+\begin{array}{r} { \boxed { \mathrm { R L } = - 20 \log | \Gamma | ~ \mathrm { d B } } \\{ \boxed { \mathrm { o r ~ } R L ~ = ~ - 10 l o g \frac { P _ { i } } { P _ { r } } ~ ~ ~ \mathrm { d B } } \end{array}
+$$
+
+Matched load ($\Gamma=0$)→ $RL=\infty dB$ (no reflected power)
+
+Total Reflection ($|\Gamma|=1$)→ $RL=\infty dB$ (all incident power is reflected)
+
+Return loss is a nonnegative number for reflection from a passive network.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page51' class='markdown-page-text'>[ 第51页 ]</span>---------------------------------------------</span><br><br>
+
+# Short-Circuited Line
+
+$$
+\begin{array}{rl} & { \mathrm { F o r ~ t h e ~ s h o r t - c i r c u i t e d ~ l i n e : }  \Gamma = - 1 } \\& { \tilde { V } _ { \mathrm { s c } } ( d ) = V _ { 0 } ^{+} [ e ^{j \beta d} - e ^{- j \beta d} ] = 2 j V _ { 0 } ^{+} \sin \beta d , } \\& { \tilde { I } _ { \mathrm { s c } } ( d ) = \frac { V _ { 0 } ^{+} } { Z _ { 0 } } [ e ^{j \beta d} + e ^{- j \beta d} ] = \frac { 2 V _ { 0 } ^{+} } { Z _ { 0 } } \cos \beta d , } \\& { Z _ { \mathrm { s c } } ( d ) = \frac { \tilde { V } _ { \mathrm { s c } } ( d ) } { \tilde { I } _ { \mathrm { s c } } ( d ) } = j Z _ { 0 } \tan \beta d . } \end{array}
+$$
+
+At its input, the line appears like an inductor or a capacitor depending on the sign of $\tan\beta d$
+
+$j\omega L_{\mathrm{eq}}=jZ_{0}\tan\beta l,\mathrm{if}\;\tan\beta l\geq0$
+
+$\frac{1}{j\omega C_{\mathrm{eq}}}=\j Z_{0}\tan\beta l,$
+
+if $\tan\beta l\leq0$
+
+![](images/e733bc46437f7efa0e630fbada43edfb0e1c0b7ce3745eff02b040f8c63c0c21_39.jpg){width=39%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page52' class='markdown-page-text'>[ 第52页 ]</span>---------------------------------------------</span><br><br>
+
+# Open-Circuited Line
+
+$$
+\begin{array}{rl} & { \tilde { V } _ { \mathrm { o c } } ( d ) = V _ { 0 } ^{+} [ e ^{j \beta d} + e ^{- j \beta d} ] = 2 V _ { 0 } ^{+} \cos \beta d , } \\& { \tilde { I } _ { \mathrm { o c } } ( d ) = \frac { V _ { 0 } ^{+} } { Z _ { 0 } } [ e ^{j \beta d} - e ^{- j \beta d} ] = \frac { 2 \, j \, V _ { 0 } ^{+} } { Z _ { 0 } } \sin \beta d , } \end{array}
+$$
+
+$$
+Z _ { \mathrm { i n } } ^{\mathrm { o c} } = \frac { \tilde { V } _ { \mathrm { o c } } ( l ) } { \tilde { I } _ { \mathrm { o c } } ( l ) } = - j Z _ { 0 } \cot \beta l .
+$$
+
+![](images/80365a9f03bef4daf08de0994f90f3201bd8e5c811e415c7ffb8d002a1fbb746_36.jpg){width=36%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page53' class='markdown-page-text'>[ 第53页 ]</span>---------------------------------------------</span><br><br>
+
+# Short-Circuit/Open-Circuit Method
+
+For a line of known length $l$, measurements of its input impedance, one when terminated in a short and another when terminated in an open, can be used to find its characteristic impedance $Z_0$ and electrical length
+
+$\beta l$
+
+![](images/f2735464e65c10c3c8a114e495cdc8fb373533188d26125c3871e7e066b7e967_57.jpg){width=57%}
+
+$Z_{0}=\sqrt{Z_{\mathrm{\~in\~}}^{\mathrm{sc\~}}Z_{\mathrm{\~in\~}}^{\mathrm{oc\~}}},$
+
+$\tan \beta l = \sqrt { \frac { - Z _ { \mathrm { i n } } ^ { \mathrm { s c } } } { Z _ { \mathrm { i n } } ^ { \mathrm { o c } } } } .$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page54' class='markdown-page-text'>[ 第54页 ]</span>---------------------------------------------</span><br><br>
+
+Example 2-8: Equivalent Reactive Elements
+
+Choose the length of a shorted 50-$\Omega$ lossless transmission line (Fig. 2-20) such that its input impedance at 2.25 GHz is identical to that of a capacitor with capacitance $C_{\mathrm{eq}}=4$ pF. The wave velocity on the line is 0.75c.
+
+![](images/2aebec3eb2c222bb26cce14ebda36619f30f4cf9843c64e8f63fa76c2650f933_45.jpg){width=45%}
+
+Solution: We are given
+
+$$
+\begin{array}{rl} & { u _ { \mathrm { p } } = 0 . 75 c = 0 . 75 \times 3 \times 10 ^{8} = 2 . 25 \times 10 ^{8} ~ \mathrm { m / s } , } \\& { Z _ { 0 } = 50 ~ \Omega , } \\& { f = 2 . 25 ~ \mathrm { G H z } = 2 . 25 \times 10 ^{9} ~ \mathrm { H z } , } \\& { C _ { \mathrm { e q } } = 4 ~ \mathrm { p F } = 4 \times 10 ^{- 12} ~ \mathrm { F } . } \end{array}
+$$
+
+The phase constant is
+
+$$
+\beta = \frac { 2 \pi } { \lambda } = \frac { 2 \pi f } { u _ { \mathrm { p } } } = \frac { 2 \pi \times 2 . 25 \times 10 ^{9} } { 2 . 25 \times 10 ^{8} } = 62 . 8 ~ ~ ~ ~ ~ ( \mathrm { r a d / m } ) .
+$$
+
+From Eq. (2.89), it follows that
+
+$$
+\begin{array}{rl} & { \tan \beta l = - \frac { 1 } { Z _ { 0 } \omega C _ { \mathrm { e q } } } } \\& { = - \frac { 1 } { 50 \times 2 \pi \times 2 . 25 \times 10 ^{9} \times 4 \times 10 ^{- 12} } } \\& { = - 0 . 35 4 . } \end{array}
+$$
+
+The tangent function is negative when its argument is in the second or fourth quadrants. The solution for the second quadrant is
+
+$$
+\beta l _ { 1 } = 2 . 8 \, \mathrm { r a d }  \mathrm { o r }  l _ { 1 } = \frac { 2 . 8 } { \beta } = \frac { 2 . 8 } { 62 . 8 } = 4 . 46 \, \mathrm { c m } ,
+$$
+
+and the solution for the fourth quadrant is
+
+$$
+\beta l _ { 2 } = 5 . 94 \, \mathrm { r a d }  \mathrm { o r }  l _ { 2 } = { \frac { 5 . 94 } { 62 . 8 } } = 9 . 46 \, \mathrm { c m } .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page55' class='markdown-page-text'>[ 第55页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 2-9:
+
+Find $Z_{0}$ and $\beta$ of a 57 cm long lossless TL whose input impedance was measured as $Z_{\mathrm{in}}^{\mathrm{sc}}=j40.42\Omega$ when terminated in a short circuit and as $Z_{\mathrm{in}}^{o c}=-j121.24\Omega$ when terminated in an open circuit. From other measurements, we know that the line is between 3 and 3.25 wavelengths long.
+
+# Solution:
+
+$$
+\begin{array}{rl} & { \mathrm { ~ c ~ o ~ m ~ E q s . ~ ( 2 . 94 ) ~ a n d ~ ( 2 . 95 ) , }  Z _ { 0 } = \sqrt [ + ] { Z _ { \mathrm { i n } } ^{\mathrm { s c} } \, Z _ { \mathrm { i n } } ^{\mathrm { o c} } } = \sqrt { ( j 40 . 42 ) ( - j 12 1 . 24 ) } = 70 \; \Omega , } \\& { \tan \beta l = \sqrt { \frac { - Z _ { \mathrm { i n } } ^{\mathrm { s c} } } { Z _ { \mathrm { i n } } ^{\mathrm { o c} } } } = \sqrt { \frac { 1 } { 3 } } . } \end{array}
+$$
+
+Since $l$ is between $3\lambda$ and $3.25\lambda$, $\theta l = (2\pi l/\lambda)$ is between $6\pi$ radians and $(13\pi/2)$ radians. This places $\theta l$ in the first quadrant ($0$ to $\pi/2$) radians. Hence, the only acceptable solution for $\tan \theta = \sqrt{1/3}$ is $\theta l = \pi/6$ radians. This value, however, does not include the $2\pi$ multiples associated with the integer $\lambda$ multiples of $l$. Hence, the true value of $\theta l$ is
+
+$$
+\beta l = 6 \pi + { \frac { \pi } { 6 } } = 19 . 4  ( \mathrm { r a d } ) ,
+$$
+
+in which case
+
+$$
+\beta = \frac { 19 . 4 } { 0 . 57 } = 34 ~ ~ ~ ~ ~ ( \mathrm { r a d / m } ) .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page56' class='markdown-page-text'>[ 第56页 ]</span>---------------------------------------------</span><br><br>
+
+2-8.4 Lines of Length $l = n\lambda/2$
+
+If $l = n\lambda/2$, where $n$ is an integer,
+
+$$
+\tan \beta l \, = \tan { [ ( 2 \pi / \lambda ) \, ( n \lambda / 2 ) ] } = \tan n \pi \, = 0 .
+$$
+
+Consequently, Eq. (2.79) reduces to
+
+$$
+Z _ { \mathrm { i n } } = Z _ { \mathrm { L } } , ~ ~ ~ ~ ~ ~ \mathrm { f o r } ~ l = n \lambda / 2 , ~ ~ ~ ~ ( 2 . 96 )
+$$
+
+which means that a half-wavelength line (or any integer multiple of $\lambda/2$) does not modify the load impedance.
+
+# 2-8.5 Quarter-Wavelength Transformer
+
+$$
+Z _ { \mathrm { i n } } = \frac { Z _ { 0 } ^{2} } { Z _ { \mathrm { L } } } \, ,  \mathrm { f o r } \, l = \lambda / 4 + n \lambda / 2 .
+$$
+
+# sample 2-10: $\lambda/4$ Transformer
+
+50-$\Omega$ lossless transmission line is to be matched to a resistive and impedance with $Z_{\mathrm{L}}=100 \Omega$ via a quarter-wave section shown in Fig. 2-22, thereby eliminating reflections along feedline. Find the required characteristic impedance of the arter-wave transformer.
+
+![](images/c21c4ba5e98ff271156246e8713471f1013bfbee33690e5a14973726b8641ea7_41.jpg){width=41%} Figure 2-22: Configuration for Example 2-10.
+
+Solution: To eliminate reflections at terminal $AA'$, the input impedance $Z_{\mathrm{in}}$ looking into the quarter-wave line should be equal to $Z_{01}$, the characteristic impedance of the feedline. Thus, $Z_{\mathrm{in}} = 50 \, \Omega$. From Eq. (2.97),
+
+$$
+Z _ { \mathrm { i n } } = \frac { Z _ { 02 } ^{2} } { Z _ { \mathrm { L } } } ~ ,
+$$
+
+or
+
+$$
+Z _ { 02 } = \sqrt { Z _ { \mathrm { i n } } \, Z _ { \mathrm { L } } } = \sqrt { 50 \times 10 0 } = 70 . 7 \; \Omega .
+$$
+
+Whereas this eliminates reflections on the feedline, it does not eliminate them on the $\lambda/4$ line. However, since the lines
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page57' class='markdown-page-text'>[ 第57页 ]</span>---------------------------------------------</span><br><br>
+
+# Input Impedance of Special Cases
+
+Consider a transmission line of characteristic impedance $Z_0$ feeding a line of different characteristic impedance, $Z_l$.
+
+![](images/3024e9a08f7d4b7540026a7eec09e147f4054b6f30ceab230e6b1b748836f2b6_33.jpg){width=33%}
+
+If the load line is infinitely long, or if it is terminated in its own characteristic impedance, so that there are no reflections from its far end, then the input impedance seen by the feed line is $Z_{l}$, so that the reflection coefficient is
+
+$$
+\Gamma = \frac { Z _ { 1 } - Z _ { 0 } } { Z _ { 1 } + Z _ { 0 } } .
+$$
+
+Not all of the incident wave is reflected; some is transmitted onto the second line. The transmission coefficient, $T$, is expressed as
+
+$$
+\boxed { T = 1 + \Gamma = 1 + \frac { Z _ { 1 } - Z _ { 0 } } { Z _ { 1 } + Z _ { 0 } } = \frac { 2 Z _ { 1 } } { Z _ { 1 } + Z _ { 0 } } . }
+$$
+
+dB as the insertion loss, IL The transmission coefficient between two points in a circuit is often expressed in 1B as the insertion loss TI
+
+$$
+\mathrm { I L } = - 20 \log | T | \, \mathrm { d B } .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page58' class='markdown-page-text'>[ 第58页 ]</span>---------------------------------------------</span><br><br>
+
+# Lossy Transmission Lines
+
+For a lossy line, $Z_{in}$ can be expressed as
+
+$$
+Z _ { \mathrm { i n } } = Z _ { 0 } \left[ \frac { Z _ { L } + Z _ { 0 } \operatorname { t a n h } \gamma \ell } { Z _ { 0 } + Z _ { L } \operatorname { t a n h } \gamma \ell } \right] ~ ~ ~ ( \mathrm { l o s s y } )
+$$
+
+The power delivered to the input of the terminated line at $\overline{z}=-l$ is
+
+$$
+P _ { \mathrm { i n } } = \frac { | V _ { o } ^{+} | ^{2} } { 2 Z _ { 0 } } ( 1 - | \Gamma ( \ell ) | ^{2} ) e ^{2 \alpha \ell} \, ,
+$$
+
+$$
+\begin{array}{r} { V ( z ) , I ( z ) } \\{ Z _ { \mathrm { i n } } \Longrightarrow   Z _ { 0 } , \alpha , \beta } \\{ - l } \end{array} \Longrightarrow \begin{array}{rl} { Z _ { L } } & { { } } \\{ 0 } & { { } } \end{array} \Rightarrow
+$$
+
+where $\Gamma(l)$ is the the reflection coefficient at a distance $l$ from the load is
+
+$$
+\Gamma ( \ell ) = \Gamma e ^{- 2 j \beta \ell} e ^{- 2 \alpha \ell} = \Gamma e ^{- 2 \gamma \ell} .
+$$
+
+The power delivered to the load is
+
+$$
+P _ { L } = \frac { | V _ { o } ^{+} | ^{2} } { 2 Z _ { 0 } } ( 1 - | \Gamma | ^{2} ) .
+$$
+
+The difference in these powers corresponds to the power lost in the line:
+
+$$
+P _ { \mathrm { l o s s } } = P _ { \mathrm { i n } } - P _ { L } = \frac { | V _ { o } ^{+} | ^{2} } { 2 Z _ { 0 } } [ ( e ^{2 \alpha \ell} - 1 ) + | \Gamma | ^{2} ( 1 - e ^{- 2 \alpha \ell} ) ] .
+$$
+
+The first term accounts for the power loss of the incident wave, while the second term accounts for the power loss of the reflected wave; note that both terms increase as $\alpha$ increases.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page59' class='markdown-page-text'>[ 第59页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-12: A $50\ \Omega$ lossless TL uses an insulating material with $\varepsilon_{r}=2.25$. When terminated in an open circuit, how long should the line be for its input impedance to be equivalent to a 10-pF capacitor at 50 MHz?
+
+Answer: $l = 9.92$ cm.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page60' class='markdown-page-text'>[ 第60页 ]</span>---------------------------------------------</span><br><br>
+
+Exercise 2-13: A $300\,\Omega$ feedline is to be connected to a $3\,\mathrm{m}$ long, $150\,\Omega$ line terminated in a $150\,\Omega$ resistor. Both lines are lossless and use air as the insulating material, and the operating frequency is $50\,\mathrm{MHz}$. Determine
+
+(a) the input impedance of the 3 m long line, (b) the voltage standing-wave ratio on the feedline, and (c) the characteristic impedance of a quarter-wave transformer were it to be used between the two lines in order to achieve $S = 1$ on the feedline.
+
+Answer: (a) $Z_{\mathrm{in}}=150\,\Omega$, (b) $S=2$, (c) $Z_{0}=212.1\,\Omega$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page61' class='markdown-page-text'>[ 第61页 ]</span>---------------------------------------------</span><br><br>
+
+Solution: At 50 MHz,
+
+$$
+\lambda = \lambda _ { 0 } = \frac { c } { f } = \frac { 3 \times 10 ^{8} } { 5 \times 10 ^{7} } = 6 \pi .
+$$
+
+$(a)$
+
+$$
+\frac { 1 } { \lambda } = \frac { 3 } { 6 } = 0 . 5 .
+$$
+
+Hence, $Z_{\mathrm{int}}=Z_{\mathrm{L}}=150\Omega$. ($Z_{\mathrm{int}}=Z_{\mathrm{L}}$ if $Z=m\lambda/2$.)
+
+(b)
+
+$$
+\begin{array}{rl} & { \mathbf { I } = \frac { Z _ { i n } - Z _ { 0 } } { Z _ { i n } + Z _ { 0 } } = \frac { 15 0 - 30 0 } { 15 0 + 30 0 } = \frac { - 15 0 } { 45 0 } = - \frac { 1 } { 3 } . } \\& { S = \frac { 1 + | T | } { 1 - | T | } = \frac { 1 + \frac { 1 } { 3 } } { 1 - \frac { 1 } { 3 } } = \frac { 4 / 3 } { 2 / 3 } = 2 . } \end{array}
+$$
+
+$$
+\begin{array}{rl} & { z _ { 12 } ^{2} = z _ { 1 } z _ { 3 } = 30 0 \times 15 0 = 45 . 00 0 } \\& { z _ { 12 } ^{2} = 21 2 . 1 \, 0 . } \end{array}
+$$
+
+where $Z_{1}$ is the feedline and $Z_{3}$ is $Z_{in}$ of part (a).
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page62' class='markdown-page-text'>[ 第62页 ]</span>---------------------------------------------</span><br><br>
+
+# MATIMATAL FORMULAS
+
+A complex number may be represented as
+
+$$
+\begin{array}{rl} & { z = x + j y = r \sqrt { \theta } = r e ^{j \theta} = r \left( \cos \theta + j \sin \theta \right) } \\& { { \mathrm { w h e r e ~ } } x = { \mathrm { R e } } \, z = r \cos \theta ,  y = { \mathrm { I m } } \, z = r \sin \theta } \\& { r = | z | = { \sqrt { x ^{2} + y ^{2} } } ,  \theta = \tan ^{- 1} { \frac { y } { x } } } \\& { j = { \sqrt { - 1 } } ,  { \frac { 1 } { j } } = - j ,  j ^{2} = - 1 } \end{array}
+$$
+
+The complex conjugate of $z = z^* = x - jy = r\angle -\theta = re^{-j\theta}$
+
+$$
+\begin{array}{rl} & { : = z ^{\star} = x - j y = r \angle - \theta = r e ^{- j \theta} } \\& { = r \left( \cos \theta - j \sin \theta \right) } \\& { ( e ^{j \theta} ) ^{n} = e ^{j n \theta} = \cos n \theta + j \sin n \theta  \mathrm { ~ ( d e ~ M o i v r e ' s ~ t h e o r e m ) } } \end{array}
+$$
+
+If $z_{1} = x_{1} + jy_{1}$ and $z_{2} = x_{2} + jy_{2}$, then $z_{1} = z_{2}$ only if $x_{1} = x_{2}$ and $y_{1} = y_{2}$.
+
+$$
+\begin{array}{rl} & { z _ { 1 } \pm z _ { 2 } = ( x _ { 1 } + x _ { 2 } ) \pm j ( y _ { 1 } + y _ { 2 } ) } \\& { z _ { 1 } z _ { 2 } = ( x _ { 1 } x _ { 2 } - y _ { 1 } y _ { 2 } ) + j ( x _ { 1 } y _ { 2 } + x _ { 2 } y _ { 1 } ) } \end{array}
+$$
+
+$$
+z _ { 1 } z _ { 2 } = r _ { 1 } r _ { 2 } \, e ^{j ( \theta _ { 1} + \theta _ { 2 } ) } = r _ { 1 } r _ { 2 } / \theta _ { 1 } + \theta _ { 2 }
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page63' class='markdown-page-text'>[ 第63页 ]</span>---------------------------------------------</span><br><br>
+
+# MATIMATAL FORMULAS
+
+$\sinh \left(x \pm y\right)=\sinh x \cosh y \pm \cosh x \sinh y$ $\cosh \left(x \pm y\right)=\cosh x \cosh y \pm \sinh x \sinh y$ $\sinh \left(x \pm jy\right)=\sinh x \cos y \pm j \cosh x \sin y$ $\cosh \left(x \pm jy\right)=\cosh x \cos y \pm j \sinh x \sin y$
+
+$\tanh\left(x\pm jy\right)=\frac{\sinh2x}{\cosh2x+\cos2y}\pm j\frac{\sin2y}{\cosh2x+\cos2y}$
+
+$\tan A = \frac{\sin A}{\cos A}, \cot A = \frac{1}{\tan A}$
+
+$\sinh x=\frac{e^{x}-e^{-x}}{2},\cosh x=\frac{e^{x}+e^{-x}}{2}$
+
+$\tanh x=\frac{\sinh x}{\cosh x},\coth x=\frac{1}{\tanh x}$
+
+$csc h x=\frac{1}{\sinh x},\operatorname{sech } x=\frac{1}{\cosh x}$
+
+$\sin j x=j \sinh x,$ $\cos j x=\cosh x$
+
+$\sinh j x=j \sin x,$ $\cosh j x=\cos x$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page64' class='markdown-page-text'>[ 第64页 ]</span>---------------------------------------------</span><br><br>
+
+Table 2-4: Properties of standing waves on a lossless transmission line.
+
+| Voltage Maximum Voltage Minimum | $|\widetilde{V}|_{\max} = |V_0^+| [1 + |\Gamma|]$ $|\widetilde{V}|_{\min} = |V_0^+| [1 - |\Gamma|]$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Positions of voltage maxima (also positions of current minima) | $d_{\max} = \frac{\theta_{\mathrm{r}} \lambda}{4 \pi} + \frac{n \lambda}{2}, n=0, 1, 2, \ldots$ |
+| Position of first maximum (also position of first current minimum) | $d_{\max} = \left\{ \begin{array}{ll} \frac{\theta_{\mathrm{r}} \lambda}{4 \pi}, & \text{if } 0 \leq \theta_{\mathrm{r}} \leq \pi \\ \frac{\theta_{\mathrm{r}} \lambda}{4 \pi} + \frac{\lambda}{2}, & \text{if } - \pi \leq \theta_{\mathrm{r}} \leq 0 \end{array} \right.$ |
+| Positions of voltage minima (also positions of current maxima) | $d_{\min} = \frac{\theta_{\mathrm{r}} \lambda}{4 \pi} + \frac{(2n+1) \lambda}{4}, & n=0, 1, 2, \ldots$ |
+| Position of first minimum (also position of first current maximum) | $d_{\min} = \frac{\lambda}{4} \left( 1+\frac{\theta_{\mathrm{r}}}{\pi} \right)$ |
+| Input Impedance | $Z_{\text{in}} = Z_0 \left( \frac{z_{\mathrm{L}} + j \tan \beta l}{1 + j z_{\mathrm{L}} \tan \beta l} \right) = Z_0 \left( \frac{1+\Gamma l}{1-\Gamma l} \right)$ |
+| $Positions at which $Z_{\text{in}}$ is real$ | at voltage maxima and minima |
+| $$Z_{\text{in}}$ at voltage maxima$ | $Z_{\text{in}} = Z_0 \left( \frac{1+|\Gamma|}{1-|\Gamma|} \right)$ |
+| $$Z_{\text{in}}$ at voltage minima$ | $Z_{\text{in}} = Z_0 \left( \frac{1-|\Gamma|}{1+|\Gamma|} \right)$ |
+| $$Z_{\text{in}}$ of short-circuited line$ | $Z_{\text{in}}^{\text{sc}} = j Z_0 \tan \beta l$ |
+| $$Z_{\text{in}}$ of open-circuited line$ | $Z_{\text{in}}^{\text{oc}} = -j Z_0 \cot \beta l$ |
+| $Z_{\text{in}}$ of line of length $l=n \lambda / 2$ | $Z_{\text{in}} = Z_{\text{L}}, & n=0, 1, 2, \ldots$ |
+| $Z_{\text{in}}$ of line of length $l=\lambda / 4+n \lambda / 2$ | $Z_{\text{in}} = Z_0^2 / Z_{\text{L}}, & n=0, 1, 2, \ldots$ |
+| $$Z_{\text{in}}$ of matched line$ | $Z_{\text{in}} = Z_0$ |
+| $|V_0^+|= \text{amplitude of incident wave};\ \Gamma=|\Gamma| e^{j \theta_t} \text{with}-\pi < \theta_{\mathrm{r}} < \pi;\theta_{\mathrm{r}} \text{in radians};\ \Gamma_l=\Gamma e^{-j 2 \beta l} .$ |
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page65' class='markdown-page-text'>[ 第65页 ]</span>---------------------------------------------</span><br><br>
+
+# Technology Brief : EM Cancer Zapper
+
+![](images/1730278bf09385200f50004680d526db772748f1a76228a6c29ae08b2bde7da0_44.jpg){width=44%} Figure TF4-1: Microwave ablation for liver cancer treatment.
+
+![](images/83831be53dfdf520d85ff42134942ec1d98f3d60113523d1c98fd9f8717c5e49_42.jpg){width=42%} FigureTF4-2: Photograph of the setup for a percutaneous microwave ablation procedure in which three single microwave applicators are connected to three microwave generators. (Courtesy of RadioGraphics, October 2005 pp. 569–583.)
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page66' class='markdown-page-text'>[ 第66页 ]</span>---------------------------------------------</span><br><br>
+
+# Technology Brief : High Voltage Pulses
+
+![](images/f3662fe4929bbb6290febc85920993fe777cad553d4657c9aec3a804c260ea24_84.jpg){width=84%} Figure TF4-3: High-voltage nanosecond pulse delivered to tumor cells via a transmission line. The cells to be shocked by the pulse sit in a break in one of the transmission-line conductors. (Courtesy of IEEE Spectrum, August 2006.)
+
+
+# Smith Chart

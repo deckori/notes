@@ -1,0 +1,4 @@
+---
+title: "AETN-1112 Digital Electronics"
+author: "Fairoos Mohammed Kunhi"
+---

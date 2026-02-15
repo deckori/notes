@@ -1,0 +1,72 @@
+---
+title: "Antiderivatives: Introduction to Integrals"
+---
+
+## Antiderivatives
+
+$\int f'(x) dx = f(x)$
+
+## Integration rules
+
+Derivative rules like the chain rule, quotient rule, etc., doesn't exist in integration.
+
+:::{#thm-power-rule}
+# Power Rule
+
+For $f(x) = x^n$
+
+$$\int x^n~dx = \frac{x^{n+1}}{n+1}+C$$
+
+Exception: $\int \frac{1}{x}~dx = \ln |x|+C$
+:::
+
+:::{#thm-constant-multiple-rule}
+# Constant Multiple Rule
+$$\int an^x~dx = a \int x^n~dx$$
+:::
+
+:::{#thm-sum-and-difference-rule}
+# Sum and Difference Rule
+
+$$\int [ u(x) + v(x) + w(x) ] = \int u(x) + \int v(x) + \int w(x)$$
+:::
+
+## The Definite Integral
+
+::: { #thm-fundamental-theorem-of-calculus }
+
+# Fundamental Theorem of Calculus
+
+ If a function $f(x)$ is continuous on the closed interval $[a,b]$ and $F(x)$ is an antiderivative of $f(x)$ on the interval then:
+
+ $$\int_{a}^{b} f(x) dx = F(x)\Big|_{a}^{b} = F(b) - F(a)$$
+
+ is the Definite Integral, with $a$ and $b$ as lower and upper bounds
+:::
+
+::: { .callout-note }
+
+Antiderivatives or Indefinite integrals used constants of integration, where we added C to the end of every integration.
+
+Definite integrals don’t include C! They are numbers and can be positive or negative.
+
+:::
+
+## Area Under a Curve and The Definite Integral
+
+The shaded area is bounded by two functions, $y=f(x)$ (Upper fundtion) and y=0 (Lower function). It is also bounded by the vertical lines $x = a$ and $x = b$
+
+The area under a curve between two points is found by calculating the definite integral between the two points. The area under the curve means the area bounded by the curve, the axis, and the boundary points.
+
+::: { .callout-caution }
+
+- Integrating functions below the x-axis gives negatives areas
+- But the area cannot be negative
+
+Solution (choose one of the following solutions):
+
+- Introduce (-) sign infront of the function if it is below the x-axis
+- Switch the upper and lower limits of th function below the x-axis
+- Solve the integral as usual but when you get a negative answer that you know should be a positive answer (by the properties of the attribute that the function represents), you convert the negative answer to a positive
+
+:::

@@ -1,0 +1,4 @@
+Reducing cross-talk:
+
+- Twisted pairs
+- Instead of using a cable of one wire, use multiple wires in one cable

@@ -1,0 +1,238 @@
+---
+title: "Presentation Title"
+---
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_0.png)
+
+AETN 2101\-ANALOG  ELECTRONICS
+
+# Discussion/Worksheet Practice
+
+Voltage Divider Bias
+
+__Dr\. Yasen Harrye__
+
+# Learning Objectives:
+
+<span style="color:#000000">Understand the objective of Voltage Divider Bias\.</span>
+
+<span style="color:#000000">Analyse </span>  <span style="color:#000000">B</span>  <span style="color:#000000">ias circuit using Thevenin Approach and Approach technique\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Bipolar Junction Transistor ( BJT)
+
+<span style="color:#ff0000"> __Graphical Analysis __ </span>
+
+<span style="color:#ff0000">Recall:</span>  <span style="color:#336600">\-Biasing of a transistor:</span>
+
+__Biasing: __ The DC voltages applied to a transistor in order to turn it on so that it can amplify the AC signal\.
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_1.png)
+
+<span style="color:#c00000">The DC input establishes an operating or quiescent point\.</span>
+
+<span style="color:#c00000">A\,B\, C\, D… </span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __DC Biasing Circuits Types:__ </span>
+
+Fixed\-bias/ Base Bias circuit
+
+Emitter\-stabilized bias circuit
+
+Voltage divider bias circuit \(VDR\)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#336600">Voltage Divider Configuration:</span>
+
+Method of biasing a transistor for linear operation using a single source resistive voltage divider\.
+
+<span style="color:#0000ff">M</span>  <span style="color:#0000ff">ost widely used biasing method\.</span>
+
+Developed by a resistive voltage divider that consists of  _R_ 1 and  _R_ 2\.
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_2.png)
+
+Voltage\-divider bias circuits are designed so that the base current is much smaller than the current \( _I_ 2\) through  _R_ 2  in
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#336600">3\- Voltage Divider Configuration:</span>
+
+<span style="color:#000000">T</span>  <span style="color:#000000">he voltage\-divider circuit is very straightforward to </span>  <span style="color:#000000">analyze</span>  <span style="color:#000000"> because the loading effect of the </span>  <span style="color:#0000ff">base current can be ignored</span>  <span style="color:#0000ff">\. </span>
+
+<span style="color:#000000">A voltage divider in which the base current is small compared to the current in </span>  <span style="color:#000000"> _R_ </span>  <span style="color:#000000">2 </span>  <span style="color:#000000">is said to be a </span>  <span style="color:#0000ff"> __stiff voltage divider __ </span>  <span style="color:#000000">because the base voltage is relatively </span>  <span style="color:#c00000">independent of different transistors and temperature effects</span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_3.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#961a26"> __Bipolar Junction Transistor:__ </span>
+
+<span style="color:#0000cc"> __Bias configurations __ </span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_4.png)
+
+Desirable to develop a bias circuit that is less sensitive to changes in current gain ß\.
+
+With voltage divider bias\,  values of  _V_  _CEQ _  and I _CQ_  _  _ can be independent of changes in gain ß\.
+
+DC voltages and currents remain close to the required values\.
+
+<span style="color:#c00000">I</span>  <span style="color:#c00000">BQ</span>  <span style="color:#c00000"> only changes with gain ß change\.</span>
+
+<span style="color:#ff0000"> __II\.  Voltage divider Bias:__ </span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_5.png)
+
+
+
+* Voltage divider bias analysed using two methods:
+  * <span style="color:#c00000"> __   Exact method__ </span>
+  * <span style="color:#c00000"> __2\. Approximate method__ </span>
+
+
+Voltage divider bias
+
+Figure :  Q point for voltage divider bias
+
+<span style="color:#961a26"> __Analog Electronics__ </span>
+
+<span style="color:#0000cc"> __Bias configurations \(4\)__ </span>
+
+<span style="color:#ff0000"> __II\.  Voltage divider Bias:__ </span>
+
+<span style="color:#c00000"> __ DC ANALYSIS 1:  EXACT METHOD/THEVENIN METHOD__ </span>
+
+Using Thevenin theorem\, Thevenin equivalent resistance and voltage can be computed\.
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_6.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_7.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_8.png)
+
+Vth determination
+
+Rth determination
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_9.png)
+
+Thevenin equivalent circuit
+
+<span style="color:#961a26"> __Analog Electronics  I  Review:__ </span>
+
+<span style="color:#0000cc"> __Bias configurations \(5\)__ </span>
+
+<span style="color:#ff0000"> __II\.  Voltage divider Bias:__ </span>
+
+<span style="color:#c00000"> __ DC ANALYSIS 2:  APPROXIMATE  METHOD__ </span>
+
+Approximate approach is applied if\,
+
+The difference between the exact and approximate methods is the effect of  Thevenin resistance \(Rth\)\.
+
+<span style="color:#961a26"> __Bipolar Junction Transistor:__ </span>
+
+<span style="color:#0000cc"> __Bias configurations:__ </span>
+
+For the voltage divider bias of  figure using  \(a\) exact method and \(b\) approximate method\, determine the values of   _V_  _C_ E and  _I_  _C_ \.
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_10.png)
+
+<span style="color:#336600">Voltage Divider Configuration Examples:</span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_11.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_12.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_13.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_14.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_15.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_16.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#336600">Voltage Divider Configuration Examples:</span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_17.png)
+
+Note that the level of VB is the same as ETh determined in Example 8\.
+
+<span style="color:#0000ff">Primary difference between the exact and approximate techniques is the effect of </span>  <span style="color:#0000ff">R</span>  <span style="color:#0000ff">Th</span>  <span style="color:#0000ff"> in the exact analysis that separates </span>  <span style="color:#0000ff">E</span>  <span style="color:#0000ff">Th</span>  <span style="color:#0000ff"> and V</span>  <span style="color:#0000ff">B</span>  <span style="color:#0000ff">\.</span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_18.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_19.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_20.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#336600">Voltage Divider Configuration Examples:</span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_21.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_22.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_23.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_24.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#336600">Voltage Divider Configuration Examples:</span>
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_25.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_26.png)
+
+![](end-of-transistor-biasing-problems-img/end-of-transistor-biasing-problems_27.png)
+
+<span style="color:#0000ff"> _I_ </span>  <span style="color:#0000ff"> _CQ_ </span>  <span style="color:#0000ff"> _ is about 30% greater with the approximate solution\, whereas V_ </span>  <span style="color:#0000ff"> _CEQ_ </span>  <span style="color:#0000ff"> _ is about 10% less\. _ </span>
+
+<span style="color:#0000ff"> _The results are notably different in magnitude\, but even though BR_ </span>  <span style="color:#0000ff"> _E_ </span>  <span style="color:#0000ff"> _ is only about three times larger than R_ </span>  <span style="color:#0000ff"> _2_ </span>  <span style="color:#0000ff"> _\, the results are still relatively close to each other\._ </span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+

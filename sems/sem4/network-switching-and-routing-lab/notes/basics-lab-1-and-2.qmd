@@ -1,0 +1,103 @@
+---
+format: pdf
+---
+
+## PC cmds
+
+| Command                       | Comments on command                         |
+| ----------------------------- | ------------------------------------------- |
+| `Ctrl-Shift-6`                | Abort DNS lookup, tracert, ping command     |
+| `C:\>ipconfig /all`           | Show PC settings from the PC Command Prompt |
+| `route print` or `netstat -r` | Show routing table and gateway in a PC      |
+
+## Basic settings
+
+| Command                                           | Comments on command                         |
+| ------------------------------------------------- | ------------------------------------------- |
+| `(config)# hostname <name>`                       | Set the router hostname                     |
+| `(config)# banner motd #< Some random message >#` | Configure message of the day banner         |
+| `R1(config)#no ip domain-lookup`                  | Prevent unwanted DNS lookups                |
+| `R1(config)#no logging console`                   | Prevent unwanted status messages on console |
+| `(config)# enable secret <password>`              | Set privileged exec password                |
+
+## Line configuration
+
+### Enter line
+
+We have 3 lines:
+
+- Console line
+- VTY line
+- AUX line (router only)
+
+Enter line:
+
+| Command                         | Comments on command                     |
+| ------------------------------- | --------------------------------------- |
+| `(config)# line vty <X> <XX>`   | Enter VTY line configuration <br> Check number of vty lines using `sh run`            |
+| `(config)# line <con or aux> 0` | Enter console or AUX line configuration |
+
+{{<pagebreak>}}
+
+Common config for each line:
+
+| Command                                   | Comments on command                                                           |
+| ----------------------------------------- | ----------------------------------------------------------------------------- |
+| `(config-line)# password <some password>` | Set password for the line                                                     |
+| `(config-line)# login`                    | Activate the password on the line; line won’t accept connections without this |
+
+VTY line config:
+
+| Command                                   | Comments on command                                                           |
+| ----------------------------------------- | ----------------------------------------------------------------------------- |
+| `(config-line)# transport input <protocol>`                       | Set protocols allowed on a line (e.g., SSH)                                  |
+
+## Interface configuration
+
+| Command                                              | Comments on command                  |
+| ---------------------------------------------------- | ------------------------------------ |
+| `(config)# int <vlan <XXXX> OR gX/X/X> OR loopback0` | Enter an interface for configuration |
+
+Note: the interface won't be enabled until `no shut` is executed. You don't have to execute this for a switch, but there are some interfaces in a switch that require it, iirc. Just execute `no shut` wherever you configure an interface. You won't receive an error anyway
+
+### IPv4
+
+| Command                                               | Comments on command              |
+| ----------------------------------------------------- | -------------------------------- |
+| `(config-if)# ip add <an ipv4 address> <subnet mask>` | Assign IPv4 address to interface |
+| `(config-if)# description <this is optional>`         | Optional interface description   |
+| `(config-if)# no shut`                                | Enable the interface             |
+
+{{<pagebreak>}}
+
+### IPv6
+
+Outside interface:
+
+| Command                                                                   | Comments on command                       |
+| ------------------------------------------------------------------------- | ----------------------------------------- |
+| `(config)# ipv6 unicast-routing`                                          | Enable IPv6 routing on the device         |
+
+In interface:
+
+| Command                                                                   | Comments on command                                                                               |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `(config-if)# ipv6 enable`                                                | Enable IPv6 on the interface                                                                      |
+| `(config-if)# ipv6 add <an ipv6 address>/<subnet mask in slash notation>` | Assign IPv6 unicast address with prefix                                                           |
+| `(config-if)# ipv6 address FE80::1 link-local`                             | Assign link-local IPv6 address <br> `link-local` can be shortened to `link` but I don't recommend |
+| `(config-if)# description <this is optional>`                             | Optional interface description                                                                    |
+| `(config-if)# no shut`                                                    | Enable the interface                                                                              |
+
+## Save config
+
+| Command            | Comments on command                                 |
+| ------------------ | --------------------------------------------------- |
+| `# copy run start` | Save running configuration to startup configuration |
+
+## Reset config
+
+| Command                  | Comments on command                     |
+| ------------------------ | --------------------------------------- |
+| `# Erase startup-config` | Reset configuration                     |
+| `# Del vlan.dat`         | Remove VLAN configuration (switch only) |
+| `# Reload`               | Reload the device                       |

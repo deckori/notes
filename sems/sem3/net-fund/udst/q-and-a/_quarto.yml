@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: .site
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    math:
+      method: mathjax
+    toc: true
+    respect-user-color-scheme: true
+    page-navigation: true
+    theme:
+      light: flatly
+      dark: darkly
+    mainfont: "IosevkaTerm Nerd Font Mono"
+    fontsize: 20px
+
+website:
+  # title: "AETN-1112 Digital Electronics"
+  sidebar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/coglinks/notes
+          - text: Report an Issue
+            href: https://github.com/coglinks/notes/issues
+    style: "docked"
+    contents:
+      - section: "Notes"
+        contents:
+          - t01-introduction-to-networking-study-guide/t01-introduction-to-networking-study-guide.qmd
+          - t02-basic-switch-andend-device-configuration-study-guide/t02-basic-switch-andend-device-configuration-study-guide.qmd
+          - t03-protocols-and-reference-models-study-guide/t03-protocols-and-reference-models-study-guide.qmd
+          - t04-physical-layer-study-guide/t04-physical-layer-study-guide.qmd
+          - t05-data-link-layer-study-guide/t05-data-link-layer-study-guide.qmd
+          - t06-ethernet-switching-study-guide/t06-ethernet-switching-study-guide.qmd
+          - t07-network-layer-study-guide/t07-network-layer-study-guide.qmd
+          - t08-ipv4-addressing-study-guide/t08-ipv4-addressing-study-guide.qmd
+          - t09-ipv6-addressing-study-guide/t09-ipv6-addressing-study-guide.qmd
+          - t10-transport-layer-study-guide/t10-transport-layer-study-guide.qmd
+          - t11-application-layer-study-guide/t11-application-layer-study-guide.qmd
+          - focus-topics-or-questions-for-final-exams.pdf
+          - mcqs.pdf

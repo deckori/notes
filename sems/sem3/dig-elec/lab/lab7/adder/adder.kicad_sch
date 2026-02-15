@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "bd50cd4c-452c-47af-a870-79e960750b55")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 40.64 73.66)
+		(size 74.93 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3a3e0613-ff32-421c-a718-2e399d151c98")
+		(property "Sheetname" "2nd-test"
+			(at 40.64 72.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "2nd-test.kicad_sch"
+			(at 40.64 136.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adder"
+				(path "/bd50cd4c-452c-47af-a870-79e960750b55"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 185.42 44.45)
+		(size 81.28 71.12)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a4838582-60a5-4f7a-b17a-3176a6fd74a0")
+		(property "Sheetname" "test"
+			(at 185.42 43.7384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "test.kicad_sch"
+			(at 185.42 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adder"
+				(path "/bd50cd4c-452c-47af-a870-79e960750b55"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

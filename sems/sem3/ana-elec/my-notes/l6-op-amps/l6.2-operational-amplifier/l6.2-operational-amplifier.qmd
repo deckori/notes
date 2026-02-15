@@ -1,0 +1,173 @@
+---
+title: 6.2. Op-Amp Applications
+---
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 2 \]]{#page2 .markdown-page-text}---------------------------------------------<br><br>
+
+# Misc
+
+Why use variable resistors in an amplifier?
+
+During the normal amplifier operation, capacitors change the attributes of the circuit as they age. To counter this variation, the variable resistor can be used
+
+# Learning Objectives:
+
+Understand what a differential amplifier does
+
+Learn the basics of an operational amplifier
+
+Develop an understanding of what common mode operation is
+
+Describe double-ended input operation
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 3 \]]{#page3 .markdown-page-text}---------------------------------------------<br><br>
+
+# Integrated Circuit (IC) LM124
+
+![](images/ba4043bc12d899274759caff7a288b80cb33c99f9bb29fe4d14d263d46bbf3c6_67.jpg){width="67%"}
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 4 \]]{#page4 .markdown-page-text}---------------------------------------------<br><br>
+
+# Output Design
+
+What is the range of the voltage-gain adjustment in the following circuit?
+
+![](images/f02c80d56252e2203a7c7b6bcc1274c56dc86f3d530628537a5130be3bf174ac_50.jpg){width="50%"}
+
+###### Solution:
+
+$A_{\nu}=\frac{V_{o}}{V_{i}}=-\frac{R_{F}}{R_{l}}$
+
+For $R_{1}=10$ k$\Omega$:
+
+$A_{\nu}=-\frac{500\ k\Omega}{10\ k\Omega}$ = -50
+
+For $R_{1}=20$ k$\Omega$:
+
+$A_{\nu}=-\frac{500\ k\Omega}{20\ k\Omega}=-25$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 5 \]]{#page5 .markdown-page-text}---------------------------------------------<br><br>
+
+# Output Design
+
+Design an Op-Amp with voltage gain equal to -5.
+
+![](images/8175e6e39e9483b109d712bbbbf2839eded459200f6328d5ecd9aae98385c0dc_47.jpg){width="47%"}
+
+The answer is Rx = $100\ \mathrm{k}\Omega$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 6 \]]{#page6 .markdown-page-text}---------------------------------------------<br><br>
+
+# Multiple-stage Gains
+
+Calculate the output voltage for the following circuit.
+
+![](images/4e8637de4aa2c532f8031cd5e44be9fdbbcd5a10f62f601966cc4adc53add6f3_54.jpg){width="54%"}
+
+###### Solution:
+
+$$\begin{array}{r} { V _ { e } = - \frac { R _ { f } } { R _ { l } } V _ { l } = - \frac { 10 0 \, \mathrm { k } \Omega } { 20 \, \mathrm { k } \Omega } \, ( 1 . 5 \, \mathrm { V } ) } \\{ = - 5 ( 1 . 5 \, \mathrm { V } ) = - 7 . 5 \, \mathrm { V } } \end{array}$$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 7 \]]{#page7 .markdown-page-text}---------------------------------------------<br><br>
+
+Calculate the output voltages $V_{2}$ and $V_{3}$ in the following circuit.
+
+![](images/513701e2f7e510273247f26bea60952892909230431f49c8dc1ee7f88b445fce_56.jpg){width="56%"}
+
+###### Solution:
+
+$$\begin{array}{rl} { V _ { 2 } = \, - \, \frac { 20 0 \mathrm { ~ k } \Omega } { 20 \mathrm { ~ k } \Omega } \ ( 0 . 2 \mathrm { ~ V } ) \, = - 2 \, \mathrm { V } } \\{ V _ { 3 } = \, 1 + \frac { 20 0 \mathrm { ~ k } \Omega } { 10 \mathrm { ~ k } \Omega } \ ( 0 . 2 \mathrm { ~ V } ) \, = + 4 . 2 \, \mathrm { V } } \end{array}$$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 8 \]]{#page8 .markdown-page-text}---------------------------------------------<br><br>
+
+- When a number of stages are connected in series, the overall gain is the product of the individual stage gains.
+
+- Following figure shows a connection of three stages. The first stage is connected to provide noninverting gain. The next two stages provide an inverting gain.
+
+- The overall circuit gain is then noninverting and is calculated by: $A = A_1A_2A_3$
+
+where $A_{1} = 1 + R_{f}/R_{1}$, $A_{2} = -R_{f}/R_{2}$, and $A_{3} = -R_{f}/R_{3}$.
+
+![](images/dddf6be8b896bf9afdb6138b8b368f7bc483d2283932801d3852e01245c8b5c0_68.jpg){width="68%"}
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 9 \]]{#page9 .markdown-page-text}---------------------------------------------<br><br>
+
+Calculate the output voltage using the circuit of following figure for resistor components of value $R_{f}$ = 470 kΩ, $R_{1}$ = 4.3 kΩ, $R_{2}$ = 33 kΩ, and $R_{3}$ = 33 kΩ, for an input of 80 mV. Also find gain and output of each OP-AMP (A₁, A₂, A₃, V₀¹, V₀², V₀³) and the total gain
+
+A. 
+
+![](images/d4b2ff0eb1d8b79e71069b1b8f5f9b2d846ec9d37772d5d2e0f0b0f9f1005464_54.jpg){width="54%"}
+
+1) $A_{1}=\left(1+\frac{R_{f}}{R_{1}}\right)$
+
+1) $A_{2}=\left(\frac{-R_{f}}{R_{2}}\right)$
+
+1) $A_{3}=\left(\frac{-R_{f}}{R_{3}}\right)$
+
+1) $A=A_{1}A_{2}A_{3}$
+
+1) $V_{O1}=A_{1}V_{i}$
+
+1) $V_{O2}=A_{2}V_{O1}$
+
+1) $V_{O}=V_{O3}=A_{3}V$
+
+$$V _ { o } = A V _ { i }$$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 10 \]]{#page10 .markdown-page-text}---------------------------------------------<br><br>
+
+Consider a three-stage OP-AMP circuit with gains of +10, -18, and -27 and 270 kΩ feedback resistor for all three circuits. What output voltage V₀ will result for an input of 150 μV? Also find R₁, R₂, R₃ and total gain A.
+
+Solution: For the gain of +10,
+
+$$\begin{array}{rl} { A _ { 1 } } & { { } = 1 + { \frac { R _ { f } } { R _ { 1 } } } = + 10 } \\{ { \frac { R _ { f } } { R _ { 1 } } } } & { { } = 10 - 1 = 9 } \\{ R _ { 1 } } & { { } = { \frac { R _ { f } } { 9 } } = { \frac { 27 0 \, \mathrm { k } \Omega } { 9 } } = 30 \, \mathrm { k } \Omega } \end{array}$$
+
+![](images/74049675fab21c86014f7da37fc71a50135f6894525f8054b58c8cd97cc2656a_51.jpg){width="51%"}
+
+For the gain of $-18$,
+
+$$\begin{array}{rl} { A _ { 2 } } & { { } = - { \frac { R _ { f } } { R _ { 2 } } } = - 18 } \\{ R _ { 2 } } & { { } = { \frac { R _ { f } } { 18 } } = { \frac { 27 0 \, \mathrm { k } \Omega } { 18 } } = 15 \, \mathrm { k } \Omega } \end{array}$$
+
+For the gain of $-27$,
+
+$$\begin{array}{rl} { A _ { 3 } } & { { } = - { \frac { R _ { f } } { R _ { 3 } } } = - 27 } \\{ R _ { 3 } } & { { } = { \frac { R _ { f } } { 27 } } = { \frac { 27 0 \, \mathrm { k } \Omega } { 27 } } = 10 \, \mathrm { k } \Omega } \end{array}$$
+
+Total gain = $A = A_1A_2A_3 = (10)(-18)(-27) = 4860$
+
+For an input of $V_{1}$ = 150 $\mu$V, the output voltage is
+
+$V_{\mathrm{L}} = A_{1}A_{2}A_{3}V_{\mathrm{L}} = (10)(-18)(-27)(150\ \mu\mathrm{V}) = 4860(150$
+
+$$\begin{array}{rl} & { V _ { o } = A _ { 1 } A _ { 2 } A _ { 3 } V _ { 1 } = ( 10 ) ( - 18 ) ( - 27 ) ( 15 0 \, \mu \mathrm { V } ) = 48 60 ( 15 0 \, \mu \mathrm { V } ) } \\& { = 0 . 72 9 \, \mathrm { V } } \end{array}$$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 11 \]]{#page11 .markdown-page-text}---------------------------------------------<br><br>
+
+Determine the values for R1, R2 and R3 for the three OP-AMPs to provide
+
+outputs that are 10, 20, and 50 times l feedback resistor of
+
+Solution: The resistor component for each stage is calculated to be
+
+$$\begin{array}{rl} { R _ { 1 } } & { { } = - { \frac { R _ { f } } { A _ { 1 } } } = - { \frac { 50 0 \, \mathrm { k } \Omega } { - 10 } } = 50 \, \mathrm { k } \Omega } \\{ R _ { 2 } } & { { } = - { \frac { R _ { f } } { A _ { 2 } } } = - { \frac { 50 0 \, \mathrm { k } \Omega } { - 20 } } = 25 \, \mathrm { k } \Omega } \\{ R _ { 3 } } & { { } = - { \frac { R _ { f } } { A _ { 3 } } } = - { \frac { 50 0 \, \mathrm { k } \Omega } { - 50 } } = 10 \, \mathrm { k } \Omega } \end{array}$$
+
+![](images/fa917492b9d4592e5e99953c1e247f11b13f7e1465314da9540686f5f4bed0af_41.jpg){width="41%"}
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 12 \]]{#page12 .markdown-page-text}---------------------------------------------<br><br>
+
+Determine the output for the circuit in following figure with components $R_{f} = 1$ MΩ, $R_{1} = 100$ k Ω, $R_{2} = 50$ k Ω, and $R_{3} = 500$ k Ω.
+
+Also find output of first OP-AMP.
+
+###### Solution:
+
+$$\begin{array}{rl} & { V _ { o 1 } = - \frac { R _ { f } } { R _ { 1 } } V _ { 1 } } \\& { V _ { o 1 } = - \frac { 1 \, M \Omega } { 10 0 \, K \Omega } V _ { 1 } = - 10 V _ { 1 } } \end{array}$$
+
+![](images/1467ea922162332b39a2fc86fd74566429d10ef02257d49415116f74c3525aff_60.jpg){width="60%"}
+
+The output voltage is then calculated to be: $V_{o} = -\left(\frac{1}{50\,\mathrm{k}\Omega}V_{2} - \frac{1}{500\,\mathrm{k}\Omega}\frac{1}{100\,\mathrm{k}\Omega}V_{1}\right) = -(20\,V_{2} - 20\,V_{1}) = -20(V_{2} - V_{1})$
+
+The output is seen to be the difference of $V_{2}$ and $V_{1}$ multiplied by a gain factor of $-20$.
+
+$$\begin{array}{rl} { \mathbf { F o r m u l a } \colon } & { } \\{ \mathbf { V _ { 0 } } = - \frac { \mathbf { R _ { f } } } { \mathbf { R _ { 1 } } } V _ { 1 } } & { } \\{ \mathbf { V _ { 0 } } = - \left( \frac { \mathbf { R _ { f } } } { \mathbf { R _ { 1 } } } V _ { 1 } + \frac { \mathbf { R _ { f } } } { \mathbf { R _ { 2 } } } V _ { 2 } + \frac { \mathbf { R _ { f } } } { \mathbf { R _ { 3 } } } V _ { 3 } \right) } & { } \end{array}$$
+
+<br>[---------------------------------------------]{.markdown-page-line}[\[ 13 \]]{#page13 .markdown-page-text}---------------------------------------------<br><br>

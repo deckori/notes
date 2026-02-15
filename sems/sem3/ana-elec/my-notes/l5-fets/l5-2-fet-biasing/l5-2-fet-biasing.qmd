@@ -1,0 +1,240 @@
+---
+title: "FET Biasing"
+---
+
+{0}------------------------------------------------
+
+![](_page_0_Picture_0.jpeg)
+
+# AETN 2101-ANALOG ELECTRONICS
+
+**L5.2**
+
+ **FET Biasing**
+
+**Dr. Yasen Harrye**
+
+{1}------------------------------------------------
+
+# **Learning Objectives:**
+
+- Understand Different biasing techniques for JFET.
+- Correctly bias JFET as an amplifier.
+- Design of Biasing circuit.
+
+{2}------------------------------------------------
+
+# Field Effect Transistors (FET)
+
+Characteristics and
+
+Equations
+
+For BJT
+
+![](_page_2_Figure_4.jpeg)
+
+![](_page_2_Figure_5.jpeg)
+
+$$\begin{array}{ccc}
+ & & & & & & & & & & & \\
+I_D &= & I_{DSS} \left(1 - \frac{V_{GS}}{V_P}\right)^2 & \iff & I_C = \beta I_B \\
+I_D &= & I_S & & \iff & I_C \cong I_E \\
+I_G &\cong & 0 \text{ A} & & \iff & V_{BE} \cong 0.7 \text{ V}
+\end{array}$$
+
+When 
+$$V_{GS}=0$$
+ V,  $I_D=I_{DSS}$  
+$$I_D=I_{DSS}|_{V_{GS}=0}$$
+ When  $V_{GS}=V_P$ ,  $I_D=0$  mA 
+$$I_D=0$$
+ A $|_{V_{GS}=V_P}$ 
+
+$$P_D = V_{DS}I_D$$
+
+{3}------------------------------------------------
+
+### FET Biasing
+
+#### Fixed Bias Configuration
+
+![](_page_3_Picture_2.jpeg)
+
+$$I_{G} \cong 0 \text{ A}$$
+
+$$I_{R_{G}} = I_{G}R_{G} = (0 \text{ A})R_{G} = 0 \text{ V}$$
+
+We assume: The voltage drop across $R_G$ is very low $\implies V_{GG} \cong V_{V_GS}$
+
+$$-V_{GG} - V_{GS} = 0$$
+
+$$V_{GS} = -V_{GG}$$
+
+$$I_{D} = I_{DSS} \left(1 - \frac{V_{GS}}{V_{P}}\right)^{2} \qquad \text{Shockley Equation}$$
+
+$$+V_{DS} + I_{D}R_{D} - V_{DD} = 0$$
+
+$$V_{DS} = V_{DD} - I_{D}R_{D}$$
+
+$$V_{DS} = V_{D} - V_{S}$$
+
+$$V_{D} = V_{DS} + V_{S} = V_{DS} + 0 \text{ V}$$
+
+$$V_{D} = V_{DS}$$
+
+$$V_{GS} = V_{G} - V_{S}$$
+
+$$V_{G} = V_{GS} + V_{S} = V_{GS} + 0 \text{ V}$$
+
+{4}------------------------------------------------
+
+#### FET Biasing
+
+#### Fixed Bias Configuration
+
+Determine the following for the given network
+
+![](_page_4_Figure_8.jpeg)
+
+{5}------------------------------------------------
+
+#### FET Biasing
+
+#### Fixed Bias Configuration
+
+Determine the following for the given
+
+network
+
+![](_page_5_Figure_8.jpeg)
+
+a. 
+$$V_{GS_O} = -V_{GG} = -2 \text{ V}$$
+
+a. 
+$$I_{D_Q} = I_{DSS} \left( 1 - \frac{V_{GS}}{V_P} \right)^2 = 10 \text{ mA} \left( 1 - \frac{-2 \text{ V}}{-8 \text{ V}} \right)^2$$
+  
+=  $10 \text{ mA} (1 - 0.25)^2 = 10 \text{ mA} (0.75)^2 = 10 \text{ mA} (0.5625)^2$   
+=  $5.625 \text{ mA}$ 
+
+a. 
+$$V_{DS} = V_{DD} - I_D R_D = 16 \text{ V} - (5.625 \text{ mA})(2 \text{ k}\Omega)$$
+  
+= 16 V - 11.25 V = **4.75 V**
+
+a. 
+$$V_D = V_{DS} = 4.75 \text{ V}$$
+
+a. 
+$$V_G = V_{GS} = -2 \text{ V}$$
+
+$$V_S = \mathbf{0} \mathbf{V}$$
+
+
+
+{6}------------------------------------------------
+
+Voltage Divider Bias Configuration
+
+![](_page_6_Picture_2.jpeg)
+
+$$I_G \cong 0$$
+ A
+
+$$V_G = \frac{R_2 V_{DD}}{R_1 + R_2}$$
+
+$$V_G - V_{GS} - V_{R_S} = 0$$
+$$V_{GS} = V_G - V_{R_S}$$
+
+$$V_{GS} = V_G - I_D R_S$$
+
+$$V_{DS} = V_{DD} - I_D(R_D + R_S)$$
+
+$$V_D = V_{DD} - I_D R_D$$
+
+$$V_S = I_D R_S$$
+
+$$I_{R_1} = I_{R_2} = \frac{V_{DD}}{R_1 + R_2}$$
+
+{7}------------------------------------------------
+
+### Voltage Divider Bias Configuration
+
+For the given network determine:
+
+- 1. I<sup>D</sup>
+- 2. V<sup>S</sup>
+- 3. VDS
+- 4. V<sup>D</sup>
+- 5. V<sup>G</sup>
+- 6. VGS
+
+![](_page_7_Figure_9.jpeg)
+
+{8}------------------------------------------------
+
+### Voltage Divider Bias
+
+## Configuration For the given network determine:
+
+- 1. I<sup>D</sup>
+- 2. V<sup>S</sup>
+- 3. VDS
+- 4. V<sup>D</sup>
+- 5. V<sup>G</sup>
+- 6. VGS
+
+![](_page_8_Figure_11.jpeg)
+
+$$I_D = I_{DSS}/4 = 8 \,\text{mA}/4 = 2 \,\text{mA}$$
+
+$$V_S = I_D R_S$$
+
+$$V_S = I_D R_S = I_D (1.5 \text{ k}\Omega) = 3 \text{ V}$$
+
+$$V_{DS} = V_{DD} - I_D(R_D + R_S)$$
+ Vps=16-0.002(240)
+
+![](_page_8_Picture_16.jpeg)
+
+$$V_D = V_{DD} - I_D R_D$$
+
+$$V_G = \frac{R_2 V_{DD}}{R_1 + R_2}$$
+
+$$V_G = \frac{R_2 V_{DD}}{R_1 + R_2}$$
+
+$$= \frac{(270 \text{ k}\Omega)(16 \text{ V})}{2.1 \text{ M}\Omega + 0.27 \text{ M}\Omega}$$
+
+$$= 1.82 \text{ V}$$
+
+$$V_{GS} = V_G - I_D R_S \qquad V_{GS} =$$
+
+$$V_{GS} = V_G - I_D R_S$$
+  
+= 1.82 V -  $I_D$ (1.5 k $\Omega$ 
+
+{9}------------------------------------------------
+
+### Design Example
+
+For the network of following figure, the levels of VDQ and IDQ are specified. Determine the required values of R<sup>D</sup> and R<sup>S</sup> .
+
+$$R_D = \frac{v_{R_D}}{I_{D_Q}} = \frac{v_{DD} - v_{D_Q}}{I_{D_Q}}$$
+$$= \frac{20 \text{ V} - 12 \text{ V}}{2.5 \text{ mA}} = \frac{8 \text{ V}}{2.5 \text{ mA}} = 3.2 \text{ k}\Omega$$
+
+$$R_S = \frac{-(V_{GS_Q})}{I_{D_Q}} = \frac{-(-1 \text{ V})}{2.5 \text{ mA}} = 0.4 \text{ k}\Omega$$
+
+$$R_D = 3.2 \text{ k}\Omega \Rightarrow 3.3 \text{ k}\Omega$$
+  
+ $R_S = 0.4 \text{ k}\Omega \Rightarrow 0.39 \text{ k}\Omega$ 
+
+![](_page_9_Picture_10.jpeg)
+
+![](_page_9_Figure_11.jpeg)
+
+{10}------------------------------------------------
+
+# **Discussions**
+
+![](_page_10_Picture_1.jpeg)

@@ -1,0 +1,1204 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{}
+\date{}
+\begin{document}
+
+
+\section{MATH2010}\label{math2010}
+
+\section{Unit 2}\label{unit-2}
+
+\section{Applications of The Definite
+Integrals}\label{applications-of-the-definite-integrals}
+
+The Particular Solution. Applications of Integration: Electrical
+Applications. MATH1030 Review:Area Under the Curve and The Definite
+Integra .8 Area Under a Curve .11 .122.6Ane Une t ..14 The
+Representative Rectangle for 2 Curves. 2.7 Area Between Curves\ldots..
+..15 Volume of Revolution-Disc Method. .202.82.9 Volume of Revolution
+-Washer Method.. .262.10Volume of Revolution-Shell Method ..28
+..312.11Polar Coordinates. ..312.11.1Introduction Definition of Polar
+Coordinate System. ..322.11.2 .372.11.3 Relating Polar and Cartesian
+Coordinates .372.11.4 Converting from Polar to Cartesian (Rectangular)
+Coordinates 2.11.5 .38 Converting from Cartesian (Rectangular) to Polar
+Coordinates. 2.11.6Polar Equation:.. .422.11.7Area with Polar
+Coordinates ..44
+
+\subsection{2.1The Particular Solution}\label{the-particular-solution}
+
+So, what is the value of the constant, C?
+
+We know already that when finding the antiderivative of a given function
+we have to include a constant of integration.This is because a single
+function can have a family of antiderivatives.
+
+Consider some function, \(f(x)\)
+
+\[\int f(x)dx=F(x)+C\]
+
+If we know something about its antiderivative \(F(x)\) we can solve for
+the constant, C.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fG6uNDbe7znFQ3pgX73HyWQSqpAt42A9k.png}}
+
+This is usually a point on a curve called an initial value.
+
+This process gives us a particular solution.
+
+The graphs above all have thesame derivative, \(3x^2\) and we are given
+an initial value of \(F(1)=3\) What is the particular solution?
+
+\subsection{FINDING THE PARTICULAR SOLUTION GIVEN AN INITIAL
+VALUE}\label{finding-the-particular-solution-given-an-initial-value}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Perform the integration to find the antiderivative. 2.Use the given
+  information (initial value) to solve for C. 3. Replace C in your
+  indefinite integral and state the Particular Solution
+\end{enumerate}
+
+E1Find the particular solution \(f(x)\) given that
+\(f^{\prime}(x)=x^{3}-x+1\) and the function passes through (2, 6).
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f88Fii3mIrHRvgPN7Gk76sWaxa5GvDt03.png}}
+
+E in th aricularsoution ofe \(f'(x)=\frac{x^2+4}{x^2}\) Iithefuntionhas
+a ital value of 2when \(x=2\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fgz5SqwXK7gh6GUAr7o4wG2YWPzhiKRgN.png}}
+
+E3 Find the particular slution of \(\frac{dy}{dx}=x^{\frac13}-3\cos x\)
+, given \(y(0)=4\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fUTSeeeiQ6Ax2hLdznfuLkmwmNdAxvQrG.png}}
+
+\subsection{2.2 Applications of Integration: Electrical
+Applications}\label{applications-of-integration-electrical-applications}
+
+\subsection{TOTAL CHARGE}\label{total-charge}
+
+Recall that current \(i\) is the rate of change of charge \(q\) :
+
+\[i=\frac{dq}{dt}\quad\Rightarrow\quad q=\int \]
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fGB1yOyWonduMprcvdS8ZWtaSYaV2x3Rc.png}}
+
+What are the units for charge?.
+
+\subsubsection{VOLTAGE ACROSS A
+CAPACITOR}\label{voltage-across-a-capacitor}
+
+Voltage \(V\) across a capacitor with capacitance \(C\) is:
+
+\begin{align*}
+V&=\frac{q}{C}\quad\Rightarrow\quad V=\\&=\frac{1}{C}\cdot q \\
+\end{align*}
+
+What are the units for voltage?
+
+E1 The current in a certain electric circuit is given by:
+\(i(t)=e^{\frac{-t}{10}}\) , Initial Conditions: \(q(0)=0\)
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  Find an expression for the total charge, \(q(t)\) ,that passes a point
+  in the circuit.
+\end{enumerate}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fb3gs6SGpXGP46s3Bpyl9h62r27lhIVkn.png}}
+
+b）Use your expression to determine the amount of charge that passes the
+point in 2 seconds.
+
+E2Theinitial voltage across a 5F capacitoris zero.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  What is the expressionfor voltage across the capacitor if
+  \(i=\frac{2t}{t^2+1}\)
+\end{enumerate}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f9vx4bnEhiDTFPqGX4us9ne1MhQhu6ddX.png}}
+
+b)What is the voltage after 4 s?
+
+\subsubsection{CURRENT THROUGH AN
+INDUCTOR}\label{current-through-an-inductor}
+
+Current \(i\) through an inductor with inductance \(L\) is:
+
+\begin{align*}&V=L\frac{di}{dt}\\&\frac{di}{dt}=\frac{1}{L}\cdot V\end{align*}\quad\Rightarrow\quad i=
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fo9uCZBfor8yedDlwR8kDzp2gUOsLVkxH.png}}
+
+What are the units of current?.
+
+E3 A circuit has a 0.5 Henry inductor and has a voltage given by
+\(V(t)=2t\sin(t^{2})\) The current through the inductor at
+\(t=\sqrt{\pi}\) seconds is 4 Amps.
+
+What is the expression for the current through the inductor?
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fLagNNmcpMQyFEKYhqfRZXV4Dz3sXG4sy.png}}
+
+\section{2.3 MATH1030 Review: Area Under the Curve and The Definite
+Integra}\label{math1030-review-area-under-the-curve-and-the-definite-integra}
+
+In MATH1030 we used the rectangle method to approximate the area under
+\(f(x)\) and between \(x=a\) and \(x=b\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fP26pDxOanVGykePvKLnBhkX4PgdfoMrP.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fI9GatxUSN3a0crHrQUvwgQfUO555YaxX.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fnB3zSGzl3gMaXd5Xx9sLiYt8y0OvguP9.png}}
+
+We can get an exact area of \(f(x)\) byhaving an infinite number of
+rectangles.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fCC7P1o5AObC6tLLfOSa09m4Uk1VgUf8c.png}}
+
+We callthis exact area beneath a curve and above the axis-the Definite
+Integral
+
+\subsubsection{THE FUNDAMENTAL THEOREM OF
+CALCULUS}\label{the-fundamental-theorem-of-calculus}
+
+If a function \(f(x)\) is continuous on the closed interval \([a,b]\)
+and \(F(x)\) is an antiderivativeof \(f(x)\) on the interval then:.
+
+\[\int\limits_{a}^{b}f(x)dx=F(x)\Big|_{a}^{b}=F(b)-F(a)\:\text{is the Definite Integral},\]
+with \(a\) and \(b\) as lower and upper bounds
+
+The area under a curve between two points is found by calculating the
+definite integral between the two points. The area under the curve means
+the area bounded by the curve, the axis, and the boundary points.
+
+So, the area under \(f(x)=x^{2}+1\) and between \(x=0\) and \(x=4\) can
+be found using the definite integral
+
+\[\int\limits_0^4\Bigl(x^2+1\Bigr)dx\]
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/ffcsiK74thxYS0qRI3YWokWEkWfKazhUq.png}}
+
+EXACTAREA UNDER A CURVE
+
+The definite integral for a curve from a to b will give the sum of the
+SiGNED Areas.
+
+Area should be POsITIVE ONLY
+
+To find Area we must be careful to use the HEIGHT from the
+Representative Rectangle.
+
+Find the area under the curve \(f(x)=x\) between \(x=-4\) and \(x=4\) .
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fgqocirPmRSHpgYZvxZ4fShrrmpKYxi99.png}}
+
+For all Area problems, it is important to understand the representative
+rectangles.
+
+REPREsENTATIVE RECTANGLE: is the same rectangle we used for
+approximation
+
+The height of the rectangle helps us determine what our definite
+integral should be Instead of \(\Delta x\) or y we will now use dx and
+dy as we will use the Definite Integral to find areas.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/flF13zu5pSHXuU17GyqGWcBdHAtIY63oz.png}}
+
+Different areas will require different Representative Rectangles and
+have different heights
+
+Some Areas will require more than one Representative Rectangle Draw
+another rectangle anytime the nature of the area changes **Each
+rectangle willhave a different expression for the height
+
+For each graph of \(f(x)\) ：
+
+1.Shade the area. 2. Draw the representative rectangle(s) and label it.
+3.Write the definite integral needed tofind the area
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fsG2nSc6GFR8GMi6n0UpB6d9gyYGEzxp3.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fabW6Gu7sAiaqt8xtbkovIs5W4ZSLR4e8.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fptbGXslxKg2DEqrxk7mzbkZKBpqqn7tY.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fg9Bsk3giL3afHGnaioAVc0wgbq2BS4Sl.png}}
+
+For functions of Y, area under the curve. isbetween the curve andthey
+axis:
+
+The rectangle will be horizontal, the bounds are yvalues and the width
+of therectangle is \(dy\) .
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fYkIcOyizdL9Vlktr1hRgeAGbB6wQ1ZgR.png}}
+
+\[Area=\int_{0}^{4}f(y)dy\]
+
+\subsection{Example:}\label{example}
+
+For each case below,draw representative rectangles and label them dx or
+dy: Write an expression for theheight of the rectangle
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/ftZg2lKD31Gl9uINiTQSAotdoBwZfLZYB.png}}
+
+\subsection{Solving Area Problems}\label{solving-area-problems}
+
+1: Mark the lower and upper bounds of the on your graph. Shade the area
+
+2: Draw the representative rectangle(s). Find any other required bounds
+
+3:Find the equation for the height for each rectangle, \(h(x)\)
+
+\[A=\int_a^bh(x)dx\] 4: Write the Definite Integrals for each rectangle
+with its bounds..
+
+5: Evaluate the Definite Integral. Remember: Area has units
+
+\subsection{Example:}\label{example-1}
+
+Find the exact area under the curve \(y=-x^{2}+9\) between the lines
+\(x=-3\) and \(x=3\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f0VrFgvuXRbxLFkxDUCBmRUIxaGlCB1Oc.png}}
+
+\subsection{Example:}\label{example-2}
+
+Find theexact shaded area underthe curve \(y=2x^{5}-4x^{3}+2x\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fHgQnIODsl86dEbZKzQIhfuoi1zuadEVB.png}}
+
+\section{2.5 Area Under f(y)}\label{area-under-fy}
+
+All of the functions we've seen so far are functions of \(x\) .Some
+problems involve functions of \(y\) . The area under the curveis
+thenbetween the curve and they-axis.
+
+\[x=\sin y\]
+
+\[x=4-y^{2}\]
+
+\[x=y^{3}\]
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/ficiQ5xpVrTWpMIVERGpcILhZA4gGNwqb.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/feyN7LBnPXG8KZ4zXuUwR3NHO6FNvpm6m.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fmIqims8rq7CZDXyOdX4va6LzZi2SgEub.png}}
+
+IMPORTANT: The functions must be written with x as the dependant
+variable. ie \(x=\)
+
+Forthe areabetween they-axis and this curve \(y=x^3\) with bounds
+\(y=-1\) and \(y=1\) ， we need to consider:
+
+The equation \(y=x^3\)
+
+The bounds
+
+The negative and positive regions
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fpqH2unISZTKBooWrtrGNFHyzezVGLlZc.png}}
+rectangle(s)
+
+The representative
+
+The definite integral would be:
+
+In General: The definite integral for area bounded by the -axis is
+\(A=\int_c^dh(y)dy\)
+
+E3 Find the area under the curve \(y=\sqrt{(-x)}\) from \(y=0\) to
+\(y=2\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fsEzc6gqgD03sk15Dq3G7fLdwgKEFKE9m.png}}
+
+E4 Find the shaded area between the y-axis and the curve
+\(x=y^{5}-7y^{4}+17y^{3}-17y^{2}+6y\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fIxfgcW2BANAifiLipw976QvScX7BNTDL.png}}
+
+\subsection{2.6The Representative Rectangle for 2
+Curves}\label{the-representative-rectangle-for-2-curves}
+
+For all Area problems, it is important to understand the representative
+rectangles
+
+REPRESENTATIVE RECTANGLE: is the same rectangle we used for
+approximation
+
+The height of the rectanglehelpsus determine what our definite integral
+shouldbe
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fBMQVq8eipZRyEeWMSTK3CEcpVb2Bi4gk.png}}
+
+Instead of \(\Delta x\) or y we will now use dx and dy as we will use
+the Definite Integral to find areas.
+
+\subsubsection{Example:}\label{example-3}
+
+For each case below, draw representative rectangles and label them dx or
+dy Write an expression for the height of the rectangle
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/ffVDt4GuUl3RXvyUxBK5MtiOFqSTn0UGv.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f9nuNYhQgMTUYguNesnT6iZglpwBSDSfs.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f7CC8F4km072lWyoUMZVywwUo80oaT65B.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fp382TriWB1qdigGdkcWQw2Q0XqK1oUxN.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fifAgrcFg3VSauFuC83u2svrK7prpylff.png}}
+
+To find the area between curves we need to write the definite integral
+as a composition of the two curves The representative rectangle helps us
+determine this.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fiP0bggQ9r8ygtI4nSZ9GkN6xLY5E4Fg0.png}}
+
+\subsection{Finding the Area Between
+Curves}\label{finding-the-area-between-curves}
+
+1:Find the lower and upper bounds of the area and mark them on your
+graph.
+
+These may be the intersection of the graphs..
+
+2: Draw the representative rectangle(s). Find any other required bounds
+
+3: Find the equation for the height for each rectangle, \(h(x)\)
+
+\[A=\int_a^bh(x)dx\] 4:Write the Definite Integrals foreach rectangle
+with its bounds.
+
+5: Evaluate the Definite Integral. Remember: Area has units.
+
+E1 For each of the following graphs:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Shade the area between the two curves. 5.Draw the representative
+  rectangle(s) and label it (them). 6.Write the definiteintegral(s)
+  needed to find the area.
+\end{enumerate}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f8iTA5l4VVF927BQZdmfKxRpybYvuy1YL.png}}
+
+E2 Find the shown enclosed areabounded by the curves
+\(y=x^{4}-2x^{2}+1\) and \(y=x^{2}-1\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fbX9plOTGfi0IefBQxpxgFpRYMaEcIkhm.png}}
+
+E3 Find the area between the curves \(y=\sin x\) and \(y=\cos x\) from
+\(x=0\) to
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fdw6m8UaZF8KBeN0N56euUYmBgpdc7vKk.png}}
+
+Always use brackets when you are subtracting curves.
+
+\[\int f(x)-g(x)\:dx\]
+
+\[\int(x^2)-(x^3+1)dx\]
+
+\[\int f(x)-g(x)\:dx\]
+
+\[\int x^2-x^3+1\mathrm{dx}\] nooooo!
+
+Whenyou are given twofunctions you need toknow which equation matches
+which curve.You could graph thefunctions on a graphic calculator todo
+this,but you should learn toidentify them bylooking at them.Let's review
+
+absolute value
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fKNVmsmVwdhR5HGzCf5QrwOF63sEYZlcZ.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/ftUl7k5ONcZEmkEtWD717N4y1zX74fII9.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fAbgXTh7gCt6BtURg5aGviHMNRaVC2qcG.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fL9DdhxUu8zcITx6HEmTtgUcDLgso2cW6.png}}
+
+circle
+
+radical
+
+exponential
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fSgk9ag2LubaQWy4BqCw5TntURsg92MT9.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fe3LXL1IgnGcDZ9y8Xputya4fGFHReBTy.png}}
+
+\[y=\sqrt{x}\]
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fTWB2Ce94c9gNuvYrtGCGUzsXDgbsRNKo.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fN0bPckaz3x7crpOOUmabA9ns6pY0Vf61.png}}
+
+\[y=a^{x}\]
+
+Curves ``flip'' (y-values change sign) when there is a negative in front
+of the function (except circles).
+
+cubic
+\pandocbounded{\includegraphics[keepaspectratio]{./images/frdCldCwgKHDqnk6t1y62FKZ7UvTEe4tr.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/flrn2RBkKUAQguYKGzfQgFGZqgu0ukstG.png}}
+
+absolute value
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fR03pGHz2FcbhbBQHAukqUlvFwIazTURg.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fiphpvXitSmye1EFnALqGNVMkeeqbepMt.png}}
+
+radical
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fSOgeBZ7zR1VcgLOOqU9SOmfgGLZMrQ9O.png}}
+
+exponential
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fTNmbR0z6BvE6pmoYfqhp4B9A7on5FPpg.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f1VHdFfLD4k1Hnz1TlS8Enegur0GYBMCt.png}}
+
+\[y=-a^{x}\]
+
+E4 Let's find the enclosed area between the curves \(x=4-y^{2}\) and
+\(y=x+2\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fPWTRHFqNRy9vmFa5hDw7B3GwGzoe6VQU.png}}
+
+\subsection{2.8 Volume of Revolution - Disc
+Method}\label{volume-of-revolution---disc-method}
+
+A volume of rotation is created by taking an area in the xy axis and
+rotating it into a 3D object
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fDITqpB7v1lwbinEdXE7puP8gEbXbDpct.png}}
+
+We can approximate the volume by adding up all the volumes of all the
+disks:
+
+V
+
+V=
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fpDAHgKvv7lh1Xk72xNBIU3Sv9vpo9Bnp.png}}
+
+Just as we did with area, if we want anexact volume we need to consider
+an infinite number ofdisks
+
+Now, using the Fundamental Theorem of Calculus
+
+E1 An area iscreated bybounding theregionunder \(y=3\) from \(x=-3\) to
+\(x=5\) . Find the volume of the cylinder created by rotating this area
+about the \(x\) -axis.
+
+It is always important to note which axis we're rotating about.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fg7IFauY6ywgXs1v3dzCTknyhnG1CGFdH.png}}
+
+Since this shape is an actual cylinder,we can compare our definite
+integral volume to the geometrical equation we commonly use:
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fdhQ8s4Y0GzdcdDPlo5nMKArIek3fvu5o.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fQiRdBPpsY7uCE3gacm0PviwaaGUqzzhL.png}}
+
+To find the volume:
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fkL6QY0uZaP5FAdGRgHhQ5lDOhViDyF61.png}}
+
+\subsubsection{Find the Volume from Any
+Area}\label{find-the-volume-from-any-area}
+
+1.Mark the upper and lower bounds for the area to be rotated.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Add the rotation to the correct axis. IMPORTANT!E
+\item
+  Draw the representative rectangle and determine the radius, \(r(x)\)
+\item
+  The area of the disk is \(A_{D\mathrm{is}k}=\pi r^{2}\) . Write the
+  area in terms of \(x\) ， \(A(x)\) 5. Use \(V=\int_a^bA(x)dx\) to find
+  the volume. Don't forget units!
+\end{enumerate}
+
+\subsubsection{DISK METHOD-ROTATING ABOUT
+X-AXIS}\label{disk-method-rotating-about-x-axis}
+
+\(V=\int_a^bA(x)dx\) where \(A=\pi r^{2}\) (area of a disc)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fOS70FLS2qcmLUQQ45RlUZerNLThygkof.png}}
+
+E2Find the volume of thesolid formed by the rotation of \(y=2x\) about
+the \(x\) -axis between \(x=1\) and \(x=4\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fr7B0veAR96wWfzrrghG3MFoBm39TA5GI.png}}
+
+E3 Find the volume of the solid formed by rotating the area created by
+\(y=e^x\) about the x-axis
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fBIRGbXaRS8gLx7SOY3RobF8At0zYQK5Z.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f0WGg7z461syUZtuxywsW9dsTDZIdTDWE.png}}
+
+We don't always rotate about the x-axis.Sometimes we are asked to rotate
+about the y-axis
+
+In this case we solve the function for \(x\) like when we did for
+areabetween curves.
+
+Solving for x does not mean we simply switch x and \(y\) in the formula.
+
+Find the volume of the solid formed by rotating \(y=4-x^{2}\) about the
+y-axis.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f5nUg9sg4KTzo5ppGHtxw4snHQg6bcGzN.png}}
+
+\begin{quote}
+When curve revolves around the y-axis: \(x = g(y)\) When curve revolves
+around the y-axis: \(y = g(x)\)
+\end{quote}
+
+\begin{align*}
+  x = h(y) = r \\
+  y = 4-x^2 \\
+  \implies x = \pm \sqrt{4-y} \\
+  V = \int_0^4 \pi [g(y)]^2 dy \\
+  = \pi \int_0^4 (\pm \sqrt{4-y})^2 dy \\
+  =  \pi \\
+\end{align*}
+
+DISK METHOD - ROTATING ABOUT Y-AXIS
+
+\(V=\int_c^dA(y)dy\) where \(A=\pi r^{2}\) (area o adisc)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fdXdxaPvyXRpDHlDvgFlZGgR95A0UkzWZ.png}}
+
+Notice the rectangle is perpendicular to the axis of rotation.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fvx51e11dSAWm2FEscFsslRkfDpghUD8m.png}}
+
+Since the area for a disk is \(A_{Disk}=\pi r^{2}\) , it doesn't matter
+if the curve is above or below the axis.
+
+\subsubsection{Above the curve}\label{above-the-curve}
+
+Under the curve
+
+\[r=(f(x)-0)\]
+
+\[A(x)=\pi(f(x))^2\]
+
+\begin{align*}
+&r=(0-f(x)) \\
+&\text{.} A(x)=\pi(-f(x))^{2}  \\
+&&&=\pi(-1)^{2}(f(x))^{2} \\
+&&&=\pi(f(x))^{2}
+\end{align*}
+
+\subsubsection{2.9Volume of Revolution - Washer
+Method}\label{volume-of-revolution---washer-method}
+
+If we have an area between curves to rotate around the axis,we get a
+hollow 3d shape(ie it has space in the middle).
+
+We use the same ideas as before but the space inside the shape creates a
+washer shape, so when we have two curves, we call it the Washer Method.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fsRIIQUfnLc4OuLGvhIhF0u4Kgs9g4iGB.png}}
+
+We already know that \(V=\int_a^bA(x)dx.\) So wecan fn thevolmea before
+
+\subsubsection{Find the Volume using Revolution of an Area between
+Curves}\label{find-the-volume-using-revolution-of-an-area-between-curves}
+
+\[A_{Washer}=\pi r_{o}^{2}-\pi r_{i}^{2}\] For area between curves that
+makes a washer shape, we use:
+
+1.Markthe upper and lowerboundsfor the area tobe rotated. 2. Add the
+rotation to the correct axis. IMPORTANT! 3. Draw a representative
+rectangle and determine the radius and inner radius. 4. Write the area
+in terms of \(x\) ， \(A(x)\) . 5. Use \(V=\int_a^bA(x)dx\) to find the
+volume. Don't forget units!
+
+E1 Find the volume of the solid generated by revolving the enclosed area
+between \(y=x\) and \(y=x^{2}\) about the \(x\) -axis.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fgblVeEpxMzo6r73eXrOllAV5Ade8m9my.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f3WQDZPGhSbkyehd5dWYN6n1cHyiIb1fk.png}}
+
+E2 Find the volume of the solid generated byrevolving the enclosed area
+between \(y=x\) and \(y=x^2\) about the y-axis.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fme8w868y4FAOpzqY8t5898dKAruWyh7f.png}}
+
+\subsection{2.10 Volume of Revolution - Shell
+Method}\label{volume-of-revolution---shell-method}
+
+Previously, we considered volume as a collection of disks.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fmFYYUxQH0vLkznniS43CXpToAdRWCbcR.png}}
+
+We can take the same area and rotate it around the y-axis This makes a
+3d volume that is a collection of thin cylinders or
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f77s9G5iLtudl4Hh2GgfBuqGZCPeGYfc7.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fQFgzhsvl5bFDEwbOdBDtKC8KvTGML0EV.png}}
+
+Each Ax makes a shell
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fCS8pUEocFcTdpFM8Ga0Fcu8u1xFOPEuO.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fe3DyDH59nwpSLuS59CLlGzUThgfvAqCL.png}}
+
+The areaweuse tofindvolume is here
+
+If we unroll the shell we can define the area forintegration as
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fC8U1hhToNPX9hkaeEV5qdCQDsxpLzH2A.png}}
+
+\(V=\)
+
+\[\sum_{i=0}^{n-1}A(x_i)\Delta x\]
+
+Again,ifwe add up aninfinite number of shells, we get
+
+V=
+
+Now, using the Fundamental Theorem of Calculus
+
+Given a more complex function, we see that the height of each shell
+depends on f(x)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fGDtUunBOshZc1x38HeA8R1UteQ267ggL.png}}
+
+\subsubsection{SHELL METHOD-REVOLVING ABOUT
+Y-AXIS}\label{shell-method-revolving-about-y-axis}
+
+\(V = \int_a^b A(x)dr\) where \(A_{shell}=2\pi rh\) (area of thin shell)
+
+r is \(X\), and the height depends on \(f(x)\)
+
+E1 Using the shell method, find the volume of the solid generated by
+revolving the first-quadrant region bounded by \(y=4-x^{2}\) about the
+y-axis.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fUY7G6ZkX4vE5mCvcizX5nof7lK5Cp1sb.png}}
+
+E2 Use the shell method tofind the volume of the solid generated by
+revolving the region boundedby the \(x\) -axis, \(y=-\sin(x^{2})\) ，
+\(x=0\) and \(x=\sqrt{\pi}\) about the y-axis.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f09NQfsg20K4kBPtFkyunlxXlmWByFk34.png}}
+
+\begin{align*}
+  u = x^2 \\ 
+  du = 2x dx \\
+  \int x \sin x^2 dx = \frac{1}{2} \int \sin x^2 2x dx \\
+  = \frac{1}{2} \int \sin u du \\
+  = \frac{1}{2} (- \cos x) + c \\
+\end{align*}
+
+\begin{align*}
+  V = 2\pi \int_0^{\sqrt{\pi}} x |(-\sin (x^2))| dx \\
+  = 2\pi \int_0^{\sqrt{\pi}} x (-\sin (x^2)) dx \\
+  = 2\pi \left[ -\tfrac{1}{2} \cos (x^2) \right]_0^{\sqrt{\pi}} \\
+  = - \pi [ \cos \pi - \cos 0 ]
+\end{align*}
+
+\section{Recognize the difference between the
+methods:}\label{recognize-the-difference-between-the-methods}
+
+E3 Identify the method and write the form for the area used to find the
+volume.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fPu9tQo4IShXvGWQdZCYgR8fshgM3FIm1.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fgnXnfgbhmqpQ7mcWN7vg4wMQEY0sbmTW.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fh8TIOnbfMX1Rnm1ShYgkPP7gU28Bb4CA.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fiVsE44C49MLKgnY8uoG08wdIFhDBtuDO.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fbsPhgvuBudZKeRL41zs0RQuL0snnROtp.png}}
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/faHrwWlz3qXUGvP3MPRMQeGf9HlpdVNue.png}}
+
+\subsection{2.11.1 Introduction}\label{introduction}
+
+In the Cartesian coordinate system,we plot apoint \((x,y)\) by starting
+at the origin O and then moving \(x\) units horizontally followed by.
+\(y\) units vertically.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fLGZUZRG9vclabhtOLNQ9rnGo9lhpBm0I.png}}
+
+This is not the onlyway to define apoint in two-dimensional
+space.Instead ofmoving vertically and horizontally from the origin to
+get tothe point we could instead go straight out of the origin until we
+hit the point and then determine the angle thisline makes with the
+positive \(x\) -axis. We could then use the distance of the point from
+the origin and the amount we needed torotate from the positive \(x\)
+-axis as the coordinates of thepoint.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fUkD6LHiq5vaNCxqnXgQedRoDZ7VXhhyw.png}}
+
+Coordinates in this form are called polar coordinates.
+
+The polar coordinate system is a two-dimensional coordinate system in
+which each point P in the plane is determined by the polar coordinates
+\((r,\theta)\)
+
+To define the polar coordinates \((r,\theta)\) ,wefix an originO called
+the pole,and construct from O an initial ray called thepolar axis.
+
+Then each point P can be located by assigning to ita polar coordinate
+pair \((r,\theta)\) as shown in figure1below inwhich''r''givesthe
+directed distance from origin O to P, and`` \(\theta^{\prime}\) ' gives
+the directed angle from the initial ray to the rayOP.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fG5w9ru96A98CUgGgmewDFYpG1xWHtlce.png}}
+
+We use the convention that \(\theta\) is positive when measured
+anti-clockwise and negative when measured clockwise.
+
+? \(r\) is called the radial coordinate of the point P \(\theta\) is
+called the angular coordinate of the point P
+
+\subsubsection{N.B.}\label{n.b.}
+
+A. The pole O (origin) has no specific angular coordinate \(\theta\) ,
+but it has radial coordinate \(r=0\) Then we assign to O the polar
+coordinates \((0,\theta)\) for any angle \(\theta\)
+
+B. The angular coordinate \(\theta\) associated to a given point is not
+unique. Since adding multiple of \(2\pi\) to \(\theta\) , does not
+change the location of the point, then the polar coordinates
+\((r,\theta)\) and \((r,\theta+2n\pi)\) represent the same point for
+anyinteger \(n\)
+
+For example, ll the following polar coordinates
+\(\left(1,\:\frac{5\pi}{4}\right),\left(1,-\frac{3\pi}{4}\right)\) ,
+\(\left(1,\:\frac{13\pi}{4}\right)\) represent the same oint ir the
+plane.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fX8L81oagQaQnLLEZHhO7MmVWeQYIeowN.png}}
+
+(allrepresent the same point in the plane)
+
+\(\Xi \mathbf{x} . {\underline {2}}{: }\left ( 2, \:\frac \pi 3\right ) , \left ( 2, - \frac {5\pi }3\right )\)and\(\left(2,\:\frac{7\pi}{3}\right)\)
+(allrepresenthe same poin inthe plane
+
+C. Since the radial coordinate \(r\) is a directed distance, we allow
+\(r\) to be negative with the convention that the points \((r,\theta)\)
+and \((-r,\theta)\) lie onthe same line throughthe origin O and at the
+same distance \(|r|\) from O.
+
+If \(r>0\) , the point lies in the same quadrant as \(\theta\) If
+\(r<0\) , the point lies in quadrant opposite to \(\theta\) (quadrant in
+the opposite side of the pole).
+
+The polar coordinates \((r,\theta)\) and \((-r,\theta)\) represent then
+two diferent points in the plane For example, the points
+\(\left(2,\:\frac{\pi}{6}\right)\)and\(\left(-2,\:\frac{\pi}{6}\right)\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/frqzDtbZulhUQKfekhOwMzTax6YPqUaIW.png}}
+
+D.From the convention of part C,we can say that the polar coordinates
+\((r,\theta)\) and \((-r,\theta+\pi)\) represent the same point.
+
+More generally,
+
+\((r,\theta)=(-r,\theta+(2n+1)\pi)\) for any integer \(n\)
+
+For example, the polar coordinates
+\(\left(2,\:\frac{\pi}{6}\right),\left(-2,-\frac{5\pi}{6}\right)\)and\(\left(-2,\:\frac{7\pi}{6}\right)\)all
+represent the same point in the plane.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f1g8g1215UeGBfF2bnbwyeLY3AQVoqrU8.png}}
+
+\[\begin{array}{|c}(r,\theta)=(r,\theta+2n\pi)=(-r,\theta+(2n+1)\pi)\end{array}\]
+
+For example,
+\(\left(5,\:\frac{\pi}{3}\right)=\left(5,-\frac{5\pi}{3}\right)=\left(-5,\:\frac{4\pi}{3}\right)=\left(-5,-\frac{2\pi}{3}\right).\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/ffRZ4B82HQ75clxGQ18L81wZlx7emd5og.png}}
+
+This means, a point in polar coordinate system has infinite number of
+pairs of polar coordinates. (Unlike in cartesian coordinate system where
+there is only one pair of cartesian coordinatesfora point)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fgPT74W70yyugSDyn9Lo7wkQrdnCu0mLc.png}}
+
+In the right triangle, we have:.
+
+\[r^{2}=\:x^{2}+y^{2}\] (Pythagorean theorem
+
+And,
+
+\[cos\theta=\frac xr\quad\mathrm{and}\quad sin\theta=\frac yr\]
+
+\subsubsection{2.11.4 Converting from Polar to Cartesian (Rectangular)
+Coordinates}\label{converting-from-polar-to-cartesian-rectangular-coordinates}
+
+To convert from Polar Coordinates to Cartesian (or Rectangular)
+Coordinates, use the formulas
+
+x = rcos0 and \(y=rsin\theta\)
+
+Ex.1: Find the rectangular coordinates of the point
+\(\begin{pmatrix}-4,\:\frac{2\pi}{3}\end{pmatrix}\)
+
+\subsubsection{Solution}\label{solution}
+
+\begin{align*}
+&x=-4\cos\left({\frac{2\pi}{3}}\right)=-4\left(-{\frac{1}{2}}\right)=2 \\
+&y=-4\sin\left(\frac{2\pi}{3}\right)=-4\left(\frac{\sqrt{3}}{2}\right)=-2\sqrt{3}
+\end{align*}
+
+So, in Cartesian coordinates this point is \((2,-2\sqrt{3})\)
+
+Ex.2:Find therectangular coordinates of each of the following points
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  (-2, 3)
+\end{enumerate}
+
+\[d)\left(\sqrt{2},-\frac{5\pi}{4}\right)\]
+
+\[\mathfrak{c})\begin{pmatrix}2,\frac{\pi}{3}\end{pmatrix}\]
+
+\subsubsection{2.11.5}\label{section}
+
+\subsubsection{Converting from Cartesian (Rectangular) to Polar
+Coordinates}\label{converting-from-cartesian-rectangular-to-polar-coordinates}
+
+To convert from Cartesian (or Rectangular) Coordinates to Polar
+Coordinates, use the formulas
+
+Since \(r^{2}=\) \(x^{2}+ y^{2}\) \[tan\theta=\frac{y}{x}\]
+
+Then,
+
+\[r=\sqrt{x^2+y^2}\quad\text{and}\quad\theta=tan^{-1}\left(\frac{y}{x}\right)\]
+
+N.B. Be careful when finding \(\theta=tan^{-1}\left(\frac{y}{x}\right)\)
+because inverse tangents only eturn value in the range:
+\(-\frac{\pi}{2}<\theta<\frac{\pi}{2}\) (ie in quadrants 1 and 4 onl)
+
+Important: Recallthat there is a second possible angle and that the
+second angle is given by \(\theta+\pi\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f22xtYsOh5q9wPLFEv2TZGFcNn9MOZnzx.png}}
+
+Ex.1: Convert (-1,-1) into polar coordinates
+
+\subsubsection{Solution}\label{solution-1}
+
+\[r=\sqrt{\left(-1\right)^2+\left(-1\right)^2}=\sqrt{2}\]
+
+\[\theta=\tan^{-1}\left(\frac{-1}{-1}\right)=\tan^{-1}\left(1\right)=\frac{\pi}{4}\]
+
+This is not the correct angle however. This value of \(\theta\) is in
+the first quadrant and the point we've been given is in the third
+quadrant. As noted above we can get the correct angle by adding \(\pi\)
+onto this. Therefore, the actual angle is,
+
+\[\theta=\frac{\pi}{4}+\pi=\frac{5\pi}{4}\]
+
+So, in polar coordinates the point is \((\sqrt{2},\frac{5\pi}{4})\) .
+Note as well that we could have used the first \(\theta\) that we got by
+using a negative r. In this case the point could also be written in
+polar coordinates as \(\left(-\sqrt{2},\frac{\pi}{4}\right)\)
+
+Ex.2: Find the polar coordinates of each of the following points:
+
+a)(2,2)
+
+b） (1,-1)
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\item
+  \(\begin{pmatrix}-1,\sqrt{3}\end{pmatrix}\)
+\item
+  \(\begin{pmatrix}1,-\sqrt{3}\end{pmatrix}\)
+\item
+  \(\left(-2,-2\sqrt{3}\right)\)
+\end{enumerate}
+
+\section{2.11.6 Polar Equation:}\label{polar-equation}
+
+Apolar equation is of theform \(r=f(\boldsymbol{\theta})\) or more
+generally \(f(r,\theta)=0\)
+
+The graph of a polar equation in the xy-plane consists of the points
+\(P(x,y)\) for which:
+
+\[x=rcos\theta\quad\mathrm{and}\:y=rsin\theta.\]
+
+Ex.1:Find the polarequation corresponding to each of each of the
+following
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  \(x=1\)
+\item
+  \(y=3x+2\)
+\item
+  \(x^{2}-y^{2}=9\)
+\item
+  \(x^{2}+(y-3)^{2}=9\)
+\end{enumerate}
+
+\subsubsection{2.11.7 Area with Polar
+Coordinates}\label{area-with-polar-coordinates}
+
+We are going to look at areas enclosed by polar curves. Note as well
+that we said ``enclosed by' instead of''under'' as we typically have in
+these problems.These problems work a little differently in polar
+coordinates. Here is a sketch of what the area that we'll be finding in
+this section looks like.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fBmlHhAGqkugfOkLPiEgcaUrNf511lWYi.png}}
+
+To understand the area insideof apolarcurve \(r=f(\theta)\) ,we start
+withthe areaof a sliceof pie.If the slice has angle an radius,the t ' a
+raction \(\frac{\theta}{2\pi}\) of the entir ie
+
+So,the area ofthe slice is:
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fckYKPWpG7ldN88mlrXGewxZ3iCW6QYd9.png}}
+
+Now we can compute the area inside of polar curve.
+\(r=f(\boldsymbol{\theta})\) ,between angles \(\theta=\alpha\) and
+\(\theta=\beta\) .As with all bulk quantities, we
+
+1.Break the region into N small pieces. 2.Estimate the contribution of
+each piece. 3.Add up the pieces. 4.Take a limit to get an integral.
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/fvaZgGGcc7w8fYRUqXbEw29dsOzVC2BH1.png}}
+
+In our case, the pece ar slies of angle
+\(\Delta\theta=\frac{\beta-\alpha}N\)
+
+These aren't exactly pie slices, since the radius isn't constant,but
+it's a good approximation when \(N\) is large and \(\Delta\theta\) is
+small.
+
+The ith slice has area approxcimately: \(A_i=\frac{r_i^*}2\Delta\theta\)
+
+So, the whole thing has area \(A_N\) approximately
+
+\[A_N=\sum_{i=1}^NA_i\approx\sum_{i=1}^N\frac{r_i^*}{2}\Delta\theta \]
+
+Taking the limit as \(N\to\infty\) of the above Sum to get the exact
+area as the definite integral
+
+\[A=\lim\limits_{N\to\infty}A_N=\int\limits_{\alpha}^{\beta}\frac{r^2}{2}d\theta=\frac{1}{2}\int\limits_{\alpha}^{\beta}r^2d\theta \]
+
+Suppose f is continuous and nonnegative on the interval
+\(\alpha\leq\theta\leq\beta\) ，with \(0<\beta-\alpha\leq2\pi\) The area
+of the region enclosed bythe graph of polar curve \(r=f(\theta)\)
+between the radial lines \(\theta=\alpha\) and \(\theta=\beta\) is given
+by the formula.
+
+\[A=\frac{1}{2}\int\limits_{\alpha}^{\beta}r^2d\theta \]
+
+\$\begin{align*}&\text{Rex Poseremone the seen at the Poser thep of the palle coure r}=2+4\cos(\theta)\\&\theta=2p^{\frac{1}{1}}\\&\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}-\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac $
+
+$\begin{align*}&\text{BeE Cocallist the thed Pere of the Pere Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallis Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocadlist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist}\end{align*}\$
+
+Ex.3: Calculate the shaded area of the polar curve \(r=3sin(2\theta)\)
+between
+
+\(\theta=0\) to \(\theta=\frac{\pi}{2}\)
+
+\pandocbounded{\includegraphics[keepaspectratio]{./images/f6zAMNOairRpFL5ThheyKtnL8DbHuD1rS.png}}
+
+
+
+
+\end{document}

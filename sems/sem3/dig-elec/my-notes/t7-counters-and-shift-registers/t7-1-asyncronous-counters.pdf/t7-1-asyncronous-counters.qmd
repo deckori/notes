@@ -1,0 +1,178 @@
+---
+title: Asynchronous Counters
+---
+
+{1}------------------------------------------------
+
+# Objectives
+
+- Define the counters
+- Recognize counter classifications
+- Recognize the MOD/Ripple Counters
+- Design a ripple counter
+
+{2}------------------------------------------------
+
+### Digital Counters
+
+> - Used to count pulses
+> - Used as a frequency divider
+
+- A digital counter is a set of flip-flops whose states change in response to pulses applied at the input to another. A counter is used to count pulses.
+- A counter can also be used as a frequency divider to obtain waveforms with frequencies that are specific fractions of the clock frequency.
+- They are used for counting the number of occurrences of an event and are useful for generating timing sequences to control operations in a digital system.
+
+{3}------------------------------------------------
+
+### COUNTERS
+
+| ASYNCHRONOUS | SYNCHRONOUS |
+|----------------------------------------|--------------------------------|
+| Flip-flops are connected in such a way that output of first flip-flop drives the clock for the next flip-flop. | No connection between output of first flip-flop and clock input of next flip-flop. |
+| All the flip-flops are not clocked simultaneously. | All the flip-flops are clocked simultaneously. |
+| Logic circuit is simple even for more number of states. | Design involves complex logic circuit as number of states increases. |
+| Main drawback is their low speed as the clock is propagated through number of flip-flops before it reaches last flip-flop. | As the clock is simultaneously given to all flip-flops there is no problem of propagation delay. |
+
+{4}------------------------------------------------
+
+### Modulus of the counter
+
+- The number of states through which the counter passes before returning to the starting state is called the *modulus of the counter*.
+
+> i.e., Maximum number that the counter is able to count
+
+- Hence, the modulus of a counter is equal to the total number of distinct states including zero that a counter can store
+- A counter may have a shortened modulus, and thus does not utilize all the possible states
+- The condition to determine the number of flip-flops is
+
+$$\text{MOD number, N} \leq 2^n$$
+
+Where $n$ is the number of flip-flops.
+
+- The MOD number of a counter also indicates the frequency division obtained from the last FF.
+- MOD-16 can be used to divide the input pulse frequency by a factor of 16 (the MOD number)
+
+{5}------------------------------------------------
+
+### Modulus and State Diagram
+
+> this tells us how the inputs relate to the outputs in the counter
+
+- If N flip-flops are connected the counter will have 2 N different states, and so it is a MOD- 2<sup>N</sup> counter. It would be capable of counting up to 2 <sup>N</sup>-1 before returning to its 0 state.
+- In counters we concern about toggle mode so can use JK-FF, T-FF and D-FF.
+- The state diagram is a graphical representation for the truth table of the counter
+- For example, if we have 2 FFs we can count up to 3 and the state diagram as below
+
+![](_page_5_Figure_5.jpeg)
+
+{6}------------------------------------------------
+
+## Ripple (Asynchronous) Counter
+
+- In ripple counter, the flip-flops within the counter are not made to change the states at exactly the same time, i.e., they are not clocked simultaneously.
+- In a ripple counter, also called an *asynchronous counter* or a *serial counter*, the clock input is applied only to the first flip-flop, also called the input flip flop, in the cascaded arrangement.
+- The clock input to any subsequent flip-flop comes from the output of its immediately
+
+{7}------------------------------------------------
+
+## A 2-Bit Asynchronous Binary Counter
+
+- This counter is asynchronous because there is no common clock pulse.
+- The clocks are cascaded
+
+![](_page_7_Figure_3.jpeg)
+
+> Note: Here, for FF1, C is active-high despite the bubble on it's input. The bubble belongs to FF0, not to FF1.
+
+![](_page_7_Picture_4.jpeg)
+
+{8}------------------------------------------------
+
+## A 3-Bit Asynchronous Binary Counter
+
+![](_page_8_Figure_1.jpeg)
+
+![](_page_8_Figure_2.jpeg)
+
+- Since the modulus or mod number of the counter is 8, it requires 3 flip-flops.
+- The counter is negative edge triggering
+- Note how we return to state 000 at the 8th clock For this counter 1- Draw the truth table, show the clock counting, and the decimal No.
+- 2- Draw the sate Diagram
+
+{9}------------------------------------------------
+
+A 3-Bit Asynchronous Binary Counter/ Up
+
+![](_page_9_Figure_1.jpeg)
+
+![](_page_9_Picture_2.jpeg)
+
+![](_page_9_Figure_3.jpeg)
+
+| $Q_2$ | $Q_1$ | Q <sub>0</sub> |            |
+|-------|-------|----------------|------------|
+| 0     | 0     | 0              | Before ap  |
+| 0     | 0     | 1              | After puls |
+| 0     | 1     | 0              | After puls |
+| 0     | 1     | 1              | After puls |
+| 1     | 0     | 0              | After puls |
+| 1     | 0     | 1              | After puls |
+| 1     | 1     | 0              | After puls |
+| 1     | 1     | 1              | After puls |
+
+{10}------------------------------------------------
+
+## A 3-Bit Asynchronous Binary Counter/Down Counter
+
+![](_page_10_Figure_2.jpeg)
+
+{11}------------------------------------------------
+
+## Binary Ripple Counters with a Modulus of Less than 2<sup>N</sup>
+
+#### Design a MOD 6 Ripple counter using JK flip-flops.
+
+- •Count the number of states including zero states to get mod number = 6, and in the immediate next state i.e., in 110 state, $Q_2=1$ , $Q_1=1$
+- •Connect $Q_2$ and $Q_1$ to a NAND gate and the output of the gate to clear input of the flip-flops.
+- •Hence after state 101, when the circuit enters into state 110, the NAND output becomes 0 and hence the flip-flops will be in reset state, 000 and the count continues.
+- •Though the counter enters into 7<sup>th</sup> state, the time it spends in that state is negligible (propagation delay of NAND gate).
+- •Hence the counter is treated as a MOD 6 counter with states 000 to 101
+
+![](_page_11_Picture_7.jpeg)
+
+{12}------------------------------------------------
+
+# MOD 6 Ripple counter using JK flip-flops
+
+![](_page_12_Figure_1.jpeg)
+
+{13}------------------------------------------------
+
+# Example: MOD 10 Ripple counter/Decade counter
+
+• Use JK-FF to design MOD 10 ripple counter.
+
+#### Solution:
+
+- 1- This mean that the ordinary mode is MOD 16 so we need 4 JK-FFs
+- 2- Draw the sate diagram and the truth table
+- 3-We have to reset the counter after state 9 so we decode count 10 with a NAND to clear the inputs of FF
+- 4-The input of the NAND gate is from the Q outputs of FF1 and FF3
+
+![](_page_13_Figure_7.jpeg)
+
+{14}------------------------------------------------
+
+# Solution: MOD 10 Ripple counter using JK flip-flops
+
+![](_page_14_Figure_1.jpeg)
+
+{15}------------------------------------------------
+
+# Checklist
+
+• Design MOD16 asynchronous up counter use D, T, or JK –FF, show the truth table, state diagram, and the output waveform
+
+• Design MOD16 asynchronous down counter use D, T, or JK –FF, show the truth table, state diagram, and the output waveform
+
+• Design MOD13 asynchronous down counter use D, T, or JK –FF, show the truth table, state diagram, and the output waveform

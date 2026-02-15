@@ -1,0 +1,40 @@
+| Course   | Name                                 | Credits |
+| -------- | ------------------------------------ | ------- |
+| AETN3111 | APPLIED ELECTROMAGNETICS             | 3       |
+| AETN2121 | Analog & Digital Communication       | 3       |
+| AETN2221 | Analog & Digital Communication (Lab) | 1       |
+| AETN2112 | Network switching                    | 3c      |
+| AETN2212 | Network switching lab                | 1c      |
+| PHYS1020 | General Physics                      | 3       |
+| PHYS1021 | General Physics (Lab)                | 1       |
+| AECH1100 | Environmental Awareness & Ethics     | 2       |
+
+AEMA1312 ENGINEERING GRAPHICS = GENG 111 Engineering Graphics
+
+
+AETN 3221
+
+Sem 5
+| AECH1201 | Basic Engineering Calculations               |      1c   |
+AECH2103 Leadership & Management Principles 2c
+| AETN2302 | Applied Programming I                | 2       |
+AETN2103 Microprocessors & Microcontrollers 2c
+AETN2203 Microprocessors & Microcontrollers Lab 2c
+
+Sem 6
+| AEEL2201 | Electronic Fabrication Practice      | 2       |
+| AETN4101 | CONTINUOUS & DISCRETE-TIME SIGNALS & SYSTEMS |         |
+| RSST3002 | PROBABILITY & STATISTICAL ANALYSIS           |         |
+AETN 2122
+AETN2111
+AETN2211
+
+Sem 7
+Sem 8
+AETN 3101 Cyber Security
+AETN 3201 Cyber Security Lab
+
+Sem 9
+
+CAPSTONE: AETN 3101, AETN 3201
+

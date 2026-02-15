@@ -1,0 +1,14 @@
+---
+title: "midterm-progress"
+format: html
+---
+
+| Syllabus Topic no. | Textbook (in syllabus) | Textbook (not in syllabus) | Study Guide | Netacad theory | Netacad MCQ |
+|----|----|----|----|----|----|
+| 1 |  |  |  |  |  |
+| 2 |  |  |  |  |  |
+| 3 |  |  | \~ |  | \~ |
+| 7 |  |  | \~ | \~ |  |
+| 8 |  |  | \~ |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |

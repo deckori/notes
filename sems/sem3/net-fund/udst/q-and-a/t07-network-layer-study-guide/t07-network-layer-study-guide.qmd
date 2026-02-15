@@ -1,0 +1,76 @@
+
+
+{0}------------------------------------------------
+
+## **Topic 7 Network Layer Study Guide**
+
+- **1.** What are the **four** basic functions performed by the network layer? **(S3)**
+  - **1. Addressing end devices**
+  - **2. Encapsulation**
+  - **3. Routing**
+  - **4. De-encapsulation**
+- **2.** Describe briefly themeaning of Time-to-Live (TTL) field in the IPv4 header.**(S11)**
+
+**Layer 3 hop count. When it becomes zero the router will discard the packet.**
+
+- **3.** Explain briefly the **three**majorlimitations ofIPv4? **(S12)**
+  - **IPv4 address depletion – We have basically run out of IPv4 addressing.**
+  - **Lack of end-to-end connectivity – To make IPv4 survive long, private addressing and NAT were created. This ended direct communications with public addressing.**
+  - **Increased network complexity – NAT was meant as temporary solution and creates issues on the network as a side effect of manipulating the network headers addressing. NAT causes latency and troubleshooting issues.**
+- **4.** Explain briefly three improvementsthat IPv6 provides. **(S13)**
+  - **1. Increased address space – based on 128-bit address, not 32 bits**
+  - **2. Improved packet handling – simplified header with fewer fields**
+  - **3. Eliminates the need for NAT – since there is a huge amount of addressing, there is no need to use private addressing internally.**
+
+{1}------------------------------------------------
+
+## **5.** Describe the characteristics ofIP. **(S6-8)**
+
+| Characteristic       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Connectionless       | •<br>IP does not establish a connection with the<br>destination before sending the packet.<br>•<br>There is no control information needed<br>(synchronizations, acknowledgments, etc.).<br>•<br>The destination will receive the packet when it<br>arrives, but no pre-notifications are sent by IP.<br>If there is a need for connection-oriented traffic,<br>•<br>then another protocol will handle this (typically<br>TCP at the transport layer). |
+| Best<br>Effort       | •<br>Does not guarantee packet delivery.<br>•<br>Reduced overhead since there is no mechanism<br>to resend data that is not received.<br>•<br>Does not expect acknowledgments.<br>•<br>Does not know if the other device is operational<br>or if it received the packet.<br>•<br>Must rely on other protocols for these functions.                                                                                                                    |
+| Media<br>Independent | •<br>IP does not concern itself with the type of frame<br>required at the data link layer or the media type<br>at the physical layer.<br>•<br>IP can be sent over any media type: copper,<br>fiber, or wireless.                                                                                                                                                                                                                                      |
+
+{2}------------------------------------------------
+
+- **6.** What isthe purpose ofDifferentiated Services and TrafficClassfieldsin the IP header? **(S11, S15)**
+  - **Both are used foe QoS**
+- **7.** What are the **three** types of DESTINATION that a host can send packetsto? **(S16)**
+  - **Itself – 127.0.0.1 (IPv4), ::1 (IPv6) – the special address of the loopback interface**
+  - **Local Hosts – destination is on the same LAN**
+  - **Remote Hosts – devices are not on the same LAN**
+- **8.** How does a source host determine whether an IPv4 destination is local or remote? Where does a source host forward the remote traffic? **(S17)**
+  - **Local traffic is sent to the intermediary device, remote traffic is forwarded directly to the default gateway on the LAN.**
+- **9.** What are the **three** main characteristics of a default gateway?What happensif a device has no default gateway or a bad default gateway? **(S18)**
+  - **It must have an IP address in the same range as the rest of the LAN.**
+  - **It can accept data from the LAN and is capable of forwarding traffic off of the LAN.**
+  - **It can route to other networks.**
+  - **If a device has no default gateway or a bad default gateway, its traffic will not be able to leave the LAN.**
+- **10.** Explain briefly the **three** types ofroutesin a router'srouting table. **(S22)**
+  - **Directly Connected – Are automatically added by the router, provided the interface is active and has addressing.**
+  - **Remote – Routes that the router does not have a direct connection and may be learned:**
+    - **Manually – with a static route.**
+    - **Dynamically – by using a routing protocol.**
+  - **Default Route – a gateway of last resort, used when there is not a match in the routing table.**
+- **11.** List**three** characteristics ofstatic routing.**(S24)**
+  - **1. Must be configured manually.**
+  - **2. Must be adjusted manually by the administrator when there is a change in the topology.**
+  - **3. Good for small non-redundant networks.**
+- **12.** List **four** characteristics of dynamic routing. **(S25)**
+  - **1. Discover remote networks.**
+  - **2. Maintain up-to-date information.**
+  - **3. Choose the best path to the destination.**
+  - **4. Find new best paths when there is a topology change.**
+
+{3}------------------------------------------------
+
+- **13.** What isthe purpose of *no shutdown* command? **(S28))**
+- **The no shutdown command activates the interface.**
+- **14.** Briefly describe the output ofthe *show ip interface brief* command. **(S30)**
+
+**To verify interface configuration or to view status of all interfaces use the show ip interface brief.**
+
+**15.** Whymust a switch have a default gateway address configured? **(S32)**
+
+**A switch must have a default gateway address configured to remotely manage the switch from another network.**

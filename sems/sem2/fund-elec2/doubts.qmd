@@ -1,0 +1,71 @@
+---
+title: 'Doubts'
+---
+
+1. What does real power mean? How is it different from $Q,~P$ and $S$?
+    
+    **Ans:** <br>
+    Real power stands for the power dissipated by the resistor.
+
+---
+
+2. Explain:
+
+>Impedance, like resistance or reactance, is not a phasor quantity representing a time-varying function with a particular phase shift. It is simply an operating tool that is extremely useful in determining the magnitude and angle of quantities in a sinusoidal ac network.
+
+---
+
+3. Are output voltages the same as voltage drops?
+
+---
+
+4. You call something with a resistance a resistor. What do u call something with an impedance?
+
+## three phase systems
+
+1. In a Delta system: when we have different line voltages, which one should be used for each branch of the delta system?
+
+    **Ans:** <br>
+    Have a look at the circuit connections. From which wire to which wire are the 2 points of a branch connected? Look for a line voltage that matches such a configuration.
+
+---
+
+2. Can resonance occur without resistance?
+
+    **Ans:** <br>
+    Theoretically, yes. But practically, no. Resonance circuits are fundamentally studied as RLC circuits
+
+---
+
+3. Which is correct: $j5~\Omega$ or $5j~\Omega$?
+
+    **Ans:** <br>
+    $j5~\Omega$
+
+---
+
+4. How to solve:
+
+::: {.center}
+![q4-a-vs-f.png](doubts-img/q4-a-vs-f.png){#q4-a-vs-f.png width=300}
+:::
+
+## Methods of Analysis
+
+### Nodal
+
+1. When is the direction of the current pre-determined? What if the polarity of any component is given? like this capacitor
+
+::: {.center}
+![capacitor.png](doubts-img/capacitor.png){#capacitor.png width=300}
+:::
+
+or when the polarity of a voltage source is given
+
+**Ans:**
+
+> When a current source with current direction is in one of the branches, then the direction of that branch is of the same direction as the current source
+
+what else?
+
+2. Can a number be $-6\angle 0^\circ$? Because this value in the calculator gives a math error

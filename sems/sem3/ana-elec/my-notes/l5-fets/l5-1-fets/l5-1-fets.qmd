@@ -1,0 +1,264 @@
+---
+title: L5.1 Field Effect Transistors (FET)
+bibliography: references.bib
+---
+
+{1}------------------------------------------------
+
+# Learning Objectives:
+
+- Draw the physical layout of FETs and MOSFETs, illustrating the depletion zone, and identifying their terminals
+- Draw the symbols for "N-Channel and P-Channel JFETs", and "N-Channel and P Channel MOSFETs"
+- Explain how the gate voltage affects JFETs and MOSFETs
+- Identify the main characteristics of an enhancement N-MOSFET, and an enhancement P-MOSFET for use as a switch
+
+{2}------------------------------------------------
+
+#### Introduction
+
+- BJTs and FETs similarities:
+  - Three-terminal device
+  - Output current dependant on input parameters
+  - Can be used for amplification and switching
+
+- BJTs and FETs differences:
+
+|                              FET                               |                              BJT                              |
+| :------------------------------------------------------------: | :-----------------------------------------------------------: |
+| ![](_page_2_Picture_10.jpeg){width="300px" fig-align="center"} | ![](_page_2_Picture_8.jpeg){width="300px" fig-align="center"} |
+|                       Voltage controlled                       |                      Current controlled                       |
+|                      $I_D \propto V_{GS}$                      |                       $I_C \propto I_B$                       |
+|                            Unipolar                            |                            Bipolar                            |
+|          Use either one of electron and hole current           |              Use both electron and hole current               |
+|                   n-channel: $e^-$ dependant                   |                              npn                              |
+|                   p-channel: hole dependant                    |                              pnp                              |
+|                      High input impedance                      |                      Low input impedance                      |
+|                    More temperature stable                     |                    Less temperature stable                    |
+|                            Smaller                             |                            Larger                             |
+|                         More sensitive                         |                        Less sensitive                         |
+
+- FETs are classified into:
+  1. Junction field effect transistor, **JFET**
+  2. Metal-oxide-semiconductor field effect transistor, **MOSFET**
+
+{3}------------------------------------------------
+
+- The three terminals are the:
+  1. Gate
+  2. Drain
+  3. Source
+
+![](_page_3_Picture_8.jpeg){width="300px" fig-align="center"}
+
+![](_page_3_Picture_9.jpeg){width="300px" fig-align="center"}
+
+{4}------------------------------------------------
+
+- Because of their **nonlinear characteristics**, they are generally not as widely used in amplifiers as BJTs except where very high input impedances are required
+- FETs are the preferred device in low voltage switching applications, **Why?**
+
+**Ans:** Because they can perform fast switching, faster than BJTs when turned on and off
+
+![](_page_4_Picture_5.jpeg){width="300px" fig-align="center"}
+
+{5}------------------------------------------------
+
+- The input impedance is extremely high (Megohms) for FETs, so they require very little power from the driving source
+
+### Applications
+
+- Useful in integrated circuit (IC) chips
+  > Because they are smaller
+
+### IC Figures
+
+![](_page_5_Picture_5.jpeg){width="300px" fig-align="center"}
+
+![](_page_5_Picture_6.jpeg){width="300px" fig-align="center"}
+
+{6}------------------------------------------------
+
+### Junction Field Effect Transistor-JFET
+
+- The **JFET** (junction field-effect transistor) is a type of FET that operates with a reverse-biased p-n junction to control current in a channel
+- Depending on their structure, JFETs fall into either of two categories-
+  - n channel, called n-channel JFET
+  - p channel, called p-channel JFET
+
+> What are channel?
+>
+> Analog signals travel through paths called channels @WhatAreAnalog
+
+![](_page_6_Picture_8.jpeg){width="300px" fig-align="center"}
+
+{7}------------------------------------------------
+
+JFET-Schematics
+
+![](_page_7_Picture_2.jpeg){width="300px" fig-align="center"}
+
+- The only difference is the direction of the arrow on the gate lead
+- The arrow points in toward the n -type channel, whereas the arrow points outward from the ptypeon channel
+
+{8}------------------------------------------------
+
+#### JFET- Operation
+
+{{< video https://youtu.be/_DZ7baOhNFQ >}}
+
+![](_page_8_Picture_4.jpeg){width="300px" fig-align="center"}
+
+![](_page_8_Picture_5.jpeg){width="300px" fig-align="center"}
+
+{9}------------------------------------------------
+
+#### JFET- Operation
+
+- The amount of current flow (for a fixed value of VGS) depends upon two factors:
+  - The value of the drain-source voltage, VDS
+  - The drain-source resistance, designated rds
+
+![](_page_9_Picture_5.jpeg){width="300px" fig-align="center"}
+
+- The value of rds is dependent on the doping level, cross sectional area, and length of the doped semiconductor material used for the channel
+- In a JFET, the source current, IS, and the drain current, I<sup>D</sup> are the same
+- In most cases, therefore, the current flow is considered to be only the drain current, I<sup>D</sup>
+
+{10}------------------------------------------------
+
+#### JFET- Basic Operation
+
+- DC bias voltages applied to an n-channel device:
+  - VDD provides a drain-to-source voltage and supplies current from drain to source
+  - VGG sets the reverse-bias voltage between the gate and the source
+- JFET is always operated with the gatesource pn junction reverse-biased
+
+![](_page_10_Picture_6.jpeg){width="300px" fig-align="center"}
+
+{11}------------------------------------------------
+
+- Reverse-biasing of the gate-source junction produces a depletion region along the pn junction, which extends into the channel
+- It increases its resistance by restricting the channel width
+- Therefore, the channel width and thus the channel resistance can be controlled by varying the gate voltage, thereby controlling the amount of drain current, I<sup>D</sup>
+
+![](_page_11_Picture_5.jpeg){width="300px" fig-align="center"}
+
+{12}------------------------------------------------
+
+JFET- Effects of VGS on channel width, resistance, and drain current (VGG = VGS)
+
+![](_page_12_Figure_2.jpeg){width="300px" fig-align="center"}
+
+![](_page_12_Picture_3.jpeg){width="300px" fig-align="center"}
+
+![](_page_12_Picture_5.jpeg){width="300px" fig-align="center"}
+
+{13}------------------------------------------------
+
+#### JFET- Characteristics and Parameters
+
+- Recall JFET operates as a voltage-controlled, constant-current device.
+
+The Drain Characteristic curve of a JFET
+
+![](_page_13_Picture_4.jpeg){width="300px" fig-align="center"}
+
+![](_page_13_Figure_5.jpeg){width="300px" fig-align="center"}
+
+![](_page_13_Figure_6.jpeg){width="300px" fig-align="center"}
+
+{14}------------------------------------------------
+
+### JFET- Characteristics and Parameters
+
+Case when the gate-to-source voltage is zero (VGS = 0 V).
+
+- Increasing VDD (and thus VDS) from 0V, ID will increase proportionally, between points A and B
+- **Ohmic Region:** In this area, the channel resistance is essentially constant because the depletion region is not large enough to have significant effect
+- In ohmic region VDS and ID are related by Ohm's law
+
+![](_page_14_Figure_6.jpeg){width="300px" fig-align="center"}
+
+![](_page_14_Figure_7.jpeg){width="300px" fig-align="center"}
+
+{15}------------------------------------------------
+
+#### JFET- Characteristics and Parameters
+
+{{< video https://youtu.be/-o39YVNMYVs >}}
+
+Case when the gate-to-source voltage is zero (VGS = 0 V).
+
+- Breakdown occurs at point C when I<sup>D</sup> begins to increase very rapidly with any further increase in VDS
+- Breakdown can result in irreversible damage to the device, so JFETs are always operated below breakdown and within the active region (constant current) (between points B and C on the graph)
+
+![](_page_15_Figure_5.jpeg){width="300px" fig-align="center"}
+
+- Pinch-off voltage is the value of $V_{DS}$ at which drain current $I_D$ reaches a constant saturation value
+
+>- At this condition the depletion layers in a FET appear to touch each other and looks like a pinch, hence the reason for the name
+>- The current density increases instead of the current decreasing due to the decreasing space
+>- If the depletion layers touch, then $I_D=0\ A \implies$ the potential difference b/w the middle of the depletion layer and the p layer, $V_{pddl}=0\ V=V_{GS}$
+>  - The width of depletions layers increase because of the positive potential difference $V_{( pddl )-GS}$, and if this does not exist, the width stops increasing
+
+{16}------------------------------------------------
+
+## JFET- Characteristics and Parameters
+
+{{< video https://youtu.be/Dd4im8TMAk0 >}}
+
+- Family of drain characteristic curves is produced, as VGS is set to increasingly more negative values by adjusting VGG
+
+![](_page_16_Figure_3.jpeg){width="300px" fig-align="center"}
+
+- Pinch-off occurs at a lower VDS as VGS is increased to more negative values
+
+{17}------------------------------------------------
+
+### JFET- Characteristics
+
+![](_page_17_Figure_2.jpeg){width="300px" fig-align="center"}
+
+![](_page_17_Picture_3.jpeg){width="300px" fig-align="center"}
+
+![](_page_17_Picture_4.jpeg){width="300px" fig-align="center"}
+
+> ### JFET - effect of negative voltage
+>
+> {{< video https://youtu.be/HufsM7Q4sEs >}}
+
+{18}------------------------------------------------
+
+### MOSFET - Basic Operation
+
+{{< video https://youtu.be/4_nGFY7zgDM >}}
+
+{{< video https://youtu.be/ybPQ1IDfTb8 >}}
+
+- MOSFETs can operate in two modes:
+  - Depletion mode (like the JFET), where the ability to pass current can be reduced or increased
+    - The channel exists between the source and drain and allows a current to flow $I_{DSS}$ even when $V_{GS}$ = $\theta V$
+  - Enhancement mode, where the ability to pass current is increased
+    - For current to flow channel need to be created by applying gate voltage above a threshold voltage VGS(th).
+
+| Depletion-type MOSFET                 | Enhancement-type MOSFET               |
+| ------------------------------------- | ------------------------------------- |
+| Channel initially present b/w D and S | Channel initially  absent b/w D and S |
+|                                       |                                       |
+
+
+![](_page_18_Picture_7.jpeg){width="300px" fig-align="center"}
+
+![](_page_18_Picture_8.jpeg){width="300px" fig-align="center"}
+
+The only difference between n- and p-channel devices is that the supply voltage used for p-channel devices is of the opposite polarity from that used for n-channel devices.
+
+{19}------------------------------------------------
+
+![](_page_19_Picture_2.jpeg){width="300px" fig-align="center"}
+
+Depletion MOSFET
+
+![](_page_19_Picture_4.jpeg){width="300px" fig-align="center"}
+
+Enhancement MOSFET

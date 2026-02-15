@@ -1,0 +1,456 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Copper Cabling\nCoaxial Cable",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          6.100097656249999,
+          10.27587890625
+        ],
+        [
+          219.13427734374997,
+          10.27587890625
+        ],
+        [
+          219.13427734374997,
+          65.87673950195312
+        ],
+        [
+          6.100097656249999,
+          65.87673950195312
+        ]
+      ]
+    },
+    {
+      "title": "Consists of the following:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          21.5849609375,
+          94.130859375
+        ],
+        [
+          266.4438781738281,
+          94.130859375
+        ],
+        [
+          266.4438781738281,
+          116.992919921875
+        ],
+        [
+          21.5849609375,
+          116.992919921875
+        ]
+      ]
+    },
+    {
+      "title": "Commonly used in:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          22.99267578125,
+          427.7829284667969
+        ],
+        [
+          211.49539184570312,
+          427.7829284667969
+        ],
+        [
+          211.49539184570312,
+          449.77992248535156
+        ],
+        [
+          22.99267578125,
+          449.77992248535156
+        ]
+      ]
+    },
+    {
+      "title": "UTP Cabling\nProperties of UTP Cabling",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          15.194000244140625,
+          9.997314453125
+        ],
+        [
+          411.99121093749994,
+          9.997314453125
+        ],
+        [
+          411.99121093749994,
+          70.04443359375
+        ],
+        [
+          15.194000244140625,
+          70.04443359375
+        ]
+      ]
+    },
+    {
+      "title": "UTP Cabling",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          4.22314453125,
+          4.4296875
+        ],
+        [
+          134.67138671875,
+          4.4296875
+        ],
+        [
+          134.67138671875,
+          27.685546875
+        ],
+        [
+          4.22314453125,
+          27.685546875
+        ]
+      ]
+    },
+    {
+      "title": "UTP Cabling Standards and Connectors",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          3.7539062499999996,
+          28.855712890625
+        ],
+        [
+          613.623779296875,
+          28.855712890625
+        ],
+        [
+          613.623779296875,
+          60.858734130859375
+        ],
+        [
+          3.7539062499999996,
+          60.858734130859375
+        ]
+      ]
+    },
+    {
+      "title": "UTP Cabling",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          6.100097656249999,
+          3.59912109375
+        ],
+        [
+          132.70083618164062,
+          3.59912109375
+        ],
+        [
+          132.70083618164062,
+          27.40869140625
+        ],
+        [
+          6.100097656249999,
+          27.40869140625
+        ]
+      ]
+    },
+    {
+      "title": "UTP Cabling Standards and Connectors (Cont.)",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          3.7539062499999996,
+          28.82769775390625
+        ],
+        [
+          725.5381469726562,
+          28.82769775390625
+        ],
+        [
+          725.5381469726562,
+          62.015625
+        ],
+        [
+          3.7539062499999996,
+          62.015625
+        ]
+      ]
+    },
+    {
+      "title": "Straight-through and Crossover UTP Cables",
+      "heading_level": null,
+      "page_id": 15,
+      "polygon": [
+        [
+          3.7539062499999996,
+          31.94573974609375
+        ],
+        [
+          686.4945678710938,
+          31.94573974609375
+        ],
+        [
+          686.4945678710938,
+          63.94873046875
+        ],
+        [
+          3.7539062499999996,
+          63.94873046875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          63
+        ],
+        [
+          "Line",
+          22
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          25
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          47
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          13
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "Picture",
+          5
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PictureGroup",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 15,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          63
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "TableCell",
+          16
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Footnote",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t4-physical-layer-v5s"
+}

@@ -1,0 +1,96 @@
+
+
+{0}------------------------------------------------
+
+## **Topic 8 - IPv4 Addressing Study Guide Study Guide**
+
+- 1. How many bits are in an IPv4 address, and how are they grouped? **(S3)**
+  - **Each address contains 32 bits, divided into four octets**.
+- 2. IPv4 addresses have two parts; what are they, and what process is used identify them? (S8,9)
+  - **Network portion and a host portion.**
+  - **A subnet mask is used to determine the network and host portions in a process called ANDing.**
+- 3. What is the prefix length? **(S10)**
+  - **The number of bits set to 1 in the subnet mask, and It is written in "slash notation".**
+- 4. What operation is used to identify the network address? **(S11)**
+  - **To identify the network address, the host IPv4 address is logically ANDed, bit by bit, with the subnet mask.**
+- **5.** How can you tell if an IPv4 address is a host, network or broadcast address? **(S6)**
+  - **Network address: all host bits set to 0.**
+  - **Host addresses: host bits range 00000001 – 11111110.**
+  - **Broadcast address: all host bits set to 1.**
+
+{1}------------------------------------------------
+
+| 6. |  |  |  |  |  | Define the following types of network addresses. | (S13-15) |
+|----|--|--|--|--|--|--------------------------------------------------|----------|
+|----|--|--|--|--|--|--------------------------------------------------|----------|
+
+- a) Unicast –
+- **Sending a packet to one destination IP address.**
+- b) Broadcast –
+- **Sending a packet to all other destination IP addresses.**
+- c) Multicast –
+- **sending a packet to a multicast address group.**
+- 7. Compare the public and private IPv4 addresses. **(S16)**
+  - **Public IPv4 addresses are globally routed between internet service provider (ISP) routers.**
+  - **Private addresses are not globally routable.**
+- 8. What are the Private address ranges? **(S16)**
+
+| Network Address and<br>Prefix | Private Address Range |  |  |
+|-------------------------------|-----------------------|--|--|
+|                               |                       |  |  |
+|                               |                       |  |  |
+|                               |                       |  |  |
+
+- 9. What does NAT stand for, and what is its function? **(S17)**
+  - **Network Address Translation (NAT) translates private IPv4 addresses to public IPv4 addresses.**
+
+{2}------------------------------------------------
+
+- 10.What are the Loopback addresses and how are they used? **(S18)**
+  - **Commonly identified as only 127.0.0.1 and used on a host to test if TCP/IP is operational.**
+- 11.Complete the following table for the Classful Addressing. (12) (S19)
+
+| Class | Default Subnet<br>Mask/Prefix | Network Address Range                | Number of<br>Hosts/Network |
+|-------|-------------------------------|--------------------------------------|----------------------------|
+| A     | /8                            | 0.0.0.0/8 to 127.0.0.0/8             | 16,777,214                 |
+| B     | /16                           | 128.0.0.0 /16 –<br>191.255.0.0 /16   | 65,534                     |
+| C     | /24                           | 192.0.0.0 /24 –<br>223.255.255.0 /24 | 254                        |
+
+- 12.Compare switches and routers with respect to broadcast propagation. **(S21)**
+  - **Switches propagate broadcasts out all interfaces except the interface on which it was received.**
+  - **Routers do not propagate broadcasts.**
+- 13.Explain the problem with large broadcast domains and how it can be resolved. **(S22)**
+  - **large broadcast domain is that these hosts can generate excessive broadcasts and negatively affect the network.**
+  - **The solution is to reduce the size of the network to create smaller broadcast domains in a process called subnetting.**
+- 14.List three reasons for segmenting networks. (S23)
+  - **1. To reduces overall network traffic and improves network performance.**
+  - **2. To implement security policies between subnets.**
+  - **3. To group the users according to location, group/function, or device type.#**
+
+{3}------------------------------------------------
+
+| 15.Covert the following numbers: (S5-7) |                 |                                                                              |  |  |
+|-----------------------------------------|-----------------|------------------------------------------------------------------------------|--|--|
+|                                         | a)              | 10110<br>(Decimal) into Binary                                               |  |  |
+|                                         | b)              | 101010012<br>(Binary) into Decimal =                                         |  |  |
+|                                         |                 |                                                                              |  |  |
+|                                         |                 | 16.Write the subnet mask next to<br>the following addresses. (S10)           |  |  |
+|                                         | 192.168.5.53/22 |                                                                              |  |  |
+|                                         | 192.168.2.44/26 |                                                                              |  |  |
+|                                         | 192.168.2.44/28 |                                                                              |  |  |
+|                                         |                 |                                                                              |  |  |
+|                                         |                 | 17.Write the prefix length (/?) next to the following subnet masks.<br>(S10) |  |  |
+|                                         |                 | 255.255.255.128                                                              |  |  |
+|                                         | 255.255.252.0   |                                                                              |  |  |
+|                                         | 255.255.248.0   |                                                                              |  |  |
+
+{4}------------------------------------------------
+
+18.Determine the address types and write the results in column 2. **(S11-12)**
+
+| IP Address with Subnet Mask notation                                                                                                                                                                                                                                                                                                                                                                                              | Host, Network,<br>or Broadcast? |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| 192.168.1.32/27<br>This is an example.<br>27 = 24<br>+ 3<br>The first 3 octets are common to host,<br>broadcast and host addresses.<br>32<br>= 00100000<br>Note: No is a network octet.<br>/3<br>=<br>11100000<br>Note: Bo is a broadcast octet.<br>No = 00100000 = 32 -> N = 192.168.1.32<br>Bo = 00111111 = 63<br>-><br>B = 192.168.1.63<br>First address<br>= N+1 =<br>192.168.1.33<br>Last address<br>= B-1 =<br>192.168.1.62 | Network                         |
+| 200.25.36.200/25                                                                                                                                                                                                                                                                                                                                                                                                                  |                                 |
+| 172.16.55.71<br>/29                                                                                                                                                                                                                                                                                                                                                                                                               |                                 |
+| 10.2.3.75<br>/28                                                                                                                                                                                                                                                                                                                                                                                                                  |                                 |

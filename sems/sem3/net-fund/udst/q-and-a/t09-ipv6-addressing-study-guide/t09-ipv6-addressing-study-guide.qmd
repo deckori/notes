@@ -1,0 +1,143 @@
+
+
+{0}------------------------------------------------
+
+## **Topic 9 – Ipv6 Addressing Study Guide**
+
+| 1. | How many bits are in an IPv6 | address, and how are they grouped? | (S4) | (4) |
+|----|------------------------------|------------------------------------|------|-----|
+|    |                              |                                    |      |     |
+
+- **IPv6 addresses are 128 bits in length.**
+- **Every 4 bits are represented by a single hexadecimal digit, making the IPv6 address a total of 32 hexadecimal values.**
+- 2. What are the two rules to reduce the notation of IPv6 addresses? **(S5-7) (4)** 
+  - **Rule 1 – Omit Leading Zero.**
+  - **Rule 2 – Double Colon.**
+- 3. What are the two types of IPv6 unicast addresses? List their main characteristics. **(S8) (8)** 
+  - **Global Unicast Address (GUA)**
+    - **Similar to a public IPv4 address.**
+    - **Globally unique, internet-routable addresses.**
+  - **Link-local Address (LLA)**
+    - **Required for every IPv6-enabled device**
+    - **Used to communicate with other devices on the same local link.**
+    - **Not routable and are confined to a single link.**
+- 4. What is the recommended length of the IPv6 prefix? **(S9) (2)** 
+  - **The recommended IPv6 prefix length is /64.**
+
+{1}------------------------------------------------
+
+- 5. What are the parts of an IPv6 global unicast address, and what do they represent? **(S10) (6)**
+  - **Global routing prefix: The network portion of the address.**
+  - **Subnet ID: Used to identify subnets within a site.**
+  - **Interface ID: Equivalent to the host portion of an IPv4 address.**
+- 6. How is the Link-local Address (LLA) configured? **(S11) (2)**
+  - **If an LLA is not configured manually on an interface, the device will automatically create one.**
+- 7. What is the best practice to use as default gateway IPv6 address? **(S13) (2)**
+  - **The GUA or LLA of the router interface can be used as the default gateway. Best practice is to use the LLA.**
+- 8. What is the advantage of static configuration of a Link-Local Address (LLA) **(S14) (2)**
+  - **To configure an LLA that is recognizable and easier to remember.**
+- 9. What is the purpose of the Stateless Address Autoconfiguration (SLAAC)? **(S15) (2)**
+  - **A host using SLAAC will set its default gateway to the link-local address (LLA) of the router that sent the RA message.**
+  - **SLAAC allows a device to configure a GUA without the services of DHCPv6.**
+- 10.How are the IPv6 subnets created? **(S18) (2)**
+  - **A separate subnet ID field in the IPv6 GUA is used to create subnets.**
+
+{2}------------------------------------------------
+
+| 11.Covert the following numbers | from binary<br>to hexadecimal: | (4) |
+|---------------------------------|--------------------------------|-----|
+|---------------------------------|--------------------------------|-----|
+
+| Example                        |      |      | Binary = 0100101000111101    |      |  |
+|--------------------------------|------|------|------------------------------|------|--|
+| Split into groups<br>of 4 bits | 0100 | 1010 | 0011                         | 1101 |  |
+| Convert each                   | 4    | A    | 3                            | D    |  |
+| group                          |      |      |                              |      |  |
+| Answer in Hex                  | 4A3D |      |                              |      |  |
+| Task 1                         |      |      | Binary = 1100 0110 1111 0100 |      |  |
+| Split into groups<br>of 4 bits |      |      |                              |      |  |
+| Convert each                   |      |      |                              |      |  |
+| group                          |      |      |                              |      |  |
+| Answer in Hex                  |      |      |                              |      |  |
+
+| Task 2        | Binary = 0100100111011110 |
+|---------------|---------------------------|
+|               |                           |
+|               |                           |
+|               |                           |
+| Answer in Hex |                           |
+
+| Task 3        | Binary = 1111100110111100 |
+|---------------|---------------------------|
+|               |                           |
+|               |                           |
+|               |                           |
+| Answer in Hex |                           |
+
+| Task 4        | Binary = 1010100110110100 |
+|---------------|---------------------------|
+|               |                           |
+|               |                           |
+|               |                           |
+| Answer in Hex |                           |
+
+{3}------------------------------------------------
+
+| 12.Covert the following numbers | from hexadecimal to<br>binary: | (4) |
+|---------------------------------|--------------------------------|-----|
+|---------------------------------|--------------------------------|-----|
+
+| Example                                   | Hex = 4 7 A D                              |
+|-------------------------------------------|--------------------------------------------|
+| Convert each Hex digit to<br>binary 4 bit | 4<br>7<br>A<br>D<br>0100 0111 1010<br>1101 |
+| Answer in Binary                          | 0100 0111<br>1010<br>1101                  |
+
+| Task 1           | Hex = 3 F F 1 |
+|------------------|---------------|
+|                  |               |
+|                  |               |
+| Answer in Binary |               |
+
+| Task 2           | Hex = 7DE2 |
+|------------------|------------|
+|                  |            |
+|                  |            |
+|                  |            |
+| Answer in Binary |            |
+
+| Task 3           | Hex = FFFF |
+|------------------|------------|
+| Answer in Binary |            |
+
+| Task 4           | Hex = ACAD |
+|------------------|------------|
+| Answer in Binary |            |
+|                  |            |
+
+{4}------------------------------------------------
+
+13.Apply the rules to simply the following IPv6 addresses: **(S6,7) (4)** 
+
+**Example**
+
+**2001 : 0DB8 : 0000 : 1111 : 0000 : 0000 : 0000 : 0200** 
+
+Rule 1: Omit leading **0**s
+
+**2001 : DB8 : 0 : 1111 : 0 : 0 : 0 : 200** 
+
+Rule 2: Omit all **0** segments
+
+**2001 : DB8 : 0 : 1111 : : 200**
+
+**2001:0DB8:0000:1133:0000:0000:0000:0200**
+
+**2001:0DB8:000A:0000:0000:0000:0000:1000**
+
+**2001:0DB8:ACAD:1234:0000:0000:0000:0000**
+
+**FF02:0000:0000:0000:0000:0000:0000:0001**
+
+**FE80:0000:0000:0000:0000:0000:0000:0003**
+
+**0000:0000:0000:0000:0000:0000:0000:0000**

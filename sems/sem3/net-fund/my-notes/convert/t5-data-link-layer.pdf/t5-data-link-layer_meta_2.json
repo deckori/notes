@@ -1,0 +1,329 @@
+{
+  "table_of_contents": [
+    {
+      "title": "2. Topologies",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          12.200195312499998,
+          9.82733154296875
+        ],
+        [
+          167.9873046875,
+          9.82733154296875
+        ],
+        [
+          167.9873046875,
+          36.544921875
+        ],
+        [
+          12.200195312499998,
+          36.544921875
+        ]
+      ]
+    },
+    {
+      "title": "Contention-Based Access \u2013 CSMA/CA",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          11.26171875,
+          36.16973876953125
+        ],
+        [
+          595.3123168945312,
+          36.16973876953125
+        ],
+        [
+          595.3123168945312,
+          68.17276000976562
+        ],
+        [
+          11.26171875,
+          68.17276000976562
+        ]
+      ]
+    },
+    {
+      "title": "Process steps:",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          636.0940551757812,
+          322.6550598144531
+        ],
+        [
+          742.80419921875,
+          322.6550598144531
+        ],
+        [
+          742.80419921875,
+          337.6500701904297
+        ],
+        [
+          636.0940551757812,
+          337.6500701904297
+        ]
+      ]
+    },
+    {
+      "title": "3. Data Link Frame\nThe Frame and Frame Fields",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          0.9384765624999999,
+          11.15936279296875
+        ],
+        [
+          440.1356201171875,
+          11.15936279296875
+        ],
+        [
+          440.1356201171875,
+          69.50473022460938
+        ],
+        [
+          0.9384765624999999,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "3. Data Link Frame\nLayer 2 Addresses",
+      "heading_level": null,
+      "page_id": 13,
+      "polygon": [
+        [
+          6.4629998207092285,
+          11.15936279296875
+        ],
+        [
+          294.681640625,
+          11.15936279296875
+        ],
+        [
+          294.681640625,
+          69.50473022460938
+        ],
+        [
+          6.4629998207092285,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "3. Data Link Frame\nLAN and WAN Frames",
+      "heading_level": null,
+      "page_id": 14,
+      "polygon": [
+        [
+          13.138671874999998,
+          11.15484619140625
+        ],
+        [
+          352.921630859375,
+          11.15484619140625
+        ],
+        [
+          352.921630859375,
+          66.75473022460938
+        ],
+        [
+          13.138671874999998,
+          66.75473022460938
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          61
+        ],
+        [
+          "Line",
+          24
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          52
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "TableCell",
+          14
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 13,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          23
+        ],
+        [
+          "Line",
+          8
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 14,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          62
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t5-data-link-layer"
+}

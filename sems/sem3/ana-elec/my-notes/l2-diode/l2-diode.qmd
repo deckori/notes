@@ -1,0 +1,254 @@
+---
+title: "Semiconductor Diodes"
+---
+
+AETN 2101\-ANALOG ELECTRONICS
+
+# Lecture # 2 – Semiconductor Diodes
+
+# Objectives:
+
+Develop a working knowledge of the diode in a variety of configurations using models appropriate for the area of application\.
+
+Sketch a PN junction under zero bias and show the depletion zones indicating the relative charges of each area\.
+
+Explain what happens to majority and minority carriers present in the different parts of the diode\.
+
+Explain Biasing Voltage \(Forward and Reverse\)
+
+Show what happens to the depletion zone\, majority and minority carriers in the presence of forward and reverse biasing voltages.
+
+# Diodes
+
+The diode is a 2\-terminal device\.
+
+![](l2-diode-img/l2-diode_1.png)
+
+A diode ideally conducts in only one direction\.
+
+![](l2-diode-img/l2-diode_2.png)
+
+
+ __Semiconductor Resistance:__ 
+
+Intrinsic semiconductor \(not doped\) : high resistance \(since very few free electrons or holes\)\.
+
+N\-type semiconductor \(doped with donors\): low resistance \(due to lots of free electrons\)\.
+
+P\-type semiconductor \(doped with acceptors\): low resistance \(due to lots of holes\)
+
+ __Semiconductor Materials:__ 
+
+Materials commonly used in the development of semiconductor devices:
+
+Silicon \(Si\)
+
+Germanium \(Ge\)
+
+Gallium Arsenide \(GaAs\)
+
+One end of a silicon or germanium crystal can be doped as a p-type material and the other end as an n\-type material\.
+
+The result is a p\-n junction \.
+
+::: {#fig-diode layout-nrow=2}
+
+![Diode](l2-diode-img/l2-diode_3.png){width=300}
+
+![Diode](l2-diode-img/l2-diode_3.png){width=300}
+
+![Externals](l2-diode-img/l2-diode_6.jpg){width=300}
+
+![Internals](l2-diode-img/l2-diode_5.png){width=300}
+
+:::
+
+It turns out that doing this makes a _diode _ – a device with very useful characteristics\.
+
+Some of the free electrons from the n\-type material flow into p\-type material\.
+
+![](l2-diode-img/l2-diode_7.png)
+
+Creating an area near the junction where the free electrons have left the n\-type material\, and the holes are filled in the p\-type material\.
+
+This is called the _depletion_ _ _ _region_ \.
+
+![](l2-diode-img/l2-diode_8.png)
+
+![](l2-diode-img/l2-diode_9.jpg)
+
+If we consider the resistance of the p\-n junction\, we see that the depletion region has _very high _ _resistance_ \. 
+
+Why ?
+
+Because the depletion region is just like an intrinsic semiconductor with no extra free electrons and holes due to doping\.
+
+There exists a potential difference across the depletion layer and is called barrier potential \(V 0 \) \.
+
+The typical barrier potential is approximately:
+
+For silicon\, V 0 = 0\.7 V 
+
+For germanium\, V 0 = 0\.3 V
+
+::: {.notes}
+
+
+
+:::
+
+ __Diode Operating Conditions:__ 
+
+A diode has three operating conditions:
+
+No bias
+
+Reverse bias
+
+Forward bias
+
+![](l2-diode-img/l2-diode_10.png)
+
+![](l2-diode-img/l2-diode_11.jpg)
+
+No Bias
+
+No external voltage is applied: _V_ _D_ _ _ = 0 V  _I_ _D_ _ _ = 0 A
+
+ __Diode Operating Conditions:__ 
+
+![](l2-diode-img/l2-diode_12.png)
+
+The reverse voltage causes the depletion region to widen\.
+
+The electrons in the _n_ \-type material are attracted toward the positive terminal of the voltage source\.
+
+The holes in the _p_ \-type material are attracted toward the negative terminal of the voltage source\.
+
+![](l2-diode-img/l2-diode_13.png)
+
+![](l2-diode-img/l2-diode_14.jpg)
+
+ __Diode Operating Conditions:__ 
+
+![](l2-diode-img/l2-diode_15.png)
+
+External voltage is applied across the _p\-n _ junction in the same polarity as the _p_ \- and _n_ \-type materials\.
+
+The forward voltage causes the depletion region to narrow\.
+
+The electrons and holes are pushed toward the _p\-n_ _ _ junction\.
+
+The electrons and holes have sufficient energy to cross the _p\-n _ _ _ junction\.
+
+![](l2-diode-img/l2-diode_16.jpg)
+
+ __Diode Characteristics:__ 
+
+![](l2-diode-img/l2-diode_17.png)
+
+![](l2-diode-img/l2-diode_18.jpg)
+
+![](l2-diode-img/l2-diode_19.png)
+
+ __Practical Diode Characteristics:__ 
+
+![](l2-diode-img/l2-diode_20.jpg)
+
+Note the regions for reverse bias\, and forwardd bias conditions\.
+
+Observe the scale for each of these conditions\.
+
+::: {.notes}
+
+
+
+:::
+
+ __Practical Diode Characteristics:__ 
+
+![](l2-diode-img/l2-diode_21.jpg)
+
+Actual real diode is not perfect\.
+
+It has a very small current through it when reverse biased\.
+
+And it has a small voltage across it when it is forward biased\.
+
+0\.7 V for Si
+
+0\.3 V for Ge
+
+1\.2 V GaAs
+
+
+ __Reverse Breakdown characteristics of a Diode__ 
+
+![](l2-diode-img/l2-diode_22.jpg)
+
+If we apply excess voltage on a real diode in the reverse direction \, the diode will be destroyed and will let current flow in the reverse direction\. 
+
+This is called the breakdown voltage \.
+
+::: {.notes}
+
+
+
+:::
+
+ __Diode Equivalent Circuit:__ 
+
+![](l2-diode-img/l2-diode_23.png)
+
+::: {.notes}
+
+
+
+:::
+
+Light\-emitting diode
+
+Diode arrays
+
+::: {.notes}
+
+
+
+:::
+
+ __Light\-Emitting Diode __ __\(LED\)__ 
+
+An LED emits photons when it is forward biased\.
+
+The color of light emitted by the diode is determined by the type of material used in doping\.
+
+The forward bias voltage is usually in the range of 2 V to 3 V\.
+
+![](l2-diode-img/l2-diode_24.jpg)
+
+![](l2-diode-img/l2-diode_25.jpg)
+
+Multiple diodes can be packaged together in an integrated circuit \(IC\)\.
+
+![](l2-diode-img/l2-diode_26.png)
+
+![](l2-diode-img/l2-diode_27.png)
+
+![](l2-diode-img/l2-diode_28.png)
+
+![](l2-diode-img/l2-diode_29.png)
+
+![](l2-diode-img/l2-diode_30.png)
+
+__A __ __variety of__ __ __ __combinations __ __exist\.__
+
+::: {.notes}
+
+
+
+:::
+
+\[1\] Boylestad\, Electronic Devices and Circuits\.
+
+\[2\] Thomas Floyd\, Electronic Devices\.
+

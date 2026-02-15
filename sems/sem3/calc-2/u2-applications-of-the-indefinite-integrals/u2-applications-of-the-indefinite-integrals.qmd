@@ -1,0 +1,1005 @@
+---
+title: "2. Applications of Definite Integrals"
+editor:
+  markdown:
+    wrap: 72
+---
+
+The graphs above all have the same derivative, $3x^2$ and we are given
+an initial value of $F(1)=3$ What is the particular solution?
+
+## FINDING THE PARTICULAR SOLUTION GIVEN AN INITIAL VALUE
+
+1. Perform the integration to find the anti-derivative. 2.Use the given
+    information (initial value) to solve for C. 3. Replace C in your
+    indefinite integral and state the Particular Solution
+
+E1Find the particular solution $f(x)$ given that
+$f^{\prime}(x)=x^{3}-x+1$ and the function passes through (2, 6).
+
+![](./images/f88Fii3mIrHRvgPN7Gk76sWaxa5GvDt03.png)
+
+E in th particularization ofe $f'(x)=\frac{x^2+4}{x^2}$ the function has
+a ital value of 2when $x=2$
+
+![](./images/fgz5SqwXK7gh6GUAr7o4wG2YWPzhiKRgN.png)
+
+E3 Find the particular solution of $\frac{dy}{dx}=x^{\frac13}-3\cos x$ ,
+given $y(0)=4$
+
+![](./images/fUTSeeeiQ6Ax2hLdznfuLkmwmNdAxvQrG.png)
+
+## 2.2 Applications of Integration: Electrical Applications
+
+## TOTAL CHARGE
+
+Recall that current $i$ is the rate of change of charge $q$ :
+
+$$i=\frac{dq}{dt}\quad\Rightarrow\quad q=\int $$
+
+![](./images/fGB1yOyWonduMprcvdS8ZWtaSYaV2x3Rc.png)
+
+What are the units for charge?.
+
+### VOLTAGE ACROSS A CAPACITOR
+
+Voltage $V$ across a capacitor with capacitance $C$ is:
+
+\begin{align*}
+V&=\frac{q}{C}\quad\Rightarrow\quad V=\\&=\frac{1}{C}\cdot q \\
+\end{align*}
+
+What are the units for voltage?
+
+E1 The current in a certain electric circuit is given by:
+$i(t)=e^{\frac{-t}{10}}$ , Initial Conditions: $q(0)=0$
+
+a) Find an expression for the total charge, $q(t)$ ,that passes a point
+    in the circuit.
+
+![](./images/fb3gs6SGpXGP46s3Bpyl9h62r27lhIVkn.png)
+
+b）Use your expression to determine the amount of charge that passes the
+point in 2 seconds.
+
+E2The initial voltage across a 5F capacitors zero.
+
+a) What is the expression for voltage across the capacitor if
+    $i=\frac{2t}{t^2+1}$
+
+![](./images/f9vx4bnEhiDTFPqGX4us9ne1MhQhu6ddX.png)
+
+b)What is the voltage after 4 s?
+
+### CURRENT THROUGH AN INDUCTOR
+
+Current $i$ through an inductor with inductance $L$ is:
+
+\begin{align*}&V=L\frac{di}{dt}\\&\frac{di}{dt}=\frac{1}{L}\cdot V\end{align*}\quad\Rightarrow\quad i=
+
+![](./images/fo9uCZBfor8yedDlwR8kDzp2gUOsLVkxH.png)
+
+What are the units of current?.
+
+E3 A circuit has a 0.5 Henry inductor and has a voltage given by
+$V(t)=2t\sin(t^{2})$ The current through the inductor at $t=\sqrt{\pi}$
+seconds is 4 Amps.
+
+What is the expression for the current through the inductor?
+
+![](./images/fLagNNmcpMQyFEKYhqfRZXV4Dz3sXG4sy.png)
+
+# 2.3 MATH1030 Review: Area Under the Curve and The Definite Integra
+
+## Videos and sites
+
+{{< video https://www.youtube.com/watch?v=kgg5Rspf1Js >}}
+
+## Uni notes
+
+In MATH1030 we used the rectangle method to approximate the area under
+$f(x)$ and between $x=a$ and $x=b$
+
+![](./images/fP26pDxOanVGykePvKLnBhkX4PgdfoMrP.png)
+
+![](./images/fI9GatxUSN3a0crHrQUvwgQfUO555YaxX.png)
+
+![](./images/fnB3zSGzl3gMaXd5Xx9sLiYt8y0OvguP9.png)
+
+We can get an exact area of $f(x)$ by having an infinite number of
+rectangles.
+
+![](./images/fCC7P1o5AObC6tLLfOSa09m4Uk1VgUf8c.png)
+
+We call this exact area beneath a curve and above the axis-the Definite
+Integral
+
+### THE FUNDAMENTAL THEOREM OF CALCULUS
+
+If a function $f(x)$ is continuous on the closed interval $[a,b]$ and
+$F(x)$ is an anti-derivative of $f(x)$ on the interval then:.
+
+$$\int\limits_{a}^{b}f(x)dx=F(x)\Big|_{a}^{b}=F(b)-F(a)\:\text{is the Definite Integral},$$
+with $a$ and $b$ as lower and upper bounds
+
+The area under a curve between two points is found by calculating the
+definite integral between the two points. The area under the curve means
+the area bounded by the curve, the axis, and the boundary points.
+
+So, the area under $f(x)=x^{2}+1$ and between $x=0$ and $x=4$ can be
+found using the definite integral
+
+$$\int\limits_0^4\Bigl(x^2+1\Bigr)dx$$
+
+![](./images/ffcsiK74thxYS0qRI3YWokWEkWfKazhUq.png)
+
+EXACTAREA UNDER A CURVE
+
+The definite integral for a curve from a to b will give the sum of the
+signed Areas.
+
+Area should be Positive ONLY
+
+To find Area we must be careful to use the HEIGHT from the
+Representative Rectangle.
+
+Find the area under the curve $f(x)=x$ between $x=-4$ and $x=4$ .
+
+![](./images/fgqocirPmRSHpgYZvxZ4fShrrmpKYxi99.png)
+
+For all Area problems, it is important to understand the representative
+rectangles.
+
+Representative RECTANGLE: is the same rectangle we used for
+approximation
+
+The height of the rectangle helps us determine what our definite
+integral should be Instead of $\Delta x$ or y we will now use dx and dy
+as we will use the Definite Integral to find areas.
+
+![](./images/flF13zu5pSHXuU17GyqGWcBdHAtIY63oz.png)
+
+Different areas will require different Representative Rectangles and
+have different heights
+
+Some Areas will require more than one Representative Rectangle Draw
+another rectangle anytime the nature of the area changes \*\*Each
+rectangle will have a different expression for the height
+
+For each graph of $f(x)$ ：
+
+1.Shade the area. 2. Draw the representative rectangle(s) and label it.
+3.Write the definite integral needed to find the area
+
+![](./images/fsG2nSc6GFR8GMi6n0UpB6d9gyYGEzxp3.png)
+
+![](./images/fabW6Gu7sAiaqt8xtbkovIs5W4ZSLR4e8.png)
+
+![](./images/fptbGXslxKg2DEqrxk7mzbkZKBpqqn7tY.png)
+
+![](./images/fg9Bsk3giL3afHGnaioAVc0wgbq2BS4Sl.png)
+
+For functions of Y, area under the curve. is between the curve and they
+axis:
+
+The rectangle will be horizontal, the bounds are y values and the width
+of the rectangle is $dy$ .
+
+![](./images/fYkIcOyizdL9Vlktr1hRgeAGbB6wQ1ZgR.png)
+
+$$Area=\int_{0}^{4}f(y)dy$$
+
+## Example:
+
+For each case below,draw representative rectangles and label them dx or
+dy: Write an expression for the height of the rectangle
+
+![](./images/ftZg2lKD31Gl9uINiTQSAotdoBwZfLZYB.png)
+
+## Solving Area Problems
+
+1: Mark the lower and upper bounds of the on your graph. Shade the area
+
+2: Draw the representative rectangle(s). Find any other required bounds
+
+3:Find the equation for the height for each rectangle, $h(x)$
+
+$$A=\int_a^bh(x)dx$$ 4: Write the Definite Integrals for each rectangle
+with its bounds..
+
+5: Evaluate the Definite Integral. Remember: Area has units
+
+## Example:
+
+Find the exact area under the curve $y=-x^{2}+9$ between the lines
+$x=-3$ and $x=3$
+
+![](./images/f0VrFgvuXRbxLFkxDUCBmRUIxaGlCB1Oc.png)
+
+## Example:
+
+Find theexact shaded area under the curve $y=2x^{5}-4x^{3}+2x$
+
+![](./images/fHgQnIODsl86dEbZKzQIhfuoi1zuadEVB.png)
+
+## 2.5 Area Under f(y)
+
+All of the functions we've seen so far are functions of $x$ .Some
+problems involve functions of $y$ . The area under the curve is then
+between the curve and they-axis.
+
+$$x=\sin y$$
+
+$$x=4-y^{2}$$
+
+$$x=y^{3}$$
+
+![](./images/ficiQ5xpVrTWpMIVERGpcILhZA4gGNwqb.png)
+
+![](./images/feyN7LBnPXG8KZ4zXuUwR3NHO6FNvpm6m.png)
+
+![](./images/fmIqims8rq7CZDXyOdX4va6LzZi2SgEub.png)
+
+IMPORTANT: The functions must be written with x as the dependent
+variable. ie $x=$
+
+For the area between they-axis and this curve $y=x^3$ with bounds $y=-1$
+and $y=1$ ， we need to consider:
+
+The equation $y=x^3$
+
+The bounds
+
+The negative and positive regions
+
+![](./images/fpqH2unISZTKBooWrtrGNFHyzezVGLlZc.png) rectangle(s)
+
+The representative
+
+The definite integral would be:
+
+In General: The definite integral for area bounded by the -axis is
+$A=\int_c^dh(y)dy$
+
+E3 Find the area under the curve $y=\sqrt{(-x)}$ from $y=0$ to $y=2$
+
+![](./images/fsEzc6gqgD03sk15Dq3G7fLdwgKEFKE9m.png)
+
+E4 Find the shaded area between the y-axis and the curve
+$x=y^{5}-7y^{4}+17y^{3}-17y^{2}+6y$
+
+![](./images/fIxfgcW2BANAifiLipw976QvScX7BNTDL.png)
+
+## 2.6The Representative Rectangle for 2 Curves
+
+For all Area problems, it is important to understand the representative
+rectangles
+
+REPRESENTATIVE RECTANGLE: is the same rectangle we used for
+approximation
+
+The height of the rectanglehelpsus determine what our definite integral
+should be
+
+![](./images/fBMQVq8eipZRyEeWMSTK3CEcpVb2Bi4gk.png)
+
+Instead of $\Delta x$ or y we will now use dx and dy as we will use the
+Definite Integral to find areas.
+
+### Example:
+
+For each case below, draw representative rectangles and label them dx or
+dy Write an expression for the height of the rectangle
+
+![](./images/ffVDt4GuUl3RXvyUxBK5MtiOFqSTn0UGv.png)
+
+![](./images/f9nuNYhQgMTUYguNesnT6iZglpwBSDSfs.png)
+
+![](./images/f7CC8F4km072lWyoUMZVywwUo80oaT65B.png)
+
+![](./images/fp382TriWB1qdigGdkcWQw2Q0XqK1oUxN.png)
+
+![](./images/fifAgrcFg3VSauFuC83u2svrK7prpylff.png)
+
+To find the area between curves we need to write the definite integral
+as a composition of the two curves The representative rectangle helps us
+determine this.
+
+![](./images/fiP0bggQ9r8ygtI4nSZ9GkN6xLY5E4Fg0.png)
+
+## Finding the Area Between Curves
+
+1:Find the lower and upper bounds of the area and mark them on your
+graph.
+
+These may be the intersection of the graphs..
+
+2: Draw the representative rectangle(s). Find any other required bounds
+
+3: Find the equation for the height for each rectangle, $h(x)$
+
+$$A=\int_a^bh(x)dx$$ 4:Write the Definite Integrals for each rectangle
+with its bounds.
+
+5: Evaluate the Definite Integral. Remember: Area has units.
+
+E1 For each of the following graphs:
+
+1. Shade the area between the two curves. 5.Draw the representative
+    rectangle(s) and label it (them). 6.Write the definite integral(s)
+    needed to find the area.
+
+![](./images/f8iTA5l4VVF927BQZdmfKxRpybYvuy1YL.png)
+
+E2 Find the shown enclosed are bounded by the curves $y=x^{4}-2x^{2}+1$
+and $y=x^{2}-1$
+
+![](./images/fbX9plOTGfi0IefBQxpxgFpRYMaEcIkhm.png)
+
+E3 Find the area between the curves $y=\sin x$ and $y=\cos x$ from $x=0$
+to
+
+![](./images/fdw6m8UaZF8KBeN0N56euUYmBgpdc7vKk.png)
+
+Always use brackets when you are subtracting curves.
+
+$$\int f(x)-g(x)\:dx$$
+
+$$\int(x^2)-(x^3+1)dx$$
+
+$$\int f(x)-g(x)\:dx$$
+
+$$\int x^2-x^3+1\mathrm{dx}$$ nooooo!
+
+When you are given twofunctions you need toknow which equation matches
+which curve.You could graph thefunctions on a graphic calculator todo
+this,but you should learn toidentify them bylooking at them.Let's review
+
+absolute value
+
+![](./images/fKNVmsmVwdhR5HGzCf5QrwOF63sEYZlcZ.png)
+
+![](./images/ftUl7k5ONcZEmkEtWD717N4y1zX74fII9.png)
+
+![](./images/fAbgXTh7gCt6BtURg5aGviHMNRaVC2qcG.png)
+
+![](./images/fL9DdhxUu8zcITx6HEmTtgUcDLgso2cW6.png)
+
+circle
+
+radical
+
+exponential
+
+![](./images/fSgk9ag2LubaQWy4BqCw5TntURsg92MT9.png)
+
+![](./images/fe3LXL1IgnGcDZ9y8Xputya4fGFHReBTy.png)
+
+$$y=\sqrt{x}$$
+
+![](./images/fTWB2Ce94c9gNuvYrtGCGUzsXDgbsRNKo.png)
+
+![](./images/fN0bPckaz3x7crpOOUmabA9ns6pY0Vf61.png)
+
+$$y=a^{x}$$
+
+Curves "flip" (y-values change sign) when there is a negative in front
+of the function (except circles).
+
+cubic ![](./images/frdCldCwgKHDqnk6t1y62FKZ7UvTEe4tr.png)
+
+![](./images/flrn2RBkKUAQguYKGzfQgFGZqgu0ukstG.png)
+
+absolute value
+
+![](./images/fR03pGHz2FcbhbBQHAukqUlvFwIazTURg.png)
+
+![](./images/fiphpvXitSmye1EFnALqGNVMkeeqbepMt.png)
+
+radical ![](./images/fSOgeBZ7zR1VcgLOOqU9SOmfgGLZMrQ9O.png)
+
+exponential ![](./images/fTNmbR0z6BvE6pmoYfqhp4B9A7on5FPpg.png)
+
+![](./images/f1VHdFfLD4k1Hnz1TlS8Enegur0GYBMCt.png)
+
+$$y=-a^{x}$$
+
+E4 Let's find the enclosed area between the curves $x=4-y^{2}$ and
+$y=x+2$
+
+![](./images/fPWTRHFqNRy9vmFa5hDw7B3GwGzoe6VQU.png)
+
+# 2.8 Volume of Revolution - Disc Method
+
+## Videos and sites
+
+\[Recommended\] Both disc and washer methods (washer method is explained in a very simple way):
+
+{{< video https://www.youtube.com/watch?v=uiEEEx7mPHg >}}
+
+Organic chemistry tutor (disc method only):
+
+{{< video https://www.youtube.com/watch?v=SAHSVg7Jw_A >}}
+
+## Uni notes
+
+A volume of rotation is created by taking an area in the xy axis and
+rotating it into a 3D object
+
+![](./images/fDITqpB7v1lwbinEdXE7puP8gEbXbDpct.png)
+
+We can approximate the volume by adding up all the volumes of all the
+disks:
+
+V
+
+V=
+
+![](./images/fpDAHgKvv7lh1Xk72xNBIU3Sv9vpo9Bnp.png)
+
+Just as we did with area, if we want anexact volume we need to consider
+an infinite number ofdisks
+
+Now, using the Fundamental Theorem of Calculus
+
+E1 An area iscreated bybounding theregionunder $y=3$ from $x=-3$ to
+$x=5$ . Find the volume of the cylinder created by rotating this area
+about the $x$ -axis.
+
+It is always important to note which axis we're rotating about.
+
+![](./images/fg7IFauY6ywgXs1v3dzCTknyhnG1CGFdH.png)
+
+Since this shape is an actual cylinder,we can compare our definite
+integral volume to the geometrical equation we commonly use:
+
+![](./images/fdhQ8s4Y0GzdcdDPlo5nMKArIek3fvu5o.png)
+
+![](./images/fQiRdBPpsY7uCE3gacm0PviwaaGUqzzhL.png)
+
+To find the volume:
+
+![](./images/fkL6QY0uZaP5FAdGRgHhQ5lDOhViDyF61.png)
+
+### Find the Volume from Any Area
+
+1.Mark the upper and lower bounds for the area to be rotated.
+
+1. Add the rotation to the correct axis. IMPORTANT!E
+
+1. Draw the representative rectangle and determine the radius, $r(x)$
+
+1. The area of the disk is $A_{D\mathrm{is}k}=\pi r^{2}$ . Write the
+    area in terms of $x$ ， $A(x)$ 5. Use $V=\int_a^bA(x)dx$ to find the
+    volume. Don't forget units!
+
+### DISK METHOD-ROTATING ABOUT X-AXIS
+
+$V=\int_a^bA(x)dx$ where $A=\pi r^{2}$ (area of a disc)
+
+![](./images/fOS70FLS2qcmLUQQ45RlUZerNLThygkof.png)
+
+E2Find the volume of thesolid formed by the rotation of $y=2x$ about the
+$x$ -axis between $x=1$ and $x=4$
+
+![](./images/fr7B0veAR96wWfzrrghG3MFoBm39TA5GI.png)
+
+E3 Find the volume of the solid formed by rotating the area created by
+$y=e^x$ about the x-axis
+
+![](./images/fBIRGbXaRS8gLx7SOY3RobF8At0zYQK5Z.png)
+
+![](./images/f0WGg7z461syUZtuxywsW9dsTDZIdTDWE.png)
+
+We don't always rotate about the x-axis.Sometimes we are asked to rotate
+about the y-axis
+
+In this case we solve the function for $x$ like when we did for
+areabetween curves.
+
+Solving for x does not mean we simply switch x and $y$ in the formula.
+
+Find the volume of the solid formed by rotating $y=4-x^{2}$ about the
+y-axis.
+
+![](./images/f5nUg9sg4KTzo5ppGHtxw4snHQg6bcGzN.png)
+
+> When curve revolves around the y-axis: $x = g(y)$ When curve revolves
+> around the y-axis: $y = g(x)$
+
+\begin{align*}
+  x = h(y) = r \\
+  y = 4-x^2 \\
+  \implies x = \pm \sqrt{4-y} \\
+  V = \int_0^4 \pi [g(y)]^2 dy \\
+  = \pi \int_0^4 (\pm \sqrt{4-y})^2 dy \\
+  =  \pi \\
+\end{align*}
+
+DISK METHOD - ROTATING ABOUT Y-AXIS
+
+$V=\int_c^dA(y)dy$ where $A=\pi r^{2}$ (area o adisc)
+
+![](./images/fdXdxaPvyXRpDHlDvgFlZGgR95A0UkzWZ.png)
+
+Notice the rectangle is perpendicular to the axis of rotation.
+
+![](./images/fvx51e11dSAWm2FEscFsslRkfDpghUD8m.png)
+
+Since the area for a disk is $A_{Disk}=\pi r^{2}$ , it doesn't matter if
+the curve is above or below the axis.
+
+### Above the curve
+
+Under the curve
+
+$$r=(f(x)-0)$$
+
+$$A(x)=\pi(f(x))^2$$
+
+\begin{align*}
+&r=(0-f(x)) \\
+&\text{.} A(x)=\pi(-f(x))^{2}  \\
+&&&=\pi(-1)^{2}(f(x))^{2} \\
+&&&=\pi(f(x))^{2}
+\end{align*}
+
+### 2.9Volume of Revolution - Washer Method
+
+If we have an area between curves to rotate around the axis,we get a
+hollow 3d shape(ie it has space in the middle).
+
+We use the same ideas as before but the space inside the shape creates a
+washer shape, so when we have two curves, we call it the Washer Method.
+
+![](./images/fsRIIQUfnLc4OuLGvhIhF0u4Kgs9g4iGB.png)
+
+We already know that $V=\int_a^bA(x)dx.$ So wecan fn thevolmea before
+
+### Find the Volume using Revolution of an Area between Curves
+
+$$A_{Washer}=\pi r_{o}^{2}-\pi r_{i}^{2}$$ For area between curves that
+makes a washer shape, we use:
+
+1.Markthe upper and lowerboundsfor the area tobe rotated. 2. Add the
+rotation to the correct axis. IMPORTANT! 3. Draw a representative
+rectangle and determine the radius and inner radius. 4. Write the area
+in terms of $x$ ， $A(x)$ . 5. Use $V=\int_a^bA(x)dx$ to find the
+volume. Don't forget units!
+
+E1 Find the volume of the solid generated by revolving the enclosed area
+between $y=x$ and $y=x^{2}$ about the $x$ -axis.
+
+![](./images/fgblVeEpxMzo6r73eXrOllAV5Ade8m9my.png)
+
+![](./images/f3WQDZPGhSbkyehd5dWYN6n1cHyiIb1fk.png)
+
+E2 Find the volume of the solid generated byrevolving the enclosed area
+between $y=x$ and $y=x^2$ about the y-axis.
+
+![](./images/fme8w868y4FAOpzqY8t5898dKAruWyh7f.png)
+
+# 2.10 Volume of Revolution - Shell Method
+
+## Videos and sites
+
+{{< video https://www.youtube.com/watch?v=D5sT1br9soI >}}
+
+## Uni notes
+
+Previously, we considered volume as a collection of disks.
+
+![](./images/fmFYYUxQH0vLkznniS43CXpToAdRWCbcR.png)
+
+We can take the same area and rotate it around the y-axis This makes a
+3d volume that is a collection of thin cylinders or
+
+![](./images/f77s9G5iLtudl4Hh2GgfBuqGZCPeGYfc7.png)
+
+![](./images/fQFgzhsvl5bFDEwbOdBDtKC8KvTGML0EV.png)
+
+Each Ax makes a shell
+
+![](./images/fCS8pUEocFcTdpFM8Ga0Fcu8u1xFOPEuO.png)
+
+![](./images/fe3DyDH59nwpSLuS59CLlGzUThgfvAqCL.png)
+
+The areaweuse tofindvolume is here
+
+If we unroll the shell we can define the area forintegration as
+
+![](./images/fC8U1hhToNPX9hkaeEV5qdCQDsxpLzH2A.png)
+
+$V=$
+
+$$\sum_{i=0}^{n-1}A(x_i)\Delta x$$
+
+Again,ifwe add up aninfinite number of shells, we get
+
+V=
+
+Now, using the Fundamental Theorem of Calculus
+
+Given a more complex function, we see that the height of each shell
+depends on f(x)
+
+![](./images/fGDtUunBOshZc1x38HeA8R1UteQ267ggL.png)
+
+### SHELL METHOD-REVOLVING ABOUT Y-AXIS
+
+$V = \int_a^b A(x)dr$ where $A_{shell}=2\pi rh$ (area of thin shell)
+
+r is $X$, and the height depends on $f(x)$
+
+E1 Using the shell method, find the volume of the solid generated by
+revolving the first-quadrant region bounded by $y=4-x^{2}$ about the
+y-axis.
+
+![](./images/fUY7G6ZkX4vE5mCvcizX5nof7lK5Cp1sb.png)
+
+E2 Use the shell method tofind the volume of the solid generated by
+revolving the region boundedby the $x$ -axis, $y=-\sin(x^{2})$ ， $x=0$
+and $x=\sqrt{\pi}$ about the y-axis.
+
+![](./images/f09NQfsg20K4kBPtFkyunlxXlmWByFk34.png)
+
+::: columns
+::: {.column = "40%"} \begin{align*}
+  u = x^2 \\ 
+  du = 2x dx \\
+  \int x \sin x^2 dx = \frac{1}{2} \int \sin x^2 2x dx \\
+  = \frac{1}{2} \int \sin u du \\
+  = \frac{1}{2} (- \cos x) + c \\
+\end{align*}
+:::
+
+::: {.column = "60%"}
+
+\begin{align*}
+  V = 2\pi \int_0^{\sqrt{\pi}} x |(-\sin (x^2))| dx \\
+  = 2\pi \int_0^{\sqrt{\pi}} x (-\sin (x^2)) dx \\
+  = 2\pi \left[ -\tfrac{1}{2} \cos (x^2) \right]_0^{\sqrt{\pi}} \\
+  = - \pi [ \cos \pi - \cos 0 ]
+\end{align*}
+
+:::
+
+::::
+
+# Recognize the difference between the methods:
+
+E3 Identify the method and write the form for the area used to find the
+volume.
+
+![](./images/fPu9tQo4IShXvGWQdZCYgR8fshgM3FIm1.png)
+
+![](./images/fgnXnfgbhmqpQ7mcWN7vg4wMQEY0sbmTW.png)
+
+![](./images/fh8TIOnbfMX1Rnm1ShYgkPP7gU28Bb4CA.png)
+
+![](./images/fiVsE44C49MLKgnY8uoG08wdIFhDBtuDO.png)
+
+![](./images/fbsPhgvuBudZKeRL41zs0RQuL0snnROtp.png)
+
+![](./images/faHrwWlz3qXUGvP3MPRMQeGf9HlpdVNue.png)
+
+## 2.11.1 Introduction
+
+In the Cartesian coordinate system,we plot apoint $(x,y)$ by starting at
+the origin O and then moving $x$ units horizontally followed by. $y$
+units vertically.
+
+![](./images/fLGZUZRG9vclabhtOLNQ9rnGo9lhpBm0I.png)
+
+This is not the onlyway to define apoint in two-dimensional
+space.Instead ofmoving vertically and horizontally from the origin to
+get tothe point we could instead go straight out of the origin until we
+hit the point and then determine the angle thisline makes with the
+positive $x$ -axis. We could then use the distance of the point from the
+origin and the amount we needed torotate from the positive $x$ -axis as
+the coordinates of thepoint.
+
+![](./images/fUkD6LHiq5vaNCxqnXgQedRoDZ7VXhhyw.png)
+
+Coordinates in this form are called polar coordinates.
+
+The polar coordinate system is a two-dimensional coordinate system in
+which each point P in the plane is determined by the polar coordinates
+$(r,\theta)$
+
+To define the polar coordinates $(r,\theta)$ ,wefix an originO called
+the pole,and construct from O an initial ray called thepolar axis.
+
+Then each point P can be located by assigning to ita polar coordinate
+pair $(r,\theta)$ as shown in figure1below inwhich"r”givesthe directed
+distance from origin O to P, and“ $\theta^{\prime}$ ' gives the directed
+angle from the initial ray to the rayOP.
+
+![](./images/fG5w9ru96A98CUgGgmewDFYpG1xWHtlce.png)
+
+We use the convention that $\theta$ is positive when measured
+anti-clockwise and negative when measured clockwise.
+
+? $r$ is called the radial coordinate of the point P $\theta$ is called
+the angular coordinate of the point P
+
+### N.B.
+
+A. The pole O (origin) has no specific angular coordinate $\theta$ , but
+it has radial coordinate $r=0$ Then we assign to O the polar coordinates
+$(0,\theta)$ for any angle $\theta$
+
+A. The angular coordinate $\theta$ associated to a given point is not
+unique. Since adding multiple of $2\pi$ to $\theta$ , does not change
+the location of the point, then the polar coordinates $(r,\theta)$ and
+$(r,\theta+2n\pi)$ represent the same point for any integer $n$.
+
+For example, all the following polar coordinates
+$\left(1,\:\frac{5\pi}{4}\right),\left(1,-\frac{3\pi}{4}\right)$ ,
+$\left(1,\:\frac{13\pi}{4}\right)$ represent the same point in the
+plane.
+
+![](./images/fX8L81oagQaQnLLEZHhO7MmVWeQYIeowN.png)
+
+(all represent the same point in the plane)
+
+E2:
+$\left ( 2, \:\frac \pi 3\right ) , \left ( 2, - \frac {5\pi }3\right )$and$\left(2,\:\frac{7\pi}{3}\right)$
+(all represent the same point in the plane)
+
+A. Since the radial coordinate $r$ is a directed distance, we allow $r$
+to be negative with the convention that the points $(r,\theta)$ and
+$(-r,\theta)$ lie on the same line through the origin O and at the same
+distance $|r|$ from O.
+
+If $r>0$ , the point lies in the same quadrant as $\theta$ If $r<0$ ,
+the point lies in quadrant opposite to $\theta$ (quadrant in the
+opposite side of the pole).
+
+The polar coordinates $(r,\theta)$ and $(-r,\theta)$ represent then two
+diferent points in the plane For example, the points
+$\left(2,\:\frac{\pi}{6}\right)$and$\left(-2,\:\frac{\pi}{6}\right)$
+
+![](./images/frqzDtbZulhUQKfekhOwMzTax6YPqUaIW.png)
+
+D.From the convention of part C,we can say that the polar coordinates
+$(r,\theta)$ and $(-r,\theta+\pi)$ represent the same point.
+
+More generally,
+
+$(r,\theta)=(-r,\theta+(2n+1)\pi)$ for any integer $n$
+
+For example, the polar coordinates
+$\left(2,\:\frac{\pi}{6}\right),\left(-2,-\frac{5\pi}{6}\right)$and$\left(-2,\:\frac{7\pi}{6}\right)$all
+represent the same point in the plane.
+
+![](./images/f1g8g1215UeGBfF2bnbwyeLY3AQVoqrU8.png)
+
+$$\begin{array}{|c}(r,\theta)=(r,\theta+2n\pi)=(-r,\theta+(2n+1)\pi)\end{array}$$
+
+For example,
+$\left(5,\:\frac{\pi}{3}\right)=\left(5,-\frac{5\pi}{3}\right)=\left(-5,\:\frac{4\pi}{3}\right)=\left(-5,-\frac{2\pi}{3}\right).$
+
+![](./images/ffRZ4B82HQ75clxGQ18L81wZlx7emd5og.png)
+
+This means, a point in polar coordinate system has infinite number of
+pairs of polar coordinates. (Unlike in cartesian coordinate system where
+there is only one pair of cartesian coordinatesfora point)
+
+![](./images/fgPT74W70yyugSDyn9Lo7wkQrdnCu0mLc.png)
+
+In the right triangle, we have:.
+
+$$r^{2}=\:x^{2}+y^{2}$$ (Pythagorean theorem
+
+And,
+
+$$cos\theta=\frac xr\quad\mathrm{and}\quad sin\theta=\frac yr$$
+
+### 2.11.4 Converting from Polar to Cartesian (Rectangular) Coordinates
+
+To convert from Polar Coordinates to Cartesian (or Rectangular)
+Coordinates, use the formulas
+
+x = rcos0 and $y=rsin\theta$
+
+Ex.1: Find the rectangular coordinates of the point
+$\begin{pmatrix}-4,\:\frac{2\pi}{3}\end{pmatrix}$
+
+### Solution
+
+\begin{align*}
+&x=-4\cos\left({\frac{2\pi}{3}}\right)=-4\left(-{\frac{1}{2}}\right)=2 \\
+&y=-4\sin\left(\frac{2\pi}{3}\right)=-4\left(\frac{\sqrt{3}}{2}\right)=-2\sqrt{3}
+\end{align*}
+
+So, in Cartesian coordinates this point is $(2,-2\sqrt{3})$
+
+Ex.2:Find therectangular coordinates of each of the following points
+
+a) (-2, 3)
+
+$$d)\left(\sqrt{2},-\frac{5\pi}{4}\right)$$
+
+$$\mathfrak{c})\begin{pmatrix}2,\frac{\pi}{3}\end{pmatrix}$$
+
+### Converting from Cartesian (Rectangular) to Polar Coordinates
+
+To convert from Cartesian (or Rectangular) Coordinates to Polar
+Coordinates, use the formulas
+
+Since $r^{2}=$ $x^{2}+ y^{2}$
+
+$$\tan\theta=\frac{y}{x}$$
+
+Then,
+
+$$r=\sqrt{x^2+y^2}\quad\text{and}\quad\theta=\tan^{-1}\left(\frac{y}{x}\right)$$
+
+N.B. Be careful when finding $\theta=\tan^{-1}\left(\frac{y}{x}\right)$
+because inverse tangents only eturn value in the range:
+$-\frac{\pi}{2}<\theta<\frac{\pi}{2}$ (ie in quadrants 1 and 4 onl)
+
+Important: Rcall that multiple angles giving the same output value can
+be fitted in tan
+
+![](./images/f22xtYsOh5q9wPLFEv2TZGFcNn9MOZnzx.png)
+
+Ex.1: Convert (-1,-1) into polar coordinates
+
+**Ans:**
+
+$$r=\sqrt{\left(-1\right)^2+\left(-1\right)^2}=\sqrt{2}$$
+
+$$\theta=\tan^{-1}\left(\frac{-1}{-1}\right)=\tan^{-1}\left(1\right)=\frac{\pi}{4} \quad \text{In the Quadrant 1}$$
+
+The given co-ordinate lies in quadrant 3. Therefore, we add $\pi$
+
+$$\theta=\frac{\pi}{4}+\pi=\frac{5\pi}{4}$$
+
+So, in polar coordinates the point is $(\sqrt{2},\frac{5\pi}{4})$ . Note
+as well that we could have used the first $\theta$ that we got by using
+a negative r. In this case the point could also be written in polar
+coordinates as $\left(-\sqrt{2},\frac{\pi}{4}\right)$
+
+Ex.2: Find the polar coordinates of each of the following points:
+
+<details>
+
+<summary>Exercises</summary>
+
+(a)(2,2)
+
+(b) (1,-1)
+
+(c) $\begin{pmatrix}-1,\sqrt{3}\end{pmatrix}$
+
+(d) $\begin{pmatrix}1,-\sqrt{3}\end{pmatrix}$
+
+(e) $\left(-2,-2\sqrt{3}\right)$
+
+</details>
+
+# 2.11.6 Polar Equation:
+
+## Video I watched
+
+{{< video https://www.youtube.com/embed/jO4lwddfeDA >}}
+
+Note that the above video only has some of the limacons. Rest of it
+can be found in this
+[PDF](https://math.ucr.edu/~jbritton/Polar_Curves.pdf)
+
+A Limacon is defined by the either of the following equations:
+
+- $R = a \pm b \sin \theta$
+- $R = a \pm b \cos \theta$
+
+Limacons are of the following types:
+
+|         Equation          | Shape                                                                                                  |
+| :-----------------------: | ------------------------------------------------------------------------------------------------------ |
+|   $\frac{\|a\|}{\|b\|} < 1$   | Limacon with an inner loop                                                                             |
+|   $\frac{\|a\|}{\|b\|} = 1$   | Cardiod or Heart shaped Limacon                                                                        |
+| $1 < \frac{\|a\|}{\|b\|} < 2$ | A circle with a small dimple                                                                           |
+| $\frac{\|a\|}{\|b\|} \geq 2$  | Almost perfect circle with one side slightly flat or one side bigger than the other side of the circle |
+
+When graphing, you need to note 4 points:
+
+- $a$
+- $-a$
+- $|a-b|$: First $x$ or $y$ intercept for $cos$ or $sin$
+- $a+b$: Second $x$ or $y$ intercept for $cos$ or $sin$
+
+{{< video https://www.youtube.com/embed/TwKxDApaxVo >}}
+
+## Uni notes
+
+Apolar equation is of theform $r=f(\boldsymbol{\theta})$ or more
+generally $f(r,\theta)=0$
+
+The graph of a polar equation in the xy-plane consists of the points
+$P(x,y)$ for which:
+
+$$x=rcos\theta\quad\mathrm{and}\:y=rsin\theta.$$
+
+Ex.1:Find the polarequation corresponding to each of each of the
+following
+
+a) $x=1$
+
+a) $y=3x+2$
+
+a) $x^{2}-y^{2}=9$
+
+a) $x^{2}+(y-3)^{2}=9$
+
+### 2.11.7 Area with Polar Coordinates
+
+We are going to look at areas enclosed by polar curves. Note as well
+that we said "enclosed by' instead of "under" as we typically have in
+these problems.These problems work a little differently in polar
+coordinates. Here is a sketch of what the area that we'll be finding in
+this section looks like.
+
+![](./images/fBmlHhAGqkugfOkLPiEgcaUrNf511lWYi.png)
+
+To understand the area insideof apolarcurve $r=f(\theta)$ ,we start
+withthe areaof a sliceof pie.If the slice has angle an radius,the t ' a
+raction $\frac{\theta}{2\pi}$ of the entir ie
+
+So,the area ofthe slice is:
+
+![](./images/fckYKPWpG7ldN88mlrXGewxZ3iCW6QYd9.png)
+
+Now we can compute the area inside of polar curve.
+$r=f(\boldsymbol{\theta})$ ,between angles $\theta=\alpha$ and
+$\theta=\beta$ .As with all bulk quantities, we
+
+1.Break the region into N small pieces. 2.Estimate the contribution of
+each piece. 3.Add up the pieces. 4.Take a limit to get an integral.
+
+![](./images/fvaZgGGcc7w8fYRUqXbEw29dsOzVC2BH1.png)
+
+In our case, the pece ar slies of angle
+$\Delta\theta=\frac{\beta-\alpha}N$
+
+These aren't exactly pie slices, since the radius isn't constant,but
+it's a good approximation when $N$ is large and $\Delta\theta$ is small.
+
+The ith slice has area approxcimately: $A_i=\frac{r_i^*}2\Delta\theta$
+
+So, the whole thing has area $A_N$ approximately
+
+$$A_N=\sum_{i=1}^NA_i\approx\sum_{i=1}^N\frac{r_i^*}{2}\Delta\theta $$
+
+Taking the limit as $N\to\infty$ of the above Sum to get the exact area
+as the definite integral
+
+$$A=\lim\limits_{N\to\infty}A_N=\int\limits_{\alpha}^{\beta}\frac{r^2}{2}d\theta=\frac{1}{2}\int\limits_{\alpha}^{\beta}r^2d\theta $$
+
+Suppose f is continuous and nonnegative on the interval
+$\alpha\leq\theta\leq\beta$ ，with $0<\beta-\alpha\leq2\pi$ The area of
+the region enclosed bythe graph of polar curve $r=f(\theta)$ between the
+radial lines $\theta=\alpha$ and $\theta=\beta$ is given by the formula.
+
+$$A=\frac{1}{2}\int\limits_{\alpha}^{\beta}r^2d\theta $$
+
+\$\begin{align*}&\text{Rex Poseremone the seen at the Poser thep of the palle coure r}=2+4\cos(\theta)\\&\theta=2p^{\frac{1}{1}}\\&\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}-\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac{1}{1}+\frac $
+
+$\begin{align*}&\text{BeE Cocallist the thed Pere of the Pere Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallis Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocadlist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist Cocallist}\end{align*}\$
+
+E1.
+
+\begin{align*}
+  r &= 2 + 4\cos\theta \\
+  A &= \frac{1}{2} \int _\frac{2\pi}{3} ^\frac{4\pi}{3}
+  \frac{1}{2} \int _\frac{2\pi}{3} ^\frac{4\pi}{3} [4 + 16 \cos \theta + 16]\\
+\end{align*}
+
+Ex.3: Calculate the shaded area of the polar curve $r=3sin(2\theta)$
+between
+
+$\theta=0$ to $\theta=\frac{\pi}{2}$
+
+![](./images/f6zAMNOairRpFL5ThheyKtnL8DbHuD1rS.png)

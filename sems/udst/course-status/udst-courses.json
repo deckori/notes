@@ -1,0 +1,954 @@
+[
+  {
+    "course_number": "AECH1201",
+    "course_title": "Basic Engineering Calculations",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AEEL1101",
+    "course_title": "Fundamentals of Electricity I",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AEEL1201",
+    "course_title": "Fundamentals of Electricity I (Lab)",
+    "requisite": {
+      "pre_req": "AEEL1101",
+      "co_req": "-"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "COMM1010",
+    "course_title": "English Communication I",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "MATH1030",
+    "course_title": "Calculus I",
+    "requisite": {
+      "pre_req": "MATH1020 OR AMPII Score of 85%",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "PHYS1020",
+    "course_title": "General Physics",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "PHYS1021"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "PHYS1021",
+    "course_title": "General Physics (Lab)",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "PHYS1020"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "EFFL1001",
+    "course_title": "Effective Learning",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "EFFL1002",
+    "course_title": "Applied & Experiential Learning",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AEEL1102",
+    "course_title": "Fundamentals of Electricity II",
+    "requisite": {
+      "pre_req": "AEEL1101",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AEEL1202",
+    "course_title": "Fundamentals of Electricity II (Lab)",
+    "requisite": {
+      "pre_req": "AEEL1201",
+      "co_req": "AEEL1102"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AETN1102",
+    "course_title": "Network Fundamentals",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "AETN1112 AETN1202"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AETN1112",
+    "course_title": "Digital Electronics",
+    "requisite": {
+      "pre_req": "AEEL1101",
+      "co_req": "AETN1212"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AEEL1201",
+    "course_title": "Fundamentals of Electricity I (Lab)",
+    "requisite": {
+      "pre_req": "AEEL1101",
+      "co_req": "-"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN1202",
+    "course_title": "Network Fundamentals (Lab)",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "AETN1102"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AETN1212",
+    "course_title": "Digital Electronics (Lab)",
+    "requisite": {
+      "pre_req": "AEEL1201",
+      "co_req": "AETN1112"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "COMM1020",
+    "course_title": "English Communication II",
+    "requisite": {
+      "pre_req": "COMM1010",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "MATH2010",
+    "course_title": "Calculus II",
+    "requisite": {
+      "pre_req": "MATH1030",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AECH1100",
+    "course_title": "Environmental Awareness & Ethics",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 2,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AEMA1312",
+    "course_title": "Engineering Graphics",
+    "requisite": {
+      "pre_req": "AECH1201",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 1,
+      "lab": 4
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AEPC1203",
+    "course_title": "Basic Instrumentation",
+    "requisite": {
+      "pre_req": "AEEL1100 & AEEL1200 OR AEEL1101 & AEEL1201",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 4
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AEEL2201",
+    "course_title": "Electronic Fabrication Practices",
+    "requisite": {
+      "pre_req": "AEEL1102, AEEL1202",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 4
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2101",
+    "course_title": "Analog Electronics",
+    "requisite": {
+      "pre_req": "AEEL1102",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AETN2111",
+    "course_title": "Network Switching & Routing",
+    "requisite": {
+      "pre_req": "AETN1102",
+      "co_req": "AETN2211"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2121",
+    "course_title": "Analog & Digital Communication",
+    "requisite": {
+      "pre_req": "AEEL1102, MATH1020 OR AMPII Score of 85%",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2201",
+    "course_title": "Analog Electronics (Lab)",
+    "requisite": {
+      "pre_req": "AEEL1202",
+      "co_req": "AETN2101"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AETN2211",
+    "course_title": "Network Switching & Routing (Lab)",
+    "requisite": {
+      "pre_req": "AETN1202",
+      "co_req": "AETN2111"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2221",
+    "course_title": "Analog & Digital Communication (Lab)",
+    "requisite": {
+      "pre_req": "AEEL1202",
+      "co_req": "AETN2121"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "BIOL1001",
+    "course_title": "Inquiry-Based Biology",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "BIOL1002",
+    "course_title": "Introduction to Botany",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "BIOL1003",
+    "course_title": "Fundamentals of Ecology",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AECH2103",
+    "course_title": "Leadership & Management Principles",
+    "requisite": {
+      "pre_req": "AECH1100, COMM1020",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 2,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2112",
+    "course_title": "Enterprise Networks",
+    "requisite": {
+      "pre_req": "AETN2111",
+      "co_req": "AETN2212"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2122",
+    "course_title": "Wireless Communication Systems",
+    "requisite": {
+      "pre_req": "AETN2121",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2212",
+    "course_title": "Enterprise Networks (Lab)",
+    "requisite": {
+      "pre_req": "AETN2211",
+      "co_req": "AETN2112"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2222",
+    "course_title": "Wireless Communication Systems (Lab)",
+    "requisite": {
+      "pre_req": "AETN2221",
+      "co_req": "AETN2122"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 2
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN2302",
+    "course_title": "Applied Programming I",
+    "requisite": {
+      "pre_req": "MATH1020 OR AMPII Score of 85%",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 1,
+      "lab": 5
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "CHEM1010",
+    "course_title": "General Chemistry I",
+    "requisite": {
+      "pre_req": "CHEM1011",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "CHEM1011",
+    "course_title": "General Chemistry I (Lab)",
+    "requisite": {
+      "pre_req": "CHEM1010",
+      "co_req": "-"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": true
+  },
+  {
+    "course_number": "AECH2112",
+    "course_title": "Sustainability & Renewable Energy",
+    "requisite": {
+      "pre_req": "AECH1100",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3101",
+    "course_title": "Cyber Security",
+    "requisite": {
+      "pre_req": "AETN2112",
+      "co_req": "AETN3201"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3111",
+    "course_title": "Applied Electromagnetics",
+    "requisite": {
+      "pre_req": "MATH2010",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3201",
+    "course_title": "Cyber Security (Lab)",
+    "requisite": {
+      "pre_req": "AETN2212",
+      "co_req": "AETN3101"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3221",
+    "course_title": "Linux Operating System",
+    "requisite": {
+      "pre_req": "AETN2302",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 5
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4101",
+    "course_title": "Continuous & Discrete-time Signals & Systems",
+    "requisite": {
+      "pre_req": "MATH2010",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3122",
+    "course_title": "Telecommunications Networks",
+    "requisite": {
+      "pre_req": "AETN2112",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3222",
+    "course_title": "Applied Programming II",
+    "requisite": {
+      "pre_req": "AETN2302",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 5
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4122",
+    "course_title": "Advanced Engineering Mathematics & Applications",
+    "requisite": {
+      "pre_req": "AETN4101",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "RSST3002",
+    "course_title": "Probability & Statistical Analysis",
+    "requisite": {
+      "pre_req": "MATH2010",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "BUSG2001",
+    "course_title": "Introduction to Entrepreneurship",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 2,
+      "lab": 2
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "SSHA1001",
+    "course_title": "Islamic & Arab Civilization",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "SSHA1002",
+    "course_title": "Introduction to Sociology",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "SSHA1003",
+    "course_title": "Introductory Psychology",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "SSHA1004",
+    "course_title": "Ethical Reasoning",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "SSHA1005",
+    "course_title": "Law & Society",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "SSHA1006",
+    "course_title": "Introduction to the Arts",
+    "requisite": {
+      "pre_req": "-",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3203",
+    "course_title": "Work Placement",
+    "requisite": {
+      "pre_req": "Min 85 Credits",
+      "co_req": "-"
+    },
+    "cr": 9,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 360
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AEMA4100",
+    "course_title": "Project Management",
+    "requisite": {
+      "pre_req": "AECH2103",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3102",
+    "course_title": "Antennas & Wave Propagation",
+    "requisite": {
+      "pre_req": "AETN3111",
+      "co_req": "AETN3202"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 2,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3112",
+    "course_title": "Network Management",
+    "requisite": {
+      "pre_req": "AETN3122",
+      "co_req": "-"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 2,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN3202",
+    "course_title": "Antennas & Wave Propagation (Lab)",
+    "requisite": {
+      "pre_req": "AETN2222",
+      "co_req": "AETN3102"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4301",
+    "course_title": "Capstone Project I",
+    "requisite": {
+      "pre_req": "AETN3101 AETN3201 AEMA4100 COMM3010",
+      "co_req": "-"
+    },
+    "cr": 0,
+    "hours_per_week": {
+      "lec": 1,
+      "lab": 2
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "COMM3010",
+    "course_title": "Research & Reporting",
+    "requisite": {
+      "pre_req": "COMM1020",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4112",
+    "course_title": "Enterprise Unified Communications",
+    "requisite": {
+      "pre_req": "AETN3101",
+      "co_req": "AETN4212"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4121",
+    "course_title": "Microwave Engineering",
+    "requisite": {
+      "pre_req": "AETN3111",
+      "co_req": "AETN4221"
+    },
+    "cr": 2,
+    "hours_per_week": {
+      "lec": 2,
+      "lab": 0
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4212",
+    "course_title": "Enterprise Unified Communications (Lab)",
+    "requisite": {
+      "pre_req": "AETN3201",
+      "co_req": "AETN4112"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4221",
+    "course_title": "Microwave Engineering (Lab)",
+    "requisite": {
+      "pre_req": "AETN3202",
+      "co_req": "AETN4121"
+    },
+    "cr": 1,
+    "hours_per_week": {
+      "lec": 0,
+      "lab": 3
+    },
+    "attempted": false
+  },
+  {
+    "course_number": "AETN4302",
+    "course_title": "Capstone Project II",
+    "requisite": {
+      "pre_req": "AETN4301",
+      "co_req": "-"
+    },
+    "cr": 3,
+    "hours_per_week": {
+      "lec": 3,
+      "lab": 0
+    },
+    "attempted": false
+  }
+]

@@ -1,0 +1,493 @@
+---
+title: "IPv6 Addressing"
+---
+
+{0}------------------------------------------------
+
+![](_page_0_Picture_0.jpeg)
+
+# **Topic 9: IPv6 Addressing**
+
+![](_page_0_Picture_2.jpeg)
+
+Introduction to Networks v7.0 (ITN)
+
+{1}------------------------------------------------
+
+### **Objectives**
+
+**Implement an IPv6 Addressing scheme.**
+
+| Topic Title                    | Topic Objective                                                                   |
+|--------------------------------|-----------------------------------------------------------------------------------|
+| IPv4 Issues                    | Explain the need for IPv6 addressing.                                             |
+| IPv6 Address<br>Representation | Explain how IPv6 addresses are represented.                                       |
+| IPv6 Address Types             | Compare types of IPv6 network addresses.                                          |
+| IPv6 Configuration             | Explain how to configure global unicast and link<br>local IPv6 network addresses. |
+| Subnet an IPv6 Network         | Implement a subnetted IPv6 addressing scheme.                                     |
+
+{2}------------------------------------------------
+
+#### **IPv4 Issues Need for IPv6**
+
+- **IPv4 is running out of addresses: 4.3 billion addresses.**
+- **IPv6 has a 128-bit address space: 340 undecillion addresses = 340 x 1036.**
+- **Transition to IPv6 is driven by**
+  - **Internet of Thing (IoT)**
+  - **Increasing number of mobile devices**
+  - **Increasing internet population.**
+- **IPv6 includes fixes for IPv4 limitations and other enhancements.**
+
+{3}------------------------------------------------
+
+#### **IPv6 Address Representation Hexadecimal and IPv6 Addresses**
+
+- **IPv6 addresses are 128 bits in length.**
+- **Every 4 bits are represented by a single hexadecimal digit, making the IPv6 address a total of 32 hexadecimal values .**
+- **The figure, each X represents four hexadecimal values**
+- **Each group of four hexadecimal characters is called a hextet .**
+
+**.**
+
+![](_page_3_Figure_6.jpeg)
+
+{4}------------------------------------------------
+
+## **IPv6 Addressing Formats**
+
+- **IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.**
+- **The preferred format for writing an IPv6 address is x:x:x:x:x:x:x:x, with each "x" consisting of four hexadecimal values.**
+- **Examples of IPv6 addresses in the preferred format:**
+  - **2001:0db8:0000:1111:0000:0000:0000:0200**
+  - **2001:0db8:0000:00a3:abcd:0000:0000:1234**
+- **There are two rules to reduce the notation of IPv6 addresses**
+  - **Rule 1 Omit Leading Zero**
+  - **Rule 2 Double Colon**
+
+{5}------------------------------------------------
+
+#### **IPv6 Address Representation Rule 1 – Omit Leading Zero**
+
+- **Omit any leading 0s (zeros).**
+- **Examples:**
+  - **01ab can be represented as 1ab**
+  - **0a00 can be represented as a00**
+  - **00ab can be represented as ab**
+- **This rule does not apply to trailing 0s; otherwise, the address would be ambiguous.**
+
+| Type             | Format                                                |
+|------------------|-------------------------------------------------------|
+| Preferred        | 2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000 : 0200 |
+| No leading zeros | 2001 : db8 : 0 : 1111 : 0 : 0 : 0 : 200               |
+
+
+{6}------------------------------------------------
+
+- **A double colon (::) can replace any single, contiguous string of one or more 16 bit hextets consisting of all zeros.**
+- **The double colon (::) can only be used once within an address; otherwise, there would be more than one possible resulting address.**
+
+#### **Example:**
+
+• **2001:db8:cafe:1:0:0:0:1 (leading 0s omitted) could be represented as 2001:db8:cafe:1::1**
+
+| Type       | Format                                                |
+|------------|-------------------------------------------------------|
+| Preferred  | 2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000 : 0200 |
+| Compressed | 2001:db8:0:1111::200                                  |
+
+{7}------------------------------------------------
+
+## **IPv6 Address Types Types of IPv6 Unicast Addresses**
+
+**Unlike IPv4 devices that have only a single address, IPv6 addresses typically have two unicast addresses:**
+
+- **Global Unicast Address (GUA)**
+  - **Similar to a public IPv4 address.**
+  - **Globally unique, internet-routable addresses.**
+- **Link-local Address (LLA)**
+  - **Required for every IPv6-enabled device**
+  - **Used to communicate with other devices on the same local link.**
+  - **Not routable and are confined to a single link.**
+
+{8}------------------------------------------------
+
+#### **IPv6 Address Types IPv6 Prefix Length**
+
+- **Represented in slash notation and indicates the network portion.**
+- **Can range from 0 to 128.**
+- **The recommended IPv6 prefix length is /64.**
+
+![](_page_8_Figure_5.jpeg)
+
+**Note**: It is recommended to use a 64-bit Interface ID for most networks. This is because stateless address autoconfiguration (SLAAC) uses 64 bits for the Interface ID.
+
+{9}------------------------------------------------
+
+# **IPv6 Global Unicast Address (GUA) Structure**
+
+**5**
+
+- **Currently, only first three bits of 001 or 2000::/3 are being assigned.**
+
+> Currently, the first three bits in the binary representation of the GUA has been locked to 001
+
+- **Currently begins with a decimal 2 or a 3.**
+
+> The GUA has 8 hextets. In the first hextet, the general binary representation of the first digit is 001X, because the first 3 digits of the GUA are locked to 001 and X can be 0 or 1. So we have 2 possibilities: $(0010)_2 = (2)_{16}$ or $(0011)_2 = (3)_{16}$. The rest of the binary bits in the GUA are free to be assigned any value. In conclusion, every GUA begins with either 2 or 3.
+
+![](_page_9_Figure_5.jpeg)
+
+{10}------------------------------------------------
+
+**11**
+
+### **IPv6 Address Types IPv6 Link-Local Address (LLA)**
+
+- **An IPv6 link-local address (LLA) enables a device to communicate with other IPv6 enabled devices on the same link (subnet).**
+- **Packets with a source or destination LLA cannot be routed.**
+- **Every IPv6-enabled network interface must have an LLA.**
+- **If an LLA is not configured manually on an interface, the device will automatically create one.**
+- **IPv6 LLAs are in the fe80::/10 range.**
+
+![](_page_10_Figure_7.jpeg)
+
+
+{11}------------------------------------------------
+
+# **GUA and LLA Static Configuration Static GUA Configuration on a Router**
+
+- **Similar to configuring IPv4 counterparts; the only difference is the use of ipv6 in place of ip within the commands.**
+- **The command used: ipv6 address ipv6-address/prefix-length.**
+- **Example: Commands to configure a GUA on the G0/0/0 interface on R1:**
+
+```
+R1(config)# interface gigabitethernet 0/0/0
+R1(config-if)# ipv6 address 2001:db8:acad:1::1/64
+R1(config-if)# no shutdown
+R1(config-if)# exit
+```
+
+**12**
+
+{12}------------------------------------------------
+
+# **GUA and LLA Static Configuration Static GUA Configuration on a Windows Host**
+
+- **Similar to configuring an IPv4 address.**
+- **The GUA or LLA of the router interface can be used as the default gateway. Best practice is to use the LLA.**
+
+**Note**: When SLAAC is used, the LLA of the router will automatically be specified as the default gateway address.
+
+![](_page_12_Picture_5.jpeg)
+
+{13}------------------------------------------------
+
+**14**
+
+# **GUA and LLA Static Configuration Static Configuration of a Link-Local Unicast Address**
+
+- **To configure an LLA that is recognizable and easier to remember.**
+- **Using the ipv6 address** *ipv6-link-local-address* **link-local command.**
+- **Example: Configuring an LLA on the G0/0/0 interface on R1**
+
+```
+R1(config)# interface gigabitethernet 0/0/0
+R1(config-if)# ipv6 address fe80::1:1 link-local
+R1(config-if)# no shutdown
+R1(config-if)# exit
+```
+
+**Note**: The same LLA can be configured on each link as long as it is unique on that link. Common practice is to create a different LLA on each interface of the router to make it easy to identify the router and the specific interface.
+
+{14}------------------------------------------------
+
+**15**
+
+# **Dynamic Addressing for IPv6 GUAs Stateless Address Autoconfiguration (SLAAC)**
+
+- **SLAAC allows a device to configure a GUA without the services of DHCPv6.**
+- **Devices obtain the necessary information to configure a GUA from the Router Advertisement (RA) messages of the local router.**
+- **The prefix is provided by the RA, and the device uses either the EUI-64 or random generation method to create its own Interface ID.**
+
+![](_page_14_Figure_5.jpeg)
+
+{15}------------------------------------------------
+
+**16**
+
+#### **Dynamic Addressing for IPv6 GUAs**
+
+# **Stateless Address Autoconfiguration (SLAAC) (cont.)**
+
+- **RA Messages are sent by IPv6-enable routers every 200 seconds to provide IPv6 hosts addressing information: the prefix, prefix length, DNS address, and domain name.**
+- **A host using SLAAC will set its default gateway to the link-local address (LLA) of the router that sent the RA message.**
+
+![](_page_15_Figure_5.jpeg)
+
+Hi all IPv6 devices. You can use SLAAC to create an IPv6 global unicast address (GUA). The prefix is 2001:db8:acad:1::/64. Use my link-local address fe80::1 as your default gateway.
+
+
+{16}------------------------------------------------
+
+## **Dynamic Addressing for IPv6 LLAs Dynamic LLAs**
+
+#### **The LLA is dynamically created using:**
+
+- **The fe80::/10 prefix and**
+- **The interface ID created by using the EUI-64 process, or a randomly generated 64-bit number.**
+
+![](_page_16_Figure_4.jpeg)
+
+{17}------------------------------------------------
+
+## **Dynamic Addressing for IPv6 LLAs Verify IPv6 Address Configuration**
+
+#### **Cisco routers:**
+
+- **Automatically create an IPv6 LLA whenever a GUA is assigned to the interface.**
+- **Use EUI-64 by default to generate the interface ID for all LLAs on IPv6 interfaces.**
+
+**Example of a LLA dynamically configured on the G0/0/0 interface of R1:**
+
+```
+R1# show interface gigabitEthernet 0/0/0
+GigabitEthernet0/0/0 is up, line protocol is up 
+Hardware is ISR4221-2x1GE, address is 7079.b392.3640 (bia 
+7079.b392.3640) 
+(Output omitted) 
+R1# show ipv6 interface brief
+GigabitEthernet0/0/0 [up/up] 
+FE80::7279:B3FF:FE92:3640
+2001:DB8:ACAD:1::1 
+                                        0 = 0000
+                                         0010 = 2
+```
+
+**18**
+
+{18}------------------------------------------------
+
+**19**
+
+## **Subnet an IPv6 Network Subnet Using the Subnet ID**
+
+- **A separate subnet ID field in the IPv6 GUA is used to create subnets.**
+- **The subnet ID field is between the Global Routing Prefix and the interface ID.**
+
+![](_page_18_Figure_4.jpeg)
+
+#### **Example:**
+
+Compressed: **2001 : DB8 : ACAD : 1 : : 10 / 64**
+
+Preferred: **2001 : 0DB8 : ACAD : 0001 : 0000 : 0000 : 0000 : 0010 / 64**
+
+{19}------------------------------------------------
+
+## **Subnet an IPv6 Network IPv6 Subnetting Example**
+
+- **Given the 2001:db8:acad::/48 global routing prefix with a 16 bit subnet ID.**
+- **Allows 65,536 /64 subnets**
+- **The global routing prefix is the same for all subnets.**
+- **Only the subnet ID hextet is incremented in hexadecimal for each subnet.**
+
+**20**
+
+{20}------------------------------------------------
+
+#### **Subnet an IPv6 Network**
+
+# **IPv6 Subnet Allocation**
+
+**21**
+
+**The example topology requires five subnets, one for each LAN as well as for the serial link between R1 and R2.**
+
+- The five IPv6 subnets were allocated, with the subnet ID field 0001 through 0005
+- Each /64 subnet will provide more addresses than will ever be needed
+
+
+{21}------------------------------------------------
+
+# **Appendix 1 – Interface ID Generation**
+
+### **1. Interface ID Generated with EUI-64 Process**
+
+- **1. A 16 bit value of fffe (in hexadecimal) is inserted into the middle of the 48-bit Ethernet MAC address of the client.**
+- **2. The 7th bit of the client MAC address is reversed from binary 0 to 1.**
+
+### **Example:**
+
+| 48-bit MAC          | fc:99:47:75:ce:e0       | fc -> 1111 1100 |
+|---------------------|-------------------------|-----------------|
+| EUI-64 Interface ID | fe:99:47:ff:fe:75:ce:e0 | 1111 1110 -> fe |
+
+## **2. Randomly Generated Interface IDs – Used by Windows OS**
+
+```
+C:\> ipconfig
+Windows IP Configuration 
+Ethernet adapter Local Area Connection: 
+Connection-specific DNS Suffix . : 
+IPv6 Address. . . . . . . . . . . : 2001:db8:acad:1:50a5:8a35:a5bb:66e1
+Link-local IPv6 Address . . . . . : fe80::50a5:8a35:a5bb:66e1
+Default Gateway . . . . . . . . . : fe80::1
+```
+
+**22**
+
+**Note**: To ensure the uniqueness of any IPv6 unicast address, the client may use a process known as Duplicate Address Detection (DAD). This is similar to an ARP request for its own address. If there is no reply, then the address is unique.
+
+{22}------------------------------------------------
+
+## **Appendix 2. Decimal to Hexadecimal Conversions**
+
+#### **Hexadecimal** is:
+
+- A base sixteen numbering system, using the digits 0 through 9 and letters A to F
+- Used to represent IPv6 addresses and MAC addresses
+
+#### **Conversion Steps:**
+
+- 1 Convert the decimal number to 8-bit binary strings
+- 2 Divide the binary strings in groups of four starting from the rightmost position
+- 3 Convert each four binary numbers into their equivalent hexadecimal digit
+
+**Example:** 168 converted into hex.
+
+- **4 168** in binary is **10101000**
+- 5 10101000 in two groups of four binary digits is **1010** and **1000**
+- 6 **1010** is hex **A** and **1000** is hex **8**, so 168 is **A8** in hexadecimal
+
+| Decimal |
+|---------|
+| 0       |
+| 1       |
+| 2       |
+| 3       |
+| 4       |
+| 5       |
+| 6       |
+| 7       |
+| 8       |
+| 9       |
+| 10      |
+| 11      |
+| 12      |
+| 13      |
+| 14      |
+| 15      |
+
+| Binary |
+|--------|
+| 0000   |
+| 0001   |
+| 0010   |
+| 0011   |
+| 0100   |
+| 0101   |
+| 0110   |
+| 0111   |
+| 1000   |
+| 1001   |
+| 1010   |
+| 1011   |
+| 1100   |
+| 1101   |
+| 1110   |
+| 1111   |
+
+| Hexadecimal |
+|-------------|
+| 0           |
+| 1           |
+| 2           |
+| 3           |
+| 4           |
+| 5           |
+| 6           |
+| 7           |
+| 8           |
+| 9           |
+| А           |
+| В           |
+| С           |
+| D           |
+| E           |
+| F           |
+|             |
+
+{23}------------------------------------------------
+
+# **Appendix 3. Hexadecimal to Decimal Conversions**
+
+#### **Conversion Steps:**
+
+- 1 Convert the hexadecimal number to 4-bit binary strings
+- 2 Create 8-bit binary grouping starting from the rightmost position
+- 3 Convert each 8-bit binary grouping into their equivalent decimal digit
+
+Example: **D2** converted into decimal.
+
+- **4 D2** in 4-bit binary strings is 1101 and 0010
+- 5 1101 and 0010 is 11010010 in an 8 bit grouping
+- 6. 11010010 in binary is equivalent to 210 in decimal, so E2 is 210 in decimal
+
+|   | Decimal |
+|---|---------|
+|   | 0       |
+|   | 1       |
+|   | 2       |
+|   | 3       |
+| Γ | 4       |
+|   | 5       |
+|   | 6       |
+| Γ | 7       |
+| Г | 8       |
+|   | 9       |
+| Γ | 10      |
+| Г | 11      |
+| Г | 12      |
+|   | 13      |
+|   | 14      |
+|   | 15      |
+
+| Binary |
+|--------|
+| 0000   |
+| 0001   |
+| 0010   |
+| 0011   |
+| 0100   |
+| 0101   |
+| 0110   |
+| 0111   |
+| 1000   |
+| 1001   |
+| 1010   |
+| 1011   |
+| 1100   |
+| 1101   |
+| 1110   |
+| 1111   |
+
+| Hexadecimal |
+|-------------|
+| 0           |
+| 1           |
+| 2           |
+| 3           |
+| 4           |
+| 5           |
+| 6           |
+| 7           |
+| 8           |
+| 9           |
+| А           |
+| В           |
+| С           |
+| D           |
+| E           |
+| F           |
+
+**24**

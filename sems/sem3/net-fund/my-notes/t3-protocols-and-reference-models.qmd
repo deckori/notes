@@ -1,0 +1,33 @@
+---
+title: "T3 Protocols and Reference Models"
+---
+
+## Data access
+
+In IPv4:
+
+In 192.168.1.110:
+
+$\underbrace{192.168.1}_{\text{Network part of address}}  \underbrace{110}_\text{\quad Host part of the address}$
+
+In a local network, the network of the address should not be different but the same. Only the host part changes.
+
+(Segement is encapsulated in Layer 3 info) is encapsulated in layer 2 info.
+
+### Data Link Addresses
+
+Each port of a router has different \index{MAC addresses}
+
+### Role of the Data Link Layer Addresses: Different IP Networks
+
+IP address is used for end to end connection, while mac address is used for connectivity in a segment of a network
+
+MAC Addresses are kept locally in local network. It's not visible from another network
+
+- MAC Addresses are a layer 2 address
+- IP Addresses are a layer 3 address
+
+| MAC | IP |
+|-|-|
+| Layer 2 address | Layer 3 address |
+| Source to local destination communication | Source to remote device communication |

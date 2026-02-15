@@ -1,0 +1,29 @@
+- Font size
+
+Check prof rec
+
+x- Font for the heading and body
+
+Current is ok. Lets put in both pdf and pptx in submission. We visit the professor tmrrw anyway and confirm everything
+
+x- How to use slidemaster?
+
+Use https://slidesgo.com/ to get presets and edit as needed
+
+Use Designer option in Home panel to redesign slides
+
+x- Where to source images?
+
+Unsplash, From MS powerpoint itself - Go to insert, images
+
+x- URL formatting
+
+Check sample presentation
+
+x- Should we use custom fonts
+
+It's fine. Include both pptx and pdf
+
+x- Colours used in the document
+
+Again see presets

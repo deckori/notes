@@ -1,0 +1,432 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Physical Layer Characteristics\nBandwidth Terminology",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          14.077148437499998,
+          11.6279296875
+        ],
+        [
+          378.2060546875,
+          11.6279296875
+        ],
+        [
+          378.2060546875,
+          68.34274291992188
+        ],
+        [
+          14.077148437499998,
+          68.34274291992188
+        ]
+      ]
+    },
+    {
+      "title": "Copper Cabling\nCharacteristics of Copper Cabling",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          15.015624999999998,
+          9.997314453125
+        ],
+        [
+          532.3304443359375,
+          9.997314453125
+        ],
+        [
+          532.3304443359375,
+          69.2138671875
+        ],
+        [
+          15.015624999999998,
+          69.2138671875
+        ]
+      ]
+    },
+    {
+      "title": "Limitations:",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          13.607910156249998,
+          143.1207275390625
+        ],
+        [
+          155.18251037597656,
+          143.1207275390625
+        ],
+        [
+          155.18251037597656,
+          168.850341796875
+        ],
+        [
+          13.607910156249998,
+          168.850341796875
+        ]
+      ]
+    },
+    {
+      "title": "Mitigation:",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          15.015624999999998,
+          405.04173278808594
+        ],
+        [
+          153.76849365234375,
+          405.04173278808594
+        ],
+        [
+          153.76849365234375,
+          430.77134704589844
+        ],
+        [
+          15.015624999999998,
+          430.77134704589844
+        ]
+      ]
+    },
+    {
+      "title": "Copper Cabling\nTypes of Copper Cabling",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          14.077148437499998,
+          8.58251953125
+        ],
+        [
+          391.2932434082031,
+          8.58251953125
+        ],
+        [
+          391.2932434082031,
+          70.04443359375
+        ],
+        [
+          14.077148437499998,
+          70.04443359375
+        ]
+      ]
+    },
+    {
+      "title": "Copper Cabling\nUnshielded Twisted Pair (UTP)",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          14.077148437499998,
+          11.90478515625
+        ],
+        [
+          476.74127197265625,
+          11.90478515625
+        ],
+        [
+          476.74127197265625,
+          68.34274291992188
+        ],
+        [
+          14.077148437499998,
+          68.34274291992188
+        ]
+      ]
+    },
+    {
+      "title": "Key Characteristics of UTP",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          535.010986328125,
+          259.96728515625
+        ],
+        [
+          822.9749755859375,
+          259.96728515625
+        ],
+        [
+          822.9749755859375,
+          284.2483215332031
+        ],
+        [
+          535.010986328125,
+          284.2483215332031
+        ]
+      ]
+    },
+    {
+      "title": "Copper Cabling\nShielded Twisted Pair (STP)",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          15.015624999999998,
+          9.966796875
+        ],
+        [
+          435.74542236328125,
+          9.966796875
+        ],
+        [
+          435.74542236328125,
+          68.66015625
+        ],
+        [
+          15.015624999999998,
+          68.66015625
+        ]
+      ]
+    },
+    {
+      "title": "Key Characteristics of STP",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          535.0960083007812,
+          278.65191650390625
+        ],
+        [
+          797.4102172851562,
+          278.65191650390625
+        ],
+        [
+          797.4102172851562,
+          300.64892578125
+        ],
+        [
+          535.0960083007812,
+          300.64892578125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          43
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          61
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          19
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          45
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          48
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t4-physical-layer-v5s"
+}

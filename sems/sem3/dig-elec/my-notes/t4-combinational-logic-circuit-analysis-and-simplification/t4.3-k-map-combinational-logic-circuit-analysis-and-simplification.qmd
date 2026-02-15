@@ -1,0 +1,271 @@
+---
+title: "Karnough Map"
+---
+
+# Objectives:
+
+-   Recognize Karnaugh map
+-   Draw K-Map for 2, 3, and 4 input
+-   Draw K-map for given SOP function
+-   Recognize Karnaugh map purpose
+-   Fill in the K-Map from the truth table
+-   Obtain Boolean expression from K-Map
+-   Draw K-Map for a Boolean expression
+
+# Karnaugh Mapping
+
+What is Karnaugh Mapping (or K-Map)?
+
+-   It is another way of representing a truth table, or equivalently, a graphical representation of a boolean function.
+-   It is composed of a $n\times n$ sized grid, where each cell corresponds to a unique combination of input variables.
+-   Adjacent cells differ by only 1 variable
+-   Compared to a truth table, K-Maps:
+    -   Patterns in the K-Map readily show logical groupings of $2^n, n \in \mathbb{W}$
+    -   Allows us to minimize the complexity of our logic designs.
+    -   Theoretically can be used for any number of input variables, but practically limited upto 5 or 6 variables
+
+# 2-Variable K-Map
+
+-   A function with 2 variables, A and B, can be mapped on a simple 1-dimensional K-Map
+-   An unpopulated K-Map is shown below:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_0.png)
+
+-   The logical values of A and B are shown above each cell, e.g. AB
+-   The numerical equivalents of AB are shown at the bottom of each cell, e.g. 11
+-   When variable A is true, it is shown by a bracket above the columns. Same with variable B.
+
+# K-Maps – 3 Variables
+
+-   We add another row to the map.
+-   Variables are A, B and C
+-   Adjacent K map square differ in only one variable both horizontally and vertically.
+
+The 3 variables K- map using minterms can be written as below:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_1.png)
+
+We will now develop a large K-Map which can display 4 variables:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_2.png)
+
+The 4 variables K-map using minterms can be written as below:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_3.png)
+
+# Filling K-Map
+
+Draw the K-Map X(A, B, C, D) = $\Sigma\ m(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)$
+
+> **Steps:**
+>
+> -   Convert the decimals to binary
+> -   Input the binary numbers into their respective cells:
+>     -   If an SOP expression is given, we input the binary numbers to cells that give an output of 1.
+>     -   If a POS expression is given, we input the binary numbers to cells that give an output of 0.
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/kmap.png)
+
+Alternate expression: $\Pi\ M(0, 1, 2, 3, 4)$
+
+# b?
+
+SOP:
+
+For thekjk 1st cell, beginning term is $\bar{A}B\bar{C}D$
+
+POS: For the 1st cell, beginning term is $ABCD$
+
+# e?
+
+# How to View a K-Map
+
+![](t4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-3d-representation.png){#fig-k-map-3d-representation align="center" width="300" alt="k-map-3d-representation.png"}
+
+Think of a K-Map as being rolled up in both directions
+
+Cells on one side abut against cells on the other side and are considered to be continuous
+
+Similarly, cells on the top are considered to join up with cells on the bottom.
+
+# Rules for Grouping Cells in Karnaugh Maps
+
+Cells containing 1’s can be grouped together.
+
+A SOP expression can be obtained by ORing all squares that contain a 1.
+
+Groups cannot contain 0’s.
+
+All cells containing 1’s must be accounted for when grouping.
+
+Groupings must contain $2^n$ cells, for example, 1, 2, 4, 8, … No other amounts are allowed to be grouped.
+
+Groups can be square or rectangular or may contain a single cell, but groups cannot be diagonal or have any other shape.
+
+Cells containing 1’s can adjoin cells also containing 1’s on the opposite edge of the K-Map in order to form a group.
+
+Groups of cells can overlap each other.
+
+For most effective reduction, make each group as large as possible.
+
+# Looking for Patterns in K-Maps
+
+**OCTETS** - Blocks of 8 are golden. They signify that *we can reduce all of the logic in that block down to a single variable* , even though 4 variables are shown.
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-pattern.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-pattern-weird.png)
+
+> This is a group of 8s as k maps are continuous horizontally or vertically
+
+# Blocks of 4 - Quads
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-group-of-4.png)
+
+> Final, bottom, left, square is a group of 4 due to horizontal and vertical continuity
+
+> Minimize an expression means to simplify
+
+Wrapping cells around the edges of the K-Map results in additional quads.
+
+Don’t forget that cells in four corners also make up a quad.
+
+# Blocks of 2 - Pairs
+
+Quads signify that we can reduce all of the logic in that block down to 3 variables.
+
+Here some obvious and less obvious pairs:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-group-of-2.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-group-of-2-2nd.png)
+
+> In kmaps, diagonal continuity does not exist
+
+> In kmaps, we can reuse cells, i.e., we can use a previously simplified cell with another cell to simplify as a group of 2
+
+> We need the biggest group and the smallest group. Every group is a term. The bigger group the group, less are the number of resultant variables in the boolean expression.
+
+# Single one’s
+
+Isolated cells are called singles.
+
+They can exist anywhere on the K-Map.
+
+Each cell requires 4 variable to describe it.
+
+Some examples are shown below:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-group-of-1.png)
+
+# Singles Only
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-example-of-ones.png)
+
+Make a boolean expression
+
+> $\mathrm{X = \bar{A}\bar{B}\bar{C}D + \bar{A}BCD + A\bar{B}\bar{C}\bar{D}}$
+
+# Example 1
+
+# Example
+
+Derive the output expression for the following K map:
+
+Solution
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/example-kmap.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_13.png)
+
+> Why make kmaps?
+
+> They help us in building circuits better as they simplify circuits. Simplified circuits are easier to deal with and allow us to fix it better when issues arise.
+
+# Exercise
+
+# Example – Reducing a Large Circuit
+
+This circuit is very complex and has an equally complex Boolean expression and Truth Table.
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_14.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_15.png)
+
+# K-Map of Circuit
+
+Write the K-Map of the circuit:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_16.png)
+
+# Example – Reducing a Large Circuit
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_17.png)
+
+# Comparing between the original and simplified circuits
+
+Draw the circuit gotten by K-map and compare between the complexity
+
+The equivalent circuit (left) is much simpler than the original circuit (right)… great!!
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_18.png)
+
+# Selecting a Different Set of Cells
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_19.png)
+
+# Filling K Map from Boolean Expression
+
+K map can be filled by using the following steps:
+
+Get the expression into SOP form if it is not already in that form.
+
+For each product term in the SOP expression, place a 1 in each K-map square whose label contains the same combination of input variables.
+
+Place a 0 in all other squares.
+
+# Example 1:
+
+> In a boolean expression that isn't standard, you can add the missing variables by using the boolean property, $A+\bar{A}=1$. 1 doesn't change the output of the expression
+
+# missing text
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/k-map-example1.png)
+
+# Don’t-Care Conditions
+
+# Example 2:
+
+Draw the K- map for the below truth table then find the minimal expression using K-mapping
+
+Solution:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_21.png)
+
+Draw the K- map for the below truth table then find the minimal expression using K-mapping
+
+Solution:
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_22.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_23.png)
+
+# Example 3:
+
+Let’s design a logic circuit that controls an elevator door in a three-story building.
+
+The circuit in the Figure has four inputs.
+
+M is a logic signal that indicates when the elevator is moving
+
+(M= 1) or stopped (M= 0).
+
+F1, F2, and F3 are floor indicator signals that are normally LOW, and they go HIGH only when the elevator is positioned at the level of that particular floor.
+
+For example, when the elevator is lined up level with the second floor, F2 = 1 and F1 = F3 = 0. The circuit output is the OPEN signal, which is normally LOW and will go HIGH when the elevator door is to be opened.
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_24.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_25.png)
+
+![](topic-4.3-k-map-combinational-logic-circuit-analysis-and-simplification-img/Topic%2043%20K-%20map_Combinational%20Logic%20circuit%20analysis%20and%20simplification_26.png)

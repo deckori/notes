@@ -1,0 +1,156 @@
+
+---
+title: "Zener Diode"
+---
+
+# Learning Objectives:
+
+Describe the characteristics of a Zener diode and analyse its operation
+
+Recognize a Zener diode by its schematic symbol
+
+Discuss Zener breakdown
+
+Define    _avalanche breakdown_ 
+
+Explain Zener breakdown characteristics
+
+Describe Zener regulation
+
+::: {.notes}
+
+
+:::
+
+# Zener Diode
+
+A  Zener diode  is a silicon    _pn_    _ _   junction device\.
+
+Designed for operation in the reverse region  \. 
+
+The breakdown voltage of a Zener diode is set by carefully controlling the doping level during manufacture\.
+
+Recall diode reaches reverse breakdown\, its voltage remains almost constant even though the current changes drastically\, and this is the key to Zener diode operation\.
+
+![](l3.3-zener-diode-img/l33-zener-diode_1.png)
+
+![](l3.3-zener-diode-img/l33-zener-diode_2.png)
+
+![](l3.3-zener-diode-img/l33-zener-diode_3.png)
+
+V\-I characteristics
+
+::: {.notes}
+
+
+
+:::
+
+ __Breakdown Characteristics__ 
+
+Zeners are commercially available with breakdown voltages from less than 1V to more than 250 V with specified tolerances from 1% to 20%\.
+
+When reverse voltage \( _V_ R\) is increased\, the reverse current \( _I_ R\) remains extremely small up to the “knee” of the curve\.
+
+Reverse current is also called the Zener current\,    _I_   Z  \.
+
+![](l3.3-zener-diode-img/l33-zener-diode_4.png)
+
+Reverse characteristic of a Zener     diode
+
+::: {.notes}
+
+
+
+:::
+
+![](l3.3-zener-diode-img/l33-zener-diode_5.png)
+
+ __Voltage Regulation:__ 
+
+Zener Equivalent circuit:
+
+Zener diode can be used as a type of voltage regulator for providing stable reference     voltages \.
+
+Not efficient though\!
+
+Limited to applications that require only low current to the load\.
+
+![](l3.3-zener-diode-img/l33-zener-diode_6.png)
+
+::: {.notes}
+
+
+
+:::
+
+ __Voltage Regulation With Variable input Voltage :__ 
+
+Increasing  Input Voltage:
+
+![](l3.3-zener-diode-img/l33-zener-diode_7.png)
+
+::: {.notes}
+
+
+
+:::
+
+# Recall
+
+![](l3.3-zener-diode-img/l33-zener-diode_8.png)
+
+Voltage divider circuit:
+
+What is V1?
+
+What is V2?
+
+![](l3.3-zener-diode-img/l33-zener-diode_9.png)
+
+DP3100 – Programmable Logic Controllers
+
+![](l3.3-zener-diode-img/l33-zener-diode_10.png)
+
+Voltage divider circuit:
+
+What is VL?
+
+What is Vr?
+
+![](l3.3-zener-diode-img/l33-zener-diode_11.png)
+
+DP3100 – Programmable Logic Controllers
+
+# Zener Diode
+
+![](l3.3-zener-diode-img/l33-zener-diode_12.png)
+
+::: {.notes}
+
+
+
+:::
+
+ __Example 1: \(Solution\)__ 
+
+First\, calculate the voltage drop across RL assuming the diode is open circuit as shown in Fig\. 116\.
+
+![](l3.3-zener-diode-img/l33-zener-diode_13.png)
+
+As V=  Vz  ; the   zener   diode will be in “ON” state\.
+
+::: {.notes}
+
+
+
+:::
+
+![](l3.3-zener-diode-img/l33-zener-diode_20.png)
+
+::: {.notes}
+
+
+
+:::
+

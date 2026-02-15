@@ -1,0 +1,71 @@
+---
+title: Topic 11. Application Layer Study Guide – AETN 1102
+---
+ 
+1. List the functions of the TCP/IP Application Layer as defined by the OSI Application, Presentation and Session layers. **(S3, S4)**
+  - The application layer provides the interface between the applications and the underlying network
+  - The presentation layer functions: Formatting, Compressing, and Encrypting
+  - The session layer creates and maintains dialogs/sessions between source and destination applications
+2. Give **five** examples ofmost widely known application layer protocols. **(S3)**
+  - HTTP: Hypertext Transfer Protocol
+  - FTP: File Transfer Protocol
+  - TFTP: Trivial File Transfer Protocol
+  - IMAP: Internet Message Access Protocol
+  - SMPT: Simple Mail Transfer Protocol
+  - POP: Post Office Protocol
+  - DNS: Domain Name System
+  - DNS Fully-qualified domain names
+3. Which is the correct number sequence of the steps for the HTTP process to open a web page in a browser. (S5-8)
+  -  ![](_page_0_Picture_12.jpeg)
+  - 1. The web server sends the HTML code for the web page to the browser.
+  - 2. The browser interprets the three parts of the URL
+  - 3. The browser converts [www.cisco.com](http://www.cisco.com/) into an IP address.
+  - 4. The browser deciphers the HTML code and formats the page for the browser window.
+  - 5. The browser initiates an HTTP request to a web server.
+    - A. 1, 3, 2, 5, 4
+    - **B. 2, 3, 5, 1, 4**
+    - C. 5, 3, 2, 1, 4
+    - D. 2, 3, 4, 1, 5
+4. What is the difference between HTTP and HTTPs? **(S9)**
+  - A. HTTPS is working at Layer 4 and HTTP at Layer 5
+  - **B. HTTPS (Hypertext Transfer Protocol Secure) is a secure protocol and HTTP (Hypertext Transfer Protocol) is not**
+  - C. HTTP is a secure protocol and HTTPS is not
+  - D. HTTPS is slow and HTTP fast
+5. What are the three protocols that email relies on? **(S10)**
+  - A. DHCP, POP, HTTP
+  - B. SMTP, DNS, IMAP
+  - **C. SMTP, POP, IMAP**
+  - D. HTTP, POP, IMAP
+6. What is the correct sequence numbers for the DNS process? **(S14-16)**
+  - 1. The DNS server matches the FQDN with its IP address
+  - 2. The user types an FQDN into a browser address field
+  - 3. The client computer uses the IP address to make requests of the server
+  - 4. A DNS query is sent to the designated DNS server for the client computer
+  - 5. The DNS query response is sent back to the client with the IP address for the FQDN
+    - A. 1, 3, 2, 5, 4
+    - B. 2, 3, 5, 1, 4
+    - C. 5, 3, 2, 1, 4
+    - **D. 2, 4, 1, 5, 3**
+7. Write the correct sequence numbers for the steps of DHCP operation (DORA).(S18)
+  - Server replies with an offer message
+  - Server returns an acknowledgement message to confirm the lease has been finalized
+  - Client sends a request message to server it wants to use
+  - Client broadcasts a discover message to identify any available DHCP servers on the network
+    - A. 2, 4, 3, 1
+    - B. 1, 3, 2, 4
+    - **C. 2, 3, 1, 4**
+    - D. 3, 2, 1, 4
+8. Fill in the table belowfor each Mail Application Layer Protocol. (S11-13)
+  - SMTP — (**Notes**)
+  - POP — Post Office Protocol
+    - Used to retrieve mail from a mail server
+    - After downloading, messages are deleted from the server
+    - Not recommended for small businesses that require centralized backup because messages are not stored on the server
+  - IMAP — Internet Message Access Protocol
+    - Another protocol used to retrieve email messages
+    - The original messages remain on the server until manually deleted
+    - Local copies are downloaded to the client application
+9. Fill in the table belowfor the DHCP Application Layer Protocol. (S17)
+  - DHCP — (**Notes**)
+10. Fill in the table belowforthe FTP Application Layer Protocol. (S19)
+  - FTP — (**Notes**)

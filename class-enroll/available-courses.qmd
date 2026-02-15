@@ -1,0 +1,105 @@
+> Note: Please avoid "Staff" instructor sections if possible. Their instructors have not been decided yet and idk if they are good
+
+##  COMM1020
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| LecTheatre - Class 2196 -Section 1<br>Lecture - Class 2197 -Section 2 | Wednesday 12:00PM to 1:00PM<br>Sunday 10:00AM to 12:00PM | 01.2.08<br>10.2.01 | Andrea Comeau<br>Andrea Comeau | open (40-120)<br>open (5-30) |
+| LecTheatre - Class 2196 -Section 1<br>Lecture - Class 2199 -Section 4 | Wednesday 12:00PM to 1:00PM<br>Tuesday 10:00AM to 12:00PM | 01.2.08<br>10.2.05 | Andrea Comeau<br>Andrea Comeau | open (40-120)<br>open (9-30) |
+| LecTheatre - Class 2196 -Section 1<br>Lecture - Class 2200 -Section 5 | Wednesday 12:00PM to 1:00PM<br>Thursday 10:00AM to 12:00PM | 01.2.08<br>10.2.05 | Andrea Comeau<br>Andrea Comeau | open (40-120)<br>open (20-30) |
+| LecTheatre - Class 2210 -Section 15<br>Lecture - Class 2211 -Section 16 | Monday 12:00PM to 1:00PM<br>Wednesday 2:00PM to 4:00PM | 01.1.06<br>12.2.10 | Irum Naz<br>Irum Naz | open (51-90)<br>open (15-30) |
+| LecTheatre - Class 2210 -Section 15<br>Lecture - Class 2212 -Section 17 | Monday 12:00PM to 1:00PM<br>Tuesday 12:00PM to 2:00PM | 01.1.06<br>10.1.31 | Irum Naz<br>Irum Naz | open (51-90)<br>open (20-30) |
+| LecTheatre - Class 2210 -Section 15<br>Lecture - Class 2213 -Section 18 | Monday 12:00PM to 1:00PM<br>Thursday 12:00PM to 2:00PM | 01.1.06<br>10.1.31 | Irum Naz<br>Irum Naz | open (51-90)<br>open (16-30) |
+| LecTheatre - Class 2214 -Section 19<br>Lecture - Class 2216 -Section 21 | Tuesday 2:00PM to 3:00PM<br>Wednesday 2:00PM to 4:00PM | 01.1.06<br>05.1.66 | Cristina Fabretto<br>Cristina Fabretto | open (49-120)<br>open (2-30) |
+| LecTheatre - Class 2214 -Section 19<br>Lecture - Class 2217 -Section 22 | Tuesday 2:00PM to 3:00PM<br>Monday 2:00PM to 4:00PM | 01.1.06<br>10.2.01 | Cristina Fabretto<br>Cristina Fabretto | open (49-120)<br>open (4-30) |
+| LecTheatre - Class 2214 -Section 19<br>Lecture - Class 2218 -Section 23 | Tuesday 2:00PM to 3:00PM<br>Wednesday 4:00PM to 6:00PM | 01.1.06<br>05.1.38 | Cristina Fabretto<br>Cristina Fabretto | open (49-120)<br>open (13-30) |
+| LecTheatre - Class 2226 -Section 31<br>Lecture - Class 2227 -Section 32 | Tuesday 4:00PM to 5:00PM<br>Thursday 2:00PM to 4:00PM | 12.1.08<br>12.1.03 | Irum Naz<br>Irum Naz | open (47-60)<br>open (20-30) |
+| LecTheatre - Class 2226 -Section 31<br>Lecture - Class 2228 -Section 33 | Tuesday 4:00PM to 5:00PM<br>Wednesday 4:00PM to 6:00PM | 12.1.08<br>05.2.25 | Irum Naz<br>Irum Naz | open (47-60)<br>open (27-30) |
+
+## PHYS1020 General Physics 
+
+Recommendations:
+- Feras Alzubi
+- AETN 1102
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Lecture - Class 2516 -Section 1 | Tuesday 8:00AM to 9:00AM<br>Thursday 8:00AM to 9:00AM<br>Sunday 8:00AM to 9:00AM | 12.2.10<br>12.2.10<br>12.2.10 | Feras Alzubi<br>Feras Alzubi<br>Feras Alzubi | open (2-40) |
+| Lecture - Class 2523 -Section 8 | Tuesday 8:00AM to 9:00AM<br>Thursday 8:00AM to 9:00AM<br>Sunday 8:00AM to 9:00AM | 20.2.51A<br>20.2.51A<br>20.2.51A | Eyad Omair<br>Eyad Omair<br>Eyad Omair | open (34-40) |
+| Lecture - Class 2519 -Section 4 | Tuesday 2:00PM to 3:00PM<br>Thursday 2:00PM to 3:00PM<br>Sunday 2:00PM to 3:00PM | 05.2.44<br>05.2.44<br>05.2.44 | Kerry Suek<br>Kerry Suek<br>Kerry Suek | open (5-40) |
+| Lecture - Class 2522 -Section 7 | Tuesday 10:00AM to 11:00AM<br>Thursday 10:00AM to 11:00AM<br>Sunday 10:00AM to 11:00AM | 12.1.08<br>12.1.08<br>12.1.08 | Eyad Omair<br>Eyad Omair<br>Eyad Omair | open (19-40) |
+<hr>
+| Lecture - Class 2528 -Section 13 | Tuesday 4:00PM to 5:00PM<br>Thursday 4:00PM to 5:00PM<br>Sunday 4:00PM to 5:00PM | 05.1.48<br>05.1.48<br>05.1.48 | Kerry Suek<br>Kerry Suek<br>Kerry Suek | open (21-40) |
+| Lecture - Class 2524 -Section 9 | Tuesday 11:00AM to 12:00PM<br>Thursday 11:00AM to 12:00PM<br>Sunday 11:00AM to 12:00PM | 20.2.51A<br>20.2.51A<br>20.2.51A | Eyad Omair<br>Eyad Omair<br>Eyad Omair | open (28-40) |
+| Lecture - Class 2529 -Section 14 | Monday 3:30PM to 5:00PM<br>Wednesday 3:30PM to 5:00PM | 20.2.51A<br>20.2.51A | Kerry Suek<br>Kerry Suek | open (17-40) |
+
+## PHYS1021 General Physics Lab
+
+Absolutely avoid:
+
+- Luka Tanasijin
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Laboratory - Class 2546 -Section 17 | Thursday 2:00PM to 5:00PM | 05.1.06 | Luka Tanasijin | open (11-18) |
+| Laboratory - Class 2533 -Section 4  | Tuesday 5:00PM to 8:00PM  | 05.1.06 | Luka Tanasijin | open (1-18) |
+| Laboratory - Class 2540 -Section 11 | Tuesday 2:00PM to 5:00PM  | 05.1.02 | Luka Tanasijin<br>Luka Tanasijin | open (6-18) |
+| Laboratory - Class 2551 -Section 22 | Sunday 2:00PM to 5:00PM   | 05.1.02 | Fasna Olikkal<br>Fasna Olikkal<br>Fasna Olikkal | open (5-18) |
+| Laboratory - Class 2547 -Section 18 | Sunday 8:00AM to 11:00AM  | 05.1.06 | Staff | open (4-18) |
+| Laboratory - Class 2556 -Section 27 | Sunday 2:00PM to 5:00PM   | 05.1.06 | Luka Tanasijin<br>Luka Tanasijin<br>Luka Tanasijin | open (6-18) |
+
+## AETN2221 Analog & Digital Communication (Lab)
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Laboratory - Class 1921 -Section 3 | Thursday 2:00PM to 4:00PM | 09.2.79 | Staff | open (1-14) |
+
+## AETN 2121
+
+closed
+
+## AETN 1112 Digital Electronics
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Lecture - Class 1871 -Section 5 | Tuesday 12:00PM to 1:00PM<br>Thursday 12:00PM to 1:00PM<br>Sunday 12:00PM to 1:00PM | 05.1.66<br>05.1.66<br>05.1.66 | Staff | open (10-30) |
+
+## AETN1212 Digital Electronics Lab:
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Laboratory - Class 1889 -Section 10 | Sunday 12:00PM to 2:00PM | 08.1.03 | Alaa Elsaqa | open (13-15) |
+| Laboratory - Class 1884 -Section 5  | Thursday 6:00PM to 8:00PM | 08.1.03 | Alaa Elsaqa | open (6-15) |
+| Laboratory - Class 1890 -Section 11 | Wednesday 8:00AM to 10:00AM | 08.1.03 | Ghufran Khalaf Ja'afreh | open (2-15) |
+
+## AETN 1102 Network Fundamentals
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Lecture - Class 1862 -Section 1 | Tuesday 5:00PM to 6:00PM<br>Thursday 5:00PM to 6:00PM<br>Sunday 5:00PM to 6:00PM | 05.2.35<br>05.2.35<br>05.2.35 | Permjit Soora | open (4-30) |
+| Lecture - Class 1866 -Section 5 | Tuesday 3:00PM to 4:00PM<br>Thursday 3:00PM to 4:00PM<br>Sunday 3:00PM to 4:00PM | 05.2.25<br>05.2.25<br>05.2.25 | Nicolae Nechita | open (1-30) |
+
+## AETN 1202 Network Fundamentals Lab
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| Laboratory - Class 1874 -Section 2 | Tuesday 2:00PM to 5:00PM | 09.2.07 | Mariam Al-Ghanma | open (12-20) |
+| Laboratory - Class 1878 -Section 6 | Thursday 2:00PM to 5:00PM | 09.2.07 | Alaa Elsaqa | open (5-20) |
+
+## MATH 2010 Calculus II 
+
+| Class ID | Days and Times | Room | Instructor | Status |
+|----------|----------------|------|------------|--------|
+| LecTheatre - Class 2508 -Section 5<br>Lecture - Class 2509 -Section 6 | Sunday 12:30PM to 2:00PM<br>Wednesday 8:00AM to 9:30AM | 01.1.04<br>20.1.60 | Staff<br>Staff | open (11-116)<br>open (11-43) |
+| LecTheatre - Class 2512 -Section 9<br>Lecture - Class 2513 -Section 10 | Sunday 5:00PM to 6:30PM<br>Wednesday 5:00PM to 6:30PM | 01.1.04<br>12.2.10 | Staff<br>Staff | open (18-114)<br>open (2-42) |
+| LecTheatre - Class 2512 -Section 9<br>Lecture - Class 2514 -Section 11 | Sunday 5:00PM to 6:30PM<br>Wednesday 6:30PM to 8:00PM | 01.1.04<br>12.2.10 | Staff<br>Staff | open (18-114)<br>open (16-42) |
+
+## AETN 2201 Analog Electronics (Lab)
+
+| Class ID                     | Days and Times         | Room   | Instructor             | Status      |
+|------------------------------|-----------------------|--------|------------------------|-------------|
+| Laboratory - Class 1909 -Section 6 | Tuesday 10:00AM to 12:00PM | 09.2.72 | Staff                  | open (5-15) |
+
+## AETN 2121 Analog Electronics
+
+closed

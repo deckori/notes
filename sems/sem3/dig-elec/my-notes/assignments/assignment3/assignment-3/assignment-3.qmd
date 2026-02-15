@@ -1,0 +1,151 @@
+---
+title: Assignment 3
+---
+<!---->
+<!-- \pagenumbering{gobble} -->
+<!---->
+<!-- \vspace{20em} -->
+<!---->
+<!-- \begin{center} -->
+<!--   \HUGE{{\textbf{Digital Electronics AETN1112 Assignment 3}}} -->
+<!-- \end{center} -->
+<!---->
+<!-- \medskip -->
+<!---->
+<!-- \begin{center} -->
+<!--   \large{University of Doha for Science and Technology} -->
+<!-- \end{center} -->
+<!---->
+<!-- \vspace{50em} -->
+<!---->
+<!-- \begin{tabular}{lp{5.0cm}lll} -->
+<!--   &  &  &  & \\ -->
+<!--   \textbf{Student Name:} & Fairoos Kunhi -->
+<!---->
+<!--   \  &  &  & \\ -->
+<!--   \textbf{Student ID:} & 60315610 -->
+<!--    -->
+<!--   \  &  &  & \\ -->
+<!--   \textbf{Course Name:} & AETN1112 Digital Electronics -->
+<!--    -->
+<!--   \  &  &  & \\ -->
+<!--   \textbf{Section Number:} & 6 -->
+<!--    -->
+<!--   \  &  &  & \\ -->
+<!--   \textbf{Instructor:} & Premjit Soora -->
+<!-- \end{tabular} -->
+<!---->
+<!-- \pagenumbering{gobble} -->
+<!---->
+<!-- {{< pagebreak >}} -->
+<!---->
+<!-- \pagenumbering{arabic} -->
+<!---->
+
+This Assignment covers the latches, FF, Synchronous and Asynchronous counters, and registers.
+
+1. Assuming that *Q* = 0 initially, apply the *x* and *y* waveforms of Figure 5-87 to the SET and RESET inputs of a NAND latch, and determine the *Q* and *Q* waveforms.
+
+![](_page_0_Picture_5.jpeg)
+
+1. Apply the S and CLK waveforms of Figure 5-90 to the D and EN inputs of a D latch, respectively, and determine the waveform at Q.
+
+![](_page_0_Picture_7.jpeg)
+
+
+1. Compare the operation of the D latch with a negative-edge-triggered D flip-flop by applying the waveforms of Figure 5-94 to each and determining the *Q* waveforms.
+
+![](_page_1_Figure_2.jpeg)
+
+1. The 1J, 1K, 1CLK, 1PRE, and 1CLR waveforms in Figure below are applied to one of the negative edge- triggered flip-flops. Determine the 1Q output waveform.
+
+![](_page_1_Figure_4.jpeg)
+
+
+![](_page_2_Picture_0.jpeg)
+
+Q2) For a positive edge-triggered D flip-flop with the input as shown, determine the Q output relative to the clock. Assume that Q starts LOW.
+
+![](_page_2_Figure_2.jpeg)
+
+Q3) If the waveforms in Figure below are applied to an active-Low S-R latch, draw the resulting output waveform in relation to the inputs. Assume that Q starts LOW.
+
+![](_page_2_Figure_4.jpeg)
+
+Q4) For the positive edge-triggered D flip-flop with preset and clear inputs in Figure 7–27, determine the Q output for the inputs shown in the timing diagram in part (a) if Q is initially LOW
+
+![](_page_2_Picture_6.jpeg)
+
+
+![](_page_3_Figure_1.jpeg)
+
+Q5) a- If the S and R waveforms in Figure below are applied to the inputs of the NAND latch determine the waveform that will be observed on the Q output. Assume that Q is initially LOW.
+
+![](_page_3_Figure_3.jpeg)
+
+b- is this latch a controlled latch?
+
+Q6) A D flip-flop is connected as shown below. Determine the Q output in relation to the clock. (do it for five clocks). What specific function does this device perform?
+
+
+![](_page_4_Picture_0.jpeg)
+
+![](_page_4_Picture_1.jpeg)
+
+Q 7) We would like to create an RS Latch (or SR Latch) with a level-sensitive Clock input, using four NAND gates. The block diagram looks like this:
+
+![](_page_4_Picture_3.jpeg)
+
+1- Four NAND gates are shown, below, as well as the input and output pins. Complete the circuit by drawing the interconnections between the NAND gates and to the input and output pins:
+
+
+![](_page_5_Picture_0.jpeg)
+
+![](_page_5_Picture_1.jpeg)
+
+
+![](_page_6_Picture_0.jpeg)
+
+a) Complete the Truth Table for this circuit in the table shown below:
+
+| Inputs |   |   | Outputs |   |
+|--------|---|---|---------|---|
+| Clock  | S | R | Q       | 𝐐 |
+| 0      | 0 | 0 |         |   |
+| 0      | 0 | 1 |         |   |
+| 0      | 1 | 0 |         |   |
+| 0      | 1 | 1 |         |   |
+| 1      | 0 | 0 |         |   |
+| 1      | 0 | 1 |         |   |
+| 1      | 1 | 0 |         |   |
+| 1      | 1 | 1 |         |   |
+
+1) Design a JK counter that has the following sequence 1,3,5,7,1,3,5,7……
+
+{7}------------------------------------------------
+
+1) Develop the waveform for the circuit in Figure below, an 8 kHz square wave input is applied to the clock input of flip-flop A
+
+![](_page_7_Picture_2.jpeg)
+
+- 1- Which of these FF has an output frequency = 1 k Hz
+- 2- What is the alternate name for the above FF and why do you give this name?
+- 3- Prove this by drawing the waveform of each FF. Initial state 0
+
+{8}------------------------------------------------
+
+![](_page_8_Picture_0.jpeg)
+
+Q11) The following timing diagram shows the waveforms for the Set (S) and Reset (R) inputs of a NAND latch. Determine the corresponding output waveforms for output. Assume that Q = 0 initially.
+
+a) Develop the Q output of the uncontrolled NOR Latch.
+
+![](_page_8_Figure_3.jpeg)
+
+a) Develop Q waveform for controlled NOR FF for PE (positive edge)
+
+{9}------------------------------------------------
+
+![](_page_9_Picture_0.jpeg)
+
+![](_page_9_Picture_1.jpeg)

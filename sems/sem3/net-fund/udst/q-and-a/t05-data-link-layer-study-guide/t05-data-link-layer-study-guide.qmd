@@ -1,0 +1,77 @@
+
+
+{0}------------------------------------------------
+
+## **Topic 5 Data Link Layer Study Guide**
+
+| 1.                         | What<br>is<br>the purpose ofthe Data Link Layer?                                                                                                                                                                                                      | (S3)                                                                                                                                                                                        | (8) |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
+|                            | 1.<br>Prepares network data for the physical network.<br>2.<br>Is responsible for network interface card (NIC) to NIC communications.                                                                                                                 |                                                                                                                                                                                             |     |
+| 2.                         | List<br>the<br>functions<br>ofthe<br>Data<br>Link<br>sublayers.                                                                                                                                                                                       | (S3)                                                                                                                                                                                        | (4) |
+| 1.<br>2.<br>3.<br>4.<br>5. | Accepts Layer 3 packets and encapsulates them into Layer 2 frames.<br>Controls how data is placed and received on the media.<br>Exchanges frames between endpoints over the network media.<br>Performs error detection and rejects any corrupt frame. | Receives encapsulated Layer 3 packets, and directs them to the proper upper-layer protocol.                                                                                                 |     |
+| 3.                         | List<br>the<br>functions<br>ofthe<br>Data<br>Link<br>sublayers.                                                                                                                                                                                       | (S5)                                                                                                                                                                                        | (4) |
+| •<br>•                     | LLC Sublayer:<br>•<br>at the lower layers.<br>•<br>MAC Sublayer:<br>•<br>Implemented in hardware<br>•<br>Responsible for data encapsulation and media access control.                                                                                 | Communicates between the networking software at the upper layers and the device hardware<br>Places information in the frame to identify which network layer protocol is used for the frame. |     |
+| 4.                         | List<br>the<br>fourfunctions<br>performed<br>by<br>a<br>router<br>at                                                                                                                                                                                  | each<br>hope<br>along<br>the<br>data<br>path.<br>(S6)                                                                                                                                       | (8) |
+| 1.<br>2.<br>3.<br>4.       | Accepts a frame from the network medium.<br>De-encapsulates the frame to expose the encapsulated packet.<br>Re-encapsulates the packet into a new frame.<br>Forwards the new frame on the medium of the next network segment.                         |                                                                                                                                                                                             |     |
+| 5.                         | Describe<br>briefly<br>the<br>three<br>common<br>physical                                                                                                                                                                                             | WANtopologies<br>andtheirmain<br>characteristics.<br>(S8)                                                                                                                                   | (8) |
+| •<br>•                     | Point-to-point –<br>between two endpoints.<br>Hub and spoke –                                                                                                                                                                                         | the simplest and most common WAN topology. Consists of a permanent link<br>similar to a star topology where a central site interconnects branch sites through                               |     |
+
+• **Mesh – provides high availability but requires every end system to be connected to every other end** 
+
+**point-to-point links.**
+
+**system.**
+
+{1}------------------------------------------------
+
+![](_page_1_Figure_0.jpeg)
+
+![](_page_1_Figure_3.jpeg)
+
+1 –**Point-to-point.** 2 –**Hub and Spoke.** 3 – **Mesh.**
+
+## 7. Identify the LAN topologies below. **(S9) (4)**
+
+![](_page_1_Picture_10.jpeg)
+
+- 8. Explain the followingmodes oftransmission andgive examples of devices for each. **(S10) (6**)
+  - a. Half Duplex
+    - **Only allows one device to send or receive at a time on a shared medium.**
+    - **Used on WLANs and legacy bus topologies with Ethernet hubs.**
+  - b. Full Duplex
+    - **Allows both devices to simultaneously transmit and receive on a shared medium.**
+    - **Ethernet switches operate in full-duplex mode.**
+
+{2}------------------------------------------------
+
+| 9.  | List<br>the<br>two<br>contention-basedaccess<br>methods<br>and<br>their<br>use.<br>(S11)                                                                                       | (8) |
+|-----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
+|     | •<br>Carrier sense multiple access with collision detection (CSMA/CD) -<br>used on legacy bus-topology<br>Ethernet.                                                            |     |
+|     | •<br>Carrier sense multiple access with collision avoidance (CSMA/CA) -<br>used on Wireless LANs.                                                                              |     |
+| 10. | What<br>are<br>two<br>characteristics<br>ofthe CSMA/CDand<br>what<br>type<br>of<br>LAN<br>is<br>using<br>it?<br>(S12)                                                          | (3) |
+|     | •<br>Used by legacy Ethernet LANs.                                                                                                                                             |     |
+|     | •<br>Operates in half-duplex mode.<br>•<br>Uses a collision detection process to control when a device can send and what happens if<br>multiple devices send at the same time. |     |
+| 11. | What<br>are<br>two<br>characteristics<br>ofthe CSMA/CA<br>and<br>what<br>type<br>of<br>LAN<br>is<br>using<br>it?<br>(S13)                                                      | (3) |
+|     | •<br>Used by IEEE 802.11 WLANs.                                                                                                                                                |     |
+|     | •<br>Operates in half-duplex mode.<br>•<br>Uses a collision avoidance process to govern when a device can send and what happens if<br>multiple devices send at the same time.  |     |
+|     | 12.Explain<br>the<br>followingData<br>Link<br>Frame<br>fields<br>and<br>theirfunctions.<br>(S14)                                                                               | (6) |
+|     | •<br>Frame<br>Start<br>and<br>Stop                                                                                                                                             |     |
+|     | Identifies beginning and end of frame.                                                                                                                                         |     |
+|     | •<br>Addressing                                                                                                                                                                |     |
+|     | Indicates source and destination nodes.                                                                                                                                        |     |
+|     | •<br>Error Detection                                                                                                                                                           |     |
+|     | Used to determine transmission errors.                                                                                                                                         | (8) |
+|     |                                                                                                                                                                                |     |
+| 13. | Describe<br>briefly<br>the<br>four<br>characteristics<br>of<br>Layer<br>2<br>address.<br>(S15)                                                                                 |     |
+|     | •<br>Referred to as a physical address.<br>•                                                                                                                                   |     |
+|     | Contained in the frame header.<br>•<br>Used only for local delivery of a frame on the link.                                                                                    |     |
+|     | •<br>Updated by each device that forwards the frame.                                                                                                                           |     |
+
+{3}------------------------------------------------
+
+- 14. What are the two factorsthat determine the data link protocol used? **(S16) (2**)
+  - **The logical topology and physical media.**
+- 15. Give three examples of data link protocols used in LANs and WANs. **(S16) (8**)
+  - **1. 802.3 Ethernet.**
+  - **2. 802.11 Wireless LAN (WLAN).**
+  - **3. Frame-Relay (FR).**

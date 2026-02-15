@@ -1,0 +1,11 @@
+| Number | Name                                                     | Finished |  Notes   | Practice Questions | Other Materials |
+| :----: | -------------------------------------------------------- | :------: | :------: | :----------------: | :-------------: |
+|   1    | Introduction To Digital System                           | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   2    | Boolean Algebra And Logic Gates                          | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   3    | Number Systems                                           | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   4    | Combinational Logic Circuit ANalysis And Simplification  | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   5    | Arithmetic Circuits And OperaTions                       | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   6    | **Sequential Logic Latches And Flip Flops Msi Counters** | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   7    | **Counters And Shift Registers**                         | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   8    | **Msi Units Mux Demux Decoder And Encoders **            | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |
+|   9    | **Microprocessor Based Systems**                         | &#x2610; | &#x2610; |      &#x2610;      |    &#x2610;     |

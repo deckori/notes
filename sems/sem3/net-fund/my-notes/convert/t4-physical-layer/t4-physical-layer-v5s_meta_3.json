@@ -1,0 +1,420 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Fiber-Optic Cabling\nProperties of Fiber-Optic Cabling",
+      "heading_level": null,
+      "page_id": 16,
+      "polygon": [
+        [
+          13.138671874999998,
+          9.4130859375
+        ],
+        [
+          518.0570678710938,
+          9.4130859375
+        ],
+        [
+          518.0570678710938,
+          68.34274291992188
+        ],
+        [
+          13.138671874999998,
+          68.34274291992188
+        ]
+      ]
+    },
+    {
+      "title": "Fiber-Optic Cabling",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          6.100097656249999,
+          7.412841796875
+        ],
+        [
+          204.07949829101562,
+          7.412841796875
+        ],
+        [
+          204.07949829101562,
+          31.0078125
+        ],
+        [
+          6.100097656249999,
+          31.0078125
+        ]
+      ]
+    },
+    {
+      "title": "Types of Fiber Media",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          5.630859375,
+          29.62353515625
+        ],
+        [
+          324.712890625,
+          29.62353515625
+        ],
+        [
+          324.712890625,
+          63.39990234375
+        ],
+        [
+          5.630859375,
+          63.39990234375
+        ]
+      ]
+    },
+    {
+      "title": "Single-Mode Fiber Multimode Fiber",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          137.48681640625,
+          99.765869140625
+        ],
+        [
+          784.7825927734375,
+          99.765869140625
+        ],
+        [
+          784.7825927734375,
+          121.05386352539062
+        ],
+        [
+          137.48681640625,
+          121.05386352539062
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 17,
+      "polygon": [
+        [
+          631.5947265625,
+          100.775390625
+        ],
+        [
+          787.3818359374999,
+          100.775390625
+        ],
+        [
+          787.3818359374999,
+          118.494140625
+        ],
+        [
+          631.5947265625,
+          118.494140625
+        ]
+      ]
+    },
+    {
+      "title": "Fiber-Optic Cabling\nFiber-Optic Cabling Usage",
+      "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          4.6923828125,
+          11.6279296875
+        ],
+        [
+          408.1006774902344,
+          11.6279296875
+        ],
+        [
+          408.1006774902344,
+          68.1064453125
+        ],
+        [
+          4.6923828125,
+          68.1064453125
+        ]
+      ]
+    },
+    {
+      "title": "Fiber-optic cabling is now being used in four types of industry:",
+      "heading_level": null,
+      "page_id": 18,
+      "polygon": [
+        [
+          20.646484375,
+          119.21087646484375
+        ],
+        [
+          660.3027954101562,
+          119.21087646484375
+        ],
+        [
+          660.3027954101562,
+          140.642578125
+        ],
+        [
+          20.646484375,
+          140.642578125
+        ]
+      ]
+    },
+    {
+      "title": "Fiber-Optic Cabling\nFiber-Optic Connectors",
+      "heading_level": null,
+      "page_id": 19,
+      "polygon": [
+        [
+          6.4629998207092285,
+          9.966796875
+        ],
+        [
+          363.64849853515625,
+          9.966796875
+        ],
+        [
+          363.64849853515625,
+          68.66015625
+        ],
+        [
+          6.4629998207092285,
+          68.66015625
+        ]
+      ]
+    },
+    {
+      "title": "Fiber-Optic Cabling\nFiber Patch Cords",
+      "heading_level": null,
+      "page_id": 20,
+      "polygon": [
+        [
+          5.630859375,
+          11.35107421875
+        ],
+        [
+          281.912841796875,
+          11.35107421875
+        ],
+        [
+          281.912841796875,
+          68.42776489257812
+        ],
+        [
+          5.630859375,
+          68.42776489257812
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 16,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          31
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 17,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          45
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 18,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 19,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          13
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "Picture",
+          4
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "PictureGroup",
+          4
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 20,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          16
+        ],
+        [
+          "Line",
+          5
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t4-physical-layer-v5s"
+}

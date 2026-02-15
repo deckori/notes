@@ -1,0 +1,224 @@
+---
+title: '11. Introduction to Magnetic Circuits and Transformers'
+---
+
+## Introduction
+
+- Analyses of electric circuits and magnetic circuits have similarities. ex: The magnetic flux of magnetic circuits and current of electric circuits. As shown in @fig-transformer-flux-path, it has a direction and a closed path.
+
+![Application of magnetic effects: transformer](t11-introduction-to-magnetic-circuits-and-transformers-img/transformer-flux-path.png){#fig-transformer-flux-path width=300 align=center alt="transformer-flux-path.png"}
+
+The magnitude of the established flux is a direct function of the applied magnetomotive force resulting in a duality with electric circuits where the resulting current is a function of the magnitude of the applied voltage
+
+The flux established is also inversely related to the structural opposition of the magnetic path in the same way the current in a network is inversely related to the resistance of the network.
+
+The flux lines strive to be as short as possible and take the path with the highest permeability
+
+$\Phi = \dfrac{\mathscr{F}}{\mathscr{R}}$
+
+Where,
+
+- $\Phi$ = electromotive force
+- $\mathscr{F}$ = Magnetomotive force (MMF)
+- $\mathscr{R}$ = Magnetic Reluctance
+
+## Magnetic Field
+
+The direction of flux lines is determined by the right hand rule, as 
+shown in @fig-right-hand-rule
+
+![Right hand rule](t11-introduction-to-magnetic-circuits-and-transformers-img/right-hand-rule.png){#fig-right-hand-rule align=center alt="right-hand-rule.png" width=300}
+
+Flux density, $B$
+
+- $B = \dfrac{\Phi}{A}$
+
+Unit:
+
+- $B= 1~\mathrm{Wb/m^2 =1~T}$ (teslas)
+- $\Phi = \text{Wb}$ (webers)
+- $A = m^2$
+
+The “pressure” on the system to a magnetic flux is determined by the applied **magnetomotive force**, which is directly related to the number of turns and current of the magnetizing coil.
+
+$\mathscr{F} = NI$, where unit: Ampere-turns $\text{(At)}$
+
+Permeability $\mu$
+
+$\mu_r = \dfrac{\mu}{\mu_o}$, where $\mu_o = 4\pi \cdot 10^{-7}~\mathrm{\dfrac{Wb}{A \cdot m}}$
+
+## Reluctance
+
+reluctance is the opposition to the magnetic flux
+
+$\mathscr{R} = \dfrac{l}{\mu A}$
+
+Similar to the formula of resistance
+
+## Ohm's Law for Magnetic Circuits
+
+We have equation: $\mathrm{ Effect = \dfrac{Cause}{Opposition}}$
+
+Hence, we get,
+
+$\Phi = \dfrac{\mathscr{F}}{\mathscr{R}}$
+
+Understand that the flux, $\Phi$, is not a “flow” variable such as current in an electric circuit.  Magnetic flux is established in the core through the alteration of the atomic structure of the core due to external pressure and is not a measure of the flow of some charged particles through the core.
+
+## Magnetizing Force $(H)$
+
+The magnetomotive force per unit length is called the magnetizing force
+
+$H = \dfrac{\mathscr{F}}{l} = \dfrac{NI}{l}$
+
+The magnetizing force is independent of the type of core material
+
+$B = \mu H$
+
+## Hysteresis
+
+When you magnetize something and remove the magnetizing force, the material will resist losing its magnetization and will take longer time to lose it than the time it took to gain it
+
+
+![Hysteresis curve](t11-introduction-to-magnetic-circuits-and-transformers-img/hysteresis-curve.png){#fig-hysteresis-curve align=center width=300 alt=hysteresis-curve.png}
+
+In @fig-hysteresis-curve, the entire curve represented by bcdefb is called the hysteresis curve, from the Greek hysterein, meaning “to lag behind.” The flux density B lagged behind the magnetizing force H during the entire plotting of the curve.
+
+The flux density $B_R$, which remains when the magnetizing force is zero, is called the residual flux density. It is this residual flux density that makes it possible to create permanent magnets.
+
+Three hysteresis loops for the same material for maximum values of H less than the saturation value are shown in @fig-normal-magnetization-curve.  In addition, the saturation curve is repeated for comparison purposes.
+
+In an effort to assign a particular value of B to each value of H, we compromise by connecting the tips of the hysteresis loops. The resulting curve, shown by the heavy, solid line in @fig-normal-magnetization-curve and for various materials in @fig-normal-magnetization-curve-3-materials, is called the normal magnetization curve.
+
+![Defining the normal magnetization curve](t11-introduction-to-magnetic-circuits-and-transformers-img/normal-magnetization-curve.png){#fig-normal-magnetization-curve align=center width=300 alt=normal-magnetization-curve.png}
+
+![Normal magnetization curve for three ferromagnetic materials.](t11-introduction-to-magnetic-circuits-and-transformers-img/normal-magnetization-curve-3-materials.png){#fig-normal-magnetization-curve-3-materials align=center width=300 alt=normal-magnetization-curve-3-materials.png}
+
+## Ampere's Circuital Law
+
+When we apply the "cause" analogy to KVL, we obtain Ampere's circuital law
+
+:::{#def-ampere-s-circuital-law}
+#  Ampere's Circuital Law
+
+The algebric sum of the rises and drops of the mmf around a closed loop of a magnetic circuit is zero.
+
+Mathematically,
+$$\sum_\circlearrowright \mathscr{F} = 0$$ {#eq-ampere-s-circuital-law}
+
+:::
+
+Remember:
+
+$$\mathscr{F} = NI = \Phi \mathscr{R} = Hl$$ {#eq-variations-of-mmf}
+
+## Air Gaps
+
+$B_g = \dfrac{Phi_g}{A_g}$
+
+Here:
+
+- $_g$ stands for gap
+- $\Phi_g = \Phi_\text{core}$
+- $A_g = A_\text{core}$
+
+The spreading of the flux lines outside the common area of the core for the air gap in @fig-air-gap-with-fringing is known as fringing. For our purposes, we shall ignore this effect and assume the flux distribution to be as in @fig-air-gap-ideal.
+
+:::{layout-ncol=2}
+
+![Air gap with fringing](t11-introduction-to-magnetic-circuits-and-transformers-img/air-gap-with-fringing.png){#fig-air-gap-with-fringing align=center width=300 alt="air-gap-with-fringing.png"}
+
+![Air gap: ideal](t11-introduction-to-magnetic-circuits-and-transformers-img/air-gap-ideal.png){#fig-air-gap-ideal align=center width=100 alt="air-gap-ideal.png"}
+
+:::
+
+## Applications
+
+::: { .callout-note }
+
+I'm unsure about whether this stuff is in the syllabus. I only included this to make sure I understood. @sec-speakers-and-microphones has a dropdown that explains a part of the original text that wasn't covered in detail. I copy pasted the original as is too. You might only only need the dropdown
+
+:::
+
+### Speakers and Microphones (Edits pending) {#sec-speakers-and-microphones}
+
+Electromagnetic effects are the moving force in the design of speakers 
+such as the one shown in @fig-speaker. The shape of the pulsating 
+waveform of the input current is determined by the sound to be 
+reproduced by the speaker at a high audio level. As the current peaks 
+and returns to the valleys of the sound pattern, the strength of the 
+electromagnet varies in exactly the same manner. This causes the cone 
+of the speaker to vibrate at a frequency directly proportional to the 
+pulsating input. The higher the pitch of the sound pattern, the higher is 
+the oscillating frequency between the peaks and valleys and the higher 
+is the frequency of vibration of the cone.
+
+![Speaker](t11-introduction-to-magnetic-circuits-and-transformers-img/speaker.png){#fig-speaker align=center width=300 alt=speaker.png}
+
+### Other sibling sections (In Progress)
+
+###### Hall Effect Sensors (In Progress)
+
+##  Transformers
+
+Transformers are electrical devices consisting of two or more coils of wire used to transfer electrical energy by means of a changing magnetic field.
+
+They increase (step up) or decrease (step down) the voltage
+
+### Mutual Inductance (In Progress)
+
+A transformer is constructed of two coils placed so that the changing flux developed by one 
+links the other, as shown in Fig. 23.1. This results in an induced voltage across each coil.
+
+Transformer convention the coil to which the source is applied is called the primary, and the coil 
+to which the load is applied is called the secondary.
+
+$$e_s = N_s \dfrac{d\Phi_m}{dt}$$
+
+- $e_s =$ voltage induced across the secondary
+- $N_s =$ Number of turn in the secondary coil
+- $\Phi_m =$ Portion of $\Phi_p$ that links with the secondary winding
+
+If all of the flux linking the primary links the secondary, then $\Phi_m = \Phi_p$
+
+$$e_s = N_s \dfrac{d\Phi_m}{dt}$$
+
+coefficient of coupling $(k)$ between two coils:
+
+$$k = \frac{\Phi_m}{\Phi_p}$$
+
+Since the maximum level of $\Phi_m$ is $\Phi_p$, 
+the coefficient of coupling between two 
+coils can never be greater than 1.
+
+### Iron Core Transformer
+
+$$E_s = \frac{2\pi}{\sqrt{2}} \cdot N_s f \Phi_m$$
+
+The transformer has 2 parts:
+
+- Primary (for the input)
+- Secondary (for the output)
+
+It consists of a transfer core and 2 coils. It works like so:
+
+- Current flows through the primary coil
+- Current flow through the coil induces a changing magnetic field in the transformer core
+- The changing magnetic field flows through out the transformer core
+- The changing magnetic field in the transformer core induces a voltage and hence a current in the secondary coil
+
+
+Transformer ratio: $a = \dfrac{N_p}{N_s}$
+
+$$\dfrac{V_p}{V_s} = \dfrac{N_p}{N_s} = \dfrac{I_s}{I_p}$$
+
+$$V \propto N \propto \dfrac{1}{I}$$
+
+Primary and secondary is reversed for the current since $I \propto \dfrac{1}{N}$
+
+- $a < 1  \implies$ Step-up transformer
+- $a > 1 \implies$ Step-down transformer
+
+## Rectifier (Complete)
+
+They convert AC to DC

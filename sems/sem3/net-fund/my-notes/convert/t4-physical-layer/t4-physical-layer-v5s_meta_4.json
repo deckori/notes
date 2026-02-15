@@ -1,0 +1,229 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Fiber-Optic Cabling\nFiber versus Copper",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          3.7539062499999996,
+          10.24365234375
+        ],
+        [
+          317.5321350097656,
+          10.24365234375
+        ],
+        [
+          317.5321350097656,
+          69.49072265625
+        ],
+        [
+          3.7539062499999996,
+          69.49072265625
+        ]
+      ]
+    },
+    {
+      "title": "Wireless Media",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          11.26171875,
+          9.997314453125
+        ],
+        [
+          189.572265625,
+          9.997314453125
+        ],
+        [
+          189.572265625,
+          34.00628662109375
+        ],
+        [
+          11.26171875,
+          34.00628662109375
+        ]
+      ]
+    },
+    {
+      "title": "Properties of Wireless Media",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          14.077148437499998,
+          36.3397216796875
+        ],
+        [
+          452.1629638671875,
+          36.3397216796875
+        ],
+        [
+          452.1629638671875,
+          68.34274291992188
+        ],
+        [
+          14.077148437499998,
+          68.34274291992188
+        ]
+      ]
+    },
+    {
+      "title": "Wireless Media Standards",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          13.138671874999998,
+          35.71435546875
+        ],
+        [
+          411.2630920410156,
+          35.71435546875
+        ],
+        [
+          411.2630920410156,
+          68.34274291992188
+        ],
+        [
+          13.138671874999998,
+          68.34274291992188
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 21,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "TableCell",
+          24
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          41
+        ],
+        [
+          "Line",
+          16
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          27
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t4-physical-layer-v5s"
+}

@@ -1,0 +1,215 @@
+---
+title: "4.3 – Bipolar Junction Transistor"
+---
+
+## Formulas
+
+For a given characteristics curve:
+
+\begin{align*}
+	V_{CE(sat)}    & = V_{CC}                                               \\
+	I_{C(sat)}     & = \frac{V_{CC}}{R_C}                                   \\
+	I_{\text{BQ}}  & = \frac{V_{\text{BB}}  - 0.7 \text{V}}{R{\text{B}}}    \\
+	I_{\text{CQ}}  & = \beta_{\text{DC}} I_{\text{BQ}}                      \\
+	V_{\text{CEQ}} & = V_{\text{CC}} - ( V_{R_C} = I_{\text{CQ}} R_{\text{C}} ) \\
+\end{align*}
+
+Note: The $_Q$ means that these values are present at the Q-point
+
+Videos:
+
+{{< video https://www.youtube.com/watch?v=5T84Jzcgj7M >}}
+
+{{< video https://www.youtube.com/watch?v=jQb199oIY5U >}}
+
+{0}------------------------------------------------
+
+{1}------------------------------------------------
+
+## Learning Objectives:
+
+- Discuss and determine the dc operating point of a linear amplifier
+- Explain the purpose of dc bias
+- Define *Q-point* and describe how it affects the output of an amplifier
+- Explain how collector characteristic curves are produced
+- Describe and draw a dc load line
+- State the conditions for linear operation
+
+{2}------------------------------------------------
+
+Biasing of a transistor:
+
+- If an amplifier is not biased with correct dc voltages on the input and output, it can go into saturation or cutoff when an input signal is applied.
+
+> In a typical BJT npn transistor( I might be wrong here. DC voltage bias is applied as in a normal circuit. Then an input signal usually the ac voltage, is applied):
+>
+> - The input is the V_CC and output is the ground
+> - Applying voltage to the ground means, making sure that the output voltage is lower than the input voltage
+> - The input signal is the AC voltage applied at the base
+
+> Taking $V_D$ as base–emitter diode turn-on voltage
+
+>| V_BE   | State      |   |
+>|--------|------------|---|
+>| \< V_D | Cut-off    |   |
+>| > V_D  | Linear     |   |
+>|        | Saturation |   |
+
+Linear operation: larger output has same shape as input except that it is inverted
+
+![](_page_2_Picture_3.jpeg)
+
+Nonlinear operation: output voltage limited (clipped) by cutoff
+
+![](_page_2_Picture_5.jpeg)
+
+Nonlinear operation: output voltage limited (clipped) by saturation
+
+![](_page_2_Picture_7.jpeg)
+
+{3}------------------------------------------------
+
+Operating Point:
+
+**Graphical Analysis**
+
+- The DC input establishes an operating or quiescent point (Q-Point).
+
+4
+
+- A, B, C, D... are different Q-Points for different constants of $I_B$
+
+![](_page_3_Figure_3.jpeg)
+
+> This graph is actually a set of different graphs for different constant values of $I_B$. The constant value of $I_B$ is denoted by the current value next to the end of the graph lines. As we change the $I_B$, $I_C$ vs $V_CE$ graph changes. So the given graph shows the $I_C$ vs $V_CE$ graphs for different constant values of $I_B$.
+
+{4}------------------------------------------------
+
+#### Effect of Bias:
+
+#### Graphical Analysis
+
+- The transistor is biased with VCC and VBB to obtain certain values of IB, IC, IE, and VCE.
+
+$$V_{\rm CC} - V_{R_{\rm C}} - V_{\rm CE} = 0, \quad \text{Basic KVL on CE loop}$$
+
+![](_page_4_Picture_6.jpeg)
+
+![](_page_4_Figure_7.jpeg)
+
+{5}------------------------------------------------
+
+#### DC Load line
+
+- Determined by the external circuit (VCC and RC), not the transistor itself,
+
+$$V_{\rm CC}-V_{R_{\rm C}}-V_{\rm CE}=0$$
+
+\begin{align*}
+I_{C}
+&= \frac{V_{CC} - V_{CE}}{R_{C}} \\
+&= \frac{V_{CC}}{R_{C}} - \frac{V_{CE}}{R_{C}} \\
+&= -\frac{V_{CE}}{R_{C}} + \frac{V_{CC}}{R_{C}} \\
+\Aboxed{ I_C &= -\left( \frac{1}{R_{C}} \right) V_{CE} + \frac{V_{CC}}{R_{C}}}
+\end{align*}
+
+Equation of a straight line with a slope of $\frac{1}{R_{C}}$ , an x intercept of VCE = VCC, and a y intercept of VCC /RC, which is IC (sat).
+
+{6}------------------------------------------------
+
+Effect of **Illustration of Q-point adjustment.** Bias:
+
+![](_page_6_Figure_2.jpeg)
+
+![](_page_6_Figure_4.jpeg)
+
+![](_page_6_Figure_5.jpeg)
+
+![](_page_6_Figure_7.jpeg)
+
+{7}------------------------------------------------
+
+#### **DC Load line:**
+
+- The region along the load line including all points between saturation and cutoff is known as the linear region of the transistor's operation.
+- Note: If the transistor is operated in this region, the output voltage is **ideally** a linear reproduction of the input.
+
+![](_page_7_Figure_4.jpeg)
+
+![](_page_7_Figure_5.jpeg)
+
+#### Assume Beta=100
+
+$$I_{\text{BQ}} = \frac{V_{\text{BB}} - 0.7 \text{ V}}{R_{\text{B}}} = \frac{3.7 \text{ V} - 0.7 \text{ V}}{10 \text{ k}\Omega} = 300 \text{ }\mu\text{A}$$
+ 
+$$I_{\text{CQ}} = \beta_{\text{DC}} I_{\text{BQ}} = (100)(300 \text{ }\mu\text{A}) = 30 \text{ mA}$$
+ 
+$$V_{\text{CEQ}} = V_{\text{CC}} - I_{\text{CQ}} R_{\text{C}} = 10 \text{ V} - (30 \text{ mA})(220 \Omega) = 3.4 \text{ V}$$
+
+{8}------------------------------------------------
+
+#### **Example:**
+
+![](_page_8_Figure_3.jpeg)
+
+{9}------------------------------------------------
+
+#### **The Answer:**
+
+1- The Q-point:
+
+$$I_{\rm B} = \frac{V_{\rm BB} - V_{\rm BE}}{R_{\rm B}} = \frac{10 \text{ V} - 0.7 \text{ V}}{47 \text{ k}\Omega} = 198 \,\mu\text{A}$$
+
+$$I_{\rm C} = \beta_{\rm DC}I_{\rm B} = (200)(198 \,\mu\text{A}) = 39.6 \,\text{mA}$$
+
+$$V_{\rm CE} = V_{\rm CC} - I_{\rm C}R_{\rm C} = 20 \text{ V} - 13.07 \text{ V} = 6.93 \,\text{V}$$
+
+## 2- The Load Line:
+
+$$I_{\text{C(sat)}} = \frac{V_{\text{CC}}}{R_{\text{C}}} = \frac{20 \text{ V}}{330 \Omega} = 60.6 \text{ mA}$$
+
+### 3- Maximum possible IB:
+
+![](_page_9_Figure_9.jpeg)
+
+{10}------------------------------------------------
+
+#### **Example:**
+
+ In the given transistor circuit, VBB=10V, RB=31kohm and Vin is a sinusoidal wave where
+
+$$V_{in-max} = 3Vac.$$
+
+![](_page_10_Picture_4.jpeg)
+
+![](_page_10_Figure_6.jpeg)
+
+![](_page_10_Figure_7.jpeg)
+
+![](_page_10_Figure_8.jpeg)
+
+{11}------------------------------------------------
+
+## Bipolar Junction Transistor ( BJT) **Example:**
+
+ In the given transistor circuit, VBB=10V, RB=31kohm and Vin is a sinusoidal wave where Vin-max=3Vac.
+
+![](_page_11_Figure_2.jpeg)
+
+$$V_{\rm BB}-V_{\rm BE}-V_{R_{\rm B}}=0$$
+
+$$I_{\rm B} = \frac{V_{\rm BB} - V_{\rm BE}}{R_{\rm B}} = (10-0.7)/31 \text{k} = 0.3$$
+
+$$I_{\rm Bmax} = (13-0.7)/31 \text{k} = 0.4 \text{ mA}$$
+
+$$I_{Bmin}$$
+= ( 7-0.7)/31k= 0.2 mA
+
+![](_page_11_Figure_6.jpeg)
+
+{12}------------------------------------------------
+
+## **Discussions**
+
+![](_page_12_Picture_1.jpeg)
+

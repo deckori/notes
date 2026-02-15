@@ -1,0 +1,122 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Topic 4 - Physical Layer - Study Guide",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          166.74609375,
+          39.9312744140625
+        ],
+        [
+          448.41729736328125,
+          39.9312744140625
+        ],
+        [
+          448.41729736328125,
+          57.95623779296875
+        ],
+        [
+          166.74609375,
+          57.95623779296875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          147
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "ListItem",
+          21
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          138
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "TableCell",
+          18
+        ],
+        [
+          "ListItem",
+          15
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t04-physical-layer-study-guide"
+}

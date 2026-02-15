@@ -1,0 +1,102 @@
+---
+title: "Presentation Title"
+---
+![](darlington-pair-img/darlington-pair_0.png)
+
+AETN 2101\-ANALOG  ELECTRONICS
+
+# Discussion/Tutorial Worksheet Practice
+
+Multistage Amplifiers
+Darlington
+
+__Dr\. Yasen Harrye__
+
+# Learning Objectives:
+
+<span style="color:#000000">Understand the objective of Multistage Amplifiers\.</span>
+
+<span style="color:#000000">Analyse Darlington pair Transistor\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Multistage Transistors
+
+![](darlington-pair-img/darlington-pair_1.png)
+
+A Darlington pair is two transistors that act as a single transistor but with a much higher current gain\.
+
+Thus\, a tiny amount of current from a sensor\, micro\-controller or similar can be used to drive a larger load\.
+
+![](darlington-pair-img/darlington-pair_2.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](darlington-pair-img/darlington-pair_3.png)
+
+The main feature of the Darlington connection is that the current gain is the product of the current gains of the individual transistors\.
+
+![](darlington-pair-img/darlington-pair_4.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Emitter Follower Configuration
+
+![](darlington-pair-img/darlington-pair_5.png)
+
+Impact of using the Darlington configuration is an  <span style="color:#ff0000">input impedance </span> much larger than that obtained with a single\-transistor network\.
+
+The  <span style="color:#ff0000">current gain </span> is also larger\.
+
+But the  <span style="color:#ff0000"> _voltage gain _ </span> for a single\-transistor or Darlington configuration remains slightly less than one\.
+
+Emitter Follower Darlington amplifier
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#961a26"> __Multistage Amplifiers:__ </span>
+
+<span style="color:#0000cc">Broadband Darlington amplifier</span>
+
+![](darlington-pair-img/darlington-pair_6.png)
+
+![](darlington-pair-img/darlington-pair_7.png)
+
+![](darlington-pair-img/darlington-pair_8.jpg)
+
+<span style="color:#961a26"> __Multistage Amplifiers:__ </span>
+
+![](darlington-pair-img/darlington-pair_9.png)
+
+<span style="color:#961a26"> __Multistage Amplifiers:__ </span>
+
+The  Darlington configuration shown below\. Calculate IB1\, IE2\, VB1and VCE2\.
+
+![](darlington-pair-img/darlington-pair_10.png)
+
+![](darlington-pair-img/darlington-pair_11.png)
+
+1\)
+
+2\)
+
+3\)
+
+4\)
+

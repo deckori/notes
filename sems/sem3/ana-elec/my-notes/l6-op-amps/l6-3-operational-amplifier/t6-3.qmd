@@ -1,0 +1,7 @@
+no current flows through the op amp input. the current goes through the R_f path to the output.
+
+## Op amp as comparator
+
+When graphing the digital waveform for the analog signal that haas been converted to digital, the left and right sides of a sine wave that are above or below the v_reference, when the peak is on the other side of the v_reference, is neglected.
+
+We can have the $V_{ref}4 on the inverting or non-inverting LED

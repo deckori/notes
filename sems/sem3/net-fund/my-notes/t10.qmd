@@ -1,0 +1,5 @@
+We can use udp where the benefits of tcp are provided at the application layer. tcp is redundant here
+
+In port number groups table, we shiuld know the ones highlighted in red
+
+We can have multiple clients accessing the same port. But different sessions to the same service require different port numbers.

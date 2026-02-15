@@ -1,0 +1,26 @@
+Objectives achieved in this lab:
+
+- Understand the operation of the 4-bit binary adder (74LS283).
+- Observe the function of the carry input (C₀) and carry output (C₄).
+- Analyze the binary sum and carry results using the oscilloscope.
+
+We made our circuit configurations using the synchronous counter, 4 bit adder, pulse generator and input signals blocks. In part 1, we use the 4-bit binary adder (74LS283) to perform binary addition operations. we configured a circuit as per the given specifications. We made use of functions like CLEAR and LOAD, and configured the inputs using the inputs signals and pulse generator blocks to obtain various outputs that were recorded. Recording were made by observing the LED indicators in the lab-volt board. The recordings were cross-checked by using a voltmeter. These outputs were proven correct by theoretical calculations.
+
+In part 2, we observed the outputs and carry in using an oscilloscope. We configured the specified inputs and compared the output waveforms shown in the oscilloscope to the ones given in the report. These outputs were analyzed to see the behaviour of the output around the carry-out's time slot. We configured another set of the specified inputs, and then graphed the waveforms for various signals, recorded by the oscilloscope.
+
+We observed that grounding the carry-in is crucial to get the correct results. Otherwise our results would be incorrect. We found that the displayed waveforms of the signals can sometimes differ from their actual values.
+
+In conclusion, we learned how to use a 4-bit adder using a lab-volt board and learned how to recognized and debug issues in the various operations done on adders.
+
+
+Objectives achieved in this lab:
+
+- Understand the operation of the 4-bit binary adder (74LS283).
+- Observe the function of the carry input (C₀) and carry output (C₄).
+- Analyze the binary sum and carry results using the oscilloscope.
+
+We set up the circuit using the synchronous counter, 4-bit adder, pulse generator, and input blocks. In Part 1, the 74LS283 adder performed binary addition. CLEAR and LOAD functions were used, and inputs were set via switches and pulse generator. Outputs were recorded with LEDs and checked with a voltmeter. The outputs matched the theoretical calculations, confirming the results.
+
+In Part 2, we used an oscilloscope to observe output and carry signals for the specified inputs. Waveforms for Σ₁–Σ₄, C₀, and C₄ were graphed and were found the same as the ones in the lab report. Grounding C₀ was found crucial in attaining the correct results, and a waveform was found to differ from its actual value (due to the carry out's presence).
+
+In conclusion, we learned to use a 4-bit adder, read LED and oscilloscope outputs, and debug adder operations.

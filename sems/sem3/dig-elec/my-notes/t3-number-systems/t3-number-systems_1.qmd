@@ -1,0 +1,286 @@
+---
+title: "Presentation Title"
+---
+# AETN1112 - Digital ElectronicsNumber system, BCD and Alphanumeric codes
+
+# prepared by:
+Ghufran Jaafreh
+
+# Outcomes
+
+Convert a number from any base to any base
+
+Representing decimal numbers using the BCD code\.
+
+Purpose of alphanumeric codes such as ASCII code\.
+
+# Digital Number Systems
+
+
+
+* Understanding digital systems requires an understanding of the decimal\, binary\, octal\, and hexadecimal numbering systems\.
+  * Decimal – 10 symbols \(base 10\)
+  * Hexadecimal – 16 symbols \(base 16\)
+  * Octal – 8 symbols \(base 8\)
+  * Binary – 2 symbols \(base 2\)
+# Decimal Number System
+
+
+
+* Base \(also called radix\) = 10
+  * 10 digits \{ 0\, 1\, 2\, 3\, 4\, 5\, 6\, 7\, 8\, 9 \}
+* Digit Position
+  * Integer & fraction
+* Digit Weight
+  * Weight = \( _Base\) _  _Position_
+* Magnitude
+  * Sum of “ _Digit_  x  _Weight_ ”
+* Formal Notation
+
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_0.png)
+
+# Binary Number System
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_1.png)
+
+
+
+* Base = 2
+  * 2 digits \{ 0\, 1 \}\, called  _bi_ nary digi _ts_  or “ _bits_ ”
+* Weights
+  * Weight = \( _Base\) _  _Position_
+* Magnitude
+  * Sum of “ _Bit_  x  _Weight_ ”
+* Formal Notation
+* Groups of bits       4 bits =  _Nibble_
+* 8 bits =  _Byte_
+# Octal Number System
+
+
+
+* Base = 8
+  * 8 digits \{ 0\, 1\, 2\, 3\, 4\, 5\, 6\, 7 \}
+* Weights
+  * Weight = \( _Base\) _  _Position_
+* Magnitude
+  * Sum of “ _Digit_  x  _Weight_ ”
+* Formal Notation
+
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_2.png)
+
+# Hexadecimal Number System
+
+
+
+* Base = 16
+  * 16 digits \{ 0\, 1\, 2\, 3\, 4\, 5\, 6\, 7\, 8\, 9\, A\, B\, C\, D\, E\, F \}
+* Weights
+  * Weight = \( _Base\) _  _Position_
+* Magnitude
+  * Sum of “ _Digit_  x  _Weight_ ”
+* Formal Notation
+
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_3.png)
+
+# Conversion from Other Bases to Decimal
+
+# Conversion from Decimal to Other Bases(1. Repeated division method)
+
+Conduct an  _integer_  division on the number by the base number \(16 for hex\, 8 for octal\, 2 for binary\)\.
+
+Set the remainder aside – this is what you will later use to render the converted number\.
+
+Go back to step 1\, this time using the quotient \(result\) from that step as the new dividend\.
+
+We can stop when the numerator is smaller than the denominator\.
+
+Collect all the remainders from the most recent \(MSB\) to the first one \(LSB\) – this will be the newly converted value\.
+
+# Decimal to Binary
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_4.png)
+
+Convert  <span style="color:#ff0000">726</span>  to its binary equivalent\.
+
+<span style="color:#ff0000">Solution:</span>
+
+1\- The base for binary is 2\,
+
+2\-   _integer divide_  our number by 2 and then repeatedly divide the newly calculated quotient by 2\, until we can no longer do so\.
+
+3\-  simply read the remainders from the  <span style="color:#ff0000">bottom</span>  to the  <span style="color:#ff0000">top</span>  to get 10110101102\.
+
+Note: the last remainder is the MSB and the first remainder is LSB
+
+# Decimal to Octal
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_5.png)
+
+# Decimal to Hexadecimal
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_6.png)
+
+# Conversion from Decimal to Other Bases(2. Weighted method)
+
+Look at the decimal number to convert and find the digit weight for the number base being used \(B\) that is the largest without exceeding the number to convert \(BM\)\.
+
+Construct digit position from this digit weight all the way down to the units position \(B0\)\.
+
+Divide the decimal number by BM and write the whole number part under this weight\.
+
+Take the reminder and divide it by the next weight BM\-1 and again write the whole number result under this weight\.
+
+Repeat Step 4 until you reach the units column\. Put the last remainder in this column \(weight\)\. You now have the converted number
+
+# Decimal to Binary
+
+Convert  <span style="color:#ff0000">726</span>  to its binary equivalent\.
+
+<span style="color:#ff0000">Solution:</span>
+
+1\- The base for binary is 2\,
+
+2\-  Find highest weight 2M <= 726\, M=9
+
+3\-  Divide 726 by 512 = 1 remainder 214\. Write 1 under 512\.
+
+4\-  Divide 214 by 256 = 0 remainder 214\. Write 0 under 256\.
+
+5\-  Divide 214 by 128 =1 remainder 86\.
+
+6\-  Repeat steps 4 and 5 until you have the last remainder 0\. Giving us 10110101102\.
+
+Note: the last remainder is the LSB and the first result is the MSB
+
+| 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| 1 | 0 | 1 | 1 | 0 | 1 | 0 | 1 | 1 | 0 |
+
+<span style="color:#ff0000">In decimal to binary \(ONLY\) we can do this by addition\. Just look at all the weights needed to add together to make the decimal number once you find the highest weight </span>  <span style="color:#ff0000">2</span>  <span style="color:#ff0000">M</span>  <span style="color:#ff0000">\.</span>
+
+# Decimal to Octal
+
+| 83 | 82 | 81 | 80 |
+| :-: | :-: | :-: | :-: |
+| <span style="color:#000000">512</span> | 64 | <span style="color:#000000">8</span> | 1 |
+| 1 | 3 | 1 | 0 |
+
+# Decimal to Hexadecimal
+
+| 162 | 161 | 160 |
+| :-: | :-: | :-: |
+| <span style="color:#000000">256</span> | <span style="color:#000000">16</span> | 1 |
+| 2 | D | 6 |
+
+# Convert from Binary to Octal
+
+Group the binary number into threes\, starting from the right side
+
+Convert each group to its octal equivalent
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_7.png)
+
+# Convert from Binary to Hex
+
+Similar approach\, but group the bits into <span style="color:#ff0000"> fours </span> and convert each group into the Hex digit
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_8.png)
+
+# Octal to Binary
+
+Simply convert each group of 3 bits into the equivalent octal digit
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_9.png)
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_10.png)
+
+# Octal to Hexadecimal
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_11.png)
+
+This can be done in a three\-step process:
+
+Convert the octal number to binary\,
+
+Convert the binary to groups of four and
+
+Convert the groups of four to hex\.
+
+# Hexadecimal to Binary
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_12.png)
+
+Convert the hex digits into groups of four bits
+
+Combine them into a single binary number:
+
+# Hexadecimal to Octal
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_13.png)
+
+This can be done in a three\-step process:
+
+Convert the hex number to binary\,
+
+Convert the binary to groups of three and
+
+Convert the groups of three to octal\.
+
+# Binary-Coded-Decimal Code (BCD)
+
+Conversions between binary and decimal numbers can be long\, complicated using weighted method simplifies things
+
+BCD is another method of writing binary numbers which reduces work in converting between binary and decimal numbers
+
+Each digit in a decimal number is represented by its equivalent 4\-bit binary number
+
+# BCD Conversion
+
+Each decimal digit requires 4 bits
+
+Conversion is shown on the table at right
+
+Decimal numbers above 9 are  <span style="color:#ff0000">undefined</span> \, as are binary values from  <span style="color:#ff0000">1010 to 1111</span> \.
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_14.png)
+
+# Example:
+
+Convert 0110100000111001 \(BCD\) to its decimal equivalent\.
+
+=6839 base 10
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_15.jpg)
+
+Convert BCD 011111000001 to its decimal equivalent\.
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_16.jpg)
+
+# Digital Displays Utilizing BCD Numbers
+
+An example of a digital device with LED displays is shown\.
+
+Each digit display contains a decoder which converts a binary input into signals which drive the LED displays
+
+For instance\, to produce the digit “3” we will send a binary value of 0011 to the leftmost display\.  The digit “9” will require 1001 to display it\, and so on\.
+
+# Alphanumeric Codes
+
+
+
+* a computer should recognize codes that represent letters of the alphabet\, punctuation marks\, and other special characters as well as numbers\.
+* Represents characters and functions found on a computer keyboard\.
+  * 26 lowercase & 26 uppercase letters\, 10 digits\, 7 punctuation marks\, 20 to 40 other characters\.
+* ASCII – American Standard Code for Information Interchange\.
+  * Seven bit code: 27 = 128 possible code groups
+  * Examples of use: transfer information between computers; computers & printers; internal storage\.
+__ASCII – American Standard Code__  __for Information Interchange__
+
+![](topic-3-number-systems-ps-img/Topic 3 Number Systems_PS_17.jpg)
+
+__See the entire table on page 49 of your textbook\.__
+

@@ -1,0 +1,362 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Digital-to-Analog Conversion",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          76.5662841796875
+        ],
+        [
+          56.25,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "Digital-to-Analog Conversion",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          76.728515625
+        ],
+        [
+          56.25,
+          76.728515625
+        ]
+      ]
+    },
+    {
+      "title": "Digital-to-Analog Conversion",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          54.84375,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          76.5662841796875
+        ],
+        [
+          54.84375,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          55.1953125,
+          192.216796875
+        ],
+        [
+          121.9921875,
+          192.216796875
+        ],
+        [
+          121.9921875,
+          206.455078125
+        ],
+        [
+          55.1953125,
+          206.455078125
+        ]
+      ]
+    },
+    {
+      "title": "Digital-to-Analog Conversion",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          76.5662841796875
+        ],
+        [
+          56.25,
+          76.5662841796875
+        ]
+      ]
+    },
+    {
+      "title": "Digital-to-Analog Conversion",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          56.25,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          45.753265380859375
+        ],
+        [
+          444.8566589355469,
+          76.9921875
+        ],
+        [
+          56.25,
+          76.9921875
+        ]
+      ]
+    },
+    {
+      "title": "Solution:",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          61.05799865722656,
+          150.31820678710938
+        ],
+        [
+          126.99199676513672,
+          150.31820678710938
+        ],
+        [
+          126.99199676513672,
+          168.31820678710938
+        ],
+        [
+          61.05799865722656,
+          168.31820678710938
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          14
+        ],
+        [
+          "Line",
+          7
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          31
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          25
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          24
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          17
+        ],
+        [
+          "Line",
+          6
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/l6-3-operational-amplifier"
+}

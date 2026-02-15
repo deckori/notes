@@ -1,0 +1,268 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Topic 3. Protocols and Reference Models Study Guide Instructor",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          91.9000015258789,
+          24.45123291015625
+        ],
+        [
+          520.3937377929688,
+          24.45123291015625
+        ],
+        [
+          520.3937377929688,
+          40.67626953125
+        ],
+        [
+          91.9000015258789,
+          40.67626953125
+        ]
+      ]
+    },
+    {
+      "title": "192.168.1.1",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          89.349609375,
+          493.83984375
+        ],
+        [
+          147.1840057373047,
+          493.83984375
+        ],
+        [
+          147.1840057373047,
+          506.7699890136719
+        ],
+        [
+          89.349609375,
+          506.7699890136719
+        ]
+      ]
+    },
+    {
+      "title": "172.16.1.1",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          89.05078125,
+          558.4199981689453
+        ],
+        [
+          141.1840057373047,
+          558.4199981689453
+        ],
+        [
+          141.1840057373047,
+          570.4199981689453
+        ],
+        [
+          89.05078125,
+          570.4199981689453
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          114
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "TableCell",
+          30
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Form",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          95
+        ],
+        [
+          "TableCell",
+          34
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          113
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "TableCell",
+          18
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          108
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "ListItem",
+          11
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t03-protocols-and-reference-models-study-guide"
+}

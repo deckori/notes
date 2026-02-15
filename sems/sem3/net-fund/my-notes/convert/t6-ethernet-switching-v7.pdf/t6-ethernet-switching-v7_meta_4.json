@@ -1,0 +1,385 @@
+{
+  "table_of_contents": [
+    {
+      "title": "ARP",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          6.100097656249999,
+          13.2890625
+        ],
+        [
+          52.08544921874999,
+          13.2890625
+        ],
+        [
+          52.08544921874999,
+          35.19189453125
+        ],
+        [
+          6.100097656249999,
+          35.19189453125
+        ]
+      ]
+    },
+    {
+      "title": "Resolving IPv4 Addresses to MAC addresses",
+      "heading_level": null,
+      "page_id": 21,
+      "polygon": [
+        [
+          1.8769531249999998,
+          37.37548828125
+        ],
+        [
+          693.1832275390625,
+          37.37548828125
+        ],
+        [
+          693.1832275390625,
+          69.50473022460938
+        ],
+        [
+          1.8769531249999998,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "Resolving IPv4 Addresses to MAC addresses (cont.)",
+      "heading_level": null,
+      "page_id": 22,
+      "polygon": [
+        [
+          12.753317720530834,
+          37.65234375
+        ],
+        [
+          810.2107728337236,
+          37.65234375
+        ],
+        [
+          810.2107728337236,
+          71.982421875
+        ],
+        [
+          12.753317720530834,
+          71.982421875
+        ]
+      ]
+    },
+    {
+      "title": "Maintaining the ARP Table 18",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          6.4629998207092285,
+          28.836181640625
+        ],
+        [
+          952.013427734375,
+          28.836181640625
+        ],
+        [
+          952.013427734375,
+          70.3212890625
+        ],
+        [
+          6.4629998207092285,
+          70.3212890625
+        ]
+      ]
+    },
+    {
+      "title": "The ARP table entries are removed:",
+      "heading_level": null,
+      "page_id": 23,
+      "polygon": [
+        [
+          11.26171875,
+          89.75888061523438
+        ],
+        [
+          352.8671875,
+          89.75888061523438
+        ],
+        [
+          352.8671875,
+          111.046875
+        ],
+        [
+          11.26171875,
+          111.046875
+        ]
+      ]
+    },
+    {
+      "title": "ARP",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          4.22314453125,
+          11.6279296875
+        ],
+        [
+          52.08544921874999,
+          11.6279296875
+        ],
+        [
+          52.08544921874999,
+          35.19189453125
+        ],
+        [
+          4.22314453125,
+          35.19189453125
+        ]
+      ]
+    },
+    {
+      "title": "ARP Tables on Networking Devices",
+      "heading_level": null,
+      "page_id": 24,
+      "polygon": [
+        [
+          5.630859375,
+          36.82177734375
+        ],
+        [
+          542.1611938476562,
+          36.82177734375
+        ],
+        [
+          542.1611938476562,
+          69.50473022460938
+        ],
+        [
+          5.630859375,
+          69.50473022460938
+        ]
+      ]
+    },
+    {
+      "title": "ARP Issues \u2013 ARP Broadcasting and ARP Spoofing",
+      "heading_level": null,
+      "page_id": 25,
+      "polygon": [
+        [
+          1.500390320062451,
+          36.26806640625
+        ],
+        [
+          786.4433593749999,
+          36.26806640625
+        ],
+        [
+          786.4433593749999,
+          68.93701171875
+        ],
+        [
+          1.500390320062451,
+          68.93701171875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 21,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 22,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          46
+        ],
+        [
+          "Span",
+          7
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 23,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          16
+        ],
+        [
+          "Line",
+          6
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 24,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          35
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Code",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 25,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          30
+        ],
+        [
+          "Span",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/t6-ethernet-switching-v7"
+}

@@ -1,0 +1,469 @@
+---
+title: "Presentation Title"
+---
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_0.png)
+
+AETN 2101\-ANALOG  ELECTRONICS
+
+# L3.2 –Diodes Circuits Analysis 
+           &
+         Application
+
+# Learning Objectives:
+
+Develop a working knowledge of the diode in  a variety of configurations using models appropriate for the  area of application\.
+
+Understand its function  and response in a variety of configurations can be  examined\.
+
+Analysis of diode electronic circuits using the actual characteristics or applying an approximate  model for the device\.
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+# Diodes Application
+
+<span style="color:#c00000"> __Half  Wave \(HW\) and Full wave Rectifiers__ </span>
+
+Electricity from utility companies is mostly in form of alternating current \(AC\)\, even though most electronic systems require direct current\.
+
+Through a process known as  <span style="color:#0000cc">rectification</span> \, the AC current is converted to DC current\.
+
+Rectification is one of the most common  uses of diodes\.
+
+Rectifier is also called an   <span style="color:#3333cc">AC\-DC converter\.</span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_1.png)
+
+Rectifier \(ac\-dc converter\)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_2.png)
+
+<span style="color:#c00000"> __Half Wave Rectifier__ </span>
+
+The process of  <span style="color:#0000cc">removing one\-half of the  input ac signal </span>  <span style="color:#0000cc">to </span>  <span style="color:#0000cc">establish </span>  <span style="color:#0000cc">a </span>  <span style="color:#0000cc">dc level </span> is  called half\-wave rectification\.
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_3.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#7030a0"> __Current Waveform :__ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_4.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_5.png)
+
+<span style="color:#0000ff">Current waveform for resistive load\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Half Wave Rectifier__ </span>
+
+The diode operates as a high\-speed switch\, allowing the current to flow only during the positive half\-wave of the source voltage
+
+<span style="color:#0000ff">Positive half cycle</span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_6.png)
+
+<span style="color:#0000ff">During Positive half cycle of the AC input voltage</span>
+
+<span style="color:#0000ff">During Negative half cycle of the AC input voltage</span>
+
+<span style="color:#0000ff">Negative half cycle</span>
+
+<span style="color:#ff0000">The diode only conducts when it is forward biased\, therefore\, only half of the AC voltage cycle passes through the diode\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_7.png)
+
+<span style="color:#c00000"> __Half Wave Rectifier__ </span>
+
+The  __DC Level Voltage__ :
+
+\( <span style="color:#0000cc">For ideal diode</span> \)
+
+The  __DC Level__  __ Voltage__ :
+
+\( <span style="color:#0000cc">For a practical silicon diode</span> \)
+
+_V_  _m_  _ _  _is the peak voltage_  _\, _
+
+_Vk_  _ is the diode voltage=0\.7_
+
+__Maximum Voltage __  __V__  __mo__
+
+For ideal diode             __V__  __mo__  __ =__  __V__  __m__
+
+For practical diode        __V__  __mo__  __ = __  __V__  __m__  __ – __  __V__  __k__
+
+__V__  __dc__  __=0\.318\(__  __V__  __m__  __ \- __  __Vk__  __\)__
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_8.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_9.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_10.png)
+
+__a\) Sketch the output __  _v_  _o_  _ _  __and determine the dc level of the output for the network__
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_11.png)
+
+__Vdc=0\.318\(__  __V__  __m__  __ \- __  __Vk__  __\)__
+
+_V_ dc  = 0\.318\( _V_  _m_  _ _ \- 0\.7 V\) =  0\.318\(19\.3 V\)=  __6\.14 V__
+
+__Maximum Output Voltage \(__  __V__  __mo__  __\):__
+
+_V_  _mo_  _ = _  _V_  _m_  _ – 0\.7=20\-0\.7=19\.3 V_
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_12.png)
+
+__a\) Sketch the output __  _v_  _o_  _ _  __and determine the dc level of the output for the network__
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_13.png)
+
+__V__  __dc__  __=0\.318\(__  __V__  __m__  __ \- __  __Vk__  __\)__
+
+_V_ dc  =\-\{0\.318\( _V_  _m_  _ _ \- 0\.7 V\)\} = \-\{0\.318\(19\.3 V\)\}= \- __6\.14 V__
+
+__Maximum Output Voltage \(__  __V__  __mo__  __\):__
+
+_V_  _mo_  _ = \-\(_  _V_  _m_  _ – 0\.7\)=\-\(20\-0\.7\)=\-19\.3 V_
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Full Wave Rectifier__ </span>
+
+<span style="color:#0000cc">F</span>  <span style="color:#0000cc">ull\-wave \(bridge\) rectifier consists of four diodes </span> connected between an ac voltage source and a load \(resistor  _R_ \) as shown\.
+
+A pair of  <span style="color:#ff0000">diodes </span>  <span style="color:#ff0000">\(</span>  <span style="color:#ff0000">𝐷</span>  <span style="color:#ff0000">2</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">and </span>  <span style="color:#ff0000">𝐷</span>  <span style="color:#ff0000">3</span>  <span style="color:#ff0000">\) allows current to flow during the positive half cycle </span> of the source voltage waveform\.
+
+The other pair of  <span style="color:#ff0000">diodes</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">\(</span>  <span style="color:#ff0000">𝐷</span>  <span style="color:#ff0000">1</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">and</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">𝐷</span>  <span style="color:#ff0000">4</span>  <span style="color:#ff0000">\)</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">allows</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">current</span>  <span style="color:#ff0000"> </span>  <span style="color:#ff0000">to flow during the negative half cycle </span> of the source voltage waveform\.
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_14.png)
+
+<span style="color:#336600">Why full bridge rectifier</span>  <span style="color:#336600">?</span>
+
+_Full\-wave bridge rectifier\._
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Full Wave Rectifier__ </span>
+
+<span style="color:#008000"> __Analysis I: __ </span>  <span style="color:#7030a0"> __Conduction for __ </span>  <span style="color:#7030a0"> _Positive half cycle_ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_15.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_16.png)
+
+_Conduction path for the positive region of v_  _i_  _\._
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Full Wave Rectifier__ </span>
+
+<span style="color:#008000"> __Analysis II: __ </span>  <span style="color:#7030a0"> __Conduction for __ </span>  <span style="color:#7030a0"> _Negative half cycle_ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_17.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_18.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#ff0000">a\) For a full\-wave rectifier with ideal diode\, what is </span>  <span style="color:#ff0000">the DC rectified signal when input AC signal has </span>  <span style="color:#ff0000">Vm</span>  <span style="color:#ff0000"> equal to 20V</span>  <span style="color:#ff0000">?</span>
+
+<span style="color:#c00000"> __Full Wave Rectifier__ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_19.png)
+
+<span style="color:#0000ff">	Vdc=2 \* 0\.318Vm</span>
+
+<span style="color:#0000ff">	Vdc= 0\.636Vm</span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_20.png)
+
+__Dc Level:__
+
+__Ideal diode:__
+
+__Practical Diode:  __  <span style="color:#0000ff"> __V__ </span>  <span style="color:#0000ff"> __dc__ </span>  <span style="color:#0000ff"> __=__ </span>  <span style="color:#0000ff"> __0\.636 __ </span>  <span style="color:#0000ff"> __\(__ </span>  <span style="color:#0000ff"> __V__ </span>  <span style="color:#0000ff"> __m__ </span>  <span style="color:#0000ff"> __ – 2Vk\)__ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_21.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_22.png)
+
+For full wave rectifier what will be the value of  DC voltage Vdc for practical silicon diode?
+
+<span style="color:#0000ff">Ans:</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Peak Inverse \(PIV\) Voltage for Half and Full Wave Rectifiers__ </span>
+
+Also known as peak reverse voltage \(PRV\)\.
+
+It is the voltage rating that must not be exceeded in the reverse\-bias region\, or the diode will enter the Zener avalanche region\.
+
+Very important parameter in design of diode circuits\.
+
+The reverse breakdown voltage rating of the diode should be high enough to withstand the peak\, reverse\-biasing AC voltage\.
+
+<span style="color:#336600"> __Full wave Rectifier__ </span>
+
+<span style="color:#ff0000"> __   __ </span>  <span style="color:#336600"> __Half wave Rectifier__ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_23.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_24.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_25.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_26.png)
+
+_V_  _m_  _ _ = Peak AC voltage
+
+<span style="color:#ff0000">\(Add 0\.7 V for practical silicon diode to the above equations\)</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Full Wave Rectifier__ </span>
+
+<span style="color:#7030a0">Example: Full wave rectifier</span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_27.png)
+
+A full\-wave bridge rectifier with a 120\-V  <span style="color:#ff0000">rms sinusoidal input </span> has a load resistor of  1kΩ\.
+
+If silicon diodes are employed\, what is the dc voltage available at the load?
+
+b\. Determine the required peak inverse voltage \(PIV\) rating of each diode\.
+
+c\. Find the maximum current through each diode during conduction\.
+
+d\. What is the required power rating of each diode?
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_28.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_29.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_30.png)
+
+<span style="color:#ff0000">Question 28 from the </span>  <span style="color:#ff0000"> Book</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#0000ff"> __Half Wave Transformer\-coupled Rectifier__ </span>
+
+The secondary voltage of transformer equals the turns ratio\,  _n_ \, times the primary voltage\.
+
+<span style="color:#339933"> __Half Wave Rectifier __ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_31.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_32.png)
+
+<span style="color:#ff0000">If </span>  <span style="color:#ff0000"> _n >_ </span>  <span style="color:#ff0000"> 1\, the secondary voltage is greater than the primary voltage\.</span>
+
+<span style="color:#ff0000"> If </span>  <span style="color:#ff0000"> _n<_ </span>  <span style="color:#ff0000">1\, the secondary voltage is less than the primary voltage\. </span>
+
+<span style="color:#ff0000">If </span>  <span style="color:#ff0000"> _n _ </span>  <span style="color:#ff0000">= 1\, then </span>  <span style="color:#ff0000"> _Vsec_ </span>  <span style="color:#ff0000"> _ _ </span>  <span style="color:#ff0000">= </span>  <span style="color:#ff0000"> _Vpri_ </span>  <span style="color:#ff0000">\, and the transformer is referred to as an isolation transformer\.</span>
+
+__Transformer coupling provides two advantages:__
+
+<span style="color:#008000">Voltage can be stepped up or down as needed\.</span>
+
+<span style="color:#008000">The ac source is electrically isolated from the rectifier\.</span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Other Rectifier Topologies Rectifier__ </span>
+
+<span style="color:#339933"> __Example: Half Wave Rectifier __ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_33.png)
+
+Determine the peak value of the output voltage  and VDC for the half wave rectifier below with RMS  input voltage of  <span style="color:#3333ff"> __V__ </span>  <span style="color:#3333ff"> __in\(rms\) __ </span>  <span style="color:#3333ff"> __of  240 V__ </span> \.
+
+<span style="color:#ff0000">Assume a practical silicon diode</span>
+
+<span style="color:#3333ff">Step 1: The transformer is step\-down of  </span>
+
+<span style="color:#3333ff">Step 2:  Convert </span>  <span style="color:#3333ff"> __V__ </span>  <span style="color:#3333ff"> __in\(__ </span>  <span style="color:#3333ff"> __rms__ </span>  <span style="color:#3333ff"> __\) __ </span>  <span style="color:#3333ff"> __of  240V __ </span>  <span style="color:#3333ff">into peak voltage : </span>
+
+<span style="color:#3333ff">Step 3:  Apply the transformer step down ratio of  n</span>
+
+<span style="color:#3333ff">                to get peak output voltage</span>  <span style="color:#3333ff">: </span>
+
+<span style="color:#3333ff">Step 4:  Compute the average DC output voltage </span>
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#0000ff"> __Full Wave Transformer\-coupled Rectifier__ </span>
+
+<span style="color:#336600"> __Operation During Positive half cycle __ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_34.png)
+
+<span style="color:#339933"> __Full  Wave Rectifier __ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_35.png)
+
+<span style="color:#336600"> __Operation During Negative half cycle __ </span>
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_36.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#c00000"> __Other Rectifier Topologies Rectifier__ </span>
+
+<span style="color:#339933"> __Example: Full Wave Transformer coupled Rectifier__ </span>
+
+Determine the peak output voltage for the bridge rectifier below\. Assuming the practical model\, what PIV rating is required for the diodes? The transformer is specified to have a  <span style="color:#ff0000">12 V rms secondary </span> voltage for the standard  <span style="color:#ff0000">120 V across the primary</span> \.
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_37.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_38.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_39.png)
+
+__What is the name of the circuit provided?__
+
+__Find __  __Vsec__  __\-m if n=3\, __  __Vpri__  __\-m=10V\.__
+
+__Find the dc level of the output\.__
+
+__Find the __  __Vmo__  __\.__
+
+__Sketch the output voltage\.__
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+<span style="color:#0000ff"> __Example:__ </span>
+
+__Find the output for the following inputs \(assuming ideal diodes\):__
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_40.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_41.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_42.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_43.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_44.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_45.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_46.png)
+
+::: {.notes}
+
+Explain the process as a self regulated system
+
+:::
+
+__Clipper Circuits:__
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_47.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_48.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_49.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_50.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_51.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_52.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_53.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_54.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_55.png)
+
+![](l3.2-diode-circuits-analysis-img/l32-diode-circuits-analysis_56.png)
+

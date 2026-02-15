@@ -1,0 +1,6 @@
+
+C_4 is the carry out obtained on overflow after an arithmetic operation in the adder circuit. The resultant overflow value after all arithmetic operations in the adder is assigned to C_4.
+
+C_0 stands for carry_in. It is assigned the carry out value obtained from other adder circuits.
+
+Together, they are used in the arithmetic operation of numbers larger than 4 bits. C_4 of one adder is used as input for the C_0 of another adder and so, act like an adder with more than 4 bits
