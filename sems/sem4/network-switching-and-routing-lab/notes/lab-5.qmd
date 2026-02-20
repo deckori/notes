@@ -1,0 +1,17 @@
+Set hostnames to the switches
+
+Shutdown all switch interfaces:
+
+```
+(config)#int range f0/1-24
+(config-if-range)#shut
+```
+
+Note:
+
+```
+S3(config-if-range)#channel-group 1 mode desirable
+%EC-5-L3DONTBNDL2: Fa0/21 suspended: PAGP currently not enabled on the remote port.
+%EC-5-L3DONTBNDL2: Fa0/22 suspended: PAGP currently not enabled on the remote port.
+Creating a port-channel interface Port-channel 1
+```
