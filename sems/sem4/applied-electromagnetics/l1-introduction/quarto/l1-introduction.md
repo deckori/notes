@@ -32,17 +32,11 @@ Watch the video <a href="https://youtu.be/lwfJPc-rSXw">https://youtu.be/lwfJPc-r
 
 {3}------------------------------------------------
 
-![](images/_page_3_Picture_0.jpeg)
-
 ## Plane-Wave Propagation in Lossless Media
 
 ![](images/_page_3_Figure_2.jpeg)
 
 https://empossible.net/wp-content/uploads/2018/03/Wave\_in\_Dielectric.gif
-
-1/7/2026
-
-4
 
 {4}------------------------------------------------
 
