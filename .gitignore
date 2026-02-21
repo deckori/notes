@@ -22,3 +22,5 @@ _build
 *main.pdf
 
 /.quarto/
+
+**/*.quarto_ipynb
