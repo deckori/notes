@@ -1,0 +1,16 @@
+# M3 Vlans
+
+1. what is untagged traffic in trunk links?
+2. Anything else i should remember about domains?
+  - VLANs in switches provide smaller broadcast domains
+  - Routers terminate a broadcast domain
+  - Hubs propogate broadcast domains
+3. does CDP mean  "Cisco Discovery Protocol"? (pg.19)
+  - ![](doubts-img/cdp.png){#fig-cdp align=center width=300 alt="cdp.png"}
+4. What is 802.1Q trunking?
+5. Is VTP "VLAN Trunk Protocol"?
+- ![](doubts-img/vtp.png){#fig-vtp align=center width=300 alt="vtp.png"}
+
+# 5 STP Concepts
+
+1. About the priority, is this true: if I had VLAN 20 , would extended system ID then be 20 , which results in a priority of 32789?
