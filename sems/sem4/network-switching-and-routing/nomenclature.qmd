@@ -1,0 +1,2 @@
+
+![](nomenclature-img/ieee-tag.png){#fig-ieee-tag align=center width=300 alt="ieee-tag.png"}
