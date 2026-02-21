@@ -1,0 +1,8 @@
+
+| Root Bridge          | Root Port                       | Designated Port | Alternate Port |
+| -------------------- | ------------------------------- | --------------- | -------------- |
+| Lowest Bridge ID     | Closest port to the root bridge |                 |                |
+| Lowest port priority | Lowest sender bridge ID         |                 |                |
+| Lowest MAC address   | Lowest sender port priority     |                 |                |
+|                      | Lowest sender port ID                                |                 |                |
+
