@@ -1,0 +1,3 @@
+- VLANs in switches provide smaller broadcast domains
+- Routers terminate a broadcast domain
+- Hubs propogate broadcast domains
