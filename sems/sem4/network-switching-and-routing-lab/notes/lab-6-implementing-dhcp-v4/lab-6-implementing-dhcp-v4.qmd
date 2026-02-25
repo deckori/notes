@@ -1,0 +1,53 @@
+---
+format: pdf
+---
+
+# Configure DHCPv4 server on a CISCO router
+
+
+## Mandatory global config for all DHCP pools:
+
+| Command                                                                      | Comments on command           |
+| ---------------------------------------------------------------------------- | ----------------------------- |
+| `(config)# ip dhcp excluded-address <ip address>`                             | Exclude a single ip address   |
+| `(config)# ip dhcp excluded-address <lowest ip address> <highest ip address>` | Exclude range of IP addresses |
+
+## DHCP pool specific config:
+
+### Mandatory config:
+
+| Command                                                   | Comments on command |
+| --------------------------------------------------------- | ------------------- |
+| `(config)# ip dhcp pool <name>`                           | Case sensitive      |
+| `(dhcp-config)# network <network adress> > <subnet mask>` |                     |
+| `(dhcp-config)# default-router <default gateway address>` |                     |
+
+### Optional config:
+
+| Command                                         | Comments on command |
+| ----------------------------------------------- | ------------------- |
+| `(dhcp-config)# dns-server <ip address>`        |                     |
+| `(dhcp-config)# domain-name <domain name>`      |                     |
+| `(dhcp-config)# lease <days> <hours> <minutes>` |                     |
+
+## Static routes
+
+`(config)# ip route <destination ip address> <subnet mask> <interface number like g0/0/1>`
+
+Configures the exit interface through which the packets, meant for the command specified destination, goes through to reach said destination.
+
+## Configure DHCP on router interface
+
+| Command                                                  | Comments on command              |
+| -------------------------------------------------------- | -------------------------------- |
+| `(config-if)# ip helper-address <DHCP server ip-address` | Enables DHCP on router interface |
+
+## Troubleshooting cmds
+
+| Command                          | Comments on command                                        |
+| -------------------------------- | ---------------------------------------------------------- |
+| `do <cmd>`                       | Allows running show cmds in any of the configuration modes |
+| `# sh ip route`                  |                                                            |
+| `# sh run \| section dhcp`       |                                                            |
+| `# sh ip dhcp binding`           | IPv4 to MAC address bindings list                          |
+| `# sh ip dhcp server statistics` | Count info about DHCP message exchanges                    |
