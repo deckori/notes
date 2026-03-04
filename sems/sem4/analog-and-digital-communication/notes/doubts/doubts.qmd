@@ -1,0 +1,5 @@
+# Misc
+
+1. In amplitude modulation, why do we add a constant voltage to the message signal before multiplying it with a carrier?
+2. Does the carrier signal always have an amplitude of 1? And $E_c$ always comes from adding a constant signal to the message before multiplication?
+  - ![](doubts-img/am.png){#fig-am align=center width=300 alt="am.png"}
