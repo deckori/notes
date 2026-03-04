@@ -4,31 +4,32 @@ format: pdf
 
 # Configure DHCPv4 server on a CISCO router
 
-
 ## Mandatory global config for all DHCP pools:
 
-| Command                                                                      | Comments on command           |
-| ---------------------------------------------------------------------------- | ----------------------------- |
-| `(config)# ip dhcp excluded-address <ip address>`                             | Exclude a single ip address   |
+| Command | Comments on command |
+|----|----|
+| `(config)# ip dhcp excluded-address <ip address>` | Exclude a single ip address |
 | `(config)# ip dhcp excluded-address <lowest ip address> <highest ip address>` | Exclude range of IP addresses |
 
 ## DHCP pool specific config:
 
 ### Mandatory config:
 
-| Command                                                   | Comments on command |
-| --------------------------------------------------------- | ------------------- |
-| `(config)# ip dhcp pool <name>`                           | Case sensitive      |
-| `(dhcp-config)# network <network adress> > <subnet mask>` |                     |
-| `(dhcp-config)# default-router <default gateway address>` |                     |
+| Command                                                   | Comments on command          |
+| --------------------------------------------------------- | ---------------------------- |
+| `(config)# ip dhcp pool <name>`                           | Case sensitive               |
+| `(dhcp-config)# network <network adress> > <subnet mask>` | Network assigned to the pool |
+| `(dhcp-config)# default-router <default gateway address>` |                              |
 
 ### Optional config:
 
 | Command                                         | Comments on command |
-| ----------------------------------------------- | ------------------- |
+|-------------------------------------------------|---------------------|
 | `(dhcp-config)# dns-server <ip address>`        |                     |
 | `(dhcp-config)# domain-name <domain name>`      |                     |
 | `(dhcp-config)# lease <days> <hours> <minutes>` |                     |
+
+Domain name of the device tell us which network it belongs to. DNS translated name is different from this.
 
 ## Static routes
 
@@ -38,16 +39,18 @@ Configures the exit interface through which the packets, meant for the command s
 
 ## Configure DHCP on router interface
 
-| Command                                                  | Comments on command              |
-| -------------------------------------------------------- | -------------------------------- |
-| `(config-if)# ip helper-address <DHCP server ip-address` | Enables DHCP on router interface |
+`(config-if)# ip helper-address <DHCP server ip-address> <nth DHCP server ip-address>(optional)`
+
+Points the interface to a DHCP server address. We can add multiple helper-addresses. If we want to remove a specific helper-address, we prefix the configuration command for the address with `no`, as in:
+
+`(config-if)# no ip helper-address <DHCP server ip-address>`
 
 ## Troubleshooting cmds
 
-| Command                          | Comments on command                                        |
-| -------------------------------- | ---------------------------------------------------------- |
-| `do <cmd>`                       | Allows running show cmds in any of the configuration modes |
-| `# sh ip route`                  |                                                            |
-| `# sh run \| section dhcp`       |                                                            |
-| `# sh ip dhcp binding`           | IPv4 to MAC address bindings list                          |
-| `# sh ip dhcp server statistics` | Count info about DHCP message exchanges                    |
+| Command | Comments on command |
+|----|----|
+| `do <cmd>` | Allows running show cmds in any of the configuration modes |
+| `# sh ip route` |  |
+| `# sh run \| section dhcp` |  |
+| `# sh ip dhcp binding` | IPv4 to MAC address bindings list |
+| `# sh ip dhcp server statistics` | Count info about DHCP message exchanges |
