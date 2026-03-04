@@ -1,7 +1,8 @@
 \documentclass{article}
 
 \usepackage{amsmath}
-\usepackage{outlines}
+\usepackage{outlines, booktabs, array}
+\usepackage[margin=0.5in]{geometry}
 
 \begin{document}
 
@@ -11,6 +12,18 @@ L1
 	\1 $P \propto \frac{1}{f}$
 	\1 Euler's Identity: $e^{\pm j\theta} = \cos \theta \pm j\sin\theta$
 \end{outline}
+
+L2:
+
+\begin{table}
+	\centering
+	\begin{tabular}{l|cc}
+		\textbf{TL type} & \textbf{Conductor} & \textbf{Dielectric} \\ \bottomrule
+		Lossless         & Perfect            & Lossless            \\
+		Distortionless   & Imperfect          & Lossless            \\
+		Lossy            & Imperfect          & Lossy               \\
+	\end{tabular}
+\end{table}
 
 Misc
 
@@ -37,8 +50,6 @@ Misc
 	\1 $\lambda = \frac{V_p}{f}$
 
 	\1 Electrical length, $l_e = \beta l$
-
-	\2 Unit: rad
 	\2 $l$ is the physical length
 
 	\1 $\beta = \dfrac{2 \pi}{\lambda}$
@@ -57,5 +68,49 @@ Math
 \begin{outline}
 	\1 $x \angle \theta = x e^{j\theta}$
 \end{outline}
+
+
+Units:
+
+\begin{table}
+	\centering
+	\begin{tabular}{lccl} \toprule
+		\textbf{Quantity Name}      & \textbf{Symbol} & \textbf{SI Unit Suffix} & \textbf{SI Unit}  \\ \midrule
+		Speed of Light              & $c$             & m/s                     & Meters per second \\ \midrule
+		Permittivity                & $\epsilon_o$    & F/m                     & Farads per meter  \\ \midrule
+		Permeability                & $\mu_o$         & H/m                     & Henries per meter \\ \midrule
+		Resistance per unit length  & $R'$            & $\Omega$/m              & Ohms per meter    \\ \midrule
+		Inductance per unit length  & $L'$            & H/m                     & Henries per meter \\ \midrule
+		Conductance per unit length & $G'$            & S/m                     & Siemens per meter \\ \midrule
+		Capacitance per unit length & $C'$            & F/m                     & Farads per meter  \\ \midrule
+		Propagation Constant        & $\gamma$        & $m^{-1}$                & Per meter         \\ \midrule
+		Attenuation Constant        & $\alpha$        & Np/m                    & Nepers per meter  \\ \midrule
+		Phase Constant              & $\beta$         & rad/m                   & Radians per meter \\ \midrule
+		Characteristic Impedance    & $Z_o$           & $\Omega$                & Ohms              \\ \midrule
+		Phase Velocity              & $v_p$           & m/s                     & Meters per second \\ \midrule
+		Wavelength                  & $\lambda$       & m                       & Meters            \\ \midrule
+		Electric Field Intensity    & $E$             & V/m                     & Volts per meter   \\ \midrule
+		Magnetic Field Intensity    & $H$             & A/m                     & Amperes per meter \\ \midrule
+		Magnetic Flux Density       & $B$             & T                       & Tesla             \\ \midrule
+		Capacitance                 & $C$             & F                       & Farads            \\ \midrule
+		Resistance                  & $R$             & $\Omega$                & Ohms              \\ \midrule
+		Power                       & $P$             & W                       & Watts             \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\pagebreak
+
+Topic 4 Electrostatics
+
+\begin{table}
+	\centering
+	\begin{tabular}{lccl} \toprule
+		\textbf{Quantity Name} & \textbf{Symbol} & \textbf{SI Unit Suffix} & \textbf{SI Unit} \\ \midrule
+		Line Charge Density    & $\rho_\text{L}$ & $C/m$                                      \\ \midrule
+		Surface Charge Density & $\rho_\text{S}$ & $C/m^2$                                    \\ \midrule
+		Volume Charge Density  & $\rho_\text{V}$ & $C/m^3$                                    \\ \midrule
+		\bottomrule
+	\end{tabular}
+\end{table}
 
 \end{document}
