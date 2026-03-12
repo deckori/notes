@@ -33,7 +33,7 @@ Domain name of the device tell us which network it belongs to. DNS translated na
 
 ## Static routes
 
-`(config)# ip route <destination ip address> <subnet mask> <interface number like g0/0/1>`
+`(config)# ip route <destination network address> <subnet mask> <interface number like g0/0/1> <Forwarding router's address>`
 
 Configures the exit interface through which the packets, meant for the command specified destination, goes through to reach said destination.
 
