@@ -1,0 +1,6 @@
+
+1. 
+  - ![](doubts-img/charge-density.png){#fig-charge-density align=center width=300 alt="charge-density.png"}
+2. How did the following expand as such?
+  - ![](doubts-img/electric-field-spherical.png){#fig-electric-field-spherical align=center width=300 alt="electric-field-spherical.png"}
+3. For $D_{1n} - D_{2n} = \rho_S$, which is identified as 1 and 2 in a given question?
