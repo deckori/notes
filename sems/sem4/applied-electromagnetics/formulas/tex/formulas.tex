@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{book}
 
 \usepackage{amsmath}
 \usepackage{outlines, booktabs, array}
@@ -9,7 +9,7 @@
 L1
 
 \begin{outline}
-	\1 $P \propto \frac{1}{f}$
+	\1 $P \propto \dfrac{1}{f}$
 	\1 Euler's Identity: $e^{\pm j\theta} = \cos \theta \pm j\sin\theta$
 \end{outline}
 
@@ -29,25 +29,25 @@ Misc
 
 \begin{outline}
 	\1 $c = f\lambda$
-	\1 $t' = \frac{l}{c}$, derived from v = m/s
-	\1 $\phi_0=\frac{\omega l}{c}=\frac{2\pi fl}{c}=2\pi\frac{l}{\lambda}\quad\mathrm{radians}$
-	\1 The concept of transmission lines takes affect when, $\frac{l}{\lambda} \geq 0.01$
+	\1 $t' = \dfrac{l}{c}$, derived from v = m/s
+	\1 $\phi_0=\dfrac{\omega l}{c}=\dfrac{2\pi fl}{c}=2\pi\dfrac{l}{\lambda}\quad\mathrm{radians}$
+	\1 The concept of transmission lines takes affect when, $\dfrac{l}{\lambda} \geq 0.01$
 
-	\1 $C = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} = 3 \times 10^8 \, \text{m} \cdot \text{s}^{-1}$
+	\1 $C = \dfrac{1}{\sqrt{\mu_0 \varepsilon_0}} = 3 \times 10^8 \, \text{m} \cdot \text{s}^{-1}$
 
-	\1 $V_p = \frac{1}{\sqrt{\mu \varepsilon}} = \frac{1}{\sqrt{\mu_0 \mu_r \varepsilon_0 \varepsilon_r}}$
+	\1 $V_p = \dfrac{1}{\sqrt{\mu \varepsilon}} = \dfrac{1}{\sqrt{\mu_0 \mu_r \varepsilon_0 \varepsilon_r}}$
 
 	For non-magnetic materials or mediums (if material or medium is not stated, it can be assumed to be non-magnetic material or medium), $\mu_r = 1$. If $\mu_r$ is not 1, it'll be stated.
 
-	$= \frac{1}{\sqrt{\mu_0 \varepsilon_0} \sqrt{\varepsilon_r}} = \frac{c}{\sqrt{\varepsilon_r}}$
+	$= \dfrac{1}{\sqrt{\mu_0 \varepsilon_0} \sqrt{\varepsilon_r}} = \dfrac{c}{\sqrt{\varepsilon_r}}$
 
 	\1 $
 		V_p
-		= \frac{c}{\sqrt{\varepsilon_r}}
-		= \frac{f\lambda}{\sqrt{\varepsilon_r}}
+		= \dfrac{c}{\sqrt{\varepsilon_r}}
+		= \dfrac{f\lambda}{\sqrt{\varepsilon_r}}
 	$
 
-	\1 $\lambda = \frac{V_p}{f}$
+	\1 $\lambda = \dfrac{V_p}{f}$
 
 	\1 Electrical length, $l_e = \beta l$
 	\2 $l$ is the physical length
@@ -100,15 +100,90 @@ Units:
 
 \pagebreak
 
-Topic 4 Electrostatics
+\chapter*{Topic 4 Electrostatics}
 
+\begin{outline}
+	\1 $\rho_V = \dfrac{dq}{dV}$
+	\1 $\rho_s = \dfrac{dq}{ds}$
+	\1 $\rho_l = \dfrac{dq}{dl}$
+	\1 General Maxwell equations
+	\2 $\nabla\cdot\mathbf{D}  =\rho_{\mathrm{v}}$
+	\2 $\mathrm{V \times E}  =-\dfrac{\partial\mathbf{B}}{\partial t}$
+	\2 $\nabla\cdot\mathbf{B}  =0$
+	\2 $\mathrm{V \times H}  =\mathbf{J}+\dfrac{\partial\mathbf{D}}{\partial t}$
+	\1 Electrostatics Maxwell equations
+	\2 $\nabla \cdot \mathbf{D} = \rho_{\mathrm{v}}$
+	\2 $\nabla \times \mathbf{E} = 0$
+	\1 Magnetostatics Maxwell equations
+	\2 $\nabla \cdot \mathbf{B} = 0$
+	\2 $\nabla \times \mathbf{H} = \mathbf{J}$
+	\1 $\vec{J} = \rho_V \vec{u}$
+	\1 $\vec{F} = q^\prime \vec{E}$
+	\1 $\vec{D} = \epsilon \vec{E}$
+	\1 $\vec{D} = \dfrac{\Psi}{\text{Surface Area}}$
+	\1 $dV = \dfrac{dW}{q} = -\mathbf{E} \cdot d\mathbf{l}$
+	\1 For any scalar quantity, $A$:
+	$dA = \nabla A \cdot d\mathbf{l}$
+
+	The symbol  $\nabla$, the greek letter nabla,  is called the del or gradient operator and is defined as
+
+	$$\nabla = \hat{\mathbf{x}} \dfrac{\partial}{\partial x} + \hat{\mathbf{y}} \dfrac{\partial}{\partial y} + \hat{\mathbf{z}} \dfrac{\partial}{\partial z} \qquad \text{(Cartesian)}$$
+
+	\1 Laplacian cross product example
+	\begin{equation*}
+		\nabla \times \mathbf{B} =
+		\begin{vmatrix}
+			\mathbf{\hat{x}}            & \mathbf{\hat{y}}            & \mathbf{\hat{z}}            \\
+			\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+			B_x                         & B_y                         & B_z
+		\end{vmatrix}
+		= \mathbf{\hat{x}} \left( \frac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} \right) - \mathbf{\hat{y}} \left( \frac{\partial B_z}{\partial x} - \frac{\partial B_x}{\partial z} \right) + \mathbf{\hat{z}} \left( \frac{\partial B_y}{\partial x} - \frac{\partial B_x}{\partial y} \right)
+	\end{equation*}
+
+	\1 $\vec{E} = - \nabla V$
+	\1 $\vec{p} = q \cdot \vec{d}$
+	\1 $\vec{P} = \epsilon_0 \chi_e \vec{E}$
+	\1 $\epsilon_r = 1+\chi_e$
+	\1 Electric Susceptibility, $\chi_e = \dfrac{\text{Bound charge density}}{\text{Free charge density}}$
+	\1 In an electric field polarized dielectric material, $\vec{D} = \epsilon_0 \vec{E} + \vec{P} = \epsilon_0 \vec{E} +  \epsilon_0 \chi_e \vec{E} = \epsilon_0 (1+\chi_e)E = \epsilon E$
+	\2 $\vec{D} = \epsilon_0 \vec{E} + \vec{P}$
+	\1 Boundary Conditions. At a system of a sphere of some material (area 1), surrounded by some material (area 2)
+	\2 $E_{1t} = E_{2t}$
+	\2 $\dfrac{D_{1t}}{\epsilon_0} = \dfrac{D_{2t}}{\epsilon_0}$
+	\2 $D_{1n} - D_{2n} = \rho_S$
+	\1 $V_{br} = E_{ds}d$
+	\1 $E = \dfrac{Q}{\epsilon A}$
+	\1 $C = \dfrac{Q}{V} = \dfrac{Q}{Ed} = \dfrac{\epsilon A}{d}$
+\end{outline}
+
+In a perfect conductor that has an applied electric field, inside the conductor $E_{\text{net}} = 0$
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|l|c|cc|}
+		\hline
+		\textbf{Field Component} & \textbf{Any Two Media}                                          & \begin{tabular}[c]{@{}c@{}}\textbf{Medium 1}\\\textbf{Dielectric $\varepsilon_1$}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Medium 2}\\\textbf{Conductor}\end{tabular} \\ \hline \hline
+		{\textbf{Tangential E}}  & $\mathbf{E}_{1t} = \mathbf{E}_{2t}$                             & \multicolumn{2}{c|}{$\mathbf{E}_{1t} = \mathbf{E}_{2t} = 0$}                                                                                                                   \\ \hline
+		{\textbf{Tangential D}}  & $\mathbf{D}_{1t}/\varepsilon_1 = \mathbf{D}_{2t}/\varepsilon_2$ & \multicolumn{2}{c|}{$\mathbf{D}_{1t} = \mathbf{D}_{2t} = 0$}                                                                                                                   \\ \hline
+		{\textbf{Normal E}}      & $\varepsilon_1 E_{1n} - \varepsilon_2 E_{2n} = \rho_s$          & $E_{1n} = \rho_s/\varepsilon_1$                                                                & $E_{2n} = 0$                                                                  \\ \hline
+		{\textbf{Normal D}}      & $D_{1n} - D_{2n} = \rho_s$                                      & $D_{1n} = \rho_s$                                                                              & $D_{2n} = 0$                                                                  \\ \hline
+	\end{tabular}
+\end{table}
+
+\noindent \textbf{Notes:} (1) $\rho_s$ is the surface charge density at the boundary; (2) normal components of $\mathbf{E}_1, \mathbf{D}_1, \mathbf{E}_2,$ and $\mathbf{D}_2$ are along $\mathbf{\hat{n}}_2$, the outward normal unit vector of medium 2.
 \begin{table}
 	\centering
 	\begin{tabular}{lccl} \toprule
 		\textbf{Quantity Name} & \textbf{Symbol} & \textbf{SI Unit Suffix} & \textbf{SI Unit} \\ \midrule
-		Line Charge Density    & $\rho_\text{L}$ & $C/m$                                      \\ \midrule
-		Surface Charge Density & $\rho_\text{S}$ & $C/m^2$                                    \\ \midrule
-		Volume Charge Density  & $\rho_\text{V}$ & $C/m^3$                                    \\ \midrule
+		Line Charge Density    & $\rho_\text{L}$ & $C/m$                   &                  \\ \midrule
+		Surface Charge Density & $\rho_\text{S}$ & $C/m^2$                 &                  \\ \midrule
+		Volume Charge Density  & $\rho_\text{V}$ & $C/m^3$                 &                  \\ \midrule
+		Current Density        & $\vec{J}$       & $A/m^2$                 &                  \\ \midrule
+		Electric field         & $\vec{E}$       & N/C = V/m               &                  \\ \midrule
+		Electric Force         & $\vec{F}$       & N                       &                  \\ \midrule
+		Electric Flux Density  & $\vec{D}$       & $C/m^2$                 &                  \\ \midrule
+		Electric Flux          & $\Psi$          & C                       &                  \\
 		\bottomrule
 	\end{tabular}
 \end{table}
