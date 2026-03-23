@@ -1,0 +1,1271 @@
+---
+title: "L4 Electrostatics"
+---
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page1' class='markdown-page-text'>[ 第1页 ]</span>---------------------------------------------</span><br><br>
+
+![](images/ade1924166ab3c0848f45b7a154a90f30092dbbf68c0bb6af8b28faae619e73f_59.jpg){width=59%} Figure!
+
+Electrostatics:
+
+$\nabla \cdot \mathbf{D} = \rho_{\mathrm{v}}$
+$\nabla \times \mathbf{E} = 0$
+
+Magnetostatics
+
+$\nabla \cdot \mathbf{B} = 0$
+$\nabla \times \mathbf{H} = \mathbf{J}$
+
+Electric and magnetic fields become decoupled in the static case.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page3' class='markdown-page-text'>[ 第3页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+The following vector fields are given in free space:
+
+(1) $\mathbf{A}_{1}=\hat{\mathbf{x}} x$, (2) $\mathbf{A}_{2}=\hat{\mathbf{x}} 5$, (3) $\mathbf{A}_{3}=\mathbf{A}_{1}+\mathbf{A}_{2}=\hat{\mathbf{x}}\left(x+5\right)$
+
+Are these electrostatic fields?
+
+# Electrostatics
+
+| $\nabla \cdot \mathbf{D} = \rho_{\mathrm{v}} , (4.2a)$ |
+| --- |
+| $\nabla \times \mathbf{E} = 0 . (4.2b)$ |
+
+$\nabla \cdot \mathbf{A}_{1}=\frac{\partial A_{x}}{\partial x}+\frac{\partial A_{y}}{\partial y}+\frac{\partial A_{z}}{\partial z}=\frac{d(x)}{dx}=1, \nabla \cdot \mathbf{A}_{2}=0, \nabla \cdot \mathbf{A}_{3}=1$
+
+$\nabla \times \mathbf{A}_{1}=\hat{\mathbf{x}}\left(\frac{\partial A_{z}}{\partial y}-\frac{\partial A_{y}}{\partial z}\right)+\hat{\mathbf{y}}\left(\frac{\partial A_{x}}{\partial z}-\frac{\partial A_{z}}{\partial x}\right)+\hat{\mathbf{z}}\left(\frac{\partial A_{y}}{\partial x}-\frac{\partial A_{x}}{\partial y}\right)=\hat{\mathbf{x}}(0-0)+\hat{\mathbf{y}}\left(\frac{\partial(\mathbf{x})}{\partial z}-0\right)+\hat{\mathbf{z}}\left(0-\frac{\partial(\mathbf{x})}{\partial y}\right)=$
+
+$\nabla \times \mathbf{A}_{2}=0, \nabla \times \mathbf{A}_{3}=0$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page4' class='markdown-page-text'>[ 第4页 ]</span>---------------------------------------------</span><br><br>
+
+# Charge Distributions
+
+Volume charge density:
+
+$$
+\rho _ { \mathrm { v } } = \operatorname* { l i m } _ { \Delta \mathcal { V } \rightarrow 0 } \frac { \Delta q } { \Delta \mathcal { V } } = \frac { d q } { d \mathcal { V } }  ( \mathrm { C / m ^{3} } )
+$$
+
+Total Charge in a Volume
+
+$$
+Q = \int _ { V } \rho _ { v } ~ d V  ( C )
+$$
+
+Surface and Line Charge Densities
+
+$$
+\begin{array}{rl} & { \rho _ { s } = \operatorname* { l i m } _ { \Delta s \to 0 } \frac { \Delta q } { \Delta s } = \frac { d q } { d s }  ( C / \mathrm { m ^{2} } ) } \\& { \rho _ { \ell } = \operatorname* { l i m } _ { \Delta l \to 0 } \frac { \Delta q } { \Delta l } = \frac { d q } { d l }  ( C / \mathrm { m } ) } \end{array}
+$$
+
+![](images/6368e28173a24e9cc7c0bd09c9f832723f86afbba10f6b4ed91960f297fcb508_26.jpg){width=26%} (a) Line charge distribution
+
+![](images/ce420d3a46379e319ae7d58f773e17f165168a5e1e670520ec112a9de491ca04_39.jpg){width=39%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page5' class='markdown-page-text'>[ 第5页 ]</span>---------------------------------------------</span><br><br>
+
+# Charge Distribution - Summary
+
+| Charge Distribution | Charge Density Units Total Charge |
+| --- | --- |
+| point charge | Q C Q total =Q • Q |
+| line charge | p L C/m C/m 1 =I/p L dI ' /p J. |
+| surface charge | P S C/m 2 Q total =I/s |
+| volumenumber | $ρ V C/m 3 Q total =I/s$ |
+| charge | $l 2 ds ' ρ S$ |
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page6' class='markdown-page-text'>[ 第6页 ]</span>---------------------------------------------</span><br><br>
+
+# Charge Distribution - Summary
+
+$$
+\begin{aligned} \mathbf { U n i f o r m ~ l i n e ~ c h a r g e } & ( p _ { L } = \mathrm { c o n s t a n t ) } \\& Q _ { t o t a l } = \int p _ { L } d I ^{\prime} = p _ { L } \int d I ^{\prime} = p _ { L } L _ { o }  \rightarrow  p _ { L } = \frac { Q _ { t o t a l } } { L _ { o } } \\& ( L _ { o } = \mathrm { t o t a l ~ l i n e ~ l e n g t h } ) \end{aligned}
+$$
+
+Uniform surface charge ($p_{s}=$ constant)
+
+$$
+\begin{array}{c} { { Q _ { t o t a l } = \iint p _ { s } \, d s ^{\prime} = p _ { s } \iint d s ^{\prime} = p _ { s } A _ { o }  \rightarrow  P _ { S } = \frac { Q _ { t o t a l } } { A _ { o } } } } \\{ { ( A _ { o } = \mathrm { t o t a l ~ s u r f a c e ~ a r e a } ) } } \end{array}
+$$
+
+Uniform volume charge ($\rho_{\nu}=\mathrm{constant}$)
+
+$$
+{ \cal L } _ { t o t a l } = \iiint _ { V }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page7' class='markdown-page-text'>[ 第7页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 4-1
+
+Calculate the total charge $Q$ contained in a cylindrical tube oriented along the z axis as shown in Fig. 4-1(a). The line charge density is $\rho = 2z$, where z is the distance in meters from the bottom end of the tube. The tube length is 10 cm.
+
+# Solution:
+
+The total charge $Q$ is
+
+$$
+Q = \int _ { 0 } ^{0 . 1} \rho _ { \ell } \; d z = \int _ { 0 } ^{0 . 1} 2 z \; d z = z ^{2} \bigg | _ { 0 } ^{0 . 1} = 10 ^{- 2} \; C .
+$$
+
+![](images/71d453643238475ac654a8db58a566da29a7fdd0b33928638837def460b09794_24.jpg){width=24%} (a) Line charge distribution
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page8' class='markdown-page-text'>[ 第8页 ]</span>---------------------------------------------</span><br><br>
+
+# Current Density
+
+The amount of charge that crosses the tube's cross-sectional surface $\Delta s'$ in time $\Delta t$ is
+
+$$
+\Delta q ^{\prime} = \rho _ { \mathrm { v } } ~ \Delta \mathcal { V } = \rho _ { \mathrm { v } } ~ \Delta l ~ \Delta s ^{\prime} = \rho _ { \mathrm { v } } u ~ \Delta s ^{\prime} ~ \Delta t .
+$$
+
+# For a surface with any orientation:
+
+$$
+\Delta q \, = \, \rho _ { \mathrm { v } } \mathbf { u } \cdot \Delta s \, \Delta t ,
+$$
+
+where $\Delta s = \hat{\mathbf{n}} \, \Delta s$ and the corresponding total current flowing in the tube is
+
+$$
+\Delta I = \frac { \Delta q } { \Delta t } = \rho _ { \mathrm { v } } \mathbf { u } \cdot \Delta s = \mathbf { J } \cdot \Delta s ,
+$$
+
+where
+
+$$
+\mathbf { J } = \rho _ { \mathrm { v } } \mathbf { u }  ( \mathrm { A / m ^{2} ) }  ( 4 . 11 )
+$$
+
+# J is called the current density
+
+![](images/b7ec516984033ba5b9cb23c8f31c3233d2c3531d907f1a6e2f3e60dacb7ab769_41.jpg){width=41%} Figure 4-2: Charges with velocity $\mathbf{u}$ moving through a cross section $\Delta s'$ in (a) and $\Delta s$ in (b).
+
+$$
+I = \int { \bf J } \cdot d s  ( { \bf A } ) .  ( 4 . 12 )
+$$
+
+When a current is due to the actual movement of electrically charged matter, it is called a convection current, and $\mathbf{J}$ is called a convection current density.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page9' class='markdown-page-text'>[ 第9页 ]</span>---------------------------------------------</span><br><br>
+
+# Convection vs. Conduction
+
+When a current is due to the actual movement of electrically charged matter, it is called a convection current, and $\mathbf{J}$ is called a convection current density.
+
+This movement of electrons from atom to atom constitutes a conduction current. The electrons that emerge from the wire are not necessarily the same electrons that entered the wire at the other end.
+
+Conduction current, which is discussed in more detail in Section 4-6, obeys Ohm's law, whereas convection current does not.
+
+![](images/b1882bc8a6827fa2cebc4e570a4f02ac73c31ea1df0ee59015536ba018c62996_44.jpg){width=44%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page10' class='markdown-page-text'>[ 第10页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Calculate the convection current when electron density of 200 ($\mu$C/m$^{3}$) is travelling at a speed of 12m/s.
+
+Answer:
+
+The convection current density is given by, $J = \rho_{\mathrm{v}}u$
+
+$\bullet$J = 200 X 12=2.4 (mA/m$^{2}$).
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page11' class='markdown-page-text'>[ 第11页 ]</span>---------------------------------------------</span><br><br>
+
+# Coulomb's Law
+
+Electric field at point P due to single charge
+
+$$
+\mathbf { E } = \hat { \mathbf { R } } ~ \frac { q } { 4 \pi \varepsilon R ^{2} } ~ ~ ~ ~ ~ ~ ( \mathrm { V / m } )
+$$
+
+where $\mathbf{R}^{\wedge}$ is a unit vector pointing from $q$ to $P$, $R$ is the distance between them, and $\hat{}$ is the electrical permittivity of the medium containing the observation point $P$.
+
+Electric force on a test charge placed at $P$
+
+$$
+\mathbf { F } = q ^{\prime} \mathbf { E }
+$$
+
+With F measured in newtons (N) and $q$ in coulombs (C), the unit of E is (N/C), which will be shown later to be the same as volt per meter (V/m).
+
+![](images/02b3768bdba9c0a0db107ca400ab6b06530ec7e768743ae0a0eaa85e77a809e8_35.jpg){width=35%} Figure 4-3: Electric-field lines due to a charge $q$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page12' class='markdown-page-text'>[ 第12页 ]</span>---------------------------------------------</span><br><br>
+
+# Coulomb's Law- Electric Field
+
+According to Coulomb's law, $F$ between two point charges is directly proportional to the product of the two charges.
+
+Alternatively, we may view each point charge as producing a force field around it (electric field) which is proportional to the point charge magnitude.
+
+The force per unit charge experienced by the test charge Q is defined as the electric field at the point P.
+
+Given our convention of using a positive test charge, the direction of the vector electric field is the direction of the force on positive charge.
+
+A convention has been chosen where the source coordinates (location of the source charge) are defined by primed coordinates while the field coordinates (location of the field point) are defined by unprimed coordinates.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page13' class='markdown-page-text'>[ 第13页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Field. Cont'd
+
+The vector electric field intensity $E$ at r (force per unit charge) is found by dividing the Coulomb force equation by the test charge Q.
+
+$$
+E ( \pmb { r } ) \equiv \frac { F ( \pmb { r } ) } { Q } = \frac { Q ^{\prime} ( \pmb { r } - \pmb { r } ^{\prime} ) } { 4 \, \pi \epsilon _ { o } \left| \pmb { r } - \pmb { r } ^{\prime} \right| ^{3} } \; ( \mathrm { N / C } )
+$$
+
+Note: -
+
+$E$ produced by Q is independent of the magnitude of the test charge Q.
+
+$$
+\begin{array}{rl} { \bullet } & { { } \frac { \mathrm { N } } { \mathrm { C } } = \frac { \mathrm { J } / \mathrm { m } } { \mathrm { C } } = \frac { \mathrm { J } / \mathrm { C } } { \mathrm { m } } = \frac { \mathrm { V } } { \mathrm { m } } } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page14' class='markdown-page-text'>[ 第14页 ]</span>---------------------------------------------</span><br><br>
+
+For the special case of a point charge at the origin ($r'=0$), the electric field reduces to :
+
+$$
+E ( r ) = \frac { Q ^{\prime} r } { 4 \pi \epsilon _ { o } \left| r \right| ^{3} } = \frac { Q ^{\prime} } { 4 \pi \epsilon _ { o } r ^{2} } a _ { r } \; \; ( \mathrm { V / m } )
+$$
+
+![](images/2a27fdacd45445ac1ef168da258a435ff09885ce3efb82dbbc26f45ec8f2eb05_77.jpg){width=77%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page15' class='markdown-page-text'>[ 第15页 ]</span>---------------------------------------------</span><br><br>
+
+# Coulomb's Law
+
+# Electric flux density D
+
+$\mathbf{D}=\varepsilon\mathbf{E}$ with $\varepsilon=\varepsilon_{r}\varepsilon_{0}$,
+
+Where $\varepsilon_{0}=8.85 \times 10^{-12} \approx (1 / 36 \pi) \times 10^{-9}$ (F/m) is the electrical permittivity of free space, and $\varepsilon_{\mathrm{r}}$ is called the relative permittivity (or dielectric constant) of the material. For most materials and under a wide range of conditions, $\varepsilon$ is independent of both the magnitude and direction of E
+
+If $\varepsilon$ is independent of the magnitude of $\mathbf{E}$, then the material is said to be linear because $\mathbf{D}$ and $\mathbf{E}$ are related linearly, and if it is independent of the direction of $\mathbf{E}$, the material is said to be isotropic.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page16' class='markdown-page-text'>[ 第16页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Field Due to Multiple Point Charges
+
+The electric field $\mathbf{E}$ is to be evaluated at a point $P$ with position vector $\mathbf{R}$. At $P$, the electric field $\mathbf{E}_{1}$ due to $q_{1}$ alone is given by Eq. (4.13) with $R$, the distance between $q_{1}$ and $P$, replaced with $|\mathbf{R}-\mathbf{R}_{1}|$ and the unit vector $\hat{}^{\wedge}\mathbf{R}$ replaced with $(\mathbf{R}-\mathbf{R=})/|\mathbf{R}-\mathbf{R}_{1}|$. $\mathbf{E}=\hat{\mathbf{R}}\frac{q}{4\pi\varepsilon R^{2}}$ (V
+
+$$
+\mathbf { E } _ { 1 } = \frac { q _ { 1 } ( \mathbf { R } - \mathbf { R } _ { 1 } ) } { 4 \pi \epsilon | \mathbf { R } - \mathbf { R } _ { 1 } | ^{3} }  \mathrm { ( V / m ) . }
+$$
+
+$$
+\mathbf { E } _ { 2 } = \frac { q _ { 2 } ( \mathbf { R } - \mathbf { R } _ { 2 } ) } { 4 \pi \epsilon | \mathbf { R } - \mathbf { R } _ { 2 } | ^{3} }  \mathrm { ( V / m ) . }
+$$
+
+$$
+\begin{array}{rl} & { \mathbf { E } = \mathbf { E } _ { 1 } + \mathbf { E } _ { 2 } } \\& { = \frac { 1 } { 4 \pi \epsilon } \left[ \frac { q _ { 1 } ( \mathbf { R } - \mathbf { R } _ { 1 } ) } { | \mathbf { R } - \mathbf { R } _ { 1 } | ^{3} } + \frac { q _ { 2 } ( \mathbf { R } - \mathbf { R } _ { 2 } ) } { | \mathbf { R } - \mathbf { R } _ { 2 } | ^{3} } \right] . } \end{array}
+$$
+
+$$
+\mathbf { E } = \frac { 1 } { 4 \pi \epsilon } \sum _ { i = 1 } ^{N} \frac { q _ { i } ( \mathbf { R } - \mathbf { R } _ { i } ) } { | \mathbf { R } - \mathbf { R } _ { i } | ^{3} }  \mathrm { ~ ( V / m ) . }
+$$
+
+# Electric force on a test charge placed at $P$
+
+![](images/2b812219905162ca7aaa0ffe9c9b0275b3b331c5aab642cee6ab8c70a73ae75e_44.jpg){width=44%} Figure 4-4 The electric field E at $P$ due to two charges is equal to the vector sum of $\mathbf{E}_1$ and $\mathbf{E}_2$.
+
+$$
+\mathbf { F } = q ^{\prime} \mathbf { E }  ( \mathrm { N } )
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page17' class='markdown-page-text'>[ 第17页 ]</span>---------------------------------------------</span><br><br>
+
+# Example: Electric Field Due to Two Point Charges
+
+Two point charges with $q1 = 2 \times 10^{-5}$ C and $q2 = -4 \times 10^{-5}$ C are located in free space at points with Cartesian coordinates $(1, 3, -1)$ and $(-3, 1, -2)$, respectively. Find (a) the electric field E at $(3, 1, -2)$ and (b) the force on a $8 \times 10^{-5}$ C charge located at that point. All distances are in meters.
+
+# Solution:
+
+(a) From Eq. (4.18), the electric field E with $\varepsilon$= $\varepsilon_{0}$ (free space) is
+
+$$
+\mathbf { E } = \frac { 1 } { 4 \pi \epsilon _ { 0 } } \left[ q _ { 1 } ~ \frac { ( \mathbf { R } - \mathbf { R } _ { 1 } ) } { | \mathbf { R } - \mathbf { R } _ { 1 } | ^{3} } + q _ { 2 } ~ \frac { ( \mathbf { R } - \mathbf { R } _ { 2 } ) } { | \mathbf { R } - \mathbf { R } _ { 2 } | ^{3} } \right] ~ ~ ~ ~ ~ ( \mathrm { V / m } ) .
+$$
+
+The vectors $R_{1}$, $R_{2}$, and $R$ are
+
+$$
+\mathbf { R } _ { 1 } = \hat { \mathbf { x } } + \hat { \mathbf { y } } 3 - \hat { \mathbf { z } } ,   \mathbf { R } _ { 2 } = - \hat { \mathbf { x } } 3 + \hat { \mathbf { y } } - \hat { \mathbf { z } } 2 , \; \; \mathbf { R } = \hat { \mathbf { x } } 3 + \hat { \mathbf { y } } - \hat { \mathbf { z } } 2
+$$
+
+Hence,
+
+$$
+\begin{array}{rl} & { \mathbf { E } = \frac { 1 } { 4 \pi \epsilon _ { 0 } } \left[ \frac { 2 ( \hat { \mathbf { x } } 2 - \hat { \mathbf { y } } 2 - \hat { \mathbf { z } } ) } { 27 } - \frac { 4 ( \hat { \mathbf { x } } 6 ) } { 21 6 } \right] \times 10 ^{- 5} } \\& { = \frac { \hat { \mathbf { x } } - \hat { \mathbf { y } } 4 - \hat { \mathbf { z } } 2 } { 10 8 \pi \epsilon _ { 0 } } \times 10 ^{- 5}  ( \mathrm { V / m } ) . } \end{array}
+$$
+
+(b) The force on $q_{3}$ is
+
+$$
+\begin{array}{rl} & { \mathbf { F } = q _ { 3 } \mathbf { E } = 8 \times 10 ^{- 5} \times \frac { \hat { \mathbf { x } } - \hat { \mathbf { y } } 4 - \hat { \mathbf { z } } 2 } { 10 8 \pi \epsilon _ { 0 } } \times 10 ^{- 5} } \\& {  = \frac { \hat { \mathbf { x } } 2 - \hat { \mathbf { y } } 8 - \hat { \mathbf { z } } 4 } { 27 \pi \epsilon _ { 0 } } \times 10 ^{- 10} } \end{array} \tag { N } .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page18' class='markdown-page-text'>[ 第18页 ]</span>---------------------------------------------</span><br><br>
+
+# Exercise
+
+1- Four charges of $10\ \mu$C each are located in free space at points with Cartesian coordinates ($-3$, $0$, $0$), ($3$, $0$, $0$), ($0$, $-3$, $0$), and ($0$, $3$, $0$). Find the force on a 20-$\mu$C charge located at $(0$, $0$, $4)$. All distances are in meters.
+
+Answer: F = ^z0.23 N.
+
+2- Two identical charges are located on the x axis at x = 3 and x = 7. At what point in space is the net electric field zero? Answer: At point (5,
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page19' class='markdown-page-text'>[ 第19页 ]</span>---------------------------------------------</span><br><br>
+
+plot clear equipotential-0.3 Vvoltage
+
+✓ Show E-f□ direction of□ Show lo-r✓ Show hi-r□ grid✓ Show num□ tape measure
+
+# Clear A
+
+https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_en.html
+
+more speed/le
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page20' class='markdown-page-text'>[ 第20页 ]</span>---------------------------------------------</span><br><br>
+
+# Gauss's Law
+
+$$
+\nabla \cdot { \bf D } = \rho _ { \mathrm { v } }
+$$
+
+(Differential form of Gauss's law),
+
+$$
+\int \nabla \cdot { \bf D } ~ d V = \int _ { V } \rho _ { v } ~ d V = Q
+$$
+
+![](images/9a07f4fe6404b271509441437750b4e5d2b2a43fcc6b79a091affbf1849ffb01_40.jpg){width=40%} Figure 4-8: The integral form of Gauss's law states that the outward flux of D through a surface is proportional to the enclosed charge $Q$.
+
+# Application of the divergence theorem gives:
+
+$$
+\int \nabla \cdot { \bf D } ~ d V = \oint { \bf D } \cdot d s .
+$$
+
+Comparison of Eq. (4.27) with Eq. (4.28) leads to
+
+$$
+\oint \mathbf { D } \cdot d s = Q
+$$
+
+(Integral form of Gauss's law).
+
+The integral form of Gauss's law is illustrated diagrammatically in Fig. 4-8; for each differential surface element ds, D·ds is the electric field flux flowing outward of V through ds, and the total flux through surface S equals the enclosed charge Q. The surface S is called a Gaussian surface.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page21' class='markdown-page-text'>[ 第21页 ]</span>---------------------------------------------</span><br><br>
+
+# Applying Gauss's Law
+
+$$
+\mathbf { D } \cdot d s = Q
+$$
+
+(Integral form of Gauss's law).
+
+Gauss's law, as given by Eq. (4.29), provides a convenient method for determining the flux density $\mathbf{D}$ when the charge distribution possesses symmetry properties that allow us to infer the variations of the magnitude and direction of $\mathbf{D}$ as a function of spatial location, thereby facilitating the integration of $\mathbf{D}$ over a cleverly chosen Gaussian surface.
+
+![](images/943e59967bc9f0b4402e1204a5970e4160f5ac628348433b607588b09bd94c08_35.jpg){width=35%}
+
+Use Gauss's law to obtain an expression for $E$ due to an infinitely long line with uniform charge density $\rho_{\ell}$ that resides along the z-axis in free space.
+
+# Construct an imaginary Gaussian cylinder of radius $r$ and height $h$:
+
+$$
+\int _ { z = 0 } ^{h}    \int _ { \phi = 0 } ^{2 \pi}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+$$
+
+Or
+
+$$
+2 \pi h D _ { r } r = \rho _ { \ell } h ,
+$$
+
+which yields
+
+$$
+\begin{array}{r} { \mathbf { E } = \frac { \mathbf { D } } { \varepsilon _ { 0 } } = \hat { \textbf { r } } \frac { D _ { r } } { \varepsilon _ { 0 } } = \hat { \textbf { r } } \frac { \rho _ { \ell } } { 2 \pi \varepsilon _ { 0 } r } } \\{ ( \mathrm { i n f i n i t e ~ l i n e ~ c h a r g e } ) . } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page22' class='markdown-page-text'>[ 第22页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Find the flux density of line charge of radius 2m and charge density is $3.14$ (C/m$^2$)? (cylinder is the Gaussian surface)
+
+Answer:
+
+The electric field of a line charge is given by, $E = \rho_{\mathrm{L}}/(2\pi\varepsilon_{0}\mathbf{r})$, where $\mathbf{r}$ is the radius of cylinder, which is the Gaussian surface and $\sigma$ is the charge density.
+
+The density $D=\varepsilon_{0}E=\rho_{\mathrm{L}}/(2\pi r)=3.14/(2\pi X\,2)=1/4=0.25$ (C/m$^{2}$).
+
+# Example
+
+-If the radius of a sphere is $1/(4\pi)m$ and the electric flux density is $16\pi$ units, the total flux is given by,
+
+Answer
+
+Total flux leaving the entire surface is,
+
+$\psi = 4\pi\mathrm{r}^2\mathrm{D}$ from Gauss law. $\Psi = 4\pi(1/16\pi^2)$ X $16\pi = 4$ (C).
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page23' class='markdown-page-text'>[ 第23页 ]</span>---------------------------------------------</span><br><br>
+
+# Example!
+
+-!
+
+Answer!
+
+The radius is 3m, hence it will enclose one Gaussian cylinder of R = 2m.
+
+-!
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page24' class='markdown-page-text'>[ 第24页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Scalar Potential
+
+The term "voltage" is short for "voltage potential" and synonymous with electric potential.
+
+![](images/00b83a6a8a2dab2fe4a8a242e81947dee7153bf5d13dfaa5942faede7f278814_39.jpg){width=39%} Figure 4-11: Work done in moving a charge $q$ a distance $dy$ against the electric field E is $dW = qE\, dy$.
+
+# Minimum force needed to move charge against E field:
+
+$$
+\mathbf { F } _ { \mathrm { e x t } } = - \mathbf { F } _ { \mathrm { e } } = - q \mathbf { E } .
+$$
+
+The work done, or energy expended, in moving any object a vector differential distance $d\mathbf{l}$ while exerting a force $\mathbf{F}_{\text{ext}}$ is
+
+$$
+d W = \mathbf { F } _ { \mathrm { e x t } } \cdot d \mathbf { l } = - q \mathbf { E } \cdot d \mathbf { l }
+$$
+
+Work, or energy, is measured in joules (J). If the charge is moved a distance $dy$ along $\hat{\mathbf{y}}$, then
+
+$$
+d W = - q ( - { \hat { y } } E ) \cdot { \hat { y } } \, d y = q E \, d y .
+$$
+
+The differential electric potential energy $dW$ per unit charge is called the differential electric potential (or differential voltage) $dV$. That is,
+
+$$
+d V = { \frac { d W } { q } } = - \mathbf { E } \cdot d \mathbf { I }  ( \mathrm { J / C ~ o r ~ V } ) .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page25' class='markdown-page-text'>[ 第25页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Scalar Potential
+
+![](images/e2c4a4b7517e72e767717a257d98e9f3fc489e785bf5ee96d6fa13126c82b26d_46.jpg){width=46%} Figure 4-12: In electrostatics, the potential difference between $P_{2}$ and $P_{1}$ is the same irrespective of the path used for calculating the line integral of the electric field between them.
+
+$$
+\begin{array}{r} { \int _ { P _ { 1 } } ^{P _ { 2} } d V = - \int _ { P _ { 1 } } ^{P _ { 2} } \mathbf { E } \cdot d \mathbf { I } , } \\{ P _ { 1 } } \end{array}
+$$
+
+$$
+V _ { 21 } = V _ { 2 } - V _ { 1 } = - \int \mathbf { E } \cdot d \mathbf { l } ,
+$$
+
+![](images/ed999fb681535dd9f827b1e9c7efb1f9d46e72be57a7b01884cb635443eaf8e0_2.jpg){width=2%}
+
+E$\cdot$d1 = 0
+
+(Electrostatics).
+
+A vector field whose line integral along any closed path is zero is called a conservative or an irrotational field. Hence, the electrostatic field $\mathbf{E}$ is conservative.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page26' class='markdown-page-text'>[ 第26页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Potential Due to Charges
+
+$$
+\begin{array}{r} { \int _ { P _ { 1 } } ^{P _ { 2} } d V = - \int _ { P _ { 1 } } ^{P _ { 2} } \mathbf { E } \cdot d \mathbf { I } , } \end{array}
+$$
+
+$$
+V _ { 21 } = V _ { 2 } - V _ { 1 } = - \int _ { P _ { 1 } } ^{P _ { 2} } \mathbf { E } \cdot d \mathbf { l } ,
+$$
+
+For a point charge, V at range $R$ is:
+
+$$
+V = - \int _ { \infty } ^{R} \left( \hat { \bf R } ~ \frac { q } { 4 \pi \varepsilon R ^{2} } \right) \cdot \hat { \bf R } ~ d R = \frac { q } { 4 \pi \varepsilon R }  ( \mathrm { V } ) .
+$$
+
+$$
+V = \frac { 1 } { 4 \pi \epsilon } \sum _ { i = 1 } ^{N} \frac { q _ { i } } { | \mathbf { R } - \mathbf { R } _ { i } | }  ( \mathrm { V } ) .
+$$
+
+In electric circuits, we usually select a convenient node that we call ground and assign it zero reference voltage. In free space and material media, we choose infinity as reference with V = 0. Hence, at a point P
+
+$$
+V = - \int _ { \infty } ^{P} \mathbf { E } \cdot d \mathbf { l }  ( \mathrm { V } ) .
+$$
+
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page27' class='markdown-page-text'>[ 第27页 ]</span>---------------------------------------------</span><br><br>
+
+
+This!
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page28' class='markdown-page-text'>[ 第28页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Six equal point charges Q = 10nC are located at 2,3,4,5,6,7m. Find the potential at origin.
+
+Answer
+
+V = (1/4πε0) ∑Q/r
+
+= (10 X 10⁻⁹/4πε0) (0.5 + 0.33 + 0.25 + 0.2 +
+
+0.166 + 0.142) = 143.35 V.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page29' class='markdown-page-text'>[ 第29页 ]</span>---------------------------------------------</span><br><br>
+
+What is the potential difference $10\sin\theta\cos\varphi/r^2$ at A(1,30,20) and B(4,90,60)?
+
+Answer
+
+Potential at A, Va = 10sin30cos20/1² = 4.6985 V and
+
+Potential at B, Vb = 10sin90cos60/4² = 0.3125 V.
+
+Potential difference between A and B is,
+
+Vab = $4.6985 - 0.3125 = 4.386$ V.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page30' class='markdown-page-text'>[ 第30页 ]</span>---------------------------------------------</span><br><br>
+
+Find the electric flux density surrounding a material with field intensity of 2xyz placed in transformer oil ( $\varepsilon_{\mathrm{r}}=2.2$ ) at the point P(1,2,3) is (in $10^{-10}$ units)
+
+Answer:
+
+D = $\varepsilon$E, where $\varepsilon = \varepsilon_0$ $\varepsilon_{\mathrm{r}}$.
+
+The flux density is given by,
+
+D = 8.854 X $10^{-12}$ X 2.2 X 2(1)(2)(3) = 2.33 X $10^{-10}$ C/m$^2$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page31' class='markdown-page-text'>[ 第31页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Dipole
+
+An electric dipole is formed by two point charges of equal magnitude separated by a short distance d.
+
+![](images/83c2577f74bb8bda14d95e55e9084b8739ee0e8773ddb3c42ca7b070aaf860f4_80.jpg){width=80%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page32' class='markdown-page-text'>[ 第32页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 4-7: Electric Field of an Electric Dipole
+
+Solution: To simplify the derivation, we align the dipole along the z-axis and center it at the origin [Fig. 4-13(a)]. For the two charges shown in Fig. 4-13(a), application of Eq. (4.47) gives
+
+$$
+V = \frac { 1 } { 4 \pi \varepsilon _ { 0 } } \left( \frac { q } { R _ { 1 } } + \frac { - q } { R _ { 2 } } \right) = \frac { q } { 4 \pi \varepsilon _ { 0 } } \left( \frac { R _ { 2 } - R _ { 1 } } { R _ { 1 } R _ { 2 } } \right) .
+$$
+
+Since $d \ll R$, the lines labeled $R_{1}$ and $R_{2}$ in Fig. 4-13(a) are approximately parallel to each other, in which case the following approximations apply:
+
+$$
+R _ { 2 } - R _ { 1 } \simeq d \cos \theta ,  R _ { 1 } R _ { 2 } \simeq R ^{2} .
+$$
+
+Hence,
+
+$$
+V = { \frac { q d \cos \theta } { 4 \pi \varepsilon _ { 0 } R ^{2} } } .
+$$
+
+![](images/10a3bd00f63dcdaa7f3ec694e1606862ad1542128217bdeaa1502a181cfde4ea_40.jpg){width=40%} (a) Electric dipole
+
+![](images/2dfb6ac85ef61e437bab434aae4950cce8d31e44c33db7556903a2b4107dd331_16.jpg){width=16%} (b) Electric-field pattern
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page33' class='markdown-page-text'>[ 第33页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 4-7: Electric Field of an Electric Dipole (cont.)
+
+$$
+q d \cos \theta = q { \mathbf { d } } \cdot { \hat { \mathbf { R } } } = { \mathbf { p } } \cdot { \hat { \mathbf { R } } } ,
+$$
+
+where $\mathbf{p}=q\mathbf{d}$ is called the dipole moment. Using Eq. (4.53) in Eq. (4.52) then gives
+
+$$
+V = { \frac { \mathbf { p } \cdot { \hat { \mathbf { R } } } } { 4 \pi \varepsilon _ { 0 } R ^{2} } }  ( { \mathrm { e l e c t r i c ~ d i p o l e } } ) .
+$$
+
+In spherical coordinates, Eq. (4.51) is given by
+
+$$
+\begin{array}{rl} & { \mathbf { E } = - \nabla V } \\& { = - \left( \hat { \mathbf { R } } \, \frac { \partial V } { \partial R } + \hat { \boldsymbol { \theta } } \, \frac { 1 } { R } \, \frac { \partial V } { \partial \theta } + \hat { \boldsymbol { \phi } } \, \frac { 1 } { R \sin \theta } \, \frac { \partial V } { \partial \phi } \right) , } \end{array}
+$$
+
+$$
+\mathbf { E } = \frac { q d } { 4 \pi \varepsilon R ^{3} } \left( a _ { R } \; 2 \; \mathrm { C o s } \; \theta + \; a _ { \theta } \; \mathrm { S i n } \theta \right) \; \; \mathrm { V / m }
+$$
+
+![](images/f43b14c3496f398bd158ef9fb5a15def7fd5b5b56e1afd216c58ef77093a53a7_40.jpg){width=40%} (a) Electric dipole
+
+![](images/b930933d103d750b2177a49e5e978348ca7bfdacce18ce54c8efd6a96f490ffe_16.jpg){width=16%} (b) Electric-field pattern
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page34' class='markdown-page-text'>[ 第34页 ]</span>---------------------------------------------</span><br><br>
+
+Calculate the dipole moment of a dipole with equal charges 2C and -2C separated by a distance of 2cm.
+
+# Answer:
+
+The dipole moment P of charge 2C and distance 2cm will be, P = Q x d. Thus,
+
+P = 2 x 0.02 = 0.04 C-m.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page35' class='markdown-page-text'>[ 第35页 ]</span>---------------------------------------------</span><br><br>
+
+# Conduction Current
+
+The electromagnetic constitutive parameters of a material medium are its electrical permittivity, magnetic permeability$\mu$, and conductivity $\sigma$. Amaterial Table 4-1: Conductivity of some common materials at $20^{\circ}\mathrm{C}$
+
+The electromagnetic constitutive parameters of a material medium are its electrical permittivity, magnetic permeability$\mu$, and conductivity $\sigma$. Amaterial is said to be homogeneous if its constitutive parameters do not vary from point to point, and isotropic if they are independent of direction
+
+The conductivity of a material is a measure of how easily electrons can travel through the material under the influence of an externally applied electric field.
+
+# Conduction current density:
+
+$\mathbf{J}=\sigma\mathbf{E}$ (A/m$^{2}$) (Ohm's law),
+
+A perfect dielectric is a material with $\sigma=0$. In contra, a perfect conductor is a material with $\sigma=\infty$. Some materials, called superconductors, exhibit such a behavior.
+
+|  | Material | $Conductivity, $\sigma$ (S/m)$ |
+| --- | --- | --- |
+| Conductors |
+|  | Silver | $6.2 \times 10^{7}$ |
+| Copper | $5.8 \times 10^{7}$ |
+| Gold | $4.1 \times 10^{7}$ |
+| Aluminum | $3.5 \times 10^{7}$ |
+| Iron | $10^{7}$ |
+| Mercury | $10^{6}$ |
+| Carbon | $3 \times 10^{4}$ |
+| Semiconductors |
+|  | Pure germanium | $2.2$ |
+| Pure silicon | $4.4 \times 10^{-4}$ |
+| Insulators |
+| Glass | $10^{-12}$ |
+|  | Paraffin | $10^{-15}$ |
+| Mica | $10^{-15}$ |
+| Fused quartz | $10^{-17}$ |
+
+# Note how wide the range is, over 24 orders of magnitude
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page36' class='markdown-page-text'>[ 第36页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Find the current density of a material with resistivity $20\ \Omega$m and electric field intensity $2000$V/m units.
+
+# Answer
+
+The current density is given by $J=\sigma$ E, where $\sigma$ is the conductivity. Thus resistivity $\rho=1/\sigma$. J = E/$\rho=2000/20=100$ A/m.
+
+# Example
+
+Find the current in a conductor with resistance 2 ohm, electric field 2 units and distance 100cm.
+
+Answer
+
+-We know that E = V/d. To get potential,
+
+$V$ = EX d = 2 X 1 = 2 volts.
+
+From Ohm's law, V = IR and current I = V/R = 2/2 = 1A.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page37' class='markdown-page-text'>[ 第37页 ]</span>---------------------------------------------</span><br><br>
+
+# Conduction Current
+
+The conductivity of a material is a measure of how easily electrons can travel through the material under the influence of an externally applied electric field.
+
+# Conduction current density:
+
+J = $\sigma$ E (A/m$^{2}$) (Ohm's law),
+
+A perfect dielectric is a material with $\sigma=0$. In contrast, a perfect conductor is a material with $\sigma=\infty$. Some materials, called superconductors, exhibit such a behavior.
+
+That is,
+
+Perfect dielectric: $\mathbf{J}=0$, Perfect conductor: $\mathbf{E}=0$.
+
+Table 4-1: Conductivity of some common materials at $20^{\circ}\mathrm{C}$.
+
+| Material | $Conductivity, σ (S/m)$ |
+| --- | --- |
+| Conductors |
+| Silver | $6.2 \times 10^{7}$ |
+| Copper | $5.8 \times 10^{7}$ |
+| Gold | $4.1 \times 10^{7}$ |
+| Aluminum | $3.5 \times 10^{7}$ |
+| Iron | $10^{7}$ |
+| Mercury | $10^{6}$ |
+| Carbon | $3 \times 10^{4}$ |
+| Semiconductors |
+| Pure germanium | $2.2$ |
+| Pure silicon | $4.4 \times 10^{-4}$ |
+| Insulators |
+| Glass | $10^{-12}$ |
+| Paraffin | $10^{-15}$ |
+| Mica | $10^{-15}$ |
+| Fused quartz | $10^{-17}$ |
+
+Note how wide the range is, over 24 orders of magnitude
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page38' class='markdown-page-text'>[ 第38页 ]</span>---------------------------------------------</span><br><br>
+
+# Resistance
+
+Longitudinal Resistor
+
+$$
+\begin{array}{rl} & { V = V _ { 1 } - V _ { 2 } = - \int _ { x _ { 2 } } ^{x _ { 1} } \mathbf { E } \cdot d \mathbf { l } } \\& {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+$$
+
+![](images/8d195d8654ec447b72ace07e9893a05c202f5768f7ed6c089aea48378ae99633_52.jpg){width=52%}
+
+Using Eq. (4.63), the current flowing through the cross section $A$ at $x_2$ is
+
+$$
+I = \int { \bf J } \cdot d s = \int _ { A } \sigma { \bf E } \cdot d s = \sigma \, E _ { x } A  ( { \mathrm { A } } ) .
+$$
+
+From $R = V/I$, the ratio of Eq. (4.68) to Eq. (4.69) gives
+
+$$
+R = { \frac { l } { \sigma A } }  ( \Omega ) .
+$$
+
+For any conductor:
+
+$$
+R = { \frac { V } { I } } = { \frac { - \int _ { l } \mathbf { E } \cdot d \mathbf { l } } { \int _ { S } \mathbf { J } \cdot d s } } = { \frac { - \int _ { l } \mathbf { E } \cdot d \mathbf { l } } { \int _ { S } \sigma \mathbf { E } \cdot d s } } \, .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page39' class='markdown-page-text'>[ 第39页 ]</span>---------------------------------------------</span><br><br>
+
+# Joule's Law
+
+The power dissipated in a volume containing electric field E and current density J is:
+
+$P=\int\mathrm{E}\cdot\mathrm{J}\,dV(\mathrm{W})(\mathrm{Joule's law})$
+
+For a resistor, Joule's law reduces to:
+
+$P = I^{2} \ln(b/a)/(2\pi\sigma l)$
+
+For a coaxial cable:
+
+$$
+P = I ^{2} R  ( W )
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page40' class='markdown-page-text'>[ 第40页 ]</span>---------------------------------------------</span><br><br>
+
+# Tech Brief: Resistive Sensors
+
+An electrical sensor is a device capable of responding to an applied stimulus by generating an electrical signal whose voltage, current, or some other attribute is related to the intensity of the stimulus.
+
+Typical stimuli: temperature, pressure, position, distance, motion, velocity, acceleration, concentration (of a gas or liquid), blood flow, etc.
+
+Sensing process relies on measuring resistance, capacitance, inductance, induced electromotive force (emf), oscillation frequency or time delav. etc.
+
+![](images/3eb579c5110a4890c0f2087a91f845bd1613c8ca55f627c17b2d67dd48329ec3_54.jpg){width=54%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page41' class='markdown-page-text'>[ 第41页 ]</span>---------------------------------------------</span><br><br>
+
+# Piezoresistivity
+
+The Greek word piezein means to press
+
+![](images/bb6f48b53d6a0ae47aebb6e91571b034b7bdd929f533c827ceea11fc22f5d2ce_42.jpg){width=42%} Figure TF7-2: Piezoresistance varies with applied force.
+
+$$
+R = \, R _ { 0 } \, \left( 1 + \frac { \alpha \, F } { A _ { 0 } } \right)
+$$
+
+$R_{0}=$ resistance when $F=0$
+
+$F=$ applied force
+
+$A_{0}=$ cross-section when $F=0$
+
+$\alpha=$ piezoresistive coefficient of material
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page42' class='markdown-page-text'>[ 第42页 ]</span>---------------------------------------------</span><br><br>
+
+# Piezoresistors
+
+![](images/77b4459aaa67a3f71e3cfc0aba687c4f23bccfbb632afc08e584c4e8d94636b3_46.jpg){width=46%} Figure TF7-3: Piezoresistor films.
+
+![](images/196a8afbd4b97f90e47eb41dbcd66854698608286c9fd8e1316fc42c44d3ff2c_51.jpg){width=51%} Figure TF7-4: Metal and silicon piezoresistors.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page43' class='markdown-page-text'>[ 第43页 ]</span>---------------------------------------------</span><br><br>
+
+# Wheatstone Bridge
+
+![](images/4ca2fefc0a414c67be5fa41d00445638b2734dbf51bef863498585708fb9bd38_45.jpg){width=45%} Figure TF7-5: Wheatstone bridge circuit with piezoresistor.
+
+$$
+V _ { \mathrm { o u t } } ~ = ~ \frac { V _ { 0 } } { 4 } ~ \left( \frac { \Delta R } { R _ { 0 } } \right)
+$$
+
+Wheatstone bridge is a high sensitivity circuit for measuring small changes in resistance
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page44' class='markdown-page-text'>[ 第44页 ]</span>---------------------------------------------</span><br><br>
+
+# Dielectric Materials
+
+![](images/8a8f09836ce7c7c4b559e5976b0f6d6d259eea6d6f42fb86447d9c2255c773f2_39.jpg){width=39%} Figure 4-16: In the absence of an external electric field E, the center of the electron cloud is co-located with the center of the nucleus, but when a field is applied, the two centers are separated
+
+Center of electron cloud
+
+(b) External $E_{\mathrm{ext}} \neq 0$ (c) Electric dipole
+
+![](images/31e91f912bea594b7bc082c9baec267c8a37c2ba40f4931562821b3a4defecf9_12.jpg){width=12%}
+
+![](images/82c9eb8f1d4bf2a0e5ba20643de618877722a7e04305653d65bc997da186131f_46.jpg){width=46%} Figure 4-17: A dielectric medium polarized by an external electric field E.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page45' class='markdown-page-text'>[ 第45页 ]</span>---------------------------------------------</span><br><br>
+
+# Polarization Field
+
+$$
+\mathbf { D } = \varepsilon _ { 0 } \mathbf { E } + \mathbf { P }
+$$
+
+# P = electric flux density induced by E
+
+$$
+\mathbf { P } = \varepsilon _ { 0 } \chi _ { \mathrm { e } } \mathbf { E } ,
+$$
+
+where $\chi_{\mathrm{e}}$ is called the electric susceptibility of the material. Inserting Eq. (4.84) into Eq. (4.83), we have
+
+$$
+\begin{array}{r} { \mathbf { D } = \varepsilon _ { 0 } \mathbf { E } + \varepsilon _ { 0 } \chi _ { \mathrm { e } } \mathbf { E } } \\{ = \varepsilon _ { 0 } ( 1 + \chi _ { \mathrm { e } } ) \mathbf { E } = \varepsilon \mathbf { E } , } \end{array}
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page46' class='markdown-page-text'>[ 第46页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+The bound charge density and free charge density are 12 and 6 units respectively.
+
+Calculate the susceptibility.
+
+# Answer
+
+The electric susceptibility is given by, $\chi$e = Bound free density/Free charge density.
+
+$\bullet\chi e=12/6=2$. It has no unit.
+
+# Example
+
+Find the dielectric constant for a material with electric susceptibility of 4
+
+Answer
+
+The electric susceptibility is given by $\chi\mathrm{e}=\varepsilon\mathrm{r}-1$.
+
+For a susceptibility of 4, the dielectric constant will be 5.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page47' class='markdown-page-text'>[ 第47页 ]</span>---------------------------------------------</span><br><br>
+
+# Electric Breakdown
+
+The dielectric strength $E_{ds}$ is the largest magnitude of $\mathbf{E}$ that the material can sustain without breakdown.
+
+table 4-2: Relative permittivity (dielectric constant) and dielectric strength of common materials
+
+| Material | $Relative Permittivity, ε r$ | Dielectric Strength, E ds (MV/m) |
+| --- | --- | --- |
+| Air (at sea level) | $1.0006$ | $3$ |
+| Petroleum oil | $2.1$ | $12$ |
+| Polystyrene | $2.6$ | $20$ |
+| Glass | $4.5-10$ | $25-40$ |
+| Quartz | $3.8-5$ | $30$ |
+| Bakelite | $5$ | $20$ |
+| Mica | $5.4-6$ | $200$ |$\varepsilon \equiv \varepsilon_{\mathrm{I}} \varepsilon_{0}$ and $\varepsilon_{0} = 8.854 \times 10^{-12} \, \mathrm{F/m}.$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page48' class='markdown-page-text'>[ 第48页 ]</span>---------------------------------------------</span><br><br>
+
+# Boundary Conditions
+
+![](images/7185345bcce5fff2ea567ec213754c16c576071a01ddbe86c2fcc996ebaed707_89.jpg){width=89%} Figure 4-18: Interface between two dielectric media.
+
+$\mathbf{E}_{1t}=\mathbf{E}_{2t}$ (V/m). (4.90)
+
+$\frac{\mathbf{D}_{1t}}{\varepsilon_{1}}=\frac{\mathbf{D}_{2t}}{\varepsilon_{2}}.$
+
+![](images/5b88f358cce3eef9efaeb84a9ffeb219bc1a352bd86e4f34a35ee8b8ff60cd8a_38.jpg){width=38%}
+
+The normal component of $\mathbf{D}$ changes abruptly at a charged boundary between two different media in an amount equal to the surface charge density.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page49' class='markdown-page-text'>[ 第49页 ]</span>---------------------------------------------</span><br><br>
+
+# Summary of Boundary Conditions
+
+Table 4-3: Boundary conditions for the electric fields.
+
+| Field Component | Any Two Media | $Medium 1 Dielectric $\varepsilon_1$$ | Medium 2 Conductor |
+| --- | --- | --- | --- |
+| Tangential E Tangential D | $\mathbf{E}_{1\mathrm{t}}=\mathbf{E}_{2\mathrm{t}}$ $\mathbf{D}_{1\mathrm{t}}/\varepsilon_1=\mathbf{D}_{2\mathrm{t}}/\varepsilon_2$ $\varepsilon_1E_{1\mathrm{n}}-\varepsilon_2E_{2\mathrm{n}}=\rho_{\mathrm{s}}$ $\mathbf{Normal}$ $\mathbf{D}$ | $\mathbf{E}_{1\mathrm{t}}=\mathbf{E}_{2\mathrm{t}}=0$ $\mathbf{D}_{1\mathrm{t}}=\mathbf{D}_{2\mathrm{t}}=0$ $E_{1\mathrm{n}}=\rho_{\mathrm{s}}/\varepsilon_1$ $D_{1\mathrm{n}}=\rho_{\mathrm{s}}$ |  |
+| $Notes: (1) $\rho_{\mathrm{s}}$ is the surface charge density at the boundary; (2) normal components of $\mathbf{E}_1$, $\mathbf{D}_1$, $\mathbf{E}_2$, and $\mathbf{D}_2$ are along $\hat{\mathbf{n}}_2$, the outward normal unit vector of medium 2.$ |
+
+# Remember E = 0 in a good conductor
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page50' class='markdown-page-text'>[ 第50页 ]</span>---------------------------------------------</span><br><br>
+
+# Conductors
+
+# Net electric field inside a conductor is zero
+
+![](images/df4919039574970f495cdb0bdccdad14a2d004da59e892ca637ce063937b8534_86.jpg){width=86%} Figure 4-20: When a conducting slab is placed in an external electric field $E_{1}$, charges that accumulate on the conductor surfaces induce an internal electric field $E_{i} = -E_{1}$. Consequently, the total field inside the conductor is zero.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page51' class='markdown-page-text'>[ 第51页 ]</span>---------------------------------------------</span><br><br>
+
+# Field Lines at Conductor Boundary
+
+![](images/d835cedca6783c9dc4db59149480e0d5629e62784d3cb380bd74338a34b4678b_48.jpg){width=48%}
+
+Figure 4-21: Metal sphere placed in an external electric field $E_0$.
+
+At conductor boundary, E field direction is always perpendicular to conductor surface
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page52' class='markdown-page-text'>[ 第52页 ]</span>---------------------------------------------</span><br><br>
+
+# Capacitance
+
+When a conductor has excess charge, it distributes the charge on its surface in such a manner as to maintain a zero electric field everywhere within the conductor, there ensuring that the electric potential is the same at every po in the conductor.
+
+The $capacitance$ of a two-conductor configuration is defined as
+
+$$
+C = \frac { Q } { V }  ( C / V ~ \mathrm { o r ~ F } ) ,
+$$
+
+![](images/053fab8bde4c9892b8bb52cb3cb1eed538026ac68c78756300d955ac88a1ca1b_44.jpg){width=44%} Figure 4-23: A dc voltage source connected to a capacitor composed of two conducting bodies.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page53' class='markdown-page-text'>[ 第53页 ]</span>---------------------------------------------</span><br><br>
+
+# Capacitance
+
+For any two-conductor configuration:
+
+$$
+C = \frac { \int _ { S } \varepsilon \mathbf { E } \cdot d \mathbf { l } } { - \int _ { l } \mathbf { E } \cdot d \mathbf { l } }  ( \mathrm { F } ) ,
+$$
+
+For any resistor:
+
+$$
+R = { \frac { - \int _ { l } \mathbf { E } \cdot d \mathbf { I } } { \int _ { S } \sigma \mathbf { E } \cdot d s } }
+$$
+
+![](images/416b85959f9a749a750a726b022a3278718f2291ac4e8d6ee04d6d7ec241c11a_44.jpg){width=44%} Figure 4-23: A dc voltage source connected to a capacitor composed of two conducting bodies.
+
+For a medium with uniform $\sigma$ and $\varepsilon$, the product of Eqs. (4.109) and (4.110) gives
+
+$$
+R C = { \frac { \varepsilon } { \sigma } } ~ . ~ ~ ~ ~ ( 4 . 11 1 )
+$$
+
+The simple relation allows us to find $R$ if $C$ is known, or vice versa.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page54' class='markdown-page-text'>[ 第54页 ]</span>---------------------------------------------</span><br><br>
+
+# https://phet.colorado.edu/en/simulation/capacitor-lab
+
+![](images/3e62a8a3b2cc9971c340b4bc0d80abcf35b0a18e5b44f61fbf3ab172eccefeb9_50.jpg){width=50%}
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page55' class='markdown-page-text'>[ 第55页 ]</span>---------------------------------------------</span><br><br>
+
+Example 4-11: Capacitance and Breakdown Voltage of Parallel-Plate Capacitor
+
+![](images/1f74567ddc4ac38db5fd366f84e872f7343cad0958f70f0838d145f48c64f67e_64.jpg){width=64%} Figure 4-24: A dc voltage source connected to a parallel-plate capacitor (Example 4-11).
+
+$$
+V = - \int _ { 0 } ^{d} \mathbf { E } \cdot d \mathbf { l } = - \int _ { 0 } ^{d} ( - \hat { \mathbf { z } } E ) \cdot \hat { \mathbf { z } } \, d z = E d ,
+$$
+
+and the capacitance is
+
+$$
+C \equiv { \frac { Q } { V } } \equiv { \frac { Q } { E d } } \equiv { \frac { \varepsilon A } { d } } ~ , ~ ~ ~ ~ ~ ( 4 . 11 3 )
+$$
+
+where use was made of the relation $E = Q/\varepsilon A$.
+
+From $V=Ed$, as given by Eq. (4.112), $V=V_{\mathrm{br}}$ when $E=E_{\mathrm{ds}}$, the dielectric strength of the material. According to Table 4-2, $E_{\mathrm{ds}}=30$ (MV/m) for quartz. Hence, the breakdown
+
+# tage is
+
+$$
+V _ { \mathrm { b r } } = E _ { \mathrm { d s } } d = 30 \times 10 ^{6} \times 10 ^{- 2} = 3 \times 10 ^{5} \, \mathrm { V } .
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page56' class='markdown-page-text'>[ 第56页 ]</span>---------------------------------------------</span><br><br>
+
+# Example!
+
+Calculate the capacitance of a material in air with area 20 units and distance between plates is!
+
+Answer!
+
+The!
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page57' class='markdown-page-text'>[ 第57页 ]</span>---------------------------------------------</span><br><br>
+
+![](images/5df07a66a904429564b719c74760980953581fcefeca8022e6944a76ebe7e622_99.jpg){width=99%}
+
+$$
+\mathbf { E } = - \hat { \textbf { f } } \frac { Q } { 2 \pi \varepsilon r l } \, .
+$$
+
+Figure 4-25: Coaxial capacitor filled with insulating material of permittivity $\varepsilon$ (Example 4-12).
+
+The potential difference $V$ between the outer and inner conductors is
+
+$$
+\begin{array}{r} { V = - \int _ { a } ^{b} \mathbf { E } \cdot d \mathbf { l } = - \int _ { a } ^{b} \left( - \hat { \mathbf { r } } \, \frac { Q } { 2 \pi \varepsilon r l } \right) \cdot ( \hat { \textbf { r } } d r ) } \\{ = \frac { Q } { 2 \pi \varepsilon l } \ln \left( \frac { b } { a } \right) . } \end{array}
+$$
+
+The capacitance $C$ is then given by
+
+$$
+C = \frac { Q } { V } = \frac { 2 \pi \varepsilon l } { \ln ( b / a ) } ~ , ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+$$
+
+and the capacitance per unit length of the coaxial line is
+
+![](images/c29ba72fed607ba318ec7ceb753492aaeb57c8c9e4fee38ec827d1c43f6f7686_5.jpg){width=5%}
+
+$$
+C ^{\prime} = { \frac { C } { l } } = { \frac { 2 \pi \varepsilon } { \ln ( b / a ) } }  { \mathrm { ( F / m ) . } }
+$$
+
+# Q is total charge on inside of outer cylinder, and –Q is on outside surface of inner cylinder
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page58' class='markdown-page-text'>[ 第58页 ]</span>---------------------------------------------</span><br><br>
+
+# Electrostatic Potential Energy
+
+Electrostatic potential energy density (Joules/volume)
+
+$$
+w _ { \mathrm { e } } = \frac { W _ { \mathrm { e } } } { V } = \frac { 1 } { 2 } ~ \varepsilon E ^{2} ~ ~ ~ ~ ~ ~ ( \mathrm { J / m ^{3} } ) .
+$$
+
+Energy stored in a capacitor
+
+$W_{e}=\frac{1}{2}CV^{2}$ (J).
+
+Total electrostatic energy stored in a volume
+
+$$
+W _ { \mathrm { e } } = { \frac { 1 } { 2 } } \int \varepsilon E ^{2} ~ d V  \mathrm { ( J ) }
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page59' class='markdown-page-text'>[ 第59页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Calculate the energy in an electric field with flux density 6 units and field intensity of 4 units.
+
+# Answer:
+
+The energy in an electric field is given by, W = 0.5 x D x E, where D = 6 and E = 4. We get W = 0.5 x 6 x 4 = 12 units.
+
+# Example
+
+Calculate the energy in an electric field with permittivity of 56 and field intensity of $36\pi$(in $\mu$J)
+
+Answer
+
+The energy in an electric field is given by, W = 0.5 x D x E. Since $D$ = $\varepsilon$E, we get W = 0.5 x $\varepsilon$ x E$^2$. On substituting the data, we get 3.16 $\mu$J.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page60' class='markdown-page-text'>[ 第60页 ]</span>---------------------------------------------</span><br><br>
+
+# Example
+
+Compute the power consumed by a material with current density 15 units in an area of 100 units. The potential measured across the material is 20V.
+
+Answer
+
+Power is given by, P=V X I, where I = J X A is the current.
+
+Thus power P = V X J X A = 20 X 15 X 100 = 30,000 joule = 30kJ.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page61' class='markdown-page-text'>[ 第61页 ]</span>---------------------------------------------</span><br><br>
+
+# Image Method
+
+![](images/c1367fea2fbaa0e9b913d5317545135a53b9691a52f6d03e574a522e60180582_76.jpg){width=76%} Figure 4-26: By image theory, a charge $Q$ above a grounded perfectly conducting plane is equivalent to $Q$ and its image $-Q$ with the ground plane removed.
+
+Image method simplifies calculation for E and V due to charges near conducting planes.
+
+For each charge Q, add an image charge - Q
+
+Remove conducting plane
+
+Calculate field due to all charges
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page62' class='markdown-page-text'>[ 第62页 ]</span>---------------------------------------------</span><br><br>
+
+# Example 4-13: Image Method for Charge Above Conducting Plane
+
+Use image theory to determine E at an arbitrary point $P = (x, y, z)$ in the region $z > 0$ due to a charge $Q$ in free space at a distance $d$ above a grounded conducting plate residing in the $z = 0$ plane.
+
+Solution: In Fig. 4-28, charge $Q$ is at $(0,0,d)$ and its image $-Q$ is at $(0,0,-d)$. From Eq. (4.19), the electric field at point $P=(x,y,z)$ due to the two charges is given by
+
+$$
+\begin{array}{rl} & { \mathrm { E } = \frac { 1 } { 4 \pi \varepsilon _ { 0 } } \left( \frac { Q \mathbf { R } _ { 1 } } { R _ { 1 } ^{3} } + \frac { - Q \mathbf { R } _ { 2 } } { R _ { 2 } ^{3} } \right) } \\& {  = \frac { Q } { 4 \pi \varepsilon _ { 0 } } \Big [ \frac { \hat { \mathbf { x } } x + \hat { \mathbf { y } } y + \hat { \mathbf { z } } ( z - d ) } { [ x ^{2} + y ^{2} + ( z - d ) ^{2} ] ^{3 /} } } \\& {  - \frac { \hat { \mathbf { x } } x + \hat { \mathbf { y } } y + \hat { \mathbf { z } } ( z + d ) } { [ x ^{2} + y ^{2} + ( z + d ) ^{2} ] ^{3 / 2} } \Big ] } \\& {  z \geq 0 . } \end{array}
+$$for $z \geq 0$.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page63' class='markdown-page-text'>[ 第63页 ]</span>---------------------------------------------</span><br><br>
+
+Tech Brief : Capacitive Sensors
+
+# Fluid Gauge
+
+![](images/91ea51c507e1fb7b7a4b01200653f484885b4c6c1a9fece99c630ebe26aa7913_65.jpg){width=65%} Figure TF9-1: Fluid gauge and associated bridge circuit, with $C_0$ being the capacitance that an empty tank would have and $C$ the capacitance of the tank under test.
+
+The two metal electrodes in Fig. TF9-1(a), usually rods or plates, form a capacitor whose capacitance is directly proportional to the permittivity of the material between them. If the fluid section is of height $h_{\mathrm{f}}$ and the height of the empty space above it is $(h-h_{\mathrm{f}})$, then the overall capacitance is equivalent to two capacitors in parallel, or
+
+$$
+C = C _ { \mathrm { f } } + C _ { \mathrm { a } } = \varepsilon _ { \mathrm { f } } w ~ \frac { h _ { \mathrm { f } } } { d } + \varepsilon _ { \mathrm { a } } w ~ \frac { ( h - h _ { \mathrm { f } } ) } { d } ~ ,
+$$
+
+where $w$ is the electrode plate width, $d$ is the spacing between electrodes, and $\varepsilon_{\mathrm{f}}$ and $\varepsilon_{\mathrm{a}}$ are the permittivities of theuid and air, respectively. Rearranging the expression as a linear equation yields
+
+$$
+C = k h _ { \mathrm { f } } + C _ { 0 } ,
+$$
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page64' class='markdown-page-text'>[ 第64页 ]</span>---------------------------------------------</span><br><br>
+
+# Humidity Sensor
+
+![](images/be90627dd71bb9f244661bcb45132ea7855ce083d35a88e11951a54f11b9afdf_66.jpg){width=66%}
+
+Figure TF9-2: Interdigital capacitor used as a humidity sensor.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page65' class='markdown-page-text'>[ 第65页 ]</span>---------------------------------------------</span><br><br>
+
+# Pressure Sensor
+
+![](images/880f52332919b5fd802d6e6dbc0d5291f56b586b26cedb5f4bf789380ba2c0ac_99.jpg){width=99%} Figure TF9-3: Pressure sensor responds to deflection of metallic membrane.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page66' class='markdown-page-text'>[ 第66页 ]</span>---------------------------------------------</span><br><br>
+
+# Planar capacitors
+
+![](images/a2a1611a1adf0ccc4fb3963c47a0015aba664cbadf00dc350a519e5542b0b9b0_43.jpg){width=43%} Figure TF9-4: Concentric-plate capacitor.
+
+![](images/33f02dccf3ed57643ee183c56792247550b0b383b249aefb811775683998f9a1_49.jpg){width=49%} Figure TF9-5: (a) Adjacent-plates capacitor; (b) perturbation field.
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page67' class='markdown-page-text'>[ 第67页 ]</span>---------------------------------------------</span><br><br>
+
+# Fingerprint Imager
+
+![](images/693dd849bb14c090b07deac11266f959b80244a758ee0335ec9c5da284ca5ead_60.jpg){width=60%} Figure TF9-6: Elements of a fingerprint matching system. (Courtesy of IEEE Spectrum.)
+
+![](images/84bee1ac154035ae1bf81e81bd6633901bf5a162b897050114dc61f195b22428_38.jpg){width=38%} Figure TF9-7: Fingerprint representation. (Courtesy of Dr. M. Tartagni, University of Bologna, Italy.)
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page68' class='markdown-page-text'>[ 第68页 ]</span>---------------------------------------------</span><br><br>
+
+# Chapter 4 Relationships
+
+Maxwell's Equations for Electrostatics
+
+| Name | Differential Form | Integral Form |
+| --- | --- | --- |
+| Gauss's law | $\nabla \cdot \mathbf{D} = \rho_{\mathrm{v}}$ | $\oint \mathbf{D} \cdot ds = Q$ |
+| Kirchhoff's law | $\nabla \times \mathbf{E} = 0$ | $\oint \mathbf{E} \cdot d\mathbf{l} = 0$ |
+
+# Electric Field
+
+Current density
+
+Poisson's equation
+
+Laplace's equation
+
+Resistance
+
+$R=\frac{-\rho_{\mathrm{v}}}{\int_{s}\sigma\mathbf{E}\cdot d\mathbf{l}}$
+
+Boundary conditions Table 4-3
+
+Capacitance
+
+$C=\frac{\int_{s}\varepsilon\mathbf{E}\cdot dS}{-\int_{l}\mathbf{E}\cdot d\mathbf{l}}$
+
+$RC$ relation
+
+Energy density
+
+$w_{\mathrm{e}}=\frac{1}{2}\varepsilon E^{2}$
+
+Point charge
+
+Many point charges
+
+Volume distribution
+
+Surface distribution
+
+Line distribution
+
+Infinite distribution
+
+Infinite sheet of charge
+
+Infinite line of charge
+
+Dipole
+
+E = $\hat{\mathbf{R}} \frac{q}{4\pi \varepsilon R^2}$
+
+E = $\frac{1}{4\pi \varepsilon} \sum_{i=1}^{N} \frac{q_i (\mathbf{R} - \mathbf{R}_i)}{|\mathbf{R} - \mathbf{R}_i|^3}$
+
+E = $\frac{1}{4\pi \varepsilon} \int_{\mathbf{V}'} \frac{\rho_{\mathrm{v}} \, d\mathbf{V}'}{R'^2}$
+
+E = $\frac{1}{4\pi \varepsilon} \int_{S'} \frac{\rho_{\mathrm{s}} \, ds'}{R'^2}$
+
+E = $\frac{1}{4\pi \varepsilon} \int_{l'} \hat{\mathbf{R}}', \frac{\rho_{\ell}}{R'^2}$
+
+E = $\frac{1}{4\pi \varepsilon} \int_{l'} \hat{\mathbf{R}}', \frac{\rho_{\ell}}{R'^2}$
+
+E = $\hat{\mathbf{z}} \frac{\rho_{\mathrm{s}}}{2\varepsilon_0}$
+
+E = $\frac{\mathbf{D}}{\varepsilon_0} = \hat{\mathbf{r}} \frac{D_r}{\varepsilon_0} = \hat{\mathbf{r}} \frac{\rho_{\ell}}{2\pi \varepsilon_0 r}$
+
+E = $\frac{q d}{4\pi \varepsilon_0 R^3} \left( \hat{\mathbf{R}} 2 \cos\theta + \hat{\boldsymbol{\theta}} \sin\theta \right)$
+
+Relation to V
+
+E = $-\nabla V$
