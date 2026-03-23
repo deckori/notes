@@ -43,6 +43,17 @@ website:
           - section: "Applied Electromagnetics"
             contents:
               - sems/sem4/applied-electromagnetics/l2-transmission-lines/quarto/l2-transmission-lines.qmd
+              - section: "L4 Electrostatics"
+                contents:
+                  - section: "Math Basics"
+                    contents:
+                      - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/partial-differentials.qmd
+                      - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/divergence.qmd
+                      - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/curl.qmd
+                      - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/3d.qmd
+                      - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/3d-curl.qmd
+                      - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/laplacian.qmd
+                  - sems/sem4/applied-electromagnetics/l4-electrostatics/quarto/l4-electrostatics.qmd
       # - section: "Digital Electronics"
       #   contents: sems/sem3/dig-elec/*
       # - section: "Network Fundamentals"
