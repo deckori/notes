@@ -3,3 +3,20 @@
 1. In amplitude modulation, why do we add a constant voltage to the message signal before multiplying it with a carrier?
 2. Does the carrier signal always have an amplitude of 1? And $E_c$ always comes from adding a constant signal to the message before multiplication?
   - ![](doubts-img/am.png){#fig-am align=center width=300 alt="am.png"}
+3. Why do we have a mirror of the positive frequencies at the negative axis?
+![](doubts-img/frequency-graph.png){#fig-frequency-graph align=center width=300 alt="frequency-graph.png"}
+
+# Lecture 8
+
+1. Why are the amplitudes of the USB and LSB equal to half the magnitude of the modulating signal?
+  - **Ans**: This is because of the formula of the AM signal: 
+	$$V_{AM}(t) = E_c \sin(2\pi f_c t) + E_m \frac{\cos(2\pi (f_c - f_m)t) - \cos(2\pi (f_c + f_m)t)}{2}$$
+
+# Lecture 9
+
+1. ![](doubts-img/lpf.png){#fig-lpf align=center width=300 alt="lpf.png"}
+ 
+# Lecture 13 - Sampling
+
+1. 
+  - ![](doubts-img/nyquist-theorem.png){#fig-nyquist-theorem align=center width=300 alt="nyquist-theorem.png"}
