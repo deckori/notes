@@ -134,10 +134,10 @@ Units:
 		\nabla \times \mathbf{B} =
 		\begin{vmatrix}
 			\mathbf{\hat{x}}            & \mathbf{\hat{y}}            & \mathbf{\hat{z}}            \\
-			\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+			\dfrac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
 			B_x                         & B_y                         & B_z
 		\end{vmatrix}
-		= \mathbf{\hat{x}} \left( \frac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} \right) - \mathbf{\hat{y}} \left( \frac{\partial B_z}{\partial x} - \frac{\partial B_x}{\partial z} \right) + \mathbf{\hat{z}} \left( \frac{\partial B_y}{\partial x} - \frac{\partial B_x}{\partial y} \right)
+		= \mathbf{\hat{x}} \left( \dfrac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} \right) - \mathbf{\hat{y}} \left( \frac{\partial B_z}{\partial x} - \frac{\partial B_x}{\partial z} \right) + \mathbf{\hat{z}} \left( \frac{\partial B_y}{\partial x} - \frac{\partial B_x}{\partial y} \right)
 	\end{equation*}
 
 	\1 $\vec{E} = - \nabla V$
@@ -187,5 +187,23 @@ In a perfect conductor that has an applied electric field, inside the conductor 
 		\bottomrule
 	\end{tabular}
 \end{table}
+
+\chapter*{Topic 6: Wave Reflection and Transmission}
+
+\begin{outline}
+	\1 $V_{emf} = V^{tr}_{emf} + V^m_{emf}$
+	\1 $V^{tr}_{emf} = - N \int_S \dfrac{\partial \vec{B}}{\partial t} \cdot d\vec{s}$
+	\1 $Z_{in} = \left(\dfrac{N_1}{N_2}\right)^2 Z_L$
+	\1 $\vec{F_m} = q( \vec{u} \times \vec{B})$
+	\1 $\vec{E_m} = \dfrac{\vec{F_m}}{q} = ( \vec{u} \times \vec{B})$
+	\1 $V^m_{emf} = V_{12} = \int^1_2 \vec{E_m} \cdot d\vec{l} =  \int^1_2 ( \vec{u} \times \vec{B}) \cdot d\vec{l}$
+  \1 $V^m_{emf} = \oint_{C}(\mathbf{u}\times\mathbf{B})\cdot d\mathbf{l}$
+  \1 $\int_{S}(\nabla\times\mathbf{H})\cdot d\mathbf{s}=\int_{S}\mathbf{J}\cdot d\mathbf{s}+\int_{S}\dfrac{\partial\mathbf{D}}{\partial t}\cdot d\mathbf{s}$
+  \1 $\oint_C\mathbf{H}\cdot d\mathbf{l}=I_\mathrm{c}+I_\mathrm{d}=I$
+  \1 $I = JA$
+  \1 $J = \sigma E$
+  \1 $D = \epsilon E$
+  \1 $J_{d}=\dfrac{\partial D}{\partial t}$
+\end{outline}
 
 \end{document}
