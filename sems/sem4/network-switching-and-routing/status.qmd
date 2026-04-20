@@ -1,0 +1,21 @@
+| Number | Name                       | Finished |  Notes   | Summary  | Practice Book | Other Materials |
+| :----: | -------------------------- | :------: | :------: | :------: | :-----------: | :-------------: |
+|   01   | Basic device configuration | &#x2610; | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|   02   | Switching concepts         | &#x2610; | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|   03   | Vlans                      | &#x2610; | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|   04   | Inter vlan routing         | &#x2610; | &#x2610; | &#x2610; |   &#x2610;    |    &#x2610;     |
+|   05   | STP concepts               | &#x2610; | &#x2610; | &#x2611; |   &#x2610;    |    &#x2610;     |
+
+
+
+| Number | Name                          | Finished |    Notes     |          Summary           | Netacad Questions | Other Materials |
+| :----: | ----------------------------- | :------: | :----------: | :------------------------: | :---------------: | :-------------: |
+|   06   | Etherchannel                  | &#x2610; |   &#x2610;   |          &#x2611;          |     &#x2610;      |    &#x2610;     |
+|   07   | Dhcpv4                        | &#x2610; |   &#x2610;   |          &#x2611;          |     &#x2610;      |    &#x2610;     |
+|   08   | Slaac and dhcpv6              | &#x2610; |   &#x2610;   | &#x2610; New terms pending |     &#x2610;      |    &#x2610;     |
+|   09   | Fhrp concepts                 | &#x2610; |   &#x2611;   |          &#x2610;          |     &#x2610;      |    &#x2610;     |
+|   10   | LAN security concepts         | &#x2610; |   &#x2611;   |          &#x2610;          |     &#x2610;      |    &#x2610;     |
+|   11   | Switch security configuration | &#x2610; | &#x2610; 16  |          &#x2611;          |     &#x2610;      |    &#x2610;     |
+|   12   | Wlan concepts                 | &#x2610; | &#x2610; 28  |          &#x2611;          |     &#x2610;      |    &#x2610;     |
+|   13   | Routing concepts              | &#x2610; | &#x2610; 19  |          &#x2611;          |     &#x2610;      |    &#x2610;     |
+|   14   | IP static routing             | &#x2610; | &#x2610;  28 |          &#x2611;          |     &#x2610;      |    &#x2610;     |
