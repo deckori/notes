@@ -1,7 +1,7 @@
 \documentclass{book}
 
 \usepackage{amsmath}
-\usepackage{outlines, booktabs, array}
+\usepackage{outlines, graphicx, booktabs, array}
 \usepackage[margin=0.5in]{geometry}
 
 \begin{document}
@@ -133,11 +133,11 @@ Units:
 	\begin{equation*}
 		\nabla \times \mathbf{B} =
 		\begin{vmatrix}
-			\mathbf{\hat{x}}            & \mathbf{\hat{y}}            & \mathbf{\hat{z}}            \\
-			\dfrac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
-			B_x                         & B_y                         & B_z
+			\mathbf{\hat{x}}             & \mathbf{\hat{y}}             & \mathbf{\hat{z}}             \\
+			\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
+			B_x                          & B_y                          & B_z
 		\end{vmatrix}
-		= \mathbf{\hat{x}} \left( \dfrac{\partial B_z}{\partial y} - \frac{\partial B_y}{\partial z} \right) - \mathbf{\hat{y}} \left( \frac{\partial B_z}{\partial x} - \frac{\partial B_x}{\partial z} \right) + \mathbf{\hat{z}} \left( \frac{\partial B_y}{\partial x} - \frac{\partial B_x}{\partial y} \right)
+		= \mathbf{\hat{x}} \left( \dfrac{\partial B_z}{\partial y} - \dfrac{\partial B_y}{\partial z} \right) - \mathbf{\hat{y}} \left( \dfrac{\partial B_z}{\partial x} - \dfrac{\partial B_x}{\partial z} \right) + \mathbf{\hat{z}} \left( \dfrac{\partial B_y}{\partial x} - \dfrac{\partial B_x}{\partial y} \right)
 	\end{equation*}
 
 	\1 $\vec{E} = - \nabla V$
@@ -158,32 +158,27 @@ Units:
 
 In a perfect conductor that has an applied electric field, inside the conductor $E_{\text{net}} = 0$
 
-\begin{table}[h]
+
+\begin{figure}[h]
 	\centering
-	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{|l|c|cc|}
-		\hline
-		\textbf{Field Component} & \textbf{Any Two Media}                                          & \begin{tabular}[c]{@{}c@{}}\textbf{Medium 1}\\\textbf{Dielectric $\varepsilon_1$}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Medium 2}\\\textbf{Conductor}\end{tabular} \\ \hline \hline
-		{\textbf{Tangential E}}  & $\mathbf{E}_{1t} = \mathbf{E}_{2t}$                             & \multicolumn{2}{c|}{$\mathbf{E}_{1t} = \mathbf{E}_{2t} = 0$}                                                                                                                   \\ \hline
-		{\textbf{Tangential D}}  & $\mathbf{D}_{1t}/\varepsilon_1 = \mathbf{D}_{2t}/\varepsilon_2$ & \multicolumn{2}{c|}{$\mathbf{D}_{1t} = \mathbf{D}_{2t} = 0$}                                                                                                                   \\ \hline
-		{\textbf{Normal E}}      & $\varepsilon_1 E_{1n} - \varepsilon_2 E_{2n} = \rho_s$          & $E_{1n} = \rho_s/\varepsilon_1$                                                                & $E_{2n} = 0$                                                                  \\ \hline
-		{\textbf{Normal D}}      & $D_{1n} - D_{2n} = \rho_s$                                      & $D_{1n} = \rho_s$                                                                              & $D_{2n} = 0$                                                                  \\ \hline
-	\end{tabular}
-\end{table}
+	\includegraphics[width=0.8\textwidth]{formulas-img/boundary-conditions-for-general-electromagnetics.png}
+	\caption{Boundary Conditions For General Electromagnetics}
+	\label{fig:boundary-conditions-for-general-electromagnetics}
+\end{figure}
 
 \noindent \textbf{Notes:} (1) $\rho_s$ is the surface charge density at the boundary; (2) normal components of $\mathbf{E}_1, \mathbf{D}_1, \mathbf{E}_2,$ and $\mathbf{D}_2$ are along $\mathbf{\hat{n}}_2$, the outward normal unit vector of medium 2.
 \begin{table}
 	\centering
 	\begin{tabular}{lccl} \toprule
-		\textbf{Quantity Name} & \textbf{Symbol} & \textbf{SI Unit Suffix} & \textbf{SI Unit} \\ \midrule
-		Line Charge Density    & $\rho_\text{L}$ & $C/m$                   &                  \\ \midrule
-		Surface Charge Density & $\rho_\text{S}$ & $C/m^2$                 &                  \\ \midrule
-		Volume Charge Density  & $\rho_\text{V}$ & $C/m^3$                 &                  \\ \midrule
-		Current Density        & $\vec{J}$       & $A/m^2$                 &                  \\ \midrule
-		Electric field         & $\vec{E}$       & N/C = V/m               &                  \\ \midrule
-		Electric Force         & $\vec{F}$       & N                       &                  \\ \midrule
-		Electric Flux Density  & $\vec{D}$       & $C/m^2$                 &                  \\ \midrule
-		Electric Flux          & $\Psi$          & C                       &                  \\
+		\textbf{Quantity Name} & \textbf{Symbol}           & \textbf{SI Unit Suffix} & \textbf{SI Unit} \\ \midrule
+		Line Charge Density    & $\rho_\text{L},\ \lambda$ & $C/m$                   &                  \\ \midrule
+		Surface Charge Density & $\rho_\text{S},\ \sigma$  & $C/m^2$                 &                  \\ \midrule
+		Volume Charge Density  & $\rho_\text{V},\ \rho$    & $C/m^3$                 &                  \\ \midrule
+		Current Density        & $\vec{J}$                 & $A/m^2$                 &                  \\ \midrule
+		Electric field         & $\vec{E}$                 & N/C = V/m               &                  \\ \midrule
+		Electric Force         & $\vec{F}$                 & N                       &                  \\ \midrule
+		Electric Flux Density  & $\vec{D}$                 & $C/m^2$                 &                  \\ \midrule
+		Electric Flux          & $\Psi$                    & C                       &                  \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -193,17 +188,63 @@ In a perfect conductor that has an applied electric field, inside the conductor 
 \begin{outline}
 	\1 $V_{emf} = V^{tr}_{emf} + V^m_{emf}$
 	\1 $V^{tr}_{emf} = - N \int_S \dfrac{\partial \vec{B}}{\partial t} \cdot d\vec{s}$
-	\1 $Z_{in} = \left(\dfrac{N_1}{N_2}\right)^2 Z_L$
+	\1 $V \propto N$
+
+	$\implies I \propto \dfrac{1}{N} \qquad \left( I \propto \dfrac{1}{V} \right)$
+
+	$\implies Z \propto N \qquad \left( Z \propto V \right)$
+
+	$\implies Z_{in} = \left(\dfrac{N_1}{N_2}\right)^2 Z_L$
+
 	\1 $\vec{F_m} = q( \vec{u} \times \vec{B})$
 	\1 $\vec{E_m} = \dfrac{\vec{F_m}}{q} = ( \vec{u} \times \vec{B})$
 	\1 $V^m_{emf} = V_{12} = \int^1_2 \vec{E_m} \cdot d\vec{l} =  \int^1_2 ( \vec{u} \times \vec{B}) \cdot d\vec{l}$
-  \1 $V^m_{emf} = \oint_{C}(\mathbf{u}\times\mathbf{B})\cdot d\mathbf{l}$
-  \1 $\int_{S}(\nabla\times\mathbf{H})\cdot d\mathbf{s}=\int_{S}\mathbf{J}\cdot d\mathbf{s}+\int_{S}\dfrac{\partial\mathbf{D}}{\partial t}\cdot d\mathbf{s}$
-  \1 $\oint_C\mathbf{H}\cdot d\mathbf{l}=I_\mathrm{c}+I_\mathrm{d}=I$
-  \1 $I = JA$
-  \1 $J = \sigma E$
-  \1 $D = \epsilon E$
-  \1 $J_{d}=\dfrac{\partial D}{\partial t}$
+	\1 $V^m_{emf} = \oint_{C}(\mathbf{u}\times\mathbf{B})\cdot d\mathbf{l}$
+	\1 $\int_{S}(\nabla\times\mathbf{H})\cdot d\mathbf{s}=\int_{S}\mathbf{J}\cdot d\mathbf{s}+\int_{S}\dfrac{\partial\mathbf{D}}{\partial t}\cdot d\mathbf{s}$
+	\1 $\oint_C\mathbf{H}\cdot d\mathbf{l}=I_\mathrm{c}+I_\mathrm{d}=I$
+	\1 $I = JA$
+	\1 $J = \sigma E$
+	\1 $D = \epsilon E$
+	\1 $J_{d}=\dfrac{\partial D}{\partial t}$
+\end{outline}
+
+\section*{Plane Wave Propagations}
+
+\begin{outline}
+	\1 $\gamma = - \dfrac{\omega}{v_p} \qquad \text{(Lossless)}$
+	\1 $k = \dfrac{\omega}{v_p} \qquad \text{(Lossless)}$
+	\1 $k = \dfrac{2\pi}{\lambda}$
+	\1 $\gamma = - k^2$
+	\1 $\eta = \dfrac{\mu}{\epsilon}$
+	\2 $\eta = \dfrac{\omega \mu}{k} = \dfrac{\omega \mu}{\omega \sqrt{\mu \epsilon}} = \dfrac{\mu}{\epsilon}$
+	\1 $\eta = \dfrac{\eta_0}{\sqrt{\epsilon_r}}$
+	\1 $\widetilde{\mathbf{H}}=\dfrac{1}{\eta}\hat{\mathbf{k}}\times\widetilde{\mathbf{E}}$
+	\1 $\widetilde{\mathbf{E}}=-\eta\hat{\mathbf{k}}\times\widetilde{\mathbf{H}}$
+	\1 $\mathbf{S} = \mathbf{E} \times \mathbf{H} \quad (\text{W/m}^2)$
+	\2 Poynting vector, power density
+	\1 $P = \int_A \mathbf{S} \cdot \hat{\mathbf{n}} \, dA \quad (\text{W})$
+	\2 Total power
+	\1 $\mathbf{S}_{\text{av}} = \dfrac{1}{2} \Re \left[ \tilde{\mathbf{E}} \times \tilde{\mathbf{H}}^{*} \right] \quad (\text{W/m}^2)$
+	\2 Time-average power density
+	\2 The asterisk means i should take the conjugate of \textbf{H}
+	\1 $\mathbf{S}_\text{av}=\hat{\mathbf{z}}\dfrac{|\widetilde{\mathbf{E}}|^2}{2\eta}$
+	\2 Plane wave in electric field
+	\1 $S_{\text{av}}^{i} = \dfrac{\left|E_0^{i}\right|^2}{2\eta_1}$
+\end{outline}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{formulas-img/low-high-fre-app.png}
+	\caption{}
+	\label{fig:low-high-fre-app}
+\end{figure}
+
+\section*{Wave Reflection and Transmission}
+
+\begin{outline}
+	\1 $\theta_B = \tan^{-1} \sqrt{\dfrac{\epsilon_2}{\epsilon_1}}$
+	\1 $\theta_C = \sin^{-1} \sqrt{\dfrac{\epsilon_2}{\epsilon_1}}$
 \end{outline}
 
 \end{document}

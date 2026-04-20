@@ -4,3 +4,13 @@
 2. How did the following expand as such?
   - ![](doubts-img/electric-field-spherical.png){#fig-electric-field-spherical align=center width=300 alt="electric-field-spherical.png"}
 3. For $D_{1n} - D_{2n} = \rho_S$, which is identified as 1 and 2 in a given question?
+4. 
+  - ![](doubts-img/boundary-conditions-electric.png){#fig-boundary-conditions align=center width=300 alt="boundary-conditions.png"}
+  - ![](doubts-img/boundary-conditions-electro-magnetism.png){#fig-boundary-conditions-electro-magnetism align=center width=300 alt="boundary-conditions-electro-magnetism.png"}
+
+# t6
+
+
+1. ![](doubts-img/dc-vs-ac.png){#fig-dc-vs-ac align=center width=300 alt="dc-vs-ac.png"}
+2. ![](doubts-img/chapter-7-summary.png){#fig-chapter-7-summary align=center width=300 alt="chapter-7-summary.png"}
+  1. Page 70
