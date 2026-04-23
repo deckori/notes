@@ -1,11 +1,13 @@
-\documentclass{book}
+\documentclass[openany]{book}
 
-\usepackage{amsmath}
-\usepackage{outlines}
+\usepackage{amsmath, booktabs}
+\usepackage{makecell, outlines, graphicx}
+\usepackage[export]{adjustbox}
+\usepackage[a4paper, top=.5in, bottom=.5in, left=.3in, right=.3in]{geometry}
 
 \begin{document}
 
-Topic 1:
+\chapter*{Topic 1}
 
 \begin{outline}
 	\1 $\lambda = \dfrac{v}{f} \implies v = \lambda \cdot f$
@@ -23,7 +25,7 @@ Topic 1:
 	\2 $10 \log (BW)$, Change in noise power due to increasing  the bandwidth above 1 Hz
 \end{outline}
 
-Topic 2:
+\chapter*{Topic 2}
 
 \begin{outline}
 	\1 $m = \dfrac{E_m}{E_c}$
@@ -36,7 +38,7 @@ Topic 2:
 	\1 Peak change in amplitude of the modulated wave = 2 Em. This is so by how modulation works.
 \end{outline}
 
-Topic 3:
+\chapter*{Topic 3}
 
 \begin{outline}
 	\1 Amplitude Modulation = (Message Signal + Constant voltage) $\times$ Carrier Signal
@@ -62,8 +64,6 @@ Topic 3:
 	\1 $m_t = \sqrt{ ( \sum m_n^2 ) }$
 \end{outline}
 
-Topic 4:
-
 \begin{outline}
 	\1 $\Delta f = k_f \cdot V_{i(\max)}$
 	\1 $f_{out} = f_c + \Delta f$
@@ -80,26 +80,117 @@ Topic 4:
 	\3 $P_{total} = $
 \end{outline}
 
-Topic 5:
+\begin{table}[!ht]
+	\centering
+	\renewcommand{\arraystretch}{2} % Increases row height for readability
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\textbf{Modulation Technique} & \textbf{Spectrum}                                                                                         & \textbf{Bandwidth (BW)}          & \textbf{Power}                         \\ \hline
+		DSB-FC                        & \includegraphics[width=0.2\textwidth, valign=m, margin=0 5pt]{formulas-img/dsb-fc.png} \label{fig:dsb-fc} & $2 f_m$                          & $P_c \left( 1 + \frac{m^2}{2} \right)$ \\ \hline
+		DSB-SC                        &
+		\includegraphics[width=0.2\textwidth, valign=m, margin=0 5pt]{formulas-img/dsb-sc.png} \label{fig:dsb-sc}
+		                              & $2 f_m$                                                                                                   & $2 \cdot \frac{(E_m / 2)^2}{2R}$                                          \\ \hline
+		SSB-SC                        &
+		\includegraphics[width=0.2\textwidth, valign=m, margin=0 5pt]{formulas-img/ssb-sc.png} \label{fig:ssb-sc}
+		                              & $f_m$                                                                                                     & $\frac{(E_m / 2)^2}{2R}$                                                  \\ \hline
+	\end{tabular}
+	\caption{Comparison of Amplitude Modulation Techniques}
+\end{table}
+
+
+
+\chapter*{Topic 5}
 
 \begin{outline}
 	\1 $\Delta = \dfrac{A_{\max} - A_{\min} }{ \text{Number of quantization levels}}$
 	\1 Bitrate (bps) = Sampling frequency $\times$ Number of bits per second
 	\1 Quantization index, $i = \text{round}\left( \dfrac{x - x_{\min}}{\Delta} \right)$, where $x$ is a given analog value, and `round' means round down (remove the decimal part and leave the whole number alone)
-	\1 Quantization error (noise), $x_q = x_{\min} + i\Delta + \dfrac{\Delta}{2}$
+	\1 Quantization value, $x_q = x_{\min} + i\Delta + \dfrac{\Delta}{2}$
+	\1 Error, $e = x - x_q$
 \end{outline}
 
 \chapter*{Topic 7 M-ary Modulation}
 
 \begin{outline}
-	\1 Symbol rate, $R_s = \dfrac{R_b}{N}$
-	\2 BPSK BW $= R_b$
-	\2 QPSK BW $= R_s$
+	\1 Symbol (Baud) rate, $R_s = \dfrac{R_b}{\log_2 (M)}$
+	\1 Fundamental frequency, $f_m = \dfrac{R_s}{2}$
+	\1 Power for all M-ary Phase Shift Keying, $P = \dfrac{V^2}{2R}$
 \end{outline}
 
-% Math
+\begin{table}[h]
+	\centering
+	\begin{tabular}{lc}
+		\toprule
+		\textbf{Modulation}        & \textbf{Formula}                   \\
+		\midrule
+		Binary \& Linear (PSK/QAM) & $BW  = R_s$                        \\
+		\midrule
+		Frequency (FSK)            & \makecell{$BW = 2(\Delta f + f_m)$ \\ $BW \propto M$ }   \\
+		\bottomrule
+	\end{tabular}
+	\caption{BW}
+\end{table}
+
+\chapter*{Topic 8 Ber And Bandwidth Efficiency}
 
 \begin{outline}
+	\1 $B_{\eta} = \dfrac{\text{transmission bit rate (bps)}}{\text{minimum bandwidth (Hz)}}$
+	\1 $\text{BER} \approx \dfrac{\text{number of bit errors}}{\text{total number of bits transmitted}}$
+	\2 BER: Bit error rate, also called Probability of error
+	\2 For example, if a system has a BER of $10^{-5}$, this means that on average we can expect one bit error in every $10^5$ bits transmitted
+	\2 Probability of error is a function of:
+	\3 The carrier-to-noise power ratio $C/N$ (or, more specifically, the average energy per bit-to-noise power density ratio $E_b/N_o$)
+	\3 The number of possible encoding conditions used (M-ary)
+	\1 $C_{(dBm)} = 10 \log \dfrac{C_{(watts)}}{0.001}$
+	\2 C: average carrier power (combined power of the carrier and its associated sidebands)
+	\1 $N = KTB$
+	\2 $N$: thermal noise power (watts)
+	\2 $K$: Boltzmann's constant ($1.38 \times 10^{-23} \text{ J/K}$)
+	\2 $T$: temperature (K)
+	\2 $B$: bandwidth (Hz)
+	\2 $N_{(dBm)} = 10 \log \dfrac{N_{(watts)}}{0.001}$
+	\1 $\dfrac{C}{N} = \dfrac{C}{KTB}$
+	\2 $\dfrac{C}{N} (dB) = 10 \log \dfrac{C}{N} = C_{(dBm)} - N_{(dBm)}$
+	\1 $E_b = C T_b= \dfrac{C}{f_b}$ (J/bit)
+	\2 $E_b$: energy of a single bit (joules per bit)
+	\2 $T_b$: time of a single bit (seconds)
+	\2 $C$: carrier power (watts)
+	\2 $E_{b(dBJ)} = 10 \log E_b = 10 \log \dfrac{C}{f_b} = 10 \log C - 10 \log f_b$
+	\1 $N_o = \dfrac{N}{B} = \dfrac{KTB}{B} = KT$ (W/Hz)
+	\2 $N_o$: noise power density (watts per hertz)
+	\2 $N$: thermal noise power (watts)
+	\2 $B$: bandwidth (Hertz)
+	\2 $N_{o(dBm)} = \dfrac{N_{(dBm)}}{B_{(dBm)}} = 10 \log \dfrac{N_{(Watts)}}{0.001 \times B_{(Hertz)}} = 10 \log \dfrac{N}{0.001} - 10 \log B = N_{(dBm)} - 10 \log B$
+	\2 $N_{o(dBm)} = 10 \log \dfrac{K}{0.001} + 10 \log T$
+	\1 $\dfrac{B}{f_b}$: noise bandwidth-to-bit rate ratio
+	\2 $B$: noise bandwidth (Hz)
+	\2 $f_b$: bit rate (bps)
+	\1 $\dfrac{E_b}{N_o} = \dfrac{C}{N} \times \dfrac{B}{f_b}$
+	\2 $E_b/N_o$: energy per bit-to-noise power density ratio
+	\2 $\dfrac{E_b}{N_0} \, (dB) = 10 \log \dfrac{C}{N} + 10 \log \dfrac{B}{f_b}$
+	\2 The $E_b/N_0$ ratio is simply the product of the carrier-to-noise power ratio and the noise bandwidth-to-bit rate ratio
+	\2 Mathematically: $\dfrac{E_b}{N_o} = \dfrac{C/f_b}{N/B} = \dfrac{CB}{Nf_b} = \dfrac{C}{N} \times \dfrac{B}{f_b}$
+	\2 For binary modulation, the bandwidth equals the bit rate, so $E_b/N_0$ is equal to $C/N$
+	\2 $E_b/N_o$ is used to compare two or more digital modulation systems that use different transmission rates (bit rates), modulation schemes (FSK, PSK, QAM), or encoding techniques (M-ary)
+	\2 $E_b/N_o$ is the ratio of the energy of a single bit to the noise power present in 1 Hz of bandwidth
+	\2 $E_b/N_o$ normalizes all multiphase modulation schemes to a common noise bandwidth, allowing for a simpler and more accurate comparison of their error performance
 \end{outline}
 
+Lecture 21:
+
+\begin{outline}
+	\1 Bit error performance for multiphase digital modulation systems is directly related to the distance between points on a signal state-space diagram
+	\1 Threshold points (TP) for M-PSK:
+	\2 $TP = \pm \dfrac{\pi}{M}$
+	\2 $M$: number of signal states
+	\2 Error occurs when noise shifts the received signal beyond a threshold into another decision region
+	\1 For larger $M$ (both M-PSK and M-QAM):
+	\2 Fixing $E_b/N_o$ $\Rightarrow$ $P_e$ increases
+	\2 Fixing $P_e$ $\Rightarrow$ more power required
+	\1 16-QAM vs 16-PSK (same bandwidth efficiency of 4 bit/s/Hz):
+	\2 16-PSK needs $E_b/N_o$ of 16 dB for $P_e = 10^{-4}$
+	\2 16-QAM needs $E_b/N_o$ of 12 dB for $P_e = 10^{-4}$ $\Rightarrow$ more power efficient
+	\2 QPSK needs only 8.5 dB but bandwidth efficiency drops to 2 (twice the BW needed)
+	\1 BW vs power/BER trade-off: higher-order modulation (larger $M$) $\Rightarrow$ better bandwidth efficiency but worse power efficiency (higher BER for same power)
+\end{outline}
 \end{document}
