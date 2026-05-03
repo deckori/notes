@@ -1,0 +1,17 @@
+| Number | Name                             | Finished | Read | Notes | Summary Questions | Diagrams |
+| :----: | -------------------------------- | :------: | :--: | :---: | :---------------: | :------: |
+|   1    | Env Eth Intro & Ethical Theories |          |      |       |     &#x2610;      | &#x2610; |
+|   2    | Codes And Practices              |          |      |       |     &#x2610;      | &#x2610; |
+|   3    | Intro Enviro Systems Ecosystems  |          |      |       |     &#x2610;      | &#x2610; |
+|   4    | Air Pollution                    |          |      |       |     &#x2610;      | &#x2610; |
+|   5    | Water Pollution                  |          |      |       |     &#x2610;      | &#x2610; |
+
+| Number | Name                         | Finished |   Read   | Notes | Summary Questions | Diagrams |
+| :----: | ---------------------------- | :------: | :------: | :---: | :---------------: | :------: |
+|   6    | Land Pollution               | &#x2610; | &#x2610; |       |     &#x2610;      | &#x2610; |
+|   7    | Noise Pollution              | &#x2610; | &#x2610; |       |     &#x2610;      | &#x2610; |
+|   8    | Petroleum Environment        | &#x2610; | &#x2610; |       |     &#x2610;      | &#x2610; |
+|   9    | Pollution Monitoring Control | &#x2610; | &#x2610; |       |     &#x2610;      | &#x2610; |
+|   10   | Waste Management             | &#x2610; | &#x2610; |       |     &#x2610;      | &#x2610; |
+|   11   | Flare Stacks Emissions       | &#x2610; | &#x2611; |       |     &#x2610;      | &#x2610; |
+|   12   | Sustainable Development      | &#x2610; | &#x2611; |       |     &#x2610;      | &#x2610; |
