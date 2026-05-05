@@ -1,0 +1,27 @@
+```
+(config)# hostname <name>
+
+(config)# no ip domain-lookup
+
+(config)# enable secret <password>
+
+(config)# line con 0 OR (config)# line vty <start numb> <end num>
+(config-line)# password <passwd>
+(config-line)# login
+
+(config)# service password-encryption
+
+(config)# banner motd #<message>#
+
+(config)# int <int type><num>/<num> OR (config)# int vlan <num>
+(config-if)# ip add <network> <subnet>
+(config-if)# desc <desc>
+(config-if)# no shut (not required for vlan)
+
+# sh run
+# sh ip int b
+
+#erase startup-configuration
+#del vlan.dat (Only for switches)
+#reload
+```
