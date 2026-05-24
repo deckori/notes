@@ -21,3 +21,22 @@ for H in humidity:
         row.append(CI)
     comfort_index.append(row)
 #########################
+
+# Step 3: Convert to DataFrame for display
+df = pd.DataFrame(comfort_index,
+                  index=[str(h) + "%" for h in humidity],
+                  columns=[str(t) + "°C" for t in temperature])
+
+print("\nComfort Index (CI) Matrix:\n")
+print(df)
+
+# Step 4: Visualize the Comfort Index as a Heatmap
+plt.figure(figsize=(7,5))
+sns.heatmap(df, annot=True, cmap="coolwarm",
+            cbar_kws={'label': 'Comfort Index'})
+
+plt.title("Comfort Index Heatmap (Temperature vs Humidity)")
+plt.xlabel("Temperature (°C)")
+plt.ylabel("Humidity (%)")
+plt.tight_layout()
+plt.show()
