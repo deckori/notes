@@ -1,10 +1,11 @@
-## Single Area OSPF
-
-To prevent issues with connectivity:
+To prevent general issues with connectivity:
 
 ```
 (config) no ip domain lookup
 ```
+
+
+## Single Area OSPF
 
 ### Basic OSPF config
 
