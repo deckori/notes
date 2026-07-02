@@ -1,0 +1,55 @@
+**1. Input Validation & Number Classification**
+- Q2: Check if a number is positive, negative, or zero
+
+**2. Functions with Lists**
+- Q3: Function returning sum of squares of 3 numbers
+- Q4: Function returning sum of powers of 2
+- Q32: Function combining two parallel lists into formatted strings
+
+**3. Series & Summation**
+- Q5: Sum of (0.5)^i from 1 to N
+- Q18: Sum of numbers from 1 to N
+- Q19: Product of numbers from 1 to N
+- Q25: Print first 10 multipliers of a number
+
+**4. String Manipulation**
+- Q6: Remove "." from a string
+- Q7: Replace "." with "!"
+- Q26: Count digits in a number
+- Q27: Palindrome checker
+
+**5. List Comparison & Searching**
+- Q8: Compare two lists for equality
+- Q9: Find first occurrence of a value in a list
+- Q10: Find last occurrence of a value in a list
+- Q11: Count occurrences of a specific letter
+
+**6. List Filtering (build new list based on a condition)**
+- Q1: Extract only duplicate elements
+- Q12: Extract perfect squares
+- Q13: Extract even numbers
+- Q14: Extract odd numbers
+- Q15: Extract numbers divisible by 3
+- Q16: Extract non-negative numbers
+- Q17: Apply formula (1/x) to each element, skipping zero
+
+**7. Splitting Lists / Tuples**
+- Q21: Split a list into two halves (as lists)
+- Q22: Split a list into two halves (as tuples)
+
+**8. Unit Conversion & Aggregation**
+- Q23: Convert weights from Kg to Pounds and sum totals
+
+**9. Dictionaries**
+- Q24: Build a dictionary from two parallel lists (names → phone numbers)
+- Q34: Build a dictionary of {number: cube} pairs
+
+**10. Mathematical/Algorithmic Problems**
+- Q20: Solve a quadratic equation
+- Q28: Armstrong number checker
+- Q29: Create list of tuples (number, cube)
+- Q30: Find second largest number in a list
+- Q31: Filter numbers in a range by digit-sum parity
+
+**11. Real-World Applied Calculation**
+- Q33: Light bulb energy efficiency rating calculator

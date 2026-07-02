@@ -1,0 +1,802 @@
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page1' class='markdown-page-text'>[ 第1页 ]</span>---------------------------------------------</span><br><br>
+
+# AETN2302 Lab Exam Question Bank Fall 2023
+
+# Instructions:
+
+Time: 30 min.
+
+a) Carefully read the scenario.
+b) Then provide some kind of planning: flowchart or pseudocode or step-by-step explanation.
+c) Write the code in the sandbox and debug it. Once you make sure this is correct, write it down in the space provided.
+d) Provide the output for input(s) of your interest.
+e) Once done, ask the instructor to verify your work and hand in the paper.
+
+# Please note that:
+
+1- The test is individual. No collaboration (as done in labs) is allowed.
+2- You may use NetAcad course material and sandbox to run and debug the program, no other tools are allowed (google, ChatGPT, etc).
+3- If your code contains commands/functions that are not covered in the class, it will not be accepted.
+
+---
+
+1- Scenario: You are given a list of integers containing duplicate elements. The task is to generate a second list, which contains only the duplicate elements. In simple words, the new list should contain elements that appear no more than once. Write code that takes input from a user, creates a list and then prints the cleaned-up list as output.
+
+Example: Input_list = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+
+Output : output_list = [20, 30, -20, 60]
+
+<!-- TOC -->
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [6- Scenario: Write a program that accepts a string and removes any “.” from that string. If there is no “.”, print ‘There is no “.’’.](#6--scenario-write-a-program-that-accepts-a-string-and-removes-any-“”-from-that-string-if-there-is-no-“”-print-‘there-is-no-“’’)
+- [7- Scenario: Write a program that accepts a string and replaces any “.” With “!”. from that string. If there is no “.”, print ‘There is no “.’’.](#7--scenario-write-a-program-that-accepts-a-string-and-replaces-any-“”-with-“”-from-that-string-if-there-is-no-“”-print-‘there-is-no-“’’)
+- [8- Scenario: Write a program that accepts 2 lists of 5 integers each from the user and compares them. If they are equal, it prints "the same" and if not, it prints "different"](#8--scenario-write-a-program-that-accepts-2-lists-of-5-integers-each-from-the-user-and-compares-them-if-they-are-equal-it-prints-the-same-and-if-not-it-prints-different)
+- [9- Scenario: Write a program that accepts a list of integers as input and checks whether it contains the number "2". If this is the case, it should print the location in the list. If not, it prints "There is no number 2 in the list". Note: If there is more than one "2", the location of the first "2" has to be printed.](#9--scenario-write-a-program-that-accepts-a-list-of-integers-as-input-and-checks-whether-it-contains-the-number-2-if-this-is-the-case-it-should-print-the-location-in-the-list-if-not-it-prints-there-is-no-number-2-in-the-list-note-if-there-is-more-than-one-2-the-location-of-the-first-2-has-to-be-printed)
+- [10- Scenario: Write a program that accepts a list of integers as input and checks whether it contains the number "2". If this is the case, it should print the location in the list. If not, it prints "There is no number 2 in the list". Note: If there is more than one "2", the location of the last "2" has to be printed.](#10--scenario-write-a-program-that-accepts-a-list-of-integers-as-input-and-checks-whether-it-contains-the-number-2-if-this-is-the-case-it-should-print-the-location-in-the-list-if-not-it-prints-there-is-no-number-2-in-the-list-note-if-there-is-more-than-one-2-the-location-of-the-last-2-has-to-be-printed)
+- [11- Scenario: Write a program that accepts a list of characters as input and then determines how many times the letter "A" is repeated. It should then print "Letter A is repeated ... times" where "..." shows the number of repetitions. If there is no "A", it prints: "There was no letter A"](#11--scenario-write-a-program-that-accepts-a-list-of-characters-as-input-and-then-determines-how-many-times-the-letter-a-is-repeated-it-should-then-print-letter-a-is-repeated--times-where--shows-the-number-of-repetitions-if-there-is-no-a-it-prints-there-was-no-letter-a)
+- [12- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those numbers that are squares of an integer. This number should then be printed. If there is no such a number, it prints "none". Hint: if the square root of a number is an integer, it means that it can be square of another integer, for example $16^{0.5}$ is an integer but $15^{0.5}$ is not an integer.](#12--scenario-write-a-program-that-accepts-a-list-of-integers-have-it-create-a-new-list-that-contains-only-those-numbers-that-are-squares-of-an-integer-this-number-should-then-be-printed-if-there-is-no-such-a-number-it-prints-none-hint-if-the-square-root-of-a-number-is-an-integer-it-means-that-it-can-be-square-of-another-integer-for-example-1605-is-an-integer-but-1505-is-not-an-integer)
+- [13- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those numbers that are even and then prints it. If there is no such number, it then prints: "none".](#13--scenario-write-a-program-that-accepts-a-list-of-integers-have-it-create-a-new-list-that-contains-only-those-numbers-that-are-even-and-then-prints-it-if-there-is-no-such-number-it-then-prints-none)
+- [14- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those numbers that are odd and then prints it. If there is no such a number, it then prints: "none".](#14--scenario-write-a-program-that-accepts-a-list-of-integers-have-it-create-a-new-list-that-contains-only-those-numbers-that-are-odd-and-then-prints-it-if-there-is-no-such-a-number-it-then-prints-none)
+- [15- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those integers that are divisible by 3 and then prints it. If there is no such a number, it then prints "none".](#15--scenario-write-a-program-that-accepts-a-list-of-integers-have-it-create-a-new-list-that-contains-only-those-integers-that-are-divisible-by-3-and-then-prints-it-if-there-is-no-such-a-number-it-then-prints-none)
+- [16- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those that are non-negative and then it prints it. If there is no such a number, it then prints: "none".](#16--scenario-write-a-program-that-accepts-a-list-of-integers-have-it-create-a-new-list-that-contains-only-those-that-are-non-negative-and-then-it-prints-it-if-there-is-no-such-a-number-it-then-prints-none)
+- [17- Scenario: Write a program that accepts a list of integers. Have it create a new list by using the following formula on each element of the input list: Y=1/X. If the list contains integer 0, skip it. In this case the output list will be shorter.](#17--scenario-write-a-program-that-accepts-a-list-of-integers-have-it-create-a-new-list-by-using-the-following-formula-on-each-element-of-the-input-list-y1x-if-the-list-contains-integer-0-skip-it-in-this-case-the-output-list-will-be-shorter)
+- [18- Scenario: Write a program that accepts the integer N and prints the sum of the numbers from 1 to N. If N is negative or zero, it should print: "Input Error".](#18--scenario-write-a-program-that-accepts-the-integer-n-and-prints-the-sum-of-the-numbers-from-1-to-n-if-n-is-negative-or-zero-it-should-print-input-error)
+- [19- Scenario: Write a program that accepts the integer N and prints the product of the numbers from 1 to N. If N is negative or zero, it should print: "Input Error".](#19--scenario-write-a-program-that-accepts-the-integer-n-and-prints-the-product-of-the-numbers-from-1-to-n-if-n-is-negative-or-zero-it-should-print-input-error)
+- [20- Scenario: Write a program that accepts the coefficients of a quadratic equation x$^{2}$+ax+b = 0 and prints the roots as output. If there are no real roots, it prints "The equation has no roots".](#20--scenario-write-a-program-that-accepts-the-coefficients-of-a-quadratic-equation-x2axb--0-and-prints-the-roots-as-output-if-there-are-no-real-roots-it-prints-the-equation-has-no-roots)
+- [21- Scenario: Write a program that accepts a list L as input. If the length of L is an even number, then define 2 lists: L1 and L2 and then copy the first half of L to L1 and the $2^{nd}$ half of L to L2. If the length of the list is not even, print "I can not break the list in half".](#21--scenario-write-a-program-that-accepts-a-list-l-as-input-if-the-length-of-l-is-an-even-number-then-define-2-lists-l1-and-l2-and-then-copy-the-first-half-of-l-to-l1-and-the-2nd-half-of-l-to-l2-if-the-length-of-the-list-is-not-even-print-i-can-not-break-the-list-in-half)
+- [22- Scenario: Write a program that accepts a list L as input. If the length of L is an even number, define 2 tuples T1 and T2 and copy the first half of L to T1 and $2^{nd}$ half of L to T2. If the length of the list is not even, print "I cannot break the list into half".](#22--scenario-write-a-program-that-accepts-a-list-l-as-input-if-the-length-of-l-is-an-even-number-define-2-tuples-t1-and-t2-and-copy-the-first-half-of-l-to-t1-and-2nd-half-of-l-to-t2-if-the-length-of-the-list-is-not-even-print-i-cannot-break-the-list-into-half)
+- [23- Scenario: Write a program that accepts a list L as input which contains a list of student weights in Kilograms and converts them into Pounds. Print the individual weights in pounds and calculate the total weight of all student in both Kg and pounds.](#23--scenario-write-a-program-that-accepts-a-list-l-as-input-which-contains-a-list-of-student-weights-in-kilograms-and-converts-them-into-pounds-print-the-individual-weights-in-pounds-and-calculate-the-total-weight-of-all-student-in-both-kg-and-pounds)
+- [24- Scenario: Write a program that accepts list L1 of length 4 that contains the names of people and list L2 of the same length that contains the phone numbers of these people. Then create a dictionary of this data with the name as keys and phone number as values. Then print out the dictionary.](#24--scenario-write-a-program-that-accepts-list-l1-of-length-4-that-contains-the-names-of-people-and-list-l2-of-the-same-length-that-contains-the-phone-numbers-of-these-people-then-create-a-dictionary-of-this-data-with-the-name-as-keys-and-phone-number-as-values-then-print-out-the-dictionary)
+- [25- Scenario: Write a program to print the first 10 multipliers of a given number.](#25--scenario-write-a-program-to-print-the-first-10-multipliers-of-a-given-number)
+- [26 - Scenario: Write a program to count the total number of digits in a number.](#26---scenario-write-a-program-to-count-the-total-number-of-digits-in-a-number)
+- [27- Scenario: Write a program to check if the given string is a "palindrome", meaning that the string and reverse string are same and then print "It's a Palindrome" or ("NOT")](#27--scenario-write-a-program-to-check-if-the-given-string-is-a-palindrome-meaning-that-the-string-and-reverse-string-are-same-and-then-print-its-a-palindrome-or-not)
+- [28- Scenario: Write a program to check if a given number is an Armstrong number, i.e., when each of its digits is raised to the power of the number of digits in the number, it equals itself. For example, 153=1**3 + 5**33 + 3**3, is an Armstrong number.](#28--scenario-write-a-program-to-check-if-a-given-number-is-an-armstrong-number-ie-when-each-of-its-digits-is-raised-to-the-power-of-the-number-of-digits-in-the-number-it-equals-itself-for-example-15313--533--33-is-an-armstrong-number)
+- [29- Scenario: Write a program to create a list of tuples having first element as the number and the second element as the cube of the number.](#29--scenario-write-a-program-to-create-a-list-of-tuples-having-first-element-as-the-number-and-the-second-element-as-the-cube-of-the-number)
+- [30- Scenario: Given a list of numbers, the task is to write a python program to find the second largest number in the given list.](#30--scenario-given-a-list-of-numbers-the-task-is-to-write-a-python-program-to-find-the-second-largest-number-in-the-given-list)
+- [31- Scenario: Write a python program to display all integers within the range 100-130 whose sum of digits is an even number. For example, for 112, 1+1+2=4, which is an even number.](#31--scenario-write-a-python-program-to-display-all-integers-within-the-range-100-130-whose-sum-of-digits-is-an-even-number-for-example-for-112-1124-which-is-an-even-number)
+- [32- Scenario: Write a function that accepts 2 lists, each of length 3. The first list elements are inputs from the user, they all should be strings and represent names. The second list elements are inputs from the user, they all should be strings and represent nicknames. The Function should return a list where each element is the combination of the names and nicknames.](#32--scenario-write-a-function-that-accepts-2-lists-each-of-length-3-the-first-list-elements-are-inputs-from-the-user-they-all-should-be-strings-and-represent-names-the-second-list-elements-are-inputs-from-the-user-they-all-should-be-strings-and-represent-nicknames-the-function-should-return-a-list-where-each-element-is-the-combination-of-the-names-and-nicknames)
+- [33- Scenario: Write a program that calculates the efficiency of light bulb and then output its energy rating.](#33--scenario-write-a-program-that-calculates-the-efficiency-of-light-bulb-and-then-output-its-energy-rating)
+- [34- Scenario: Write a program which will accept an integer number "n" from the user and then creates and prints a dictionary that contains (i, i**3) for all numbers between 1 and n.](#34--scenario-write-a-program-which-will-accept-an-integer-number-n-from-the-user-and-then-creates-and-prints-a-dictionary-that-contains-i-i3-for-all-numbers-between-1-and-n)
+
+<!-- /TOC -->
+
+
+##### Work
+
+- Take input list A. Numbers will be inputted until the user types non-integer
+- An empty list B will be initialized for a deduplicated list
+- An empty list C will be initialized for the final duplicated numbers only list
+
+```python
+
+input_list = []
+
+while True:
+    user_input = input(
+        "Type an integer number or type any letter to finish inputting values to the list: "
+    )
+
+    try:
+        number = int(user_input)
+        input_list.append(number)
+    except ValueError:
+        print("The new list is", input_list)
+        break
+
+undup_list = []
+dup_only_list = []
+
+for i in input_list:
+    if i not in undup_list:
+        undup_list.append(i)
+    elif i not in dup_only_list and i in undup_list:
+        dup_only_list.append(i)
+
+print(dup_only_list)
+
+```
+
+---
+
+### Question 2- Scenario: Write a program to check a number that is inputted by the user then checks whether the number entered by the user is positive, negative or zero.
+
+#### Work
+
+```python
+number = input("Enter any number: ")
+
+while True:
+    try:
+        number = int(number)
+    except ValueError:
+        try:
+            number = float(number)
+        except ValueError:
+            print("Invalid input")
+            break
+
+    if number > 0:
+        print("Input number is positive")
+    elif number == 0:
+        print("Number is equal to zero")
+    else:
+        print("Input Number is negative")
+    break
+```
+
+### 3- Scenario: Write a program that accepts 3 integers as input and stores them as a list. Then write a function that accepts this list and returns the sum of the squares of the 3 numbers as the output. Then call the function in the code and it prints the output of that function.
+
+#### Work
+
+```python
+numbers = []
+
+while len(numbers) < 3:
+    number = int(input("Enter your number: "))
+
+    numbers.append(number)
+
+
+def tri_square_sum(some_list):
+    global sum
+    sum = some_list[0] ** 2 + some_list[1] ** 2 + some_list[2] ** 2
+    return sum
+
+
+tri_square_sum(numbers)
+print(sum)
+```
+
+Example: Input: 1,2,3 Output: 14 (i.e., $1^{2}$+$2^{2}$+$3^{2}$=14)
+
+---
+
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page2' class='markdown-page-text'>[ 第2页 ]</span>---------------------------------------------</span><br><br>
+
+### 4- Scenario: Write a program that accepts 3 integers as input and stores them as a list. Then write a function that accepts this list and takes 2 to the power of each element. Then it returns the sum of them as the output. Then call the function in the code and print the output of that function.
+
+#### Work
+
+Example: Input: 1,2,3 Output: 14 (i.e., $2^{1}+2^{2}+2^{3}$=14)
+
+```
+input_list = []
+
+while len(input_list) < 3:
+    num = int(input("Enter a number: "))
+    input_list.append(num)
+
+
+def tri_exponent(some_list):
+    global sum
+    sum = 2 ** some_list[0] + 2 ** some_list[1] + 2 ** some_list[2]
+    return sum
+
+
+tri_exponent(input_list)
+
+print(sum)
+
+```
+
+---
+
+### 5- Scenario: Write a program that gets integer N as input and generates the sum of $(0.5)^i$ for i from 1 to N. Try different values of N and check if the value can get larger than 1 or not.
+
+Example: Input: N=5, Output: 0.96875
+
+(i.e., $(0.5)^1+(0.5)^2+(0.5)^3+(0.5)^4+(0.5)^5=0.96875)$
+
+#### Work
+
+```python
+N = int(input("Enter N: "))
+total = 0
+for i in range(1, N + 1):
+    total += 0.5 ** i
+print(total)
+```
+
+## 6- Scenario: Write a program that accepts a string and removes any “.” from that string. If there is no “.”, print ‘There is no “.’’.
+
+Example: Input: "This is a test. Just try it." Output: "This is a test Just try it"
+
+### Work
+
+```python
+text = input("Enter a string: ")
+if "." in text:
+    text = text.replace(".", "")
+    print(text)
+else:
+    print('There is no "."')
+```
+
+## 7- Scenario: Write a program that accepts a string and replaces any “.” With “!”. from that string. If there is no “.”, print ‘There is no “.’’.
+
+Example: Input: "This is a test. Just try it." Output: "This is a test! Just try it!"
+
+### Work
+
+```python
+text = input("Enter a string: ")
+if "." in text:
+    text = text.replace(".", "!")
+    print(text)
+else:
+    print('There is no "."')
+```
+
+## 8- Scenario: Write a program that accepts 2 lists of 5 integers each from the user and compares them. If they are equal, it prints "the same" and if not, it prints "different"
+
+Example: Input: [1 2 3 4 5], [1 5 3 4 5] Output: "different"
+
+### Work
+
+```python
+list1 = []
+list2 = []
+
+for i in range(5):
+    list1.append(int(input("Enter number for list1: ")))
+
+for i in range(5):
+    list2.append(int(input("Enter number for list2: ")))
+
+if list1 == list2:
+    print("the same")
+else:
+    print("different")
+```
+
+## 9- Scenario: Write a program that accepts a list of integers as input and checks whether it contains the number "2". If this is the case, it should print the location in the list. If not, it prints "There is no number 2 in the list". Note: If there is more than one "2", the location of the first "2" has to be printed.
+
+Example: Input: [1 3 2 4 5 2], Output: position 3
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+if 2 in numbers:
+    print("position", numbers.index(2) + 1)
+else:
+    print("There is no number 2 in the list")
+```
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page3' class='markdown-page-text'>[ 第3页 ]</span>---------------------------------------------</span><br><br>
+
+## 10- Scenario: Write a program that accepts a list of integers as input and checks whether it contains the number "2". If this is the case, it should print the location in the list. If not, it prints "There is no number 2 in the list". Note: If there is more than one "2", the location of the last "2" has to be printed.
+
+Example: Input: [1 3 2 4 5 2], Output: position 5
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+if 2 in numbers:
+    position = 0
+    for i in range(len(numbers)):
+        if numbers[i] == 2:
+            position = i + 1
+    print("position", position)
+else:
+    print("There is no number 2 in the list")
+```
+
+## 11- Scenario: Write a program that accepts a list of characters as input and then determines how many times the letter "A" is repeated. It should then print "Letter A is repeated ... times" where "..." shows the number of repetitions. If there is no "A", it prints: "There was no letter A"
+
+Example: Input: [A B C A E], Output: Letter A is repeated 2 times
+
+### Work
+
+```python
+letters = []
+for i in range(int(input("How many letters? "))):
+    letters.append(input("Enter letter: "))
+
+count = 0
+for letter in letters:
+    if letter == "A":
+        count += 1
+
+if count > 0:
+    print("Letter A is repeated", count, "times")
+else:
+    print("There was no letter A")
+```
+
+## 12- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those numbers that are squares of an integer. This number should then be printed. If there is no such a number, it prints "none". Hint: if the square root of a number is an integer, it means that it can be square of another integer, for example $16^{0.5}$ is an integer but $15^{0.5}$ is not an integer.
+
+Example: Input: [1 5 8 16 9], Output: [1 16 9]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+squares = []
+for num in numbers:
+    if num >= 0 and (num ** 0.5) == int(num ** 0.5):
+        squares.append(num)
+
+if squares:
+    print(squares)
+else:
+    print("none")
+```
+
+## 13- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those numbers that are even and then prints it. If there is no such number, it then prints: "none".
+
+Example: Input: [1 5 8 16 9], Output: [8 16]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+evens = []
+for num in numbers:
+    if num % 2 == 0:
+        evens.append(num)
+
+if evens:
+    print(evens)
+else:
+    print("none")
+```
+
+## 14- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those numbers that are odd and then prints it. If there is no such a number, it then prints: "none".
+
+Example: Input: [1 5 8 16 9], Output: [1 5]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+odds = []
+for num in numbers:
+    if num % 2 != 0:
+        odds.append(num)
+
+if odds:
+    print(odds)
+else:
+    print("none")
+```
+
+## 15- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those integers that are divisible by 3 and then prints it. If there is no such a number, it then prints "none".
+
+Example: Input: [1 5 8 16 9], Output: [9]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+div3 = []
+for num in numbers:
+    if num % 3 == 0:
+        div3.append(num)
+
+if div3:
+    print(div3)
+else:
+    print("none")
+```
+
+## 16- Scenario: Write a program that accepts a list of integers. Have it create a new list that contains only those that are non-negative and then it prints it. If there is no such a number, it then prints: "none".
+
+<br><span class='markdown-page-line'>---------------------------------------------<span id='page4' class='markdown-page-text'>[ 第4页 ]</span>---------------------------------------------</span><br><br>
+
+Example: Input: [0 5 8 -16 -9], Output: [0 5 8]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+non_neg = []
+for num in numbers:
+    if num >= 0:
+        non_neg.append(num)
+
+if non_neg:
+    print(non_neg)
+else:
+    print("none")
+```
+
+## 17- Scenario: Write a program that accepts a list of integers. Have it create a new list by using the following formula on each element of the input list: Y=1/X. If the list contains integer 0, skip it. In this case the output list will be shorter.
+
+Example: Input: [0 1 2 4], Output: [1 0.5 0.25]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+result = []
+for num in numbers:
+    if num != 0:
+        result.append(1 / num)
+
+print(result)
+```
+
+## 18- Scenario: Write a program that accepts the integer N and prints the sum of the numbers from 1 to N. If N is negative or zero, it should print: "Input Error".
+
+Example: Input: N = 4, Output: 1+2+3+4 = 10
+
+### Work
+
+```python
+N = int(input("Enter N: "))
+if N <= 0:
+    print("Input Error")
+else:
+    total = 0
+    for i in range(1, N + 1):
+        total += i
+    print(total)
+```
+
+## 19- Scenario: Write a program that accepts the integer N and prints the product of the numbers from 1 to N. If N is negative or zero, it should print: "Input Error".
+
+Example: Input: N = 4, Output: $1*2*3*4 = 24$
+
+### Work
+
+```python
+N = int(input("Enter N: "))
+if N <= 0:
+    print("Input Error")
+else:
+    product = 1
+    for i in range(1, N + 1):
+        product *= i
+    print(product)
+```
+
+## 20- Scenario: Write a program that accepts the coefficients of a quadratic equation x$^{2}$+ax+b = 0 and prints the roots as output. If there are no real roots, it prints "The equation has no roots".
+
+Note: In order for the equation to have real roots, D=a$^{2}$-4b has to be non-negative. If this is the case, the roots are (-a+D$^{0.5}$)/2 and (-a-D$^{0.5}$)/2
+
+Example: Input: a = -5, b = 6, Output: x = 2 and 3
+
+### Work
+
+```python
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+
+D = a ** 2 - 4 * b
+
+if D < 0:
+    print("The equation has no roots")
+else:
+    x1 = (-a + D ** 0.5) / 2
+    x2 = (-a - D ** 0.5) / 2
+    print("x =", x1, "and", x2)
+```
+
+## 21- Scenario: Write a program that accepts a list L as input. If the length of L is an even number, then define 2 lists: L1 and L2 and then copy the first half of L to L1 and the $2^{nd}$ half of L to L2. If the length of the list is not even, print "I can not break the list in half".
+
+Example: Input: L=[1 3 2 4 6 7 5 2], Output: L1=[1 3 2 4], L2=[6 7 5 2].
+
+### Work
+
+```python
+L = []
+
+for i in range(int(input("How many numbers? "))):
+    L.append(int(input("Enter number: ")))
+
+if len(L) % 2 == 0:
+    half = len(L) // 2
+    L1 = L[:half]
+    L2 = L[half:]
+    print("L1 =", L1)
+    print("L2 =", L2)
+else:
+    print("I can not break the list in half")
+```
+
+## 22- Scenario: Write a program that accepts a list L as input. If the length of L is an even number, define 2 tuples T1 and T2 and copy the first half of L to T1 and $2^{nd}$ half of L to T2. If the length of the list is not even, print "I cannot break the list into half".
+
+Example: Input: L=[1 3 2 4 6 7 5 2], Output: T1=(1 3 2 4), T2=(6 7 5 2).
+
+### Work
+
+```python
+L = []
+for i in range(int(input("How many numbers? "))):
+    L.append(int(input("Enter number: ")))
+
+if len(L) % 2 == 0:
+    half = len(L) // 2
+    T1 = tuple(L[:half])
+    T2 = tuple(L[half:])
+    print("T1 =", T1)
+    print("T2 =", T2)
+else:
+    print("I cannot break the list into half")
+```
+
+## 23- Scenario: Write a program that accepts a list L as input which contains a list of student weights in Kilograms and converts them into Pounds. Print the individual weights in pounds and calculate the total weight of all student in both Kg and pounds.
+
+Example: Input: [50 100 70 80], Output: [110 220 154 176], Total_in_pounds=660, Total_in_Kg= 300
+
+### Work
+
+```python
+weights_kg = []
+for i in range(int(input("How many students? "))):
+    weights_kg.append(float(input("Enter weight in Kg: ")))
+
+weights_lb = []
+for w in weights_kg:
+    weights_lb.append(w * 2.2)
+
+print(weights_lb)
+print("Total_in_pounds=", sum(weights_lb))
+print("Total_in_Kg=", sum(weights_kg))
+```
+
+## 24- Scenario: Write a program that accepts list L1 of length 4 that contains the names of people and list L2 of the same length that contains the phone numbers of these people. Then create a dictionary of this data with the name as keys and phone number as values. Then print out the dictionary.
+
+A sample output: {$\{\text{Mo'}\}$: 56789129, 'Nick': 31553082, 'Bob': 31553067, 'Khaled': 33224455}
+
+### Work
+
+```python
+L1 = []
+for i in range(4):
+    L1.append(input("Enter name: "))
+
+L2 = []
+for i in range(4):
+    L2.append(int(input("Enter phone number: ")))
+
+phonebook = {}
+for i in range(4):
+    phonebook[L1[i]] = L2[i]
+
+print(phonebook)
+```
+
+## 25- Scenario: Write a program to print the first 10 multipliers of a given number.
+
+Example:
+
+Input: 3
+
+Output:
+
+1 x 3 = 3
+
+2 x 3 = 6
+
+3 x 3 = 9
+
+4 x 3 = 12
+
+5 x 3 = 15
+
+6 x 3 = 18
+
+7 x 3 = 21
+
+8 x 3 = 24
+
+9 x 3 = 27
+
+10 x 3 = 30
+
+### Work
+
+```python
+num = int(input("Enter a number: "))
+for i in range(1, 11):
+    print(i, "x", num, "=", i * num)
+```
+
+## 26 - Scenario: Write a program to count the total number of digits in a number.
+
+Example: Input: 129475 Output: 6
+
+### Work
+
+```python
+num = input("Enter a number: ")
+print(len(num))
+```
+
+## 27- Scenario: Write a program to check if the given string is a "palindrome", meaning that the string and reverse string are same and then print "It's a Palindrome" or ("NOT")
+
+Example: Input: RADAR Output: "It's a Palindrome"
+
+### Work
+
+```python
+text = input("Enter a string: ")
+if text == text[::-1]:
+    print("It's a Palindrome")
+else:
+    print("NOT")
+```
+
+## 28- Scenario: Write a program to check if a given number is an Armstrong number, i.e., when each of its digits is raised to the power of the number of digits in the number, it equals itself. For example, 153=1**3 + 5**33 + 3**3, is an Armstrong number.
+
+Example: Input: 153 Output: "153 is an Armstrong number"
+
+### Work
+
+```python
+num = input("Enter a number: ")
+n = len(num)
+total = 0
+for digit in num:
+    total += int(digit) ** n
+
+if total == int(num):
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+```
+
+## 29- Scenario: Write a program to create a list of tuples having first element as the number and the second element as the cube of the number.
+
+Example: Input: [1,2,3] Output: [(1,1), (2,8), (3,27)]
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+result = []
+for num in numbers:
+    result.append((num, num ** 3))
+
+print(result)
+```
+
+## 30- Scenario: Given a list of numbers, the task is to write a python program to find the second largest number in the given list.
+
+Example: Input: [10,20,4] Output:10
+
+### Work
+
+```python
+numbers = []
+for i in range(int(input("How many numbers? "))):
+    numbers.append(int(input("Enter number: ")))
+
+sorted_numbers = sorted(numbers, reverse=True)
+print(sorted_numbers[1])
+```
+
+## 31- Scenario: Write a python program to display all integers within the range 100-130 whose sum of digits is an even number. For example, for 112, 1+1+2=4, which is an even number.
+
+So the output is: 101, 103, 105, 107, 109, 110, 112, 114, 116, 118, 121, 123, 125, 127, 129
+
+### Work
+
+```python
+for num in range(100, 131):
+    digit_sum = 0
+    for digit in str(num):
+        digit_sum += int(digit)
+    if digit_sum % 2 == 0:
+        print(num, end=", ")
+print()
+```
+
+## 32- Scenario: Write a function that accepts 2 lists, each of length 3. The first list elements are inputs from the user, they all should be strings and represent names. The second list elements are inputs from the user, they all should be strings and represent nicknames. The Function should return a list where each element is the combination of the names and nicknames.
+
+Example: Input: ["John", "Mary", "Bob"], ["nice", "beautiful", "brave"]. Output: ["John the nice", "Mary the beautiful", "Bob the brave"]
+
+### Work
+
+```python
+def combine(names, nicknames):
+    result = []
+    for i in range(3):
+        result.append(names[i] + " the " + nicknames[i])
+    return result
+
+
+names = []
+for i in range(3):
+    names.append(input("Enter name: "))
+
+nicknames = []
+for i in range(3):
+    nicknames.append(input("Enter nickname: "))
+
+print(combine(names, nicknames))
+```
+
+## 33- Scenario: Write a program that calculates the efficiency of light bulb and then output its energy rating.
+
+The program asks the user to enter two values: The light bulb output (in lumens, lm) and the power consumption of the light bulb over 1000hour (in kW/1000h). Then by dividing them, it finds out the efficiency ratio and reports the rating according to table below.
+
+| Energy rating | Efficiency ratio |
+| --- | --- |
+| A | 210 or above |
+| B | 185 or above |
+| C | 160 or above |
+| D | 135 or above |
+| E | 110 or above |
+| F | 85 or above |
+| G | Below 85 |
+
+Example: Input: light bulb output = 12000 lm, power consumption = 45 kW/1000h
+
+Output: the efficiency ratio = 266.6, Energy Ratio = A
+
+### Work
+
+```python
+output_lm = float(input("Enter light bulb output (lm): "))
+power_kw = float(input("Enter power consumption (kW/1000h): "))
+
+ratio = output_lm / power_kw
+
+if ratio >= 210:
+    rating = "A"
+elif ratio >= 185:
+    rating = "B"
+elif ratio >= 160:
+    rating = "C"
+elif ratio >= 135:
+    rating = "D"
+elif ratio >= 110:
+    rating = "E"
+elif ratio >= 85:
+    rating = "F"
+else:
+    rating = "G"
+
+print("the efficiency ratio =", ratio)
+print("Energy Ratio =", rating)
+```
+
+## 34- Scenario: Write a program which will accept an integer number "n" from the user and then creates and prints a dictionary that contains (i, i**3) for all numbers between 1 and n.
+
+Example: Input: 6, Output: {1:1, 2:8, 3:27, 4:64, 5:125, 6:216}
+
+### Work
+
+```python
+n = int(input("Enter n: "))
+result = {}
+for i in range(1, n + 1):
+    result[i] = i ** 3
+
+print(result)
+```

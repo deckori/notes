@@ -1,0 +1,236 @@
+# Learn Python (Lab Exam Edition) in Y Minutes
+
+```python
+# ============================================================
+# INPUT & TYPE CONVERSION
+# ============================================================
+
+x = input("Enter a value: ")        # always returns a string
+x = int(input("Enter int: "))       # convert to integer
+x = float(input("Enter float: "))   # convert to float
+
+# Safe conversion with try/except
+try:
+    number = int(user_input)
+except ValueError:
+    print("Invalid input")
+
+# Loop until non-integer is entered (sentinel-controlled input)
+input_list = []
+while True:
+    user_input = input("Type an integer, or a letter to stop: ")
+    try:
+        number = int(user_input)
+        input_list.append(number)
+    except ValueError:
+        break
+
+# Looping a fixed number of times for input
+numbers = []
+for i in range(3):
+    numbers.append(int(input("Enter number: ")))
+
+# Loop until list reaches a certain length
+numbers = []
+while len(numbers) < 3:
+    numbers.append(int(input("Enter number: ")))
+
+
+# ============================================================
+# LISTS
+# ============================================================
+
+L = [10, 20, 30]
+
+L.append(40)          # add to end
+L.pop()                # remove last element
+del L[0]                # remove by index
+L[1] = 99               # replace element by index
+len(L)                  # length of list
+L.index(20)              # position of first occurrence (0-based!)
+L.sort()                 # sort ascending in place
+L.reverse()               # reverse in place
+sorted(L, reverse=True)    # returns NEW sorted list, descending
+L[::-1]                     # reverse a list/string (slicing)
+L[:half]                     # slice: first half
+L[half:]                      # slice: second half
+
+# Membership check
+if 2 in L:
+    ...
+if 2 not in L:
+    ...
+
+# Building a list with a condition (filter pattern)
+result = []
+for num in L:
+    if num % 2 == 0:        # condition goes here
+        result.append(num)
+
+# Removing duplicates -> keep only first occurrence of each
+unique = []
+for item in L:
+    if item not in unique:
+        unique.append(item)
+
+# Keep only items that appear MORE than once
+dup_only = []
+for item in L:
+    if item not in unique:
+        unique.append(item)
+    elif item not in dup_only:
+        dup_only.append(item)
+
+
+# ============================================================
+# TUPLES (like lists, but immutable)
+# ============================================================
+
+t1 = ("DOH", "DXB", "MCT")
+t2 = "RUH", "CAI", "AMM"        # parentheses optional
+
+t3 = t1 + ("Qatar",)            # combine tuples with +
+t4 = t2 * 2                     # repeat with *
+t5 = tuple(some_list)           # convert list -> tuple
+
+
+# ============================================================
+# DICTIONARIES
+# ============================================================
+
+d = {"Ali": 90, "Fatima": 85}
+
+d["Ahmed"] = 95          # add or update a key
+del d["Ali"]               # delete a key
+d["Ahmed"] = 100             # changing = same as adding (overwrites)
+print(d)                      # shows all key:value pairs
+
+# Building a dictionary from two parallel lists
+names = ["Mo", "Nick"]
+phones = [56789129, 31553082]
+phonebook = {}
+for i in range(len(names)):
+    phonebook[names[i]] = phones[i]
+
+
+# ============================================================
+# FUNCTIONS
+# ============================================================
+
+def my_func(arg1, arg2):
+    result = arg1 + arg2
+    return result
+
+answer = my_func(3, 4)     # call & store the return value
+
+# Using 'global' to modify a variable outside the function
+def tri_square_sum(some_list):
+    global total
+    total = some_list[0]**2 + some_list[1]**2 + some_list[2]**2
+    return total
+
+
+# ============================================================
+# STRINGS
+# ============================================================
+
+s = "This is a test."
+
+"." in s                 # check for substring/character
+s.replace(".", "")        # remove all "."
+s.replace(".", "!")        # replace "." with "!"
+s[::-1]                     # reverse a string
+s == s[::-1]                  # palindrome check
+len(s)                          # length / number of characters
+str(129475)                      # int -> string (so you can loop digits)
+int("5")                          # string -> int
+
+
+# ============================================================
+# MATH / NUMBER OPERATIONS
+# ============================================================
+
+x ** 2          # exponent (power)
+x ** 0.5        # square root
+x // y          # integer (floor) division
+x % y           # modulo (remainder) -- also used for even/odd check
+x % 2 == 0      # even check
+x % 2 != 0      # odd check
+abs(-5)          # absolute value
+
+
+# ============================================================
+# LOOPS
+# ============================================================
+
+for i in range(1, N + 1):   # loop from 1 to N inclusive
+    ...
+
+for i in range(10):          # loop 0 to 9
+    ...
+
+while condition:               # loop while True
+    ...
+    break                         # exit loop early
+
+for i, val in enumerate(L):        # index + value together
+    ...
+
+
+# ============================================================
+# CONDITIONALS
+# ============================================================
+
+if x > 0:
+    print("positive")
+elif x == 0:
+    print("zero")
+else:
+    print("negative")
+
+
+# ============================================================
+# COMMON PATTERNS SEEN IN THIS EXAM
+# ============================================================
+
+# 1. Filter list by condition -> new list, else print "none"
+result = [num for num in L if num % 2 == 0]   # (manual loop version used in answers)
+if result:
+    print(result)
+else:
+    print("none")
+
+# 2. Find index of first / last occurrence of a value
+L.index(2)                      # FIRST occurrence
+# for LAST occurrence, loop manually and keep updating the index
+
+# 3. Sum / product over a range
+total = 0
+for i in range(1, N + 1):
+    total += i
+
+product = 1
+for i in range(1, N + 1):
+    product *= i
+
+# 4. Check perfect square
+import_needed = False  # not needed, ** 0.5 works fine
+is_square = (num ** 0.5) == int(num ** 0.5)
+
+# 5. Quadratic formula
+D = a**2 - 4*b
+if D >= 0:
+    x1 = (-a + D**0.5) / 2
+    x2 = (-a - D**0.5) / 2
+
+# 6. Armstrong number check
+num_str = str(num)
+n = len(num_str)
+total = sum(int(d) ** n for d in num_str)   # or loop manually
+is_armstrong = (total == num)
+
+# 7. Dictionary comprehension-style (manual loop version)
+result = {}
+for i in range(1, n + 1):
+    result[i] = i ** 3
+```
