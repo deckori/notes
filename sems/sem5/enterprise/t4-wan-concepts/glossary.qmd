@@ -1,0 +1,180 @@
+# Glossary of Terms
+
+**WAN (Wide Area Network)** – A telecommunications network that spans over a relatively large geographical area and is required to connect beyond the boundary of the LAN. Interconnect LANs, owned by ISPs
+
+**LAN (Local Area Network)** – Provides networking services within a small geographic area. Used to interconnect local computers, peripherals, and other devices.
+
+**Private WAN** – A connection that is dedicated to a single customer. Provides guaranteed service level, consistent bandwidth, and security.
+
+**Public WAN** – Provided by an ISP or telecommunications service provider. Service levels and bandwidth may vary. Shared connections over Internet do not guarantee security.
+
+**Point-to-Point Topology** – Employs a point-to-point circuit between two endpoints. Involves a Layer 2 transport service through the service provider network. The connection is transparent to the customer network.
+
+**Hub-and-Spoke Topology** – Enables a single interface on the hub router to be shared by all spoke circuits. Spoke routers can only communicate with each other through the hub router.
+
+**Dual-Homed Topology** – Offers enhanced network redundancy, load balancing, distributed computing and processing, and the ability to implement backup service provider connections.
+
+**Fully Meshed Topology** – Uses multiple virtual circuits to connect all sites. The most fault-tolerant topology.
+
+**Partially Meshed Topology** – Connects many but not all sites.
+
+**Service Level Agreement (SLA)** – A document that outlines the expected services relating to the reliability and availability of the connection, negotiated between an organization and a service provider.
+
+**Carrier** – Owns and maintains the physical connection and equipment between the provider and the customer.
+
+**Single-carrier connection** – When an organization connects to only one service provider.
+
+**Dual-carrier connection** – Provides redundancy and increases network availability. The organization negotiates separate SLAs with two different service providers.
+
+**Data Terminal Equipment (DTE)** – Connects the subscriber LANs to the WAN communication device.
+
+**Data Communications Equipment (DCE)** – Device used to communicate with the provider.
+
+**Customer Premises Equipment (CPE)** – The DTE and DCE devices located on the enterprise edge.
+
+**Point-of-Presence (POP)** – The point where the subscriber connects to the service provider network.
+
+**Demarcation Point** – The physical location in a building or complex that officially separates the CPE from service provider equipment.
+
+**Local Loop (last mile)** – The copper or fiber cable that connects the CPE to the CO of the service provider.
+
+**Central Office (CO)** – The local service provider facility or building that connects the CPE to the provider network.
+
+**Toll Network** – Includes backhaul, long-haul, all-digital, fiber-optic communications lines, switches, routers, and other equipment inside the WAN provider network.
+
+**Backhaul Network** – Connects multiple access nodes of the service provider network.
+
+**Backbone Network** – Large, high-capacity networks used to interconnect service provider networks and to create a redundant network.
+
+**Voiceband Modem** – Dial-up modem - uses telephone lines. Legacy device.
+
+**DSL Modem / Cable Modem** – Collectively known as broadband modems. High-speed digital modems that connect to the DTE router using Ethernet.
+
+**CSU/DSU** – Required for digital-leased lines. Connects a digital device to a digital line.
+
+**Optical Converter** – Connects fiber-optic media to copper media and converts optical signals to electronic pulses.
+
+**WAN Core Devices** – WAN backbone consists of multiple high-speed routers and Layer 3 switches.
+
+**Serial Communication** – Transmits bits sequentially over a single channel.
+
+**Parallel Communication** – Simultaneously transmits several bits using multiple wires. Limited to very short distances.
+
+**Circuit-Switched Network** – Establishes a dedicated circuit (or channel) between endpoints before the users can communicate. All communication uses the same path.
+
+**Packet-Switched Communication** – Segments traffic data into packets that are routed over a shared network. Much less expensive and more flexible than circuit switching.
+
+**SDH (Synchronous Digital Hierarchy)** – A global standard for transporting data over fiber-optic cable.
+
+**SONET (Synchronous Optical Networking)** – The North American standard that provides the same services as SDH.
+
+**DWDM (Dense Wavelength Division Multiplexing)** – A newer technology that increases the data-carrying capacity of SDH and SONET by simultaneously sending multiple streams of data using different wavelengths of light.
+
+**Leased Lines** – Point-to-point lines leased from a service provider. The organization pays a monthly lease fee. Available in different fixed capacities, generally priced based on bandwidth required and distance between connected points.
+
+**T-carrier** – Used in North America. T1 links support bandwidth up to 1.544 Mbps; T3 links support bandwidth up to 43.7 Mbps.
+
+**E-carrier** – Used in Europe. E1 links support bandwidth up to 2.048 Mbps; E3 links support bandwidth up to 34.368 Mbps.
+
+**PSTN (Public Switched Telephone Network)** – Dialup WAN access uses the PSTN as its WAN connection. Traditional local loops can transport binary computer data through the voice telephone network using a voiceband modem. The rate of the signal is limited to less than 56 kbps.
+
+**ISDN (Integrated Services Digital Network)** – A circuit-switching technology that enables the PSTN local loop to carry digital signals. Provides data rates from 45 Kbps to 2.048 Mbps.
+
+**Frame Relay** – A simple Layer 2 non-broadcast multi-access (NBMA) WAN technology used to interconnect enterprise LANs. Creates PVCs uniquely identified by a DLCI.
+
+**ATM (Asynchronous Transfer Mode)** – Capable of transferring voice, video, and data through private and public networks. Built on a cell-based architecture. ATM cells are always a fixed length of 53 bytes.
+
+**Dark Fiber** – Fiber that can be leased or purchased from a supplier for dedicated broadband use.
+
+**Ethernet WAN (Metro Ethernet)** – A service offered by providers using fiber-optic cabling. Also known as Metropolitan Ethernet (Metro E), Ethernet over MPLS (EoMPLS), or Virtual Private LAN Service (VPLS).
+
+**MPLS (Multiprotocol Label Switching)** – A service provider WAN technology to interconnect clients without regard to access method or payload. Routers are label switched routers (LSRs) that attach labels to packets used by other MPLS routers to forward traffic.
+
+**DSL (Digital Subscriber Line)** – A high-speed, always-on connection technology that uses existing twisted-pair telephone lines to provide IP services to users.
+
+**ADSL (Asymmetric DSL)** – Provides higher downstream bandwidth to the user than upload bandwidth.
+
+**SDSL (Symmetric DSL)** – Provides the same capacity in both directions.
+
+**DSLAM (DSL Access Multiplexer)** – Located at the Central Office of the provider. Concentrates connections from multiple DSL subscribers.
+
+**Cable Technology** – A high-speed always-on connection technology that uses a coaxial cable from the cable company to provide IP services to users.
+
+**DOCSIS (Data over Cable Service Interface Specification)** – The international standard for adding high-bandwidth data to an existing cable system.
+
+**CMTS (Cable Modem Termination System)** – Located at the provider headend. Responsible for communicating with the cable modems.
+
+**FTTx (Fiber to the x)** – Refers to fiber-optic cable installation to the user location. Includes FTTH, FTTB, and FTTN.
+
+**FTTH (Fiber to the Home)** – Fiber reaches the boundary of the residence.
+
+**FTTB (Fiber to the Building)** – Fiber reaches the boundary of the building with the final connection to the individual living space made via alternative means.
+
+**FTTN (Fiber to the Node/Neighborhood)** – Optical cabling reaches an optical node that converts optical signals to a format acceptable for twisted pair or coaxial cable to the premise.
+
+**WiMAX (Worldwide Interoperability for Microwave Access)** – Described in IEEE standard 802.16. Provides high-speed broadband service with wireless access and broad coverage like a cell phone network.
+
+**VPN (Virtual Private Network)** – An encrypted connection between private networks over a public network. VPN tunnels are routed through the internet from the private network of the company to the remote site or employee host.
+
+**Site-to-site VPN** – VPN settings are configured on routers. Clients are unaware that their data is being encrypted.
+
+**Single-homed** – Single connection to the ISP using one link. Provides no redundancy and is the least expensive solution.
+
+**Dual-homed** – Connects to the same ISP using two links. Provides both redundancy and load balancing.
+
+**Multihomed** – The client connects to two different ISPs. Provides increased redundancy and enables load-balancing.
+
+**Dual-multihomed** – The client connects with redundant links to multiple ISPs. The most resilient and most expensive ISP connectivity topology.
+
+---
+
+# Abbreviations
+
+| Abbreviation | Full Form |
+|---|---|
+| WAN | Wide Area Network |
+| LAN | Local Area Network |
+| MAN | Metropolitan Area Network |
+| CAN | Campus Area Network |
+| SLA | Service Level Agreement |
+| ISP | Internet Service Provider |
+| DTE | Data Terminal Equipment |
+| DCE | Data Communications Equipment |
+| CPE | Customer Premises Equipment |
+| POP | Point-of-Presence |
+| CO | Central Office |
+| SDH | Synchronous Digital Hierarchy |
+| SONET | Synchronous Optical Networking |
+| DWDM | Dense Wavelength Division Multiplexing |
+| PSTN | Public Switched Telephone Network |
+| ISDN | Integrated Services Digital Network |
+| ATM | Asynchronous Transfer Mode |
+| MPLS | Multiprotocol Label Switching |
+| LSR | Label Switched Router |
+| CE | Customer Edge |
+| PE | Provider Edge |
+| PPP | Point-to-Point Protocol |
+| HDLC | High-Level Data Link Control |
+| NBMA | Non-Broadcast Multi-Access |
+| PVC | Permanent Virtual Circuit |
+| DLCI | Data-Link Connection Identifier |
+| DSL | Digital Subscriber Line |
+| ADSL | Asymmetric DSL |
+| SDSL | Symmetric DSL |
+| DSLAM | DSL Access Multiplexer |
+| DOCSIS | Data over Cable Service Interface Specification |
+| CMTS | Cable Modem Termination System |
+| FTTx | Fiber to the x |
+| FTTH | Fiber to the Home |
+| FTTB | Fiber to the Building |
+| FTTN | Fiber to the Node/Neighborhood |
+| WiMAX | Worldwide Interoperability for Microwave Access |
+| VPN | Virtual Private Network |
+| VPLS | Virtual Private LAN Service |
+| EoMPLS | Ethernet over MPLS |
+| VoIP | Voice over IP |
+| QoS | Quality of Service |
+| LTE | Long-Term Evolution |
+| LED | Light-Emitting Diode |
+| CSU | Channel Service Unit |
+| DSU | Data Service Unit |

@@ -1,0 +1,106 @@
+# Glossary of Terms
+
+**Virtual Private Network (VPN)** – A network that carries information within a private network, but that information is actually transported over a public network, with traffic encrypted to keep the data confidential.
+
+**Tunnel** – A secure connection that enables remote sites and users to access the main site's network resources securely.
+
+**Site-to-Site VPN** – A VPN terminated on VPN gateways; traffic is only encrypted between the gateways, and internal hosts have no knowledge that a VPN is being used.
+
+**Remote-Access VPN** – A VPN dynamically created to establish a secure connection between a client and a VPN terminating device; enabled dynamically by the user when required.
+
+**Clientless VPN** – A VPN connection secured using a web browser SSL connection.
+
+**Client-Based VPN** – A VPN connection requiring VPN client software to be installed on the remote user's end device.
+
+**Enterprise VPN** – A common solution for securing enterprise traffic across the internet; site-to-site and remote access VPNs created and managed by the enterprise using IPsec and SSL VPNs.
+
+**Service Provider VPN** – A VPN created and managed by the provider network using MPLS at Layer 2 or Layer 3 to create secure channels between an enterprise's sites.
+
+**Multiprotocol Label Switching (MPLS)** – A technology used by service providers at Layer 2 or Layer 3 to create secure channels; traffic is forwarded through the MPLS backbone using labels.
+
+**Layer 3 MPLS VPN** – An MPLS VPN where the service provider participates in customer routing by establishing a peering between the customer's routers and the provider's routers.
+
+**Layer 2 MPLS VPN** – An MPLS VPN where the service provider is not involved in customer routing; uses VPLS to emulate an Ethernet multiaccess LAN over the MPLS network.
+
+**Virtual Private LAN Service (VPLS)** – Used in Layer 2 MPLS VPNs to emulate an Ethernet multiaccess LAN over the MPLS network.
+
+**IPsec** – An IETF standard that defines how a VPN can be secured across IP networks; protects and authenticates IP packets between source and destination.
+
+**Security Association (SA)** – A unique combination of choices within the IPsec framework created by filling each IPsec function slot with an available option.
+
+**Authentication Header (AH)** – An IPsec encapsulation protocol appropriate only when confidentiality is not required or permitted.
+
+**Encapsulation Security Protocol (ESP)** – An IPsec encapsulation protocol that provides both confidentiality and authentication.
+
+**Confidentiality** – A security function that uses encryption algorithms to prevent cybercriminals from reading packet contents; degree depends on the encryption algorithm and the length of the key used.
+
+**Data Encryption Standard (DES)** – A symmetric key encryption algorithm that uses a 56-bit key.
+
+**Triple DES (3DES)** – A symmetric key encryption algorithm that uses three independent 56-bit encryption keys per 64-bit block.
+
+**Advanced Encryption Standard (AES)** – A symmetric key encryption algorithm offering three different key lengths: 128 bits, 192 bits, and 256 bits.
+
+**SEAL** – A stream cipher that encrypts data continuously rather than encrypting blocks of data; uses a 160-bit key.
+
+**Integrity** – A security function that uses hashing algorithms to ensure that packets have not been altered between source and destination.
+
+**Hashed Message Authentication Code (HMAC)** – A data integrity algorithm that guarantees the integrity of the message using a hash value.
+
+**Message-Digest 5 (MD5)** – A hashing algorithm that uses a 128-bit shared-secret key.
+
+**Secure Hash Algorithm (SHA)** – A hashing algorithm that uses a 160-bit secret key.
+
+**Origin Authentication** – A security function that uses the Internet Key Exchange (IKE) protocol to authenticate source and destination.
+
+**Pre-Shared Key (PSK)** – An authentication method where a PSK value is entered into each peer manually; easy to configure but does not scale well.
+
+**Rivest, Shamir, and Adleman (RSA)** – An authentication method that uses digital certificates to authenticate the peers; each peer must authenticate its opposite peer before the tunnel is considered secure.
+
+**Diffie-Hellman (DH)** – A method that allows two peers to establish a shared secret key over an insecure channel; used to secure key exchange.
+
+**Elliptical Curve Cryptography (ECC)** – A cryptographic approach supported by DH groups 19, 20, 21, and 24 that reduces the time needed to generate keys.
+
+**Internet Key Exchange (IKE)** – The protocol used for origin authentication of source and destination in IPsec.
+
+**Generic Routing Encapsulation (GRE)** – A non-secure site-to-site VPN tunneling protocol that can encapsulate various network layer protocols as well as multicast and broadcast traffic; does not support encryption by default.
+
+**Passenger Protocol** – The original packet that is to be encapsulated by GRE; could be an IPv4 or IPv6 packet, a routing update, and more.
+
+**Carrier Protocol** – GRE is the carrier protocol that encapsulates the original passenger packet.
+
+**Transport Protocol** – The protocol that will actually be used to forward the packet; could be IPv4 or IPv6.
+
+**IPsec Virtual Tunnel Interface (VTI)** – An IPsec configuration applied to a virtual interface instead of static mapping the IPsec sessions to a physical interface; capable of sending and receiving both IP unicast and multicast encrypted traffic.
+
+---
+
+# Abbreviations
+
+| Abbreviation | Full Form                                        |
+| ------------ | ------------------------------------------------ |
+| VPN          | Virtual Private Network                          |
+| IPsec        | Internet Protocol Security                       |
+| SSL          | Secure Sockets Layer                             |
+| MPLS         | Multiprotocol Label Switching                    |
+| VPLS         | Virtual Private LAN Service                      |
+| GRE          | Generic Routing Encapsulation                    |
+| VTI          | Virtual Tunnel Interface                         |
+| DMVPN        | Cisco Dynamic Multipoint Virtual Private Network |
+| ATM          | Asynchronous Transfer Mode                       |
+| AH           | Authentication Header                            |
+| ESP          | Encapsulation Security Protocol                  |
+| SA           | Security Association                             |
+| DES          | Data Encryption Standard                         |
+| 3DES         | Triple Data Encryption Standard                  |
+| AES          | Advanced Encryption Standard                     |
+| HMAC         | Hashed Message Authentication Code               |
+| MD5          | Message-Digest 5                                 |
+| SHA          | Secure Hash Algorithm                            |
+| PSK          | Pre-Shared Key                                   |
+| RSA          | Rivest, Shamir, and Adleman                      |
+| DH           | Diffie-Hellman                                   |
+| ECC          | Elliptical Curve Cryptography                    |
+| IKE          | Internet Key Exchange                            |
+| IETF         | Internet Engineering Task Force                  |
+| SOHO         | Small Office Home Office                         |
+| OSPF         | Open Shortest Path First                         |

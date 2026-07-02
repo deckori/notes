@@ -1,0 +1,61 @@
+Queuing
+QoS
+Network Bandwidth
+Congestion
+Delay or Latency
+Jitter
+Variable Delay
+- Queuing Delay
+- Propagation Delay
+  - Propagation Delay is for frames, while Latency is for packets
+Fixed Delay
+- Code Delay
+- Serialization Delay
+- Packetization Delay
+- De-jitter Delay
+RTP
+Playout Delay Buffer
+DSP
+RTSP
+QoE
+FIFO
+WFQ
+CBWFQ
+LLQ
+PQ
+Tail Drop
+Best Effort
+IntServ
+DiffServ
+WRED
+NBAR
+CoS
+TID
+EXP
+IPP
+DSCP
+TCI
+ToS
+Traffic Class
+ECN
+
+| Short Form |               Full Form               |
+| :--------: | :-----------------------------------: |
+|    RTP     |          Real Time Protocol           |
+|    DSP     |       Digital Signal Processor        |
+|    RTSP    |     Real-Time Streaming Protocol      |
+|    QoE     |         Quality of Experience         |
+|    FIFO    |          First-In, First-Out          |
+|    WFQ     |         Weighted Fair Queuing         |
+|   CBWFQ    |   Class-Based Weighted Fair Queuing   |
+|    LLQ     |          Low Latency Queuing          |
+|     PQ     |        Strict Priority Queuing        |
+|    WRED    |    Weighted Random Early Detection    |
+|    NBAR    | Network Based Application Recognition |
+|    CoS     |           Class of Service            |
+|    TID     |       Wi-Fi Traffic Identifier        |
+|    IPP     |             IP Precedence             |
+|    DSCP    |  Differentiated Services Code Point   |
+|    TCI     |        Tag Control Information        |
+|    ToS     |            Type of Service            |
+|    ECN     |   Extender Congestion Notification    |

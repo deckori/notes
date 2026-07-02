@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry} % Wide margins for side-by-side clarity
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+% Define clean, auto-wrapping columns with ragged right text alignment
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\section*{PAT vs Dynamic NAT vs Static NAT}
+
+Note, Static NAT has the client on the outside network (inbound), while dynamic NAT and PAT has clients on the inside network
+
+PAT described is a single IP type. Let's call it inside global IP
+
+\begin{table}[h!]
+\small
+\centering
+\begin{tabularx}{\textwidth}{l|Y|Y|Y}
+\toprule
+\textbf{Phase / Metric} & \textbf{PAT (Single IP)} & \textbf{Dynamic NAT (Pool)} & \textbf{Static NAT (Fixed IPs)} \\ 
+\midrule
+
+\textbf{1. Triggering Packet} & 
+Multiple internal hosts ($\text{PC}_1$, $\text{PC}_2$) send outbound packets to external servers. & 
+Multiple internal hosts ($\text{PC}_1$, $\text{PC}_2$) send outbound packets to external servers. & 
+An external client sends an inbound packet to access an internal server. \\ 
+\hline
+
+\textbf{2. Router Interception} & 
+Edge router receives outbound traffic on the \textbf{Inside} interface and checks the ACL to determine if the packet should be translated. & 
+Edge router receives outbound traffic on the \textbf{Inside} interface and checks the ACL to determine if the packet should be translated. & 
+Edge router receives inbound traffic on the \textbf{Outside} interface and matches it against the NAT Table. \\ 
+\hline
+
+\textbf{3. Address Allocation} & 
+Router grabs the Inside Global IP for all translations. & 
+Router pulls an available, unassigned IP from a pre-configured \textbf{Public Address Pool} to use as the Inside Global IP, and creates a translation entry in the NAT table. If no addresses are available, the router keeps the packet waiting until availability. & 
+Router uses the hardcoded, permanent 1-to-1 mapping entry from its configuration. \\ 
+\hline
+
+\textbf{4. Source/Port Mapping} & 
+Modifies Inside Local IP to the Inside Global IP. If port of the Inside Local IP is already used in the Inside Global IP, router \textbf{increments the port number} to ensure uniqueness. & 
+Modifies Inside Local IP to the newly chosen Inside Global IP. The original layer 4 transport source ports \textbf{remain unchanged}. & 
+Translates the Destination IP from the Inside Global address to the server's Inside Local IP. \\ 
+\hline
+
+\textbf{5. Server Processing} & 
+The servers use the source port from the received packet as the destination port, and the source address as the destination address for the return traffic. The servers behave like they're communicating with packets from the same host, but are actually communicating with multiple PCs. & 
+The server receives the packet from the host and responds using the allocated Inside Global address as the destination address. & 
+The server receives the packet and responds to the client using its Inside Local address as the source address. \\
+\hline
+
+\textbf{6. Return Translation} & 
+Router checks destination port numbers, maps them back to their respective local hosts, and \textbf{restores original port values}. & 
+Router performs a lookup on the NAT Table and changes the Inside Global IP back to the Inside Local IP and repeats this for each host. & 
+Router intercepts the local server reply, changes the Inside Local IP back to the Inside Global IP, and forwards it out. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
