@@ -1,4 +1,4 @@
-To prevent general issues with connectivity:
+To prevent issues with connectivity:
 
 ```
 (config) no ip domain lookup
@@ -54,6 +54,12 @@ Or by going to each interface:
 (config-if)#ip ospf priority <0-255>   (Note: to control DR/BDR election)
 (config-if)#ip ospf hello-interval <seconds>
 (config-if)#ip ospf dead-interval <seconds>   (Note: not necessary as it is auto modified to be 4x the hello-interval. needed for documentation only)
+```
+
+### Testing:
+
+```
+#sh run | section ospf
 ```
 
 ## ACLs

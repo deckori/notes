@@ -1,0 +1,25 @@
+Configure a named standard IPv4 ACL
+
+Configure NAT Pool:
+
+```
+(config)# ip nat pool [POOL_NAME] [start-ip] [end-ip] netmask [mask]
+```
+
+Bind ACL to NAT Pool. The ACL is a list of inside local IPs eligible for translation, while NAT Pool is a list of inside global IPs that any of the inside local IP addresses can be translated to.
+
+```
+(config)# ip nat inside source list [ACL_NAME] pool [POOL_NAME] overload
+```
+
+Create a static link for static NAT
+
+```
+(config)# ip nat inside source static [inside-local-ip] [inside-global-ip]
+```
+
+Configure inside and outside interfaces:
+
+```
+(config-if)# ip nat inside/outside
+```

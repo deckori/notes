@@ -1,0 +1,29 @@
+Standard ACL
+
+```
+Router(config)# access-list <1-99> {permit|deny} { <source-ip> <wildcard-mask> | host <source-ip> | any }
+```
+
+Named Standard ACL
+
+```
+Router(config)# ip access-list standard <ACL-NAME>
+Router(config-std-nacl)# [sequence-number] {permit|deny} { <source-ip> <wildcard-mask> | host <source-ip> | any }
+Router(config-std-nacl)# no [sequence-number]
+```
+
+Apply an ACL on an int:
+
+```
+(config)# interface <interface-id>
+(config-if)# ip access-group { <100-199> | <ACL-NAME> } { in | out }
+```
+
+Testing:
+
+```
+# sh access-lists
+# show ip access-lists <ID/NAME>
+# show ip interface <interface-id>
+# show running-config | section access-list
+```
